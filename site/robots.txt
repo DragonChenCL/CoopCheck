@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dragonchencl.github.io/CoopCheck/sitemap.xml
