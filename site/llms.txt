@@ -1,5 +1,9 @@
 # CoopCheck
 
+Canonical site: https://coopcheck.serunio.com/
+
+# CoopCheck
+
 Free informational backyard chicken rule checker and basic coop setback planning tool.
 
 Main pages:
