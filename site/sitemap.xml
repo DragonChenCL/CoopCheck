@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://dragonchencl.github.io/CoopCheck/</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://dragonchencl.github.io/CoopCheck/planner.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://dragonchencl.github.io/CoopCheck/cities/chandler-az.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://dragonchencl.github.io/CoopCheck/cities/portland-or.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://dragonchencl.github.io/CoopCheck/cities/san-diego-ca.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://dragonchencl.github.io/CoopCheck/cities/denver-co.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://dragonchencl.github.io/CoopCheck/cities/mesa-az.html</loc><lastmod>2026-09-22</lastmod></url>
-<url><loc>https://dragonchencl.github.io/CoopCheck/cities/seattle-wa.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/planner.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/states/arizona.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/states/california.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/states/colorado.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/states/oregon.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/states/washington.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/states/texas.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/chandler-az.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/mesa-az.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/phoenix-az.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/tempe-az.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/san-diego-ca.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/sacramento-ca.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/denver-co.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/colorado-springs-co.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/portland-or.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/eugene-or.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/salem-or.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/gresham-or.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/seattle-wa.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/spokane-wa.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/vancouver-wa.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/austin-tx.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/arlington-tx.html</loc><lastmod>2026-09-22</lastmod></url>
+<url><loc>https://coopcheck.serunio.com/cities/fort-worth-tx.html</loc><lastmod>2026-09-22</lastmod></url>
 </urlset>
