@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chicken Coop Setback Calculator & Map | CoopCheck</title><meta name="description" content="Free backyard chicken coop setback checker with satellite map, address search, property drawing and real geometry compliance checks."><link rel="canonical" href="https://dragonchencl.github.io/CoopCheck/planner.html"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css?v=20260922-3"><link href="https://api.mapbox.com/mapbox-gl-js/v3.30.0/mapbox-gl.css" rel="stylesheet"><link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.5.1/mapbox-gl-draw.css" type="text/css"><script src="https://api.mapbox.com/mapbox-gl-js/v3.30.0/mapbox-gl.js"></script><script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.5.1/mapbox-gl-draw.js"></script><script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"CoopCheck Chicken Coop Setback Planner","url":"https://dragonchencl.github.io/CoopCheck/planner.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script></head><body><header class="site-header no-print"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">🐔</span>CoopCheck</a><nav class="nav-links"><a href="index.html#cities">City rules</a><a class="btn" href="planner.html">Planner</a></nav></div></header><main class="section"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / chicken coop setback planner</div><span class="eyebrow">Free map-based planner</span><h1 style="font-size:clamp(36px,6vw,58px)">Chicken coop setback planner</h1><p class="lead">Find your address, outline the real property, house and proposed coop, then check the actual geometry against the selected city rules.</p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chicken Coop Setback Calculator & Map | CoopCheck</title><meta name="description" content="Free backyard chicken coop setback checker with satellite map, address search, property drawing and real geometry planning checks."><link rel="canonical" href="https://dragonchencl.github.io/CoopCheck/planner.html"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css?v=20260922-4"><link href="https://api.mapbox.com/mapbox-gl-js/v3.30.0/mapbox-gl.css" rel="stylesheet"><link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.5.1/mapbox-gl-draw.css" type="text/css"><script src="https://api.mapbox.com/mapbox-gl-js/v3.30.0/mapbox-gl.js"></script><script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.5.1/mapbox-gl-draw.js"></script><script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"CoopCheck Chicken Coop Setback Planner","url":"https://dragonchencl.github.io/CoopCheck/planner.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script></head><body><header class="site-header no-print"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">🐔</span>CoopCheck</a><nav class="nav-links"><a href="index.html#cities">City rules</a><a class="btn" href="planner.html">Planner</a></nav></div></header><main class="section"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / chicken coop setback planner</div><span class="eyebrow">Free map-based planner</span><h1 style="font-size:clamp(36px,6vw,58px)">Chicken coop setback planner</h1><p class="lead">Find your address, outline the real property, house and proposed coop, then check the actual geometry against the selected city rules.</p>
 
 <section class="panel map-panel">
   <div class="map-search-row no-print">
@@ -29,7 +29,8 @@
     <div><span class="label">Coop footprint</span><strong id="mapCoop">—</strong></div>
     <div><span class="label">Rule mode</span><strong id="mapRuleMode">—</strong></div>
   </div>
-  <p class="small">The green zone is a conservative planning area, not a permit boundary. Until CoopCheck knows which lot edge faces the street, it applies the largest listed property-line setback to every edge. House footprint is removed from the green area.</p>
+  <div id="geometryWarning" class="geometry-warning" hidden></div>
+  <p class="small">The green zone is a conservative planning area, not a permit boundary. Until CoopCheck knows which lot edge faces the street, it applies the largest listed property-line setback to every edge. The house is shown as a gray excluded area.</p>
 </section>
 
 <div class="planner-layout">
@@ -46,11 +47,13 @@
 
   <section class="panel compliance-panel">
     <span class="eyebrow">Live geometry check</span>
-    <h2>Coop compliance result</h2>
+    <h2>Coop geometry result</h2>
     <div id="complianceHero" class="compliance-hero waiting">
       <strong>Draw the property, house and coop to run the check.</strong>
       <span>Results update automatically when you move a vertex or change a setback.</span>
     </div>
+
+    <div id="resultCounts" class="result-counts">Draw all shapes to start the geometry checks.</div>
 
     <div class="compliance-metrics">
       <div><span class="label">Property area</span><strong id="metricLotArea">—</strong></div>
@@ -61,19 +64,28 @@
       <div><span class="label">Setback margin</span><strong id="metricMargin">—</strong></div>
     </div>
 
-    <h3>Checks</h3>
+    <div id="geometrySupport" class="support-note pending"><span>•</span><strong>Property-line setback check will be evaluated after drawing.</strong></div>
+
+    <h3>Automated geometry checks</h3>
     <div class="check-list">
       <div class="check-row pending" id="checkProperty"><span class="check-icon">•</span><div><strong>Coop is inside the property</strong><small>Draw all shapes first.</small></div></div>
       <div class="check-row pending" id="checkHouse"><span class="check-icon">•</span><div><strong>Coop does not overlap the house</strong><small>Draw all shapes first.</small></div></div>
-      <div class="check-row pending" id="checkSetback"><span class="check-icon">•</span><div><strong>Coop clears the conservative setback zone</strong><small>Draw all shapes first.</small></div></div>
-      <div class="check-row pending" id="checkRule"><span class="check-icon">•</span><div><strong>Rule can be checked from current geometry</strong><small>Some cities still require neighbor, zoning or rear-yard checks.</small></div></div>
+      <div class="check-row pending" id="checkSetback"><span class="check-icon">•</span><div><strong>Coop clears the conservative property-line setback</strong><small>Draw all shapes first.</small></div></div>
+    </div>
+
+    <h3 class="verify-title">Still verify before building or keeping chickens</h3>
+    <div class="verify-list">
+      <div class="verify-row"><span class="verify-icon">?</span><div><strong>Zoning & residential land use</strong><small id="verifyZoning">CoopCheck has not verified parcel zoning for this address.</small></div></div>
+      <div class="verify-row"><span class="verify-icon">?</span><div><strong>HOA / CC&amp;R restrictions</strong><small>Private neighborhood rules may be stricter than city rules.</small></div></div>
+      <div class="verify-row"><span class="verify-icon">?</span><div><strong>Permit & accessory-structure requirements</strong><small id="verifyPermit">Check the city permit note and current building rules.</small></div></div>
+      <div class="verify-row" id="verifyExtraRow" hidden><span class="verify-icon">?</span><div><strong id="verifyExtraTitle">Additional placement rule</strong><small id="verifyExtraText">This rule needs manual verification.</small></div></div>
     </div>
 
     <div class="source-box" style="margin-top:18px">
-      <strong>What PASS means</strong>
-      <p class="small" style="margin-bottom:0">PASS means the drawn coop clears the checks CoopCheck can currently calculate for this city. It is not a survey, zoning determination, permit approval, HOA approval or legal advice.</p>
+      <strong>What Geometry PASS means</strong>
+      <p class="small" style="margin-bottom:0">Geometry PASS means the drawn coop clears the property-boundary and house-overlap checks CoopCheck can currently calculate. It does not confirm zoning, HOA rules, permits, a survey, or every city-specific requirement.</p>
     </div>
     <button class="btn no-print" id="print" style="margin-top:18px">Print / Save as PDF</button>
   </section>
 </div>
-</div></main><footer class="footer no-print"><div class="container footer-grid"><strong>CoopCheck</strong><span>Free backyard chicken planning MVP</span></div></footer><script src="assets/data.js"></script><script src="assets/planner.js?v=20260922-3"></script><script src="assets/runtime-config.js"></script><script src="assets/map.js?v=20260922-3"></script></body></html>
+</div></main><footer class="footer no-print"><div class="container footer-grid"><strong>CoopCheck</strong><span>Free backyard chicken planning MVP</span></div></footer><script src="assets/data.js"></script><script src="assets/planner.js?v=20260922-4"></script><script src="assets/runtime-config.js"></script><script src="assets/map.js?v=20260922-4"></script></body></html>
