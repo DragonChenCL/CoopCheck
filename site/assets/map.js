@@ -43,6 +43,8 @@
 
   let pendingRole="property";
   let marker=null;
+  let drawing=false;
+  let createdSeq=0;
 
   function city(){
     const list=window.COOP_CITIES||[];
@@ -63,20 +65,62 @@
       if(f.id!==keepId&&f.properties&&f.properties.role===role) draw.delete(f.id);
     });
   }
+  function updateButtons(){
+    const property=featureFor("property"),house=featureFor("house");
+    if($("drawHouse")) $("drawHouse").disabled=!property;
+    if($("drawCoop")) $("drawCoop").disabled=!house;
+  }
+  function setDrawingUI(active,role){
+    drawing=active;
+    const finish=$("finishShape");
+    if(finish) finish.hidden=!active;
+    ["drawProperty","drawHouse","drawCoop"].forEach(id=>{
+      const el=$(id);
+      if(el) el.classList.remove("drawing-active");
+    });
+    if(active){
+      const id=role==="property"?"drawProperty":role==="house"?"drawHouse":"drawCoop";
+      $(id)?.classList.add("drawing-active");
+    }
+  }
   function startDraw(role){
+    if(role==="house"&&!featureFor("property")){
+      setMapStatus("Draw and finish the property boundary first.","bad");
+      return;
+    }
+    if(role==="coop"&&!featureFor("house")){
+      setMapStatus("Draw and finish the house first.","bad");
+      return;
+    }
     pendingRole=role;
     const label=role==="property"?"property boundary":role;
-    setMapStatus("Click around the "+label+". Double-click the last point to finish.","drawing");
+    setDrawingUI(true,role);
+    setMapStatus("Drawing "+label+": click every corner, then press Finish shape.","drawing");
     draw.changeMode("draw_polygon");
+  }
+  function finishCurrentShape(){
+    if(!drawing)return;
+    const seq=createdSeq;
+    draw.changeMode("simple_select");
+    setDrawingUI(false,pendingRole);
+    setTimeout(()=>{
+      if(createdSeq===seq){
+        setMapStatus("That shape was not saved. Add at least 3 points before pressing Finish shape.","bad");
+      }
+    },80);
   }
 
   $("drawProperty")?.addEventListener("click",()=>startDraw("property"));
   $("drawHouse")?.addEventListener("click",()=>startDraw("house"));
   $("drawCoop")?.addEventListener("click",()=>startDraw("coop"));
+  $("finishShape")?.addEventListener("click",finishCurrentShape);
   $("clearMap")?.addEventListener("click",()=>{
+    if(drawing) draw.changeMode("simple_select");
+    setDrawingUI(false,pendingRole);
     draw.deleteAll();
     if(map.getSource("safe-zone")) map.getSource("safe-zone").setData({type:"FeatureCollection",features:[]});
     updateDrawSummary();
+    updateButtons();
     setMapStatus("Map cleared. Search an address or draw a new property.","");
   });
 
@@ -84,20 +128,25 @@
     map.addSource("safe-zone",{type:"geojson",data:{type:"FeatureCollection",features:[]}});
     map.addLayer({id:"safe-zone-fill",type:"fill",source:"safe-zone",paint:{"fill-color":"#16a34a","fill-opacity":0.22}});
     map.addLayer({id:"safe-zone-line",type:"line",source:"safe-zone",paint:{"line-color":"#15803d","line-width":2,"line-dasharray":[2,2]}});
-    setMapStatus("Search your address, then draw your property boundary.","");
+    updateButtons();
+    setMapStatus("Step 1: search your address. Then click Draw property.","");
   });
 
   map.on("draw.create",e=>{
+    createdSeq++;
     const f=e.features[0];
     draw.setFeatureProperty(f.id,"role",pendingRole);
     removeOldRole(pendingRole,f.id);
+    setDrawingUI(false,pendingRole);
     draw.changeMode("simple_select",{featureIds:[f.id]});
     updateSafeZone();
     updateDrawSummary();
-    setMapStatus((pendingRole==="property"?"Property":pendingRole==="house"?"House":"Coop")+" saved. Drag vertices to refine it.","good");
+    updateButtons();
+    const next=pendingRole==="property"?"Next: draw the house.":pendingRole==="house"?"Next: draw the coop.":"All three shapes are ready.";
+    setMapStatus((pendingRole==="property"?"Property":pendingRole==="house"?"House":"Coop")+" saved. "+next,"good");
   });
   map.on("draw.update",()=>{updateSafeZone();updateDrawSummary()});
-  map.on("draw.delete",()=>{updateSafeZone();updateDrawSummary()});
+  map.on("draw.delete",()=>{updateSafeZone();updateDrawSummary();updateButtons()});
 
   function updateSafeZone(){
     if(!map.getSource("safe-zone")) return;
