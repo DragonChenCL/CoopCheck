@@ -48,6 +48,7 @@
   let drawing=false;
   let draftCoords=[];
   let currentSafeZone=null;
+  let lastTouchPointAt=0;
 
   function city(){
     const list=window.COOP_CITIES||[];
@@ -90,25 +91,42 @@
 
   function setDrawingUI(active,role){
     drawing=active;
-    const finish=$("finishShape");
-    if(finish){
+
+    const finishButtons=[$("finishShape"),$("finishShapeMobile")].filter(Boolean);
+    finishButtons.forEach(finish=>{
       finish.hidden=!active;
       finish.disabled=active&&draftCoords.length<3;
       finish.textContent=active
-        ?(draftCoords.length<3?"✓ Finish shape ("+draftCoords.length+"/3 points)":"✓ Finish shape")
-        :"✓ Finish shape";
-    }
+        ?(draftCoords.length<3?"Finish shape ("+draftCoords.length+"/3 points)":"Finish shape")
+        :"Finish shape";
+    });
 
     ["drawProperty","drawHouse","drawCoop"].forEach(id=>$(id)?.classList.remove("drawing-active"));
+
+    const shell=document.querySelector(".map-shell");
+    shell?.classList.toggle("drawing-mode",active);
 
     if(active){
       const id=role==="property"?"drawProperty":role==="house"?"drawHouse":"drawCoop";
       $(id)?.classList.add("drawing-active");
       map.getCanvas().style.cursor="crosshair";
+
+      // In drawing mode, a finger tap must place a point instead of panning/zooming the map.
+      map.dragPan.disable();
+      map.touchZoomRotate.disable();
       map.doubleClickZoom.disable();
+      map.boxZoom.disable();
+      map.scrollZoom.disable();
+      map.keyboard.disable();
     }else{
       map.getCanvas().style.cursor="";
+
+      map.dragPan.enable();
+      map.touchZoomRotate.enable();
       map.doubleClickZoom.enable();
+      map.boxZoom.enable();
+      map.scrollZoom.enable();
+      map.keyboard.enable();
     }
     updateButtons();
   }
@@ -202,9 +220,10 @@
     setMapStatus(roleLabel(role)+" saved. "+next,"good");
   }
 
-  function onMapClick(e){
-    if(!drawing)return;
-    draftCoords.push([e.lngLat.lng,e.lngLat.lat]);
+  function addDraftPoint(lngLat){
+    if(!drawing||!lngLat)return;
+
+    draftCoords.push([lngLat.lng,lngLat.lat]);
     updateDraft();
 
     if(draftCoords.length<3){
@@ -212,6 +231,26 @@
     }else{
       setMapStatus(roleLabel(pendingRole)+" has "+draftCoords.length+" points. Add more corners or press Finish shape.","drawing");
     }
+  }
+
+  function onMapClick(e){
+    if(!drawing)return;
+
+    // Mobile browsers can emit a synthetic click after touchend.
+    // Ignore it so one tap never creates two vertices.
+    if(Date.now()-lastTouchPointAt<650)return;
+    addDraftPoint(e.lngLat);
+  }
+
+  function onMapTouchEnd(e){
+    if(!drawing)return;
+
+    const original=e.originalEvent;
+    if(original?.changedTouches&&original.changedTouches.length!==1)return;
+
+    lastTouchPointAt=Date.now();
+    if(typeof e.preventDefault==="function")e.preventDefault();
+    addDraftPoint(e.lngLat);
   }
 
   function polygonRing(feature){
@@ -558,6 +597,7 @@
   $("drawHouse")?.addEventListener("click",()=>startDraw("house"));
   $("drawCoop")?.addEventListener("click",()=>startDraw("coop"));
   $("finishShape")?.addEventListener("click",finishCurrentShape);
+  $("finishShapeMobile")?.addEventListener("click",finishCurrentShape);
 
   $("clearMap")?.addEventListener("click",()=>{
     cancelDraft();
@@ -605,9 +645,10 @@
     ];
     map.addLayer({id:"draft-fill",type:"fill",source:"draft-shape",filter:["==",["geometry-type"],"Polygon"],paint:{"fill-color":draftRoleColor,"fill-opacity":0.18}});
     map.addLayer({id:"draft-line",type:"line",source:"draft-shape",filter:["==",["geometry-type"],"LineString"],paint:{"line-color":draftRoleColor,"line-width":3,"line-dasharray":[2,1]}});
-    map.addLayer({id:"draft-points",type:"circle",source:"draft-shape",filter:["==",["geometry-type"],"Point"],paint:{"circle-radius":6,"circle-color":"#ffffff","circle-stroke-color":draftRoleColor,"circle-stroke-width":3}});
+    map.addLayer({id:"draft-points",type:"circle",source:"draft-shape",filter:["==",["geometry-type"],"Point"],paint:{"circle-radius":9,"circle-color":"#ffffff","circle-stroke-color":draftRoleColor,"circle-stroke-width":3}});
 
     map.on("click",onMapClick);
+    map.on("touchend",onMapTouchEnd);
     refreshGeometry();
     setMapStatus("Step 1: search your address. Then click Draw property.","");
   });
