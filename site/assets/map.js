@@ -281,6 +281,96 @@
     if(!source)return;
     currentSafeZone=computeSafeZone();
     source.setData(currentSafeZone||emptyFeatureCollection());
+
+    const houseSource=map.getSource("house-exclusion");
+    if(houseSource){
+      const house=featureFor("house");
+      houseSource.setData(house||emptyFeatureCollection());
+    }
+  }
+
+  function setGeometryWarning(lotArea,houseArea,coopArea,property,house,coop){
+    const el=$("geometryWarning");
+    if(!el)return;
+
+    const warnings=[];
+    if(lotArea>87120)warnings.push("The drawn property is larger than 2 acres, which is unusual for this backyard-planning workflow.");
+    if(houseArea>15000)warnings.push("The drawn house footprint is unusually large; make sure you traced only the main building.");
+    if(coopArea>500)warnings.push("The drawn coop is unusually large for a backyard chicken coop; check the outline.");
+    if(lotArea>0&&coopArea/lotArea>0.15)warnings.push("The coop occupies more than 15% of the drawn property, which may indicate a drawing mistake.");
+
+    if(property&&house){
+      try{
+        if(!turf.booleanWithin(house,property))warnings.push("Part of the house outline falls outside the property outline.");
+      }catch(e){}
+    }
+
+    if(!warnings.length){
+      el.hidden=true;
+      el.innerHTML="";
+      return;
+    }
+
+    el.hidden=false;
+    el.innerHTML="<strong>⚠ Drawing sanity check</strong>"+warnings.map(w=>"<div>• "+w+"</div>").join("")+"<div class='small' style='margin-top:5px'>These are usability warnings, not legal rules.</div>";
+  }
+
+  function updateSupportAndVerification(c,p){
+    const support=$("geometrySupport");
+    if(support){
+      if(p.mode==="property"){
+        support.className="support-note pass";
+        support.innerHTML="<span>✓</span><strong>Property-line setback check supported for "+c.name+".</strong>";
+      }else{
+        support.className="support-note warn";
+        support.innerHTML="<span>!</span><strong>Property-line setback check is only partial for "+c.name+".</strong>";
+      }
+    }
+
+    if($("verifyPermit")){
+      $("verifyPermit").textContent="City note: "+c.permit+". Verify current requirements before building.";
+    }
+
+    const extra=$("verifyExtraRow");
+    let extraCount=0;
+    if(extra){
+      extra.hidden=true;
+
+      if(p.mode!=="property"){
+        extra.hidden=false;
+        extraCount=1;
+        $("verifyExtraTitle").textContent="Neighbor / parcel-specific geometry";
+        $("verifyExtraText").textContent=c.note||"Additional geometry data is needed for this city.";
+      }else if(p.rearOnly){
+        extra.hidden=false;
+        extraCount=1;
+        $("verifyExtraTitle").textContent="Rear-yard placement";
+        $("verifyExtraText").textContent="The city requires rear-yard placement; CoopCheck does not yet identify the legal front/rear yard automatically.";
+      }else if(p.rearHalf){
+        extra.hidden=false;
+        extraCount=1;
+        $("verifyExtraTitle").textContent="Rear-half placement";
+        $("verifyExtraText").textContent="The city requires placement in the rear half of the lot; verify lot orientation manually.";
+      }
+    }
+
+    return 3+extraCount;
+  }
+
+  function setResultCounts(passCount,failCount,unavailableCount,manualCount,ready){
+    const el=$("resultCounts");
+    if(!el)return;
+
+    if(!ready){
+      el.textContent="0/3 geometry checks complete · "+manualCount+" items still need verification";
+      return;
+    }
+
+    const parts=[passCount+"/3 geometry checks passed"];
+    if(failCount)parts.push(failCount+" failed");
+    if(unavailableCount)parts.push(unavailableCount+" not automated");
+    parts.push(manualCount+" items still need verification");
+    el.textContent=parts.join(" · ");
   }
 
   function setCheck(id,state,detail){
@@ -309,6 +399,15 @@
     if($("mapHouse"))$("mapHouse").textContent=fmtArea(areaSqFt(house));
     if($("mapCoop"))$("mapCoop").textContent=fmtArea(areaSqFt(coop));
 
+    setGeometryWarning(
+      areaSqFt(property),
+      areaSqFt(house),
+      areaSqFt(coop),
+      property,
+      house,
+      coop
+    );
+
     const c=city(),p=c?.planner||{};
     if($("mapRuleMode")){
       $("mapRuleMode").textContent=
@@ -331,6 +430,7 @@
     const houseArea=areaSqFt(house);
     const coopArea=areaSqFt(coop);
     const required=conservativeSetback();
+    const manualCount=updateSupportAndVerification(c,p);
 
     $("metricLotArea").textContent=fmtArea(lotArea);
     $("metricHouseArea").textContent=fmtArea(houseArea);
@@ -340,11 +440,15 @@
     if(!property||!house||!coop){
       $("metricBoundaryDistance").textContent="—";
       $("metricMargin").textContent="—";
-      setHero("waiting","Draw all three shapes to run the check.","Property, house and coop geometry are required.");
+      setHero(
+        "waiting",
+        "Draw all three shapes to run the geometry check.",
+        "Property, house and coop geometry are required."
+      );
       setCheck("checkProperty","pending","Draw the property and coop first.");
       setCheck("checkHouse","pending","Draw the house and coop first.");
       setCheck("checkSetback","pending","Draw the property and coop first.");
-      setCheck("checkRule","pending","The rule mode will be evaluated after drawing.");
+      setResultCounts(0,0,0,manualCount,false);
       return;
     }
 
@@ -363,77 +467,86 @@
     $("metricBoundaryDistance").textContent=fmtFt(boundaryDistance);
     $("metricMargin").textContent=margin===null?"—":((margin>=0?"+":"")+fmtFt(margin));
 
+    const propertyState=insideProperty?"pass":"fail";
+    const houseState=noHouseOverlap?"pass":"fail";
+    const canGeometry=p.mode==="property";
+    const setbackState=canGeometry?(insideSafe?"pass":"fail"):"warn";
+
     setCheck(
       "checkProperty",
-      insideProperty?"pass":"fail",
-      insideProperty?"The entire coop polygon is inside the drawn property.":"Part of the coop is outside the drawn property."
+      propertyState,
+      insideProperty
+        ?"The entire coop polygon is inside the drawn property."
+        :"Part of the coop is outside the drawn property."
     );
 
     setCheck(
       "checkHouse",
-      noHouseOverlap?"pass":"fail",
-      noHouseOverlap?"The coop does not overlap the drawn house footprint.":"The coop overlaps the drawn house footprint."
+      houseState,
+      noHouseOverlap
+        ?"The coop does not overlap the drawn house footprint."
+        :"The coop overlaps the drawn house footprint."
     );
 
-    const canGeometry=p.mode==="property";
-    if(!canGeometry){
-      setCheck("checkSetback","warn","This city's rule needs data that the current geometry model does not fully represent.");
-    }else{
-      setCheck(
-        "checkSetback",
-        insideSafe?"pass":"fail",
-        insideSafe
-          ?"The coop is fully inside the conservative green setback zone."
-          :"The coop crosses the conservative green setback zone. Move it farther inward."
-      );
-    }
-
-    const extraManual=p.mode!=="property"||p.rearOnly||p.rearHalf;
     setCheck(
-      "checkRule",
-      extraManual?"warn":"pass",
-      p.mode!=="property"
-        ?"This city needs neighbor, zoning or parcel-specific verification."
-        :p.rearOnly
-          ?"Property-line geometry passes separately, but rear-yard placement still needs confirmation."
-          :p.rearHalf
-            ?"Property-line geometry passes separately, but the rear-half rule still needs confirmation."
-            :"Current rule set can be conservatively checked from the drawn geometry."
+      "checkSetback",
+      setbackState,
+      !canGeometry
+        ?"This city's property-line rule needs additional geometry or parcel data."
+        :insideSafe
+          ?"The coop is fully inside the conservative property-line setback zone."
+          :"The coop crosses the conservative property-line setback zone. Move it farther inward."
     );
 
-    const hardGeometryPass=insideProperty&&noHouseOverlap&&(canGeometry?insideSafe:true);
+    const states=[propertyState,houseState,setbackState];
+    const passCount=states.filter(x=>x==="pass").length;
+    const failCount=states.filter(x=>x==="fail").length;
+    const unavailableCount=states.filter(x=>x==="warn").length;
+    setResultCounts(passCount,failCount,unavailableCount,manualCount,true);
 
-    if(!hardGeometryPass){
+    const hardGeometryFail=!insideProperty||!noHouseOverlap||(canGeometry&&!insideSafe);
+
+    if(hardGeometryFail){
       setHero(
         "fail",
-        "Move the coop before relying on this layout.",
+        "Geometry FAIL — move the coop before relying on this layout.",
         !insideProperty
-          ?"The proposed coop is not fully inside the property."
+          ?"The proposed coop is not fully inside the drawn property."
           :!noHouseOverlap
-            ?"The proposed coop overlaps the house."
-            :"The proposed coop crosses the conservative setback zone."
+            ?"The proposed coop overlaps the drawn house."
+            :"The proposed coop crosses the conservative property-line setback."
       );
       return;
     }
 
-    if(extraManual){
+    if(!canGeometry){
       setHero(
         "manual",
-        "Geometry looks good, but one rule still needs manual verification.",
-        "CoopCheck cannot yet verify every yard-position, neighboring-building or parcel-specific rule for "+c.name+"."
+        "Partial geometry check — one setback rule is not automated yet.",
+        "The property and house-overlap checks pass, but "+c.name+" needs additional geometry or parcel data before CoopCheck can evaluate the setback."
+      );
+      return;
+    }
+
+    const needsExtraPlacement=p.rearOnly||p.rearHalf;
+
+    if(needsExtraPlacement){
+      setHero(
+        "manual",
+        "Geometry PASS — property-line checks pass, with one placement rule still to verify.",
+        "The proposed coop clears the conservative boundary and house checks. Confirm the city's yard-position rule before relying on this layout."
       );
       return;
     }
 
     setHero(
       "pass",
-      "PASS — this coop clears the checks CoopCheck can calculate.",
+      "Geometry PASS — the drawn coop clears the checks CoopCheck can calculate.",
       boundaryDistance===null
-        ?"The proposed coop is inside the conservative legal zone and does not overlap the house."
+        ?"The coop is inside the conservative property-line zone and does not overlap the house."
         :"Nearest drawn property line: "+fmtFt(boundaryDistance)+" · conservative requirement: "+fmtFt(required)+" · margin: "+(margin>=0?"+":"")+fmtFt(margin)+"."
     );
   }
-
   function refreshGeometry(){
     renderSafeZone();
     updateDrawSummary();
@@ -467,6 +580,20 @@
     map.addSource("safe-zone",{type:"geojson",data:emptyFeatureCollection()});
     map.addLayer({id:"safe-zone-fill",type:"fill",source:"safe-zone",paint:{"fill-color":"#16a34a","fill-opacity":0.22}});
     map.addLayer({id:"safe-zone-line",type:"line",source:"safe-zone",paint:{"line-color":"#15803d","line-width":2,"line-dasharray":[2,2]}});
+
+    map.addSource("house-exclusion",{type:"geojson",data:emptyFeatureCollection()});
+    map.addLayer({
+      id:"house-exclusion-fill",
+      type:"fill",
+      source:"house-exclusion",
+      paint:{"fill-color":"#59636d","fill-opacity":0.66}
+    });
+    map.addLayer({
+      id:"house-exclusion-line",
+      type:"line",
+      source:"house-exclusion",
+      paint:{"line-color":"#414952","line-width":2.5}
+    });
 
     map.addSource("draft-shape",{type:"geojson",data:emptyFeatureCollection()});
     const draftRoleColor=[
