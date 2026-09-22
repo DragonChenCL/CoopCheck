@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Backyard coop planning illustration">
+  <rect x="22" y="25" width="276" height="170" rx="28" fill="#F4F8F1"/>
+  <path d="M62 118L132 68l70 50v58H62v-58z" fill="#FFFFFF" stroke="#2F6B45" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M94 176v-42h44v42" fill="#E8F3EB" stroke="#2F6B45" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M48 119L132 58l84 61" fill="none" stroke="#2F6B45" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M185 160h64v25h-64z" fill="#F2C56B" stroke="#8C6A35" stroke-width="4" rx="5"/>
+  <path d="M194 160v-20l23-17 23 17v20" fill="#FFF7E7" stroke="#8C6A35" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M221 154c0-9 6-16 14-16 6 0 11 4 13 10-2-1-4-1-6-1 0 7-5 12-11 12-4 0-8-2-10-5z" fill="#F4D07E" stroke="#2F6B45" stroke-width="3"/>
+  <circle cx="237" cy="145" r="1.8" fill="#1F2D23"/>
+  <path d="M248 149l8 3-8 3" fill="#D88941"/>
+  <path d="M42 188h231" stroke="#C8D9CA" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="74" cy="62" r="13" fill="#E8F3EB"/>
+  <path d="M74 54v16M66 62h16" stroke="#2F6B45" stroke-width="3" stroke-linecap="round"/>
+</svg>
