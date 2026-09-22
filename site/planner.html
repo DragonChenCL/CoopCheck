@@ -6,12 +6,20 @@
     <button class="btn" id="findAddress">Find address</button>
   </div>
   <div class="small" style="margin:8px 0 12px">Resolved address: <strong id="resolvedAddress">—</strong></div>
+  <div class="draw-steps no-print">
+    <div class="draw-step"><span>1</span><strong>Find your address</strong><small>Zoom to the right property</small></div>
+    <div class="draw-step"><span>2</span><strong>Outline your lot</strong><small>Click each property corner</small></div>
+    <div class="draw-step"><span>3</span><strong>Outline the house</strong><small>Trace the building footprint</small></div>
+    <div class="draw-step"><span>4</span><strong>Place the coop</strong><small>Draw where you want it</small></div>
+  </div>
   <div class="map-toolbar no-print">
-    <button class="btn secondary" id="drawProperty">① Draw property</button>
-    <button class="btn secondary" id="drawHouse">② Draw house</button>
-    <button class="btn secondary" id="drawCoop">③ Draw coop</button>
+    <button class="btn secondary" id="drawProperty">② Draw property</button>
+    <button class="btn secondary" id="drawHouse" disabled>③ Draw house</button>
+    <button class="btn secondary" id="drawCoop" disabled>④ Draw coop</button>
+    <button class="btn finish-shape" id="finishShape" hidden>✓ Finish shape</button>
     <button class="btn secondary" id="clearMap">Clear map</button>
   </div>
+  <div class="drawing-help no-print"><strong>How to draw:</strong> click each corner of the shape on the map, then press <b>Finish shape</b>. You can also double-click the last point.</div>
   <div class="map-shell"><div id="map"></div></div>
   <div class="map-legend"><span><i class="legend-dot property"></i>Property</span><span><i class="legend-dot house"></i>House</span><span><i class="legend-dot coop"></i>Coop</span><span><i class="legend-dot safe"></i>Conservative safe zone</span></div>
   <div id="mapStatus" class="map-status">Loading map…</div>
