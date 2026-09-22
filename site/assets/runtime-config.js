@@ -1,0 +1,1 @@
+window.COOPCHECK_MAPBOX_TOKEN='';
