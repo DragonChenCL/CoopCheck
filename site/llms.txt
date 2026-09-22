@@ -1,0 +1,10 @@
+# CoopCheck
+
+Free informational backyard chicken rule checker and basic coop setback planning tool.
+
+Main pages:
+- / — supported city overview
+- /planner.html — free rectangular-lot setback planner
+- /cities/*.html — city-specific rule summaries with official source links
+
+Always verify current official city/county code, zoning, parcel-specific requirements and HOA/CC&R restrictions.
