@@ -30,6 +30,30 @@ jobs:
         run: |
           node -e "require('fs').writeFileSync('site/assets/runtime-config.js', 'window.COOPCHECK_MAPBOX_TOKEN=' + JSON.stringify(process.env.MAPBOX_TOKEN || '') + ';\n')"
 
+      - name: Inject GA4 into static pages
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const root = 'site';
+          const tag = '<script src="/assets/analytics.js"></script>';
+          function walk(dir) {
+            for (const name of fs.readdirSync(dir)) {
+              const p = path.join(dir, name);
+              const stat = fs.statSync(p);
+              if (stat.isDirectory()) walk(p);
+              else if (name.endsWith('.html')) {
+                let html = fs.readFileSync(p, 'utf8');
+                if (!html.includes('/assets/analytics.js')) {
+                  html = html.replace('</head>', tag + '</head>');
+                  fs.writeFileSync(p, html);
+                }
+              }
+            }
+          }
+          walk(root);
+          NODE
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
