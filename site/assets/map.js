@@ -49,6 +49,25 @@
   let draftCoords=[];
   let currentSafeZone=null;
   let lastTouchPointAt=0;
+  let lastGeometryAnalyticsState=null;
+
+  function track(name,params){
+    if(typeof window.coopTrack==="function"){
+      window.coopTrack(name,params||{});
+    }
+  }
+
+  function analyticsInputMethod(){
+    return window.matchMedia&&window.matchMedia("(pointer: coarse)").matches?"touch":"pointer";
+  }
+
+  function trackGeometryState(name,params){
+    const c=city();
+    const key=name+"|"+(c?.slug||"");
+    if(lastGeometryAnalyticsState===key)return;
+    lastGeometryAnalyticsState=key;
+    track(name,Object.assign({city_slug:c?.slug||""},params||{}));
+  }
 
   function city(){
     const list=window.COOP_CITIES||[];
@@ -178,6 +197,10 @@
 
     pendingRole=role;
     draftCoords=[];
+    track(role+"_draw_start",{
+      city_slug:city()?.slug||"",
+      input_method:analyticsInputMethod()
+    });
     setDrawingUI(true,role);
     updateDraft();
 
@@ -209,7 +232,14 @@
     setDrawingUI(false,role);
     updateDraft();
     draw.changeMode("simple_select");
+    if(role==="coop")lastGeometryAnalyticsState=null;
     refreshGeometry();
+
+    track(role+"_draw_complete",{
+      city_slug:city()?.slug||"",
+      point_count:closed.length-1,
+      area_sq_ft:Math.round(areaSqFt(featureFor(role)))
+    });
 
     const next=role==="property"
       ?"Next: Draw house is now enabled."
@@ -546,6 +576,17 @@
     const hardGeometryFail=!insideProperty||!noHouseOverlap||(canGeometry&&!insideSafe);
 
     if(hardGeometryFail){
+      const failureReason=!insideProperty
+        ?"outside_property"
+        :!noHouseOverlap
+          ?"house_overlap"
+          :"setback";
+      trackGeometryState("geometry_check_fail",{
+        failure_reason:failureReason,
+        boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10,
+        required_setback_ft:Math.round(required*10)/10,
+        margin_ft:margin===null?undefined:Math.round(margin*10)/10
+      });
       setHero(
         "fail",
         "Geometry FAIL — move the coop before relying on this layout.",
@@ -559,6 +600,10 @@
     }
 
     if(!canGeometry){
+      trackGeometryState("geometry_check_manual",{
+        reason:"rule_not_automated",
+        boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10
+      });
       setHero(
         "manual",
         "Partial geometry check — one setback rule is not automated yet.",
@@ -570,6 +615,12 @@
     const needsExtraPlacement=p.rearOnly||p.rearHalf;
 
     if(needsExtraPlacement){
+      trackGeometryState("geometry_check_manual",{
+        reason:p.rearOnly?"rear_yard":"rear_half",
+        boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10,
+        required_setback_ft:Math.round(required*10)/10,
+        margin_ft:margin===null?undefined:Math.round(margin*10)/10
+      });
       setHero(
         "manual",
         "Geometry PASS — property-line checks pass, with one placement rule still to verify.",
@@ -578,6 +629,11 @@
       return;
     }
 
+    trackGeometryState("geometry_check_pass",{
+      boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10,
+      required_setback_ft:Math.round(required*10)/10,
+      margin_ft:margin===null?undefined:Math.round(margin*10)/10
+    });
     setHero(
       "pass",
       "Geometry PASS — the drawn coop clears the checks CoopCheck can calculate.",
@@ -603,6 +659,7 @@
     cancelDraft();
     draw.deleteAll();
     currentSafeZone=null;
+    lastGeometryAnalyticsState=null;
     map.getSource("safe-zone")?.setData(emptyFeatureCollection());
     refreshGeometry();
     setMapStatus("Map cleared. Search an address or draw a new property.","");
@@ -666,6 +723,11 @@
     const q=(input?.value||"").trim();
     if(!q)return;
 
+    track("address_search",{
+      query_length:q.length,
+      city_slug:city()?.slug||""
+    });
+
     const btn=$("findAddress");
     btn.disabled=true;
     btn.textContent="Finding…";
@@ -693,9 +755,15 @@
       const lower=label.toLowerCase();
       const matched=(window.COOP_CITIES||[]).find(c=>lower.includes(c.name.toLowerCase()));
 
+      track("address_search_success",{
+        matched_city:!!matched,
+        city_slug:matched?.slug||""
+      });
+
       if(matched){
         $("city").value=matched.slug;
         $("city").dispatchEvent(new Event("change"));
+        track("city_rule_matched",{city_slug:matched.slug,state:matched.state});
         setMapStatus("Address found. Matched "+matched.name+" rules. Click Draw property to outline the lot.","good");
       }else{
         setMapStatus("Address found. This city is not in our verified rule set yet; use supported city rules only for testing.","");
