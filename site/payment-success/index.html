@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Payment confirmation | CoopCheck</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css?v=20260922-mobile1">
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark"><img src="/assets/logo-mark.svg" alt="" width="36" height="36"></span>CoopCheck</a></div></header>
+<main class="section">
+  <div class="container" style="max-width:760px">
+    <section class="panel" style="text-align:center">
+      <span class="eyebrow">Secure payment</span>
+      <h1 id="paymentTitle">Confirming your payment…</h1>
+      <p class="lead" id="paymentMessage">We are waiting for the payment confirmation from Waffo.</p>
+      <a class="btn" id="backToPlanner" href="/planner.html" hidden>Back to your report</a>
+    </section>
+  </div>
+</main>
+<script>
+(function(){
+  const GATEWAY="https://payment-gateway.chenlongqrr.workers.dev";
+  const APP="coopcheck";
+  const SKU="permit-report";
+  const params=new URLSearchParams(location.search);
+  const payment=params.get("payment");
+  const title=document.getElementById("paymentTitle");
+  const message=document.getElementById("paymentMessage");
+  const back=document.getElementById("backToPlanner");
+
+  function showBack(){
+    back.hidden=false;
+  }
+
+  async function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
+
+  async function run(){
+    if(!payment){
+      title.textContent="Payment reference missing";
+      message.textContent="Return to the planner and start checkout again.";
+      showBack();
+      return;
+    }
+
+    let record=null;
+    try{
+      record=JSON.parse(localStorage.getItem("coopcheck:payment:"+payment)||"null");
+    }catch(_){}
+
+    if(!record?.accessToken){
+      title.textContent="We could not restore this purchase";
+      message.textContent="This browser does not have the checkout token. Return to the planner and try again.";
+      showBack();
+      return;
+    }
+
+    for(let attempt=0;attempt<8;attempt++){
+      try{
+        const res=await fetch(GATEWAY+"/entitlement",{
+          headers:{Authorization:"Bearer "+record.accessToken}
+        });
+        if(res.ok){
+          const data=await res.json();
+          if(data.granted===true&&data.app===APP&&data.sku===SKU&&data.referenceId===record.referenceId){
+            localStorage.setItem("coopcheck:entitlement:"+SKU+":"+record.referenceId,JSON.stringify(record));
+            localStorage.setItem("coopcheck:project-id",record.referenceId);
+            title.textContent="Payment confirmed";
+            message.textContent="Your full CoopCheck planning report is unlocked.";
+            back.href="/planner.html?paid=1";
+            showBack();
+            return;
+          }
+          if(data.status==="refunded"){
+            title.textContent="Payment was refunded";
+            message.textContent="This report entitlement is no longer active.";
+            showBack();
+            return;
+          }
+        }
+      }catch(e){
+        console.warn("Payment verification retry",e);
+      }
+      await sleep(1200);
+    }
+
+    title.textContent="Payment is still processing";
+    message.textContent="Your payment may be complete, but confirmation has not reached CoopCheck yet. Return to the planner and it will check again.";
+    showBack();
+  }
+
+  run();
+})();
+</script>
+</body>
+</html>
