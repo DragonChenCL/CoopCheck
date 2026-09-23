@@ -241,6 +241,13 @@
       area_sq_ft:Math.round(areaSqFt(featureFor(role)))
     });
 
+    if(role==="coop"){
+      track("geometry_check_complete",{
+        city_slug:city()?.slug||"",
+        coop_area_sq_ft:Math.round(areaSqFt(featureFor("coop")))
+      });
+    }
+
     const next=role==="property"
       ?"Next: Draw house is now enabled."
       :role==="house"
