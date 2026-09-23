@@ -59,7 +59,11 @@
 
     try{
       const u=new URL(a.href,location.href);
-      if(/^https?:$/.test(u.protocol)&&u.hostname!==location.hostname){
+      const isOfficialSource=
+        a.id==="source"||
+        !!a.closest(".source-box")||
+        /official/i.test(text);
+      if(/^https?:$/.test(u.protocol)&&u.hostname!==location.hostname&&isOfficialSource){
         window.coopTrack("official_source_click",{
           link_text:text,
           outbound_host:u.hostname,
