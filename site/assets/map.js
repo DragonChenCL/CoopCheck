@@ -49,6 +49,7 @@
   let draftCoords=[];
   let currentSafeZone=null;
   let lastTouchPointAt=0;
+  let lastGeometryEventKey="";
   let lastGeometryAnalyticsState=null;
 
   function track(name,params){
@@ -227,6 +228,13 @@
 
     const id=ids&&ids[0];
     if(id)draw.setFeatureProperty(id,"role",role);
+
+    const completedFeature=id?draw.get(id):featureFor(role);
+    window.coopTrack?.(role+"_draw_complete",{
+      city_slug:city()?.slug,
+      point_count:Math.max(0,closed.length-1),
+      area_sq_ft:Math.round(areaSqFt(completedFeature))
+    });
 
     draftCoords=[];
     setDrawingUI(false,role);
@@ -466,6 +474,16 @@
     hero.innerHTML="<strong>"+title+"</strong><span>"+detail+"</span>";
   }
 
+  function trackGeometryResult(type,params){
+    const c=city();
+    const key=type+"|"+(c?.slug||"")+"|"+JSON.stringify(params||{});
+    if(key===lastGeometryEventKey)return;
+    lastGeometryEventKey=key;
+    window.coopTrack?.("geometry_check_"+type,Object.assign({
+      city_slug:c?.slug
+    },params||{}));
+  }
+
   function updateDrawSummary(){
     const property=featureFor("property");
     const house=featureFor("house");
@@ -594,6 +612,13 @@
         required_setback_ft:Math.round(required*10)/10,
         margin_ft:margin===null?undefined:Math.round(margin*10)/10
       });
+      trackGeometryResult("fail",{
+        nearest_boundary_ft:boundaryDistance===null?undefined:Number(boundaryDistance.toFixed(1)),
+        required_setback_ft:required,
+        inside_property:insideProperty,
+        house_clear:noHouseOverlap,
+        setback_clear:canGeometry?insideSafe:undefined
+      });
       setHero(
         "fail",
         "Geometry FAIL — move the coop before relying on this layout.",
@@ -610,6 +635,10 @@
       trackGeometryState("geometry_check_manual",{
         reason:"rule_not_automated",
         boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10
+      });
+      trackGeometryResult("manual",{
+        reason:"setback_not_automated",
+        nearest_boundary_ft:boundaryDistance===null?undefined:Number(boundaryDistance.toFixed(1))
       });
       setHero(
         "manual",
@@ -628,6 +657,11 @@
         required_setback_ft:Math.round(required*10)/10,
         margin_ft:margin===null?undefined:Math.round(margin*10)/10
       });
+      trackGeometryResult("manual",{
+        reason:p.rearOnly?"rear_yard":"rear_half",
+        nearest_boundary_ft:boundaryDistance===null?undefined:Number(boundaryDistance.toFixed(1)),
+        required_setback_ft:required
+      });
       setHero(
         "manual",
         "Geometry PASS — property-line checks pass, with one placement rule still to verify.",
@@ -640,6 +674,11 @@
       boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10,
       required_setback_ft:Math.round(required*10)/10,
       margin_ft:margin===null?undefined:Math.round(margin*10)/10
+    });
+    trackGeometryResult("pass",{
+      nearest_boundary_ft:boundaryDistance===null?undefined:Number(boundaryDistance.toFixed(1)),
+      required_setback_ft:required,
+      setback_margin_ft:margin===null?undefined:Number(margin.toFixed(1))
     });
     setHero(
       "pass",
@@ -736,6 +775,7 @@
     });
 
     const btn=$("findAddress");
+    window.coopTrack?.("address_search",{query_length:q.length});
     btn.disabled=true;
     btn.textContent="Finding…";
     setMapStatus("Searching Mapbox for that address…","drawing");
@@ -758,6 +798,9 @@
       const props=f.properties||{};
       const label=props.full_address||props.name||q;
       $("resolvedAddress").textContent=label;
+      window.coopTrack?.("address_search_success",{
+        result_label:label.slice(0,100)
+      });
 
       const lower=label.toLowerCase();
       const matched=(window.COOP_CITIES||[]).find(c=>lower.includes(c.name.toLowerCase()));
@@ -768,6 +811,11 @@
       });
 
       if(matched){
+        window.coopTrack?.("city_rule_matched",{
+          city_slug:matched.slug,
+          city_name:matched.name,
+          state:matched.state
+        });
         $("city").value=matched.slug;
         $("city").dispatchEvent(new Event("change"));
         track("city_rule_matched",{city_slug:matched.slug,state:matched.state});
