@@ -29,7 +29,5 @@
   }
 
   sel.addEventListener("change",apply);
-  $("print")?.addEventListener("click",()=>window.print());
-
   apply();
 })();
