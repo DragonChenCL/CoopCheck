@@ -50,3 +50,17 @@
 .map-toolbar .btn{min-height:42px}
 @media(max-width:560px){.map-toolbar{display:grid;grid-template-columns:1fr 1fr}.map-toolbar .btn{width:100%;font-size:12px;padding:9px 6px}.map-toolbar .finish-shape{grid-column:span 2}}
 @media print{.report-preview{break-inside:avoid}.map-status,.draw-steps,#saveStatus,#addressRuleMatch{display:none!important}#source{overflow-wrap:anywhere}}
+
+/* State comparisons and honest feature previews */
+.comparison-overflow{overflow-x:auto}
+.city-comparison{width:100%;border-collapse:collapse;min-width:690px;font-size:14px;line-height:1.55}
+.city-comparison th,.city-comparison td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.city-comparison thead th{background:#eef5ee}
+.city-comparison th[scope=row]{white-space:nowrap}
+.comparison-link{margin-top:7px;font-weight:800}
+.planner-showcase{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,1fr);gap:32px;align-items:center}
+.planner-showcase img,.planner-preview-intro img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.planner-preview-intro{max-width:760px;margin:18px 0}.planner-preview-intro img{max-height:230px;object-fit:cover;object-position:center}
+.project-tools{margin:10px 0;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:#f7fbf5}
+.project-tools summary{cursor:pointer;font-weight:800}.project-tools .map-toolbar{margin:13px 0}
+@media(max-width:850px){.planner-showcase{grid-template-columns:1fr}.planner-preview-intro img{max-height:190px}}

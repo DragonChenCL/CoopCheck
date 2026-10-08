@@ -38,3 +38,17 @@ assert(payment.includes("window.CoopPlanner?.isReady()"),"print requires sketch 
 const cityDataSource=read("assets/data.js");
 assert((cityDataSource.match(/slug:"/g)||[]).length===18,"18 supported cities maintained");
 console.log("PASS: CoopCheck planner, payment and analytics integration static checks");
+
+for (const state of ["oregon","arizona","california"]){
+  const html=read("states/"+state+".html");
+  assert(html.includes('class="city-comparison"'),"state rule table exists: "+state);
+  assert(html.includes("Manual")||html.includes("manual"),"manual verification called out in "+state);
+}
+for(const page of ["index.html","planner.html"])assert(read(page).includes("planner-preview.svg"),"preview exists on "+page);
+assert(read("assets/planner-preview.svg").includes("Schematic only"),"preview explicitly illustrative");
+for(const slug of ["chandler-az","denver-co","mesa-az","portland-or","san-diego-ca","seattle-wa"])
+  assert(!read("cities/"+slug+".html").includes("rectangular lot and manually entered house"),"stale planner copy removed: "+slug);
+assert(read("planner.html").includes('id="importProject"')&&read("planner.html").includes('id="exportGeoJSON"'),"backup tools present");
+for(const js of ["map.js","project.js","rules.js","planner.js","payment.js","analytics.js"])
+  new Function(read("assets/"+js)); // Syntax-only QA, no network, no billing calls.
+console.log("PASS: JS syntax, six city pages and SEO state comparisons");

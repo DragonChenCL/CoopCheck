@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="460" viewBox="0 0 940 460" role="img" aria-labelledby="title desc">
+<title id="title">CoopCheck map drawing schematic</title><desc id="desc">Illustration only: blue lot boundary, gray house footprint, green conservative placement area, orange proposed coop.</desc>
+<rect width="940" height="460" rx="24" fill="#ecf2e8"/><path d="M0 70H940M0 170H940M0 275H940M0 365H940" stroke="#dae5d4" stroke-width="5"/><path d="M85 0V460M260 0V460M435 0V460M615 0V460M795 0V460" stroke="#dae5d4" stroke-width="5"/>
+<path d="M110 70L820 65L850 390L125 405Z" fill="#e8f0ff" fill-opacity=".7" stroke="#2563eb" stroke-width="8" stroke-linejoin="round"/>
+<path d="M177 140L752 135L764 319L187 330Z" fill="#d2f2d8" fill-opacity=".76" stroke="#16a34a" stroke-width="6" stroke-dasharray="13 9" stroke-linejoin="round"/>
+<path d="M300 147L530 143L540 287L312 294Z" fill="#94a3b8" stroke="#475569" stroke-width="6"/>
+<path d="M641 206L720 205L720 277L643 278Z" fill="#fb923c" stroke="#c2410c" stroke-width="6" />
+<rect x="36" y="24" width="276" height="42" rx="12" fill="#fff" fill-opacity=".96"/><text x="55" y="52" font-family="Arial,sans-serif" font-size="21" fill="#24362b" font-weight="bold">Example drawn layout</text>
+<g font-family="Arial,sans-serif" font-size="19" font-weight="bold"><text x="127" y="103" fill="#1d4ed8">Lot boundary</text><text x="326" y="221" fill="#fff">House</text><text x="621" y="194" fill="#a3410a">Coop</text><text x="220" y="367" fill="#166534">Conservative area</text></g>
+<text x="580" y="433" font-family="Arial,sans-serif" font-size="16" fill="#455a49">Schematic only · not surveyed land</text>
+</svg>
