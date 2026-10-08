@@ -76,6 +76,10 @@
       $("complianceHero")?.scrollIntoView({behavior:"smooth",block:"center"});
       return;
     }
+    if(planner.jurisdictionStatus?.()==="mismatch"){
+      setStatus("The selected city rules conflict with your searched address. Re-select the correct city or search again before purchasing.");
+      return;
+    }
     if(!planner.save()){
       setStatus("Your drawing could not be saved locally. Export a backup or free up browser storage before checkout. No payment has been started.");
       return;

@@ -166,6 +166,7 @@
   window.CoopPlanner={
     save:saveSnapshot,
     isReady:()=>mapLoaded&&["property","house","coop"].every(role=>!invalidPolygon(featureFor(role))),
+    jurisdictionStatus:()=>verifiedAddressCity?(addressMatchesRules()?"matched":"mismatch"):"unverified",
     projectId:()=>projectId
   };
 
