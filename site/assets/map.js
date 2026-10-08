@@ -865,14 +865,12 @@
     const input=$("addressSearch");
     const q=(input?.value||"").trim();
     if(!q)return;
+    verifiedAddressCity="";
+    updateAddressMatchNotice();
 
-    track("address_search",{
-      query_length:q.length,
-      city_slug:city()?.slug||""
-    });
+    track("address_search",{query_length:q.length,city_slug:city()?.slug||""});
 
     const btn=$("findAddress");
-    window.coopTrack?.("address_search",{query_length:q.length});
     btn.disabled=true;
     btn.textContent="Finding…";
     setMapStatus("Searching Mapbox for that address…","drawing");
@@ -895,32 +893,26 @@
       const props=f.properties||{};
       const label=props.full_address||props.name||q;
       $("resolvedAddress").textContent=label;
-      window.coopTrack?.("address_search_success",{
-        result_label:label.slice(0,100)
-      });
+      // Never infer the jurisdiction from a substring of the freeform address.
+      // Also avoid sending the complete street address to analytics.
+      const matched=window.CoopRules.cityFromGeocode(f,window.COOP_CITIES||[]);
+      verifiedAddressCity=matched?.slug||"";
 
-      const lower=label.toLowerCase();
-      const matched=(window.COOP_CITIES||[]).find(c=>lower.includes(c.name.toLowerCase()));
-
-      track("address_search_success",{
-        matched_city:!!matched,
-        city_slug:matched?.slug||""
-      });
+      track("address_search_success",{matched_city:!!matched,city_slug:matched?.slug||""});
 
       if(matched){
-        window.coopTrack?.("city_rule_matched",{
-          city_slug:matched.slug,
-          city_name:matched.name,
-          state:matched.state
-        });
         $("city").value=matched.slug;
         $("city").dispatchEvent(new Event("change"));
         track("city_rule_matched",{city_slug:matched.slug,state:matched.state});
-        setMapStatus("Address found. Matched "+matched.name+" rules. Click Draw property to outline the lot.","good");
+        setMapStatus("Address found in "+matched.name+", "+matched.state+". Confirm the actual parcel and city boundary before planning.","good");
+        saveSnapshot();
       }else{
-        setMapStatus("Address found. This city is not in our verified rule set yet; use supported city rules only for testing.","");
+        setMapStatus("Address found, but we cannot verify its city AND state against the supported rules. No city was auto-selected. Choose rules manually and confirm the jurisdiction.","bad");
+        saveSnapshot();
       }
     }catch(err){
+      verifiedAddressCity="";
+      updateAddressMatchNotice();
       setMapStatus(err.message||"Could not find that address.","bad");
     }finally{
       btn.disabled=false;
