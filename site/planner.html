@@ -2,7 +2,7 @@
 
 <div class="planner-preview-intro no-print"><img src="assets/planner-preview.svg" width="940" height="460" loading="lazy" alt="Illustrative property, house and coop polygons with an estimated safe zone"><p class="small">Example diagram only. Your real parcel lines must be traced and legally verified; address lookup does not retrieve a survey.</p></div><section class="panel map-panel">
   <div class="map-search-row no-print">
-    <input id="addressSearch" type="search" placeholder="Enter a U.S. street address">
+    <input id="addressSearch" type="search" aria-label="Street address to locate your property" autocomplete="street-address" placeholder="Enter a U.S. street address">
     <button class="btn" id="findAddress">Find address</button>
   </div>
   <div class="small" style="margin:8px 0 12px">Resolved address: <strong id="resolvedAddress">—</strong></div>
@@ -20,7 +20,7 @@
     <button class="btn secondary" id="undoPoint">Undo last point</button><button class="btn secondary" id="clearMap">Clear map</button>
   </div>
   <details class="project-tools no-print"><summary>Save, import or export a drawing</summary><div class="map-toolbar"><button class="btn secondary" id="saveProject">Save on this browser</button><button class="btn secondary" id="exportProject">Export CoopCheck JSON</button><button class="btn secondary" id="importProject">Import JSON</button><button class="btn secondary" id="exportGeoJSON">Export GeoJSON</button><input id="importFile" type="file" accept=".json,application/json" hidden></div><p class="small">JSON includes your drawing and selected settings. GeoJSON includes the three drawn shapes. Imported addresses must be rechecked; no payment data is included.</p></details><div id="saveStatus" class="small no-print" role="status">Your drawing will be saved automatically in this browser; it will return after checkout. Export a JSON backup if you change devices.</div><div class="drawing-help no-print"><strong>How to draw:</strong> tap or click each corner of the shape on the map, then press <b>Finish shape</b>. While drawing on a phone, map panning and pinch-zoom are temporarily disabled so each tap places a point.</div>
-  <div class="map-shell"><div id="map"></div><button class="btn mobile-finish-shape no-print" id="finishShapeMobile" hidden>Finish shape</button></div>
+  <div class="map-shell"><div id="map" aria-label="Interactive satellite map: choose drawing tools above to trace parcel, house, and coop"></div><button class="btn mobile-finish-shape no-print" id="finishShapeMobile" hidden>Finish shape</button></div>
   <div class="map-legend"><span><i class="legend-dot property"></i>Property</span><span><i class="legend-dot house"></i>House</span><span><i class="legend-dot coop"></i>Coop</span><span><i class="legend-dot safe"></i>Conservative safe zone</span></div>
   <div id="mapStatus" class="map-status" role="status" aria-live="polite">Loading map…</div><div id="addressRuleMatch" class="map-status" role="status">Address jurisdiction not yet verified. Selected rules are illustrative until confirmed.</div>
   <div class="map-stats">
@@ -35,13 +35,13 @@
 
 <div class="planner-layout">
   <aside class="panel planner-controls">
-    <div class="field"><label>City rules</label><select id="city"></select></div>
+    <div class="field"><label for="city">City rules</label><select id="city"></select></div>
     <div id="mode" class="pill"></div><p id="ruleScope" class="small">Rule support is for drawn property-line geometry only. Permits, zoning, HOA and parcel boundaries are not automated.</p>
     <div class="notice" id="cityRule" style="margin:14px 0"></div>
     <h3>Property-line setbacks used</h3>
     <p class="small">These values come from our city rule dataset. Edit them only if you are testing a different interpretation or parcel-specific requirement.</p>
-    <div class="field-row"><div class="field"><label>Side (ft)</label><input id="sideSetback" type="number" min="0"></div><div class="field"><label>Rear (ft)</label><input id="rearSetback" type="number" min="0"></div></div>
-    <div class="field"><label>Front (ft)</label><input id="frontSetback" type="number" min="0"></div>
+    <div class="field-row"><div class="field"><label for="sideSetback">Side (ft)</label><input id="sideSetback" type="number" min="0"></div><div class="field"><label for="rearSetback">Rear (ft)</label><input id="rearSetback" type="number" min="0"></div></div>
+    <div class="field"><label for="frontSetback">Front (ft)</label><input id="frontSetback" type="number" min="0"></div>
     <a id="source" target="_blank" rel="noopener"></a>
   </aside>
 
