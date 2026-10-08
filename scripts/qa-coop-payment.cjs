@@ -4,7 +4,7 @@ const vm=require("node:vm");
 const fs=require("node:fs");
 const source=fs.readFileSync(require("node:path").join(__dirname,"../site/assets/payment.js"),"utf8");
 const flush=()=>new Promise(r=>setTimeout(r,0));
-function harness({ready=false,save=false,response=null,token=null}={}){
+function harness({ready=false,save=false,response=null,token=null,jurisdiction="unverified"}={}){
   const db=new Map();
   const listeners={};
   const button={textContent:"",disabled:false,addEventListener:(name,fn)=>{listeners[name]=fn;}};
@@ -14,7 +14,7 @@ function harness({ready=false,save=false,response=null,token=null}={}){
   const events=[],calls=[];
   const localStorage={getItem:key=>db.get(key)||null,setItem:(key,value)=>db.set(key,value)};
   let printed=0;
-  const window={CoopPlanner:{isReady:()=>ready,save:()=>save},coopTrack:(name,params)=>events.push(name),print:()=>{printed++;}};
+  const window={CoopPlanner:{isReady:()=>ready,save:()=>save,jurisdictionStatus:()=>jurisdiction},coopTrack:(name,params)=>events.push(name),print:()=>{printed++;}};
   const location={href:"https://coopcheck.serunio.com/planner.html"};
   const fetch=async(url,options)=>{
     calls.push({url,options});
@@ -34,6 +34,9 @@ function harness({ready=false,save=false,response=null,token=null}={}){
   const unsaved=harness({ready:true,save:false});
   await flush();unsaved.click();await flush();
   assert.equal(unsaved.calls.length,0,"sketch not persisted must never begin checkout");
+  const mismatch=harness({ready:true,save:true,jurisdiction:"mismatch"});
+  await flush();mismatch.click();await flush();
+  assert.equal(mismatch.calls.length,0,"known city/state mismatch must block checkout");
   const rejected=harness({ready:true,save:true});
   await flush();rejected.click();await flush();await flush();
   assert.equal(rejected.calls.filter(c=>c.url.endsWith("/checkout")).length,1,"mock checkout attempted");
