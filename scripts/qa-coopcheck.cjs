@@ -35,6 +35,6 @@ assert(!map.includes('window.coopTrack?.(role+"_draw_complete"'),"no duplicate d
 const payment=read("assets/payment.js");
 assert(payment.includes("planner.save()") && payment.includes("planner?.isReady()"),"payment requires saving a complete sketch");
 assert(payment.includes("window.CoopPlanner?.isReady()"),"print requires sketch restoration");
-const data=read("assets/data.js");
-assert((data.match(/slug:"/g)||[]).length===18,"18 supported cities maintained");
+const cityDataSource=read("assets/data.js");
+assert((cityDataSource.match(/slug:"/g)||[]).length===18,"18 supported cities maintained");
 console.log("PASS: CoopCheck planner, payment and analytics integration static checks");
