@@ -27,6 +27,9 @@ jobs:
       - name: Verify planner and payment regression checks
         run: node scripts/qa-coopcheck.cjs
 
+      - name: Verify mocked payment flow without charge
+        run: node scripts/qa-coop-payment.cjs
+
       - name: Build runtime config
         env:
           MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
