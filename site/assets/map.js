@@ -165,7 +165,7 @@
   }
   window.CoopPlanner={
     save:saveSnapshot,
-    isReady:()=>mapLoaded&&!!featureFor("property")&&!!featureFor("house")&&!!featureFor("coop"),
+    isReady:()=>mapLoaded&&["property","house","coop"].every(role=>!invalidPolygon(featureFor(role))),
     projectId:()=>projectId
   };
 
@@ -435,6 +435,15 @@
     }
   }
 
+  function invalidPolygon(f){
+    if(!f||f.geometry?.type!=="Polygon"||areaSqFt(f)<1)return true;
+    try {
+      if(typeof turf.kinks==="function"&&turf.kinks(f).features.length)return true;
+      if(typeof turf.booleanValid==="function"&&!turf.booleanValid(f))return true;
+      return false;
+    }catch(e){return true;}
+  }
+
   function polygonsDisjoint(a,b){
     if(!a||!b)return true;
     try{
@@ -559,11 +568,11 @@
     if(!el)return;
 
     if(!ready){
-      el.textContent="0/3 geometry checks complete · "+manualCount+" items still need verification";
+      el.textContent="0/4 geometry checks complete · "+manualCount+" items still need verification";
       return;
     }
 
-    const parts=[passCount+"/3 geometry checks passed"];
+    const parts=[passCount+"/4 geometry checks passed"];
     if(failCount)parts.push(failCount+" failed");
     if(unavailableCount)parts.push(unavailableCount+" not automated");
     parts.push(manualCount+" items still need verification");
@@ -654,17 +663,30 @@
       );
       setCheck("checkProperty","pending","Draw the property and coop first.");
       setCheck("checkHouse","pending","Draw the house and coop first.");
+      setCheck("checkHouseWithin","pending","Draw a lot boundary and a house footprint first.");
       setCheck("checkSetback","pending","Draw the property and coop first.");
       setResultCounts(0,0,0,manualCount,false);
       return;
     }
 
+    if([property,house,coop].some(invalidPolygon)){
+      setHero("fail","Invalid drawing — correct intersecting or degenerate boundaries.","A drawn polygon has crossing edges or zero area. Edit its vertices and try again.");
+      setCheck("checkHouseWithin","warn","One or more shapes needs correction.");
+      setCheck("checkProperty","warn","Verify your drawn polygon corners.");
+      setCheck("checkHouse","warn","Verify your drawn polygon corners.");
+      setCheck("checkSetback","warn","Cannot evaluate invalid geometry.");
+      setResultCounts(0,1,3,manualCount,true);
+      return;
+    }
+
     let insideProperty=false;
+    let houseInsideProperty=false;
     let noHouseOverlap=false;
     let insideSafe=false;
     let boundaryDistance=null;
 
     try{insideProperty=turf.booleanWithin(coop,property)}catch(e){}
+    try{houseInsideProperty=turf.booleanWithin(house,property)}catch(e){}
     noHouseOverlap=polygonsDisjoint(coop,house);
     try{insideSafe=!!currentSafeZone&&turf.booleanWithin(coop,currentSafeZone)}catch(e){}
     boundaryDistance=minBoundaryDistanceFt(coop,property);
@@ -675,6 +697,7 @@
     $("metricMargin").textContent=margin===null?"—":((margin>=0?"+":"")+fmtFt(margin));
 
     const propertyState=insideProperty?"pass":"fail";
+    const houseInsideState=houseInsideProperty?"pass":"fail";
     const houseState=noHouseOverlap?"pass":"fail";
     const canGeometry=p.mode==="property";
     const setbackState=canGeometry?(insideSafe?"pass":"fail"):"warn";
@@ -686,6 +709,10 @@
         ?"The entire coop polygon is inside the drawn property."
         :"Part of the coop is outside the drawn property."
     );
+
+    setCheck("checkHouseWithin",houseInsideState,houseInsideProperty
+      ?"The entire house polygon stays inside your drawn lot."
+      :"Part of the house lies outside your drawn property. Fix the outlines first.");
 
     setCheck(
       "checkHouse",
@@ -705,20 +732,22 @@
           :"The coop crosses the conservative property-line setback zone. Move it farther inward."
     );
 
-    const states=[propertyState,houseState,setbackState];
+    const states=[propertyState,houseInsideState,houseState,setbackState];
     const passCount=states.filter(x=>x==="pass").length;
     const failCount=states.filter(x=>x==="fail").length;
     const unavailableCount=states.filter(x=>x==="warn").length;
     setResultCounts(passCount,failCount,unavailableCount,manualCount,true);
 
-    const hardGeometryFail=!insideProperty||!noHouseOverlap||(canGeometry&&!insideSafe);
+    const hardGeometryFail=!insideProperty||!houseInsideProperty||!noHouseOverlap||(canGeometry&&!insideSafe);
 
     if(hardGeometryFail){
       const failureReason=!insideProperty
         ?"outside_property"
-        :!noHouseOverlap
-          ?"house_overlap"
-          :"setback";
+        :!houseInsideProperty
+          ?"house_outside_property"
+          :!noHouseOverlap
+            ?"house_overlap"
+            :"setback";
       trackGeometryState("geometry_check_fail",{
         failure_reason:failureReason,
         boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10,
@@ -737,6 +766,8 @@
         "Geometry FAIL — move the coop before relying on this layout.",
         !insideProperty
           ?"The proposed coop is not fully inside the drawn property."
+          :!houseInsideProperty
+            ?"The house outline is not fully inside the drawn property."
           :!noHouseOverlap
             ?"The proposed coop overlaps the drawn house."
             :"The proposed coop crosses the conservative property-line setback."
