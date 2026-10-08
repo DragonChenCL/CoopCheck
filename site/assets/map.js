@@ -7,7 +7,10 @@
     $("map").innerHTML='<div class="map-missing"><strong>Mapbox token is not configured.</strong><br>Add the MAPBOX_TOKEN GitHub Actions secret, then redeploy.</div>';
     return;
   }
-  if(!window.mapboxgl||!window.MapboxDraw||!window.turf)return;
+  if(!window.mapboxgl||!window.MapboxDraw||!window.turf||!window.CoopRules||!window.CoopProject){
+    $("map").textContent="Map dependencies failed to load. Please refresh this page.";
+    return;
+  }
 
   mapboxgl.accessToken=TOKEN;
 
@@ -51,6 +54,88 @@
   let lastTouchPointAt=0;
   let lastGeometryEventKey="";
   let lastGeometryAnalyticsState=null;
+  let mapLoaded=false;
+  let restoring=false;
+  let verifiedAddressCity="";
+  const PROJECT_KEY="coopcheck:project-id";
+  let projectId="";
+  try {
+    projectId=localStorage.getItem(PROJECT_KEY)||"";
+    if(!projectId){
+      projectId="coop_"+crypto.randomUUID().replaceAll("-","");
+      localStorage.setItem(PROJECT_KEY,projectId);
+    }
+  } catch(e) {projectId="temporary";}
+
+  function addressMatchesRules(){return !!verifiedAddressCity&&verifiedAddressCity===city()?.slug;}
+  function updateAddressMatchNotice(){
+    const el=$("addressRuleMatch");
+    if(!el)return;
+    const same=addressMatchesRules();
+    el.className="map-status "+(same?"good":"");
+    el.textContent=same
+      ?"Geocoder city/state matches "+city().name+", "+city().state+". Parcel zoning, city boundaries and HOA rules are NOT verified."
+      :verifiedAddressCity
+        ?"Selected city rules differ from the searched address. Do not treat this result as site-specific legal compliance."
+        :"Address jurisdiction is not verified. You can sketch with the selected city rules, but must confirm the city boundary manually.";
+  }
+  function snapshot(){
+    return {
+      version:1,
+      features:draw.getAll().features.filter(f=>["property","house","coop"].includes(f.properties?.role)),
+      city:city()?.slug||"",
+      center:map.getCenter().toArray(),
+      zoom:map.getZoom(),
+      setbacks:{side:num("sideSetback"),rear:num("rearSetback"),front:num("frontSetback")},
+      address:$("resolvedAddress")?.textContent==="—"?"":$("resolvedAddress")?.textContent||"",
+      addressMatched:addressMatchesRules(),
+      addressCity:verifiedAddressCity,
+      updatedAt:new Date().toISOString()
+    };
+  }
+  function saveSnapshot(){
+    if(!mapLoaded||restoring)return false;
+    let ok=false;
+    try{ok=window.CoopProject.save(localStorage,projectId,snapshot());}catch(e){}
+    if($("saveStatus"))$("saveStatus").textContent=ok?"Auto-saved in this browser.":"Local save unavailable. Export your drawing before checkout.";
+    return ok;
+  }
+  function restoreSnapshot(){
+    let saved=null;
+    try{saved=window.CoopProject.load(localStorage,projectId);}catch(e){}
+    if(!saved||!saved.features.length)return false;
+    restoring=true;
+    try {
+      if([...$("city").options].some(o=>o.value===saved.city)){
+        $("city").value=saved.city;
+        $("city").dispatchEvent(new Event("change"));
+      }
+      for(const [id,key] of [["sideSetback","side"],["rearSetback","rear"],["frontSetback","front"]])$(id).value=saved.setbacks[key];
+      verifiedAddressCity=saved.addressMatched?saved.addressCity:"";
+      if(saved.address){
+        $("resolvedAddress").textContent=saved.address;
+        $("addressSearch").value=saved.address;
+      }
+      if(saved.center)map.jumpTo({center:saved.center,zoom:saved.zoom||18});
+      for(const feature of saved.features)draw.add(feature);
+      track("planner_restored",{shapes:saved.features.length,city_slug:saved.city});
+      return true;
+    } finally {restoring=false;}
+  }
+  function exportProject(){
+    const serialized=window.CoopProject.serialize(snapshot());
+    if(!serialized)return;
+    const url=URL.createObjectURL(new Blob([serialized],{type:"application/json"}));
+    const a=document.createElement("a");a.href=url;a.download="coopcheck-project-"+(city()?.slug||"sketch")+".json";
+    document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    track("planner_export",{city_slug:city()?.slug||""});
+  }
+  window.CoopPlanner={
+    save:saveSnapshot,
+    isReady:()=>mapLoaded&&!!featureFor("property")&&!!featureFor("house")&&!!featureFor("coop"),
+    projectId:()=>projectId
+  };
+
 
   function track(name,params){
     if(typeof window.coopTrack==="function"){
@@ -230,18 +315,13 @@
     if(id)draw.setFeatureProperty(id,"role",role);
 
     const completedFeature=id?draw.get(id):featureFor(role);
-    window.coopTrack?.(role+"_draw_complete",{
-      city_slug:city()?.slug,
-      point_count:Math.max(0,closed.length-1),
-      area_sq_ft:Math.round(areaSqFt(completedFeature))
-    });
-
     draftCoords=[];
     setDrawingUI(false,role);
     updateDraft();
     draw.changeMode("simple_select");
     if(role==="coop")lastGeometryAnalyticsState=null;
     refreshGeometry();
+    saveSnapshot();
 
     track(role+"_draw_complete",{
       city_slug:city()?.slug||"",
@@ -693,6 +773,8 @@
     updateDrawSummary();
     updateCompliance();
     updateButtons();
+    updateAddressMatchNotice();
+    saveSnapshot();
   }
 
   $("drawProperty")?.addEventListener("click",()=>startDraw("property"));
@@ -702,6 +784,7 @@
   $("finishShapeMobile")?.addEventListener("click",finishCurrentShape);
 
   $("clearMap")?.addEventListener("click",()=>{
+    if(!confirm("Clear the saved property, house and coop drawing?"))return;
     cancelDraft();
     draw.deleteAll();
     currentSafeZone=null;
@@ -711,6 +794,17 @@
     setMapStatus("Map cleared. Search an address or draw a new property.","");
   });
 
+  $("saveProject")?.addEventListener("click",()=>{
+    setMapStatus(saveSnapshot()?"Saved on this browser.":"Save failed; please export the JSON backup.","");
+    track("planner_save",{city_slug:city()?.slug||""});
+  });
+  $("exportProject")?.addEventListener("click",exportProject);
+  $("undoPoint")?.addEventListener("click",()=>{
+    if(!drawing||!draftCoords.length)return;
+    draftCoords.pop();updateDraft();
+    setMapStatus("Removed the last point. Continue tracing or finish the shape.","drawing");
+  });
+  window.addEventListener("pagehide",saveSnapshot);
   document.addEventListener("keydown",e=>{
     if(e.key==="Escape"&&drawing)cancelDraft("Current drawing cancelled.");
     if(e.key==="Enter"&&drawing){
@@ -752,12 +846,15 @@
 
     map.on("click",onMapClick);
     map.on("touchend",onMapTouchEnd);
+    const restored=restoreSnapshot();
+    mapLoaded=true;
     refreshGeometry();
-    setMapStatus("Step 1: search your address. Then click Draw property.","");
+    setMapStatus(restored?"Your saved sketch has been restored. Review its city rules before continuing.":"Step 1: search your address. Then click Draw property.",restored?"good":"");
   });
 
   map.on("draw.update",refreshGeometry);
   map.on("draw.delete",refreshGeometry);
+  map.on("draw.create",refreshGeometry);
 
   ["sideSetback","rearSetback","frontSetback"].forEach(id=>{
     $(id)?.addEventListener("input",refreshGeometry);
