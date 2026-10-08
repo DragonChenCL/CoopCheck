@@ -130,6 +130,39 @@
     document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
     track("planner_export",{city_slug:city()?.slug||""});
   }
+  function exportGeoJSON(){
+    const features=snapshot().features;
+    if(!features.length){setMapStatus("Draw a shape before exporting GeoJSON.","bad");return;}
+    const geojson={type:"FeatureCollection",features};
+    const url=URL.createObjectURL(new Blob([JSON.stringify(geojson,null,2)],{type:"application/geo+json"}));
+    const a=document.createElement("a");a.href=url;a.download="coopcheck-shapes.geojson";
+    document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    track("planner_geojson_export",{shapes:features.length});
+  }
+  async function importProject(file){
+    if(!file||file.size>250000){setMapStatus("Invalid or oversized project file (250 KB maximum).","bad");return;}
+    const clean=window.CoopProject.parse(await file.text());
+    if(!clean){setMapStatus("Invalid CoopCheck JSON project. No shapes were changed.","bad");return;}
+    if(!confirm("Replace the current drawing with this imported sketch?"))return;
+    restoring=true;
+    try {
+      draw.deleteAll();
+      if([...$("city").options].some(o=>o.value===clean.city)){
+        $("city").value=clean.city;
+        $("city").dispatchEvent(new Event("change"));
+      }
+      for(const [id,k] of [["sideSetback","side"],["rearSetback","rear"],["frontSetback","front"]])$(id).value=clean.setbacks[k];
+      verifiedAddressCity=""; // Imported sketches are not independently revalidated.
+      $("resolvedAddress").textContent=clean.address||"—";
+      $("addressSearch").value=clean.address||"";
+      if(clean.center)map.jumpTo({center:clean.center,zoom:clean.zoom||18});
+      for(const feature of clean.features)draw.add(feature);
+    } finally {restoring=false;}
+    refreshGeometry();
+    saveSnapshot();
+    setMapStatus("Imported project. Recheck address and jurisdiction before relying on it.","good");
+    track("planner_import",{shapes:clean.features.length});
+  }
   window.CoopPlanner={
     save:saveSnapshot,
     isReady:()=>mapLoaded&&!!featureFor("property")&&!!featureFor("house")&&!!featureFor("coop"),
@@ -518,7 +551,7 @@
       }
     }
 
-    return 3+extraCount;
+    return 3+extraCount+(addressMatchesRules()?0:1);
   }
 
   function setResultCounts(passCount,failCount,unavailableCount,manualCount,ready){
@@ -750,6 +783,16 @@
       return;
     }
 
+    if(!addressMatchesRules()){
+      trackGeometryState("geometry_check_manual",{reason:"jurisdiction_not_verified"});
+      trackGeometryResult("manual",{reason:"city_boundary_or_address_unverified"});
+      setHero("manual",
+        "Geometry drawn — city jurisdiction still unverified.",
+        "The shapes appear to satisfy the selected property-line rule. Confirm this lot is inside "+c.name+", "+c.state+" before interpreting the result."
+      );
+      return;
+    }
+
     trackGeometryState("geometry_check_pass",{
       boundary_distance_ft:boundaryDistance===null?undefined:Math.round(boundaryDistance*10)/10,
       required_setback_ft:Math.round(required*10)/10,
@@ -799,6 +842,12 @@
     track("planner_save",{city_slug:city()?.slug||""});
   });
   $("exportProject")?.addEventListener("click",exportProject);
+  $("exportGeoJSON")?.addEventListener("click",exportGeoJSON);
+  $("importProject")?.addEventListener("click",()=>$("importFile")?.click());
+  $("importFile")?.addEventListener("change",async e=>{
+    try{await importProject(e.target.files?.[0]);}catch(err){setMapStatus("Could not import that file.","bad");}
+    e.target.value="";
+  });
   $("undoPoint")?.addEventListener("click",()=>{
     if(!drawing||!draftCoords.length)return;
     draftCoords.pop();updateDraft();
