@@ -52,3 +52,8 @@ assert(read("planner.html").includes('id="importProject"')&&read("planner.html")
 for(const js of ["map.js","project.js","rules.js","planner.js","payment.js","analytics.js"])
   new Function(read("assets/"+js)); // Syntax-only QA, no network, no billing calls.
 console.log("PASS: JS syntax, six city pages and SEO state comparisons");
+
+assert(read("planner.html").includes('id="checkHouseWithin"'),"house containment check shown");
+assert(read("assets/map.js").includes('houseInsideProperty=turf.booleanWithin(house,property)'),"house containment evaluated");
+assert(read("assets/map.js").includes("invalidPolygon"),"invalid drawn geometry rejected");
+console.log("PASS: malformed-geometry and parcel-boundary safeguards wired");
