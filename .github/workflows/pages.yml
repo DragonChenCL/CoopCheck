@@ -24,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Verify planner and payment regression checks
+        run: node scripts/qa-coopcheck.cjs
+
       - name: Build runtime config
         env:
           MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}

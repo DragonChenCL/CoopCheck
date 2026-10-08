@@ -11,7 +11,7 @@
     const place=(ctx.place&&ctx.place.name)||(props.feature_type==="place"&&props.name)||"";
     const region=ctx.region||{};
     const raw=String(region.region_code||region.short_code||region.name||"").toUpperCase();
-    const state=raw.slice(-2);
+    const state=Object.keys(states).find(code=>raw===code||raw==="US-"+code||raw===states[code].toUpperCase())||"";
     if(!place||!states[state]||!Array.isArray(cities))return null;
     return cities.find(c=>normal(c.name)===normal(place)&&String(c.state).toUpperCase()===state)||null;
   }

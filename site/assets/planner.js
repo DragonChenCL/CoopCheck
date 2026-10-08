@@ -24,7 +24,10 @@
     $("cityRule").innerHTML="<strong>"+c.name+":</strong> "+c.max+" · "+c.roosters+"<br><span class='small'>"+c.placement+" "+c.note+"</span>";
     $("source").href=c.source;
     $("source").textContent="Open official "+c.name+" source ↗";
-    $("mode").textContent=p.mode==="property"?"Geometry supported":p.mode==="advisory"?"Advisory geometry":"Manual review";
+    $("mode").textContent=p.mode==="property"?"Property-line check supported":p.mode==="advisory"?"Advisory only":"Setback check requires manual review";
+    if($("ruleScope"))$("ruleScope").textContent=p.mode==="property"
+      ?"Drawn parcel/property-line setbacks can be estimated. "+(p.rearOnly||p.rearHalf?"Yard orientation still requires a manual check.":"This does not verify parcel boundaries, zoning, or HOA restrictions.")
+      :"For this city, only property containment and house overlap can be calculated; a complete city setback result is NOT available.";
     $("mode").className="pill "+(p.mode==="property"?"":"warn");
   }
 

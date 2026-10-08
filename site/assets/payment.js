@@ -27,7 +27,7 @@
     unlocked=true;
     button.disabled=false;
     button.textContent="Print / Save as PDF";
-    setStatus("Full planning report unlocked on this browser.");
+    setStatus("Full report unlocked. Your sketch is saved in this browser; print or save as PDF anytime.");
   }
 
   function setLocked(){
@@ -65,15 +65,19 @@
       }
     }catch(_){}
     setLocked();
-    setStatus("Complete the geometry check, then unlock the printable planning report.");
+    setStatus("Complete the geometry check, preview the result, then choose whether to unlock the printable report.");
   }
 
   async function checkout(){
     if(busy)return;
-    const hero=$("complianceHero");
-    if(hero?.classList.contains("waiting")){
-      setStatus("Draw the property, house and coop before purchasing the report.");
-      hero.scrollIntoView({behavior:"smooth",block:"center"});
+    const planner=window.CoopPlanner;
+    if(!planner?.isReady()){
+      setStatus("First draw all three shapes to preview the result. No payment has been started.");
+      $("complianceHero")?.scrollIntoView({behavior:"smooth",block:"center"});
+      return;
+    }
+    if(!planner.save()){
+      setStatus("Your drawing could not be saved locally. Export a backup or free up browser storage before checkout. No payment has been started.");
       return;
     }
 
@@ -114,6 +118,11 @@
 
   button.addEventListener("click",()=>{
     if(unlocked){
+      if(!window.CoopPlanner?.isReady()){
+        setStatus("Restore or redraw your property, house and coop before printing the paid report.");
+        return;
+      }
+      window.CoopPlanner.save();
       window.coopTrack?.("paid_report_print",{app:APP,sku:SKU});
       window.print();
       return;

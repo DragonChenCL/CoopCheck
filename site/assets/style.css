@@ -39,3 +39,14 @@
   .map-shell.drawing-mode{outline:3px solid rgba(47,107,69,.18);outline-offset:2px}
   .map-shell.drawing-mode::after{content:"Tap each corner";position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:12;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.94);color:#2f6b45;font-size:12px;font-weight:850;box-shadow:0 4px 14px rgba(0,0,0,.12);pointer-events:none}
 }
+
+/* Planner reliability and report experience */
+#saveStatus{margin:10px 0;line-height:1.5}
+#addressRuleMatch{margin-top:8px}
+.report-preview{margin-top:18px;padding:15px 18px;border:1px solid var(--line);background:#f6f9f3;border-radius:14px}
+.report-preview h3{font-size:18px;margin:0 0 7px}
+.report-preview ul{margin:8px 0;padding-left:21px;line-height:1.7}
+.report-preview .small{margin:10px 0 0}
+.map-toolbar .btn{min-height:42px}
+@media(max-width:560px){.map-toolbar{display:grid;grid-template-columns:1fr 1fr}.map-toolbar .btn{width:100%;font-size:12px;padding:9px 6px}.map-toolbar .finish-shape{grid-column:span 2}}
+@media print{.report-preview{break-inside:avoid}.map-status,.draw-steps,#saveStatus,#addressRuleMatch{display:none!important}#source{overflow-wrap:anywhere}}

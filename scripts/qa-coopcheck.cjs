@@ -19,3 +19,22 @@ assert.equal(store.save(api,"coop_bad",{...data,features:[{type:"Feature",proper
 assert.equal(store.clear(api,"coop_123"),true);
 assert.equal(store.load(api,"coop_123"),null);
 console.log("PASS: city/state matching and saved polygon restoration");
+
+const fs=require("node:fs"),path=require("node:path");
+const base=path.resolve(__dirname,"../site");
+const read=p=>fs.readFileSync(path.join(base,p),"utf8");
+const planner=read("planner.html");
+assert(planner.includes('src="assets/project.js') && planner.includes('src="assets/rules.js'),"planner includes persistence and city match scripts");
+assert(planner.includes('id="addressRuleMatch"') && planner.includes('id="saveProject"') && planner.includes('id="exportProject"'),"planner UX controls");
+const map=read("assets/map.js");
+assert(map.includes("cityFromGeocode(f,window.COOP_CITIES"),"structured city+state match");
+assert(!map.includes('lower.includes(c.name.toLowerCase())'),"no substring matching");
+assert(map.includes("restoreSnapshot()") && map.includes("saveSnapshot()"),"sketch restores and saves");
+assert(!map.includes('result_label:label.slice'),"no identifiable street address to analytics");
+assert(!map.includes('window.coopTrack?.(role+"_draw_complete"'),"no duplicate draw complete events");
+const payment=read("assets/payment.js");
+assert(payment.includes("planner.save()") && payment.includes("planner?.isReady()"),"payment requires saving a complete sketch");
+assert(payment.includes("window.CoopPlanner?.isReady()"),"print requires sketch restoration");
+const data=read("assets/data.js");
+assert((data.match(/slug:"/g)||[]).length===18,"18 supported cities maintained");
+console.log("PASS: CoopCheck planner, payment and analytics integration static checks");
