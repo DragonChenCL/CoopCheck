@@ -4,7 +4,7 @@
   if(typeof module!=="undefined"&&module.exports)module.exports=api;
   if(root)root.CoopRules=api;
 })(typeof window!=="undefined"?window:null,function(){
-  const states={AZ:"Arizona",CA:"California",CO:"Colorado",OR:"Oregon",WA:"Washington",TX:"Texas"};
+  const states={AZ:"Arizona",CA:"California",CO:"Colorado",ME:"Maine",OR:"Oregon",WA:"Washington",TX:"Texas"};
   const normal=s=>String(s||"").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g,"");
   function cityFromGeocode(feature,cities){
     const props=feature&&feature.properties||{},ctx=props.context||{};
