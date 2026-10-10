@@ -57,3 +57,24 @@ assert(read("planner.html").includes('id="checkHouseWithin"'),"house containment
 assert(read("assets/map.js").includes('houseInsideProperty=turf.booleanWithin(house,property)'),"house containment evaluated");
 assert(read("assets/map.js").includes("invalidPolygon"),"invalid drawn geometry rejected");
 console.log("PASS: malformed-geometry and parcel-boundary safeguards wired");
+
+// Keep city-page search intent aligned with the official setbacks and planner limitations.
+const portlandSEO=read("cities/portland-or.html");
+assert(portlandSEO.includes("Portland Chicken Coop Setbacks & Hen Limits"),"Portland setback-focused page title");
+assert(portlandSEO.includes("At least 3 ft") && portlandSEO.includes("At least 10 ft"),"Portland side/rear/front setbacks");
+assert(portlandSEO.includes("15 ft from the walls of all residential units"),"Portland multi-unit caveat");
+assert(portlandSEO.includes("largest stated boundary setback"),"Portland conservative planner disclosure");
+assert(portlandSEO.includes('href="../planner.html?city=portland-or"'),"Portland planner CTA");
+
+const sanDiegoSEO=read("cities/san-diego-ca.html");
+assert(sanDiegoSEO.includes("San Diego Chicken Coop Setbacks: 5, 15 & 25 Hens"),"San Diego tiered setback page title");
+assert(sanDiegoSEO.includes("outside all required zoning setbacks"),"San Diego five-hen tier");
+assert(sanDiegoSEO.includes("At least 15 ft from every property line"),"San Diego fifteen-hen tier");
+assert(sanDiegoSEO.includes("50 ft from any residential building"),"San Diego twenty-five-hen tier");
+assert(sanDiegoSEO.includes("not a 50-ft property-line setback"),"San Diego separation caveat");
+assert(sanDiegoSEO.includes("Ch04Art02Division07.pdf"),"San Diego city code source");
+assert(sanDiegoSEO.includes("cannot establish compliance for the 25-chicken"),"San Diego planner limitations");
+assert(sanDiegoSEO.includes('href="../planner.html?city=san-diego-ca"'),"San Diego planner CTA");
+const sdSchema=JSON.parse(sanDiegoSEO.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+assert(sdSchema.mainEntity.some(q=>q.name==="What are the chicken coop setback requirements in San Diego?"),"San Diego FAQ structured data");
+console.log("PASS: City setback SEO, official-source caveats, FAQs, and planner CTAs");
