@@ -41,9 +41,9 @@ assert.equal(policyRegistry.schemaVersion,1,"supported policy registry schema");
 assert.equal(policyRegistry.cities.length,100,"100 cities tracked in registry");
 assert.equal(new Set(policyRegistry.cities.map(c=>c.slug)).size,100,"city slugs are unique");
 const reviewedCities=policyRegistry.cities.filter(c=>c.audit?.status!=="needs_review");
-assert.equal(reviewedCities.length,24,"only 24 reviewed cities are indexed and selectable in planner");
-assert.equal(policyRegistry.cities.filter(c=>c.audit?.status==="needs_review").length,76,"76 city profiles remain explicitly pending");
-assert.equal((cityDataSource.match(/"slug":/g)||[]).length,24,"browser rules include reviewed cities only");
+assert(reviewedCities.length>=24,"at least the initial 24 reviewed cities are preserved");
+assert.equal(policyRegistry.cities.filter(c=>c.audit?.status==="needs_review").length,100-reviewedCities.length,"all city records have a review status");
+assert.equal((cityDataSource.match(/"slug":/g)||[]).length,reviewedCities.length,"browser rules include reviewed cities only");
 for(const city of policyRegistry.cities){
   assert(["verified","verified_with_source_gap","verified_limited_scope","needs_review"].includes(city.audit?.status),"audit status: "+city.slug);
   assert(Array.isArray(city.sources)&&city.sources.every(s=>/^https:\/\//.test(s.url)),"sources are HTTPS: "+city.slug);
@@ -73,6 +73,7 @@ for(const city of policyRegistry.cities){
   }
 }
 assert(read("coverage.html").includes("100 cities tracked"),"coverage directory generated");
+assert.equal((read("sitemap.xml").match(/<url>/g)||[]).length,9+reviewedCities.length,"sitemap includes only reviewed city pages plus site entrypoints");
 
 const phoenixPolicy=policyRegistry.cities.find(c=>c.slug==="phoenix-az");
 assert(phoenixPolicy.max.startsWith("Up to 6 poultry"),"Phoenix uses current six-poultry baseline");
