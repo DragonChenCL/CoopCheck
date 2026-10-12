@@ -2336,11 +2336,11 @@
       "name": "Hillsboro",
       "state": "OR",
       "stateName": "Oregon",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Chickens are permitted under the city's animal permit process; this source does not establish a universal flock maximum",
+      "roosters": "Rooster restriction not established in the official permit application",
+      "permit": "City Animal Permit Application explicitly required for poultry in city limits",
+      "placement": "Site fencing, livestock enclosures, waste handling, zoning and permit review are required; a single universal setback is not stated in the application",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2349,12 +2349,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.hillsboro-oregon.gov/home/showpublisheddocument/30543/638467249898800000"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2426,11 +2432,11 @@
       "name": "Ashland",
       "state": "OR",
       "stateName": "Oregon",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 5 hens on lots under 5,000 sq ft; for larger lots, 1 hen per 1,000 sq ft, max 20",
+      "roosters": "Roosters prohibited",
+      "permit": "Check accessory building requirements and lot zoning; no separate general chicken permit established in FAQ",
+      "placement": "Chickens at least 10 ft from adjoining property and at least 20 ft from neighboring dwellings; coop/run design per AMC 18.2.5.040",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2439,12 +2445,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://ashlandoregon.gov/m/faq?cat=16"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2486,11 +2498,11 @@
       "name": "Lake Oswego",
       "state": "OR",
       "stateName": "Oregon",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "City chicken keeping has no numeric restriction, subject to applicable zoning and nuisance rules",
+      "roosters": "No citywide rooster prohibition; rooster noise nuisance rules apply",
+      "permit": "Consult planning for coop structure requirements",
+      "placement": "Coop setback is parcel-specific; city directs residents to Planning Department",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2499,12 +2511,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.ci.oswego.or.us/zh-hans/publicaffairs/chickens-and-roosters"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2516,11 +2534,11 @@
       "name": "Tigard",
       "state": "OR",
       "stateName": "Oregon",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "City guidance does not impose a uniform numeric chicken count; other animal welfare/nuisance rules still apply",
+      "roosters": "Roosters older than 3 months prohibited",
+      "permit": "Comply with city livestock containment, sanitation and nuisance controls",
+      "placement": "Coops at least 5 ft from all property lines (fenced runs exempt); animals must be enclosed at night",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2529,12 +2547,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.tigard-or.gov/business-development/urban-agriculture"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2546,11 +2570,11 @@
       "name": "Tacoma",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "6 adult poultry per parcel; may reach 10 with written consent of qualifying nearby residence owners; +1 bird per 5,000 sq ft lot above 10,000 sq ft",
+      "roosters": "Roosters prohibited",
+      "permit": "Building permit for animal enclosures larger than 200 sq ft",
+      "placement": "Coop at least 12 ft from any residence/dwelling/rooming facility, behind front wall and outside required side-yard setback",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2559,12 +2583,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://ecode360.com/48384481"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2606,11 +2636,11 @@
       "name": "Kent",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 3 domesticated fowl on lots of at least 5,000 sq ft, plus 1 per additional 1,000 sq ft",
+      "roosters": "Official FAQ says no separate rooster ban, but nuisance/noise regulations apply",
+      "permit": "Check zoning/HOA and any accessory-structure permits",
+      "placement": "Coop at least 10 ft from property line",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2619,12 +2649,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.kentwa.gov/government/frequently-asked-questions"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2666,11 +2702,11 @@
       "name": "Everett",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Six or more chickens require a small-livestock facility license; no blanket maximum can be inferred from the permit trigger",
+      "roosters": "Any rooster triggers small-livestock license; city does not ban them categorically in current facility guidance",
+      "permit": "Small livestock license annually for 6+ domestic fowl or any number of roosters; permit inspection required",
+      "placement": "No front yard coops; enclosures at least 5 ft from adjacent properties; city zoning standards also apply",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2679,12 +2715,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.everettwa.gov/197/Facility-Licenses"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2756,11 +2798,11 @@
       "name": "Yakima",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 4 hen chickens in eligible residential locations",
+      "roosters": "Roosters prohibited",
+      "permit": "Check residential zoning and building/coop permits",
+      "placement": "Chicken coop at least 10 ft from residence or property line, at least 5 ft from other structures; backyard-only fenced confinement",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2769,12 +2811,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.yakimawa.gov/services/planning/faq/"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2786,11 +2834,11 @@
       "name": "Redmond",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Zoning-dependent: R-6 max4, R-5 max6, R-4 max7, R-3 max8, and RA-5/R-1/R-2/Urban Recreation max10; prohibited in R-8 and multifamily/business zones",
+      "roosters": "Roosters prohibited",
+      "permit": "City offers chicken husbandry registration with no fee; zoning district verification required",
+      "placement": "City registration guide illustrates minimum 15-ft coop/run separation from all property lines; accessory structure size/height restrictions apply",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2799,12 +2847,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.redmond.gov/228/Chicken-Husbandry"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2816,11 +2870,11 @@
       "name": "Houston",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Limits and minimum separation depend on lot size and neighboring dwellings under Houston Animal Fowl Ordinance Chapter 6; not a universal 30-chicken residential entitlement",
+      "roosters": "Citywide rooster allowance is not confirmed from this source",
+      "permit": "Check zoning/deed restrictions, animal-nuisance and animal-control code; no universal permit inferred",
+      "placement": "Keeping large numbers of fowl near dwellings, hospitals, schools or churches is regulated by Chapter 6; parcel-specific review is needed",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2829,12 +2883,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://library.municode.com/tx/houston/codes/code_of_ordinances/322897?nodeId=COOR_CH6ANFO"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2846,11 +2906,11 @@
       "name": "Dallas",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "No universal number of backyard hens established from this cited code excerpt",
+      "roosters": "Rooster restrictions with agricultural/animal-production exceptions apply; parcel category matters",
+      "permit": "Verify current zoning, nuisance and animal-control rules",
+      "placement": "No universal chicken coop property-line setback established in this summary",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2859,12 +2919,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2915,11 +2981,11 @@
       "name": "Plano",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "No universal residential flock cap established from Chapter 4, Article X; the city regulates hens via a permit and housing standards",
+      "roosters": "Residential chicken rules address hens; rooster permission requires separate code review",
+      "permit": "Permit for backyard hens required under City Code Chapter 4 Article X; annual renewal",
+      "placement": "For fewer than 5 chickens, enclosure at least 20 ft from adjacent buildings; for 5 or more, at least 50 ft; verify exact property conditions",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2928,12 +2994,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://library.municode.com/tx/plano/codes/code_of_ordinances?nodeId=PTIICOOR_CH4AN_ARTXWIANBELI_S4-183BEP"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2945,11 +3017,11 @@
       "name": "Frisco",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "No more than 12 gallinaceous fowl in one enclosure under §14-17",
+      "roosters": "Male gallinaceous fowl prohibited unless kept on a property of 1 acre or more (affirmative-defense exception)",
+      "permit": "Confirm zoning and enclosure building standards; no general backyard-fowl permit established by cited section",
+      "placement": "Fowl must be maintained in sanitary enclosures; no universal property-line coop setback is substantiated by §14-17 alone",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2958,12 +3030,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://ecode360.com/38315318"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2975,11 +3053,11 @@
       "name": "Irving",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 25 chickens on parcels <=1 acre; larger-parcel rooster-to-hen ratio rules apply",
+      "roosters": "No more than 1 rooster per 6 hens on <=1 acre, and ratio of 1 rooster per 6 hens on larger lots; additional code exceptions",
+      "permit": "Follow building, zoning, sanitary enclosure requirements",
+      "placement": "Chicken housing at least 25 ft from an occupied building on another person's property; roofed roosting area and outdoor run min 10 sq ft per chicken",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2988,12 +3066,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://ecode360.com/45683221"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -3035,11 +3119,11 @@
       "name": "McKinney",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 12 hens at a single detached residential home",
+      "roosters": "Roosters prohibited",
+      "permit": "Confirm proper enclosure and HOA/covenant restrictions",
+      "placement": "Proper enclosure required; no universal coop setback given in official city FAQ",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -3048,12 +3132,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.mckinneytexas.org/FAQ.aspx?QID=190"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -3065,11 +3155,11 @@
       "name": "Denton",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "No more than 8 hens per residential parcel",
+      "roosters": "Roosters prohibited on residential properties smaller than 1 acre",
+      "permit": "Check city animal control and accessory-building permits",
+      "placement": "Chicken enclosure must be at least 150 ft from residence, business, office, school, hospital or nursing home under the official FAQ",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -3078,12 +3168,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www.cityofdenton.com/m/faq?cat=17"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -3095,11 +3191,11 @@
       "name": "El Paso",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Fewer than 6 fowl or rabbits may be kept as pets without the city fowl/rabbit permit; higher quantities require a permit and additional restrictions",
+      "roosters": "For permitted larger groups, rooster limitations in local animal code; exact conditions require current permit/code review",
+      "permit": "Fowl/rabbit permit required for 6 or more birds/rabbits",
+      "placement": "Coop placement depends on zoning and animal code; no universal setback confirmed from the cited fee/code record",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -3108,12 +3204,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "sources": [
+        {
+          "type": "municipal_source",
+          "url": "https://www2.elpasotexas.gov/municipal-clerk/agenda/08-11-20/6.1.1.pdf"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
         "batch": "first-100-2026-10",
