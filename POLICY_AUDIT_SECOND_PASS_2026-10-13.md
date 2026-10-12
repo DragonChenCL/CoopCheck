@@ -5,7 +5,7 @@
 - City total: **100**
 - Reviewed source-backed profiles: **82** (44 verified, 38 limited-scope verified)
 - Still not source-reconciled: **18** — kept **noindex** and omitted from sitemap/planner.
-- Newly promoted this pass: **18** of the 30 remaining candidates (existing 70 reviewed before this pass).
+- Newly promoted this pass: **12** of the 30 remaining candidates (reviewed total increased from 70 to 82).
 
 Review method: official government sites, online municipal code publishers, adopted amendments, planning and animal-control guidance, and state preemption. Secondary summaries were used only to discover the primary legal reference. Do not confuse same-named cities in other states, including Medford WI vs OR, Prescott WI vs AZ, Bellevue ID vs WA.
 
