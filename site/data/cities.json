@@ -1,0 +1,589 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-10-12",
+  "auditMethod": "Official city/state source review; facts with incomplete machine-readable support are explicitly flagged for follow-up.",
+  "cities": [
+    {
+      "slug": "chandler-az",
+      "name": "Chandler",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Up to 5 chickens",
+      "roosters": "Prohibited",
+      "permit": "Building permit if coop exceeds 120 sq ft or has utilities",
+      "placement": "Rear/side yards; coop at least 5 ft from every property line",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "property",
+        "side": 5,
+        "rear": 5,
+        "front": 5,
+        "rearOnly": true,
+        "rearHalf": false
+      },
+      "note": "Rear-yard placement still needs manual confirmation.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Chandler backyard chicken ordinance confirms up to 5 chickens, no roosters, rear/side-yard confinement, 5-ft property-line coop setback, and permit triggers for larger/utility-served coops."
+      }
+    },
+    {
+      "slug": "mesa-az",
+      "name": "Mesa",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "10 fowl/rabbits total on lots under ½ acre",
+      "roosters": "Allowed only if they do not create a noise disturbance",
+      "permit": "Check parcel-specific zoning/building requirements",
+      "placement": "Fowl must be contained; city code has enclosure-distance rules",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Automatic geometry is disabled until Mesa's code-specific distance rule is modeled.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Mesa guidance confirms 10 fowl/rabbits total on lots under 1/2 acre, rooster noise restriction, and code-specific containment distance rules."
+      }
+    },
+    {
+      "slug": "phoenix-az",
+      "name": "Phoenix",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Up to 6 poultry on the first ½ acre; larger lots scale under the ordinance, and written adjoining-neighbor consent can allow more on lots ½ acre or less",
+      "roosters": "Male poultry are allowed only if incapable of making vocal noise that disturbs nearby residents",
+      "permit": "Verify zoning and accessory-structure requirements for the property",
+      "placement": "Rear or side yard; enclosure at least 20 ft from a neighboring property line unless adjoining owners/occupants consent in writing; no front-yard poultry",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Phoenix uses a 20-ft neighboring-property-line rule plus rear/side-yard placement, with written-consent exceptions. The planner cannot yet identify which drawn boundary is a neighboring property line or determine legal yard orientation.",
+      "sources": [
+        {
+          "type": "ordinance",
+          "url": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630"
+        },
+        {
+          "type": "state_statute",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Re-verified after the 2024 Phoenix poultry amendment. Current baseline is 6 poultry on the first 1/2 acre with written-consent/larger-lot provisions and a 20-ft neighboring-property-line enclosure rule."
+      }
+    },
+    {
+      "slug": "tempe-az",
+      "name": "Tempe",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Up to 6 domestic chickens per lot",
+      "roosters": "Prohibited except in the AG district",
+      "permit": "A use permit may be available to exceed the standard quantity",
+      "placement": "On lots under 1 acre, chicken enclosures may not exceed the fence/wall height",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "The cited city page does not provide one universal chicken-enclosure property-line setback.",
+      "sources": [
+        {
+          "type": "city_code_guidance",
+          "url": "https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Tempe code guidance confirms up to 6 domestic chickens, roosters prohibited except AG zoning, use-permit path for higher quantities, and enclosure-height rule on lots under 1 acre."
+      }
+    },
+    {
+      "slug": "san-diego-ca",
+      "name": "San Diego",
+      "state": "CA",
+      "stateName": "California",
+      "max": "5, 15, or 25 depending on separation",
+      "roosters": "Prohibited",
+      "permit": "Check building/zoning rules for the structure",
+      "placement": "Typical 5-hen case: rear yard, 5 ft side and 13 ft rear setbacks",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "property",
+        "side": 5,
+        "rear": 13,
+        "front": 0,
+        "rearOnly": true,
+        "rearHalf": false
+      },
+      "note": "Typical single-family guidance only; exact zoning setbacks can differ.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens"
+        },
+        {
+          "type": "municipal_code",
+          "url": "https://docs.sandiego.gov/municode/municodechapter04/ch04art02division07.pdf"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official San Diego guidance and Municipal Code confirm the 5/15/25 chicken tiers and no-rooster rule; the common 5-hen case uses rear-yard placement with 5-ft side and 13-ft rear setbacks."
+      }
+    },
+    {
+      "slug": "sacramento-ca",
+      "name": "Sacramento",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Up to 3 chickens per residential parcel",
+      "roosters": "Prohibited",
+      "permit": "Annual chicken license and chicken coop permit required",
+      "placement": "Rear yard only; coop at least 20 ft from the nearest neighboring dwelling",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": true,
+        "rearHalf": false
+      },
+      "note": "The key distance is to a neighboring dwelling, so parcel geometry alone is not enough.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Sacramento poultry licensing page confirms maximum 3 chickens, no roosters, annual chicken licenses and coop permit, rear-yard placement, and 20-ft separation from nearest neighboring dwelling."
+      }
+    },
+    {
+      "slug": "denver-co",
+      "name": "Denver",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Up to 8 hens/ducks combined",
+      "roosters": "Prohibited",
+      "permit": "Food-Producing Animals permit: one-time $25 per property",
+      "placement": "Rear 50% of lot; housing structures 15 ft from certain neighboring dwellings",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "advisory",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": true
+      },
+      "note": "The planner cannot yet verify neighboring dwelling distances.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter/Animal-Protection/Animal-Ordinances-and-Legislation"
+        },
+        {
+          "type": "zoning_code",
+          "url": "https://www.denvergov.org/content/dam/denvergov/Portals/646/documents/Zoning/DZC/Denver_Zoning_Code_Article11_Use_Limitations.pdf"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Denver animal guidance confirms an FPA permit and up to 8 hens/ducks combined; zoning code confirms rear 50% placement and 15-ft separation from specified neighboring dwellings."
+      }
+    },
+    {
+      "slug": "colorado-springs-co",
+      "name": "Colorado Springs",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Up to 10 rabbits or chickens aged 6 months or older",
+      "roosters": "Prohibited",
+      "permit": "Coops must comply with applicable zoning/building rules for accessory structures",
+      "placement": "At least 4 sq ft of shelter space per chicken; accessory-structure setbacks vary by zoning/size",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "There is no single universal coop setback in the cited city guidance; accessory-structure rules vary.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://coloradosprings.gov/page/city-regulations-animals"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Colorado Springs guidance confirms up to 10 rabbits/chickens aged 6 months or older, roosters prohibited, 4 sq ft shelter per bird, and accessory-structure code requirements."
+      }
+    },
+    {
+      "slug": "portland-or",
+      "name": "Portland",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "4 on any lot; 6 on lots ≥10,000 sq ft",
+      "roosters": "Generally prohibited outside qualifying agricultural use",
+      "permit": "No livestock permit for standard backyard chickens",
+      "placement": "Structures 3 ft from side/rear lines and 10 ft from front line",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "property",
+        "side": 3,
+        "rear": 3,
+        "front": 10,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Direct property-line setbacks are supported by the planner.",
+      "sources": [
+        {
+          "type": "city_code",
+          "url": "https://www.portland.gov/code/13/40"
+        },
+        {
+          "type": "city_guidance",
+          "url": "https://www.portland.gov/bps/sustainability/guide-bees-and-livestock/chickens-and-fowl"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Portland code, amended effective January 10, 2025, confirms 4 small fowl on any lot, 6 on lots >=10,000 sq ft, rooster restrictions, no standard livestock permit, and current facility standards."
+      }
+    },
+    {
+      "slug": "eugene-or",
+      "name": "Eugene",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "On lots under 20,000 sq ft: up to 6 adult + 6 under 6 months",
+      "roosters": "Prohibited",
+      "permit": "No license; building permit generally not required for enclosure ≤200 sq ft and ≤10 ft high",
+      "placement": "Animal shelters and covered runs at least 10 ft from all property lines unless adjacent owner authorizes closer placement",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "property",
+        "side": 10,
+        "rear": 10,
+        "front": 10,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "The 10-ft property-line rule is directly supported; parcel zoning and CC&Rs still need verification.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.eugene-or.gov/2389/Farm-Animals-Urban-Animal-Keeping"
+        },
+        {
+          "type": "city_guidance_pdf",
+          "url": "https://www.eugene-or.gov/DocumentCenter/View/10967/Urban-Animal-Keeping"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Eugene Urban Animal Keeping guidance confirms up to 6 adult and 6 under-6-month chickens/domestic fowl on lots under 20,000 sq ft, no roosters, 10-ft shelter/run setback from property lines unless written adjacent-owner authorization, and the <=200 sq ft / <=10 ft enclosure permit threshold."
+      }
+    },
+    {
+      "slug": "salem-or",
+      "name": "Salem",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Up to 12 poultry total per property",
+      "roosters": "Prohibited",
+      "permit": "No permit or license required for standard poultry keeping",
+      "placement": "Rear yard; 3 ft from other buildings on site and 25 ft from a residence on adjacent property",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": true,
+        "rearHalf": false
+      },
+      "note": "The key rule measures to neighboring residences, not simply the property line.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Salem poultry guidance confirms maximum 12 poultry, no roosters, no standard permit/license, rear-yard facility placement, 3-ft on-site building separation, and 25-ft separation from an adjacent residence."
+      }
+    },
+    {
+      "slug": "gresham-or",
+      "name": "Gresham",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Up to 3 adult hens on eligible single-family property",
+      "roosters": "Prohibited",
+      "permit": "Chicken permit required; city lists a $50 two-year permit",
+      "placement": "Rear yard; coop/run 10 ft from property lines; coop 25 ft from neighboring dwelling",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": true,
+        "rearHalf": false
+      },
+      "note": "The city has both a property-line rule and a neighboring-dwelling rule, so full automation needs neighbor-building data.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.greshamoregon.gov/residents/community-services/chickens/"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Gresham guidance confirms permit requirement, up to 3 adult hens, no roosters, rear-yard placement, 10-ft property-line separation, and 25-ft neighboring-dwelling separation."
+      }
+    },
+    {
+      "slug": "seattle-wa",
+      "name": "Seattle",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Up to 8 domestic fowl on a standard lot",
+      "roosters": "Prohibited",
+      "permit": "No general chicken permit stated on the city overview",
+      "placement": "Chicken structures at least 10 ft from residential structures on adjacent lots",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Accurate automation needs neighboring building footprints.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes"
+        },
+        {
+          "type": "sdci_tip",
+          "url": "https://www.seattle.gov/DPD/publications/CAM/cam244.pdf"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Seattle animal guidance and SDCI Tip 244 confirm up to 8 domestic fowl on a standard lot, no roosters, and a 10-ft separation between fowl structures and residential structures on adjacent lots."
+      }
+    },
+    {
+      "slug": "spokane-wa",
+      "name": "Spokane",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "1 chicken/fowl per 1,000 sq ft of lot area",
+      "roosters": "Only allowed in RA zone",
+      "permit": "Chickens are excluded from the WSU animal-keeping certification requirement",
+      "placement": "Animal enclosures follow residential accessory-structure setbacks",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Accessory-structure setbacks depend on the property's zoning and cannot be represented by one citywide number.",
+      "sources": [
+        {
+          "type": "municipal_code",
+          "url": "https://my.spokanecity.org/smc/?Section=17C.310.115"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Spokane Municipal Code confirms one small domestic animal/fowl per 1,000 sq ft of lot area and zoning-based animal-keeping standards; rooster allowance remains limited by zoning."
+      }
+    },
+    {
+      "slug": "vancouver-wa",
+      "name": "Vancouver",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Chickens are allowed; verify parcel-specific quantity/animal standards",
+      "roosters": "Prohibited",
+      "permit": "Check zoning and accessory-structure requirements for the property",
+      "placement": "Domestic-animal and accessory-structure rules apply",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "The city's public FAQ confirms chickens are allowed and roosters are not, but does not state one universal coop setback.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/"
+        }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Vancouver guidance confirms chickens are allowed and roosters/peacocks are prohibited. It does not publish one universal quantity or coop setback on the cited page, so CoopCheck correctly keeps parcel-specific details manual."
+      }
+    },
+    {
+      "slug": "austin-tx",
+      "name": "Austin",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Chickens allowed in most residential areas; quantity limits depend on code",
+      "roosters": "Check current city animal/noise rules",
+      "permit": "Verify enclosure/building requirements for the property",
+      "placement": "For 2+ chickens, enclosures should be at least 30 ft from adjacent residences or businesses",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Austin's cited rule measures from adjacent residences/businesses rather than the property line.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities"
+        }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Austin guidance confirms chickens are allowed in most residential areas and enclosures for 2+ chickens should be at least 30 ft from adjacent residences/businesses. Quantity limits remain code/parcel dependent."
+      }
+    },
+    {
+      "slug": "arlington-tx",
+      "name": "Arlington",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Up to 4 chickens without distance or lot-size restrictions; larger flocks have extra rules",
+      "roosters": "Prohibited except agricultural zoning",
+      "permit": "Check accessory-structure permit rules for the coop itself",
+      "placement": "For 5+ chickens, city rules add 50-ft dwelling-distance and lot-size thresholds",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "The rule changes with flock size and measures from nearby dwellings.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.arlingtontx.gov/News-Articles/2025/March/Egg-xactly-How-Many-Chickens-Can-You-Own-in-Arlington-Anyway"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Arlington guidance confirms up to 4 chickens without distance/lot-size restrictions; larger flocks trigger 50-ft dwelling-distance and lot-size thresholds; roosters are prohibited except agricultural zoning."
+      }
+    },
+    {
+      "slug": "fort-worth-tx",
+      "name": "Fort Worth",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Up to 12 fowl on lots ½ acre or less; higher limits on larger lots",
+      "roosters": "Up to 2 roosters within the stated fowl limits",
+      "permit": "Check zoning/building requirements for coop structures",
+      "placement": "Pens/coops must be more than 50 ft from regulated structures",
+      "verified": "2026-10-12",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "The 50-ft rule is measured from regulated structures, not simply property lines.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-12",
+        "note": "Official Fort Worth guidance confirms 12 fowl on lots 1/2 acre or less, up to 2 roosters within limits, larger-lot tiers, and >50-ft separation from regulated structures."
+      }
+    }
+  ]
+}

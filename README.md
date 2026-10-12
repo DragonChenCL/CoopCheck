@@ -14,3 +14,13 @@ CoopCheck is a zero-cost GitHub Pages MVP for checking backyard chicken rules an
 
 ## Mapbox runtime configuration
 The GitHub Pages workflow injects the repository secret `MAPBOX_TOKEN` into `site/assets/runtime-config.js` during deployment. The token is not stored in source control.
+
+## Policy data workflow
+
+City policy facts are maintained in `site/data/cities.json` as the canonical audited registry. Do not hand-edit `site/assets/data.js`; regenerate it with:
+
+```bash
+node scripts/generate-policy-data.cjs
+```
+
+Before deployment, CI verifies the registry, generated browser data, official-source coverage, city-page verification dates, and policy regression guards. See `POLICY_AUDIT.md` for the latest 18-city audit.
