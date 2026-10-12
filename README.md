@@ -24,3 +24,17 @@ node scripts/generate-policy-data.cjs
 ```
 
 Before deployment, CI verifies the registry, generated browser data, official-source coverage, city-page verification dates, and policy regression guards. See `POLICY_AUDIT.md` for the latest 18-city audit.
+
+## First 100-city coverage batch
+
+The registry now tracks **100 cities**. The first 82 additions are separated into reviewed government-source profiles and research-pending profiles. Pending city pages display an explicit warning, are marked `noindex,follow`, and are **not** included in `sitemap.xml` or the planner's rule selector. Do not imply that 100 city rules have all been verified.
+
+To regenerate the browser data, city pages, directory and sitemap after changing `site/data/cities.json`:
+
+```bash
+node scripts/generate-policy-data.cjs
+node scripts/generate-coverage-pages.cjs
+node scripts/qa-coopcheck.cjs
+```
+
+CI checks both generators with `--check` and runs the QA suite before deployment. Start with `site/coverage.html` for the rollout status.

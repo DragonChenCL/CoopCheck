@@ -584,6 +584,2614 @@
         "reviewedAt": "2026-10-12",
         "note": "Official Fort Worth guidance confirms 12 fowl on lots 1/2 acre or less, up to 2 roosters within limits, larger-lot tiers, and >50-ft separation from regulated structures."
       }
+    },
+    {
+      "slug": "gilbert-az",
+      "name": "Gilbert",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 1
+      }
+    },
+    {
+      "slug": "scottsdale-az",
+      "name": "Scottsdale",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 2
+      }
+    },
+    {
+      "slug": "glendale-az",
+      "name": "Glendale",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 3
+      }
+    },
+    {
+      "slug": "peoria-az",
+      "name": "Peoria",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 4
+      }
+    },
+    {
+      "slug": "surprise-az",
+      "name": "Surprise",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 5
+      }
+    },
+    {
+      "slug": "goodyear-az",
+      "name": "Goodyear",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 6
+      }
+    },
+    {
+      "slug": "avondale-az",
+      "name": "Avondale",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 7
+      }
+    },
+    {
+      "slug": "buckeye-az",
+      "name": "Buckeye",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 8
+      }
+    },
+    {
+      "slug": "queen-creek-az",
+      "name": "Queen Creek",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 9
+      }
+    },
+    {
+      "slug": "tucson-az",
+      "name": "Tucson",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 10
+      }
+    },
+    {
+      "slug": "flagstaff-az",
+      "name": "Flagstaff",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 11
+      }
+    },
+    {
+      "slug": "oro-valley-az",
+      "name": "Oro Valley",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 12
+      }
+    },
+    {
+      "slug": "marana-az",
+      "name": "Marana",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 13
+      }
+    },
+    {
+      "slug": "casa-grande-az",
+      "name": "Casa Grande",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 14
+      }
+    },
+    {
+      "slug": "yuma-az",
+      "name": "Yuma",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 15
+      }
+    },
+    {
+      "slug": "prescott-az",
+      "name": "Prescott",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 16
+      }
+    },
+    {
+      "slug": "prescott-valley-az",
+      "name": "Prescott Valley",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 17
+      }
+    },
+    {
+      "slug": "lake-havasu-city-az",
+      "name": "Lake Havasu City",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 18
+      }
+    },
+    {
+      "slug": "apache-junction-az",
+      "name": "Apache Junction",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 19
+      }
+    },
+    {
+      "slug": "sierra-vista-az",
+      "name": "Sierra Vista",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [
+        {
+          "type": "state_statute_only",
+          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        }
+      ],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 20
+      }
+    },
+    {
+      "slug": "los-angeles-ca",
+      "name": "Los Angeles",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 21
+      }
+    },
+    {
+      "slug": "san-francisco-ca",
+      "name": "San Francisco",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 22
+      }
+    },
+    {
+      "slug": "san-jose-ca",
+      "name": "San Jose",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 23
+      }
+    },
+    {
+      "slug": "oakland-ca",
+      "name": "Oakland",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Depends on zoning classification and applicable animal-control regulations",
+      "roosters": "Not established from the cited city urban-agriculture zoning overview",
+      "permit": "A conditional use permit may be necessary in some zoning districts; verify before building or keeping poultry",
+      "placement": "Consult Oakland Municipal Code and parcel zoning; no universal coop setback verified",
+      "verified": "2026-10-13",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Official Oakland planning guidance identifies animal raising under community gardens/extensive agriculture and zoning-dependent permissions; specific hen count/setback require an additional municipal-code review.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens"
+        }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "Official Oakland planning guidance identifies animal raising under community gardens/extensive agriculture and zoning-dependent permissions; specific hen count/setback require an additional municipal-code review."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 24
+      }
+    },
+    {
+      "slug": "fresno-ca",
+      "name": "Fresno",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 25
+      }
+    },
+    {
+      "slug": "bakersfield-ca",
+      "name": "Bakersfield",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 26
+      }
+    },
+    {
+      "slug": "riverside-ca",
+      "name": "Riverside",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 27
+      }
+    },
+    {
+      "slug": "irvine-ca",
+      "name": "Irvine",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 28
+      }
+    },
+    {
+      "slug": "anaheim-ca",
+      "name": "Anaheim",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 29
+      }
+    },
+    {
+      "slug": "long-beach-ca",
+      "name": "Long Beach",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 30
+      }
+    },
+    {
+      "slug": "santa-ana-ca",
+      "name": "Santa Ana",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 31
+      }
+    },
+    {
+      "slug": "stockton-ca",
+      "name": "Stockton",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 32
+      }
+    },
+    {
+      "slug": "modesto-ca",
+      "name": "Modesto",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 33
+      }
+    },
+    {
+      "slug": "elk-grove-ca",
+      "name": "Elk Grove",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 34
+      }
+    },
+    {
+      "slug": "roseville-ca",
+      "name": "Roseville",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 35
+      }
+    },
+    {
+      "slug": "folsom-ca",
+      "name": "Folsom",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 36
+      }
+    },
+    {
+      "slug": "berkeley-ca",
+      "name": "Berkeley",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 37
+      }
+    },
+    {
+      "slug": "fremont-ca",
+      "name": "Fremont",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 38
+      }
+    },
+    {
+      "slug": "santa-rosa-ca",
+      "name": "Santa Rosa",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 39
+      }
+    },
+    {
+      "slug": "escondido-ca",
+      "name": "Escondido",
+      "state": "CA",
+      "stateName": "California",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 40
+      }
+    },
+    {
+      "slug": "aurora-co",
+      "name": "Aurora",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Up to 6 hens on most residential properties; up to 8 hens on single-family lots of 20,000 sq ft or more",
+      "roosters": "Roosters prohibited on residential property",
+      "permit": "City chicken/duck permit required before acquiring birds; city's published fee is a one-time $40",
+      "placement": "Rear-yard chicken housing; structure at least 15 ft from abutting property lines unless affected owners consent in writing",
+      "verified": "2026-10-13",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Aurora's current city Chickens & Ducks page and official chicken permit form describe residential limits and requirements. Verify zoning and HOA restrictions separately.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.auroragov.org/residents/animal_services/field_services/ordinances_enforcement/chickensducks"
+        },
+        {
+          "type": "official_permit_form",
+          "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Animal%20Services/Ordinances%20%26%20Enforcements/019377.pdf"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "Aurora's current city Chickens & Ducks page and official chicken permit form describe residential limits and requirements. Verify zoning and HOA restrictions separately."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 41
+      }
+    },
+    {
+      "slug": "boulder-co",
+      "name": "Boulder",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 42
+      }
+    },
+    {
+      "slug": "fort-collins-co",
+      "name": "Fort Collins",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 43
+      }
+    },
+    {
+      "slug": "lakewood-co",
+      "name": "Lakewood",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 44
+      }
+    },
+    {
+      "slug": "arvada-co",
+      "name": "Arvada",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 45
+      }
+    },
+    {
+      "slug": "thornton-co",
+      "name": "Thornton",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 46
+      }
+    },
+    {
+      "slug": "westminster-co",
+      "name": "Westminster",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 47
+      }
+    },
+    {
+      "slug": "pueblo-co",
+      "name": "Pueblo",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 48
+      }
+    },
+    {
+      "slug": "longmont-co",
+      "name": "Longmont",
+      "state": "CO",
+      "stateName": "Colorado",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 49
+      }
+    },
+    {
+      "slug": "beaverton-or",
+      "name": "Beaverton",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 50
+      }
+    },
+    {
+      "slug": "hillsboro-or",
+      "name": "Hillsboro",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 51
+      }
+    },
+    {
+      "slug": "bend-or",
+      "name": "Bend",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 52
+      }
+    },
+    {
+      "slug": "medford-or",
+      "name": "Medford",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 53
+      }
+    },
+    {
+      "slug": "ashland-or",
+      "name": "Ashland",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 54
+      }
+    },
+    {
+      "slug": "corvallis-or",
+      "name": "Corvallis",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 55
+      }
+    },
+    {
+      "slug": "lake-oswego-or",
+      "name": "Lake Oswego",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 56
+      }
+    },
+    {
+      "slug": "tigard-or",
+      "name": "Tigard",
+      "state": "OR",
+      "stateName": "Oregon",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 57
+      }
+    },
+    {
+      "slug": "tacoma-wa",
+      "name": "Tacoma",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 58
+      }
+    },
+    {
+      "slug": "bellevue-wa",
+      "name": "Bellevue",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 59
+      }
+    },
+    {
+      "slug": "kent-wa",
+      "name": "Kent",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 60
+      }
+    },
+    {
+      "slug": "renton-wa",
+      "name": "Renton",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 61
+      }
+    },
+    {
+      "slug": "everett-wa",
+      "name": "Everett",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 62
+      }
+    },
+    {
+      "slug": "olympia-wa",
+      "name": "Olympia",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 63
+      }
+    },
+    {
+      "slug": "bellingham-wa",
+      "name": "Bellingham",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 64
+      }
+    },
+    {
+      "slug": "yakima-wa",
+      "name": "Yakima",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 65
+      }
+    },
+    {
+      "slug": "redmond-wa",
+      "name": "Redmond",
+      "state": "WA",
+      "stateName": "Washington",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 66
+      }
+    },
+    {
+      "slug": "houston-tx",
+      "name": "Houston",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 67
+      }
+    },
+    {
+      "slug": "dallas-tx",
+      "name": "Dallas",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 68
+      }
+    },
+    {
+      "slug": "san-antonio-tx",
+      "name": "San Antonio",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Up to 8 domestic fowl per residence, including at most 1 rooster, without an excess-animal permit",
+      "roosters": "One rooster may be kept within the standard 8-fowl limit; larger flocks have additional permit conditions",
+      "permit": "Excess-animal permit is required to exceed the standard 8-fowl residential limit",
+      "placement": "Standard fowl must be confined to a coop and run of at least 24 sq ft or 6 sq ft per bird, whichever is greater; additional separation rules apply to excess-animal permits",
+      "verified": "2026-10-13",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply.",
+      "sources": [
+        {
+          "type": "official_permit_form",
+          "url": "https://www.sa.gov/files/assets/main/acs/documents/permit-excessanimal.pdf"
+        },
+        {
+          "type": "city_permit_fees",
+          "url": "https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits/Fees"
+        }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 69
+      }
+    },
+    {
+      "slug": "plano-tx",
+      "name": "Plano",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 70
+      }
+    },
+    {
+      "slug": "frisco-tx",
+      "name": "Frisco",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 71
+      }
+    },
+    {
+      "slug": "irving-tx",
+      "name": "Irving",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 72
+      }
+    },
+    {
+      "slug": "garland-tx",
+      "name": "Garland",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 73
+      }
+    },
+    {
+      "slug": "mckinney-tx",
+      "name": "McKinney",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 74
+      }
+    },
+    {
+      "slug": "denton-tx",
+      "name": "Denton",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 75
+      }
+    },
+    {
+      "slug": "el-paso-tx",
+      "name": "El Paso",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 76
+      }
+    },
+    {
+      "slug": "round-rock-tx",
+      "name": "Round Rock",
+      "state": "TX",
+      "stateName": "Texas",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 77
+      }
+    },
+    {
+      "slug": "new-york-city-ny",
+      "name": "New York City",
+      "state": "NY",
+      "stateName": "New York",
+      "max": "City guidance permits hens but does not provide one universal numerical cap",
+      "roosters": "Roosters are prohibited by NYC Health Code §161.19",
+      "permit": "Check zoning, animal health, and coop construction rules for the property",
+      "placement": "A single citywide residential coop setback has not been established in this summary",
+      "verified": "2026-10-13",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "NYC Urban Agriculture FAQ explicitly allows hens and prohibits roosters. The page does not determine a citywide residential flock cap or coop setback.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.nyc.gov/site/agriculture/faqs/frequently-asked-questions.page"
+        },
+        {
+          "type": "municipal_health_code",
+          "url": "https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf"
+        }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "NYC Urban Agriculture FAQ explicitly allows hens and prohibits roosters. The page does not determine a citywide residential flock cap or coop setback."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 78
+      }
+    },
+    {
+      "slug": "minneapolis-mn",
+      "name": "Minneapolis",
+      "state": "MN",
+      "stateName": "Minnesota",
+      "max": "Flock size depends on the approved fowl permit; verify before purchase",
+      "roosters": "Rooster restrictions require permit-specific checking",
+      "permit": "A fowl permit is required before purchasing birds; neighbor consent, training, and zoning approval are part of the application",
+      "placement": "Confirm property and enclosure requirements with Minneapolis Animal Care & Control",
+      "verified": "2026-10-13",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "The city publishes an explicit fowl-permit workflow, including education, neighbor consent and zoning approval; no universal numerical or setback claim is made.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.minneapolismn.gov/resident-services/animals-pets/pet-licenses-animal-permits/"
+        }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "The city publishes an explicit fowl-permit workflow, including education, neighbor consent and zoning approval; no universal numerical or setback claim is made."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 79
+      }
+    },
+    {
+      "slug": "madison-wi",
+      "name": "Madison",
+      "state": "WI",
+      "stateName": "Wisconsin",
+      "max": "Up to 8 chickens on eligible lots containing up to 4 dwelling units",
+      "roosters": "Roosters prohibited",
+      "permit": "Chicken license required, plus Wisconsin livestock-premises registration; annual renewal",
+      "placement": "Covered or fenced enclosure, at least 25 ft from any residential structure on an adjacent lot",
+      "verified": "2026-10-13",
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Madison Chicken License page gives the 8-hen allowance, no-rooster rule, license and registration requirements, enclosure standard and 25-ft neighboring-residential-structure rule.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens"
+        }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "Madison Chicken License page gives the 8-hen allowance, no-rooster rule, license and registration requirements, enclosure standard and 25-ft neighboring-residential-structure rule."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 80
+      }
+    },
+    {
+      "slug": "indianapolis-in",
+      "name": "Indianapolis",
+      "state": "IN",
+      "stateName": "Indiana",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 81
+      }
+    },
+    {
+      "slug": "raleigh-nc",
+      "name": "Raleigh",
+      "state": "NC",
+      "stateName": "North Carolina",
+      "max": "Not yet verified for this city",
+      "roosters": "Not yet verified for this city",
+      "permit": "Not yet verified for this city",
+      "placement": "Not yet verified for this city",
+      "verified": null,
+      "planner": {
+        "mode": "manual",
+        "side": 0,
+        "rear": 0,
+        "front": 0,
+        "rearOnly": false,
+        "rearHalf": false
+      },
+      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "sources": [],
+      "audit": {
+        "status": "needs_review",
+        "reviewedAt": null,
+        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+      },
+      "rollout": {
+        "batch": "first-100-2026-10",
+        "priority": 82
+      }
     }
-  ]
+  ],
+  "rollout": {
+    "batch": "first-100-2026-10",
+    "targetCities": 100,
+    "createdAt": "2026-10-13",
+    "policy": "Only independently verified city-level claims may be indexed; needs_review profiles stay noindex and outside sitemap."
+  }
 }
