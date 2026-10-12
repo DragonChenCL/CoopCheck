@@ -1033,11 +1033,11 @@
       "name": "Oro Valley",
       "state": "AZ",
       "stateName": "Arizona",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Chickens are allowed as noncommercial small animal husbandry on qualifying detached single-family residential property; the currently operative town-specific maximum for each lot-size tier has not been fully established in this review. Arizona A.R.S. §9-462.12 provides a six-fowl protection for qualifying detached-home properties of one-half acre or less.",
+      "roosters": "Rooster-specific restrictions require the operative Town Zoning Code §23.6.A.7 and nuisance provisions; do not infer blanket permission.",
+      "permit": "Review town zoning §23.6.A.7, accessory-use conditions and any applicable structure permits; no universally applicable permit conclusion established.",
+      "placement": "Rear-yard and enclosure provisions appear in town small-animal-husbandry standards, but the exact applicable setback must be confirmed from the currently enacted version for the property's zoning and lot size.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1046,28 +1046,27 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "note": "The town's Nov 2024 executive report confirms an adopted September 2024 zoning-code amendment allowing small animal husbandry on qualifying detached single-family parcels; later 2025 markup document is a DRAFT and must not be presented as operative city law. Lot-size bands, roosters, permits and enclosure setbacks need an effective-code check.",
       "sources": [
         {
-          "type": "state_statute_only",
+          "type": "town_manager_official_report",
+          "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/town-manager/executive-reports/2024_nov_tm-report-to-council.pdf"
+        },
+        {
+          "type": "state_statute",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        },
+        {
+          "type": "town_zoning_draft_not_proof_of_enactment",
+          "url": "https://gis.orovalleyaz.gov/storyimages/Planning/2025/State%20Law%20Changes%20ZCA/Code.pdf"
         }
       ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
-        "secondPass": {
-          "status": "researched_not_proven",
-          "channels": [
-            "municipal government website",
-            "municipal code publisher / ordinance amendments",
-            "planning / animal control / state preemption",
-            "secondary cross-check only (not sufficient for publication)"
-          ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
-        }
+        "note": "City's official executive report confirms 2024 adoption; draft zoning markup reviewed separately and not used as operative-law proof. Four detailed dimensions remain partially unresolved.",
+        "reference": "Oro Valley §23.6.A.7; A.R.S. §9-462.12",
+        "verificationMethod": "Official city report + current Arizona state statute; draft segregated"
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -3018,11 +3017,11 @@
       "name": "Bellingham",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Bellingham Municipal Code §7.12.060 permits confined domestic fowl, including chickens, inside city limits, subject to other ordinances. This section states no universal number of hens.",
+      "roosters": "Section 7.12.060 does not conclusively establish current rooster restrictions; check applicable noise/nuisance and zoning rules.",
+      "permit": "The cited animal-keeping section does not establish a universal poultry permit requirement or exemption. Verify zoning and building provisions for a specific lot.",
+      "placement": "Animals must be securely enclosed and kept at least 50 feet from any dwelling or other building where people regularly work or stay, under §7.12.060(A). This is a building-distance rule, not a property-line setback.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -3031,23 +3030,19 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
-      "audit": {
-        "status": "needs_review",
-        "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
-        "secondPass": {
-          "status": "researched_not_proven",
-          "channels": [
-            "municipal government website",
-            "municipal code publisher / ordinance amendments",
-            "planning / animal control / state preemption",
-            "secondary cross-check only (not sufficient for publication)"
-          ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+      "note": "Official Bellingham Municipal Code §7.12.060(A), current through Ordinance 2026-08-022 (Aug 24, 2026). Domestic fowl allowed subject to secure enclosure and 50-ft separation from qualifying buildings. Bird count, rooster-specific provisions, permits and separate zoning conditions are NOT established by this section.",
+      "sources": [
+        {
+          "type": "current_municipal_code",
+          "url": "https://bellingham.municipal.codes/BMC/7.12.060"
         }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "Current municipal-code text independently checked; no flock count or rooster conclusion inferred.",
+        "reference": "Bellingham Municipal Code §7.12.060(A)",
+        "verificationMethod": "Live current municipal code section confirmed"
       },
       "rollout": {
         "batch": "first-100-2026-10",
