@@ -1895,11 +1895,11 @@
       "name": "Aurora",
       "state": "CO",
       "stateName": "Colorado",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 6 hens on most residential properties; up to 8 hens on single-family lots of 20,000 sq ft or more",
+      "roosters": "Roosters prohibited on residential property",
+      "permit": "City chicken/duck permit required before acquiring birds; city's published fee is a one-time $40",
+      "placement": "Rear-yard chicken housing; structure at least 15 ft from abutting property lines unless affected owners consent in writing",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1908,12 +1908,21 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "Aurora's current city Chickens & Ducks page and official chicken permit form describe residential limits and requirements. Verify zoning and HOA restrictions separately.",
+      "sources": [
+        {
+          "type": "city_guidance",
+          "url": "https://www.auroragov.org/residents/animal_services/field_services/ordinances_enforcement/chickensducks"
+        },
+        {
+          "type": "official_permit_form",
+          "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Animal%20Services/Ordinances%20%26%20Enforcements/019377.pdf"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "Aurora's current city Chickens & Ducks page and official chicken permit form describe residential limits and requirements. Verify zoning and HOA restrictions separately."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2735,11 +2744,11 @@
       "name": "San Antonio",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 8 domestic fowl per residence, including at most 1 rooster, without an excess-animal permit",
+      "roosters": "One rooster may be kept within the standard 8-fowl limit; larger flocks have additional permit conditions",
+      "permit": "Excess-animal permit is required to exceed the standard 8-fowl residential limit",
+      "placement": "Standard fowl must be confined to a coop and run of at least 24 sq ft or 6 sq ft per bird, whichever is greater; additional separation rules apply to excess-animal permits",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2748,12 +2757,21 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply.",
+      "sources": [
+        {
+          "type": "official_permit_form",
+          "url": "https://www.sa.gov/files/assets/main/acs/documents/permit-excessanimal.pdf"
+        },
+        {
+          "type": "city_permit_fees",
+          "url": "https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits/Fees"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
-        "reviewedAt": null,
-        "note": "City-specific regulations pending official source and code-section validation. Not eligible for indexing or planner rule matching."
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply."
       },
       "rollout": {
         "batch": "first-100-2026-10",
