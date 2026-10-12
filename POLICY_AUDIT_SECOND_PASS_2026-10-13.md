@@ -3,9 +3,9 @@
 ## Result
 
 - City total: **100**
-- Reviewed source-backed profiles: **82** (44 verified, 38 limited-scope verified)
-- Still not source-reconciled: **18** — kept **noindex** and omitted from sitemap/planner.
-- Newly promoted this pass: **12** of the 30 remaining candidates (reviewed total increased from 70 to 82).
+- Reviewed source-backed profiles: **83** (45 verified, 38 limited-scope verified)
+- Still not source-reconciled: **17** — kept **noindex** and omitted from sitemap/planner.
+- Newly promoted this pass: **13** of the 30 remaining candidates (reviewed total increased from 70 to 83).
 
 Review method: official government sites, online municipal code publishers, adopted amendments, planning and animal-control guidance, and state preemption. Secondary summaries were used only to discover the primary legal reference. Do not confuse same-named cities in other states, including Medford WI vs OR, Prescott WI vs AZ, Bellevue ID vs WA.
 
@@ -21,6 +21,7 @@ Review method: official government sites, online municipal code publishers, adop
 | San Francisco, CA | verified | [current_municipal_code_or_public_agency_guidance](https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_health/0-0-0-43) | Parcel zoning/HOA still apply |
 | San Jose, CA | verified_limited_scope | [current_municipal_code_or_public_agency_guidance](https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE) | Partial facts only; check missing dimensions |
 | Folsom, CA | verified_limited_scope | [current_municipal_code_or_public_agency_guidance](https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html) | Partial facts only; check missing dimensions |
+| Anaheim, CA | verified | [municipal code §18.38.030](https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-68050); [city clerk](https://www.anaheim.net/2904/Anaheim-Municipal-Code) | Zoning/Chapter 8.24 and combined poultry/bird/rabbit/rodent allowance apply |
 | Fremont, CA | verified | [current_municipal_code_or_public_agency_guidance](https://www.fremont.gov/government/departments/animal-services/tri-city/animal-shelter/services/pet-licenses); [supporting_public_source](https://gocodebook.com/library/us/ca/fremont/title-6-animals/chapter-6.10-animal-ownership/article-ii-care-and-keep-of-animals) | Parcel zoning/HOA still apply |
 | Medford, OR | verified_limited_scope | [current_municipal_code_or_public_agency_guidance](https://medford.municipal.codes/Code/5.555) | Partial facts only; check missing dimensions |
 | Corvallis, OR | verified_limited_scope | [current_municipal_code_or_public_agency_guidance](https://library.municode.com/or/corvallis/codes/code_of_ordinances) | Partial facts only; check missing dimensions |
@@ -36,7 +37,6 @@ Review method: official government sites, online municipal code publishers, adop
 | Prescott, AZ | Current city poultry ordinance/municipal-code section not reconciled sufficiently to publish a trustworthy numerical, rooster, permit, or coop-placement conclusion. Municipal code office/planning confirmation required. |
 | Queen Creek, AZ | Published Queen Creek zoning guide's 5-hen allowance for 5k–10k sq ft lots may conflict with Arizona 2024 state protection of six for eligible ≤0.5 acre detached-home properties. Municipal clarification required. |
 | Surprise, AZ | Ordinance 2024-42 changed fowl §§10-113/10-114, but operative codified text and any later amendment could not be fully confirmed from search snippets. |
-| Anaheim, CA | Current city poultry ordinance/municipal-code section not reconciled sufficiently to publish a trustworthy numerical, rooster, permit, or coop-placement conclusion. Municipal code office/planning confirmation required. |
 | Berkeley, CA | Current city poultry ordinance/municipal-code section not reconciled sufficiently to publish a trustworthy numerical, rooster, permit, or coop-placement conclusion. Municipal code office/planning confirmation required. |
 | Irvine, CA | Current city poultry ordinance/municipal-code section not reconciled sufficiently to publish a trustworthy numerical, rooster, permit, or coop-placement conclusion. Municipal code office/planning confirmation required. |
 | Arvada, CO | Current city poultry ordinance/municipal-code section not reconciled sufficiently to publish a trustworthy numerical, rooster, permit, or coop-placement conclusion. Municipal code office/planning confirmation required. |

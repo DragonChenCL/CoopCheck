@@ -820,6 +820,27 @@ window.COOP_CITIES=[
     "source": "https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO_ARTVBAZOREUSDEPR_CH19.147DOSPPLZODS_19.147.020PELAUS"
   },
   {
+    "slug": "anaheim-ca",
+    "name": "Anaheim",
+    "state": "CA",
+    "stateName": "California",
+    "max": "Residential noncommercial animal keeping under Anaheim Municipal Code §18.38.030: combined poultry, birds, rabbits and rodents are limited to one animal per 1,800 sq ft of lot area. This is a combined-category density, not a separate hen allowance.",
+    "roosters": "Roosters and peacocks prohibited in residential zones unless specifically permitted by underlying zone.",
+    "permit": "Standard domestic noncommercial keeping is permitted subject to zoning and Chapter 8.24; separate building/animal approvals may be needed for certain circumstances.",
+    "placement": "Birds may not be confined within 50 ft of a building used for human habitation other than the owner's, or within 20 ft of any property line, except inside the dwelling. Coops/corrals must satisfy planning confinement methods.",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "Anaheim Municipal Code §18.38.030, as amended by Ordinance 6555 §33 (April 4, 2023). Animal quantity is COMBINED poultry/birds/rabbits/rodents; exact parcel zoning and Chapter 8.24 still apply.",
+    "source": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-68050"
+  },
+  {
     "slug": "long-beach-ca",
     "name": "Long Beach",
     "state": "CA",

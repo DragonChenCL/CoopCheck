@@ -45,4 +45,4 @@ An official-source search and review was carried out for all 100 city profiles. 
 
 ## Second-pass 30-city source verification (2026-10-13)
 
-Official-source research for the remaining 30 city candidates is documented in `POLICY_AUDIT_SECOND_PASS_2026-10-13.md`. Coverage now includes **82** source-backed city profiles, **38** of them limited-scope; **18** unresolved records remain excluded from sitemap and planner. Do not equate a limited-scope source check with a full local-code compliance ruling.
+Official-source research for the remaining 30 city candidates is documented in `POLICY_AUDIT_SECOND_PASS_2026-10-13.md`. Coverage now includes **83** source-backed city profiles, **38** of them limited-scope; **17** unresolved records remain excluded from sitemap and planner. Do not equate a limited-scope source check with a full local-code compliance ruling.
