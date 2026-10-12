@@ -24,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Verify policy registry is generated and in sync
+        run: node scripts/generate-policy-data.cjs --check
+
       - name: Verify planner and payment regression checks
         run: node scripts/qa-coopcheck.cjs
 
