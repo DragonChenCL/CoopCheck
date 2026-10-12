@@ -590,11 +590,11 @@
       "name": "Gilbert",
       "state": "AZ",
       "stateName": "Arizona",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Gilbert's official Code Compliance FAQ says that on each lot up to 20,000 sq ft, up to 25 fowl and rodents combined are allowed under town code/Land Development Code provisions; the count is NOT a universal hen entitlement and must be reconciled with parcel zoning and Arizona's 2024 backyard-fowl preemption.",
+      "roosters": "Gilbert Code Compliance FAQ does not establish a simple citywide rooster entitlement or prohibition; inspect Chapter 6 and Land Development Code §2.107 for the parcel and any current nuisance restrictions.",
+      "permit": "Confirm Town Code §§6-126–127, Land Development Code §2.107, and parcel zoning with Gilbert Code Compliance.",
+      "placement": "Coop siting and structure rules require parcel-level checks; no universal chicken-coop setback confirmed in the official FAQ.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -603,28 +603,22 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "note": "Source-backed only for the town FAQ's fowl/rodent category and code references. Arizona A.R.S. §9-462.12 separately protects up to six fowl on eligible detached-home lots <=1/2 acre, so verify zoning and municipal ordinance applicability before using the 25-combined figure as an actual poultry allowance.",
       "sources": [
         {
-          "type": "state_statute_only",
+          "type": "official_town_code_compliance_faq",
+          "url": "https://www.gilbertaz.gov/departments/development-services/plan-review-inspection/inspection-code-compliance/code-compliance/faq-municipal-code-land-development-code"
+        },
+        {
+          "type": "state_statute",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
         }
       ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
-        "secondPass": {
-          "status": "researched_not_proven",
-          "channels": [
-            "municipal government website",
-            "municipal code publisher / ordinance amendments",
-            "planning / animal control / state preemption",
-            "secondary cross-check only (not sufficient for publication)"
-          ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
-        }
+        "verificationMethod": "Gilbert government FAQ cross-checked against state statute",
+        "note": "Source-backed only for the town FAQ's fowl/rodent category and code references. Arizona A.R.S. §9-462.12 separately protects up to six fowl on eligible detached-home lots <=1/2 acre, so verify zoning and municipal ordinance applicability before using the 25-combined figure as an actual poultry allowance."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -743,7 +737,8 @@
             "planning / animal control / state preemption",
             "secondary cross-check only (not sufficient for publication)"
           ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
+          "warning": "Peoria Code §§21-427/21-686 points to A.R.S. §9-462.10 whereas current Arizona backyard-fowl preemption appears as §9-462.12; obtain city correction/confirmation before publishing a simple cap."
         }
       },
       "rollout": {
@@ -789,7 +784,8 @@
             "planning / animal control / state preemption",
             "secondary cross-check only (not sufficient for publication)"
           ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
+          "warning": "Ordinance 2024-42 changed fowl §§10-113/10-114, but operative codified text and any later amendment could not be fully confirmed from search snippets."
         }
       },
       "rollout": {
@@ -949,7 +945,8 @@
             "planning / animal control / state preemption",
             "secondary cross-check only (not sufficient for publication)"
           ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
+          "warning": "Published Queen Creek zoning guide's 5-hen allowance for 5k–10k sq ft lots may conflict with Arizona 2024 state protection of six for eligible ≤0.5 acre detached-home properties. Municipal clarification required."
         }
       },
       "rollout": {
@@ -1344,7 +1341,8 @@
             "planning / animal control / state preemption",
             "secondary cross-check only (not sufficient for publication)"
           ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
+          "warning": "Online §1-6-17 zoning text and 2026 amendment documents show possible numerical changes, plus Arizona state preemption. Reconcile enacted latest code and lot-specific treatment before publishing."
         }
       },
       "rollout": {
