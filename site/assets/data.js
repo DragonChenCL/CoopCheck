@@ -9,7 +9,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "Building permit if coop exceeds 120 sq ft or has utilities",
     "placement": "Rear/side yards; coop at least 5 ft from every property line",
-    "source": "https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance",
     "verified": "2026-10-12",
     "planner": {
       "mode": "property",
@@ -19,7 +18,8 @@ window.COOP_CITIES=[
       "rearOnly": true,
       "rearHalf": false
     },
-    "note": "Rear-yard placement still needs manual confirmation."
+    "note": "Rear-yard placement still needs manual confirmation.",
+    "source": "https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance"
   },
   {
     "slug": "mesa-az",
@@ -30,7 +30,6 @@ window.COOP_CITIES=[
     "roosters": "Allowed only if they do not create a noise disturbance",
     "permit": "Check parcel-specific zoning/building requirements",
     "placement": "Fowl must be contained; city code has enclosure-distance rules",
-    "source": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -40,7 +39,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Automatic geometry is disabled until Mesa's code-specific distance rule is modeled."
+    "note": "Automatic geometry is disabled until Mesa's code-specific distance rule is modeled.",
+    "source": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock"
   },
   {
     "slug": "phoenix-az",
@@ -51,7 +51,6 @@ window.COOP_CITIES=[
     "roosters": "Male poultry are allowed only if incapable of making vocal noise that disturbs nearby residents",
     "permit": "Verify zoning and accessory-structure requirements for the property",
     "placement": "Rear or side yard; enclosure at least 20 ft from a neighboring property line unless adjoining owners/occupants consent in writing; no front-yard poultry",
-    "source": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -61,7 +60,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Phoenix uses a 20-ft neighboring-property-line rule plus rear/side-yard placement, with written-consent exceptions. The planner cannot yet identify which drawn boundary is a neighboring property line or determine legal yard orientation."
+    "note": "Phoenix uses a 20-ft neighboring-property-line rule plus rear/side-yard placement, with written-consent exceptions. The planner cannot yet identify which drawn boundary is a neighboring property line or determine legal yard orientation.",
+    "source": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630"
   },
   {
     "slug": "tempe-az",
@@ -72,7 +72,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited except in the AG district",
     "permit": "A use permit may be available to exceed the standard quantity",
     "placement": "On lots under 1 acre, chicken enclosures may not exceed the fence/wall height",
-    "source": "https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -82,7 +81,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The cited city page does not provide one universal chicken-enclosure property-line setback."
+    "note": "The cited city page does not provide one universal chicken-enclosure property-line setback.",
+    "source": "https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities"
   },
   {
     "slug": "san-diego-ca",
@@ -93,7 +93,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "Check building/zoning rules for the structure",
     "placement": "Typical 5-hen case: rear yard, 5 ft side and 13 ft rear setbacks",
-    "source": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens",
     "verified": "2026-10-12",
     "planner": {
       "mode": "property",
@@ -103,7 +102,8 @@ window.COOP_CITIES=[
       "rearOnly": true,
       "rearHalf": false
     },
-    "note": "Typical single-family guidance only; exact zoning setbacks can differ."
+    "note": "Typical single-family guidance only; exact zoning setbacks can differ.",
+    "source": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens"
   },
   {
     "slug": "sacramento-ca",
@@ -114,7 +114,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "Annual chicken license and chicken coop permit required",
     "placement": "Rear yard only; coop at least 20 ft from the nearest neighboring dwelling",
-    "source": "https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -124,7 +123,8 @@ window.COOP_CITIES=[
       "rearOnly": true,
       "rearHalf": false
     },
-    "note": "The key distance is to a neighboring dwelling, so parcel geometry alone is not enough."
+    "note": "The key distance is to a neighboring dwelling, so parcel geometry alone is not enough.",
+    "source": "https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license"
   },
   {
     "slug": "denver-co",
@@ -135,7 +135,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "Food-Producing Animals permit: one-time $25 per property",
     "placement": "Rear 50% of lot; housing structures 15 ft from certain neighboring dwellings",
-    "source": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter/Animal-Protection/Animal-Ordinances-and-Legislation",
     "verified": "2026-10-12",
     "planner": {
       "mode": "advisory",
@@ -145,7 +144,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": true
     },
-    "note": "The planner cannot yet verify neighboring dwelling distances."
+    "note": "The planner cannot yet verify neighboring dwelling distances.",
+    "source": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter/Animal-Protection/Animal-Ordinances-and-Legislation"
   },
   {
     "slug": "colorado-springs-co",
@@ -156,7 +156,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "Coops must comply with applicable zoning/building rules for accessory structures",
     "placement": "At least 4 sq ft of shelter space per chicken; accessory-structure setbacks vary by zoning/size",
-    "source": "https://coloradosprings.gov/page/city-regulations-animals",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -166,7 +165,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "There is no single universal coop setback in the cited city guidance; accessory-structure rules vary."
+    "note": "There is no single universal coop setback in the cited city guidance; accessory-structure rules vary.",
+    "source": "https://coloradosprings.gov/page/city-regulations-animals"
   },
   {
     "slug": "portland-or",
@@ -177,7 +177,6 @@ window.COOP_CITIES=[
     "roosters": "Generally prohibited outside qualifying agricultural use",
     "permit": "No livestock permit for standard backyard chickens",
     "placement": "Structures 3 ft from side/rear lines and 10 ft from front line",
-    "source": "https://www.portland.gov/code/13/40",
     "verified": "2026-10-12",
     "planner": {
       "mode": "property",
@@ -187,7 +186,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Direct property-line setbacks are supported by the planner."
+    "note": "Direct property-line setbacks are supported by the planner.",
+    "source": "https://www.portland.gov/code/13/40"
   },
   {
     "slug": "eugene-or",
@@ -198,8 +198,7 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "No license; building permit generally not required for enclosure ≤200 sq ft and ≤10 ft high",
     "placement": "Animal shelters and covered runs at least 10 ft from all property lines unless adjacent owner authorizes closer placement",
-    "source": "https://www.eugene-or.gov/2389/Farm-Animals-Urban-Animal-Keeping",
-    "verified": "2026-09-22",
+    "verified": "2026-10-12",
     "planner": {
       "mode": "property",
       "side": 10,
@@ -208,7 +207,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The 10-ft property-line rule is directly supported; parcel zoning and CC&Rs still need verification."
+    "note": "The 10-ft property-line rule is directly supported; parcel zoning and CC&Rs still need verification.",
+    "source": "https://www.eugene-or.gov/2389/Farm-Animals-Urban-Animal-Keeping"
   },
   {
     "slug": "salem-or",
@@ -219,8 +219,7 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "No permit or license required for standard poultry keeping",
     "placement": "Rear yard; 3 ft from other buildings on site and 25 ft from a residence on adjacent property",
-    "source": "https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules",
-    "verified": "2026-09-22",
+    "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
       "side": 0,
@@ -229,7 +228,8 @@ window.COOP_CITIES=[
       "rearOnly": true,
       "rearHalf": false
     },
-    "note": "The key rule measures to neighboring residences, not simply the property line."
+    "note": "The key rule measures to neighboring residences, not simply the property line.",
+    "source": "https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules"
   },
   {
     "slug": "gresham-or",
@@ -240,7 +240,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "Chicken permit required; city lists a $50 two-year permit",
     "placement": "Rear yard; coop/run 10 ft from property lines; coop 25 ft from neighboring dwelling",
-    "source": "https://www.greshamoregon.gov/residents/community-services/chickens/",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -250,7 +249,8 @@ window.COOP_CITIES=[
       "rearOnly": true,
       "rearHalf": false
     },
-    "note": "The city has both a property-line rule and a neighboring-dwelling rule, so full automation needs neighbor-building data."
+    "note": "The city has both a property-line rule and a neighboring-dwelling rule, so full automation needs neighbor-building data.",
+    "source": "https://www.greshamoregon.gov/residents/community-services/chickens/"
   },
   {
     "slug": "seattle-wa",
@@ -261,8 +261,7 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "No general chicken permit stated on the city overview",
     "placement": "Chicken structures at least 10 ft from residential structures on adjacent lots",
-    "source": "https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes",
-    "verified": "2026-09-22",
+    "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
       "side": 0,
@@ -271,7 +270,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Accurate automation needs neighboring building footprints."
+    "note": "Accurate automation needs neighboring building footprints.",
+    "source": "https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes"
   },
   {
     "slug": "spokane-wa",
@@ -282,7 +282,6 @@ window.COOP_CITIES=[
     "roosters": "Only allowed in RA zone",
     "permit": "Chickens are excluded from the WSU animal-keeping certification requirement",
     "placement": "Animal enclosures follow residential accessory-structure setbacks",
-    "source": "https://my.spokanecity.org/smc/?Section=17C.310.115",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -292,7 +291,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Accessory-structure setbacks depend on the property's zoning and cannot be represented by one citywide number."
+    "note": "Accessory-structure setbacks depend on the property's zoning and cannot be represented by one citywide number.",
+    "source": "https://my.spokanecity.org/smc/?Section=17C.310.115"
   },
   {
     "slug": "vancouver-wa",
@@ -303,7 +303,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited",
     "permit": "Check zoning and accessory-structure requirements for the property",
     "placement": "Domestic-animal and accessory-structure rules apply",
-    "source": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -313,7 +312,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The city's public FAQ confirms chickens are allowed and roosters are not, but does not state one universal coop setback."
+    "note": "The city's public FAQ confirms chickens are allowed and roosters are not, but does not state one universal coop setback.",
+    "source": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/"
   },
   {
     "slug": "austin-tx",
@@ -324,7 +324,6 @@ window.COOP_CITIES=[
     "roosters": "Check current city animal/noise rules",
     "permit": "Verify enclosure/building requirements for the property",
     "placement": "For 2+ chickens, enclosures should be at least 30 ft from adjacent residences or businesses",
-    "source": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -334,7 +333,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Austin's cited rule measures from adjacent residences/businesses rather than the property line."
+    "note": "Austin's cited rule measures from adjacent residences/businesses rather than the property line.",
+    "source": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities"
   },
   {
     "slug": "arlington-tx",
@@ -345,7 +345,6 @@ window.COOP_CITIES=[
     "roosters": "Prohibited except agricultural zoning",
     "permit": "Check accessory-structure permit rules for the coop itself",
     "placement": "For 5+ chickens, city rules add 50-ft dwelling-distance and lot-size thresholds",
-    "source": "https://www.arlingtontx.gov/News-Articles/2025/March/Egg-xactly-How-Many-Chickens-Can-You-Own-in-Arlington-Anyway",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -355,7 +354,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The rule changes with flock size and measures from nearby dwellings."
+    "note": "The rule changes with flock size and measures from nearby dwellings.",
+    "source": "https://www.arlingtontx.gov/News-Articles/2025/March/Egg-xactly-How-Many-Chickens-Can-You-Own-in-Arlington-Anyway"
   },
   {
     "slug": "fort-worth-tx",
@@ -366,7 +366,6 @@ window.COOP_CITIES=[
     "roosters": "Up to 2 roosters within the stated fowl limits",
     "permit": "Check zoning/building requirements for coop structures",
     "placement": "Pens/coops must be more than 50 ft from regulated structures",
-    "source": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -376,6 +375,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The 50-ft rule is measured from regulated structures, not simply property lines."
+    "note": "The 50-ft rule is measured from regulated structures, not simply property lines.",
+    "source": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl"
   }
 ];
