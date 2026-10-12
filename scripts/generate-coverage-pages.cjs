@@ -9,7 +9,7 @@ function generateAll(registry){
   const rollout=x=>x.rollout?.batch==="first-100-2026-10";
   const batches=registry.cities.filter(rollout);
   const verified=registry.cities.filter(active);
-  if(registry.cities.length!==100||batches.length!==82||verified.length!==22)throw Error("Unexpected coverage counts "+[registry.cities.length,batches.length,verified.length]);
+  if(registry.cities.length!==100||batches.length!==82||verified.length!==24)throw Error("Unexpected coverage counts "+[registry.cities.length,batches.length,verified.length]);
   const zoneLink=c=>existingStates.has(c.state)?"/states/"+c.stateName.toLowerCase().replaceAll(" ","-")+".html":"/coverage.html#"+c.state.toLowerCase();
   const cityLink=c=>"/cities/"+c.slug+".html";
   function page(c){

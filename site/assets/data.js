@@ -400,6 +400,48 @@ window.COOP_CITIES=[
     "source": "https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens"
   },
   {
+    "slug": "aurora-co",
+    "name": "Aurora",
+    "state": "CO",
+    "stateName": "Colorado",
+    "max": "Up to 6 hens on most residential properties; up to 8 hens on single-family lots of 20,000 sq ft or more",
+    "roosters": "Roosters prohibited on residential property",
+    "permit": "City chicken/duck permit required before acquiring birds; city's published fee is a one-time $40",
+    "placement": "Rear-yard chicken housing; structure at least 15 ft from abutting property lines unless affected owners consent in writing",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "Aurora's current city Chickens & Ducks page and official chicken permit form describe residential limits and requirements. Verify zoning and HOA restrictions separately.",
+    "source": "https://www.auroragov.org/residents/animal_services/field_services/ordinances_enforcement/chickensducks"
+  },
+  {
+    "slug": "san-antonio-tx",
+    "name": "San Antonio",
+    "state": "TX",
+    "stateName": "Texas",
+    "max": "Up to 8 domestic fowl per residence, including at most 1 rooster, without an excess-animal permit",
+    "roosters": "One rooster may be kept within the standard 8-fowl limit; larger flocks have additional permit conditions",
+    "permit": "Excess-animal permit is required to exceed the standard 8-fowl residential limit",
+    "placement": "Standard fowl must be confined to a coop and run of at least 24 sq ft or 6 sq ft per bird, whichever is greater; additional separation rules apply to excess-animal permits",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply.",
+    "source": "https://www.sa.gov/files/assets/main/acs/documents/permit-excessanimal.pdf"
+  },
+  {
     "slug": "new-york-city-ny",
     "name": "New York City",
     "state": "NY",

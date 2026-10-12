@@ -41,9 +41,9 @@ assert.equal(policyRegistry.schemaVersion,1,"supported policy registry schema");
 assert.equal(policyRegistry.cities.length,100,"100 cities tracked in registry");
 assert.equal(new Set(policyRegistry.cities.map(c=>c.slug)).size,100,"city slugs are unique");
 const reviewedCities=policyRegistry.cities.filter(c=>c.audit?.status!=="needs_review");
-assert.equal(reviewedCities.length,22,"only 22 reviewed cities are indexed and selectable in planner");
-assert.equal(policyRegistry.cities.filter(c=>c.audit?.status==="needs_review").length,78,"78 city profiles remain explicitly pending");
-assert.equal((cityDataSource.match(/"slug":/g)||[]).length,22,"browser rules include reviewed cities only");
+assert.equal(reviewedCities.length,24,"only 24 reviewed cities are indexed and selectable in planner");
+assert.equal(policyRegistry.cities.filter(c=>c.audit?.status==="needs_review").length,76,"76 city profiles remain explicitly pending");
+assert.equal((cityDataSource.match(/"slug":/g)||[]).length,24,"browser rules include reviewed cities only");
 for(const city of policyRegistry.cities){
   assert(["verified","verified_with_source_gap","verified_limited_scope","needs_review"].includes(city.audit?.status),"audit status: "+city.slug);
   assert(Array.isArray(city.sources)&&city.sources.every(s=>/^https:\/\//.test(s.url)),"sources are HTTPS: "+city.slug);
