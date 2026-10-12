@@ -1691,11 +1691,11 @@
       "name": "Anaheim",
       "state": "CA",
       "stateName": "California",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Residential noncommercial animal keeping under Anaheim Municipal Code §18.38.030: combined poultry, birds, rabbits and rodents are limited to one animal per 1,800 sq ft of lot area. This is a combined-category density, not a separate hen allowance.",
+      "roosters": "Roosters and peacocks prohibited in residential zones unless specifically permitted by underlying zone.",
+      "permit": "Standard domestic noncommercial keeping is permitted subject to zoning and Chapter 8.24; separate building/animal approvals may be needed for certain circumstances.",
+      "placement": "Birds may not be confined within 50 ft of a building used for human habitation other than the owner's, or within 20 ft of any property line, except inside the dwelling. Coops/corrals must satisfy planning confinement methods.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1704,23 +1704,22 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
-      "audit": {
-        "status": "needs_review",
-        "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
-        "secondPass": {
-          "status": "researched_not_proven",
-          "channels": [
-            "municipal government website",
-            "municipal code publisher / ordinance amendments",
-            "planning / animal control / state preemption",
-            "secondary cross-check only (not sufficient for publication)"
-          ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+      "note": "Anaheim Municipal Code §18.38.030, as amended by Ordinance 6555 §33 (April 4, 2023). Animal quantity is COMBINED poultry/birds/rabbits/rodents; exact parcel zoning and Chapter 8.24 still apply.",
+      "sources": [
+        {
+          "type": "current_municipal_code",
+          "url": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-68050"
+        },
+        {
+          "type": "city_clerk_code_portal",
+          "url": "https://www.anaheim.net/2904/Anaheim-Municipal-Code"
         }
+      ],
+      "audit": {
+        "status": "verified",
+        "reviewedAt": "2026-10-13",
+        "verificationMethod": "Cross-checked published municipal code §18.38.030 with official Anaheim City Clerk code portal and 2023 amendment",
+        "note": "Anaheim Municipal Code §18.38.030, as amended by Ordinance 6555 §33 (April 4, 2023). Animal quantity is COMBINED poultry/birds/rabbits/rodents; exact parcel zoning and Chapter 8.24 still apply."
       },
       "rollout": {
         "batch": "first-100-2026-10",
