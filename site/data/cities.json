@@ -307,7 +307,7 @@
       "roosters": "Prohibited",
       "permit": "No license; building permit generally not required for enclosure ≤200 sq ft and ≤10 ft high",
       "placement": "Animal shelters and covered runs at least 10 ft from all property lines unless adjacent owner authorizes closer placement",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "property",
         "side": 10,
@@ -321,12 +321,16 @@
         {
           "type": "city_guidance",
           "url": "https://www.eugene-or.gov/2389/Farm-Animals-Urban-Animal-Keeping"
+        },
+        {
+          "type": "city_guidance_pdf",
+          "url": "https://www.eugene-or.gov/DocumentCenter/View/10967/Urban-Animal-Keeping"
         }
       ],
       "audit": {
-        "status": "verified_with_source_gap",
+        "status": "verified",
         "reviewedAt": "2026-10-12",
-        "note": "Official Eugene urban-animal-keeping page remains active and points to EC 9.5250 / supporting guidance. Existing summarized quantities and setback rules are retained, but the canonical page does not expose all details directly in machine-readable text."
+        "note": "Official Eugene Urban Animal Keeping guidance confirms up to 6 adult and 6 under-6-month chickens/domestic fowl on lots under 20,000 sq ft, no roosters, 10-ft shelter/run setback from property lines unless written adjacent-owner authorization, and the <=200 sq ft / <=10 ft enclosure permit threshold."
       }
     },
     {
@@ -338,7 +342,7 @@
       "roosters": "Prohibited",
       "permit": "No permit or license required for standard poultry keeping",
       "placement": "Rear yard; 3 ft from other buildings on site and 25 ft from a residence on adjacent property",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -355,9 +359,9 @@
         }
       ],
       "audit": {
-        "status": "verified_with_source_gap",
+        "status": "verified",
         "reviewedAt": "2026-10-12",
-        "note": "Existing Salem summary is retained against the official poultry-keeping source, but the official page is intermittently inaccessible to automated verification. Keep this city on the higher-priority recheck list."
+        "note": "Official Salem poultry guidance confirms maximum 12 poultry, no roosters, no standard permit/license, rear-yard facility placement, 3-ft on-site building separation, and 25-ft separation from an adjacent residence."
       }
     },
     {
@@ -400,7 +404,7 @@
       "roosters": "Prohibited",
       "permit": "No general chicken permit stated on the city overview",
       "placement": "Chicken structures at least 10 ft from residential structures on adjacent lots",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -414,12 +418,16 @@
         {
           "type": "city_guidance",
           "url": "https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes"
+        },
+        {
+          "type": "sdci_tip",
+          "url": "https://www.seattle.gov/DPD/publications/CAM/cam244.pdf"
         }
       ],
       "audit": {
-        "status": "verified_with_source_gap",
+        "status": "verified",
         "reviewedAt": "2026-10-12",
-        "note": "Official Seattle guidance confirms up to 8 domestic fowl on a standard lot and no roosters. Existing 10-ft adjacent-residential-structure placement rule is retained but should be backed by a direct code-section source in the next citation pass."
+        "note": "Official Seattle animal guidance and SDCI Tip 244 confirm up to 8 domestic fowl on a standard lot, no roosters, and a 10-ft separation between fowl structures and residential structures on adjacent lots."
       }
     },
     {
