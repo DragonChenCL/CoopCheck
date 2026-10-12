@@ -614,7 +614,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -724,7 +734,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -760,7 +780,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -809,11 +839,11 @@
       "name": "Avondale",
       "state": "AZ",
       "stateName": "Arizona",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "The City of Avondale's zoning ordinance conditionally permits farm animals/backyard fowl in certain residential districts under §28-33(h); no general municipal hen cap was confirmed by this zoning provision. Eligible homes may also have state-law protections under A.R.S. §9-462.12.",
+      "roosters": "City chapter 3 requirements and any state-law exception must be checked; no reliable universal rooster ruling established by §28-33(h).",
+      "permit": "Some zoning districts list keeping farm animals as permitted with conditions; check City Code Chapter 3 Article II before acquiring birds.",
+      "placement": "The reviewed zoning use table does not establish a universal chicken-coop setback; Arizona law may permit city requirements up to 20 ft from neighboring property for qualifying lots.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -822,18 +852,22 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "note": "Avondale Zoning Code §§28-32 and 28-33(h); Arizona A.R.S. §9-462.12. City chapter 3 still unverified. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
       "sources": [
         {
-          "type": "state_statute_only",
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://library.municode.com/az/avondale/codes/code_of_ordinances?nodeId=CD_ORD_CH28ZOOR_ART2REDI"
+        },
+        {
+          "type": "supporting_public_source",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
         }
       ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "Avondale Zoning Code §§28-32 and 28-33(h); Arizona A.R.S. §9-462.12. City chapter 3 still unverified. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -906,7 +940,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1016,7 +1060,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1065,11 +1119,11 @@
       "name": "Casa Grande",
       "state": "AZ",
       "stateName": "Arizona",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "A resident of a detached single-family residence may keep up to 6 domestic chickens under city Code §6.06.010; agricultural zoning exceptions may apply.",
+      "roosters": "Male fowl, including roosters, are prohibited in the backyard-fowl allowance.",
+      "permit": "Follow Chapter 6.06 and applicable zoning/structure requirements; no universal chicken permit is stated in §6.06.010.",
+      "placement": "Rear or side yard enclosure at least 20 ft from neighboring properties; maximum 200 sq ft and 8 ft height (lower than fence line on some lots).",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1078,18 +1132,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "note": "Casa Grande Code Chapter 6.06 §6.06.010 (effective Mar 1 2025). Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation.",
       "sources": [
         {
-          "type": "state_statute_only",
-          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://codelibrary.amlegal.com/codes/casagrande/latest/casagrande_az/0-0-0-18466"
         }
       ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "Casa Grande Code Chapter 6.06 §6.06.010 (effective Mar 1 2025). Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1162,7 +1216,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1174,11 +1238,11 @@
       "name": "Prescott Valley",
       "state": "AZ",
       "stateName": "Arizona",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 10 chickens on each residential lot under Town Code §6-02-030(B); separate livestock categories are not included.",
+      "roosters": "Adult male chickens (roosters) prohibited.",
+      "permit": "No standard chicken license or coop building permit, except if the coop has electric, mechanical or plumbing fixtures.",
+      "placement": "Coop/hutch setback at least 1 ft from property or easement line (whichever is farther from adjacent structures), plus housing and sanitation rules.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1187,18 +1251,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "note": "Prescott Valley Town Code §6-02-030(B), amended Sep 2023; current code publisher. Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation.",
       "sources": [
         {
-          "type": "state_statute_only",
-          "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://codelibrary.amlegal.com/codes/prescottvalleyaz/latest/prescottvalley_az/0-0-0-20920"
         }
       ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "Prescott Valley Town Code §6-02-030(B), amended Sep 2023; current code publisher. Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1271,7 +1335,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1320,11 +1394,11 @@
       "name": "Los Angeles",
       "state": "CA",
       "stateName": "California",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "The City of Los Angeles does not have a single citywide backyard hen limit confirmed by the reviewed zoning provision. Agricultural and other zoning districts differ; verify property zoning.",
+      "roosters": "City Code §53.71 generally limits a property to at most ONE rooster, with expressly stated permitted business, educational, exhibition and filming exceptions; nuisance rules still apply.",
+      "permit": "Poultry permissions depend on zoning and accessory use; any commercial or educational exception requires proper licensing.",
+      "placement": "No universal residential coop setback established by these provisions; consult applicable zoning, animal and accessory-structure rules.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1333,13 +1407,22 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "Los Angeles Municipal Code §53.71 and zoning §12.04. Hen limit and setback remain unresolved. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-213406"
+        },
+        {
+          "type": "supporting_public_source",
+          "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-108871"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "Los Angeles Municipal Code §53.71 and zoning §12.04. Hen limit and setback remain unresolved. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1351,11 +1434,11 @@
       "name": "San Francisco",
       "state": "CA",
       "stateName": "California",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Residential premises may keep no more than FOUR animals IN TOTAL across the species listed in San Francisco Health Code §37(a); chickens share that combined cap with named other birds/mammals, so this is not a separate four-hen allowance.",
+      "roosters": "The reviewed Health Code §37 does not establish a categorical rooster-specific ban; verify noise and other animal/zoning rules.",
+      "permit": "Health Code §37(b) requires approved coops/enclosures for the covered animals. Separate zoning/building/health approvals may apply.",
+      "placement": "An outdoor coop or enclosure must be at least 20 ft from any door or window of a building used for human habitation.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1364,13 +1447,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "San Francisco Health Code §37(a)-(c), 2026 code supplement. Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_health/0-0-0-43"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "San Francisco Health Code §37(a)-(c), 2026 code supplement. Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1382,11 +1470,11 @@
       "name": "San Jose",
       "state": "CA",
       "stateName": "California",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "San José Municipal Code §7.60.815 caps combined small animals according to enclosure distance from the nearest other dwelling: below 20 ft none, over 20–under 40 ft up to 6, over 40–under 50 ft up to 10, over 50 ft up to 20. Boundary values and permits need code review.",
+      "roosters": "A rooster older than 4 months is prohibited under §7.60.820.",
+      "permit": "Check Animal Care permit and zoning rules for the requested number and parcel before keeping poultry.",
+      "placement": "Small animal structures are prohibited in side setback areas (§7.60.810), with §7.60.815 distances measured to neighboring dwelling units rather than parcel lines.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1395,13 +1483,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "San José Municipal Code §§7.60.810, 7.60.815 and 7.60.820; additional permit sections must be confirmed. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "San José Municipal Code §§7.60.810, 7.60.815 and 7.60.820; additional permit sections must be confirmed. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1578,7 +1671,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1609,7 +1712,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1843,11 +1956,11 @@
       "name": "Folsom",
       "state": "CA",
       "stateName": "California",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Folsom's Agricultural Combining District (A) permits small livestock farming, with a use permit required for raising more than 100 poultry/animals; this is NOT a general residential allowance.",
+      "roosters": "No general residential rooster permission or prohibition established by Agricultural Combining District Chapter 17.40 alone.",
+      "permit": "A use permit is required for more than 100 head of poultry/animals in an applicable A combining district; other districts require separate review.",
+      "placement": "Within the A combining district, barns/chicken houses and similar accessories must be at least 50 ft from front property line, 20 ft from side line and 30 ft from a dwelling (§17.40.040).",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1856,13 +1969,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "Folsom Municipal Code Chapter 17.40, agricultural combining district only. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "Folsom Municipal Code Chapter 17.40, agricultural combining district only. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1893,7 +2011,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1905,11 +2033,11 @@
       "name": "Fremont",
       "state": "CA",
       "stateName": "California",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "On residential lots greater than 6,000 sq ft, up to 6 FEMALE chickens/rabbits/pigeons/doves combined without an animal-fancier permit, maximum two eligible species per lot. Lots smaller than 6,000 sq ft cannot keep chickens; confirm treatment of exactly 6,000 sq ft.",
+      "roosters": "Roosters prohibited on residentially zoned property under §6.10.030.",
+      "permit": "An animal fancier permit under Chapter 6.40 is needed for numbers beyond the ordinary permitted aggregate.",
+      "placement": "Must comply with Fremont Municipal Code §6.10.130 minimum 10 sq ft permeable land per chicken, and setback tiers based on chicken count and lot size; verify exact measurements.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -1918,13 +2046,22 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "City of Fremont official Pet Licenses & Animal Ownership Limits, §§6.10.030-.040, and published §6.10.130. Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://www.fremont.gov/government/departments/animal-services/tri-city/animal-shelter/services/pet-licenses"
+        },
+        {
+          "type": "supporting_public_source",
+          "url": "https://gocodebook.com/library/us/ca/fremont/title-6-animals/chapter-6.10-animal-ownership/article-ii-care-and-keep-of-animals"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "City of Fremont official Pet Licenses & Animal Ownership Limits, §§6.10.030-.040, and published §6.10.130. Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2068,7 +2205,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2173,7 +2320,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2278,7 +2435,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2418,7 +2585,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2430,11 +2607,11 @@
       "name": "Medford",
       "state": "OR",
       "stateName": "Oregon",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Medford Municipal Code §5.555 allows poultry for personal, noncommercial use but does not establish a universal flock-number limit in this section.",
+      "roosters": "Roosters are expressly prohibited.",
+      "permit": "No commercial poultry activities under §5.555; construction/use of structures must comply with building/fire codes.",
+      "placement": "Poultry enclosures at least 4 ft from abutting parcel property lines; none in required front-yard setback.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2443,13 +2620,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "Medford Municipal Code §5.555 (current through Ord. 2026-56, Aug 19 2026). Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://medford.municipal.codes/Code/5.555"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "Medford Municipal Code §5.555 (current through Ord. 2026-56, Aug 19 2026). Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2497,11 +2679,11 @@
       "name": "Corvallis",
       "state": "OR",
       "stateName": "Oregon",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "The reviewed Corvallis Municipal Code §5.03.050.020.06(7) concerns registration for livestock and exempts domesticated fowl kept in pens/cages; it does not establish a numerical chicken allowance.",
+      "roosters": "No general rooster rule established by this livestock-registration provision.",
+      "permit": "Domesticated fowl kept in pens/cages are exempt from the livestock registration requirement of §5.03.050.020.06(7); separate land-use/building requirements may still apply.",
+      "placement": "No chicken-coop setback established by the cited animal registration section.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2510,13 +2692,18 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "Corvallis Municipal Code §5.03.050.020.06(7), limited to livestock registration exception; current codified section needs closer source verification. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://library.municode.com/or/corvallis/codes/code_of_ordinances"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "Corvallis Municipal Code §5.03.050.020.06(7), limited to livestock registration exception; current codified section needs closer source verification. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2636,11 +2823,11 @@
       "name": "Bellevue",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "King County Public Health reports the CITY OF BELLEVUE allows up to 6 domestic fowl; Bellevue's own older code interpretation treats fewer than six fowl as household pets, so the precise threshold and special-animal rules merit current code confirmation.",
+      "roosters": "A 2013 Bellevue City Council meeting record did not establish an outright rooster ban at that time; do not assume that remains current without checking subsequent amendments.",
+      "permit": "Verify with Bellevue Development Services if six or more domestic fowl would be treated as a small domestic animal use and whether a permit is needed.",
+      "placement": "No single setback for a standard backyard flock established from the reviewed King County guidance; check Bellevue zoning and animal facilities regulations.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2649,13 +2836,26 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "note": "King County Public Health local poultry guidance; City of Bellevue development code interpretation and council historical minutes. Limited current-law verification. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://kingcounty.gov/so-so/dept/dph/health-safety/disease-illness/zoonotic-diseases/diseases-by-animal/backyard-poultry"
+        },
+        {
+          "type": "supporting_public_source",
+          "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/17-129929-DA-Lottinville-Code-Interpretation.pdf"
+        },
+        {
+          "type": "supporting_public_source",
+          "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/MinutesExtendedStudySession01-28-13.pdf"
+        }
+      ],
       "audit": {
-        "status": "needs_review",
+        "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
+        "note": "King County Public Health local poultry guidance; City of Bellevue development code interpretation and council historical minutes. Limited current-law verification. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2722,7 +2922,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2789,7 +2999,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2820,7 +3040,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -3142,7 +3372,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -3281,7 +3521,17 @@
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
         "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved"
+        "searchStatus": "official_code_section_unresolved",
+        "secondPass": {
+          "status": "researched_not_proven",
+          "channels": [
+            "municipal government website",
+            "municipal code publisher / ordinance amendments",
+            "planning / animal control / state preemption",
+            "secondary cross-check only (not sufficient for publication)"
+          ],
+          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        }
       },
       "rollout": {
         "batch": "first-100-2026-10",
