@@ -46,6 +46,17 @@ for(const city of policyRegistry.cities){
   assert(city.sources.every(s=>/^https:\\/\\//.test(s.url)),"https source URLs only: "+city.slug);
   assert(["verified","verified_with_source_gap","verified_limited_scope","needs_review"].includes(city.audit?.status),"audit status recorded: "+city.slug);
 }
+function longDate(iso){
+  const [y,m,d]=iso.split("-").map(Number);
+  const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  return months[m-1]+" "+d+", "+y;
+}
+for(const city of policyRegistry.cities){
+  const html=read("cities/"+city.slug+".html");
+  assert(html.includes(city.verified)||html.includes(longDate(city.verified)),"city page verification date matches registry: "+city.slug);
+  assert(city.sources.some(s=>html.includes(s.url)),"city page includes an audited official source: "+city.slug);
+}
+
 const phoenixPolicy=policyRegistry.cities.find(c=>c.slug==="phoenix-az");
 assert(phoenixPolicy.max.startsWith("Up to 6 poultry"),"Phoenix uses current six-poultry baseline");
 assert(phoenixPolicy.placement.includes("20 ft from a neighboring property line"),"Phoenix uses current 20-ft neighboring-property-line rule");
