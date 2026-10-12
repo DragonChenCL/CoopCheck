@@ -41,9 +41,9 @@ assert.equal(policyRegistry.schemaVersion,1,"supported policy registry schema");
 assert.equal(policyRegistry.cities.length,18,"18 supported cities maintained");
 assert.equal(new Set(policyRegistry.cities.map(c=>c.slug)).size,18,"city slugs are unique");
 for(const city of policyRegistry.cities){
-  assert(/^\\d{4}-\\d{2}-\\d{2}$/.test(city.verified),"valid verification date: "+city.slug);
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(city.verified),"valid verification date: "+city.slug);
   assert(Array.isArray(city.sources)&&city.sources.length>0,"official source recorded: "+city.slug);
-  assert(city.sources.every(s=>/^https:\\/\\//.test(s.url)),"https source URLs only: "+city.slug);
+  assert(city.sources.every(s=>/^https:\/\//.test(s.url)),"https source URLs only: "+city.slug);
   assert(["verified","verified_with_source_gap","verified_limited_scope","needs_review"].includes(city.audit?.status),"audit status recorded: "+city.slug);
 }
 function longDate(iso){
