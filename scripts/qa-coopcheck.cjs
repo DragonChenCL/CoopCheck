@@ -38,14 +38,24 @@ assert(payment.includes("window.CoopPlanner?.isReady()"),"print requires sketch 
 const cityDataSource=read("assets/data.js");
 const policyRegistry=JSON.parse(read("data/cities.json"));
 assert.equal(policyRegistry.schemaVersion,1,"supported policy registry schema");
-assert.equal(policyRegistry.cities.length,18,"18 supported cities maintained");
-assert.equal(new Set(policyRegistry.cities.map(c=>c.slug)).size,18,"city slugs are unique");
+assert.equal(policyRegistry.cities.length,100,"100 cities tracked in registry");
+assert.equal(new Set(policyRegistry.cities.map(c=>c.slug)).size,100,"city slugs are unique");
+const reviewedCities=policyRegistry.cities.filter(c=>c.audit?.status!=="needs_review");
+assert.equal(reviewedCities.length,22,"only 22 reviewed cities are indexed and selectable in planner");
+assert.equal(policyRegistry.cities.filter(c=>c.audit?.status==="needs_review").length,78,"78 city profiles remain explicitly pending");
+assert.equal((cityDataSource.match(/"slug":/g)||[]).length,22,"browser rules include reviewed cities only");
 for(const city of policyRegistry.cities){
-  assert(/^\d{4}-\d{2}-\d{2}$/.test(city.verified),"valid verification date: "+city.slug);
-  assert(Array.isArray(city.sources)&&city.sources.length>0,"official source recorded: "+city.slug);
-  assert(city.sources.every(s=>/^https:\/\//.test(s.url)),"https source URLs only: "+city.slug);
-  assert(["verified","verified_with_source_gap","verified_limited_scope","needs_review"].includes(city.audit?.status),"audit status recorded: "+city.slug);
+  assert(["verified","verified_with_source_gap","verified_limited_scope","needs_review"].includes(city.audit?.status),"audit status: "+city.slug);
+  assert(Array.isArray(city.sources)&&city.sources.every(s=>/^https:\/\//.test(s.url)),"sources are HTTPS: "+city.slug);
+  if(city.audit.status==="needs_review"){
+    assert.equal(city.verified,null,"pending city must not claim verification: "+city.slug);
+    assert.equal(city.planner.mode,"manual","pending city planner must be manual: "+city.slug);
+  }else{
+    assert(/^\d{4}-\d{2}-\d{2}$/.test(city.verified),"valid verification date: "+city.slug);
+    assert(city.sources.length>0,"reviewed city has official source: "+city.slug);
+  }
 }
+
 function longDate(iso){
   const [y,m,d]=iso.split("-").map(Number);
   const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -53,9 +63,16 @@ function longDate(iso){
 }
 for(const city of policyRegistry.cities){
   const html=read("cities/"+city.slug+".html");
-  assert(html.includes(city.verified)||html.includes(longDate(city.verified)),"city page verification date matches registry: "+city.slug);
-  assert(city.sources.some(s=>html.includes(s.url)),"city page includes an audited official source: "+city.slug);
+  if(city.audit.status==="needs_review"){
+    assert(html.includes('content="noindex,follow"'),"pending page must be noindex: "+city.slug);
+    assert(!read("sitemap.xml").includes("/cities/"+city.slug+".html"),"pending page must not be in sitemap: "+city.slug);
+  }else{
+    assert(html.includes(city.verified)||html.includes(longDate(city.verified)),"city page date matches registry: "+city.slug);
+    assert(city.sources.some(s=>html.includes(s.url)),"city page includes official source: "+city.slug);
+    assert(read("sitemap.xml").includes("/cities/"+city.slug+".html"),"reviewed city in sitemap: "+city.slug);
+  }
 }
+assert(read("coverage.html").includes("100 cities tracked"),"coverage directory generated");
 
 const phoenixPolicy=policyRegistry.cities.find(c=>c.slug==="phoenix-az");
 assert(phoenixPolicy.max.startsWith("Up to 6 poultry"),"Phoenix uses current six-poultry baseline");

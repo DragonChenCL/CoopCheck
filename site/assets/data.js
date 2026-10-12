@@ -1,4 +1,4 @@
-/* GENERATED from site/data/cities.json by scripts/generate-policy-data.cjs. Do not edit by hand. */
+/* GENERATED from site/data/cities.json. Do not edit by hand. */
 window.COOP_CITIES=[
   {
     "slug": "chandler-az",
@@ -377,5 +377,89 @@ window.COOP_CITIES=[
     },
     "note": "The 50-ft rule is measured from regulated structures, not simply property lines.",
     "source": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl"
+  },
+  {
+    "slug": "oakland-ca",
+    "name": "Oakland",
+    "state": "CA",
+    "stateName": "California",
+    "max": "Depends on zoning classification and applicable animal-control regulations",
+    "roosters": "Not established from the cited city urban-agriculture zoning overview",
+    "permit": "A conditional use permit may be necessary in some zoning districts; verify before building or keeping poultry",
+    "placement": "Consult Oakland Municipal Code and parcel zoning; no universal coop setback verified",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "Official Oakland planning guidance identifies animal raising under community gardens/extensive agriculture and zoning-dependent permissions; specific hen count/setback require an additional municipal-code review.",
+    "source": "https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens"
+  },
+  {
+    "slug": "new-york-city-ny",
+    "name": "New York City",
+    "state": "NY",
+    "stateName": "New York",
+    "max": "City guidance permits hens but does not provide one universal numerical cap",
+    "roosters": "Roosters are prohibited by NYC Health Code §161.19",
+    "permit": "Check zoning, animal health, and coop construction rules for the property",
+    "placement": "A single citywide residential coop setback has not been established in this summary",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "NYC Urban Agriculture FAQ explicitly allows hens and prohibits roosters. The page does not determine a citywide residential flock cap or coop setback.",
+    "source": "https://www.nyc.gov/site/agriculture/faqs/frequently-asked-questions.page"
+  },
+  {
+    "slug": "minneapolis-mn",
+    "name": "Minneapolis",
+    "state": "MN",
+    "stateName": "Minnesota",
+    "max": "Flock size depends on the approved fowl permit; verify before purchase",
+    "roosters": "Rooster restrictions require permit-specific checking",
+    "permit": "A fowl permit is required before purchasing birds; neighbor consent, training, and zoning approval are part of the application",
+    "placement": "Confirm property and enclosure requirements with Minneapolis Animal Care & Control",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "The city publishes an explicit fowl-permit workflow, including education, neighbor consent and zoning approval; no universal numerical or setback claim is made.",
+    "source": "https://www.minneapolismn.gov/resident-services/animals-pets/pet-licenses-animal-permits/"
+  },
+  {
+    "slug": "madison-wi",
+    "name": "Madison",
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "max": "Up to 8 chickens on eligible lots containing up to 4 dwelling units",
+    "roosters": "Roosters prohibited",
+    "permit": "Chicken license required, plus Wisconsin livestock-premises registration; annual renewal",
+    "placement": "Covered or fenced enclosure, at least 25 ft from any residential structure on an adjacent lot",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "Madison Chicken License page gives the 8-hen allowance, no-rooster rule, license and registration requirements, enclosure standard and 25-ft neighboring-residential-structure rule.",
+    "source": "https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens"
   }
 ];
