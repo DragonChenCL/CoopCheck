@@ -13,7 +13,7 @@
       "permit": "Building permit if coop exceeds 120 sq ft or has utilities",
       "placement": "Rear/side yards; coop at least 5 ft from every property line",
       "source": "https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "property",
         "side": 5,
@@ -45,7 +45,7 @@
       "permit": "Check parcel-specific zoning/building requirements",
       "placement": "Fowl must be contained; city code has enclosure-distance rules",
       "source": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -113,7 +113,7 @@
       "permit": "A use permit may be available to exceed the standard quantity",
       "placement": "On lots under 1 acre, chicken enclosures may not exceed the fence/wall height",
       "source": "https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -145,7 +145,7 @@
       "permit": "Check building/zoning rules for the structure",
       "placement": "Typical 5-hen case: rear yard, 5 ft side and 13 ft rear setbacks",
       "source": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "property",
         "side": 5,
@@ -181,7 +181,7 @@
       "permit": "Annual chicken license and chicken coop permit required",
       "placement": "Rear yard only; coop at least 20 ft from the nearest neighboring dwelling",
       "source": "https://www.cityofsacramento.gov/community-development/animal-care/contact-us/faqs",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -213,7 +213,7 @@
       "permit": "Food-Producing Animals permit: one-time $25 per property",
       "placement": "Rear 50% of lot; housing structures 15 ft from certain neighboring dwellings",
       "source": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter/Animal-Protection/Animal-Ordinances-and-Legislation",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "advisory",
         "side": 0,
@@ -249,7 +249,7 @@
       "permit": "Coops must comply with applicable zoning/building rules for accessory structures",
       "placement": "At least 4 sq ft of shelter space per chicken; accessory-structure setbacks vary by zoning/size",
       "source": "https://coloradosprings.gov/page/city-regulations-animals",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -281,7 +281,7 @@
       "permit": "No livestock permit for standard backyard chickens",
       "placement": "Structures 3 ft from side/rear lines and 10 ft from front line",
       "source": "https://www.portland.gov/bps/sustainability/guide-bees-and-livestock/chickens-and-fowl",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "property",
         "side": 3,
@@ -381,7 +381,7 @@
       "permit": "Chicken permit required; city lists a $50 two-year permit",
       "placement": "Rear yard; coop/run 10 ft from property lines; coop 25 ft from neighboring dwelling",
       "source": "https://www.greshamoregon.gov/residents/community-services/chickens/",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -445,7 +445,7 @@
       "permit": "Chickens are excluded from the WSU animal-keeping certification requirement",
       "placement": "Animal enclosures follow residential accessory-structure setbacks",
       "source": "https://my.spokanecity.org/smc/?Section=17C.310.115",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -477,7 +477,7 @@
       "permit": "Check zoning and accessory-structure requirements for the property",
       "placement": "Domestic-animal and accessory-structure rules apply",
       "source": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -509,7 +509,7 @@
       "permit": "Verify enclosure/building requirements for the property",
       "placement": "For 2+ chickens, enclosures should be at least 30 ft from adjacent residences or businesses",
       "source": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -541,7 +541,7 @@
       "permit": "Check accessory-structure permit rules for the coop itself",
       "placement": "For 5+ chickens, city rules add 50-ft dwelling-distance and lot-size thresholds",
       "source": "https://www.arlingtontx.gov/News-Articles/2025/March/Egg-xactly-How-Many-Chickens-Can-You-Own-in-Arlington-Anyway",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -573,7 +573,7 @@
       "permit": "Check zoning/building requirements for coop structures",
       "placement": "Pens/coops must be more than 50 ft from regulated structures",
       "source": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl",
-      "verified": "2026-09-22",
+      "verified": "2026-10-12",
       "planner": {
         "mode": "manual",
         "side": 0,
