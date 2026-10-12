@@ -42,3 +42,7 @@ CI checks both generators with `--check` and runs the QA suite before deployment
 ## 2026-10-13 all-city official-source audit
 
 An official-source search and review was carried out for all 100 city profiles. As recorded in [POLICY_AUDIT_2026-10-13.md](POLICY_AUDIT_2026-10-13.md), **40** summaries are verified, **30** are verified only for specific supported claims, and **30** still require current city-specific authority or a municipal planning response. Pending rows remain `noindex` and out of the sitemap and planner; none are fabricated to meet SEO page-count targets.
+
+## Second-pass 30-city source verification (2026-10-13)
+
+Official-source research for the remaining 30 city candidates is documented in `POLICY_AUDIT_SECOND_PASS_2026-10-13.md`. Coverage now includes **83** source-backed city profiles, **38** of them limited-scope; **17** unresolved records remain excluded from sitemap and planner. Do not equate a limited-scope source check with a full local-code compliance ruling.
