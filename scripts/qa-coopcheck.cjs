@@ -37,6 +37,12 @@ assert(payment.includes("planner.save()") && payment.includes("planner?.isReady(
 assert(payment.includes("window.CoopPlanner?.isReady()"),"print requires sketch restoration");
 const cityDataSource=read("assets/data.js");
 assert((cityDataSource.match(/slug:"/g)||[]).length===18,"18 supported cities maintained");
+assert(/slug:"phoenix-az"[\s\S]*?max:"Up to 6 poultry/.test(cityDataSource),"Phoenix uses current six-poultry baseline");
+assert(cityDataSource.includes("enclosure at least 20 ft from a neighboring property line"),"Phoenix uses current 20-ft neighboring-property-line rule");
+assert(!cityDataSource.includes("enclosure must be 80 ft from the residence"),"stale Phoenix 80-ft residence rule removed");
+const phoenixPage=read("cities/phoenix-az.html");
+assert(phoenixPage.includes("Ordinance G-7300") && phoenixPage.includes("A.R.S. § 9-462.12"),"Phoenix page cites current city amendment and state preemption source");
+assert(!phoenixPage.includes("Up to 20 backyard chickens per half-acre"),"stale Phoenix 20-poultry summary removed");
 console.log("PASS: CoopCheck planner, payment and analytics integration static checks");
 
 for (const state of ["oregon","arizona","california"]){
