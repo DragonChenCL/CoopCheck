@@ -1118,10 +1118,10 @@ window.COOP_CITIES=[
     "name": "Lakewood",
     "state": "CO",
     "stateName": "Colorado",
-    "max": "Up to 6 female chickens/ducks on lots under 6,000 sq ft; larger lots have enclosure-area-based provisions",
-    "roosters": "Roosters prohibited on lots under 12,500 sq ft; larger lots subject to different zoning regulations",
+    "max": "2026 CURRENT LAW NOT CLEARED: Lakewood's previously cited 2025 Article 4 poultry size tiers may have been affected by the April 7, 2026 referendum on the 2025 zoning rewrite. Do NOT rely on those 2025 numbers as current until the operative post-election code is verified with Planning.",
+    "roosters": "2026 CURRENT LAW NOT CLEARED: A 2025 Article 4 document states lot-size rooster conditions, but the 2025 zoning rewrite was subject to the April 2026 referendum. Confirm controlling post-referendum Article 4 before concluding whether and where roosters are permitted.",
     "permit": "Lakewood currently offers a Small Animal Permit application for poultry/hens where the zoning district allows them. Check whether your specific lot needs this permit; construction and zoning restrictions are independently applicable.",
-    "placement": "Coop not in front yard, subject to zone-specific accessory-structure setbacks; 4 sq ft living space per bird and predator-resistant enclosure",
+    "placement": "2026 CURRENT LAW NOT CLEARED: The 2025 Article 4 document's poultry enclosure and accessory-structure setbacks must be independently rechecked against the code effective after April 2026. No automated parcel-clearance; ask Lakewood Planning for current district-specific rules.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1131,7 +1131,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.",
+    "note": "2026 EFFECTIVE-CODE WARNING: City Resolution R-2026-09 called an April 7 referendum on Ordinance O-2025-28 replacing Lakewood Title 17 Articles 1,2,4,5; contemporary election reporting indicates voters rejected the 2025 zoning overhaul. The site's original approved-2025 Article 4 PDF must NOT be presented as definitively governing in October 2026 until current post-referendum ordinances are confirmed with City Planning. The Small Animal Permit application remains city-confirmed; its presence does not make a parcel compliant.",
     "source": "https://www.lakewoodco.gov/files/assets/public/v/1/planning/zoning-code-updates/approved-2025/approved-article-4.pdf"
   },
   {
@@ -1288,7 +1288,7 @@ window.COOP_CITIES=[
     "stateName": "Oregon",
     "max": "Up to 5 hens on lots under 5,000 sq ft; for larger lots, 1 hen per 1,000 sq ft, max 20",
     "roosters": "Roosters prohibited",
-    "permit": "Check accessory building requirements and lot zoning; no separate general chicken permit established in FAQ",
+    "permit": "Ashland's City Community Development FAQ explicitly requires chicken coop/run construction to comply with the city's accessory building rules (AMC §18.2.5.040). This does NOT establish a general chicken-keeping license, nor automatically waive or mandate a construction permit for every coop; confirm parcel zoning and proposed structure with City Planning.",
     "placement": "Chickens at least 10 ft from adjoining property and at least 20 ft from neighboring dwellings; coop/run design per AMC 18.2.5.040",
     "verified": "2026-10-13",
     "planner": {
@@ -1299,7 +1299,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+    "note": "Official city FAQ supports flock size based on lot area, no roosters, 10-ft distance from adjoining PROPERTY and 20-ft to neighboring DWELLING; AMC §18.2.5.040 separately controls coop/run accessory-structure construction. Exactly-5,000-square-foot boundary and separate keeping/building permit thresholds remain unresolved.",
     "source": "https://ashlandoregon.gov/m/faq?cat=16"
   },
   {
@@ -1331,7 +1331,7 @@ window.COOP_CITIES=[
     "max": "City chicken keeping has no numeric restriction, subject to applicable zoning and nuisance rules",
     "roosters": "No citywide rooster prohibition; rooster noise nuisance rules apply",
     "permit": "Consult planning for coop structure requirements",
-    "placement": "Coop setback is parcel-specific; city directs residents to Planning Department",
+    "placement": "Lake Oswego City's official Chickens and Roosters page explicitly warns that regulations affect COOP CONSTRUCTION and directs residents to Planning at 503-635-0290 for parcel-specific coop setbacks. No universal numeric lot-line or neighboring-dwelling setback is established in this guide; keep placement planner manual.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1341,7 +1341,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "The current city FAQ expressly imposes no local numeric chicken/rooster ownership restriction but nuisance noise controls apply. It cautions that coop buildings have construction regulations and any location setbacks require confirmation from Lake Oswego Planning (503-635-0290); not a citywide zero-setback permission.",
     "source": "https://www.ci.oswego.or.us/zh-hans/publicaffairs/chickens-and-roosters"
   },
   {

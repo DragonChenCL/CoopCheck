@@ -433,7 +433,7 @@
       "name": "Lakewood",
       "state": "CO",
       "stateName": "Colorado",
-      "status": "verified"
+      "status": "verified_limited_scope"
     },
     {
       "slug": "arvada-co",

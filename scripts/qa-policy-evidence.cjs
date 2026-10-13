@@ -76,4 +76,15 @@ assert(bySlug["everett-wa"].roosters.includes("ANY number")&&bySlug["everett-wa"
 assert(e.cities["everett-wa"].roosters.url==="https://www.everettwa.gov/197/Facility-Licenses","Everett rooster claim must cite city source");
 for(const slug of ["medford-or","irving-tx"])assert.equal(e.cities[slug].permit.status,"primary_clause_checked",slug+" building/zoning approval duty missing");
 assert(bySlug["medford-or"].permit.includes("NOT")&&bySlug["irving-tx"].permit.includes("does not"),"Medford/Irving cannot claim a universal permit exemption");
+// 2026-10-13: prevent permit/siting scope inflation and superseded Lakewood zoning numbers.
+assert.equal(e.cities["ashland-or"].permit.status,"primary_clause_checked","Ashland accessory-building regulation lost");
+assert(bySlug["ashland-or"].permit.includes("18.2.5.040")&&bySlug["ashland-or"].permit.includes("does NOT"),"Ashland must not claim a blanket permit rule");
+assert.equal(e.cities["lake-oswego-or"].placement.status,"primary_clause_checked","Lake Oswego Planning source omitted");
+assert(bySlug["lake-oswego-or"].placement.includes("503-635-0290")&&bySlug["lake-oswego-or"].planner.mode==="manual","Lake Oswego has no universal automatic setback");
+const lakewood=bySlug["lakewood-co"];
+assert.equal(lakewood.audit.status,"verified_limited_scope","Lakewood 2025 article not independently operative after April 2026 vote");
+for(const k of ["max","roosters","placement"])assert.equal(e.cities["lakewood-co"][k].status,"source_recorded","Lakewood 2025 zoning figures still unconfirmed: "+k);
+assert(lakewood.max.includes("2026 CURRENT LAW NOT CLEARED")&&lakewood.roosters.includes("2026 CURRENT LAW NOT CLEARED"),"No numeric reliance on pre-vote 2025 zoning document");
+assert(lakewood.planner.mode==="manual","Lakewood cannot auto clear site");
+assert.equal(e.cities["lakewood-co"].permit.status,"primary_clause_checked","Lakewood current city application fact preserved");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

@@ -1,5 +1,14 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — City operative-law correction and two scoped construction checks
+
+- **+2 claim-specific government-source mappings:** **226/400 checked, 126 source recorded, 48 unverified**; 88 source-reviewed profiles remain, 12 paused cities remain noindex. Overall reviewed categories now 44 general and 44 limited-scope.
+- [Ashland OR Community Development FAQ](https://ashlandoregon.gov/m/faq?cat=16): AMC §18.2.5.040 accessory-building standards govern coop/run construction; routine poultry-keeping licensing and building permit applicability NOT established.
+- [Lake Oswego OR city FAQ](https://www.ci.oswego.or.us/zh-hans/publicaffairs/chickens-and-roosters): says coop construction is regulated and municipal Planning must determine site-dependent setbacks; no universal numerical offset. Map planner remains manual.
+- **High-risk correction Lakewood CO**: [official 2026 referendum list](https://www.lakewoodco.gov/Local-Government/Departments/City-Clerks-Office/City-Council-Ordinances-Resolutions/2026-Resolutions) and 2026 election reporting undermine treating the old approved-2025 Article 4 as settled operative law. Suppress specific 2025 flock/rooster/placement numbers, mark limited-scope, keep sole city-verified Small Animal Permit application fact. Do not promote old numbers until post-referendum code is primary-source checked.
+- Fort Collins / Hillsboro historical poultry numbers also **not promoted**: official current exact-number ordinance text still not directly verified here. No third-party SEO summaries substituted.
+
+
 ## 2026-10-13 — Tigard / Everett / Medford / Irving scoped city ordinance checks
 
 - Added **four claim-level primary/city-source mappings**: **224/400 clause checked**, **128 source-recorded**, **48 unverified**; 88 reviewed/12 paused/noindex unchanged. Some newly verified claims are only scoped legal duties/negative findings, NOT full permit or zoning clearance.

@@ -1627,7 +1627,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ashlandoregon.gov/m/faq?cat=16",
+        "section": "Ashland Community Development FAQ, Are chickens allowed?; AMC §18.2.5.040 Accessory Buildings and Structures",
+        "detail": "Official guidance states that chicken coops and chicken runs must comply with accessory building/structure rules. The FAQ does not resolve routine chicken-keeping licenses, exact building approval thresholds, or a universal permit waiver.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1670,7 +1674,11 @@
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.ci.oswego.or.us/zh-hans/publicaffairs/chickens-and-roosters",
+        "section": "Lake Oswego Official Chickens and Roosters FAQ, coop-building / Planning Department paragraphs",
+        "detail": "City instructs to contact Planning at 503-635-0290 to determine whether setbacks apply to chicken coop placement; no universal numerical line/dwelling separation appears in official guidance.",
+        "checkedAt": "2026-10-13"
       }
     },
     "tigard-or": {
