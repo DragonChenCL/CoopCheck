@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — 两项 P0 联合核验：Bend 部分解除 + 高流量城市逐字段
+
+- 新增 **7 项逐字段法条/政府指南证据**：Bend 2；San Antonio 3；Los Angeles 1；Denver 1。总计 **116/400** 条已逐字段核对、**236** source-recorded、**48** unverified；**88/100** 城有至少部分官方来源，**12** 仍 needs_review/noindex。
+- Bend：市政府 BDC §3.6.300(I)、已发布历史章节和 2026 Ordinance NS-2560 交叉比对，只发布满足 ≥5,000 sq ft 的合计最多四只兔/母鸡和禁公鸡；鸡舍退距、饲养/建筑许可明确留空，地图仍 manual。受限 scope 审核，不是合法建造判断。
+- San Antonio：官方 ACS 现行 FAQ 的 8 只家禽/1 公鸡与超额许可证单独比对，当前 Municode 目录明确 §5-107 规范数量及超额许可，而 ACS 页面误引用已转为宠物店许可的 §5-109。修正文档/registry 注意，24sq ft 和更高饲养规模距离仍需现行全文，不升级 placement。
+- Los Angeles：现行 LAMC §53.71 限制一个地块通常最多一公鸡（有窄例外），不是公鸡全部禁止。Denver：Zoning Code §11.8.5.1(A) 核实后50%地块范围、距指定邻居居所15 ft，非房产线退距。
+- 其他 12 个 pending 城市保持 noindex、没有新猜测数字；Pueblo 2021 附件、Round Rock 建筑许可、Arizona §9-462.12 都记录为待核证据线索，不冒用作为全市许可证。
+
 ## 2026-10-13 — SF / NYC / Minneapolis primary-source evidence follow-up
 
 - Six more individually checked city/field claims (San Francisco 3, NYC 1, Minneapolis 2). Evidence now **109/400** primary-clause/guidance checked, **239** source-recorded requiring claim-level confirmation, **52** unverified across 13 pending cities. No audit status or indexing changed.
