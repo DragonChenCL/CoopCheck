@@ -31,4 +31,7 @@ assert(eg.max.includes("12")&&eg.max.includes("40-ft"),"Elk Grove conditional al
 assert(bySlug["tucson-az"].placement.includes("20 ft"),"Tucson UDC dwelling setback missing");
 for(const slug of ["long-beach-ca","tacoma-wa","westminster-co"]){for(const key of keys)assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key+" lost official evidence");}
 for(const slug of ["santa-rosa-ca","yakima-wa","kent-wa","elk-grove-ca"]){for(const key of ["max","roosters","placement"])assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key+" lost clause evidence");}
+for(const slug of ["houston-tx","plano-tx"]){for(const key of keys)assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key+" official code not verified");}
+assert(bySlug["houston-tx"].permit.includes("physician"),"Houston special permit may not be generalized");
+assert(bySlug["stockton-ca"].placement.includes("20 ft")&&bySlug["stockton-ca"].placement.includes("5 ft"),"Stockton lot-vs-dwelling distance distinction missing");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
