@@ -9,4 +9,11 @@ const unverified=Object.values(e.cities).flatMap(fields=>keys.map(key=>fields[ke
 const pending=r.cities.filter(c=>c.audit.status==="needs_review").length;
 assert(queue.includes(pending+" 城市仍处于 needs_review；"+confirmed+" / 400 核心字段"),"research queue primary-evidence tally drift");
 assert(queue.includes("其余 **"+recorded+" 项为 source_recorded、"+unverified+" 项为 unverified"),"research queue remaining-evidence tally drift");
+const bend=r.cities.find(c=>c.slug==="bend-or");
+assert.equal(bend.audit.status,"verified_limited_scope","Bend is source-reviewed only for two fields");
+assert.equal(bend.planner.mode,"manual","Bend must not be auto-cleared");
+for(const k of ["max","roosters"]) assert.equal(e.cities["bend-or"][k].status,"primary_clause_checked","Bend audited field "+k);
+for(const k of ["permit","placement"]) assert.notEqual(e.cities["bend-or"][k].status,"primary_clause_checked","Bend permit/setback unproven: "+k);
+const sa=r.cities.find(c=>c.slug==="san-antonio-tx");
+assert(/§5-107/.test(sa.note)&&/pet shop/i.test(sa.note),"San Antonio code numbering must not regress to §5-109 as animal-limit authority");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

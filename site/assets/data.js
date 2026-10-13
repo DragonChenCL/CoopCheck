@@ -1240,6 +1240,27 @@ window.COOP_CITIES=[
     "source": "https://www.hillsboro-oregon.gov/home/showpublisheddocument/30543/638467249898800000"
   },
   {
+    "slug": "bend-or",
+    "name": "Bend",
+    "state": "OR",
+    "stateName": "Oregon",
+    "max": "On eligible residential parcels of 5,000 sq ft or more, no more than FOUR chickens (hens) and/or rabbits combined under Bend Development Code §3.6.300(I); this does not establish allowance on smaller parcels.",
+    "roosters": "Roosters are not allowed within the cited §3.6.300(I) residential farm-animal accessory use; confirm parcel zoning.",
+    "permit": "Specific chicken-keeping permit and any separate building/accessory-structure approval are NOT established by the cited section; ask Bend Planning before getting birds or building.",
+    "placement": "No universal chicken-coop lot-line or neighboring-dwelling setback confirmed. The prior chapter's 15/25-ft rules expressly discuss structures for LARGE farm animals and must not be copied to hen coops.",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "Scope limited to Bend Development Code §3.6.300(I) hens/rabbits on residential parcels >=5,000 sq ft and rooster prohibition. September 2026 adopted Ordinance NS-2560 did not identify an amendment to subsection (I), but direct current code/site zoning and any permit, building, or hen-coop placement rules require confirmation. Not parcel compliance approval.",
+    "source": "https://bend.municipal.codes/BDC/3.6.300"
+  },
+  {
     "slug": "medford-or",
     "name": "Medford",
     "state": "OR",
@@ -1572,7 +1593,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply.",
+    "note": "San Antonio ACS government guidance confirms eight domestic fowl per residence including at most one rooster without an excess-fowl permit. CURRENT municipal Chapter 5 table of contents identifies §5-107 as animal limits/excess permit and §5-109 as pet shop license. ACS informational page still incorrectly points to §5-109 for fowl totals; cite the governing §5-107 instead. The 24-sq-ft / 6-sq-ft-per-bird enclosure and any increase beyond eight still need parcel/building/zoning confirmation.",
     "source": "https://www.sa.gov/files/assets/main/acs/documents/permit-excessanimal.pdf"
   },
   {
