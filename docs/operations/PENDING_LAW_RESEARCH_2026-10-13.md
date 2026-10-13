@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；214 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **138 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；220 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **132 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -82,3 +82,10 @@
 - Folsom 17.40 是农业复合分区特例：>100头使用许可**绝不是**普通住宅允许100只鸡。
 - Lake Havasu City §14.03.02 表中的 A(2) 只适用于 **2024-09-13 前已存在的独栋住宅居民**，不可统一展示“任意独栋住宅可养六只”；详细要求见 §14.03.03(E)(9)。
 - Portland 官方饲养指南明确鸡禽无需一般 livestock permit，但附属建筑/分区许可仍需另外核实。
+
+## 2026-10-13 — 本批法规核验（暂停扩城）
+
+- **Flagstaff, AZ**：核对 [§6-03-001-0003/0004](https://www.codepublishing.com/AZ/Flagstaff/html/Flagstaff06/Flagstaff0603000.html) 后完成 4/4 核心字段直接法条映射：鸡只按地块6/10/15/20/25分段；**4个月以上雄禽禁止**；ER/RR免养禽许可不等于鸡舍免建设许可；巷道、邻地界和邻宅距离必须分开。
+- **Sierra Vista, AZ**：按 [2026 §90.11](https://codelibrary.amlegal.com/codes/sierravista/latest/sierravista_az/0-0-0-17093) 核验数量、公鸡和位置三字段；需另问动物饲养许可与附属建筑许可（仍 source_recorded）。20英尺是相邻**property**，并非相邻住房。
+- **Tempe, AZ**：按 [§3-404(I)(8)](https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities) 核验鸡舍围栏高度，不把高度限制当作统一退距。
+- 最新 **220 / 400** 字段已逐条对照，**132 source_recorded / 48 unverified**，城市状态88/12保持不变。
