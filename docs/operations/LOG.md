@@ -1,5 +1,23 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — 第二轮引流与外链渠道调查（未公开投稿）
+
+**GSC（2026-09-15 至 2026-10-12）**：连接器返回有搜索展示的 3 个页面（首页 5、Portland 9、Oregon 州页 9），合计 23 展示、0 点击；按日维度 10 月 2–10 日均显示 0，报告尚未全面体现 10 月 12–13 日的新页面。
+
+**渠道候选与当前状态**：
+1. **Backyard Chicken Pro** — https://backyardchickenpro.com/contact-us/ 。网站公开表示接受相关产品/网站被推荐、合作和有用的链接申请。与 CoopCheck 受众高度匹配；属于**待申请的编辑推荐**，尚未提交或拿到外链。网站内容偏重实用家禽教程；首选 pitch 是 5 城市法规对照+规划器附加价值。联系人姓名/邮箱不得捏造，提交前由用户提供或授权使用真实业务联系信息。
+2. **Community Chickens** — https://www.communitychickens.com/contribute/ 。已知可提交 feature article/guest writing，优先一篇「城市法规距离测量容易搞混」的真材实料教程。先前有 Gmail **未发送草稿**；不能记已投稿。
+3. **Reddit r/BackYardChickens、地方城市 subreddit** — 讨论对鸡群限额、房屋 vs 地界测距、城市分区很活跃，但不应贴 AI 生成内容或商业推广；仅合规回复或经允许的来源链接。
+4. **Product Hunt** — https://www.producthunt.com/launch 。允许创作者发工具（需本人账户、入门认证/准备发布素材）；相关度偏“开发者/工具爱好者”，不是高意图养鸡用户，列为低于垂直媒体的次优先渠道。
+5. **Alternative.me** — https://alternative.me/how-to/submit-software/ 。需注册账号才能提交，偏软件用户、主题不完全匹配；不应为了链接数量硬投。
+6. **BackYard Chickens Chicken LORE** — https://www.backyardchickens.com/threads/chicken-lore-project-find-submit-local-chicken-laws-ordinances.310268/ 。长期已有城市法规数据项目；有内容覆盖竞争且可能成为相关性很高的编辑合作机会，但论坛推广需要事先获得允许，不直接贴 CoopCheck 链接。
+7. **CoopCodes** — https://www.coopcodes.com/advertise 。同类站公开宣称已覆盖数百个城市，说明城市法规摘要存在直接竞争；其广告页是付费库存，不代表值得买链接。决定暂不付费投放。
+
+**建议第一轮行动**：先将 Portland/Austin/Arlington/Denver/Seattle 的同口径法规比较做成可引用的独立资源（尤其不同「测距参照物」与例外条件）；再向 Backyard Chicken Pro、Community Chickens 做有来源的编辑型投稿。账号登录或真实联系人信息由用户完成。
+
+**效果计量**：此轮 **0 个公开新外链，0 篇成功对外投稿**，已完成浏览器/搜索渠道核验。cfbrower 维持唯一 Tab；高广告加载站有跳转/页面上下文重建，不能认定其表单已成功提交。
+
+
 按时间倒序追加记录。不要因为操作中断而伪造「成功」；记录执行前后状态、真实来源与下一步。
 
 ## 2026-10-13 — 第二轮真实外链与增长渠道调查
