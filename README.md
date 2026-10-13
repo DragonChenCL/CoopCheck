@@ -50,3 +50,7 @@ Official-source research for the remaining 30 city candidates is documented in `
 ## Four-field completeness checks
 
 Source-reviewed city summaries are not the same as fully checked city laws. Every city×field pair (flock, rooster, permit, placement) now has an evidence state in `site/data/policy-evidence.json`, reviewed in `POLICY_COMPLETENESS_2026-10-13.md`. After this pass, 85 cities have a source-backed summary, 15 are still pending and excluded from indexing, and four independently reviewed primary field clauses have been recorded. Run `node scripts/qa-policy-evidence.cjs` with the existing QA before deployment.
+
+## Homepage city search and responsive redesign
+
+The homepage and 100-city directory now share a lightweight generated search index (`site/assets/city-search-index.json`) produced from the canonical registry by `node scripts/generate-coverage-pages.cjs`. City results distinguish fully source-reviewed, limited-scope, and research-pending status. The directory supports city/state-text search plus state and verification-status filters; pending pages remain noindex. `node scripts/qa-city-search.cjs` checks search matching, diacritics, filtering, all 100 city records, and progressive-enhancement markup.

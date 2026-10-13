@@ -22,6 +22,8 @@ jobs:
         run: node scripts/generate-coverage-pages.cjs --check
       - name: Verify field-specific evidence status
         run: node scripts/qa-policy-evidence.cjs
+      - name: Validate city search and directory
+        run: node scripts/qa-city-search.cjs
       - name: Run policy / planner / payment regressions
         run: |
           node scripts/qa-coopcheck.cjs
