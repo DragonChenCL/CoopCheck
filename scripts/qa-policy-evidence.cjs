@@ -56,4 +56,7 @@ assert(bySlug["san-jose-ca"].max.includes("Exactly 20, 40 or 50"),"San Jose lite
 for(const key of ["roosters","permit"])assert.equal(e.cities["hillsboro-or"][key].status,"primary_clause_checked","Hillsboro OR source proof missing: "+key);
 assert(bySlug["hillsboro-or"].note.includes("Hillsboro KS/WI"),"Do not confuse Hillsboro Oregon with Kansas or Wisconsin");
 assert(e.cities["oakland-ca"].permit.detail.includes("Conditional Use Permit"),"Oakland zoning permit conditionality missing");
+assert.equal(e.cities["austin-tx"].placement.status,"primary_clause_checked","Austin placement should remain code-checked");
+assert(e.cities["austin-tx"].placement.section.includes("3-2-16"),"Austin current code source required");
+assert(bySlug["austin-tx"].placement.includes("ANY fowl enclosure")&&bySlug["austin-tx"].placement.includes("HEALTH HAZARD"),"Austin older 2+ and 50ft blanket coop rules must not regress");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
