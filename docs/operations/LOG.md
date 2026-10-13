@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Current Redmond 2025 amendment and Everett official facility rules
+
+- 4 additional field-specific government-code/guidance checks: Redmond WA placement, Everett WA flock number and placement, Lakewood CO small-animal-permit application. Evidence now **193/400** primary, **159** source-recorded, **48** unverified (12 paused cities), still **88 reviewed**. No new cities.
+- **Critical 2025 amendment correction:** [Current Redmond RMC §7.04.157](https://redmond.municipal.codes/RMC/7.04.157) was amended by Ordinance 3219 (2025), and the published NR lot-area tables supersede the stale R-1/R-6 city landing page. Its **5,500–5,999 sq-ft NR thresholds OVERLAP** (four vs six hens), so not determined pending Redmond city answer. Updated currently checked max and registration records to current code and documented 15ft generic lot line, conditional 5ft exceptions (not a universal exception), and structures.
+- [Everett approved 2024 Animal Control small livestock facility regulations](https://www.everettwa.gov/DocumentCenter/View/37687/Livestock-and-Small-Livestock-Facility-Permit-Regulations---rev-1-23-24) have chicken limit tiers (6/8/10/add one per 5,000) and combined cap, but **10k/15k exact boundaries overlap** in the municipality's own PDF; a separate 5ft lot-boundary enclosure rule coexists with greater Title 19 setbacks. Rooster qualification still pending zoning analysis, NOT promoted.
+- [Lakewood current Small Animal Permit portal](https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Zoning-Permits) confirms a permit APPLICATION for hens where lawful, but cannot establish all parcels require it. The 2017 Lakewood handout is stale relative to 2025 city zoning revisions; remaining three fields still source-recorded.
+- Preserve separation between government-source-level findings and parcel-specific legal eligibility. All new status fields include exact source URL, section, date and scope.
+
 ## 2026-10-13 — Houston / Plano / Stockton official code correction (11 fields)
 
 - Focus solely on field-level verification for existing 88 source-reviewed cities: **189/400** claims now supported by precise code/guidance; **163** still source-recorded, **48** in 12 pending cities unverified. No new cities.
