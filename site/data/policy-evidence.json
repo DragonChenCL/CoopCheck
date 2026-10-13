@@ -441,16 +441,28 @@
     },
     "goodyear-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.goodyearaz.gov/Home/Components/News/News/13271/32",
+        "section": "Goodyear official FAQ on new backyard chicken ordinance, 2024-10-22",
+        "detail": "Up to six chickens at eligible single-family detached homes.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.goodyearaz.gov/Home/Components/News/News/13271/32",
+        "section": "Goodyear official FAQ, Where Can I Keep Them?",
+        "detail": "Roosters or male fowl are not allowed.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.goodyearaz.gov/Home/Components/News/News/13271/32",
+        "section": "Goodyear official FAQ, Where Can I Keep Them?",
+        "detail": "Rear/side enclosure 20 ft from neighboring property, up to 200 sq ft, height at most 8 ft and no higher than fence.",
+        "checkedAt": "2026-10-13"
       }
     },
     "avondale-az": {
