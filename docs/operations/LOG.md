@@ -2,6 +2,9 @@
 
 ## 2026-10-13 — P0 product onboarding and evidence review
 
+**Deployment check:** GitHub Pages CI run [38360932364](https://github.com/DragonChenCL/CoopCheck/actions/runs/38360932364) passed all checks and deployment. Real browser confirmed home Quick Check, Denver 8-hen result (128 sq ft + $25), Austin indeterminate response, planner selected city and map entry, five city pages HTTP 200 with four evidence badges each. `cfbrower` used a single tab throughout.
+
+
 - Added a standalone Quick Check for five benchmark cities on homepage and planner: hens, optional lot size, rooster flag, tailored screening and official-source links; no legal/parcel approval promised.
 - Flagged per-field evidence on five city pages (flock, rooster, permit, placement) and updated the canonical evidence audit to 17/400 clause/guidance-checked fields (13 additional checked in this pass, 4 pre-existing). Unverified conditions remain clearly stated.
 - Added Node regression coverage of city scenarios, conditional flock tiers, invalid inputs, missing property details, source metadata and page integration.
