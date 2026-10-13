@@ -40,4 +40,6 @@ assert(bySlug["everett-wa"].max.includes("10,000")&&bySlug["everett-wa"].max.inc
 assert(e.cities["lakewood-co"].permit.status==="primary_clause_checked","Lakewood permitted-zone application evidence lost");
 for(const key of keys)assert.equal(e.cities["indianapolis-in"][key].status,"primary_clause_checked","Indianapolis §743-306 individual primary clause missing "+key);
 assert(/ONE rooster/.test(bySlug["indianapolis-in"].roosters),"Indianapolis no categorical rooster ban");
+for(const key of keys)assert.equal(e.cities["santa-ana-ca"][key].status,"primary_clause_checked","Santa Ana Animal Code missing field "+key);
+assert(bySlug["santa-ana-ca"].max.includes("COMBINATION"),"Santa Ana combined fowl/rabbit cap must not be misrepresented");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
