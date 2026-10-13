@@ -1,5 +1,15 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Backyard Chicken Pro 官网表单实际提交尝试（送达未确认）
+
+- 用户明确授权使用官网表单提交 CoopCheck 编辑推荐/客座文章合作申请。
+- cfbrower 始终复用原有 Tab 0，地址：https://backyardchickenpro.com/contact-us/ 。
+- 查到 WordPress WPForms 联系表单 `wpforms-form-57`。必填姓名、邮箱；填写了当前连接 Gmail 资料的姓名与联系邮箱和介绍 CoopCheck 五个来源可追溯城市法规指南及地图规划器的英文合作留言。
+- 操作：正常页面按钮 `#wpforms-submit-57` **已点击一次**。页面随后白屏、没有显示 WPForms 成功提示或错误回执。后续检查页面 body 为空且表单消失；无法确认服务端是否收到。连接 Gmail 当天没有找到相应自动确认邮件。
+- **准确结果：表单填写并触发提交 1 次，实际送达未知；成功投递 0 次已核实；公开外链仍 0。** 为防重复收件，没有二次提交。
+- 后续：如果官网恢复，先确认是否有成功回执或邮件回复；如需要重投，检查已存在的提交记录/回执再决定。不可把这次尝试写成已取得编辑合作或外链。
+
+
 ## 2026-10-13 — Backyard Chicken Pro 合作联络尝试（未送达）
 
 - 目标：向 https://backyardchickenpro.com/contact-us/ 发送 CoopCheck 资源推荐合作邮件，用户已授权发送。
