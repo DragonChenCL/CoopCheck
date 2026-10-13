@@ -25,4 +25,10 @@ assert(bySlug["lake-havasu-city-az"].note.includes("A(2)"),"Lake Havasu limited-
 assert.equal(e.cities["beaverton-or"].placement.url,"https://beaverton.municipal.codes/BC/5.09.015","Beaverton dwelling distance not grounded");
 assert.equal(e.cities["portland-or"].permit.status,"primary_clause_checked","Portland no livestock permit government source required");
 assert(bySlug["folsom-ca"].max.includes("Agricultural Combining District"),"Folsom zone-specific use must not be generalized");
+// Guard current official code checks, conditional site rules and no parcel-wide legal assurances.
+const eg=bySlug["elk-grove-ca"];
+assert(eg.max.includes("12")&&eg.max.includes("40-ft"),"Elk Grove conditional allowance must be explicit");
+assert(bySlug["tucson-az"].placement.includes("20 ft"),"Tucson UDC dwelling setback missing");
+for(const slug of ["long-beach-ca","tacoma-wa","westminster-co"]){for(const key of keys)assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key+" lost official evidence");}
+for(const slug of ["santa-rosa-ca","yakima-wa","kent-wa","elk-grove-ca"]){for(const key of ["max","roosters","placement"])assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key+" lost clause evidence");}
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

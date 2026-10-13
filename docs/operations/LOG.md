@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Field-level audit batch: 47 primary source checks across 18 cities
+
+- User requested completing field verification before expanding to new cities. This pass promoted **47** additional field-specific government code/guidance claims: **178/400 checked, 174 source-recorded, 48 unverified**; city statuses remain 88 source-reviewed and 12 pending/noindex.
+- Direct primary-code confirmations: Long Beach LBMC 6.20.020-6.20.140, Tacoma TMC 5.30.010, Westminster WMC 6-7-12(I), Tucson UDC 6.6.5(E), Irving 6-62, Elk Grove 23.27 Table residential note 3, Santa Rosa 20-42.040, Dallas 7-7.3 and Frisco 14-17.
+- Official city guidance checks: Flagstaff backyard livestock, Tigard urban livestock, Lake Oswego chickens/roosters, McKinney animal-control FAQ, Denton animal FAQ, Yakima planning FAQ, Kent fowl FAQ, Scottsdale farm animals, Everett facility permits.
+- Corrected **Tucson**: conditional 20-ft distance to an abutting dwelling and size-specific accessory setbacks, not a blanket 50-ft chicken-coop setback. **Elk Grove**: up to 12 chickens ONLY with a 40-ft property-line buffer in residential RD zoning, beyond ordinary six. **Santa Rosa**: detailed lot-size tiers and distinct neighboring-habitable-structure clearance. **Everett**: separate permit triggers from parcel-level zoning legitimacy.
+- Statements about keeping-animal permits do not establish building permit exemptions; unconfirmed fields remain source-recorded and are never upgraded by omission. New dated links and clause-level descriptions are recorded per field in `site/data/policy-evidence.json`.
+
 ## 2026-10-13 — P0 继续：15 项法规字段和 Lake Havasu 分区风险修复
 
 - 逐字段校验从 **116/400** 提升至 **131/400**（+15），**221** source-recorded、**48** unverified；88 有部分来源的城市摘要/12 pending 不变。六个城市：Prescott Valley 四项、Anaheim 三项、Folsom 三项、Beaverton 一项、Portland 一项、Lake Havasu City 三项。
