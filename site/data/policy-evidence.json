@@ -899,16 +899,32 @@
     },
     "san-jose-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San Jose Municipal Code §§7.10.205, 7.60.815; table Small Animals",
+        "detail": "Chickens and similar species are collectively small animals. Maximum depends on enclosure-to-NEAREST OTHER dwelling: <20 ft: 0, >20 to <40: 6, >40 to <50: 10, >50: 20. Exactly 20/40/50 ft not expressly addressed by the literal intervals. §7.60.700 separately requires a permit for >6.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San Jose Municipal Code §7.60.820",
+        "detail": "Keeping a rooster OVER four months of age is unlawful. Do not transform this into a blanket ban on younger chicks or a categorical prohibition at all ages.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San Jose Municipal Code §§7.60.700(A)-(B), 7.60.710(A)-(C), 7.60.715",
+        "detail": "A livestock/small-animal permit is necessary for >6 small animals including chickens; city can impose permit for fewer after written notice of code violation. Two-year permit requires application and premises inspection, with fee set separately. Other zoning/building approvals unaffected.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San Jose Municipal Code §§7.60.810, 7.60.815",
+        "detail": "Small animals subject to this Part's permit cannot be kept in required SIDE setback. Distance limits refer to another dwelling measured from animal housing/enclosure, not property lines: <20ft 0, >20-<40ft 6, >40-<50ft 10, >50ft 20. Exactly 20/40/50 thresholds unresolved from literal wording.",
+        "checkedAt": "2026-10-13"
       }
     },
     "oakland-ca": {
@@ -919,7 +935,11 @@
         "status": "source_recorded"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens",
+        "section": "City of Oakland Urban Agriculture > Community Gardens / Extensive Agriculture / Apply for Permits; zoning by activity category",
+        "detail": "Keeping animals in the Community Gardens or Extensive Agriculture category is zoning-zone-dependent. Some animal production/community-garden sites need a Conditional Use Permit; others are permitted outright. Separate Chapters 6.04, 8.14 and 8.18 still apply. This does NOT prove all ordinary backyard chicken owners need CUP or have a permit exemption.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -1498,10 +1518,18 @@
         "status": "source_recorded"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance",
+        "section": "Hillsboro City Code Compliance > Animal Regulations: Dogs, Cats, Chickens, and Livestock (2026 city guidance)",
+        "detail": "The Oregon city guidance explicitly says chicken keeping requires HENS ONLY. Does NOT use rules from Hillsboro Kansas or Hillsboro Wisconsin, whose poultry regulations differ.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance",
+        "section": "Hillsboro City Code Compliance > Animal Regulations; city Property Development > Animal & Livestock Permits",
+        "detail": "Official Hillsboro Oregon page expressly requires a valid Animal Permit to keep hens inside city limits; owners apply through Planning. Animal-keeping permit does not waive a zoning or coop construction permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"

@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — San Jose / Hillsboro (OR) / Oakland source-to-claim audit
+
+- Source-reviewed **seven** more claim-specific fields; **214/400** primary clause/guidance checked, **138** source recorded, **48** unverified for 12 paused cities (unchanged 88 reviewed cities).
+- San José [Code §§7.10.205, 7.60.700, 7.60.710, 7.60.810, 7.60.815, 7.60.820](https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE): chicken/rabbit/other small animal combined category, two-year permit required for >6 (and possible written enforcement for fewer), rooster restriction OVER 4 months, side setback prohibited for permit-covered animals, and 0/6/10/20 based on distance to OTHER dwelling. Printed 20/40/50-ft exact endpoints are not enumerated, so retained city-planning clarification rather than inventing numerical legality.
+- [Hillsboro OREGON City Code Compliance](https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance): only HENS in city, valid Animal Permit required. Explicitly NOT using Hillsboro KANSAS/WISCONSIN poultry rules; number/placement still pending operative Hillsboro Oregon ordinance.
+- [Oakland Urban Agriculture zoning guide](https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens): community garden versus extensive agricultural ANIMAL keeping permits depend on activity and zoning; CUP applies to some site types, not a universal chicken keeping permit. Flock count/rooster/coop location NOT advanced without exact code.
+
 ## 2026-10-13 — Bellingham / Frisco / Fort Collins scoped field evidence
 
 - Resolved **three** previously `source_recorded` claims; count **207/400 primary checked, 145 source-recorded, 48 unverified** (12 paused city profiles). No city statuses, indexing or planner modes changed.
