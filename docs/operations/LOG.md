@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Critical Chandler enacted-law correction
+
+- Discovered Chandler official **2023** webpage and **2026 homeowner manual** continue to say five chickens; adopted Ordinance **5113** (Dec 9 2024), Exhibit A §14-33(A), changed ceiling to **six**. City Jan 2025 permit chart independently confirms six hens, no roosters, >120sqft or >7ft permit triggers. Older local 5-ft coop property-line guidance retained but independently check accessory zoning.
+- Updated original Chandler city HTML and FAQ/schema, Arizona state hub, registry and generated planner data. Four Chandler fields map to precise official enacted law / city chart / still-applicable coop guidance. Evidence 23/400 -> **27/400**. 87 reviewed/13 pending unchanged.
+- Add regression to prevent reverting to stale five-bird rule. Critical lesson: currently published city website content may be superseded by adopted amendments.
+
+
 ## 2026-10-13 — Remaining 13-city municipal law research queue / CI safeguard
 
 - Published [13-city unresolved ordinance queue](PENDING_LAW_RESEARCH_2026-10-13.md), marking source leads and reasons *not* to claim full verification. In particular: Bend 2026 September code amendment gap; Round Rock livestock code not interchangeable with poultry rules; Irvine chick-sale code not a keeping permit.

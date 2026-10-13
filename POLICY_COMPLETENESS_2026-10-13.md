@@ -3,13 +3,13 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **23**; 325 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **27**; 321 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **No city has all four fields independently rechecked in this additional pass.** Three or fewer fields per benchmark city are backed by specific government code sections or city-issued guidance. A government guide is not a parcel-specific legal determination, and some official tips may lag effective ordinances.
 
 | City | Source review status | Flock | Rooster | Permit | Placement |
 |---|---|---|---|---|---|
-| Chandler, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Chandler, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Mesa, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Phoenix, AZ | verified | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
 | Tempe, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -136,3 +136,7 @@ Official city-published [Garland Code Chapter 22 §§22.14, 22.17](https://ecode
 ## 2026-10-13 Olympia city-code / ordinance 7457 validation
 
 The city-published [OMC §18.04.060(KK)](https://www.codepublishing.com/WA/Olympia/html/Olympia18/Olympia1804.html) (Ord. 7457, adopted January 27, 2026) now provides the applicable chicken and duck scale: ≤¼ acre up to 5 female chickens or ducks; above ¼ to one acre up to 9; at least one acre, 10 plus one per extra 1,000 sq ft up to two acres, with larger acreage using one USDA Animal Unit per acre. The exact **one-acre boundary overlaps** plain wording; confirm with city rather than automate. No roosters. Animal enclosures at least 10 ft from every lot line **and outside all applicable setback areas**. **No parcel permit exemption or automated geometry compliance is asserted.** Counts now 87 reviewed, 13 pending, **23/400** individually matched code/guidance fields.
+
+## 2026-10-13 Chandler correction — superseded 2023 government guidance
+
+Adopted [Ordinance 5113](https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-PLH24-0025-City-Code-Amendments-State-Housing-Mandates-Ordinance-5113.pdf), Exhibit A for §14-33(A), changed the maximum from FIVE to **SIX** hens in 2024, verified by the [adopted amendment exhibit](https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-PLH24-0036-Council-Memo.pdf) and [January 2025 official detached structures chart](https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Detached-Buildings-Structures-Chart-January-2025.pdf). The city's 2023 overview still says FIVE and is stale. Current 2026 homeowner PDF also appears to repeat old number; primary enacted code takes precedence. No roosters. The chart confirms a building permit for >120 square feet or >7 feet coop height; the [older city permit guide](https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance) says utilities need building permits too. Enclosure outer edge ≥5 ft from any property line, rear/side yard; the 2024 city ordinance announcement notes coop restrictions unchanged. This is a field-level official-source review only; parcel building zoning and HOA conditions must still be checked. Now **27/400** source checked, 87 reviewed cities, 13 still pending.

@@ -5,11 +5,11 @@ window.COOP_CITIES=[
     "name": "Chandler",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Up to 5 chickens",
-    "roosters": "Prohibited",
-    "permit": "Building permit if coop exceeds 120 sq ft or has utilities",
-    "placement": "Rear/side yards; coop at least 5 ft from every property line",
-    "verified": "2026-10-12",
+    "max": "Up to 6 hens on eligible single-family residential lots (2024 Ordinance 5113; not the obsolete five-hen city handout)",
+    "roosters": "Roosters prohibited under residential chicken regulations (Chandler §14-33)",
+    "permit": "Building permit if coop exceeds 120 sq ft OR 7 ft high, or has electricity/water utilities; zoning and accessory-building limits also apply",
+    "placement": "Secured coop in rear/side yard ≥5 ft from any property line; structure height and other zoning setbacks still require review",
+    "verified": "2026-10-13",
     "planner": {
       "mode": "property",
       "side": 5,
@@ -18,8 +18,8 @@ window.COOP_CITIES=[
       "rearOnly": true,
       "rearHalf": false
     },
-    "note": "Rear-yard placement still needs manual confirmation.",
-    "source": "https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance"
+    "note": "CRITICAL SOURCE CONFLICT: City's public 2023 backyard-chicken page and even a 2026 homeowner PDF still list five birds. City Council adopted Ordinance 5113 in December 2024 amending §14-33(A) to six, corroborated by January 2025 city planning chart. The 2024 city announcement says coop restrictions unchanged. Do not treat the old five-bird handout as current. A standard 5-ft coop setback does NOT certify that other zoning/accessory-structure setbacks, HOA or a legally surveyed boundary have been met.",
+    "source": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-PLH24-0025-City-Code-Amendments-State-Housing-Mandates-Ordinance-5113.pdf"
   },
   {
     "slug": "mesa-az",

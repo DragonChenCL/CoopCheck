@@ -5,16 +5,32 @@
   "cities": {
     "chandler-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-PLH24-0036-Council-Memo.pdf",
+        "section": "Adopted Chandler Ordinance 5113, Exhibit A, City Code §14-33(A)",
+        "detail": "No more than six chickens on applicable residential single-family lots; supersedes 2023 outdated five-chicken handout",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Detached-Buildings-Structures-Chart-January-2025.pdf",
+        "section": "January 2025 City of Chandler Detached Buildings / Structures Chart, chicken coop row (§14-33/§14-34)",
+        "detail": "Six hens on single-family properties and roosters prohibited",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Detached-Buildings-Structures-Chart-January-2025.pdf",
+        "section": "January 2025 City of Chandler Detached Buildings / Structures Chart, chicken coop row; Ch.35",
+        "detail": "Building permit if coop larger than 120sqft or taller than 7ft; utilities also trigger separate building permit per city animal guidance",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance",
+        "section": "Chandler City Code §14-33, 2023 city chicken guidance, coop location (unchanged under Ord.5113)",
+        "detail": "Coop secured rear/side yard and outer edge >=5ft from any property line, subject to structure/zone setbacks",
+        "checkedAt": "2026-10-13"
       }
     },
     "mesa-az": {

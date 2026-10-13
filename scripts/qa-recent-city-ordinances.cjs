@@ -20,6 +20,14 @@ for(const slug of ["garland-tx","olympia-wa"]){
  assert(sitemap.includes("/cities/"+slug+".html"),slug+" included in sitemap");
  assert(html.includes(c.sources[0].url),slug+" official source in page");
 }
+// Chandler's old 2023 government page says five but adopted Ordinance 5113 increased the limit to six.
+const ch=city("chandler-az");
+assert.match(ch.max,/6 hens/i,"Chandler must use Ordinance 5113 six-hen limit");
+assert(!/up to 5 chickens/i.test(ch.max));
+assert(ev["chandler-az"].max.status==="primary_clause_checked");
+assert(/5113/.test(ev["chandler-az"].max.section));
+assert.match(ch.permit,/7 ft/,"Chandler coop height must remain in permit guidance");
+assert.match(fs.readFileSync(path.join(root,"site/cities/chandler-az.html"),"utf8"),/2024 law update/);
 assert.match(city("garland-tx").max,/4 female/i);
 assert.match(city("garland-tx").placement,/30 ft/);
 assert.match(city("garland-tx").placement,/5 ft/);
