@@ -49,11 +49,7 @@
         "detail": "Rooster noise disturbance may require removal"
       },
       "permit": {
-        "status": "primary_clause_checked",
-        "url": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock",
-        "section": "Mesa Animal Control Fowl, Rodents & Livestock government guide; §8-6-21 licensing scope",
-        "detail": "City guidance links fowl/rodent keeping to §8-6-21 zone and sanitation rules; official source does not confirm broad keeping/structure permit waiver; distinguish from dogs licenses.",
-        "checkedAt": "2026-10-13"
+        "status": "source_recorded"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -2368,7 +2364,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofdenton.com/658/Accessory-Structures",
+        "section": "Denton Building Safety Accessory Structures (Residential), permit exemptions and zoning note; current 2026 website",
+        "detail": "General accessory structures require permits; 1-story detached tool/storage shed/playhouse and SIMILAR uses no more than 200sqft and no electrical/plumbing/HVAC do not require construction permit; zoning/land development still apply. Whether particular poultry coop qualifies needs city inspection; separate poultry-keeping permits unresolved.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",

@@ -3,8 +3,8 @@
 ## 2026-10-13 — Third 20-field poultry source audit
 
 - **20** previously source_recorded claims matched to exact official city code, agency guidance or Arizona statewide preemption section. **286/400 mapped; 66 source_recorded; 48 unverified**, 88 partial-reviewed / 12 pending noindex unchanged.
-- Bucket: Buckeye (4), Marana (4), Fort Collins (3), Scottsdale (2), Los Angeles (2), Lake Havasu City (1), Avondale (2), Fort Worth (1), Mesa (1).
-- Critical limits: Buckeye new 2025 code; Marana zone/count/coop table; Fort Collins separate licensing; Scottsdale small accessory structure still needs Planning Services approval; LA R1 zoning use not generic flock cap; LHC older dwelling cut-off; Avondale statewide municipal preemption vs local land-use; Fort Worth/Mesa no guessed general permit exemption.
+- Bucket: Buckeye (4), Marana (4), Fort Collins (3), Scottsdale (2), Los Angeles (2), Lake Havasu City (1), Avondale (2), Fort Worth (1), Denton (1).
+- Critical limits: Buckeye new 2025 code; Marana zone/count/coop table; Fort Collins separate licensing; Scottsdale small accessory structure still needs Planning Services approval; LA R1 zoning use not generic flock cap; LHC older dwelling cut-off; Avondale statewide municipal preemption vs local land-use; Fort Worth keeping obligations do not waive permits; Denton accessory outbuilding <=200sf and no utilities may qualify for building-permit exemption but no zoning/animal-license exemption.
 - All per-field reviewed date, section, original link in site/data/policy-evidence.json, summary and generated pages built from canonical registry.
 
 

@@ -10,7 +10,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | City | Source review status | Flock | Rooster | Permit | Placement |
 |---|---|---|---|---|---|
 | Chandler, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Mesa, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
+| Mesa, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Phoenix, AZ | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Clause/guidance checked |
 | San Diego, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -101,7 +101,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Irving, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause checked (building/zoning duty only) | Clause/guidance checked |
 | Garland, TX | verified_limited_scope | Clause checked | Clause checked | Source; permits still pending | Clause checked |
 | McKinney, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
-| Denton, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Denton, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | El Paso, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Round Rock, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
 | New York City, NY | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
@@ -294,6 +294,6 @@ Upgraded exactly **20** existing source-recorded city-field entries, across **9 
 | Avondale, AZ | `max` | Arizona Revised Statutes §9-462.12(A),(D)-(E), statewide 2024 law; Avondale Zoning §28-33(h) | [city law/guidance](https://www.azleg.gov/ars/9/00462-12.htm) |
 | Avondale, AZ | `roosters` | Avondale Zoning Code Article1 §28-5 definitions Backyard fowl (2025 amendment) and Arizona §9-462.12(A)(1) | [city law/guidance](https://library.municode.com/az/avondale/codes/code_of_ordinances?nodeId=CD_ORD_CH28ZOOR_ART1ADPR_28-1TIAUJUPU) |
 | Fort Worth, TX | `permit` | Fort Worth City Animal Care Requirements for Roosters and Fowl, current | [city law/guidance](https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl) |
-| Mesa, AZ | `permit` | Mesa Animal Control Fowl, Rodents & Livestock government guide; §8-6-21 licensing scope | [city law/guidance](https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock) |
+| Denton, TX | `permit` | Denton 2026 Building Safety accessory structures: detached similar sheds ≤200 sq ft and no utilities may be permit-exempt, ZONING STILL APPLIES | [Denton City Building Safety](https://www.cityofdenton.com/658/Accessory-Structures) |
 
-**Applicability exceptions:** Buckeye code effective 2025-11-20; Marana Ordinance 2025.002 effective 2025-02-07 and its zone-specific 40/acre versus six-bird or per-1000sqft rules. Fort Collins 2024 zoning-link updates and Humane Society license still require parcel eligibility. Scottsdale's <200sf accessory-building permit exclusion NEVER waives zoning One Stop Shop plan review. Los Angeles R1 noncommercial use is not unlimited hens. Lake Havasu 2024 grandfathered-zone and tall fence BUILDING permit are not a chicken-keeping licence. Avondale Arizona statutory six-bird floor and backyard-fowl rooster EXCLUSION do not settle agricultural zoning. Fort Worth and Mesa positive housing duties do not establish permit waivers. No automated coop site clearance.
+**Applicability exceptions:** Buckeye code effective 2025-11-20; Marana Ordinance 2025.002 effective 2025-02-07 and its zone-specific 40/acre versus six-bird or per-1000sqft rules. Fort Collins 2024 zoning-link updates and Humane Society license still require parcel eligibility. Scottsdale's <200sf accessory-building permit exclusion NEVER waives zoning One Stop Shop plan review. Los Angeles R1 noncommercial use is not unlimited hens. Lake Havasu 2024 grandfathered-zone and tall fence BUILDING permit are not a chicken-keeping licence. Avondale Arizona statutory six-bird floor and backyard-fowl rooster EXCLUSION do not settle agricultural zoning. Fort Worth animal housing duties do not establish permit waivers; Denton sheds <=200sqft and without utilities MAY avoid building permit but zoning/animal licensing still separate. No automated coop site clearance.

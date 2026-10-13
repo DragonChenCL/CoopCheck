@@ -28,7 +28,7 @@ window.COOP_CITIES=[
     "stateName": "Arizona",
     "max": "Mesa §8-6-21(A) generally allows 10 total fowl/rodents (including rabbits) per first 1/2 acre; additional land and zoning terms apply",
     "roosters": "City guidance: roosters may be kept if not a noise disturbance; removal may be required after nuisance",
-    "permit": "Mesa City's Animal Control Fowl/Rodents/Livestock guidance requires chicken keeping to satisfy City §8-6-21 quantity, sanitation and housing/location rules plus applicable Arizona state law. The page does NOT establish a universal backyard FOWL-KEEPING or chicken-coop CONSTRUCTION permit waiver; verify the lot and coop with Animal Control/Building Safety.",
+    "permit": "Building/zoning/animal permit requirements not fully cleared; confirm directly with city",
     "placement": "City §8-6-21(G)-(H) says 40 ft enclosure and 75 ft coop building from others' existing residences; applicability on eligible small-lot homes may be preempted by Arizona §9-462.12",
     "verified": "2026-10-13",
     "planner": {
@@ -39,7 +39,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "City §8-6-21(G)-(H) references neighboring existing dwelling, NOT parcel line. Arizona §9-462.12 preempts contrary municipal backyard-hen restrictions for eligible detached single-family houses on <=0.5 acre. We cannot automatically decide if Mesa's older 40ft/75ft code is enforceable on your lot. Map planner remains manual; ask City Planning about current requirements, structure permits, HOA and zoning.\n2026-10-13 claim-specific ordinance follow-up verified permit. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
+    "note": "City §8-6-21(G)-(H) references neighboring existing dwelling, NOT parcel line. Arizona §9-462.12 preempts contrary municipal backyard-hen restrictions for eligible detached single-family houses on <=0.5 acre. We cannot automatically decide if Mesa's older 40ft/75ft code is enforceable on your lot. Map planner remains manual; ask City Planning about current requirements, structure permits, HOA and zoning.",
     "source": "https://library.municode.com/az/mesa/codes/code_of_ordinances?nodeId=COOR_TIT8HESAEN_CH6PUNUPRMANEPRANRE_ARTIIIN"
   },
   {
@@ -1708,7 +1708,7 @@ window.COOP_CITIES=[
     "stateName": "Texas",
     "max": "No more than 8 hens per residential parcel",
     "roosters": "Roosters prohibited on residential properties smaller than 1 acre",
-    "permit": "Check city animal control and accessory-building permits",
+    "permit": "Denton City Development Services current Accessory Structures permit guidance: detached accessory outbuildings TYPICALLY REQUIRE building permits, but one-story detached sheds/playhouses/SIMILAR USES of <=200 SQ FT without power, water, or HVAC can qualify for building permit EXEMPTION. ZONING setbacks and code compliance still apply even where exempt. A particular chicken coop may or may not qualify as a similar use; city confirmation required. This does NOT settle whether a separate ordinary CHICKEN-KEEPING permit is needed.",
     "placement": "Chicken enclosure must be at least 150 ft from residence, business, office, school, hospital or nursing home under the official FAQ",
     "verified": "2026-10-13",
     "planner": {
@@ -1719,7 +1719,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+    "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property. 2026-10-13 Denton Building Safety official guide: accessory outbuildings generally need building permit, but <=200sf single-story detached shed/similar building WITH NO UTILITIES can qualify for exemption. Chicken coop classification and independent poultry-keeping license not proved. Zoning remains mandatory.",
     "source": "https://www.cityofdenton.com/m/faq?cat=17"
   },
   {

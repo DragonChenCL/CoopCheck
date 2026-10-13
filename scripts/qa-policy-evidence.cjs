@@ -109,7 +109,7 @@ assert(bySlug["oakland-ca"].max.includes("NO universal numeric")&&bySlug["oaklan
 // Batch 3: twenty scoped city-code checks. Do not promote secondary/incorrect universal numeric conclusions.
 for(const slug of ["buckeye-az","marana-az"])for(const key of keys)assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key+" current city code required");
 for(const key of ["max","roosters","placement"])assert.equal(e.cities["fort-collins-co"][key].status,"primary_clause_checked","Fort Collins "+key);
-for(const [slug,key] of [["scottsdale-az","permit"],["scottsdale-az","placement"],["los-angeles-ca","max"],["los-angeles-ca","permit"],["lake-havasu-city-az","permit"],["avondale-az","max"],["avondale-az","roosters"],["fort-worth-tx","permit"],["mesa-az","permit"]])assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key);
+for(const [slug,key] of [["scottsdale-az","permit"],["scottsdale-az","placement"],["los-angeles-ca","max"],["los-angeles-ca","permit"],["lake-havasu-city-az","permit"],["avondale-az","max"],["avondale-az","roosters"],["fort-worth-tx","permit"],["denton-tx","permit"]])assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key);
 assert(bySlug["buckeye-az"].max.includes("ADU")&&bySlug["buckeye-az"].placement.includes("NEIGHBORING PROPERTY LINE"),"Buckeye 2025 cap and offset scope");
 assert(bySlug["marana-az"].max.includes("1,000")&&bySlug["marana-az"].roosters.includes("AG")&&bySlug["marana-az"].placement.includes("OFFSITE DWELLING"),"Marana zone-specific rule required");
 assert(bySlug["fort-collins-co"].max.includes("COMBINED")&&bySlug["fort-collins-co"].placement.includes("WRITTEN CONSENT"),"Fort Collins combined flock/neighbour exception");
@@ -117,5 +117,5 @@ assert(bySlug["scottsdale-az"].permit.includes("PLAN APPROVAL"),"Scottsdale perm
 assert(bySlug["los-angeles-ca"].max.includes("NO numeric")&&bySlug["los-angeles-ca"].max.includes("NOT"),"LA R1 code not unlimited hens");
 assert(bySlug["lake-havasu-city-az"].permit.includes("2024-09-13")&&bySlug["lake-havasu-city-az"].permit.includes("BUILDING PERMIT"),"LHC conditional grandfathering");
 assert(bySlug["avondale-az"].max.includes("Arizona")&&bySlug["avondale-az"].roosters.includes("EXCLUDING MALE"),"Avondale state versus local zone conditions");
-assert(bySlug["fort-worth-tx"].permit.includes("DAILY")&&bySlug["mesa-az"].permit.includes("NOT"),"Fort Worth Mesa limited keeping status");
+assert(bySlug["fort-worth-tx"].permit.includes("DAILY")&&bySlug["denton-tx"].permit.includes("ZONING"),"Fort Worth and Denton scoped code duties");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
