@@ -54,3 +54,7 @@ Source-reviewed city summaries are not the same as fully checked city laws. Ever
 ## Homepage city search and responsive redesign
 
 The homepage and 100-city directory now share a lightweight generated search index (`site/assets/city-search-index.json`) produced from the canonical registry by `node scripts/generate-coverage-pages.cjs`. City results distinguish fully source-reviewed, limited-scope, and research-pending status. The directory supports city/state-text search plus state and verification-status filters; pending pages remain noindex. `node scripts/qa-city-search.cjs` checks search matching, diacritics, filtering, all 100 city records, and progressive-enhancement markup.
+
+## Marketing and community operations
+
+For the GSC → Reddit → BackYard Chickens workflow, browser single-tab rules, compliant outreach and a record of actual publication status, see [Operations playbook](docs/operations/README.md).
