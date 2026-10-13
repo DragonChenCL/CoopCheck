@@ -69,4 +69,6 @@ assert(styles.lastIndexOf('position:absolute!important')>styles.lastIndexOf('pos
 assert(home.includes('id="homeStateOptions"')&&home.includes('id="homeCityResults"'),"both hero popovers exist");
 assert(home.indexOf('id="homeCityResults"')<home.indexOf('<div class="cc-search-meta">'),"city suggestions must stay inside search-control container");
 assert(styles.includes('.cc-select-trigger')&&styles.includes('.cc-filter-trigger'),"custom dropdown visual styles required");
+assert(styles.includes('.cc-home #homeCityHint{display:block;min-height:36px}'),"reserve stable space for search hint to avoid vertical changes");
+assert(styles.includes('.cc-home .cc-decor-right{right:95px}'),"right-side decorative elements must not overflow viewport");
 console.log("PASS: all-city search, state/status filters, pending distinction, SEO HTML hooks");

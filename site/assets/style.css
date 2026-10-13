@@ -587,3 +587,12 @@
   .cc-home .cc-state-control > .cc-dropdown-options{width:min(270px,calc(100vw - 48px));max-height:225px}
   .cc-filter-dropdown > .cc-dropdown-options{width:100%;max-height:205px}
 }
+
+
+/* Keep the absolute-positioned menus floating without introducing horizontal document overflow. */
+.cc-home .cc-decor-right{right:95px}
+.cc-home .cc-decor-left{left:0}
+.cc-home #homeCityHint{display:block;min-height:36px}
+@media(max-width:900px){
+  .cc-home .cc-hero-decor{display:none}
+}
