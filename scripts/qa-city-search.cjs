@@ -62,6 +62,11 @@ assert(searchScript.includes('if(!input.value.trim()&&!selectedValue(state))'),"
 assert(searchScript.includes('doc.addEventListener("pointerdown"'),"outside clicks must dismiss menus");
 assert(searchScript.includes('event.key==="Escape"'),"keyboard Escape must dismiss menu");
 const styles=read("site/assets/style.css");
-assert(styles.includes('position:static!important'),"suggestions should not float over lower content");
+assert(styles.includes('.cc-home .cc-search-controls > .cc-search-results'),"city results must be anchored to the search controls");
+assert(styles.includes('.cc-home .cc-state-control > .cc-dropdown-options'),"state popover must be anchored to its trigger");
+assert(styles.includes('.cc-filter-dropdown > .cc-dropdown-options'),"directory filters must be floating menus");
+assert(styles.lastIndexOf('position:absolute!important')>styles.lastIndexOf('position:static!important'),"new floating popover rules must override legacy in-flow styles");
+assert(home.includes('id="homeStateOptions"')&&home.includes('id="homeCityResults"'),"both hero popovers exist");
+assert(home.indexOf('id="homeCityResults"')<home.indexOf('<div class="cc-search-meta">'),"city suggestions must stay inside search-control container");
 assert(styles.includes('.cc-select-trigger')&&styles.includes('.cc-filter-trigger'),"custom dropdown visual styles required");
 console.log("PASS: all-city search, state/status filters, pending distinction, SEO HTML hooks");
