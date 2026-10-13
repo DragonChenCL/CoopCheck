@@ -76,6 +76,15 @@ function setupHero(rootEl,cities){
   items.forEach((e,i)=>{e.classList.toggle("is-active",i===selected);e.setAttribute("aria-selected",String(i===selected));});
   if(selected>=0&&items[selected]){input.setAttribute("aria-activedescendant",items[selected].id);items[selected].scrollIntoView({block:"nearest"});}else input.removeAttribute("aria-activedescendant");
  }
+ const submit=rootEl.querySelector("[data-search-submit]");
+ submit?.addEventListener("click",()=>{
+  if(!input.value.trim() && !state?.value){input.focus();paint();return;}
+  const current=filterCities(cities,input.value,state?.value||"","all",8);
+  if(current.length===1){
+   const c=current[0];track(c.slug,c.status,"home");
+   root.location.assign("/cities/"+encodeURIComponent(c.slug)+".html");
+  }else{input.focus();paint();}
+ });
  input.addEventListener("focus",paint);
  input.addEventListener("input",paint);
  state?.addEventListener("change",()=>{paint();input.focus();});
