@@ -782,10 +782,10 @@ window.COOP_CITIES=[
     "name": "Fresno",
     "state": "CA",
     "stateName": "California",
-    "max": "Farm animals including chickens are not permitted in residentially zoned districts under the city's published enforcement FAQ",
-    "roosters": "No residential rooster allowance established where farm animals are prohibited",
-    "permit": "Consult city zoning for agricultural or other permitted districts",
-    "placement": "Not applicable to residential chicken keeping under cited city guidance",
+    "max": "Fresno §15-2707(B)-(C): in ordinary residential districts, chickens/ducks/geese/turkeys and other farm fowl are not household pets on lots <=36,000 sq ft. Residential lots GREATER than 36,000 sq ft may keep up to 12 fowl per gross acre with other zoning conditions. No blanket all-residential prohibition.",
+    "roosters": "Roosters prohibited anywhere inside Fresno city under §15-2707(G), except within an accredited zoological park. Not a generic 'unverified' rooster rule.",
+    "permit": "Determine applicable zoning/animal-keeping and any accessory-structure permission for the parcel; §15-2707's permitted uses do not by themselves prove a general poultry permit exemption.",
+    "placement": "On eligible >36,000-sq-ft residential lots, §15-2707(C)(4) requires animal housing/pens >=40 ft from PROPERTY lines AND >=50 ft from neighboring residences. Small residential parcels do not receive a poultry-keeping entitlement from this section.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -795,7 +795,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "City of Fresno current Municipal Code §15-2707(A)-(G), animal keeping. Residential sites <=36,000 sqft prohibit farm fowl as household pets, >36,000 sqft permits 12 fowl/gross acre, city roosters prohibited (accredited zoo exception), and 40-ft lot-line/50-ft neighboring-residence separation applies to non-household animals. Actual parcel zoning, grandfathered use, annexation overlay, construction approvals require local review.",
     "source": "https://www.fresno.gov/cityattorney/codeenforcement/code-enforcement-faqs/"
   },
   {
