@@ -189,16 +189,28 @@
     },
     "colorado-springs-co": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://coloradosprings.gov/page/city-regulations-animals",
+        "section": "Colorado Springs City Regulations for Animals, Rabbits and Chickens",
+        "detail": "Up to ten combined rabbits or chickens age six months or older; confirm other juvenile animals/parcel zoning.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://coloradosprings.gov/page/city-regulations-animals",
+        "section": "Colorado Springs City Regulations for Animals, Rabbits and Chickens",
+        "detail": "Roosters prohibited under city guidance.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://coloradosprings.gov/page/city-regulations-animals",
+        "section": "Colorado Springs City Regulations for Animals, Rabbits and Chickens; references City Code §7.3.105(A)",
+        "detail": "Minimum four sq ft per chicken/rabbit in shelter; structures follow applicable zoning/building/accessory standards. The 55-ft kennel rule on this page is NOT a chicken-coop setback.",
+        "checkedAt": "2026-10-13"
       }
     },
     "portland-or": {
@@ -378,7 +390,11 @@
         "status": "source_recorded"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/",
+        "section": "Vancouver Code Compliance FAQ, Can you keep chickens in the city limits? (VMC 20.895.050 reference)",
+        "detail": "Chickens are allowed but roosters and peacocks are prohibited. New zoning code effective July 31, 2026; other quantities, site and accessory structure rules require current zoning verification.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
@@ -1157,16 +1173,32 @@
     },
     "thornton-co": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://thorntonco.qscend.com/311/knowledgebase/article/2056",
+        "section": "City of Thornton Knowledge Base, Does Thornton allow chickens? §§1–2",
+        "detail": "Up to six hens only at eligible detached single-family homes, not townhouses, duplexes, apartments or manufactured home parks.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://thorntonco.qscend.com/311/knowledgebase/article/2056",
+        "section": "Thornton FAQ §3",
+        "detail": "Only female hens; roosters prohibited.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://thorntonco.qscend.com/311/knowledgebase/article/2056",
+        "section": "Thornton FAQ §13",
+        "detail": "No animal-keeping permit needed for standard residential six-hen program; building permits and HOA restrictions require independent verification.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://thorntonco.qscend.com/311/knowledgebase/article/2056",
+        "section": "Thornton FAQ §§4–7",
+        "detail": "One coop in fenced rear yard; at least 5 ft from side/rear property lines; maximum 120 sq ft, 7 ft high, >=6 sq ft internal shelter per hen, predator proof.",
+        "checkedAt": "2026-10-13"
       }
     },
     "westminster-co": {

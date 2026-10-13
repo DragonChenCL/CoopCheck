@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Thornton / Colorado Springs / Vancouver partial source review
+
+- 8 additional specific government-source fields checked. Registry now 103/400, 245 source-recorded, 52 pending.
+- Thornton: four independent municipal FAQ claims. Colorado Springs: three scoped animal-regulation claims, kennel setback not used for chickens. Vancouver WA: rooster rule only because July 2026 zoning revision requires property-level recheck.
+- No new city marked approved for individual property; 13 unresolved cities remain noindex. Separate structure/building permissions still not inferred from animal-keeping permit statement.
+
+
 ## 2026-10-13 — Second official law batch: Aurora / Longmont / Beaverton / Medford / Ashland
 
 - Reviewed official city codes or permit forms for five cities; newly marked 16 field-specific government statements. Total is now **95/400**, remaining 253 source-recorded and 52 unverified.

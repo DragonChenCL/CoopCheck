@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **95**; 253 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **103**; 245 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -16,14 +16,14 @@ Four fields per city: 400. Independently matched to specific current official ci
 | San Diego, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Sacramento, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
-| Colorado Springs, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Colorado Springs, CO | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Portland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Eugene, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Salem, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Gresham, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Seattle, WA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Spokane, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Vancouver, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Vancouver, WA | verified_limited_scope | Source; clause pending | Clause checked | Source; clause pending | Source; clause pending |
 | Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
 | Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Fort Worth, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -72,7 +72,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Fort Collins, CO | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Lakewood, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Arvada, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Thornton, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Thornton, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Westminster, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Pueblo, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Longmont, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
@@ -182,3 +182,9 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 - Beaverton, OR: [Code §5.09.020](https://beaverton.municipal.codes/BC/5.09.020) verifies maximum four hens and no roosters. Eligibility by property type/area, permits and exact coop distance **still need other clauses**; not upgraded.
 - Medford, OR: [Code §5.555](https://medford.municipal.codes/Code/5.555) explicitly allows noncommercial small poultry on residential property without giving a universal numeric ceiling in this provision; no roosters and 4-ft minimum to abutting-property boundary, not in front required setback. Other zoning/building/fire provisions remain applicable. This is scoped evidence of the section, **not** proof that no other numeric limits exist.
 - Ashland, OR: [Community Development FAQ](https://ashlandoregon.gov/m/faq?cat=16) shows hens tiered on lots under/over 5,000 sq ft (max 20), no roosters, 20-ft to adjacent dwelling / 10-ft to adjoining lot. FAQ does not expressly resolve the **exactly-5,000-sq-ft** boundary. Independent building permits remain open.
+
+## 2026-10-13 targeted follow-up: Thornton, Colorado Springs and Vancouver WA
+
+- [Thornton official FAQ](https://thorntonco.qscend.com/311/knowledgebase/article/2056): six hens at detached single-family residences, no roosters, no standard chicken-keeping permit, backyard single coop <=120 sq ft / <=7 ft high at least 5 ft from side and rear lot lines; >=6 sq ft of interior shelter per hen. This is **not proof of separate construction permit exemption**.
+- [Colorado Springs city animal regulations](https://coloradosprings.gov/page/city-regulations-animals): up to ten rabbits/chickens age >=6 months, no roosters, at least four sq ft shelter area each; exact chicken-coop setback not established in this city overview. Its distinct **55-ft kennel setback must not be applied to backyard chickens**.
+- [Vancouver WA Code Compliance](https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/): confirms chickens allowed but roosters and peacocks prohibited. City's new zoning code effective 2026-07-31 means parcel-zoning, flock cap and coop location not yet field-proven. Only rooster field promoted.
