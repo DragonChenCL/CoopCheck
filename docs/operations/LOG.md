@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Garland municipal-law source audit
+
+- Compared city-published Garland §§22.14, 22.17: 4 female fowl older than one month, no roosters, 30 ft to other residence and 5 ft to adjoining residential-zoned property for pens/runs.
+- Marked maximum, rooster and placement checked, but **permit not confirmed**. Garland added only as limited-scope, manual geometry; not a compliance approval.
+- Regenerated site data, city guide, directory, city search and sitemap. Counts move 17→20 specific field checks, 85→86 source-reviewed city summaries, 15→14 pending.
+
+
 ## 2026-10-13 — P0 product onboarding and evidence review
 
 **Deployment check:** GitHub Pages CI run [38360932364](https://github.com/DragonChenCL/CoopCheck/actions/runs/38360932364) passed all checks and deployment. Real browser confirmed home Quick Check, Denver 8-hen result (128 sq ft + $25), Austin indeterminate response, planner selected city and map entry, five city pages HTTP 200 with four evidence badges each. `cfbrower` used a single tab throughout.

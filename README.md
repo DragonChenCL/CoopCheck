@@ -58,3 +58,7 @@ The homepage and 100-city directory now share a lightweight generated search ind
 ## Marketing and community operations
 
 For the GSC → Reddit → BackYard Chickens workflow, browser single-tab rules, compliant outreach and a record of actual publication status, see [Operations playbook](docs/operations/README.md).
+
+## Garland 2026-10-13 city-code update
+
+The previously noted **85/15** audit was a dated historical snapshot. Registry is now **86** source-reviewed summaries, **14** pending, **20/400** clause/guidance-checked fields. Garland, TX moved to limited-scope only; permit and parcel-specific review still needed.

@@ -1618,6 +1618,27 @@ window.COOP_CITIES=[
     "source": "https://ecode360.com/45683221"
   },
   {
+    "slug": "garland-tx",
+    "name": "Garland",
+    "state": "TX",
+    "stateName": "Texas",
+    "max": "Up to 4 female domestic fowl over 1 month old, across domestic fowl types",
+    "roosters": "Roosters and male peafowl prohibited",
+    "permit": "City's fowl section does not establish a general poultry permit exemption; confirm building/zoning permits and location-specific conditions",
+    "placement": "Enclosure at least 30 ft from another residence; pens/runs/cages at least 5 ft from adjoining residentially zoned property",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "Garland City Code §§22.14 and 22.17(B)(6)-(7) confirm number, gender and distance. Map planner cannot check separation from neighboring buildings. Verify accessory-building permits, zoning, HOA and possible state agriculture preemption before construction.",
+    "source": "https://ecode360.com/40070090"
+  },
+  {
     "slug": "mckinney-tx",
     "name": "McKinney",
     "state": "TX",

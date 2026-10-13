@@ -2,8 +2,8 @@
 
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
-Cities: 100. Source-reviewed: 85 (45 general summaries; 40 limited-scope). Pending: 15.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **17**; 323 fields have source links but still need per-field confirmation; 60 fields belong to 15 pending city profiles.
+Cities: 100. Source-reviewed: 86 (45 general summaries; 41 limited-scope). Pending: 14.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **20**; 324 fields have source links but still need per-field confirmation; 56 fields belong to 14 pending city profiles.
 
 **No city has all four fields independently rechecked in this additional pass.** Three or fewer fields per benchmark city are backed by specific government code sections or city-issued guidance. A government guide is not a parcel-specific legal determination, and some official tips may lag effective ordinances.
 
@@ -99,7 +99,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Plano, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Frisco, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Irving, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Garland, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
+| Garland, TX | verified_limited_scope | Clause checked | Clause checked | Source; permits still pending | Clause checked |
 | McKinney, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Denton, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | El Paso, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -128,3 +128,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 ## 2026-10-13 five-city P0 focused recheck
 
 Field state `primary_clause_checked` means a specific official city code or published city regulatory guidance has been reviewed for that *field*, not that every parcel condition or current zoning permit has been independently resolved. Checked city summaries are linked directly on the five benchmark pages. Portland/Austin/Arlington/Denver/Seattle: 13 newly reviewed fields, alongside 4 pre-existing field checks elsewhere. 17/400 total. In particular, Austin's maximum/roosters/permit and Seattle's general permit remain non-conclusive. Denver structural placement is tied to the official FPA information packet and still requires parcel-level zoning review; it is not labelled primary-clause-checked in the canonical registry.
+
+## 2026-10-13 Garland municipal code review
+
+Official city-published [Garland Code Chapter 22 §§22.14, 22.17](https://ecode360.com/40070090), linked by the city's [code portal](https://www.garlandtx.gov/2001/City-Charter-Code-of-Ordinances), establishes **four female domestic fowl over one month**, prohibits roosters/male peafowl, and requires a fowl enclosure **30 feet from another residential dwelling**. §22.17(B)(6) separately requires **5 ft from adjoining residentially zoned property** for pens/runs/cages. **Permit remains unverified** and the site uses manual map planning; the city code is not a parcel-specific legal clearance. Running totals: 86 reviewed, 14 pending, **20** of 400 fields checked to specific city clauses/guidance.

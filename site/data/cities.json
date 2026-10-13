@@ -3345,11 +3345,11 @@
       "name": "Garland",
       "state": "TX",
       "stateName": "Texas",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "Up to 4 female domestic fowl over 1 month old, across domestic fowl types",
+      "roosters": "Roosters and male peafowl prohibited",
+      "permit": "City's fowl section does not establish a general poultry permit exemption; confirm building/zoning permits and location-specific conditions",
+      "placement": "Enclosure at least 30 ft from another residence; pens/runs/cages at least 5 ft from adjoining residentially zoned property",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -3358,23 +3358,21 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
-      "audit": {
-        "status": "needs_review",
-        "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
-        "secondPass": {
-          "status": "researched_not_proven",
-          "channels": [
-            "municipal government website",
-            "municipal code publisher / ordinance amendments",
-            "planning / animal control / state preemption",
-            "secondary cross-check only (not sufficient for publication)"
-          ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+      "note": "Garland City Code §§22.14 and 22.17(B)(6)-(7) confirm number, gender and distance. Map planner cannot check separation from neighboring buildings. Verify accessory-building permits, zoning, HOA and possible state agriculture preemption before construction.",
+      "sources": [
+        {
+          "type": "city_code",
+          "url": "https://ecode360.com/40070090"
+        },
+        {
+          "type": "official_city_code_directory",
+          "url": "https://www.garlandtx.gov/2001/City-Charter-Code-of-Ordinances"
         }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "note": "Published city-code §22.14: four female fowl over one month, rooster ban, 30-ft other-residence limit. §22.17(B)(6)-(7): 5-ft adjacent residential-zoned property setback for pens/runs. Permit/parcel issues remain unresolved."
       },
       "rollout": {
         "batch": "first-100-2026-10",
