@@ -64,10 +64,14 @@ function setupDropdown(wrapper,options,onChange,externalMenu){
   expanded=true;menu.hidden=false;trigger.setAttribute("aria-expanded","true");
   wrapper.classList.add("is-open");
  }
- function choose(option){
+ function setValue(value){
+  const option=options.find(item=>item.value===value)||options[0];
   wrapper.dataset.value=option.value;
   label.textContent=option.label;
   optionButtons.forEach(b=>b.setAttribute("aria-selected",String(b.dataset.value===option.value)));
+ }
+ function choose(option){
+  setValue(option.value);
   close();trigger.focus();
   onChange?.(option.value);
  }
@@ -106,7 +110,7 @@ function setupDropdown(wrapper,options,onChange,externalMenu){
  doc.addEventListener("focusin",event=>{
   if(expanded&&!wrapper.contains(event.target)&&!menu.contains(event.target))close();
  });
- return {close,open,isOpen:()=>expanded};
+ return {close,open,setValue,isOpen:()=>expanded};
 }
 function setupHero(rootEl,cities){
  const input=rootEl.querySelector("[data-search-input]");
@@ -115,7 +119,7 @@ function setupHero(rootEl,cities){
  const hint=rootEl.querySelector("[data-search-hint]");
  const stateMenu=rootEl.querySelector("[data-dropdown-menu]");
  if(!input||!panel)return;
- let selected=-1,view=[],open=false,ignoreReopen=false;
+ let selected=-1,view=[],open=false;
  const defaultHint="Search all 100 city profiles. Unverified cities are clearly marked.";
  function setOpen(show){
   open=show;panel.hidden=!show;input.setAttribute("aria-expanded",String(show));
@@ -185,7 +189,6 @@ function setupHero(rootEl,cities){
   else{input.focus();paint();}
  });
  input.addEventListener("focus",()=>{
-  if(ignoreReopen){ignoreReopen=false;return;}
   if(input.value.trim()||selectedValue(state))paint();
  });
  input.addEventListener("input",paint);
@@ -242,10 +245,10 @@ function setupDirectory(cities){
  input?.addEventListener("input",apply);
  filter.querySelector("[data-directory-reset]")?.addEventListener("click",()=>{
   if(input)input.value="";
-  for(const [dropdown,widget,val] of [[state,stateDropdown,""],[status,statusDropdown,"all"]]){
-   if(dropdown){dropdown.dataset.value=val;dropdown.querySelector("[data-dropdown-label]").textContent=(dropdown===state?"All states":"All verification statuses");}
-   widget?.close();
-  }
+  stateDropdown?.setValue("");
+  statusDropdown?.setValue("all");
+  stateDropdown?.close();
+  statusDropdown?.close();
   apply();input?.focus();
  });
  apply();
