@@ -1,5 +1,16 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — P0 继续：15 项法规字段和 Lake Havasu 分区风险修复
+
+- 逐字段校验从 **116/400** 提升至 **131/400**（+15），**221** source-recorded、**48** unverified；88 有部分来源的城市摘要/12 pending 不变。六个城市：Prescott Valley 四项、Anaheim 三项、Folsom 三项、Beaverton 一项、Portland 一项、Lake Havasu City 三项。
+- [Prescott Valley §6-02-030(B)](https://codelibrary.amlegal.com/codes/prescottvalleyaz/latest/prescottvalley_az/0-0-0-20920) 直接规定 10 只鸡、公鸡禁令、鸡舍1-ft 边界约束、一般无需许可但有管线/电气设备需要建筑许可。
+- [Anaheim §18.38.030](https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-68050)：综合物种密度 1/1800sqft（四舍五入范围按章规定）、通常禁公鸡，距第三方居所/地界分别 50/20 ft；特别区的例外保留。
+- [Folsom Chapter 17.40](https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html)：农业复合分区特殊规定；需有适用的农业复合分区才能引用 >100头 use permit 及鸡舍50/20/30-ft条件；不是常规住宅可养100只鸡。
+- [Beaverton §5.09.015](https://beaverton.municipal.codes/BC/5.09.015)：5,000 sqft，独栋或双拼，拥有者居住或租户书面同意；20-ft 距离到邻居住宅而不是地界，前院不允许鸡舍。
+- [Portland city guide](https://www.portland.gov/bps/sustainability/guide-bees-and-livestock/chickens-and-fowl)：标准后院鸡禽无需饲养许可，但附属建筑许可和 Title 13 标准另审。
+- [Lake Havasu City §14.03.03(E)(9)](https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-32782) 和 [§14.03.02 use table](https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-35856)：明确 zoning A(2) 只适用于 2024-09-13 已存在独栋居民，不能把「最多六只」当所有城市住宅都批准；注册来源和页面均增补约束。未确定的具体建筑审批依然待核。
+- 对仍 pending 的 12 城复核了官方入口/来源区分；Queen Creek 官方 2026 zoning PDF 当前直开403，未核实生效全文；Pueblo 草案不可当现行法；Boulder CO 城市/县/内华达 Boulder City 必须分开。全部保留 noindex。
+
 ## 2026-10-13 — 两项 P0 联合核验：Bend 部分解除 + 高流量城市逐字段
 
 - 新增 **7 项逐字段法条/政府指南证据**：Bend 2；San Antonio 3；Los Angeles 1；Denver 1。总计 **116/400** 条已逐字段核对、**236** source-recorded、**48** unverified；**88/100** 城有至少部分官方来源，**12** 仍 needs_review/noindex。
