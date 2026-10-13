@@ -1,5 +1,11 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Austin existing checked field corrected to current 2022 ordinance
+
+- No new claim promoted: still **214/400** primary-checked, **138** source-recorded, **48** paused-city unverified.
+- [Current Austin animal ordinance §3-2-16(A)-(E)](https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE) effective 2022-10-24: all fowl housing, NOT only two-or-more chickens, requires covered secure enclosure and >=30 ft separation from another person's residence/business; 50 ft if a **health hazard** exists. Measured to buildings, not property boundaries. Earlier 2013 edition and city 2021 handout state two-or-more/50ft but do not control current code.
+- Updated canonical registry, existing verified placement field source and date, generated site/plan data, and CI guard. Flock/rooster/permit remain pending, not inferred from missing text.
+
 ## 2026-10-13 — San Jose / Hillsboro (OR) / Oakland source-to-claim audit
 
 - Source-reviewed **seven** more claim-specific fields; **214/400** primary clause/guidance checked, **138** source recorded, **48** unverified for 12 paused cities (unchanged 88 reviewed cities).
