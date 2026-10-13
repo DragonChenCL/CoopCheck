@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Flagstaff / Sierra Vista / Tempe direct ordinance pass
+
+- **+6 claim-level fields**, now **220/400 primary checked, 132 source-recorded, 48 unverified**. City review statuses unchanged (88 reviewed, 12 pending); no new cities or planner automation.
+- [Flagstaff Chapter 6-03](https://www.codepublishing.com/AZ/Flagstaff/html/Flagstaff06/Flagstaff0603000.html): 6/10/15/20/25 by lot size, >4-month male ban, ER/RR keeping permit vs minor-improvement permit, residential lot-line/dwelling/alley distances. Two fields newly promoted, two upgraded to direct code citations.
+- [Sierra Vista 2026 §90.11](https://codelibrary.amlegal.com/codes/sierravista/latest/sierravista_az/0-0-0-17093): up to 6 detached-residence fowl, prohibited roosters, secure rear/side enclosure 20 ft from neighboring property and 200-sq-ft/8-ft/fence height restrictions; permit unresolved.
+- [Tempe ZDC §3-404(I)(8)](https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities): under-one-acre enclosure fence-line height limit confirmed; no numerical setback inference.
+
+
 ## 2026-10-13 — San Jose / Hillsboro (OR) / Oakland source-to-claim audit
 
 - Source-reviewed **seven** more claim-specific fields; **214/400** primary clause/guidance checked, **138** source recorded, **48** unverified for 12 paused cities (unchanged 88 reviewed cities).

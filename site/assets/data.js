@@ -530,10 +530,10 @@ window.COOP_CITIES=[
     "name": "Flagstaff",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Allowed small-livestock quantity varies with lot size and zoning; consult city's official lot-size table",
-    "roosters": "Rooster-specific restriction not fully established by the cited guide",
-    "permit": "Backyard-livestock permit generally required outside Estate and Rural Residential zoning",
-    "placement": "Small-livestock shelter must be in rear yard, at least 10 ft from neighboring property line and 20 ft from neighboring homes (alley exception)",
+    "max": "Domestic chicken (fowl) caps under §6-03-001-0003(A) Table A: 6 on ≤19,999 sq ft lots; 10 at 20,000–29,999; 15 at 30,000–39,999; 20 at 40,000–79,999; 25 on ≥80,000 sq ft. Lot use/zoning and offspring-age exceptions apply.",
+    "roosters": "Male poultry over four months old are prohibited under §6-03-001-0003(C)(4). Younger chicks have a narrow age exception, not permanent permission for adult roosters.",
+    "permit": "Backyard livestock keeping permit required outside Estate Residential (ER) and Rural Residential (RR) zones under §6-03-001-0004(A); coop and fence work can separately trigger minor-improvement permits under §6-03-001-0004(E).",
+    "placement": "Outside ER/RR, livestock containment belongs in the rear yard. Small-livestock shelter: ≥10 ft from neighboring residential lot line (0 ft if abutting alley), ≥20 ft from nearest neighboring dwelling; on lots <1 acre fowl shelter ≤8 ft tall and below fence line (Chapter 6-03 Table C).",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -543,8 +543,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
-    "source": "https://flagstaff.az.gov/3383/Backyard-Livestock"
+    "note": "Current Flagstaff animal keeping Chapter 6-03, amended Ord. 2024-26, sets lot-size flock tiers, a prohibition on male poultry older than four months, conditional livestock permits, and distinct neighboring-lot/dwelling offsets. Do not mistake an ER/RR animal-permit exception for a building approval. Parcel zoning, HOA and applicable Arizona state preemption remain separate questions.",
+    "source": "https://www.codepublishing.com/AZ/Flagstaff/html/Flagstaff06/Flagstaff0603000.html"
   },
   {
     "slug": "oro-valley-az",
@@ -677,10 +677,10 @@ window.COOP_CITIES=[
     "name": "Sierra Vista",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Up to 6 domesticated fowl at detached single-family residences under the city's December 2024 amendment",
-    "roosters": "City-specific male-fowl provisions require a separate code-section check",
-    "permit": "Confirm existing zoning and accessory-structure standards",
-    "placement": "Current specific coop setback not established by the council amendment summary",
+    "max": "Up to 6 domestic fowl in the backyard of a qualifying detached single-family residence under Sierra Vista §90.11(A); not a citywide exemption for other housing types.",
+    "roosters": "Roosters prohibited in the residential domestic-fowl allowance under §90.11(A)(1).",
+    "permit": "§90.11 does not establish a general livestock-keeping or construction permit exemption; confirm zoning and separate coop/structure approval with Sierra Vista.",
+    "placement": "A secure rear- or side-yard enclosure at least 20 ft from a neighboring property, ≤200 sq ft, ≤8 ft tall and below the property's fence line, under §90.11(A)(2). The 20-ft reference is to neighboring property, not specifically to a neighboring dwelling.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -690,8 +690,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
-    "source": "https://www.sierravistaaz.gov/Home/Components/News/News/596/15"
+    "note": "Sierra Vista 2026 S-24 §90.11, amended Ordinance 2024-009, replaced the old 8-fowl/lot-size formula. Three fields are verified directly: up to 6 fowl for detached homes, no roosters, secure side/rear enclosure with 20-ft neighboring-property separation, 200-sq-ft/8-ft maximum and fence-height condition. Building/keeping permits remain uncertain, and parcel zoning, HOA and Arizona statewide rules need review.",
+    "source": "https://codelibrary.amlegal.com/codes/sierravista/latest/sierravista_az/0-0-0-17093"
   },
   {
     "slug": "los-angeles-ca",

@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (45 general summaries; 43 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **214**; 138 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **220**; 132 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -12,7 +12,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Chandler, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Mesa, AZ | verified_limited_scope | Clause checked | Clause/guidance checked | Source; permit unconfirmed | Clause checked, state preemption unresolved |
 | Phoenix, AZ | verified | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
-| Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
+| Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Clause/guidance checked |
 | San Diego, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Sacramento, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
@@ -37,7 +37,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Buckeye, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Queen Creek, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Tucson, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
-| Flagstaff, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Clause/guidance checked | Clause/guidance checked |
+| Flagstaff, AZ | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Oro Valley, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Marana, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Casa Grande, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -46,7 +46,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Prescott Valley, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Lake Havasu City, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Apache Junction, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Sierra Vista, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Sierra Vista, AZ | verified_limited_scope | Clause checked | Clause checked | Source; permit unconfirmed | Clause checked |
 | Los Angeles, CA | verified_limited_scope | Source; clause pending | Clause checked (§53.71) | Source; clause pending | Source; clause pending |
 | San Francisco, CA | verified | Clause checked | Source; clause pending | Clause checked (DPH enclosure approval; building/zoning open) | Clause checked (20 ft to door/window, not lot line) |
 | San Jose, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -188,3 +188,10 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 - [Thornton official FAQ](https://thorntonco.qscend.com/311/knowledgebase/article/2056): six hens at detached single-family residences, no roosters, no standard chicken-keeping permit, backyard single coop <=120 sq ft / <=7 ft high at least 5 ft from side and rear lot lines; >=6 sq ft of interior shelter per hen. This is **not proof of separate construction permit exemption**.
 - [Colorado Springs city animal regulations](https://coloradosprings.gov/page/city-regulations-animals): up to ten rabbits/chickens age >=6 months, no roosters, at least four sq ft shelter area each; exact chicken-coop setback not established in this city overview. Its distinct **55-ft kennel setback must not be applied to backyard chickens**.
 - [Vancouver WA Code Compliance](https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/): confirms chickens allowed but roosters and peacocks prohibited. City's new zoning code effective 2026-07-31 means parcel-zoning, flock cap and coop location not yet field-proven. Only rooster field promoted.
+
+## 2026-10-13 — Flagstaff / Sierra Vista / Tempe operative clause cross-check
+
+- [Flagstaff City Code Chapter 6-03](https://www.codepublishing.com/AZ/Flagstaff/html/Flagstaff06/Flagstaff0603000.html), as amended Ordinance 2024-26: Table A contains fowl tiers 6 / 10 / 15 / 20 / 25 by lot size; §6-03-001-0003(C)(4) prohibits male poultry **over four months**; §6-03-001-0004(A) exempts ER/RR from the livestock-keeping **permit**, but (E) preserves separate minor-improvement permissions; Table C separately measures 10 ft to **neighboring residential property line** (alley exception) and 20 ft to **neighboring dwelling**. All four field entries now direct law, not blanket parcel approval.
+- [Sierra Vista 2026 S-24 §90.11](https://codelibrary.amlegal.com/codes/sierravista/latest/sierravista_az/0-0-0-17093) as amended Ord. 2024-009: six fowl only for qualifying detached homes, roosters barred, secure side/rear enclosure at least 20 ft from **neighboring property** (not specified neighboring dwelling), enclosure <=200 sq ft and <=8 ft/below fence. Keeping and building permits are still unresolved.
+- [Tempe §3-404(I)(8)](https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities): enclosure for lots under one acre no taller than fence/wall line; no numeric setback or building-permit waiver proven.
+- **Six fields added**: **220/400 checked, 132 recorded, 48 unverified**. The existing 88 reviewed city summaries and 12 pending/noindex cities are unchanged; no geography expansion.

@@ -56,4 +56,13 @@ assert(bySlug["san-jose-ca"].max.includes("Exactly 20, 40 or 50"),"San Jose lite
 for(const key of ["roosters","permit"])assert.equal(e.cities["hillsboro-or"][key].status,"primary_clause_checked","Hillsboro OR source proof missing: "+key);
 assert(bySlug["hillsboro-or"].note.includes("Hillsboro KS/WI"),"Do not confuse Hillsboro Oregon with Kansas or Wisconsin");
 assert(e.cities["oakland-ca"].permit.detail.includes("Conditional Use Permit"),"Oakland zoning permit conditionality missing");
+// Protect Flagstaff's lot tiers, male-bird age limit, permit exceptions and distance object.
+for(const k of keys)assert.equal(e.cities["flagstaff-az"][k].status,"primary_clause_checked","Flagstaff "+k);
+assert(bySlug["flagstaff-az"].max.includes("19,999")&&bySlug["flagstaff-az"].roosters.includes("four months"),"Flagstaff tiers/age threshold lost");
+assert(bySlug["flagstaff-az"].permit.includes("ER")&&bySlug["flagstaff-az"].placement.includes("alley"),"Flagstaff exceptions/setbacks lost");
+for(const k of ["max","roosters","placement"])assert.equal(e.cities["sierra-vista-az"][k].status,"primary_clause_checked","Sierra Vista "+k);
+assert.notEqual(e.cities["sierra-vista-az"].permit.status,"primary_clause_checked","Sierra Vista permit not proven");
+assert(bySlug["sierra-vista-az"].placement.includes("neighboring property")&&bySlug["sierra-vista-az"].placement.includes("200"),"Sierra Vista property/setback confused");
+assert.equal(e.cities["tempe-az"].placement.status,"primary_clause_checked");
+assert(bySlug["tempe-az"].placement.includes("fence/wall"),"Tempe enclosure height limit missing");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
