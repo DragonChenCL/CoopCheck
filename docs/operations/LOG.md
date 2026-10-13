@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Mesa original ordinances and state preemption review
+
+- Checked Mesa City §8-6-21(A),(G),(H): combined 10 rodents/fowl per first half acre, 40ft open enclosure / 75ft animal building from others' existing residences; rooster noise condition supported by official city FAQ.
+- Significant conflict: Arizona §9-462.12 state preemption for eligible <=0.5-acre detached single-family residences. **Cannot assert Mesa's old distance rules apply universally.** City permit and parcel legality remain unresolved; manual planner retained.
+- Added 3 individually supported fields; 27→**30/400** total, 87 reviewed cities / 13 pending unchanged; updated city/state pages, documentation, generated files and regression.
+
+
 ## 2026-10-13 — Critical Chandler enacted-law correction
 
 - Discovered Chandler official **2023** webpage and **2026 homeowner manual** continue to say five chickens; adopted Ordinance **5113** (Dec 9 2024), Exhibit A §14-33(A), changed ceiling to **six**. City Jan 2025 permit chart independently confirms six hens, no roosters, >120sqft or >7ft permit triggers. Older local 5-ft coop property-line guidance retained but independently check accessory zoning.

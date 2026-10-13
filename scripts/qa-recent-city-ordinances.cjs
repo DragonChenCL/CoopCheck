@@ -28,6 +28,14 @@ assert(ev["chandler-az"].max.status==="primary_clause_checked");
 assert(/5113/.test(ev["chandler-az"].max.section));
 assert.match(ch.permit,/7 ft/,"Chandler coop height must remain in permit guidance");
 assert.match(fs.readFileSync(path.join(root,"site/cities/chandler-az.html"),"utf8"),/2024 law update/);
+// Mesa's city distances need an explicit state preemption caveat.
+assert.equal(city("mesa-az").planner.mode,"manual");
+assert.equal(city("mesa-az").audit.status,"verified_limited_scope");
+assert.match(city("mesa-az").placement,/40 ft/);
+assert.match(city("mesa-az").placement,/75 ft/);
+assert.match(city("mesa-az").placement,/preempted/i);
+assert.notEqual(ev["mesa-az"].permit.status,"primary_clause_checked");
+assert.match(fs.readFileSync(path.join(root,"site/cities/mesa-az.html"),"utf8"),/Arizona preemption conflict/);
 assert.match(city("garland-tx").max,/4 female/i);
 assert.match(city("garland-tx").placement,/30 ft/);
 assert.match(city("garland-tx").placement,/5 ft/);

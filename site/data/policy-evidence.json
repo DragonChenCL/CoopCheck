@@ -35,16 +35,28 @@
     },
     "mesa-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/az/mesa/codes/code_of_ordinances?nodeId=COOR_TIT8HESAEN_CH6PUNUPRMANEPRANRE_ARTIIIN",
+        "section": "Mesa §8-6-21(A)",
+        "checkedAt": "2026-10-13",
+        "detail": "10 combined rodents/fowl on first 0.5-acre, exceptions in §§11-3,11-4"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock",
+        "section": "Mesa official Animal Control Fowl FAQ, rooster noise policy",
+        "checkedAt": "2026-10-13",
+        "detail": "Rooster noise disturbance may require removal"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/az/mesa/codes/code_of_ordinances?nodeId=COOR_TIT8HESAEN_CH6PUNUPRMANEPRANRE_ARTIIIN",
+        "section": "Mesa §8-6-21(G),(H); applicability qualified by Arizona §9-462.12",
+        "checkedAt": "2026-10-13",
+        "detail": "40/75ft from existing third-party residential building, state may preempt applicability for eligible ≤0.5-acre lots"
       }
     },
     "phoenix-az": {

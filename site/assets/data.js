@@ -26,11 +26,11 @@ window.COOP_CITIES=[
     "name": "Mesa",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "10 fowl/rabbits total on lots under ½ acre",
-    "roosters": "Allowed only if they do not create a noise disturbance",
-    "permit": "Check parcel-specific zoning/building requirements",
-    "placement": "Fowl must be contained; city code has enclosure-distance rules",
-    "verified": "2026-10-12",
+    "max": "Mesa §8-6-21(A) generally allows 10 total fowl/rodents (including rabbits) per first 1/2 acre; additional land and zoning terms apply",
+    "roosters": "City guidance: roosters may be kept if not a noise disturbance; removal may be required after nuisance",
+    "permit": "Building/zoning/animal permit requirements not fully cleared; confirm directly with city",
+    "placement": "City §8-6-21(G)-(H) says 40 ft enclosure and 75 ft coop building from others' existing residences; applicability on eligible small-lot homes may be preempted by Arizona §9-462.12",
+    "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
       "side": 0,
@@ -39,8 +39,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Automatic geometry is disabled until Mesa's code-specific distance rule is modeled.",
-    "source": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock"
+    "note": "City §8-6-21(G)-(H) references neighboring existing dwelling, NOT parcel line. Arizona §9-462.12 preempts contrary municipal backyard-hen restrictions for eligible detached single-family houses on <=0.5 acre. We cannot automatically decide if Mesa's older 40ft/75ft code is enforceable on your lot. Map planner remains manual; ask City Planning about current requirements, structure permits, HOA and zoning.",
+    "source": "https://library.municode.com/az/mesa/codes/code_of_ordinances?nodeId=COOR_TIT8HESAEN_CH6PUNUPRMANEPRANRE_ARTIIIN"
   },
   {
     "slug": "phoenix-az",

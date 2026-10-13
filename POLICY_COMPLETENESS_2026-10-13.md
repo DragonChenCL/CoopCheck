@@ -3,14 +3,14 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **27**; 321 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **30**; 318 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **No city has all four fields independently rechecked in this additional pass.** Three or fewer fields per benchmark city are backed by specific government code sections or city-issued guidance. A government guide is not a parcel-specific legal determination, and some official tips may lag effective ordinances.
 
 | City | Source review status | Flock | Rooster | Permit | Placement |
 |---|---|---|---|---|---|
 | Chandler, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Mesa, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Mesa, AZ | verified_limited_scope | Clause checked | Clause/guidance checked | Source; permit unconfirmed | Clause checked, state preemption unresolved |
 | Phoenix, AZ | verified | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
 | Tempe, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | San Diego, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -140,3 +140,7 @@ The city-published [OMC §18.04.060(KK)](https://www.codepublishing.com/WA/Olymp
 ## 2026-10-13 Chandler correction — superseded 2023 government guidance
 
 Adopted [Ordinance 5113](https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-PLH24-0025-City-Code-Amendments-State-Housing-Mandates-Ordinance-5113.pdf), Exhibit A for §14-33(A), changed the maximum from FIVE to **SIX** hens in 2024, verified by the [adopted amendment exhibit](https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-PLH24-0036-Council-Memo.pdf) and [January 2025 official detached structures chart](https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Detached-Buildings-Structures-Chart-January-2025.pdf). The city's 2023 overview still says FIVE and is stale. Current 2026 homeowner PDF also appears to repeat old number; primary enacted code takes precedence. No roosters. The chart confirms a building permit for >120 square feet or >7 feet coop height; the [older city permit guide](https://www.chandleraz.gov/government/departments/city-clerks-office/city-code-and-charter/backyard-chicken-ordinance) says utilities need building permits too. Enclosure outer edge ≥5 ft from any property line, rear/side yard; the 2024 city ordinance announcement notes coop restrictions unchanged. This is a field-level official-source review only; parcel building zoning and HOA conditions must still be checked. Now **27/400** source checked, 87 reviewed cities, 13 still pending.
+
+## 2026-10-13 Mesa municipal code vs. Arizona preemption
+
+[Mesa Municipal Code §8-6-21(A),(G),(H)](https://library.municode.com/az/mesa/codes/code_of_ordinances?nodeId=COOR_TIT8HESAEN_CH6PUNUPRMANEPRANRE_ARTIIIN) says combined ten fowl/rodents in initial half-acre, and 40-ft enclosure / 75-ft animal housing building separation from *others' legally erected pre-existing residential structures*. [Mesa City Animal Control](https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock) allows roosters without a noise disturbance. **However** [Arizona §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) preempts contrary city rules for eligible detached single-family dwellings on lots ≤½ acre; applicability of Mesa's code distances is unresolved and they must not be presented as universally enforceable. City-specific land use and permit not cleared, planner manual only. Ledger **30/400** checked to sections/guidance, 87 city summaries, 13 pending.
