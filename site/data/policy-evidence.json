@@ -184,7 +184,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.denvergov.org/content/dam/denvergov/Portals/646/documents/Zoning/DZC/Denver_Zoning_Code_Article11_Use_Limitations.pdf",
+        "section": "Denver Zoning Code Article 11 §11.8.5.1(A), Chickens and Ducks, Feb. 2025 republished",
+        "detail": "For residential zone lots hens/ducks maintained within REAR 50% of lot depth; housing structure at least 15 ft from specified neighboring dwelling-containing structures or a different household dwelling on same lot. NOT a generic 15-ft property line.",
+        "checkedAt": "2026-10-13"
       }
     },
     "colorado-springs-co": {
@@ -794,7 +798,11 @@
         "status": "source_recorded"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-213406",
+        "section": "Los Angeles Municipal Code §53.71(a)-(e), current 2026 publication",
+        "detail": "At most ONE rooster per premises generally; narrow business/education/exhibition/filming exceptions, historic expired pet-grandfathering application window, and zoning/nuisance law remain. NOT a categorical ban.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
@@ -1309,16 +1317,24 @@
     },
     "bend-or": {
       "max": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://bend.municipal.codes/BDC/3.6.300",
+        "section": "Bend Development Code §3.6.300(I)(1)(c); 2026 NS-2560 amendment cross-check",
+        "detail": "Up to FOUR rabbits and/or hens total on qualifying residential lots of 5,000 sq ft or more; no inference about smaller parcels. Municipal current index and city-hosted published chapter agree.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://bend.municipal.codes/BDC/3.6.300",
+        "section": "Bend Development Code §3.6.300(I)(1)(c)",
+        "detail": "Hens only, no roosters for the specified residential accessory keeping of farm animals; site permit and chicken-coop setback unresolved.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded"
       }
     },
     "medford-or": {
@@ -1600,13 +1616,25 @@
     },
     "san-antonio-tx": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits",
+        "section": "City ACS Permits & Fees > Did You Know?; current City Code contents §5-107",
+        "detail": "Official city ACS page states up to 8 domestic fowl, with one rooster, plus a separate two-head livestock tier. The website mistakenly names §5-109; current Code index is §5-107.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits",
+        "section": "City ACS Permits & Fees > Did You Know?; current Code §5-107 animal limits",
+        "detail": "Official city ACS page states at most ONE rooster in the ordinary eight-domestic-fowl residential tier; excess permits and parcel restrictions separately apply.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits",
+        "section": "City ACS Permits & Fees > Residential Animal Permits and Livestock Permits",
+        "detail": "Excess Animal Permit required when seeking animal numbers beyond ordinary residential limits. This does not waive building/zoning/coop permits or guarantee excess animal approval.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
