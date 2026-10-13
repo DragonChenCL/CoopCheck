@@ -95,13 +95,25 @@
     },
     "denver-co": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter/Animal-Protection/Animal-Ordinances-and-Legislation",
+        "section": "Food Producing Animals / permit overview",
+        "detail": "Eight hens or ducks total under FPA",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter/Animal-Protection/Animal-Ordinances-and-Legislation",
+        "section": "Food Producing Animals / permit overview",
+        "detail": "No roosters or drakes under FPA",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter/Animal-Protection/Animal-Ordinances-and-Legislation",
+        "section": "Food Producing Animals / permit overview",
+        "detail": "$25 one-time FPA permit per property",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -123,16 +135,28 @@
     },
     "portland-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.portland.gov/code/13/40",
+        "section": "§13.40.020(A)(1)",
+        "detail": "4 any lot; 6 on ≥10,000 sq ft; >20,000 sq ft also requires qualifying ag use",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.portland.gov/code/13/40",
+        "section": "§13.40.020(A)(3)",
+        "detail": "No roosters except for qualifying agricultural purpose",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.portland.gov/code/13/40",
+        "section": "§13.40.040(D)(1)-(2)",
+        "detail": "3-ft side/rear and 10-ft front property lines; additional 15 ft for multiunit areas",
+        "checkedAt": "2026-10-13"
       }
     },
     "eugene-or": {
@@ -179,16 +203,28 @@
     },
     "seattle-wa": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes",
+        "section": "SDCI Animal Codes / Rules to Follow",
+        "detail": "Eight domestic fowl standard; larger lots may qualify for exception",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes",
+        "section": "SDCI Animal Codes / Rules to Follow",
+        "detail": "Roosters prohibited",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.seattle.gov/DPD/publications/CAM/cam244.pdf",
+        "section": "SDCI Tip 244 p.1, Domestic Fowl",
+        "detail": "10-ft separation to residential structure on adjacent lot; confirm latest code",
+        "checkedAt": "2026-10-13"
       }
     },
     "spokane-wa": {
@@ -230,21 +266,37 @@
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities",
+        "section": "Chickens / enclosure guidance",
+        "detail": "For ≥2 chickens, enclosure should be ≥30 ft from adjacent residences/businesses, not a line-based blanket rule",
+        "checkedAt": "2026-10-13"
       }
     },
     "arlington-tx": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.arlingtontx.gov/News-Articles/2025/March/Egg-xactly-How-Many-Chickens-Can-You-Own-in-Arlington-Anyway",
+        "section": "2025 City of Arlington §5.02 city summary",
+        "detail": "Up to four; 5+ triggers lot-size/50-ft dwelling tier; ambiguous exactly 10",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.arlingtontx.gov/News-Articles/2025/March/Egg-xactly-How-Many-Chickens-Can-You-Own-in-Arlington-Anyway",
+        "section": "2025 City of Arlington §5.02 city summary",
+        "detail": "Roosters prohibited except in agricultural zoning",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.arlingtontx.gov/News-Articles/2025/March/Egg-xactly-How-Many-Chickens-Can-You-Own-in-Arlington-Anyway",
+        "section": "2025 City of Arlington §5.02 city summary",
+        "detail": "5+ flock requires distance from nearest dwelling; city article boundary at ten overlaps",
+        "checkedAt": "2026-10-13"
       }
     },
     "fort-worth-tx": {

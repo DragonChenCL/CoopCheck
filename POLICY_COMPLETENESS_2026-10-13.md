@@ -3,9 +3,9 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 85 (45 general summaries; 40 limited-scope). Pending: 15.
-Four fields per city: 400. Independently matched to exact current official clauses in this additional pass: **4**; 336 fields have source links but still need clause-by-clause mapping; 60 fields belong to 15 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **17**; 323 fields have source links but still need per-field confirmation; 60 fields belong to 15 pending city profiles.
 
-**No city has all four fields independently rechecked in this new pass.** Do not present 85 as fully verified.
+**No city has all four fields independently rechecked in this additional pass.** Three or fewer fields per benchmark city are backed by specific government code sections or city-issued guidance. A government guide is not a parcel-specific legal determination, and some official tips may lag effective ordinances.
 
 | City | Source review status | Flock | Rooster | Permit | Placement |
 |---|---|---|---|---|---|
@@ -15,17 +15,17 @@ Four fields per city: 400. Independently matched to exact current official claus
 | Tempe, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | San Diego, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Sacramento, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Denver, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Denver, CO | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
 | Colorado Springs, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Portland, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Portland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Eugene, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Salem, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Gresham, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Seattle, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Seattle, WA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Spokane, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Vancouver, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Arlington, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
+| Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Fort Worth, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Gilbert, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Scottsdale, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -124,3 +124,7 @@ Four fields per city: 400. Independently matched to exact current official claus
 - Cross-check recent uncodified amendments, Arizona state preemption, lot size, zoning and written-neighbor-consent exceptions.
 - Draft/markup PDFs do not prove enacted law.
 - Pending municipalities remain `noindex` and outside sitemap and planner policy choices.
+
+## 2026-10-13 five-city P0 focused recheck
+
+Field state `primary_clause_checked` means a specific official city code or published city regulatory guidance has been reviewed for that *field*, not that every parcel condition or current zoning permit has been independently resolved. Checked city summaries are linked directly on the five benchmark pages. Portland/Austin/Arlington/Denver/Seattle: 13 newly reviewed fields, alongside 4 pre-existing field checks elsewhere. 17/400 total. In particular, Austin's maximum/roosters/permit and Seattle's general permit remain non-conclusive. Denver structural placement is tied to the official FPA information packet and still requires parcel-level zoning review; it is not labelled primary-clause-checked in the canonical registry.

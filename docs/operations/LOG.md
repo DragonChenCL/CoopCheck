@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — P0 product onboarding and evidence review
+
+- Added a standalone Quick Check for five benchmark cities on homepage and planner: hens, optional lot size, rooster flag, tailored screening and official-source links; no legal/parcel approval promised.
+- Flagged per-field evidence on five city pages (flock, rooster, permit, placement) and updated the canonical evidence audit to 17/400 clause/guidance-checked fields (13 additional checked in this pass, 4 pre-existing). Unverified conditions remain clearly stated.
+- Added Node regression coverage of city scenarios, conditional flock tiers, invalid inputs, missing property details, source metadata and page integration.
+- User-visible goal: reduce first-action friction before users have to sketch a satellite lot; track quick_check_submit / quick_check_planner_click in GA4.
+
+
 ## 2026-10-13 — Backyard Chicken Pro 官网表单实际提交尝试（送达未确认）
 
 - 用户明确授权使用官网表单提交 CoopCheck 编辑推荐/客座文章合作申请。

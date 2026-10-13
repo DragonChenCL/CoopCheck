@@ -36,6 +36,9 @@ jobs:
       - name: Verify source-backed city benchmark pages
         run: node scripts/qa-benchmark-cities.cjs
 
+      - name: Verify quick flock screening and five-city field evidence
+        run: node scripts/qa-quick-check.cjs
+
       - name: Verify planner and payment regression checks
         run: node scripts/qa-coopcheck.cjs
 
