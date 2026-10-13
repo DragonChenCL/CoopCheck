@@ -189,16 +189,32 @@
     },
     "eugene-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.eugene-or.gov/DocumentCenter/View/10967/Urban-Animal-Keeping",
+        "section": "City Urban Animal Keeping pp.1-2; EC §9.5250(4)",
+        "detail": "Under 20k sq ft and qualifying zone: up to six adults and six under-six-month young.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.eugene-or.gov/DocumentCenter/View/10967/Urban-Animal-Keeping",
+        "section": "City Urban Animal Keeping p.1; EC §9.5250(4)",
+        "detail": "Roosters, geese, peacocks and turkeys prohibited.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.eugene-or.gov/DocumentCenter/View/10967/Urban-Animal-Keeping",
+        "section": "City Urban Animal Keeping p.2 (2021 guidance)",
+        "detail": "City guide says no animal keeping license; ≤200 sq ft and ≤10 ft shelter did not require building permit as of 2021; check current building code and other permit scopes.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.eugene-or.gov/DocumentCenter/View/10967/Urban-Animal-Keeping",
+        "section": "City Urban Animal Keeping p.2; EC §9.5250(7)",
+        "detail": "10 ft to property line for shelters, except adjacent owner written authorization.",
+        "checkedAt": "2026-10-13"
       }
     },
     "salem-or": {
@@ -525,16 +541,28 @@
     },
     "casa-grande-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/casagrande/latest/casagrande_az/0-0-0-18466",
+        "section": "§6.06.010(B)",
+        "detail": "Up to six fowl for qualifying single family detached home.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/casagrande/latest/casagrande_az/0-0-0-18466",
+        "section": "§6.06.010(B)(1)",
+        "detail": "Male fowl prohibited.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/casagrande/latest/casagrande_az/0-0-0-18466",
+        "section": "§6.06.010(B)(2)",
+        "detail": "Enclosure rear/side yard, 20 ft from neighboring property, 200 sq ft maximum, height/fence constraints.",
+        "checkedAt": "2026-10-13"
       }
     },
     "yuma-az": {
