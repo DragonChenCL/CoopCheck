@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **87 条城市摘要有至少部分来源支持、13 城市仍处于 needs_review；23 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **325 项为 source_recorded、52 项为 unverified**。注意 87 ≠ 87 城市全部合规。
+当前 **87 条城市摘要有至少部分来源支持、13 城市仍处于 needs_review；30 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **318 项为 source_recorded、52 项为 unverified**。注意 87 ≠ 87 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -39,3 +39,10 @@
 
 - [Garland, Texas](../../POLICY_COMPLETENESS_2026-10-13.md#2026-10-13-garland-municipal-code-review)：4 母禽/公鸡禁令/双重距离；permit 仍未确认。
 - [Olympia, Washington](../../POLICY_COMPLETENESS_2026-10-13.md#2026-10-13-olympia-city-code--ordinance-7457-validation)：2026 新法 5/9/10+ 数量、禁公鸡、10ft 且不得侵入 zoning setbacks；许可及正好一英亩边界需确认。
+
+## October 13 primary-source follow-up
+
+- Queen Creek town zoning text: https://www.queencreekaz.gov/home/showpublisheddocument/40766/639087556691430000 — Article 6 regulates flock tiers and enclosure placement. Confirm current effectiveness and Arizona preemption before publishing.
+- Surprise ordinance index: https://library.municode.com/az/surprise/ordinances/municipal_code?nodeId=2024 — Ordinance 2024-42 amended sections 10-113 and 10-114. Read final codified clauses before upgrading.
+- State of Arizona 9-462.12: https://www.azleg.gov/ars/9/00462-12.htm — state protection for eligible detached-home lots may preempt inconsistent older local rules; not proof of zoning or permits for every property.
+- Round Rock proposed city ordinance (2018): https://www.roundrocktexas.gov/wp-content/uploads/2018/12/120618-Proposed-Animal-Control-Ordinance.pdf — proposed poultry tiers need confirmation in current enacted law. Do not treat this draft as law.
