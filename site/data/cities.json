@@ -2294,7 +2294,7 @@
       "stateName": "Colorado",
       "max": "Up to 6 female chickens/ducks on lots under 6,000 sq ft; larger lots have enclosure-area-based provisions",
       "roosters": "Roosters prohibited on lots under 12,500 sq ft; larger lots subject to different zoning regulations",
-      "permit": "Verify lot zoning and accessory-building requirements",
+      "permit": "Lakewood currently offers a Small Animal Permit application for poultry/hens where the zoning district allows them. Check whether your specific lot needs this permit; construction and zoning restrictions are independently applicable.",
       "placement": "Coop not in front yard, subject to zone-specific accessory-structure setbacks; 4 sq ft living space per bird and predator-resistant enclosure",
       "verified": "2026-10-13",
       "planner": {
@@ -2310,12 +2310,16 @@
         {
           "type": "municipal_source",
           "url": "https://www.lakewoodco.gov/files/assets/public/v/1/planning/zoning-code-updates/approved-2025/approved-article-4.pdf"
+        },
+        {
+          "type": "current_city_zoning_permit_guidance",
+          "url": "https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Zoning-Permits"
         }
       ],
       "audit": {
         "status": "verified",
         "reviewedAt": "2026-10-13",
-        "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.",
+        "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments. Current Lakewood zoning-permit portal has a small-animal keeping permit application, but old 2017 handout alone should not be used to claim universal 2026 permit eligibility.",
         "verificationMethod": "Official city guidance or codified municipal ordinance",
         "sourceSection": "See linked city source"
       },
@@ -2979,10 +2983,10 @@
       "name": "Everett",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Six or more chickens require a small-livestock facility license; no blanket maximum can be inferred from the permit trigger",
+      "max": "Everett's approved small-livestock facility regulation §2(4)(c) allows up to 6 chickens on lots up to 10,000 sq ft, 8 on 10,000–15,000, 10 on 15,000–35,000, plus 1 per additional 5,000 above 35,000; combined small-livestock cap 12 per 10,000 sq ft and zoning/permit conditions apply. At exactly 10,000 or 15,000 sq ft published tiers overlap; ask city.",
       "roosters": "Any rooster triggers small-livestock license; city does not ban them categorically in current facility guidance",
       "permit": "Small livestock license annually for 6+ domestic fowl or any number of roosters; permit inspection required",
-      "placement": "No front yard coops; enclosures at least 5 ft from adjacent properties; city zoning standards also apply",
+      "placement": "Coops and enclosures are not permitted in front yards or street-facing corner-lot sides; enclosed pens >=5 ft from adjoining PROPERTY lines under Everett facilities standards §3(3)-(5), plus any greater setbacks under EMC Title 19. Housing conditions and possible construction permits separate.",
       "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
@@ -2992,17 +2996,21 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "City Everett Facility Licenses guidance: six-plus small poultry or any rooster requires annual small-livestock facility license. A Dec 2023 livestock/zoning note on the same official page must be reconciled for specific non-ag property; not evidence that a rooster is legal at any parcel. Building and coop-setback facts require independent city zoning text.",
+      "note": "Everett 2024 Animal Shelter Advisory Board approved livestock/small-livestock facility permit standards §2(4), §3 and City Facility Licenses guidance: lot-size-based allowable chickens, separate combined animal caps and license for >=6 chickens or any rooster. Despite general 2023 FAQ note about livestock zoning, detailed city regulations treat chickens separately; verify the exact parcel with Planning. Published exact 10,000/15,000-sf threshold overlaps remain unresolved.",
       "sources": [
         {
           "type": "municipal_source",
           "url": "https://www.everettwa.gov/197/Facility-Licenses"
+        },
+        {
+          "type": "official_2024_facility_regulations",
+          "url": "https://www.everettwa.gov/DocumentCenter/View/37687/Livestock-and-Small-Livestock-Facility-Permit-Regulations---rev-1-23-24"
         }
       ],
       "audit": {
         "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "City Everett Facility Licenses guidance: six-plus small poultry or any rooster requires annual small-livestock facility license. A Dec 2023 livestock/zoning note on the same official page must be reconciled for specific non-ag property; not evidence that a rooster is legal at any parcel. Building and coop-setback facts require independent city zoning text.",
+        "note": "Everett 2024 Animal Shelter Advisory Board approved livestock/small-livestock facility permit standards §2(4), §3 and City Facility Licenses guidance: lot-size-based allowable chickens, separate combined animal caps and license for >=6 chickens or any rooster. Despite general 2023 FAQ note about livestock zoning, detailed city regulations treat chickens separately; verify the exact parcel with Planning. Published exact 10,000/15,000-sf threshold overlaps remain unresolved.",
         "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
@@ -3127,10 +3135,10 @@
       "name": "Redmond",
       "state": "WA",
       "stateName": "Washington",
-      "max": "Zoning-dependent: R-6 max4, R-5 max6, R-4 max7, R-3 max8, and RA-5/R-1/R-2/Urban Recreation max10; prohibited in R-8 and multifamily/business zones",
+      "max": "Current Redmond Municipal Code §7.04.157(B), amended 2025: Urban Recreation/RA-5 10 hens; NR lots >=18,000 sq ft 10, 12,000–17,999 8, 7,000–11,999 7, 5,500–6,999 6, 4,000–5,999 4, <4,000 0. IMPORTANT: current published NR bands overlap at 5,500–5,999 sq ft; ask Planning for that boundary. Older city webpage's R-1/R-6 labels may be stale.",
       "roosters": "Roosters prohibited",
-      "permit": "City offers chicken husbandry registration with no fee; zoning district verification required",
-      "placement": "City registration guide illustrates minimum 15-ft coop/run separation from all property lines; accessory structure size/height restrictions apply",
+      "permit": "Approval of chicken husbandry registration required before housing hens under current Redmond Code §7.04.157(C). Official registration form says no fee, but any accessory-structure permissions and HOA restrictions remain independent.",
+      "placement": "Current Redmond §7.04.157(D): shelter normally >=15 ft from any PROPERTY line, potentially >=5 ft only next to specified nonresidential use, qualifying >=10-ft easement or public corridor; no front yard, screened, shelter <=200 sq ft / <=8 ft tall. Check site-specific zoning/building rules.",
       "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
@@ -3140,17 +3148,21 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+      "note": "Use 2026-current Redmond Municipal Code §7.04.157, amended 2025, NOT outdated R-1/R-6 tiers still displayed on city's Chicken Husbandry informational page. Published NR lot-area bands overlap for 5,500–5,999 sq ft (4 vs 6 hens), so require city Planning confirmation for that exact range. The city clerk may identify uncodified amendments; zoning, building, HOA and registration separate.",
       "sources": [
         {
           "type": "municipal_source",
           "url": "https://www.redmond.gov/228/Chicken-Husbandry"
+        },
+        {
+          "type": "current_municipal_code_2026",
+          "url": "https://redmond.municipal.codes/RMC/7.04.157"
         }
       ],
       "audit": {
         "status": "verified",
         "reviewedAt": "2026-10-13",
-        "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+        "note": "Use 2026-current Redmond Municipal Code §7.04.157, amended 2025, NOT outdated R-1/R-6 tiers still displayed on city's Chicken Husbandry informational page. Published NR lot-area bands overlap for 5,500–5,999 sq ft (4 vs 6 hens), so require city Planning confirmation for that exact range. The city clerk may identify uncodified amendments; zoning, building, HOA and registration separate.",
         "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
