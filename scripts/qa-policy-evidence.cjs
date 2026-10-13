@@ -65,4 +65,7 @@ assert.notEqual(e.cities["sierra-vista-az"].permit.status,"primary_clause_checke
 assert(bySlug["sierra-vista-az"].placement.includes("neighboring property")&&bySlug["sierra-vista-az"].placement.includes("200"),"Sierra Vista property/setback confused");
 assert.equal(e.cities["tempe-az"].placement.status,"primary_clause_checked");
 assert(bySlug["tempe-az"].placement.includes("fence/wall"),"Tempe enclosure height limit missing");
+assert.equal(e.cities["austin-tx"].placement.status,"primary_clause_checked","Austin placement remains law-checked");
+assert(e.cities["austin-tx"].placement.section.includes("3-2-16"),"Austin effective 2022 code required");
+assert(bySlug["austin-tx"].placement.includes("ANY fowl enclosure")&&bySlug["austin-tx"].placement.includes("HEALTH HAZARD"),"Austin outdated >=2 flock trigger must not recur");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
