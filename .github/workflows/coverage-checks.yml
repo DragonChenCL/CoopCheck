@@ -20,6 +20,8 @@ jobs:
         run: node scripts/generate-policy-data.cjs --check
       - name: Check generated city pages, coverage and sitemap
         run: node scripts/generate-coverage-pages.cjs --check
+      - name: Verify field-specific evidence status
+        run: node scripts/qa-policy-evidence.cjs
       - name: Run policy / planner / payment regressions
         run: |
           node scripts/qa-coopcheck.cjs

@@ -547,6 +547,27 @@ window.COOP_CITIES=[
     "source": "https://flagstaff.az.gov/3383/Backyard-Livestock"
   },
   {
+    "slug": "oro-valley-az",
+    "name": "Oro Valley",
+    "state": "AZ",
+    "stateName": "Arizona",
+    "max": "Chickens are allowed as noncommercial small animal husbandry on qualifying detached single-family residential property; the currently operative town-specific maximum for each lot-size tier has not been fully established in this review. Arizona A.R.S. §9-462.12 provides a six-fowl protection for qualifying detached-home properties of one-half acre or less.",
+    "roosters": "Rooster-specific restrictions require the operative Town Zoning Code §23.6.A.7 and nuisance provisions; do not infer blanket permission.",
+    "permit": "Review town zoning §23.6.A.7, accessory-use conditions and any applicable structure permits; no universally applicable permit conclusion established.",
+    "placement": "Rear-yard and enclosure provisions appear in town small-animal-husbandry standards, but the exact applicable setback must be confirmed from the currently enacted version for the property's zoning and lot size.",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "The town's Nov 2024 executive report confirms an adopted September 2024 zoning-code amendment allowing small animal husbandry on qualifying detached single-family parcels; later 2025 markup document is a DRAFT and must not be presented as operative city law. Lot-size bands, roosters, permits and enclosure setbacks need an effective-code check.",
+    "source": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/town-manager/executive-reports/2024_nov_tm-report-to-council.pdf"
+  },
+  {
     "slug": "marana-az",
     "name": "Marana",
     "state": "AZ",
@@ -1406,6 +1427,27 @@ window.COOP_CITIES=[
     },
     "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
     "source": "https://www.everettwa.gov/197/Facility-Licenses"
+  },
+  {
+    "slug": "bellingham-wa",
+    "name": "Bellingham",
+    "state": "WA",
+    "stateName": "Washington",
+    "max": "Bellingham Municipal Code §7.12.060 permits confined domestic fowl, including chickens, inside city limits, subject to other ordinances. This section states no universal number of hens.",
+    "roosters": "Section 7.12.060 does not conclusively establish current rooster restrictions; check applicable noise/nuisance and zoning rules.",
+    "permit": "The cited animal-keeping section does not establish a universal poultry permit requirement or exemption. Verify zoning and building provisions for a specific lot.",
+    "placement": "Animals must be securely enclosed and kept at least 50 feet from any dwelling or other building where people regularly work or stay, under §7.12.060(A). This is a building-distance rule, not a property-line setback.",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "Official Bellingham Municipal Code §7.12.060(A), current through Ordinance 2026-08-022 (Aug 24, 2026). Domestic fowl allowed subject to secure enclosure and 50-ft separation from qualifying buildings. Bird count, rooster-specific provisions, permits and separate zoning conditions are NOT established by this section.",
+    "source": "https://bellingham.municipal.codes/BMC/7.12.060"
   },
   {
     "slug": "yakima-wa",
