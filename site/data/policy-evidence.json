@@ -1053,16 +1053,28 @@
     },
     "stockton-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/43715373",
+        "section": "Stockton Development Code §16.80.060(E)-(F), Table 3-14, 2025 amendment",
+        "detail": "Residential hobby poultry only in RL/RM/RH districts at 4 fowl per 5,000 sq ft with 5,000-sq-ft lot minimum (existing legal small-lot exceptions), NOT citywide cap. Agricultural/commercial tier 150 per acre with zoning restrictions.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/43715373",
+        "section": "Stockton Development Code §16.80.060(C),(F)(2)",
+        "detail": "Roosters/cockerels not permitted within city except narrow §6.04.480 exemptions; no blanket rooster permission for residential parcels.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/43715373",
+        "section": "Stockton Development Code §16.80.060(E) Table 3-14, (F)(1)(d)-(e)",
+        "detail": "Eligible backyard poultry enclosures >=5 ft from property lines AND >=20 ft from adjacent parcel's dwelling; side/rear only, screened, and accessory structure zoning requirements apply.",
+        "checkedAt": "2026-10-13"
       }
     },
     "modesto-ca": {
@@ -1792,16 +1804,32 @@
     },
     "houston-tx": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/houston/codes/code_of_ordinances/322897?nodeId=COOR_CH6ANFO",
+        "section": "Houston City Code §§6-35, 6-39 (2014 revision)",
+        "detail": "Ordinary §6-35 cap up to 30 of one enumerated species and 40 combined fowl/rabbits/guinea pigs on an enclosure of 65 x 125 feet or smaller; larger enclosure ratio adjustments. This does not supersede 100-ft neighboring-building rule or special medically justified seven-hen permit.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/houston/codes/code_of_ordinances/322897?nodeId=COOR_CH6ANFO",
+        "section": "Houston City Code §6-38(a),(f)",
+        "detail": "Roosters/male chickens generally prohibited from possession and sale in city, with express government/medical/education/research exceptions.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/houston/codes/code_of_ordinances/322897?nodeId=COOR_CH6ANFO",
+        "section": "Houston City Code §6-39(a)-(b), specialized medical-need hen permit",
+        "detail": "Separate revocable permit option for at most seven laying hens requires physician statement of serious medical need for unfertilized eggs, 100-ft separation, city inspection, sanitation. Not a routine universal backyard hen permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/houston/codes/code_of_ordinances/322897?nodeId=COOR_CH6ANFO",
+        "section": "Houston City Code §6-31(a)-(b)",
+        "detail": "Outdoor fowl/coop >=100 ft from another's dwelling, school, hospital, church; distance measured from enclosure to specified structures, NOT from lot lines. Commercial/public exhibition exceptions and Building Code apply.",
+        "checkedAt": "2026-10-13"
       }
     },
     "dallas-tx": {
@@ -1850,16 +1878,32 @@
     },
     "plano-tx": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/plano/codes/code_of_ordinances?nodeId=PTIICOOR_CH4AN_ARTXWIANBELI_S4-183BEP",
+        "section": "Plano Code §§4-81(a), 4-185(a)-(b)",
+        "detail": "General §4-81 limits adult animals at one-lawful-dwelling property to ten, with separate conditions for other dwelling types; §4-185 does NOT grant unlimited backyard hens or a universal chicken-specific cap. Only hens under §4-185, agricultural uses treated separately.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/plano/codes/code_of_ordinances?nodeId=PTIICOOR_CH4AN_ARTXWIANBELI_S4-183BEP",
+        "section": "Plano City Code §4-185(a)",
+        "detail": "Only chicken hens permitted for ordinary backyard animal keeping; roosters and any other fowl prohibited (legal ranch/farm exempt under §4-185(b)).",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/plano/codes/code_of_ordinances?nodeId=PTIICOOR_CH4AN_ARTXWIANBELI_S4-183BEP",
+        "section": "Plano City Code §4-185(c)-(e),(i)",
+        "detail": "Backyard hen permit compulsory before acquiring/keeping; application fee, site plan, coop details, approved training, owner notarized consent if tenant; annual validity and possible inspection. Does NOT waive building permit/HOA.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/plano/codes/code_of_ordinances?nodeId=PTIICOOR_CH4AN_ARTXWIANBELI_S4-183BEP",
+        "section": "Plano City Code §§4-29(a)(1)-(5), 4-185(f)(1)",
+        "detail": "<5 hens enclosure >=20 ft from adjacent building not keeper-owned; >=5 hens enclosure >=50 ft; coop >=4 sq ft/hen, attached yard >=8 sq ft/hen; fenced 6-ft-height perimeter conditions and other accessory-structure rules.",
+        "checkedAt": "2026-10-13"
       }
     },
     "frisco-tx": {
