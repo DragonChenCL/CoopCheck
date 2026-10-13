@@ -1321,7 +1321,11 @@
         "status": "source_recorded"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.nocohumane.org/requirements/",
+        "section": "NOCO Humane licensing requirements / Fort Collins; chicken & duck coops (2026 fee schedule)",
+        "detail": "City's contracted Animal Protection & Control agency identifies a required one-time $30 coop license covering all hens/ducks in coop, with pre-license enclosure inspection. Separate accessory-building and zoning permits NOT waived.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -1775,7 +1779,11 @@
     },
     "bellingham-wa": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://bellingham.municipal.codes/BMC/7.12.060",
+        "section": "Bellingham Code §7.12.060(A), current through Ordinance 2026-08-022",
+        "detail": "City expressly permits enclosed domesticated fowl including chickens, subject to any prohibiting ordinances; section does NOT specify a numerical flock ceiling, so this claim is confined to that provision and not proof of unlimited hens.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "source_recorded"
@@ -1969,7 +1977,11 @@
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/38315318",
+        "section": "Frisco Code §§14-17(b), 14-18(a)-(b) (fowl enclosure and sanitation); compare §14-16(d) livestock-specific separation",
+        "detail": "Fowl confinement/enclosure must be kept sanitary and avoid nuisance, vectors and odor. §14-17 itself supplies no lot-line setback. The §14-16(d) 100-ft human-dwelling proximity test governs small/large LIVESTOCK and cannot automatically be applied to gallinaceous fowl.",
+        "checkedAt": "2026-10-13"
       }
     },
     "irving-tx": {
