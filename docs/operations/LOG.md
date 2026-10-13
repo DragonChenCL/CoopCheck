@@ -1,5 +1,10 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Santa Ana full four-field city animal ordinance check
+
+- City Chapter 5 [§§5-6, 5-6.5, 5-18](https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH5AN) checked all four city-specific claims: max four combined FOWL/RABBITS without excess-keeping special permit (not four hens plus rabbits), residential no-rooster clause, animal-keeping special permit for >four subject to Planning review, and >=30 ft to other persons' human-occupied building not parcel line. Building/HOA/zoning approvals separate.
+- Evidence **201/400** primary checked; **151** source-recorded on already-reviewed cities and **48** paused-city unverified remain. No city status changes.
+
 ## 2026-10-13 — Indianapolis four-field current municipal code audit
 
 - Checked Indianapolis-Marion County [§743-306(W)](https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIIIPUHEWE_CH743USUECST) and Table 743-306-3: up to 12 adult chickens/quail/pigeons/ducks combined (not each), at most one rooster fully enclosed dusk to dawn, no personal livestock license within qualifying standard allowance; licenses needed to increase animals, no front yard pens/coops and setback set by the actual zone. No blanket parcel compliance guarantee.
