@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **30**; 318 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **37**; 311 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **No city has all four fields independently rechecked in this additional pass.** Three or fewer fields per benchmark city are backed by specific government code sections or city-issued guidance. A government guide is not a parcel-specific legal determination, and some official tips may lag effective ordinances.
 
@@ -18,7 +18,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
 | Colorado Springs, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Portland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Eugene, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Eugene, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Salem, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Gresham, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Seattle, WA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -40,7 +40,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Flagstaff, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Oro Valley, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Marana, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Casa Grande, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Casa Grande, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Yuma, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Prescott, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Prescott Valley, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -144,3 +144,9 @@ Adopted [Ordinance 5113](https://www.chandleraz.gov/sites/default/files/departme
 ## 2026-10-13 Mesa municipal code vs. Arizona preemption
 
 [Mesa Municipal Code §8-6-21(A),(G),(H)](https://library.municode.com/az/mesa/codes/code_of_ordinances?nodeId=COOR_TIT8HESAEN_CH6PUNUPRMANEPRANRE_ARTIIIN) says combined ten fowl/rodents in initial half-acre, and 40-ft enclosure / 75-ft animal housing building separation from *others' legally erected pre-existing residential structures*. [Mesa City Animal Control](https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock) allows roosters without a noise disturbance. **However** [Arizona §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) preempts contrary city rules for eligible detached single-family dwellings on lots ≤½ acre; applicability of Mesa's code distances is unresolved and they must not be presented as universally enforceable. City-specific land use and permit not cleared, planner manual only. Ledger **30/400** checked to sections/guidance, 87 city summaries, 13 pending.
+
+## 2026-10-13 follow-up — Casa Grande and Eugene
+
+Casa Grande code (2026 S-41) §6.06.010 provides explicit flock, rooster and enclosure restrictions: https://codelibrary.amlegal.com/codes/casagrande/latest/casagrande_az/0-0-0-18466 . Three field-specific proofs added; permit remains unproven.
+
+Eugene current code §9.5250 (updated through 2026-07) provides age-tiered flock allowance, rooster ban and 10-ft structure-to-property-line distance, with signed neighbor exception: https://eugene.municipal.codes/EC/9.5250 . The city's March 2021 informational brochure separately addresses animal licensing and building permit threshold: https://www.eugene-or.gov/DocumentCenter/View/10967/Urban-Animal-Keeping . Its building-permit statement needs re-check against current building code and is not a blanket approval. Four field-specific official code/guidance mappings added.
