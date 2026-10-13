@@ -233,7 +233,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.portland.gov/bps/sustainability/guide-bees-and-livestock/chickens-and-fowl",
+        "section": "City of Portland Keeping Chickens and Small Domestic Fowl > Rules, permits and complaints",
+        "detail": "City expressly states no livestock/chicken permit required for standard backyard keeping, subject to all Title 13 standards. Building/zoning permit for structures is NOT universally waived.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -739,30 +743,58 @@
     },
     "prescott-valley-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/prescottvalleyaz/latest/prescottvalley_az/0-0-0-20920",
+        "section": "§6-02-030(B)",
+        "detail": "Up to 10 chickens per residential lot, distinct from up to 10 rabbits; check premises/zoning and enclosure conditions.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/prescottvalleyaz/latest/prescottvalley_az/0-0-0-20920",
+        "section": "§6-02-030(B)(4)",
+        "detail": "Adult male chickens/roosters prohibited.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/prescottvalleyaz/latest/prescottvalley_az/0-0-0-20920",
+        "section": "§6-02-030(B)(1)-(2)",
+        "detail": "No standard chicken-keeping permit/license or coop building permit, EXCEPT coop with electric/mechanical/plumbing fixtures requires building permit; alternative-use coops become accessory buildings.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/prescottvalleyaz/latest/prescottvalley_az/0-0-0-20920",
+        "section": "§6-02-030(B)(3)-(D)",
+        "detail": "Coops/hutches at least one foot from property or easement line whichever furthest from adjacent structures; sanitation/confinement also apply.",
+        "checkedAt": "2026-10-13"
       }
     },
     "lake-havasu-city-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-32782",
+        "section": "§14.03.03(E)(9)(a); §14.03.02 zoning table A(2)",
+        "detail": "Up to six domestic backyard fowl on qualified detached single-family residences; zone table A(2) allows only residents of homes existing on September 13, 2024 in marked districts; not a blanket citywide permission.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-32782",
+        "section": "§14.03.03(E)(9)(b)",
+        "detail": "Male fowl, including roosters, prohibited within qualifying backyard-fowl use.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-32782",
+        "section": "§14.03.03(E)(9)(c)",
+        "detail": "Rear/side enclosure ≥20 ft from neighboring property line, roof, ≤200 sq ft; height limited to fence line and eight feet maximum; fence screening / possible building permit also applicable.",
+        "checkedAt": "2026-10-13"
       }
     },
     "apache-junction-az": {
@@ -923,16 +955,28 @@
     },
     "anaheim-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-68050",
+        "section": "§18.38.030(.050)",
+        "detail": "Combined density of poultry/birds/rabbits/rodents one per 1800 square feet of lot area with half-up rounding, NOT a separate chicken allowance.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-68050",
+        "section": "§18.38.030(.050)",
+        "detail": "Roosters and peacocks prohibited in residential districts unless otherwise allowed by applicable underlying zoning district.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/anaheim/latest/anaheim_ca/0-0-0-68050",
+        "section": "§18.38.030(.0201)-(.0202)",
+        "detail": "Birds/coops cannot be within 50 feet of third-party human habitation or 20 feet of lot line; birds inside a dwelling excepted; Planning Department confinement method also applies.",
+        "checkedAt": "2026-10-13"
       }
     },
     "long-beach-ca": {
@@ -1037,16 +1081,28 @@
     },
     "folsom-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html",
+        "section": "§17.40.020(2)-(3)",
+        "detail": "Only in agricultural combining (A) zones: animal husbandry/small livestock farming addressed; 100-head threshold is NOT a general residential flock cap.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "source_recorded"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html",
+        "section": "§17.40.020(3); §17.40.030",
+        "detail": "Only for A agricultural combining district small livestock farming, raising more than 100 poultry/animals requires use permit; slaughter/processing separately also requires permit. No assertion about ordinary residential permits.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html",
+        "section": "§17.40.040",
+        "detail": "Only for A agricultural combining district chicken house: 50 ft from front lot line, 20 ft from side lot line, 30 ft from any dwelling; not citywide residential coop setback.",
+        "checkedAt": "2026-10-13"
       }
     },
     "berkeley-ca": {
@@ -1298,7 +1354,11 @@
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://beaverton.municipal.codes/BC/5.09.015",
+        "section": "§5.09.015(A)-(D); §5.09.025(A)-(C)",
+        "detail": "Property at least 5000 sq ft detached SF dwelling or duplex; resident owner or written tenant consent; no birds/coops between home and front line; enclosure at least 20 ft from neighboring DWELLING (not lot line), secure at night.",
+        "checkedAt": "2026-10-13"
       }
     },
     "hillsboro-or": {
