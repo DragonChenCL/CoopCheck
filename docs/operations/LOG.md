@@ -1,5 +1,14 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — SF / NYC / Minneapolis primary-source evidence follow-up
+
+- Six more individually checked city/field claims (San Francisco 3, NYC 1, Minneapolis 2). Evidence now **109/400** primary-clause/guidance checked, **239** source-recorded requiring claim-level confirmation, **52** unverified across 13 pending cities. No audit status or indexing changed.
+- San Francisco [Health Code §37](https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_health/0-0-0-43): four combined animals on residential premises (NOT four chickens plus other cats/dogs); covered enclosures require Director of Public Health approval; an outdoor coop must be 20 ft from habitation **doors or windows**, not parcel boundaries. Rooster rules remain unresolved.
+- NYC [Health Code §161.19(a)](https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf): ordinary residential roosters prohibited (specified legal exceptions). Its §161.19(c) **25-ft rule applies to poultry markets**, not a generic backyard-coop setback. Flock count, home setback and property permit remain unverified.
+- Minneapolis [official fowl permits and fees](https://www.minneapolismn.gov/resident-services/animals-pets/pet-licenses-animal-permits/): application and city approval before acquiring poultry; neighbor consent, education, zoning and animal-control inspection needed. A separate $110 rooster permit fee category is published, but is **not automatic approval**. Fee tiers 1–6/7–15/16–30 do NOT prove an unconditional 30-bird maximum.
+- San Antonio: official permits page and searchable indexed city PDF indicate a baseline eight-fowl/one-rooster rule, but the official PDF and page return access-denied in direct fetch, and sources disagree on ordinance section numbering (§5-107 vs §5-109). No field promoted until current enacted text reconciled.
+- These are **claim-scoped evidence checks, never property-specific legal clearance**; separate zoning, HOA, construction permissions and effective-date review remain open.
+
 ## 2026-10-13 — Thornton / Colorado Springs / Vancouver partial source review
 
 - 8 additional specific government-source fields checked. Registry now 103/400, 245 source-recorded, 52 pending.
