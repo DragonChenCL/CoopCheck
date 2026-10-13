@@ -364,7 +364,7 @@ window.COOP_CITIES=[
     "stateName": "Texas",
     "max": "Up to 12 fowl on lots ½ acre or less; higher limits on larger lots",
     "roosters": "Up to 2 roosters within the stated fowl limits",
-    "permit": "Check zoning/building requirements for coop structures",
+    "permit": "Fort Worth Animal Care's CURRENT rules require rooster/fowl kept in pen or coop AT ALL TIMES, cleaning DAILY and enclosure MORE THAN FIFTY ft from a regulated human-use structure (neighbor residence, restaurants, schools etc.). These are keeping CONDITIONS; the page does NOT establish a generic livestock or building permit exemption.",
     "placement": "Pens/coops must be more than 50 ft from regulated structures",
     "verified": "2026-10-12",
     "planner": {
@@ -375,7 +375,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The 50-ft rule is measured from regulated structures, not simply property lines.",
+    "note": "The 50-ft rule is measured from regulated structures, not simply property lines.\n2026-10-13 claim-specific ordinance follow-up verified permit. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl"
   },
   {
@@ -406,8 +406,8 @@ window.COOP_CITIES=[
     "stateName": "Arizona",
     "max": "No universal personal-use farm-animal limit specified on Scottsdale's city guidance for single- and two-family properties",
     "roosters": "Animals causing habitual crowing or other neighborhood noise disturbance are prohibited; no categorical citywide rooster ban established by this source",
-    "permit": "Parcel zoning, nuisance controls, Maricopa County rules and HOA covenants must be checked",
-    "placement": "No chicken-specific universal coop setback established by this source",
+    "permit": "Scottsdale City 2026 guidance: a qualifying NONLIVABLE detached accessory structure under 200 sq ft generally needs NO building permit, BUT setback conformity and Planning Services One Stop Shop PLAN APPROVAL remain mandatory. Whether a specific coop is such a structure, and other animal licences, require City review.",
+    "placement": "Scottsdale's current City accessory-building guidance imposes DISTRICT-SPECIFIC setbacks on detached shelters; Foothills Overlay setbacks depend on LOT AREA, zone and main-house floor area. The City's farm guidance gives no universal poultry-coop offset. Thus no numeric citywide chicken-coop setback is proven; determine each parcel and structure type.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -417,7 +417,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.\n2026-10-13 claim-specific ordinance follow-up verified permit, placement. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://www.scottsdaleaz.gov/codes-and-ordinances/farms"
   },
   {
@@ -467,8 +467,8 @@ window.COOP_CITIES=[
     "name": "Avondale",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "The City of Avondale's zoning ordinance conditionally permits farm animals/backyard fowl in certain residential districts under §28-33(h); no general municipal hen cap was confirmed by this zoning provision. Eligible homes may also have state-law protections under A.R.S. §9-462.12.",
-    "roosters": "City chapter 3 requirements and any state-law exception must be checked; no reliable universal rooster ruling established by §28-33(h).",
+    "max": "For qualifying Avondale DETACHED single-family houses on LOTS ≤0.5 ACRE, Arizona §9-462.12(A),(D)-(E) protects the keeping of UP TO SIX DOMESTIC CHICKENS against local categorical prohibitions. Avondale §28-33(h) also subjects farm/backyard fowl to Chapter 3; this statewide floor is NOT the citywide cap on larger/rural lots or approval of every enclosure.",
+    "roosters": "Avondale 2025-amended zoning DEFINES BACKYARD FOWL as domestic backyard chickens EXCLUDING MALE ROOSTERS. Arizona §9-462.12(A)(1) allows towns to restrict roosters. This verifies the narrow definition, NOT that all agricultural/farm-zoned rooster keeping is categorically prohibited without reading Chapter 3.",
     "permit": "Some zoning districts list keeping farm animals as permitted with conditions; check City Code Chapter 3 Article II before acquiring birds.",
     "placement": "The reviewed zoning use table does not establish a universal chicken-coop setback; Arizona law may permit city requirements up to 20 ft from neighboring property for qualifying lots.",
     "verified": "2026-10-13",
@@ -480,7 +480,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Avondale Zoning Code §§28-32 and 28-33(h); Arizona A.R.S. §9-462.12. City chapter 3 still unverified. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+    "note": "Avondale Zoning Code §§28-32 and 28-33(h); Arizona A.R.S. §9-462.12. City chapter 3 still unverified. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.\n2026-10-13 claim-specific ordinance follow-up verified max, roosters. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://library.municode.com/az/avondale/codes/code_of_ordinances?nodeId=CD_ORD_CH28ZOOR_ART2REDI"
   },
   {
@@ -488,10 +488,10 @@ window.COOP_CITIES=[
     "name": "Buckeye",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Up to 6 fowl at a single-family detached residence; higher-density farm-animal exceptions depend on zoning",
-    "roosters": "Male fowl, including roosters, prohibited",
-    "permit": "Check applicable accessory-structure rules and lot zoning",
-    "placement": "Rear or side yard, enclosure at least 20 ft from neighboring property line; covered enclosure up to 200 sq ft, limited height",
+    "max": "Buckeye CURRENT Development Code (effective 2025-11-20): single-family DETACHED residence up to SIX domestic chickens under backyard-fowl exception. A secondary ADU adds no extra chicken allowance. Larger-scale farm animals have AG/R1-43/R1-18 zoning criteria; six is not a universal agricultural cap.",
+    "roosters": "Buckeye 2025 Development Code §3.2(B)(5) explicitly PROHIBITS male backyard chickens including ROOSTERS. Farm/agricultural uses, other species and legal exceptions must be checked separately.",
+    "permit": "Buckeye's CURRENT §3.2(B) expressly authorizes qualifying detached-house backyard chickens SUBJECT to conditions and zoning; unrelated domesticated farm animals are zone-limited (AG/R1-43/R1-18 and half-acre in rural residential). This is LAND USE permission, not a statement that coop construction or any separate permit is waived.",
+    "placement": "Buckeye §3.2(B)(3)-(4): covered chicken enclosure SIDE OR REAR YARD, at least 20 ft from a NEIGHBORING PROPERTY LINE (not neighbor dwelling), max 200 sq ft and 8 ft tall, no taller than required perimeter fence. Required fence height and manure-cleaning conditions apply; not a building permit exemption.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -501,7 +501,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.",
+    "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.\n2026-10-13 claim-specific ordinance follow-up verified max, roosters, permit, placement. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://library.municode.com/az/buckeye/codes/code_of_ordinances?nodeId=CD_ORD_CH7DECO_ART5DEDESTGU_5.11EXLI"
   },
   {
@@ -572,10 +572,10 @@ window.COOP_CITIES=[
     "name": "Marana",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Up to 6 chickens on detached single-family lots of 1/2 acre or smaller, under Ordinance 2025.002",
-    "roosters": "Male-fowl rule not fully established from the cited ordinance summary",
-    "permit": "Confirm land-use conditions and animal-keeping compliance under Title 17",
-    "placement": "Enclosure conditions are governed by Title 17 §§17-4-3 and 17-6-7; a uniform distance is not substantiated here",
+    "max": "Marana 2026 code §17-4-3: GR eligible lots up to SIX hens; qualifying detached houses in MR/RR/NC/VC up to six; ER/NR ONE chicken PER 1,000 sq ft; AG/RA rooster/other-fowl category maximum 40 per acre. No universal six-bird cap across all zones. 2025.002 effective Feb 7, 2025.",
+    "roosters": "Marana CURRENT use matrix §17-4-2: ROOSTERS / OTHER FOWL are conditionally allowed in AG and RA but marked X (prohibited) in ER, NR, GR, MR, RR, NC and VC; AG/RA up to 40 animals per acre subject to separation. This does NOT prohibit hens in qualifying other districts.",
+    "permit": "Marana §17-4-2 distinguishes U (use allowed if Table 3 conditions met) from C (conditional-use permit) and A (accessory). Chickens are listed U across many residential zones, including GR; MR/RR detached residential development may itself require CUP. This establishes zoning CONDITIONALITY, not proof of no chicken keeping or coop-construction permit.",
+    "placement": "Marana current §17-4-3: GR and qualifying detached MR/RR/NC/VC chicken enclosures in side/rear yard ≥20 ft from NEIGHBORING PROPERTY line, ≤200 sq ft, shorter than fence and ≤8 ft. ER/NR follow a DIFFERENT rule: ≥20 ft from OFFSITE DWELLING; ≤16sqft/≤6ft shelters exempt from side/rear lot-line setbacks, larger shelters accessory setbacks. No single citywide offset.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -585,7 +585,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.\n2026-10-13 claim-specific ordinance follow-up verified max, roosters, permit, placement. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://www.maranaaz.gov/Government/Town-Code/Ordinances"
   },
   {
@@ -658,7 +658,7 @@ window.COOP_CITIES=[
     "stateName": "Arizona",
     "max": "Lake Havasu City §14.03.03(E)(9) states up to six domestic chickens on qualifying single-family detached residences; eligibility also depends on zoning table §14.03.02, including a September 13, 2024 existing-residence condition in zones marked A(2). Not a citywide permit for all parcels.",
     "roosters": "No male fowl, including roosters, within the qualifying backyard-fowl use (§14.03.03(E)(9)(b)).",
-    "permit": "Confirm property zoning and accessory-structure requirements",
+    "permit": "Lake Havasu §14.03.02 backyard-fowl use table marks A(2) zones limited to qualifying detached homes EXISTING ON 2024-09-13; §14.03.03(E)(9)(c) explicitly requires CITY BUILDING PERMIT for perimeter fence above six ft in buildable area (up to eight ft). This is a fence-specific approval, NOT proof every coop needs or avoids a keeping/building permit.",
     "placement": "On qualifying properties, fowl enclosure must be in rear or side yard at least 20 ft from neighboring lot line, roofed, no more than 200 sq ft; maximum height/opacity/fence rules also apply (§14.03.03(E)(9)(c)).",
     "verified": "2026-10-13",
     "planner": {
@@ -669,7 +669,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026 municipal Code §14.03.03(E)(9) and §14.03.02 zoning use table: six domestic chickens only on qualifying single-family detached residences in districts where backyard fowl is an allowed accessory use. Table entries A(2) restrict use to single-family detached dwelling residents existing September 13, 2024. Do not assume all current residents or all parcels qualify; some fence heights require building permit. Site zoning and HOA plus any separate structure permit require confirmation.",
+    "note": "2026 municipal Code §14.03.03(E)(9) and §14.03.02 zoning use table: six domestic chickens only on qualifying single-family detached residences in districts where backyard fowl is an allowed accessory use. Table entries A(2) restrict use to single-family detached dwelling residents existing September 13, 2024. Do not assume all current residents or all parcels qualify; some fence heights require building permit. Site zoning and HOA plus any separate structure permit require confirmation.\n2026-10-13 claim-specific ordinance follow-up verified permit. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-32782"
   },
   {
@@ -698,9 +698,9 @@ window.COOP_CITIES=[
     "name": "Los Angeles",
     "state": "CA",
     "stateName": "California",
-    "max": "The City of Los Angeles does not have a single citywide backyard hen limit confirmed by the reviewed zoning provision. Agricultural and other zoning districts differ; verify property zoning.",
+    "max": "Los Angeles CURRENT R1 zoning §12.08(A)(3) authorizes NONCOMMERCIAL poultry as incidental to residence but gives NO numeric hen ceiling in that subsection. A1 §12.05(A)(7) has DISTINCT agricultural/commercial categories. This does NOT prove unlimited hens or uniform residential number; animal welfare/noise and specific parcel zoning still apply.",
     "roosters": "City Code §53.71 generally limits a property to at most ONE rooster, with expressly stated permitted business, educational, exhibition and filming exceptions; nuisance rules still apply.",
-    "permit": "Poultry permissions depend on zoning and accessory use; any commercial or educational exception requires proper licensing.",
+    "permit": "Los Angeles R1 zoning §12.08(A)(3) allows NONCOMMERCIAL domestic poultry in conjunction with residential use. A1 §12.05(A)(7)(a) has narrow 5-acre COMMERCIAL chicken conditions. This is zoning USE authorization only: commercial licence or coop BUILDING permit still may be needed, depending on parcel and project.",
     "placement": "No universal residential coop setback established by these provisions; consult applicable zoning, animal and accessory-structure rules.",
     "verified": "2026-10-13",
     "planner": {
@@ -711,7 +711,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Los Angeles Municipal Code §53.71 and zoning §12.04. Hen limit and setback remain unresolved. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+    "note": "Los Angeles Municipal Code §53.71 and zoning §12.04. Hen limit and setback remain unresolved. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.\n2026-10-13 claim-specific ordinance follow-up verified max, permit. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-213406"
   },
   {
@@ -1097,10 +1097,10 @@ window.COOP_CITIES=[
     "name": "Fort Collins",
     "state": "CO",
     "stateName": "Colorado",
-    "max": "City guidance confirms backyard poultry allowed for household use; no numerical cap established by the cited city project guidance",
-    "roosters": "Rooster-specific rule should be checked under Municipal Code Chapter 4",
+    "max": "Fort Collins City Code §4-117(b)(3): under 0.5 acre up to EIGHT chicken/duck HENS COMBINED; 0.5–1 acre up to TWELVE; >1 acre six extra for every additional 0.5 acre (notice abutting owners if >12). Chapter 4 poultry licence and animal welfare standards still apply. Check precise acreage endpoints with City Animal Services.",
+    "roosters": "Fort Collins City Code §4-117(b)(2): ROOSTERS and DRAKES (male ducks) prohibited from ordinary residential chicken/duck keeping; only hens. Other agricultural/zoning rights not inferred.",
     "permit": "NOCO Humane, Fort Collins' contracted Animal Protection & Control agency, requires a one-time $30 chicken/duck COOP LICENSE and an enclosure inspection BEFORE licensing. Separate zoning, building and HOA permissions may apply.",
-    "placement": "No numerical setback established by the city's common-project guidance",
+    "placement": "Fort Collins City Code §4-117(b): poultry house and outdoor run at least FIFTEEN ft from ABUTTING PROPERTY LINE unless abutting owners provide WRITTEN CONSENT; house secured from predators overnight and adequate day enclosure required. No blanket coop-building permit waiver.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1110,7 +1110,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Fort Collins City common-project guide allows domestic backyard poultry, but it DOES NOT establish citywide flock numbers or rooster and placement conditions. The city's contracted Animal Protection & Control provider NOCO Humane confirms a required coop license, $30 one-time fee, and enclosure inspection in its 2026 licensing guide. Other fields remain for Chapter 4 law review.",
+    "note": "Fort Collins City common-project guide allows domestic backyard poultry, but it DOES NOT establish citywide flock numbers or rooster and placement conditions. The city's contracted Animal Protection & Control provider NOCO Humane confirms a required coop license, $30 one-time fee, and enclosure inspection in its 2026 licensing guide. Other fields remain for Chapter 4 law review.\n2026-10-13 claim-specific ordinance follow-up verified max, roosters, placement. Exact zoning, lot, HOA and structure permit clearance remain separate; source status proves only cited condition.",
     "source": "https://www.fortcollins.gov/Government/City-Code-and-Charter/Building-Code/Rules-for-Common-Projects"
   },
   {
@@ -1708,7 +1708,7 @@ window.COOP_CITIES=[
     "stateName": "Texas",
     "max": "No more than 8 hens per residential parcel",
     "roosters": "Roosters prohibited on residential properties smaller than 1 acre",
-    "permit": "Check city animal control and accessory-building permits",
+    "permit": "Denton City Development Services current Accessory Structures permit guidance: detached accessory outbuildings TYPICALLY REQUIRE building permits, but one-story detached sheds/playhouses/SIMILAR USES of <=200 SQ FT without power, water, or HVAC can qualify for building permit EXEMPTION. ZONING setbacks and code compliance still apply even where exempt. A particular chicken coop may or may not qualify as a similar use; city confirmation required. This does NOT settle whether a separate ordinary CHICKEN-KEEPING permit is needed.",
     "placement": "Chicken enclosure must be at least 150 ft from residence, business, office, school, hospital or nursing home under the official FAQ",
     "verified": "2026-10-13",
     "planner": {
@@ -1719,7 +1719,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+    "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property. 2026-10-13 Denton Building Safety official guide: accessory outbuildings generally need building permit, but <=200sf single-story detached shed/similar building WITH NO UTILITIES can qualify for exemption. Chicken coop classification and independent poultry-keeping license not proved. Zoning remains mandatory.",
     "source": "https://www.cityofdenton.com/m/faq?cat=17"
   },
   {
