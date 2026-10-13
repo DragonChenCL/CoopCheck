@@ -1422,9 +1422,9 @@
     "folsom-ca": {
       "max": {
         "status": "primary_clause_checked",
-        "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html",
-        "section": "§17.40.020(2)-(3)",
-        "detail": "Only in agricultural combining (A) zones: animal husbandry/small livestock farming addressed; 100-head threshold is NOT a general residential flock cap.",
+        "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/folsomca-meet-83600f7149724af0bf7f37dd3c08f017/ITEM-Attachment-001-d6c1f73a8ced473da7b4309d2e7d7523.pdf",
+        "section": "Folsom 2026 Ordinance 1362 §4 / §7.04.080(C), plus existing A district §17.40.020",
+        "detail": "2026 adopted six pet chickens permitted in eligible NONAG residential zones, independent A Combining district §17.40 100-head conditional use threshold; all-zone rooster ban also applies.",
         "checkedAt": "2026-10-13"
       },
       "roosters": {
@@ -1443,9 +1443,9 @@
       },
       "placement": {
         "status": "primary_clause_checked",
-        "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html",
-        "section": "§17.40.040",
-        "detail": "Only for A agricultural combining district chicken house: 50 ft from front lot line, 20 ft from side lot line, 30 ft from any dwelling; not citywide residential coop setback.",
+        "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/folsomca-meet-83600f7149724af0bf7f37dd3c08f017/ITEM-Attachment-001-d6c1f73a8ced473da7b4309d2e7d7523.pdf",
+        "section": "Folsom 2026 Ordinance 1362 §4 / §7.04.080(C); A-district §17.40.040 separately",
+        "detail": "2026 nonag backyard pets ≥5ft from any PROPERTY LINE and ≥20ft neighboring DWELLING; A agricultural combining has separate 50front/20side/30dwelling house setbacks. Do not generalize across zones.",
         "checkedAt": "2026-10-13"
       }
     },

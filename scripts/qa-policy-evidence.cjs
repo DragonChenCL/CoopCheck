@@ -129,4 +129,8 @@ assert(e.cities["oro-valley-az"].max.url.includes("20240918")&&bySlug["oro-valle
 assert(bySlug["oro-valley-az"].placement.includes("NEIGHBORING PROPERTY")&&bySlug["oro-valley-az"].permit.includes("CONDITIONAL USE PERMIT"),"Oro parcel/CUP caveats");
 assert(bySlug["austin-tx"].max.includes("NOT")&&bySlug["austin-tx"].roosters.includes("NOT"),"Austin absence of rule is not broad allowance");
 assert(bySlug["folsom-ca"].roosters.includes("ANY ZONING DISTRICT"),"Folsom all zone prohibition");
+// Folsom new ordinance 1362 also updates already checked flock and placement, not just rooster field.
+assert(bySlug["folsom-ca"].max.includes("SIX CHICKENS")&&bySlug["folsom-ca"].max.includes("Agricultural Combining District"),"Folsom 2026 normal pets versus A-zone must coexist");
+assert(bySlug["folsom-ca"].placement.includes("5 ft")&&bySlug["folsom-ca"].placement.includes("20 ft"),"Folsom new normal residential two distance objects");
+assert(e.cities["folsom-ca"].max.url.includes("ITEM-Attachment")&&e.cities["folsom-ca"].placement.url.includes("ITEM-Attachment"),"Folsom enacted 1362 code citations required");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

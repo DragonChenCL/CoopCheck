@@ -992,10 +992,10 @@ window.COOP_CITIES=[
     "name": "Folsom",
     "state": "CA",
     "stateName": "California",
-    "max": "Folsom's Agricultural Combining District (A) permits small livestock farming, with a use permit required for raising more than 100 poultry/animals; this is NOT a general residential allowance.",
+    "max": "Folsom 2026 Ordinance 1362 §4 (§7.04.080(C)) permits at most SIX CHICKENS as pets in residential and other nonagricultural/non-A combining zones. In Agricultural Combining District (A), separate §17.40 allows agriculture/livestock farming; its 100-head use-permit trigger is NOT a general six-hen cap. Roosters prohibited in ALL zoning districts.",
     "roosters": "Folsom's 2026 Ordinance 1362 §4 amends §7.04.080(C) and expressly states ROOSTERS SHALL NOT BE KEPT IN ANY ZONING DISTRICT. This citywide prohibition applies regardless of separate A combining district poultry-use rules. The amended section also permits up to six chickens as pets in qualifying nonag zones; do not confuse this with §17.40 A-district livestock limits.",
-    "permit": "A use permit is required for more than 100 head of poultry/animals in an applicable A combining district; other districts require separate review.",
-    "placement": "Within the A combining district, barns/chicken houses and similar accessories must be at least 50 ft from front property line, 20 ft from side line and 30 ft from a dwelling (§17.40.040).",
+    "permit": "Folsom 2026 §7.04.080(C) permits up to six PET chickens in eligible nonagricultural zoning, but does NOT itself waive accessory-building approvals. In the Agricultural Combining District (A), §17.40.020/.030 requires a use permit to raise MORE THAN 100 poultry/livestock. Keeping and building licenses depend on zoning and property.",
+    "placement": "Folsom 2026 §7.04.080(C): in NONAGRICULTURAL zones, permitted pet chickens must be kept ≥5 ft from ANY PROPERTY LINE AND ≥20 ft from a NEIGHBORING DWELLING. In Agricultural Combining District (A), separate §17.40.040 provides agricultural chicken-house siting distances (50ft front line, 20ft side line, 30ft dwelling). Do not substitute one zone's distance for another.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1005,7 +1005,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Folsom Municipal Code Chapter 17.40, agricultural combining district only. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.\n2026-10-13: 20-field batch effective code/source cross-check. 2026 enacted Ordinance 1362 confirmed all-zone rooster prohibition; already checked A combining district attributes remain limited to that separate code. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.",
+    "note": "Folsom Municipal Code Chapter 17.40, agricultural combining district only. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.\n2026-10-13: 20-field batch effective code/source cross-check. 2026 enacted Ordinance 1362 confirmed all-zone rooster prohibition; already checked A combining district attributes remain limited to that separate code. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.\n2026-10-13 additional cross-field correction: 2026 enacted Ordinance 1362 expands ordinary NON-AGRICULTURAL residential chicken allowances to 6 pets, no roosters ANYWHERE, with 5ft PROPERTY LINE AND 20ft neighboring DWELLING distances. Previous registry only cited Agricultural Combining District; that limited section remains relevant only in A zoning.",
     "source": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html"
   },
   {
