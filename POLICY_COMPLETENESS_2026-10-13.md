@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (44 general summaries; 44 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **246**; 106 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **266**; 86 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -13,7 +13,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Mesa, AZ | verified_limited_scope | Clause checked | Clause/guidance checked | Source; permit unconfirmed | Clause checked, state preemption unresolved |
 | Phoenix, AZ | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Clause/guidance checked |
-| San Diego, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| San Diego, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Sacramento, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Colorado Springs, CO | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -21,7 +21,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Eugene, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Salem, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Gresham, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Seattle, WA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Seattle, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Spokane, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Vancouver, WA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
 | Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
@@ -50,22 +50,22 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Los Angeles, CA | verified_limited_scope | Source; clause pending | Clause checked (§53.71) | Source; clause pending | Source; clause pending |
 | San Francisco, CA | verified | Clause checked | Source; clause pending | Clause checked (DPH enclosure approval; building/zoning open) | Clause checked (20 ft to door/window, not lot line) |
 | San Jose, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Oakland, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Clause/guidance checked | Source; clause pending |
+| Oakland, CA | verified_limited_scope | Clause/guidance checked | Source; clause pending | Clause/guidance checked | Clause/guidance checked |
 | Fresno, CA | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Bakersfield, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Riverside, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Riverside, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Irvine, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Anaheim, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Long Beach, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Santa Ana, CA | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
-| Stockton, CA | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Stockton, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Modesto, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Elk Grove, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Elk Grove, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Roseville, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Folsom, CA | verified_limited_scope | Clause checked | Source; clause pending | Clause checked | Clause checked |
 | Berkeley, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fremont, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Santa Rosa, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Santa Rosa, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Escondido, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Aurora, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Boulder, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
@@ -76,7 +76,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Westminster, CO | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Pueblo, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Longmont, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Beaverton, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Beaverton, OR | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Hillsboro, OR | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
 | Bend, OR | verified_limited_scope | Clause checked (>=5,000 sq ft) | Clause checked (no roosters) | Source; permit unconfirmed | Source; coop setback unconfirmed |
 | Medford, OR | verified_limited_scope | Clause checked | Clause checked | Clause checked (building/fire duty only) | Clause checked |
@@ -90,12 +90,12 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Renton, WA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Everett, WA | verified_limited_scope | Clause checked | Clause checked (license trigger only) | Clause checked | Clause checked |
 | Olympia, WA | verified_limited_scope | Clause checked | Clause checked | Source; permit still pending | Clause checked |
-| Bellingham, WA | verified_limited_scope | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
+| Bellingham, WA | verified_limited_scope | Clause/guidance checked | Source; clause pending | Clause/guidance checked | Clause/guidance checked |
 | Yakima, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Redmond, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Houston, TX | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Dallas, TX | verified_limited_scope | Source; clause pending | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
-| San Antonio, TX | verified | City guidance checked (§5-107) | City guidance checked (§5-107) | City guidance checked (excess permit) | Source; clause pending |
+| San Antonio, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Plano, TX | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Frisco, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked |
 | Irving, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause checked (building/zoning duty only) | Clause/guidance checked |
@@ -104,11 +104,11 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Denton, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | El Paso, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Round Rock, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
-| New York City, NY | verified_limited_scope | Source; clause pending | Clause checked | Source; clause pending | Source; clause pending |
-| Minneapolis, MN | verified_limited_scope | Source; clause pending | Clause/guidance checked (permit fee category; approval open) | Clause/guidance checked | Source; clause pending |
+| New York City, NY | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
+| Minneapolis, MN | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Madison, WI | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Indianapolis, IN | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Raleigh, NC | verified_limited_scope | Clause checked | Source; clause pending | Source; clause pending | Source; clause pending |
+| Raleigh, NC | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 
 ## Primary clauses independently inspected
 
@@ -239,3 +239,32 @@ All 20 entries below were upgraded with official current city code or municipal 
 | Colorado Springs, CO | `permit` | Colorado Springs city Accessory Structures guide; Rabbits and Chickens city guidance | [official code](https://coloradosprings.gov/planning-and-development/page/accessory-structures) |
 
 **Exceptions:** Fremont 6,000-sqft boundary and combined species, Escondido conditional rooster permit in R-E, Bellevue pending Ord 6930, Vancouver no assumed livestock coop setback, Yuma 2025 code and AZ state preemption, Phoenix unchanged adopted rooster-noise clause, Dallas rooster-only coop 20ft rule, Gilbert 25 combined fowl/rodent FAQ not automatically zone clearance, Colorado Springs <200sqft building threshold not animal-permit waiver.
+
+## 2026-10-13 — Second one-batch 20 field source check
+
+Exactly **20** prior source_recorded claims mapped to current government code or city planning guidance with clause-specific applicability. **266/400 checked, 86 source_recorded, 48 unverified; 88 city summaries partial-reviewed, 12 pending/noindex unchanged**. No city added and NO parcel-wide legal permission presumed.
+
+| City | Field | Official section | Government link |
+|---|---|---|---|
+| Riverside, CA | `max` | Riverside §19.455.030(B)(1), (C)-(E), Ord7701 (2025) | [source](https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO) |
+| Riverside, CA | `roosters` | Riverside §19.455.030(B)(1)(c),(C)(1)(f),(D)-(E) | [source](https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO) |
+| Riverside, CA | `permit` | Riverside §19.455.020,§19.455.030(B)-(E),§19.440 | [source](https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO) |
+| Riverside, CA | `placement` | Riverside §19.455.030(B)(1)(b),(C)-(E), §19.440 | [source](https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO) |
+| Raleigh, NC | `roosters` | Raleigh UDO §6.6.1(B)(2)(h)(iii) | [source](https://udo.raleighnc.gov/sec-661-agriculture) |
+| Raleigh, NC | `permit` | Raleigh City Planning How to Start a Community Garden, updated 2026-07-15 | [source](https://raleighnc.gov/planning/services/how-start-community-garden) |
+| Raleigh, NC | `placement` | Raleigh UDO §6.6.1(B)(2)(h)(v) | [source](https://udo.raleighnc.gov/sec-661-agriculture) |
+| Minneapolis, MN | `max` | Minneapolis §63.90(g), (h)(1) | [source](https://library.municode.com/mn/minneapolis/codes/code_of_ordinances/376408?nodeId=COOR_TIT4ANCACO_CH64CATRAN) |
+| Minneapolis, MN | `placement` | Minneapolis §63.90(h)(2)-(3) | [source](https://library.municode.com/mn/minneapolis/codes/code_of_ordinances/376408?nodeId=COOR_TIT4ANCACO_CH64CATRAN) |
+| Stockton, CA | `permit` | Stockton §16.80.060(E)-(F), Table3-14, Ord2025-06-03-1601 | [source](https://ecode360.com/43715337) |
+| Elk Grove, CA | `permit` | Elk Grove §23.27 Residential Note3(a)(i)-(iii) | [source](https://ecode360.com/50245103) |
+| Santa Rosa, CA | `permit` | Santa Rosa §20-42.040(B)-(C), Table4-1 | [source](https://ecode360.com/42982346) |
+| San Antonio, TX | `placement` | San Antonio Ch5 §5-107 ordinary fowl/excess permit | [source](https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH5AN) |
+| San Diego, CA | `permit` | San Diego Urban Farming Chicken Guidance, City Code §42.0709 | [source](https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens) |
+| Beaverton, OR | `permit` | Beaverton Code §5.09.015(A)-(C) | [source](https://beaverton.municipal.codes/BC/5.09.015) |
+| New York City, NY | `permit` | NYC Urban Agriculture FAQ and separate commercial Health Code §161.19 | [source](https://www.nyc.gov/site/agriculture/faqs/frequently-asked-questions.page) |
+| Seattle, WA | `permit` | Seattle SDCI Animal Codes / Seattle §23.42.052 | [source](https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes) |
+| Bellingham, WA | `permit` | Bellingham §7.12.060(A)-(C), amended 2026-08-022 | [source](https://bellingham.municipal.codes/BMC/7.12.060) |
+| Oakland, CA | `max` | Oakland City Planning Urban Agriculture zoning activities by district | [source](https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens) |
+| Oakland, CA | `placement` | Oakland City Planning Urban Agriculture site plan and structural permit scope | [source](https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens) |
+
+Critical corrections: Riverside 2025 §19.455 allows qualifying RE/R-1 poultry (up to five, neighbor RESIDENCE 10ft); Raleigh §6.6.1.B.2.h only concerns community gardens; Minneapolis Tier II/III needs extra MACC approval; San Antonio ≥50ft occupied third-party premises separation applies to excess flock PERMITS not regular eight birds; Oakland zoning guide lacks a universal numeric count or coop setback, so statuses map a NEGATIVE LIMITED-SCOPE finding rather than a numerical poultry permission. Separate structural permits and zoning issues remain.

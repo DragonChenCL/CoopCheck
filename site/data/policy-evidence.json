@@ -129,7 +129,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens",
+        "section": "San Diego Urban Farming Chicken Guidance, City Code §42.0709",
+        "detail": "City recognizes keeping backyard poultry at qualifying single-family homes, gardens and retail farms subject to zoning/flock/coop constraints. This does NOT demonstrate that an individual coop is building-permit exempt.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -365,7 +369,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes",
+        "section": "Seattle SDCI Animal Codes / Seattle §23.42.052",
+        "detail": "Seattle land use recognizes up to EIGHT qualifying backyard fowl on standard lot with no rooster; other coop/setback conditions apply. Zoning use recognition is NOT a blanket hen-keeping license or construction permit waiver.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -989,7 +997,11 @@
     },
     "oakland-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens",
+        "section": "Oakland City Planning Urban Agriculture zoning activities by district",
+        "detail": "Community Garden / Extensive Agriculture animal keeping zoning depends on zone and animal control. The published Planning guide has NO universal numeric CHICKEN LIMIT; this missing value is not a legal right to unlimited birds.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "source_recorded"
@@ -1002,7 +1014,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens",
+        "section": "Oakland City Planning Urban Agriculture site plan and structural permit scope",
+        "detail": "City Planning requires proposed enclosure site plan, new structures and any electrical/plumbing alterations in permit applications where activity requires review. It does NOT provide a numeric citywide coop setback; parcel zoning and building department must check.",
+        "checkedAt": "2026-10-13"
       }
     },
     "fresno-ca": {
@@ -1047,16 +1063,32 @@
     },
     "riverside-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO",
+        "section": "Riverside §19.455.030(B)(1), (C)-(E), Ord7701 (2025)",
+        "detail": "Current 2025 amendment permits up to 5 NONCOMMERCIAL poultry in qualifying RE and R-1 residential zoning; RR/RA-5/RC have separate 5/50 tiers. Old rural-only prohibition was stale; not 50 allowed on all urban lots.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO",
+        "section": "Riverside §19.455.030(B)(1)(c),(C)(1)(f),(D)-(E)",
+        "detail": "CROWING poultry prohibited in RE/R-1 zones. Qualified RR, RA-5 and RC parcels may keep up to SEVEN crowing roosters with land-area restrictions and acoustical nighttime enclosure 100 ft from a neighboring RESIDENCE.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO",
+        "section": "Riverside §19.455.020,§19.455.030(B)-(E),§19.440",
+        "detail": "Qualified RE/R-1 up to five ordinary poultry allowed as zoning use. Exceeding larger RR and RA-5/RC tier counts needs a MINOR CONDITIONAL USE or discretionary permit; independent coop building permissions still apply. NOT a citywide no-permit assertion.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT19ZO",
+        "section": "Riverside §19.455.030(B)(1)(b),(C)-(E), §19.440",
+        "detail": "New RE/R-1 hobby coop must be ≥10 ft from a NEIGHBORING RESIDENCE, NOT a property-line offset, plus accessory building code. RR/RA-5/RC poultry tiers need 50/100 ft from residences; rooster overnight acoustic shelter 100 ft under separate rules.",
+        "checkedAt": "2026-10-13"
       }
     },
     "irvine-ca": {
@@ -1175,7 +1207,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/43715337",
+        "section": "Stockton §16.80.060(E)-(F), Table3-14, Ord2025-06-03-1601",
+        "detail": "Stockton allows conditional hobby hens/ducks in RL/RM/RH zoning on eligible ≥5000sqft residential lots (4 per 5000sqft). Coop subject to accessory STRUCTURE §16.36.035, NOT automatic construction/animal-keeping permit exemption.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1215,7 +1251,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/50245103",
+        "section": "Elk Grove §23.27 Residential Note3(a)(i)-(iii)",
+        "detail": "RD zoning permits keeping <=6 hens as accessory use at 5ft from lot lines, up to12 only with 40ft lot-line BUFFER; roosters banned. Zoning-by-right status NOT a waiver of coop building permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1341,7 +1381,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/42982346",
+        "section": "Santa Rosa §20-42.040(B)-(C), Table4-1",
+        "detail": "Hen keeping is accessory zoning use conditional on lot-size bird tiers and rear-yard coop 5/10ft PROPERTY buffers plus 20ft neighbor HABITABLE structure. Not proof of unconditional exemption from coop construction permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1595,7 +1639,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://beaverton.municipal.codes/BC/5.09.015",
+        "section": "Beaverton Code §5.09.015(A)-(C)",
+        "detail": "Qualifying single-family/duplex residence on >=5000sqft property, owner resident; TENANTS must obtain WRITTEN OWNER PERMISSION. This consent duty does NOT prove municipal building permit exemption.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1937,7 +1985,11 @@
         "status": "source_recorded"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://bellingham.municipal.codes/BMC/7.12.060",
+        "section": "Bellingham §7.12.060(A)-(C), amended 2026-08-022",
+        "detail": "Domestic fowl allowed only securely enclosed, sanitary and ≥50ft from an occupied home/working building. This positive city animal-keeping condition is NOT proof of no separate keeping license or coop construction approval.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -2077,7 +2129,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH5AN",
+        "section": "San Antonio Ch5 §5-107 ordinary fowl/excess permit",
+        "detail": "Standard coop/run minimum 24 sq ft TOTAL or 6 sq ft PER FOWL, whichever greater. For EXCESS ANIMAL permit >8 birds, at least 50ft from third-party occupied DWELLING/BUSINESS, not lot line; NOT a universal 50ft requirement for ordinary eight or fewer birds.",
+        "checkedAt": "2026-10-13"
       }
     },
     "plano-tx": {
@@ -2282,7 +2338,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.nyc.gov/site/agriculture/faqs/frequently-asked-questions.page",
+        "section": "NYC Urban Agriculture FAQ and separate commercial Health Code §161.19",
+        "detail": "NYC allows backyard HENS and prohibits ROOSTERS. Commercial live-poultry market permits are a DIFFERENT business use, not automatic backyard licence requirements; individual coop structural/zoning approvals remain undetermined.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -2290,7 +2350,11 @@
     },
     "minneapolis-mn": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/mn/minneapolis/codes/code_of_ordinances/376408?nodeId=COOR_TIT4ANCACO_CH64CATRAN",
+        "section": "Minneapolis §63.90(g), (h)(1)",
+        "detail": "Chicken permit Tier I 1–6 HENS, Tier II 7–15, Tier III 16–30. Normal residential coop SIX fowl only; >6 requires explicit MACC APPROVAL and possibly extra conditions. Tier III NOT automatic 30 birds.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "primary_clause_checked",
@@ -2307,7 +2371,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/mn/minneapolis/codes/code_of_ordinances/376408?nodeId=COOR_TIT4ANCACO_CH64CATRAN",
+        "section": "Minneapolis §63.90(h)(2)-(3)",
+        "detail": "Residential coop/run must be ≥20 ft from a HABITABLE BUILDING on an ADJACENT property (not lot line), entirely REAR of principal dwelling, screened from neighboring residences, zoning compliant.",
+        "checkedAt": "2026-10-13"
       }
     },
     "madison-wi": {
@@ -2378,13 +2446,25 @@
         "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://udo.raleighnc.gov/sec-661-agriculture",
+        "section": "Raleigh UDO §6.6.1(B)(2)(h)(iii)",
+        "detail": "Raleigh prohibits animal raising in RESIDENTIAL community gardens; in eligible NONRESIDENTIAL COMMUNITY GARDENS chicken keeping max 1 per 1000sqft, max10, and NO ROOSTERS. Scope is community gardens, not all home backyards.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://raleighnc.gov/planning/services/how-start-community-garden",
+        "section": "Raleigh City Planning How to Start a Community Garden, updated 2026-07-15",
+        "detail": "A community garden requires a Tier One planning review before permit issuance. §6.6.1(B)(2)(h) bars residential-district community-garden animals. Does NOT establish permit exemption or zoning approval for an ordinary backyard coop.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://udo.raleighnc.gov/sec-661-agriculture",
+        "section": "Raleigh UDO §6.6.1(B)(2)(h)(v)",
+        "detail": "Eligible NONRESIDENTIAL community-garden coops must stand at least 25 ft from ANY PROPERTY LINE. This does NOT establish setbacks/permission for all residential backyard enclosures.",
+        "checkedAt": "2026-10-13"
       }
     }
   }
