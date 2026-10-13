@@ -42,4 +42,6 @@ for(const key of keys)assert.equal(e.cities["indianapolis-in"][key].status,"prim
 assert(/ONE rooster/.test(bySlug["indianapolis-in"].roosters),"Indianapolis no categorical rooster ban");
 for(const key of keys)assert.equal(e.cities["santa-ana-ca"][key].status,"primary_clause_checked","Santa Ana Animal Code missing field "+key);
 assert(bySlug["santa-ana-ca"].max.includes("COMBINATION"),"Santa Ana combined fowl/rabbit cap must not be misrepresented");
+assert(bySlug["fresno-ca"].max.includes("36,000")&&bySlug["fresno-ca"].max.includes("GREATER"),"Fresno zoning threshold must not be collapsed into blanket residential ban");
+for(const k of ["max","roosters","placement"])assert.equal(e.cities["fresno-ca"][k].status,"primary_clause_checked","Fresno precise official code missing "+k);
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
