@@ -40,73 +40,191 @@ function track(slug,status,location){
 function makeNode(tag,className,text){
  const e=doc.createElement(tag);if(className)e.className=className;if(text!==undefined)e.textContent=text;return e;
 }
-function populateStates(select,cities){
- if(!select)return;
- const values=[...new Map(cities.map(c=>[c.state,c.stateName])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
- const current=select.value;
- while(select.options.length>1)select.remove(1);
- for(const [code,name] of values){const o=doc.createElement("option");o.value=code;o.textContent=name+" ("+code+")";select.append(o);}
- select.value=current;
+
+function stateOptions(cities){
+ const states=[...new Map(cities.map(c=>[c.state,c.stateName])).entries()]
+   .sort((a,b)=>a[1].localeCompare(b[1]));
+ return [{value:"",label:"All states"},...states.map(([code,name])=>({value:code,label:name+" ("+code+")"}))];
+}
+function selectedValue(el){return el?.dataset?.value??el?.value??"";}
+function setupDropdown(wrapper,options,onChange,externalMenu){
+ if(!wrapper)return null;
+ const trigger=wrapper.querySelector("[data-dropdown-trigger]");
+ const label=wrapper.querySelector("[data-dropdown-label]");
+ const menu=externalMenu||wrapper.querySelector("[data-dropdown-menu]");
+ if(!trigger||!label||!menu)return null;
+ let expanded=false;
+ const optionButtons=[];
+ function close(restoreFocus=false){
+  expanded=false;menu.hidden=true;trigger.setAttribute("aria-expanded","false");
+  wrapper.classList.remove("is-open");
+  if(restoreFocus)trigger.focus();
+ }
+ function open(){
+  expanded=true;menu.hidden=false;trigger.setAttribute("aria-expanded","true");
+  wrapper.classList.add("is-open");
+ }
+ function choose(option){
+  wrapper.dataset.value=option.value;
+  label.textContent=option.label;
+  optionButtons.forEach(b=>b.setAttribute("aria-selected",String(b.dataset.value===option.value)));
+  close();trigger.focus();
+  onChange?.(option.value);
+ }
+ for(const option of options){
+  const item=makeNode("button","cc-dropdown-option");
+  item.type="button";item.setAttribute("role","option");item.dataset.value=option.value;
+  item.setAttribute("aria-selected",String(option.value===(wrapper.dataset.value||"")));
+  const dot=makeNode("span","cc-dropdown-option-name",option.label);
+  const tick=makeNode("span","cc-dropdown-option-check","✓");
+  tick.setAttribute("aria-hidden","true");
+  item.append(dot,tick);menu.append(item);optionButtons.push(item);
+  item.addEventListener("click",()=>choose(option));
+  item.addEventListener("keydown",event=>{
+   const index=optionButtons.indexOf(item);
+   if(event.key==="ArrowDown"||event.key==="ArrowUp"){
+    event.preventDefault();optionButtons[(index+(event.key==="ArrowDown"?1:-1)+optionButtons.length)%optionButtons.length].focus();
+   }else if(event.key==="Home"||event.key==="End"){
+    event.preventDefault();optionButtons[event.key==="Home"?0:optionButtons.length-1].focus();
+   }else if(event.key==="Escape"){event.preventDefault();close(true);}
+  });
+ }
+ const current=options.find(o=>o.value===wrapper.dataset.value)||options[0];
+ wrapper.dataset.value=current.value;label.textContent=current.label;
+ trigger.addEventListener("click",()=>{if(expanded)close();else open();});
+ trigger.addEventListener("keydown",event=>{
+  if(event.key==="Escape"){if(expanded){event.preventDefault();close();}}
+  else if(event.key==="ArrowDown"||event.key==="ArrowUp"||event.key===" "){
+   event.preventDefault();open();
+   const chosen=optionButtons.find(b=>b.dataset.value===selectedValue(wrapper));
+   (chosen||optionButtons[0])?.focus();
+  }
+ });
+ doc.addEventListener("pointerdown",event=>{
+  if(expanded&&!wrapper.contains(event.target)&&!menu.contains(event.target))close();
+ });
+ doc.addEventListener("focusin",event=>{
+  if(expanded&&!wrapper.contains(event.target)&&!menu.contains(event.target))close();
+ });
+ return {close,open,isOpen:()=>expanded};
 }
 function setupHero(rootEl,cities){
- const input=rootEl.querySelector("[data-search-input]"),state=rootEl.querySelector("[data-search-state]"),panel=rootEl.querySelector("[data-search-results]"),hint=rootEl.querySelector("[data-search-hint]");
+ const input=rootEl.querySelector("[data-search-input]");
+ const state=rootEl.querySelector("[data-search-state]");
+ const panel=rootEl.querySelector("[data-search-results]");
+ const hint=rootEl.querySelector("[data-search-hint]");
+ const stateMenu=rootEl.querySelector("[data-dropdown-menu]");
  if(!input||!panel)return;
- populateStates(state,cities);
- let selected=-1,view=[],open=false;
- const setOpen=show=>{open=show;panel.hidden=!show;input.setAttribute("aria-expanded",String(show));if(!show)input.removeAttribute("aria-activedescendant");};
+ let selected=-1,view=[],open=false,ignoreReopen=false;
+ const defaultHint="Search all 100 city profiles. Unverified cities are clearly marked.";
+ function setOpen(show){
+  open=show;panel.hidden=!show;input.setAttribute("aria-expanded",String(show));
+  if(!show){input.removeAttribute("aria-activedescendant");selected=-1;}
+ }
+ function closeResults(){
+  setOpen(false);
+  if(!input.value.trim()&&!selectedValue(state))hint.textContent=defaultHint;
+ }
+ const dropdown=setupDropdown(state,stateOptions(cities),()=>{
+  input.focus();
+  paint();
+ },stateMenu);
  function paint(){
-  view=filterCities(cities,input.value,state?.value||"","all",8);selected=-1;panel.replaceChildren();
+  dropdown?.close();
+  if(!input.value.trim()&&!selectedValue(state)){
+   view=[];panel.replaceChildren();closeResults();
+   hint.textContent=defaultHint;
+   return;
+  }
+  view=filterCities(cities,input.value,selectedValue(state),"all",8);
+  selected=-1;panel.replaceChildren();
   if(view.length===0){
-   const empty=makeNode("div","cc-search-empty","No matching cities. Try a nearby city or browse all 100 profiles.");
-   panel.append(empty);
+   panel.append(makeNode("div","cc-search-empty","No matching cities. Try a nearby city or browse all 100 profiles."));
   }else{
    for(let i=0;i<view.length;i++){
-    const c=view[i],a=makeNode("a","cc-result-row"),id="city-result-"+i;
-    a.id=id;a.href="/cities/"+encodeURIComponent(c.slug)+".html";a.setAttribute("role","option");a.setAttribute("aria-selected","false");
-    const first=makeNode("span","cc-result-name",c.name+", "+c.state);
-    const badge=makeNode("span","cc-result-badge"+(c.status==="needs_review"?" is-pending":c.status==="verified_limited_scope"?" is-limited":""),statusLabel(c));
-    a.append(first,badge);a.addEventListener("click",()=>track(c.slug,c.status,"home"));panel.append(a);
+    const city=view[i],a=makeNode("a","cc-result-row");
+    a.id="city-result-"+i;
+    a.href="/cities/"+encodeURIComponent(city.slug)+".html";
+    a.setAttribute("role","option");
+    a.setAttribute("aria-selected","false");
+    a.append(
+      makeNode("span","cc-result-name",city.name+", "+city.state),
+      makeNode("span","cc-result-badge"+(city.status==="needs_review"?" is-pending":city.status==="verified_limited_scope"?" is-limited":""),statusLabel(city))
+    );
+    a.addEventListener("click",()=>track(city.slug,city.status,"home"));
+    panel.append(a);
    }
   }
-  hint.textContent=input.value.trim()?view.length+" matching "+(view.length===1?"city":"cities")+(view.length===8?" (showing first 8)":""):"Start typing, or select a state to find a city.";
+  hint.textContent=input.value.trim()
+    ?view.length+" matching "+(view.length===1?"city":"cities")+(view.length===8?" (showing first 8)":"")
+    :view.length+" cities in selected state (showing up to 8)";
   setOpen(true);
  }
  function mark(){
-  const items=[...panel.querySelectorAll('[role="option"]')];
-  items.forEach((e,i)=>{e.classList.toggle("is-active",i===selected);e.setAttribute("aria-selected",String(i===selected));});
-  if(selected>=0&&items[selected]){input.setAttribute("aria-activedescendant",items[selected].id);items[selected].scrollIntoView({block:"nearest"});}else input.removeAttribute("aria-activedescendant");
+  const links=[...panel.querySelectorAll('[role="option"]')];
+  links.forEach((link,i)=>{
+   link.classList.toggle("is-active",i===selected);
+   link.setAttribute("aria-selected",String(i===selected));
+  });
+  if(selected>=0&&links[selected]){
+   input.setAttribute("aria-activedescendant",links[selected].id);
+   links[selected].scrollIntoView({block:"nearest"});
+  }else input.removeAttribute("aria-activedescendant");
  }
- const submit=rootEl.querySelector("[data-search-submit]");
- submit?.addEventListener("click",()=>{
-  if(!input.value.trim() && !state?.value){input.focus();paint();return;}
-  const current=filterCities(cities,input.value,state?.value||"","all",8);
-  if(current.length===1){
-   const c=current[0];track(c.slug,c.status,"home");
-   root.location.assign("/cities/"+encodeURIComponent(c.slug)+".html");
-  }else{input.focus();paint();}
+ function goTo(city){
+  track(city.slug,city.status,"home");
+  root.location.assign("/cities/"+encodeURIComponent(city.slug)+".html");
+ }
+ rootEl.querySelector("[data-search-submit]")?.addEventListener("click",()=>{
+  const current=filterCities(cities,input.value,selectedValue(state),"all",8);
+  if(!input.value.trim()&&!selectedValue(state)){
+   hint.textContent="Enter a city name or choose a state to see matches.";
+   closeResults();input.focus();return;
+  }
+  if(current.length===1)goTo(current[0]);
+  else{input.focus();paint();}
  });
- input.addEventListener("focus",paint);
+ input.addEventListener("focus",()=>{
+  if(ignoreReopen){ignoreReopen=false;return;}
+  if(input.value.trim()||selectedValue(state))paint();
+ });
  input.addEventListener("input",paint);
- state?.addEventListener("change",()=>{paint();input.focus();});
- input.addEventListener("keydown",e=>{
-  if(e.key==="Escape"){setOpen(false);return;}
-  if(e.key==="ArrowDown"||e.key==="ArrowUp"){
-   e.preventDefault();if(!open)paint();
-   if(view.length){selected=e.key==="ArrowDown"?(selected+1)%view.length:(selected-1+view.length)%view.length;mark();}
-  }else if(e.key==="Enter"&&open&&view.length){
-   e.preventDefault();const c=view[selected<0?0:selected];track(c.slug,c.status,"home");root.location.assign("/cities/"+encodeURIComponent(c.slug)+".html");
+ input.addEventListener("keydown",event=>{
+  if(event.key==="Escape"){
+   if(open){event.preventDefault();closeResults();}
+   return;
+  }
+  if(event.key==="ArrowDown"||event.key==="ArrowUp"){
+   if(!open&&(input.value.trim()||selectedValue(state)))paint();
+   if(view.length===0||!open)return;
+   event.preventDefault();
+   selected=event.key==="ArrowDown"?(selected+1)%view.length:(selected-1+view.length)%view.length;
+   mark();
+  }else if(event.key==="Enter"&&open&&view.length){
+   event.preventDefault();goTo(view[selected<0?0:selected]);
   }
  });
- doc.addEventListener("pointerdown",e=>{if(!rootEl.contains(e.target))setOpen(false);});
+ rootEl.addEventListener("focusout",event=>{
+  const next=event.relatedTarget;
+  if(!next||(!panel.contains(next)&&next!==input))closeResults();
+ });
+ doc.addEventListener("pointerdown",event=>{
+  if(!rootEl.contains(event.target)){closeResults();dropdown?.close();}
+ });
+ doc.addEventListener("focusin",event=>{
+  if(!rootEl.contains(event.target)){closeResults();dropdown?.close();}
+ });
+ state?.querySelector("[data-dropdown-trigger]")?.addEventListener("click",()=>closeResults());
 }
 function setupDirectory(cities){
  const filter=doc.querySelector("[data-directory-filter]");if(!filter)return;
- const input=filter.querySelector("[data-directory-query]"),state=filter.querySelector("[data-directory-state]"),status=filter.querySelector("[data-directory-status]");
+ const input=filter.querySelector("[data-directory-query]");
+ const state=filter.querySelector("[data-directory-state]");
+ const status=filter.querySelector("[data-directory-status]");
  const counter=filter.querySelector("[data-directory-count]"),empty=doc.querySelector("[data-directory-empty]");
  const cards=[...doc.querySelectorAll("[data-city-row]")],groups=[...doc.querySelectorAll("[data-city-group]")];
- populateStates(state,cities);
  function apply(){
-  const matched=filterCities(cities,input?.value||"",state?.value||"",status?.value||"all");
+  const matched=filterCities(cities,input?.value||"",selectedValue(state),selectedValue(status)||"all");
   const included=new Set(matched.map(c=>c.slug));
   let shown=0;
   for(const card of cards){const visible=included.has(card.dataset.city);card.hidden=!visible;if(visible)shown++;}
@@ -114,8 +232,22 @@ function setupDirectory(cities){
   if(empty)empty.hidden=shown!==0;
   if(counter)counter.textContent=shown+" "+(shown===1?"city":"cities")+" shown of "+cities.length;
  }
- input?.addEventListener("input",apply);state?.addEventListener("change",apply);status?.addEventListener("change",apply);
- filter.querySelector("[data-directory-reset]")?.addEventListener("click",()=>{if(input)input.value="";if(state)state.value="";if(status)status.value="all";apply();input?.focus();});
+ const stateDropdown=setupDropdown(state,stateOptions(cities),apply);
+ const statusOptions=[
+   {value:"all",label:"All verification statuses"},
+   {value:"reviewed",label:"Source-reviewed only"},
+   {value:"pending",label:"Research pending only"}
+ ];
+ const statusDropdown=setupDropdown(status,statusOptions,apply);
+ input?.addEventListener("input",apply);
+ filter.querySelector("[data-directory-reset]")?.addEventListener("click",()=>{
+  if(input)input.value="";
+  for(const [dropdown,widget,val] of [[state,stateDropdown,""],[status,statusDropdown,"all"]]){
+   if(dropdown){dropdown.dataset.value=val;dropdown.querySelector("[data-dropdown-label]").textContent=(dropdown===state?"All states":"All verification statuses");}
+   widget?.close();
+  }
+  apply();input?.focus();
+ });
  apply();
 }
 getCities().then(cities=>{
