@@ -908,10 +908,10 @@ window.COOP_CITIES=[
     "name": "Stockton",
     "state": "CA",
     "stateName": "California",
-    "max": "Fowl keeping is permitted only where allowed under the parcel's development-code zoning classification; no universal residential number established",
-    "roosters": "Rooster allowance must be determined from the zoning and nuisance rules",
+    "max": "Only in eligible RL/RM/RH residential zones: Stockton §16.80.060(E) Table 3-14 permits up to 4 hens/ducks per 5,000 sq ft on qualifying parcels (minimum generally 5,000 sq ft, certain existing-lot exceptions). Separate zoning tiers for agricultural/commercial uses.",
+    "roosters": "Roosters/cockerels prohibited inside Stockton city limits under §16.80.060(C),(F)(2), subject to narrow exceptions.",
     "permit": "Check zoning and use permissions under Stockton Development Code",
-    "placement": "Animal confinement and placement subject to the parcel's development-code district",
+    "placement": "Stockton §16.80.060(F): chicken/duck enclosure on side/rear yard, at least 5 ft from property line AND 20 ft from neighboring dwelling; accessory structure rules and screening apply.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -921,7 +921,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "Current Stockton Development Code §16.80.060(E)-(F) Table 3-14 (amended 2025): ordinary hobby chickens in RL/RM/RH zoning have four per 5,000-sq-ft lot unit, with 5-ft LOT LINE and 20-ft adjacent DWELLING restrictions plus separate structure code. Poultry keeping permit requirements not established by this provision.",
     "source": "https://ecode360.com/43675383"
   },
   {
@@ -1538,10 +1538,10 @@ window.COOP_CITIES=[
     "name": "Houston",
     "state": "TX",
     "stateName": "Texas",
-    "max": "Limits and minimum separation depend on lot size and neighboring dwellings under Houston Animal Fowl Ordinance Chapter 6; not a universal 30-chicken residential entitlement",
-    "roosters": "Citywide rooster allowance is not confirmed from this source",
-    "permit": "Check zoning/deed restrictions, animal-nuisance and animal-control code; no universal permit inferred",
-    "placement": "Keeping large numbers of fowl near dwellings, hospitals, schools or churches is regulated by Chapter 6; parcel-specific review is needed",
+    "max": "Houston Code §6-35 sets up to 30 of one listed fowl/animal type and up to 40 combined on a 65×125-ft or smaller enclosure, with larger-enclosure ratio adjustment; the 100-ft nearby-building restriction and §6-39 special exception still apply. Not a blanket residential entitlement.",
+    "roosters": "Roosters/male chickens generally prohibited under Houston §6-38, with narrow government, institutional research and education exceptions.",
+    "permit": "Houston §6-39 creates a SPECIAL revocable permit for up to 7 laying hens only with a physician's certification of serious health need for unfertilized eggs, a 100-ft distance and city inspection; this is not a standard backyard chicken permit.",
+    "placement": "Houston §6-31 generally requires fowl enclosures >=100 ft from another person's residence/habitation, church, school or hospital, measured from the enclosure to that building. This is NOT a property-line setback; exceptions and building code apply.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1551,7 +1551,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "Houston Animal Code Chapter 6 §§6-31,6-35,6-38,6-39 (2014 reform): fowl limits are constrained by 100-ft separation to other buildings; roosters banned with narrow exceptions; seven-hen permit conditional on unusual medical certification, not a normal city chicken license. Parcel/HOA/building approvals still independently required.",
     "source": "https://library.municode.com/tx/houston/codes/code_of_ordinances/322897?nodeId=COOR_CH6ANFO"
   },
   {
@@ -1601,10 +1601,10 @@ window.COOP_CITIES=[
     "name": "Plano",
     "state": "TX",
     "stateName": "Texas",
-    "max": "No universal residential flock cap established from Chapter 4, Article X; the city regulates hens via a permit and housing standards",
-    "roosters": "Residential chicken rules address hens; rooster permission requires separate code review",
-    "permit": "Permit for backyard hens required under City Code Chapter 4 Article X; annual renewal",
-    "placement": "For fewer than 5 chickens, enclosure at least 20 ft from adjacent buildings; for 5 or more, at least 50 ft; verify exact property conditions",
+    "max": "Plano §4-185 permits backyard HENS at property with one lawful dwelling but does not declare an unconditional flock-specific cap. General adult-animal limits §4-81 (usually 10 at a qualifying one-dwelling property) and zoning apply; not an unlimited-hen approval.",
+    "roosters": "Roosters and non-hen fowl prohibited for ordinary residential backyard keeping under §4-185(a); legitimate farms/ranches are separately regulated.",
+    "permit": "Plano §4-185 requires a paid annual backyard-hen permit BEFORE keeping hens, with coop/site plan, approved training, written notarized property-owner permission for tenants and possible inspection; HOA/building approvals separate.",
+    "placement": "Plano §4-29 requires coop/animal enclosure >=20 ft from adjacent buildings for fewer than 5 hens, >=50 ft when 5+ hens (excluding keeper-owned buildings), plus >=4 sq ft coop and >=8 sq ft outdoor exercise area per hen; six-foot fenced protection, accessory-structure standards apply.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1614,7 +1614,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "Plano City Code §§4-29,4-81,4-185; backyard hens require paid annually renewable permit, roosters prohibited, 20/50-ft distance from neighboring buildings depending on flock, with coop/yard minimum areas. Do not imply hens exempt from general adult-animal ceilings without specific confirmation.",
     "source": "https://library.municode.com/tx/plano/codes/code_of_ordinances?nodeId=PTIICOOR_CH4AN_ARTXWIANBELI_S4-183BEP"
   },
   {

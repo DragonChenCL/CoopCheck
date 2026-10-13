@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Houston / Plano / Stockton official code correction (11 fields)
+
+- Focus solely on field-level verification for existing 88 source-reviewed cities: **189/400** claims now supported by precise code/guidance; **163** still source-recorded, **48** in 12 pending cities unverified. No new cities.
+- [Houston City Code Chapter 6](https://library.municode.com/tx/houston/codes/code_of_ordinances/322897?nodeId=COOR_CH6ANFO) §§6-31/35/38/39: 30 fowl species/40 combined on normal-size enclosure subject to a **100-ft NEIGHBOR BUILDING** rule, citywide rooster ban with special institutional exceptions, and an **extraordinary seven-hen medical-necessity permit** (not a routine backyard poultry license).
+- [Stockton current development code §16.80.060](https://ecode360.com/43715373) Table 3-14: ordinary residential RL/RM/RH hobby hen/duck keeping restricted by 4/5,000-sq-ft lot tier, roosters prohibited, both 5-ft **LOT LINE** and 20-ft **NEIGHBOR DWELLING** location constraints. General city registration/building status remains pending.
+- [Plano City Code §§4-29, 4-81 and 4-185](https://library.municode.com/tx/plano/codes/code_of_ordinances?nodeId=PTIICOOR_CH4AN_ARTXWIANBELI_S4-183BEP): no automatic unlimited hens; general adult-animal rule, only hens (not roosters), obligatory annual permit, 20/50-ft distance to adjacent buildings by hen count, coop/outdoor yard and owner approvals required.
+- Evidence matrix and generated city pages corrected. All legal facts remain conditional and must not be represented as zoning/permit approval for a particular address.
+
 ## 2026-10-13 — Field-level audit batch: 47 primary source checks across 18 cities
 
 - User requested completing field verification before expanding to new cities. This pass promoted **47** additional field-specific government code/guidance claims: **178/400 checked, 174 source-recorded, 48 unverified**; city statuses remain 88 source-reviewed and 12 pending/noindex.
