@@ -67,7 +67,11 @@
         "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§8-7(c), 2024 adopted ordinance G-7300 City Council packet p114",
+        "detail": "Official adopted 2024 ordinance keeps unchanged male poultry vocal-noise prohibition with exception for noise-incapable male birds.",
+        "url": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
@@ -211,7 +215,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "Colorado Springs city Accessory Structures guide; Rabbits and Chickens city guidance",
+        "detail": "Detached accessory structure <200sqft generally no Pikes Peak building permit, but zoning/setback/overlay and keeping license remain separate.",
+        "url": "https://coloradosprings.gov/planning-and-development/page/accessory-structures",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -399,7 +407,11 @@
     },
     "vancouver-wa": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "VMC §20.895.050(A),(B)(5)",
+        "detail": "Poultry hobby/personal use permitted no minimum lot size but no numeric ceiling established; roosters prohibited.",
+        "url": "https://vancouver.municipal.codes/VMC/20.895.050",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "primary_clause_checked",
@@ -409,7 +421,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "VMC §20.895.050(A),(B)(5),(E)-(F)",
+        "detail": "City explicitly allows domestic poultry hobby use in all zones subject animal nuisance laws, but separate animal license/coop construction approval unresolved.",
+        "url": "https://vancouver.municipal.codes/VMC/20.895.050",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -487,7 +503,11 @@
     },
     "gilbert-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "Town Code Compliance FAQ: MINIMUM AREA (FOWL AND RODENTS), LDC §2.107 cited",
+        "detail": "Official town FAQ states 25 combined fowl/rodents per lots up to 20000sf, not 25 unconditional hens; latest code and AZ state preemption unresolved.",
+        "url": "https://www.gilbertaz.gov/departments/development-services/plan-review-inspection/inspection-code-compliance/code-compliance/faq-municipal-code-land-development-code",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "source_recorded"
@@ -755,16 +775,32 @@
     },
     "yuma-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§130-075(A)-(C), 2025 Ord O2025-017",
+        "detail": "<=half-acre single-family detached 6 poultry/rodents combined; incremental 20 per additional half-acre, over 2.5 acres no code numeric limit, subject zoning/preemption.",
+        "url": "https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-40706",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§130-076, Ord O2025-017",
+        "detail": "Male birds allowed only when incapable of disturbing vocal noises; not categorical ban.",
+        "url": "https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-40711",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "Zoning §154-05.04(C)(7), SR §154-05.02, animal §130-075",
+        "detail": "R-1-40 permits poultry as principal use, Suburban Ranch separately; 2025 law/AZ preemption may cover eligible other lots; not proof of animal or coop building permit waiver.",
+        "url": "https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-45036",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§130-071(A)-(B), §130-073(A)-(B), Ord O2025-017",
+        "detail": "20ft from neighboring property on <=half acre, 30ft on larger lots; enclosure max200sf and height fence /8ft; 20ft from dwelling elsewhere; state/parcel qualifications.",
+        "url": "https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-40694",
+        "checkedAt": "2026-10-13"
       }
     },
     "prescott-az": {
@@ -1261,16 +1297,32 @@
     },
     "fremont-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§6.10.040, §6.10.130(b) table",
+        "detail": "Eligible residential lots >6,000sf permit six combined FEMALE chickens/rabbits/pigeons/doves and at most two species; precisely <=6,000sf table 0 chickens.",
+        "url": "https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§6.10.030",
+        "detail": "Roosters prohibited on residential-zoned parcels; nonresidential zoning separate.",
+        "url": "https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§6.10.040; Chapter 6.40",
+        "detail": "To exceed normal six combined female animals need animal-fancier permit; ordinary coop building permit separate.",
+        "url": "https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§6.10.130(a)-(b), §6.10.070(f)",
+        "detail": "10 sqft permeable area per chicken; property-line tier table 10/35/50ft depending lot and bird count; no front-yard coop; table/preamble distance reference ambiguity needs manual confirmation.",
+        "url": "https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html",
+        "checkedAt": "2026-10-13"
       }
     },
     "santa-rosa-ca": {
@@ -1301,16 +1353,32 @@
     },
     "escondido-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§33-95 Table 33-95a, notes *, §33-116",
+        "detail": "R-A/R-E max 25 domesticated fowl across kinds, R-1 six hens, other residential categories blank; split parcels halve totals.",
+        "url": "https://ecode360.com/43265438",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§33-95 Table 33-95a Roosters row and notes **",
+        "detail": "R-A 1–2 by acreage; R-E 1 only via CUP; R-1 no rooster allowance.",
+        "url": "https://ecode360.com/43265438",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§33-95 Table 33-95a; §33-94 commercial use table",
+        "detail": "R-E rooster requires CUP, commercial R-A poultry egg production separately conditional; allowed backyard hens not automatically free from construction permits.",
+        "url": "https://ecode360.com/43265438",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§33-95 accessory enclosure table; §33-102(a)-(b)",
+        "detail": "Animal buildings/enclosures accessory only subject §§33-144,145; detached/attached structures have parcel-specific setbacks, not a universal one.",
+        "url": "https://ecode360.com/43265438",
+        "checkedAt": "2026-10-13"
       }
     },
     "aurora-co": {
@@ -1739,7 +1807,11 @@
     },
     "bellevue-wa": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "LUC §20.20.130(B), animal table row 1 and note (4)",
+        "detail": "Six fowl ordinary household pets, over six small domestic; publisher Ordinance 6930 pending codification.",
+        "url": "https://bellevue.municipal.codes/LUC/20.20.130",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "source_recorded"
@@ -1748,7 +1820,11 @@
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "LUC §20.20.130(B), housing structure setbacks rows 1–2",
+        "detail": "Housing structure setbacks 15ft from lot line for household pets, 25ft for larger small-domestic category; fenced free-roam exception does not waive structures; Ord6930 pending.",
+        "url": "https://bellevue.municipal.codes/LUC/20.20.130",
+        "checkedAt": "2026-10-13"
       }
     },
     "kent-wa": {
@@ -1971,7 +2047,11 @@
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "section": "§7-7.3(d)(2),(e), 7/2026 S-33",
+        "detail": "20ft from neighboring property line is for legally excepted rooster enclosures ONLY, not ordinary hen coops; straight line and alley width measurement.",
+        "url": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613",
+        "checkedAt": "2026-10-13"
       }
     },
     "san-antonio-tx": {

@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (44 general summaries; 44 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **226**; 126 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **246**; 106 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -11,23 +11,23 @@ Four fields per city: 400. Independently matched to specific current official ci
 |---|---|---|---|---|---|
 | Chandler, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Mesa, AZ | verified_limited_scope | Clause checked | Clause/guidance checked | Source; permit unconfirmed | Clause checked, state preemption unresolved |
-| Phoenix, AZ | verified | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
+| Phoenix, AZ | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Clause/guidance checked |
 | San Diego, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Sacramento, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Colorado Springs, CO | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Colorado Springs, CO | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Portland, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Eugene, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Salem, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Gresham, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Seattle, WA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Spokane, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Vancouver, WA | verified_limited_scope | Source; clause pending | Clause checked | Source; clause pending | Source; clause pending |
+| Vancouver, WA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
 | Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
 | Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Fort Worth, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Gilbert, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Gilbert, AZ | verified_limited_scope | Clause/guidance checked | Source; clause pending | Source; clause pending | Source; clause pending |
 | Scottsdale, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
 | Glendale, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Peoria, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
@@ -41,7 +41,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Oro Valley, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Marana, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Casa Grande, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Yuma, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Yuma, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Prescott, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Prescott Valley, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Lake Havasu City, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -64,9 +64,9 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Roseville, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Folsom, CA | verified_limited_scope | Clause checked | Source; clause pending | Clause checked | Clause checked |
 | Berkeley, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Fremont, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Fremont, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Santa Rosa, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
-| Escondido, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Escondido, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Aurora, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Boulder, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fort Collins, CO | verified_limited_scope | Source; clause pending | Source; clause pending | Clause checked | Source; clause pending |
@@ -85,7 +85,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Lake Oswego, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked (manual siting required) |
 | Tigard, OR | verified_limited_scope | Clause checked (no numeric cap in cited chapter) | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Tacoma, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Bellevue, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Bellevue, WA | verified_limited_scope | Clause/guidance checked | Source; clause pending | Source; clause pending | Clause/guidance checked |
 | Kent, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Renton, WA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Everett, WA | verified_limited_scope | Clause checked | Clause checked (license trigger only) | Clause checked | Clause checked |
@@ -94,7 +94,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Yakima, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Redmond, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Houston, TX | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
-| Dallas, TX | verified_limited_scope | Source; clause pending | Clause/guidance checked | Source; clause pending | Source; clause pending |
+| Dallas, TX | verified_limited_scope | Source; clause pending | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | San Antonio, TX | verified | City guidance checked (§5-107) | City guidance checked (§5-107) | City guidance checked (excess permit) | Source; clause pending |
 | Plano, TX | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Frisco, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked |
@@ -210,3 +210,32 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 - **Lake Oswego OR placement**: [current Chickens and Roosters FAQ](https://www.ci.oswego.or.us/zh-hans/publicaffairs/chickens-and-roosters) states **coop construction is regulated** and instructs residents to ask Planning (503-635-0290) which setbacks apply to a given parcel. No universal numeric setback and no permission to put coop directly on a boundary are established. Placement remains manual.
 - **Lakewood CO significant correction**: [official 2026 referenda resolutions](https://www.lakewoodco.gov/Local-Government/Departments/City-Clerks-Office/City-Council-Ordinances-Resolutions/2026-Resolutions) include R-2026-09 (O-2025-28: replacing **Article 4**); [April 2026 reporting](https://denverite.com/2026/04/07/lakewood-special-election-results/) describes voters rejecting the zoning rewrite. The previously linked 2025 Article 4 PDF cannot be assumed to be October 2026 operative law. City profile numeric flock, rooster and placement claims are WITHHELD, city review downgraded to limited-scope; the separate official Small Animal Permit application remains established. No field marked newly verified for Lakewood.
 - Evidence advances **+2 to 226/400**, **126 source-recorded**, **48 unverified**. **88 summaries source reviewed (44 general/44 limited-scope), 12 pending/noindex**. No new cities and no property-wide approval.
+
+## 2026-10-13 — One-batch review of exactly 20 source-recorded rule fields
+
+All 20 entries below were upgraded with official current city code or municipal guidance, preserved narrow permit/zoning applicability and no parcel-wide approval. **246/400 checked, 106 source-recorded, 48 unverified**, 88 reviewed-city summaries and 12 paused/noindex cities unchanged.
+
+| City | Field | Exact clause/guidance | Official source |
+|---|---|---|---|
+| Fremont, CA | `max` | §6.10.040, §6.10.130(b) table | [official code](https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html) |
+| Fremont, CA | `roosters` | §6.10.030 | [official code](https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html) |
+| Fremont, CA | `permit` | §6.10.040; Chapter 6.40 | [official code](https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html) |
+| Fremont, CA | `placement` | §6.10.130(a)-(b), §6.10.070(f) | [official code](https://www.codepublishing.com/CA/Fremont/html/Fremont06/Fremont0610.html) |
+| Escondido, CA | `max` | §33-95 Table 33-95a, notes *, §33-116 | [official code](https://ecode360.com/43265438) |
+| Escondido, CA | `roosters` | §33-95 Table 33-95a Roosters row and notes ** | [official code](https://ecode360.com/43265438) |
+| Escondido, CA | `permit` | §33-95 Table 33-95a; §33-94 commercial use table | [official code](https://ecode360.com/43265438) |
+| Escondido, CA | `placement` | §33-95 accessory enclosure table; §33-102(a)-(b) | [official code](https://ecode360.com/43265438) |
+| Bellevue, WA | `max` | LUC §20.20.130(B), animal table row 1 and note (4) | [official code](https://bellevue.municipal.codes/LUC/20.20.130) |
+| Bellevue, WA | `placement` | LUC §20.20.130(B), housing structure setbacks rows 1–2 | [official code](https://bellevue.municipal.codes/LUC/20.20.130) |
+| Vancouver, WA | `max` | VMC §20.895.050(A),(B)(5) | [official code](https://vancouver.municipal.codes/VMC/20.895.050) |
+| Vancouver, WA | `permit` | VMC §20.895.050(A),(B)(5),(E)-(F) | [official code](https://vancouver.municipal.codes/VMC/20.895.050) |
+| Yuma, AZ | `max` | §130-075(A)-(C), 2025 Ord O2025-017 | [official code](https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-40706) |
+| Yuma, AZ | `roosters` | §130-076, Ord O2025-017 | [official code](https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-40711) |
+| Yuma, AZ | `permit` | Zoning §154-05.04(C)(7), SR §154-05.02, animal §130-075 | [official code](https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-45036) |
+| Yuma, AZ | `placement` | §130-071(A)-(B), §130-073(A)-(B), Ord O2025-017 | [official code](https://codelibrary.amlegal.com/codes/yuma/latest/yuma_az/0-0-0-40694) |
+| Phoenix, AZ | `roosters` | §8-7(c), 2024 adopted ordinance G-7300 City Council packet p114 | [official code](https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630) |
+| Dallas, TX | `placement` | §7-7.3(d)(2),(e), 7/2026 S-33 | [official code](https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613) |
+| Gilbert, AZ | `max` | Town Code Compliance FAQ: MINIMUM AREA (FOWL AND RODENTS), LDC §2.107 cited | [official code](https://www.gilbertaz.gov/departments/development-services/plan-review-inspection/inspection-code-compliance/code-compliance/faq-municipal-code-land-development-code) |
+| Colorado Springs, CO | `permit` | Colorado Springs city Accessory Structures guide; Rabbits and Chickens city guidance | [official code](https://coloradosprings.gov/planning-and-development/page/accessory-structures) |
+
+**Exceptions:** Fremont 6,000-sqft boundary and combined species, Escondido conditional rooster permit in R-E, Bellevue pending Ord 6930, Vancouver no assumed livestock coop setback, Yuma 2025 code and AZ state preemption, Phoenix unchanged adopted rooster-noise clause, Dallas rooster-only coop 20ft rule, Gilbert 25 combined fowl/rodent FAQ not automatically zone clearance, Colorado Springs <200sqft building threshold not animal-permit waiver.

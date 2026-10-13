@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Batch of 20 official poultry legal claims
+
+- Exactly **20** official code or specific government-guidance field matches on 9 existing cities; progress **246/400**, **106 source_recorded**, **48 unverified**. City statuses 88 partial source-reviewed, 12 pending/noindex unchanged.
+- Fremont 4, Escondido 4, Bellevue 2, Vancouver 2, Yuma 4, Phoenix 1, Dallas 1, Gilbert 1, Colorado Springs 1.
+- Safeguards: Fremont 6k threshold, Escondido rooster CUP, Bellevue 6930 pending, Vancouver livestock barn rule not poultry, Yuma 2025 code and state preemption, Phoenix 2024 adopted text, Dallas rooster-only distance, Gilbert combined fowl/rodent FAQ, Colorado Springs construction-versus-keeping approval. Details in POLICY_COMPLETENESS_2026-10-13.md and site/data/policy-evidence.json.
+
+
 ## 2026-10-13 — City operative-law correction and two scoped construction checks
 
 - **+2 claim-specific government-source mappings:** **226/400 checked, 126 source recorded, 48 unverified**; 88 source-reviewed profiles remain, 12 paused cities remain noindex. Overall reviewed categories now 44 general and 44 limited-scope.

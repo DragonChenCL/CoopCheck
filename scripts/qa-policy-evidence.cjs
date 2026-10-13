@@ -87,4 +87,13 @@ for(const k of ["max","roosters","placement"])assert.equal(e.cities["lakewood-co
 assert(lakewood.max.includes("2026 CURRENT LAW NOT CLEARED")&&lakewood.roosters.includes("2026 CURRENT LAW NOT CLEARED"),"No numeric reliance on pre-vote 2025 zoning document");
 assert(lakewood.planner.mode==="manual","Lakewood cannot auto clear site");
 assert.equal(e.cities["lakewood-co"].permit.status,"primary_clause_checked","Lakewood current city application fact preserved");
+// 2026-10-13 twenty-claim municipal source evidence guard
+for(const slug of ["fremont-ca","escondido-ca","yuma-az"])for(const k of keys)assert.equal(e.cities[slug][k].status,"primary_clause_checked",slug+"/"+k);
+for(const [slug,k] of [["bellevue-wa","max"],["bellevue-wa","placement"],["vancouver-wa","max"],["vancouver-wa","permit"],["phoenix-az","roosters"],["dallas-tx","placement"],["gilbert-az","max"],["colorado-springs-co","permit"]])assert.equal(e.cities[slug][k].status,"primary_clause_checked",slug+"/"+k);
+assert(bySlug["fremont-ca"].max.includes("COMBINED"),"Fremont combined fowl and species");
+assert(bySlug["escondido-ca"].permit.includes("CONDITIONAL USE PERMIT"),"Escondido R-E rooster CUP");
+assert(bySlug["bellevue-wa"].max.includes("6930"),"Bellevue pending legislation");
+assert(bySlug["dallas-tx"].placement.includes("NOT a universal"),"Dallas rooster rule not hen rule");
+assert(bySlug["yuma-az"].placement.includes("NEIGHBORING PROPERTY"),"Yuma lotline not neighbor dwelling");
+assert(bySlug["vancouver-wa"].placement.includes("cannot automatically"),"Vancouver livestock chicken distinction");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
