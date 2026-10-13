@@ -324,7 +324,7 @@ window.COOP_CITIES=[
     "roosters": "Check current city animal/noise rules",
     "permit": "Verify enclosure/building requirements for the property",
     "placement": "Current Austin City Code §3-2-16(A)-(E) applies to ANY fowl enclosure, not just 2+ chickens: secure four-sided covered coop, at least 30 ft from adjacent residence/business building other than keeper's own. If birds/coop create a HEALTH HAZARD, at least 50 ft. These are building separations, not property-line offsets; fences and local building/zoning rules separately apply.",
-    "verified": "2026-10-12",
+    "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
       "side": 0,
