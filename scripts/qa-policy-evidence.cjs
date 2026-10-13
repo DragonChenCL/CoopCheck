@@ -44,4 +44,11 @@ for(const key of keys)assert.equal(e.cities["santa-ana-ca"][key].status,"primary
 assert(bySlug["santa-ana-ca"].max.includes("COMBINATION"),"Santa Ana combined fowl/rabbit cap must not be misrepresented");
 assert(bySlug["fresno-ca"].max.includes("36,000")&&bySlug["fresno-ca"].max.includes("GREATER"),"Fresno zoning threshold must not be collapsed into blanket residential ban");
 for(const k of ["max","roosters","placement"])assert.equal(e.cities["fresno-ca"][k].status,"primary_clause_checked","Fresno precise official code missing "+k);
+// Keep source-specific negative findings narrow: no generic permit/rooster/setback clearance.
+assert.equal(e.cities["bellingham-wa"].max.status,"primary_clause_checked");
+assert(bySlug["bellingham-wa"].max.includes("DOES NOT"),"Bellingham must not imply unlimited hens");
+assert.equal(e.cities["frisco-tx"].placement.status,"primary_clause_checked");
+assert(bySlug["frisco-tx"].placement.includes("LIVESTOCK"),"Frisco livestock setbacks must not be copied onto fowl");
+assert.equal(e.cities["fort-collins-co"].permit.status,"primary_clause_checked");
+assert(bySlug["fort-collins-co"].permit.includes("$30")&&bySlug["fort-collins-co"].permit.includes("inspection"),"Fort Collins coop license/inspection must be stated");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

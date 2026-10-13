@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Bellingham / Frisco / Fort Collins scoped field evidence
+
+- Resolved **three** previously `source_recorded` claims; count **207/400 primary checked, 145 source-recorded, 48 unverified** (12 paused city profiles). No city statuses, indexing or planner modes changed.
+- [Bellingham 2026-current §7.12.060(A)](https://bellingham.municipal.codes/BMC/7.12.060): expressly permits confined chickens absent another banning ordinance, but **section does not establish a numeric limit**. Earlier 50-ft separation is measured to buildings habitually occupied/worked in, **NOT lot lines**. Rooster, permit and broader zoning status still unresolved.
+- [Frisco §§14-17/18](https://ecode360.com/38315318): gallinaceous fowl need sanitary enclosed conditions; the 100-ft dwelling proximity in §14-16(d) is within **small/large livestock section**, not automatically applicable to poultry. No universal fowl-specific lot-line setback or no-permit exemption established.
+- [Fort Collins NOCO Humane](https://www.nocohumane.org/requirements/): city's contracted animal protection agency specifically requires $30 one-time coop license and pre-issuance inspection for chicken/duck housing. Separate construction and zoning permits remain undecided; number/rooster/location still await exact current municipal Chapter 4 text.
+
 ## 2026-10-13 — Fresno material law correction
 
 - [Fresno current Code §15-2707](https://library.municode.com/CA/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC) clarifies residential land-size tiers. Poultry prohibited as a household pet on typical <=36,000-sq-ft residential lot but allowed (up to twelve/gross acre) on larger qualifying lots. City roosters prohibited except accredited zoo, and enclosure on eligible residential lot >=40ft from lot lines AND >=50ft from neighbor residential structure. Prior blanket prohibition on ALL residential parcels was wrong; corrected. Permit remains unresolved without an affirmative source.

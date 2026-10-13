@@ -1099,7 +1099,7 @@ window.COOP_CITIES=[
     "stateName": "Colorado",
     "max": "City guidance confirms backyard poultry allowed for household use; no numerical cap established by the cited city project guidance",
     "roosters": "Rooster-specific rule should be checked under Municipal Code Chapter 4",
-    "permit": "Check city animal code and coop building/zoning requirements",
+    "permit": "NOCO Humane, Fort Collins' contracted Animal Protection & Control agency, requires a one-time $30 chicken/duck COOP LICENSE and an enclosure inspection BEFORE licensing. Separate zoning, building and HOA permissions may apply.",
     "placement": "No numerical setback established by the city's common-project guidance",
     "verified": "2026-10-13",
     "planner": {
@@ -1110,7 +1110,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "Fort Collins City common-project guide allows domestic backyard poultry, but it DOES NOT establish citywide flock numbers or rooster and placement conditions. The city's contracted Animal Protection & Control provider NOCO Humane confirms a required coop license, $30 one-time fee, and enclosure inspection in its 2026 licensing guide. Other fields remain for Chapter 4 law review.",
     "source": "https://www.fortcollins.gov/Government/City-Code-and-Charter/Building-Code/Rules-for-Common-Projects"
   },
   {
@@ -1475,7 +1475,7 @@ window.COOP_CITIES=[
     "name": "Bellingham",
     "state": "WA",
     "stateName": "Washington",
-    "max": "Bellingham Municipal Code §7.12.060 permits confined domestic fowl, including chickens, inside city limits, subject to other ordinances. This section states no universal number of hens.",
+    "max": "Bellingham Code §7.12.060(A) allows securely confined domestic fowl including chickens subject to other municipal ordinances; that specific provision DOES NOT state a numeric flock cap. This does not establish an unlimited citywide allowance.",
     "roosters": "Section 7.12.060 does not conclusively establish current rooster restrictions; check applicable noise/nuisance and zoning rules.",
     "permit": "The cited animal-keeping section does not establish a universal poultry permit requirement or exemption. Verify zoning and building provisions for a specific lot.",
     "placement": "Animals must be securely enclosed and kept at least 50 feet from any dwelling or other building where people regularly work or stay, under §7.12.060(A). This is a building-distance rule, not a property-line setback.",
@@ -1488,7 +1488,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official Bellingham Municipal Code §7.12.060(A), current through Ordinance 2026-08-022 (Aug 24, 2026). Domestic fowl allowed subject to secure enclosure and 50-ft separation from qualifying buildings. Bird count, rooster-specific provisions, permits and separate zoning conditions are NOT established by this section.",
+    "note": "City Code §7.12.060(A), current through Aug. 24, 2026: enclosed domestic fowl allowed unless otherwise forbidden, 50 ft from occupied/work buildings (not a lot-line distance). The section itself has NO numeric limit. Specific rooster, animal/structure permit, noise, zoning and later amendments still to be checked.",
     "source": "https://bellingham.municipal.codes/BMC/7.12.060"
   },
   {
@@ -1625,7 +1625,7 @@ window.COOP_CITIES=[
     "max": "No more than 12 gallinaceous fowl in one enclosure under §14-17",
     "roosters": "Male gallinaceous fowl prohibited unless kept on a property of 1 acre or more (affirmative-defense exception)",
     "permit": "Confirm zoning and enclosure building standards; no general backyard-fowl permit established by cited section",
-    "placement": "Fowl must be maintained in sanitary enclosures; no universal property-line coop setback is substantiated by §14-17 alone",
+    "placement": "Frisco §§14-17(b),14-18 require clean, secure, sanitary gallinaceous-fowl enclosures that avoid nuisances. These poultry provisions do NOT supply a universal numeric coop setback. §14-16(d)'s 100-ft rule concerns small/large LIVESTOCK, and should not automatically be transferred to fowl; verify zoning/building conditions separately.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1635,7 +1635,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "Current Frisco Chapter 14 §§14-17, 14-18: at most 12 gallinaceous fowl in one combined enclosure, qualified >=1-acre defense for male fowl, mandatory enclosure sanitation. §14-16 livestock 100-ft proximity rule is not a proven poultry coop setback; building/zoning and poultry licensing separately unresolved.",
     "source": "https://ecode360.com/38315318"
   },
   {
