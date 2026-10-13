@@ -2586,11 +2586,11 @@
       "name": "Bend",
       "state": "OR",
       "stateName": "Oregon",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
-      "verified": null,
+      "max": "On eligible residential parcels of 5,000 sq ft or more, no more than FOUR chickens (hens) and/or rabbits combined under Bend Development Code §3.6.300(I); this does not establish allowance on smaller parcels.",
+      "roosters": "Roosters are not allowed within the cited §3.6.300(I) residential farm-animal accessory use; confirm parcel zoning.",
+      "permit": "Specific chicken-keeping permit and any separate building/accessory-structure approval are NOT established by the cited section; ask Bend Planning before getting birds or building.",
+      "placement": "No universal chicken-coop lot-line or neighboring-dwelling setback confirmed. The prior chapter's 15/25-ft rules expressly discuss structures for LARGE farm animals and must not be copied to hen coops.",
+      "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2599,23 +2599,26 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
-      "audit": {
-        "status": "needs_review",
-        "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
-        "secondPass": {
-          "status": "researched_not_proven",
-          "channels": [
-            "municipal government website",
-            "municipal code publisher / ordinance amendments",
-            "planning / animal control / state preemption",
-            "secondary cross-check only (not sufficient for publication)"
-          ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+      "note": "Scope limited to Bend Development Code §3.6.300(I) hens/rabbits on residential parcels >=5,000 sq ft and rooster prohibition. September 2026 adopted Ordinance NS-2560 did not identify an amendment to subsection (I), but direct current code/site zoning and any permit, building, or hen-coop placement rules require confirmation. Not parcel compliance approval.",
+      "sources": [
+        {
+          "type": "current_municipal_code_or_public_agency_guidance",
+          "url": "https://bend.municipal.codes/BDC/3.6.300"
+        },
+        {
+          "type": "city_adopted_ordinance",
+          "url": "https://bendoregon.gov/wp-content/uploads/2026/09/NS-2560-Ordinance.pdf"
+        },
+        {
+          "type": "city_hosted_chapter_reference",
+          "url": "https://bendoregon.gov/wp-content/uploads/2025/12/Juniper_Ridge_Overlay_Use_Table_20200514-REVISED.pdf"
         }
+      ],
+      "audit": {
+        "status": "verified_limited_scope",
+        "reviewedAt": "2026-10-13",
+        "verificationMethod": "Current code publisher indexed wording cross-referenced with city-hosted chapter text and September 2026 adopted amendment; only two specific fields supported.",
+        "note": "Bend BDC §3.6.300(I): four combined hens/rabbits on residential parcels >=5,000 sq ft; no roosters. Permit and chicken-coop setbacks NOT independently established; planner stays manual."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -3233,7 +3236,7 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply.",
+      "note": "San Antonio ACS government guidance confirms eight domestic fowl per residence including at most one rooster without an excess-fowl permit. CURRENT municipal Chapter 5 table of contents identifies §5-107 as animal limits/excess permit and §5-109 as pet shop license. ACS informational page still incorrectly points to §5-109 for fowl totals; cite the governing §5-107 instead. The 24-sq-ft / 6-sq-ft-per-bird enclosure and any increase beyond eight still need parcel/building/zoning confirmation.",
       "sources": [
         {
           "type": "official_permit_form",
@@ -3242,12 +3245,20 @@
         {
           "type": "city_permit_fees",
           "url": "https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits/Fees"
+        },
+        {
+          "type": "current_city_animal_control_guidance",
+          "url": "https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits"
+        },
+        {
+          "type": "city_code_section_index",
+          "url": "https://library.municode.com/tx/san_antonio/codes/code_of_ordinances?nodeId=PTIICO_CH5AN"
         }
       ],
       "audit": {
         "status": "verified",
         "reviewedAt": "2026-10-13",
-        "note": "San Antonio Animal Care Services' current official excess-animal permit instructions reproduce §5-109's baseline 8-fowl limit, rooster allowance and enclosure requirements; neighborhood and building constraints still apply."
+        "note": "San Antonio ACS government guidance confirms eight domestic fowl per residence including at most one rooster without an excess-fowl permit. CURRENT municipal Chapter 5 table of contents identifies §5-107 as animal limits/excess permit and §5-109 as pet shop license. ACS informational page still incorrectly points to §5-109 for fowl totals; cite the governing §5-107 instead. The 24-sq-ft / 6-sq-ft-per-bird enclosure and any increase beyond eight still need parcel/building/zoning confirmation."
       },
       "rollout": {
         "batch": "first-100-2026-10",
