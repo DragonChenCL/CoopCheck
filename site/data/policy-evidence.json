@@ -107,30 +107,58 @@
     },
     "san-diego-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens",
+        "section": "City of San Diego Chickens / Municipal Code §42.0709, Summary of Regulations",
+        "detail": "5 chickens with the coop outside all zone setbacks; up to 15 if ≥15 ft from all lot lines and outside required zone setbacks; up to 25 if at least 50 ft from any residential building. Higher numbers may depend on the exact zone/parcel.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens",
+        "section": "City of San Diego Chickens / Municipal Code §42.0709",
+        "detail": "No roosters permitted under the city chicken rules.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens",
+        "section": "City of San Diego Chickens / Municipal Code §42.0709, General 5-hen example",
+        "detail": "Typical five-hen setup uses rear-yard coop, ≥5 ft side and ≥13 ft rear setbacks, but setbacks are zone-specific. At 15 and 25 birds alternative distances apply; a fenced outdoor enclosure needs ≥10 sq ft per bird.",
+        "checkedAt": "2026-10-13"
       }
     },
     "sacramento-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license",
+        "section": "City of Sacramento Poultry License and Permit, Requirements for owning and housing poultry",
+        "detail": "Maximum three chickens per residential parcel.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license",
+        "section": "City of Sacramento Poultry License and Permit, Requirements for owning and housing poultry",
+        "detail": "Roosters prohibited.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license",
+        "section": "City of Sacramento Poultry License and Permit, Fees for poultry licensing and coop permit",
+        "detail": "Annual chicken license at $20 per chicken plus annual coop permit of $47 on the current city web page. Older PDF applications show $15/$30 and are stale; confirm at payment time.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license",
+        "section": "City of Sacramento Poultry License and Permit, coop requirements",
+        "detail": "Coop in rear yard, ≥20 ft from nearest neighboring dwelling, between 15 and 42 sq ft, with four walls, roof, nesting boxes and sanitation/enclosure conditions.",
+        "checkedAt": "2026-10-13"
       }
     },
     "denver-co": {
@@ -373,16 +401,28 @@
     },
     "fort-worth-tx": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl",
+        "section": "Fort Worth Requirements for roosters and fowl, lot-size tiers",
+        "detail": "≤½ acre: up to 12 total fowl; >½ acre but <1 acre: up to 25; >1 acre: up to 50. The exact 1-acre boundary is not expressly addressed by these quoted bands; get municipal confirmation.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl",
+        "section": "Fort Worth Requirements for roosters and fowl, lot-size tiers",
+        "detail": "At most two roosters as part of the total fowl allowance, subject to nuisance noise restrictions (no frequent/repetitive/continuous noise for 10 minutes or longer).",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl",
+        "section": "Fort Worth Requirements for roosters and fowl, pens/coops",
+        "detail": "Fowl kept secured in pens/coops more than 50 ft from any regulated structure (third-party habitation, school, hospital, daycare, restaurant etc.). This is NOT a simple 50-ft property-line rule.",
+        "checkedAt": "2026-10-13"
       }
     },
     "gilbert-az": {

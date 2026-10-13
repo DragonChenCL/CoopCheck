@@ -1,5 +1,14 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Three more official-city field reviews
+
+- Official references: San Diego §42.0709 (flock, rooster, placement); Sacramento city poultry licensing page (four fields); Fort Worth fowl ordinance summary (flock, rooster, placement).
+- 10 newly documented fields, now **60 / 400** with 288 source-recorded and 52 unverified. Source links and section details attached to each field.
+- Detected Sacramento outdated application PDF fees ($15/$30) versus current city web prices ($20 per chicken/$47 coop permit). Added audit caveat and avoided quoting stale PDF as current.
+- Fort Worth fowl tier at exactly one acre is ambiguous in the city summary. Kept this explicit; no universal property-line setback or all-clear for construction claimed.
+- Bend and the other 13 pending cities remain noindex while material zoning, permit and legal-citation gaps are resolved.
+
+
 ## 2026-10-13 — Salem / Tempe official clause checks and Bend amended code comparison
 
 - Official city pages checked: Salem SRC §50.710, Tempe ZDC §3-404(I); added **seven** field-specific mappings (Salem four, Tempe three).

@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **50**; 298 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **60**; 288 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -13,8 +13,8 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Mesa, AZ | verified_limited_scope | Clause checked | Clause/guidance checked | Source; permit unconfirmed | Clause checked, state preemption unresolved |
 | Phoenix, AZ | verified | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
 | Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
-| San Diego, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Sacramento, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| San Diego, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Sacramento, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
 | Colorado Springs, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Portland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -26,7 +26,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Vancouver, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
 | Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Fort Worth, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Fort Worth, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Gilbert, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Scottsdale, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Glendale, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -160,3 +160,9 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 **Salem, Oregon.** The official city [Poultry Keeping Rules](https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules) document four independently identifiable claims under SRC 50.710: 12 total poultry, no roosters, no general poultry-keeping permit, and facility in the rear yard 3 ft from other buildings on the lot / 25 ft from an adjacent residence, plus a 120-sq-ft roofed-coop maximum. This permit result does not absolve building permits. Residential Agriculture (RA) lots ≥10,000 sq ft and EFU parcels may be exempt, so parcel zoning is still material.
 
 **Tempe, Arizona.** The city [Animal Quantities / §3-404(I)](https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities) explicitly specifies six domestic chickens on eligible single-family residential lots, no roosters except AG zoning, and discretionary Use Permit §6-308 for numbers beyond the standard cap. This is not a verified universal enclosure building permit or property-line setback. §3-404(I)(8) adds a fence/wall-height constraint for enclosures on lots under one acre, but does not by itself prove a universal setback.
+
+## 2026-10-13 — San Diego / Sacramento / Fort Worth authoritative sources
+
+- San Diego: [city urban-farming chicken guidance](https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens) and municipal §42.0709 specify the conditional 5/15/25 chicken tiers, no roosters, and distinct property-line vs neighboring-residence placement measurements. The typical five-hen 5-ft side/13-ft rear example is zone-dependent; structure permits are not universally resolved.
+- Sacramento: [current city animal-care licensing page](https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license) specifies three chickens, no roosters, current annual **$20 per chicken + $47 coop permit**, and a rear-yard coop 20 ft from a neighboring dwelling. An older city PDF application still quotes $15/$30: **the online page and legacy PDF disagree**; use the city's current fee guidance and verify before payment.
+- Fort Worth: [city Roosters and Fowl guidance](https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl) specifies size-tiered totals of 12 / 25 / 50 fowl, maximum two roosters, and pen/coop more than 50 ft from a regulated structure. The city's published text does not explicitly resolve the exactly-1-acre band; do not invent the threshold or a building-permit exemption.
