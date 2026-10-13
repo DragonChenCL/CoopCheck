@@ -34,4 +34,8 @@ for(const slug of ["santa-rosa-ca","yakima-wa","kent-wa","elk-grove-ca"]){for(co
 for(const slug of ["houston-tx","plano-tx"]){for(const key of keys)assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+"/"+key+" official code not verified");}
 assert(bySlug["houston-tx"].permit.includes("physician"),"Houston special permit may not be generalized");
 assert(bySlug["stockton-ca"].placement.includes("20 ft")&&bySlug["stockton-ca"].placement.includes("5 ft"),"Stockton lot-vs-dwelling distance distinction missing");
+assert(bySlug["redmond-wa"].max.includes("5,500")&&bySlug["redmond-wa"].max.includes("overlap"),"Redmond current 2025-amended NR lot limits must not be stale");
+assert(e.cities["redmond-wa"].placement.url==="https://redmond.municipal.codes/RMC/7.04.157","Redmond placement requires current operative code");
+assert(bySlug["everett-wa"].max.includes("10,000")&&bySlug["everett-wa"].max.includes("overlap"),"Everett tier boundary caveat missing");
+assert(e.cities["lakewood-co"].permit.status==="primary_clause_checked","Lakewood permitted-zone application evidence lost");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
