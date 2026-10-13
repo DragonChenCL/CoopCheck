@@ -28,7 +28,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Fort Worth, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Gilbert, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Scottsdale, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Scottsdale, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
 | Glendale, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Peoria, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Surprise, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
@@ -36,8 +36,8 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Avondale, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Buckeye, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Queen Creek, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Tucson, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Flagstaff, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Tucson, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Flagstaff, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Clause/guidance checked | Clause/guidance checked |
 | Oro Valley, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Marana, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Casa Grande, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -56,16 +56,16 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Riverside, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Irvine, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Anaheim, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Long Beach, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Long Beach, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Santa Ana, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Stockton, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Modesto, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Elk Grove, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Elk Grove, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Roseville, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Folsom, CA | verified_limited_scope | Clause checked | Source; clause pending | Clause checked | Clause checked |
 | Berkeley, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fremont, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Santa Rosa, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Santa Rosa, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Escondido, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Aurora, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Boulder, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
@@ -73,7 +73,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Lakewood, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Arvada, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Thornton, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Westminster, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Westminster, CO | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Pueblo, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Longmont, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Beaverton, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -82,26 +82,26 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Medford, OR | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Ashland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Corvallis, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Lake Oswego, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Tigard, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Tacoma, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Lake Oswego, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
+| Tigard, OR | verified_limited_scope | Source; clause pending | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Tacoma, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Bellevue, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Kent, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Kent, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Renton, WA | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Everett, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Everett, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Clause/guidance checked | Source; clause pending |
 | Olympia, WA | verified_limited_scope | Clause checked | Clause checked | Source; permit still pending | Clause checked |
 | Bellingham, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
-| Yakima, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Yakima, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Redmond, WA | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
 | Houston, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Dallas, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Dallas, TX | verified_limited_scope | Source; clause pending | Clause/guidance checked | Source; clause pending | Source; clause pending |
 | San Antonio, TX | verified | City guidance checked (§5-107) | City guidance checked (§5-107) | City guidance checked (excess permit) | Source; clause pending |
 | Plano, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Frisco, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Irving, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Frisco, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
+| Irving, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Garland, TX | verified_limited_scope | Clause checked | Clause checked | Source; permits still pending | Clause checked |
-| McKinney, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Denton, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| McKinney, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
+| Denton, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | El Paso, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Round Rock, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
 | New York City, NY | verified_limited_scope | Source; clause pending | Clause checked | Source; clause pending | Source; clause pending |
