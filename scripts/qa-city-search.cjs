@@ -34,4 +34,21 @@ for(const marker of ['data-directory-filter','data-directory-query','data-direct
 assert.equal((directory.match(/data-city-row/g)||[]).length,100,"directory has all 100 static city cards for non-JS fallback");
 assert(!home.includes("18 city rule pages"),"old city count removed");
 assert(!home.includes("assets/app.js"),"old huge city-card renderer removed");
+const premiumAssets=[
+ "site/assets/logo-mark.svg","site/assets/favicon.svg",
+ "site/assets/hero-aerial.svg","site/assets/hero-mini-coop.svg",
+ "site/assets/homepage-motion.js"
+];
+for(const file of premiumAssets){assert(read(file).length>100,"missing design asset: "+file);}
+for(const hook of ['data-search-submit','cc-app-window','cc-map-preview','cc-float-proof','cc-float-lot','cc-float-coop','cc-hero-trust']){
+ assert(home.includes(hook),"premium homepage hook missing: "+hook);
+}
+assert(home.includes("prefers")===false,"reduced-motion support belongs in styles and motion script");
+assert(read("site/assets/style.css").includes("@media(prefers-reduced-motion:reduce)"),"motion must respect reduced-motion");
+assert(read("site/assets/homepage-motion.js").includes("prefers-reduced-motion"),"script must respect reduced-motion");
+assert(read("site/assets/city-search.js").includes('data-search-submit'),"search CTA needs actual event handler");
+assert(home.includes('href="planner.html"')&&home.includes('href="coverage.html"'),"keep real planner and coverage routes");
+assert(home.includes('Illustrative map · Not a survey'),"demo geometry must be labeled illustrative");
+assert(!home.includes("6 hens")&&!home.includes("Permit required</span><strong>No"),"hero must not fabricate city-specific laws");
+assert(read("site/assets/favicon.svg").includes("<svg"),"new favicon is an SVG");
 console.log("PASS: all-city search, state/status filters, pending distinction, SEO HTML hooks");
