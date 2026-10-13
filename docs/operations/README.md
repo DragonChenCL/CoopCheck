@@ -26,7 +26,8 @@ docs/operations/
 
 1. [CoopCheck 运营执行 SOP](SOP.md)
 2. [历史执行记录及待办](LOG.md)
-3. [城市法规完整性审计](../../POLICY_COMPLETENESS_2026-10-13.md)
+3. [13 个仍待核验城市的逐项研究队列](PENDING_LAW_RESEARCH_2026-10-13.md)
+4. [城市法规完整性审计](../../POLICY_COMPLETENESS_2026-10-13.md)
 4. [真实外链机会、投稿入口与未发送话术](OPPORTUNITIES_2026-10-13.md)
 5. [五个城市 SEO 标杆实践](../SEO_FIVE_BENCHMARK_CITIES_2026-10-13.md)
 

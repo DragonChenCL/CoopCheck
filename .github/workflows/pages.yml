@@ -30,6 +30,9 @@ jobs:
       - name: Verify generated city coverage and sitemap
         run: node scripts/generate-coverage-pages.cjs --check
 
+      - name: Enforce field-specific municipal code evidence review
+        run: node scripts/qa-policy-evidence.cjs
+
       - name: Verify city search and directory
         run: node scripts/qa-city-search.cjs
 
@@ -38,6 +41,9 @@ jobs:
 
       - name: Verify quick flock screening and five-city field evidence
         run: node scripts/qa-quick-check.cjs
+
+      - name: Protect current Garland and Olympia ordinance details
+        run: node scripts/qa-recent-city-ordinances.cjs
 
       - name: Verify planner and payment regression checks
         run: node scripts/qa-coopcheck.cjs

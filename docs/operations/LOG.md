@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Remaining 13-city municipal law research queue / CI safeguard
+
+- Published [13-city unresolved ordinance queue](PENDING_LAW_RESEARCH_2026-10-13.md), marking source leads and reasons *not* to claim full verification. In particular: Bend 2026 September code amendment gap; Round Rock livestock code not interchangeable with poultry rules; Irvine chick-sale code not a keeping permit.
+- Added `qa-policy-evidence.cjs` to every production Pages deployment and new regression checks for Garland/Olympia legal distances, rooster restrictions, manual planner and pending noindex.
+- This does **not** increase verified fields. Remains 23/400 and 13 pending; specific code source or direct city response needed to progress.
+
+
 ## 2026-10-13 — Olympia code §18.04.060(KK) (2026 Ordinance 7457)
 
 - Verified 5/9/10+ duck-or-female-chicken limits based on parcel acreage, rooster ban, 10-ft minimum setback from every boundary **plus prohibition on encroaching into zoning setback areas** against city-published code. Exact 1-acre tier overlap remains a specific municipal clarification task.
