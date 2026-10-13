@@ -899,16 +899,32 @@
     },
     "san-jose-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San José Municipal Code §7.60.815",
+        "detail": "Combined SMALL animals by distance to nearest dwelling other than keeper's: <20ft=0; >20<40ft=6; >40<50ft=10; >50ft=20. Exact 20/40/50ft equality not addressed in the code table. Not a species-specific unrestricted hen allowance.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San José Municipal Code §7.60.820",
+        "detail": "A rooster more than four months old is prohibited. Not a categorical ban on all younger male chicks.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San José Municipal Code §7.60.700(A)-(C)",
+        "detail": "Livestock or more than six small animals require permit. Under seven may additionally require permit after noticed violation; not a categorical exemption from other permits. Structures/building permits separate.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE",
+        "section": "San José Municipal Code §§7.60.810, 7.60.815",
+        "detail": "Permitted small animals cannot be in side setback areas; distance table measures to OTHER dwelling from animal enclosure, NOT property line. Exactly 20, 40, 50 ft unspecified in text.",
+        "checkedAt": "2026-10-13"
       }
     },
     "oakland-ca": {
@@ -919,7 +935,11 @@
         "status": "source_recorded"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens",
+        "section": "Oakland Urban Agriculture and Community Gardens > Community Gardens / Extensive Agriculture, CUP by zone",
+        "detail": "Community gardens with animal products/stock permitted outright in certain listed zones, CUP required in specified conditional districts and uses; extensive agriculture / animal raising often requires conditional use permit with findings. This is zoning/activity-specific, NOT universal poultry permit requirement or automatic backyard permission.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -1498,10 +1518,18 @@
         "status": "source_recorded"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance",
+        "section": "City Hillsboro Code Compliance > Animal Regulations, Dogs Cats Chickens and Livestock",
+        "detail": "Official 2026 city code-compliance page states only HENS may be kept with city animal permit; this is guidance for ordinary city poultry keeping, not an invented code section.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.hillsboro-oregon.gov/services/permitting-center/property-owners/property-permits-construction",
+        "section": "City Hillsboro Property Development > Animal & Livestock Permits; Type I Animal Permit",
+        "detail": "City's 2026 planning portal instructs applicants to request Animal Permit to allow chickens, bees or livestock. Separate coop structure permits and property zoning review not waived.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
