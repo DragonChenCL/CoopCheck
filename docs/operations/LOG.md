@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Salem / Tempe official clause checks and Bend amended code comparison
+
+- Official city pages checked: Salem SRC §50.710, Tempe ZDC §3-404(I); added **seven** field-specific mappings (Salem four, Tempe three).
+- Evidence reaches 50/400 with 298 source-recorded and 52 unverified across 13 pending cities.
+- Bend NS-2560 (2026-09) compared with prior government-published §3.6.300 text: no identified change to poultry provision, but prior permit and poultry-coop setbacks remain unresolved; Bend stays excluded from sitemap/planner.
+- Municipal conditions include Salem RA/EFU exemption, Tempe AG rooster exemption and permit for over-standard flock count. No claim of universal parcel clearance.
+
+
 ## 2026-10-13 — 100-city law reconciliation milestone
 
 - Canonical registry: 100 cities × four claims = 400. Field-specific government clause/guidance evidence rose from 27 to 43 (Mesa, Casa Grande, Eugene, Glendale and Goodyear reviewed, plus preceding existing 27).

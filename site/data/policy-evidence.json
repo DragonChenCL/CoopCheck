@@ -81,13 +81,25 @@
     },
     "tempe-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities",
+        "section": "Tempe Zoning and Development Code §3-404(I)(3) and (6), official City Code Violations page",
+        "detail": "Up to six domestic chickens on an individual lot with a single-family dwelling in an eligible residential district; exceeding the standard count may require approved Use Permit.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities",
+        "section": "Tempe ZDC §3-404(I)(4), official City Code Violations page",
+        "detail": "Roosters and peafowl prohibited outside AG zoning district.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities",
+        "section": "Tempe ZDC §3-404(I)(6), official City Code Violations page",
+        "detail": "Keeping quantities above six domestic chickens can be allowed subject to Use Permit §6-308; this does not determine ordinary coop building permits.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -219,16 +231,32 @@
     },
     "salem-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules",
+        "section": "Salem Revised Code 50.710(c)(1), reproduced in official Poultry Keeping Rules",
+        "detail": "A maximum of 12 total poultry per premises for standard qualifying residential/community/school/religious properties; RA ≥10,000 sq ft and EFU exceptions require zoning review.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules",
+        "section": "Salem Revised Code 50.710(c)(2), official city Poultry Keeping Rules",
+        "detail": "Roosters prohibited under standard residential poultry-keeping rule.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules",
+        "section": "City Poultry Keeping Rules, Keeping Poultry in Salem",
+        "detail": "No license or permit required for standard poultry keeping; building permits and structure-specific zoning requirements are NOT automatically waived.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules",
+        "section": "Salem Revised Code 50.710, official Poultry Keeping Rules, facility siting",
+        "detail": "Facility in rear yard, at least 3 ft from any other building on same property and 25 ft from a residence on an adjacent lot; coop ≤120 sq ft, run and bird-area requirements and zone exceptions apply.",
+        "checkedAt": "2026-10-13"
       }
     },
     "gresham-or": {

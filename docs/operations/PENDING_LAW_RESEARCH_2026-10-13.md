@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **87 条城市摘要有至少部分来源支持、13 城市仍处于 needs_review；30 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **318 项为 source_recorded、52 项为 unverified**。注意 87 ≠ 87 城市全部合规。
+当前 **87 条城市摘要有至少部分来源支持、13 城市仍处于 needs_review；50 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **298 项为 source_recorded、52 项为 unverified**。注意 87 ≠ 87 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -46,3 +46,10 @@
 - Surprise ordinance index: https://library.municode.com/az/surprise/ordinances/municipal_code?nodeId=2024 — Ordinance 2024-42 amended sections 10-113 and 10-114. Read final codified clauses before upgrading.
 - State of Arizona 9-462.12: https://www.azleg.gov/ars/9/00462-12.htm — state protection for eligible detached-home lots may preempt inconsistent older local rules; not proof of zoning or permits for every property.
 - Round Rock proposed city ordinance (2018): https://www.roundrocktexas.gov/wp-content/uploads/2018/12/120618-Proposed-Animal-Control-Ordinance.pdf — proposed poultry tiers need confirmation in current enacted law. Do not treat this draft as law.
+
+## 2026-10-13 follow-up — Bend operative amendment audit
+
+- The City of Bend [September 2, 2026 adopted Ordinance NS-2560](https://bendoregon.gov/wp-content/uploads/2026/09/NS-2560-Ordinance.pdf) modifies the Development Code (including Chapter 3.6) but leaves the text of **BDC §3.6.300(I), Keeping Farm Animals** unamended in the ordinance exhibits; section 5 preserves unchanged code provisions. Its applicability should still be checked against the fully consolidated code.
+- The Bend city-hosted [reproduced chapter text / prior official memo](https://bendoregon.gov/wp-content/uploads/2025/12/Juniper_Ridge_Overlay_Use_Table_20200514-REVISED.pdf) states four rabbits and/or hens combined on residential lots of 5,000+ sq ft and no roosters. The 25-ft neighboring-residence and 15-ft interior/rear lot-line setbacks referenced there apply expressly to structures housing **large farm animals**, not automatically a chicken coop.
+- The old 2012 backyard-chickens forum claims of a $104 annual permit and universal 25-ft chicken-coop setback are not proven by the current municipal materials; DO NOT publish those numbers.
+- Until the town confirms current permit/building approval and precise chicken-coop siting conditions (contact planning@bendoregon.gov), Bend remains `needs_review`, `noindex` and disabled for automated compliance; its `unverified` entries are intentionally not upgraded.

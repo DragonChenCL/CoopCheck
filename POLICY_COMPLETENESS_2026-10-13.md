@@ -3,23 +3,23 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **43**; 305 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **50**; 298 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
-**No city has all four fields independently rechecked in this additional pass.** Three or fewer fields per benchmark city are backed by specific government code sections or city-issued guidance. A government guide is not a parcel-specific legal determination, and some official tips may lag effective ordinances.
+**Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
 | City | Source review status | Flock | Rooster | Permit | Placement |
 |---|---|---|---|---|---|
 | Chandler, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Mesa, AZ | verified_limited_scope | Clause checked | Clause/guidance checked | Source; permit unconfirmed | Clause checked, state preemption unresolved |
 | Phoenix, AZ | verified | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
-| Tempe, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
 | San Diego, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Sacramento, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
 | Colorado Springs, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Portland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Eugene, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Salem, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Salem, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Gresham, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Seattle, WA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Spokane, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -154,3 +154,9 @@ Eugene current code §9.5250 (updated through 2026-07) provides age-tiered flock
 ## 2026-10-13 Glendale city guidance recheck
 
 City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirms six domestic hens on eligible detached-home lots, no male chickens, rear/side enclosure at least 20 ft from neighboring property and 10 ft from buildings, maximum 200 sq ft and 8 ft high, with additional UDC/IBC constraints. The page specifically warns that other zoning FAQ entries are under revision: https://www.glendaleaz.gov/Business/Planning-Zoning/FAQ?OC_EA_EmergencyAnnouncementList_Dismiss=95475043-ad4d-4aca-9387-62ea50e4202d . Three specific guidance fields checked. General animal and structure permit still require separate assessment.
+
+## 2026-10-13 — Salem and Tempe direct official guidance audit
+
+**Salem, Oregon.** The official city [Poultry Keeping Rules](https://www.cityofsalem.net/community/household/animals-pets/poultry-keeping-rules) document four independently identifiable claims under SRC 50.710: 12 total poultry, no roosters, no general poultry-keeping permit, and facility in the rear yard 3 ft from other buildings on the lot / 25 ft from an adjacent residence, plus a 120-sq-ft roofed-coop maximum. This permit result does not absolve building permits. Residential Agriculture (RA) lots ≥10,000 sq ft and EFU parcels may be exempt, so parcel zoning is still material.
+
+**Tempe, Arizona.** The city [Animal Quantities / §3-404(I)](https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities) explicitly specifies six domestic chickens on eligible single-family residential lots, no roosters except AG zoning, and discretionary Use Permit §6-308 for numbers beyond the standard cap. This is not a verified universal enclosure building permit or property-line setback. §3-404(I)(8) adds a fence/wall-height constraint for enclosures on lots under one acre, but does not by itself prove a universal setback.
