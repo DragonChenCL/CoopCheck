@@ -2146,16 +2146,32 @@
     },
     "indianapolis-in": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIIIPUHEWE_CH743USUECST",
+        "section": "Indianapolis §743-306(W)(1)-(4), Table 743-306-3",
+        "detail": "Eligible owner/resident of single-/two-family home may keep up to 12 combined adult chickens, quail, pigeons and ducks without personal livestock license; adult means 8+ months and counts combined, not by species.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIIIPUHEWE_CH743USUECST",
+        "section": "Indianapolis §743-306(W)(5)",
+        "detail": "One rooster per lot maximum; bird remains fully enclosed between dusk and dawn.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIIIPUHEWE_CH743USUECST",
+        "section": "Indianapolis §743-306(W)(3)-(4), Chapter 838",
+        "detail": "Personal livestock license not required for qualifying category-one poultry within standard cap; larger numbers or special lots require valid license; structure/building permits remain independent.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIIIPUHEWE_CH743USUECST",
+        "section": "Indianapolis §743-306(W)(7)",
+        "detail": "No front-yard coop, pen, roost, shelter or exercise area. Applicable zoning district setbacks, fencing and containment requirements apply; no single universal numeric setback is stated.",
+        "checkedAt": "2026-10-13"
       }
     },
     "raleigh-nc": {
