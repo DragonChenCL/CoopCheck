@@ -1,5 +1,10 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Austin effective 2022 fowl enclosure ordinance correction
+
+- No new claims promoted: this correction keeps **220/400** primary-checked, **132** source-recorded and **48** unverified; latest other-city audit from main retained.
+- [Austin §3-2-16(A)-(E)](https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE), amended effective 2022-10-24: ALL fowl enclosures (not >=2 chickens) must be four-sided and covered, >=30 ft from other persons' dwelling/business buildings (not lot boundaries); >=50 ft where poultry/coop creates a health hazard. Previous 2013 text and 2021 brochure were stale, so correct the canonical placement evidence, legacy HTML/FAQ/state hub and planner dataset. Flock limit, rooster policy and ordinary chicken permit still require independent authoritative findings.
+
 ## 2026-10-13 — Flagstaff / Sierra Vista / Tempe direct ordinance pass
 
 - **+6 claim-level fields**, now **220/400 primary checked, 132 source-recorded, 48 unverified**. City review statuses unchanged (88 reviewed, 12 pending); no new cities or planner automation.
