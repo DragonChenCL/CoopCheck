@@ -1495,10 +1495,10 @@
       "name": "San Jose",
       "state": "CA",
       "stateName": "California",
-      "max": "San José Municipal Code §7.60.815 caps combined small animals according to enclosure distance from the nearest other dwelling: below 20 ft none, over 20–under 40 ft up to 6, over 40–under 50 ft up to 10, over 50 ft up to 20. Boundary values and permits need code review.",
-      "roosters": "A rooster older than 4 months is prohibited under §7.60.820.",
-      "permit": "Check Animal Care permit and zoning rules for the requested number and parcel before keeping poultry.",
-      "placement": "Small animal structures are prohibited in side setback areas (§7.60.810), with §7.60.815 distances measured to neighboring dwelling units rather than parcel lines.",
+      "max": "San José Code §7.60.815 regulates the COMBINED count of chickens, rabbits and other small animals by distance from the enclosure to the nearest OTHER dwelling: <20 ft: 0; >20 to <40 ft: 6; >40 to <50 ft: 10; >50 ft: 20. Exactly 20, 40 or 50 ft is NOT resolved by the printed bands; seek city confirmation.",
+      "roosters": "Roosters OLDER than four months are prohibited by San José §7.60.820; younger birds remain subject to other ordinances and nuisances.",
+      "permit": "San José §7.60.700 requires animal permit for MORE than six combined small animals, subject to site inspection and a two-year permit; the city can require a permit for fewer upon written notice of an animal-code violation. Building/zoning and HOA restrictions are independent.",
+      "placement": "§7.60.810 bars permit-covered small animals from the zoning SIDE setback. §7.60.815 limits animal count according to the coop-to-NEAREST OTHER DWELLING distance, not lot lines; exact 20/40/50-ft endpoints absent from published intervals and require city clarification.",
       "verified": "2026-10-13",
       "planner": {
         "mode": "manual",
@@ -1508,7 +1508,7 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "San José Municipal Code §§7.60.810, 7.60.815 and 7.60.820; additional permit sections must be confirmed. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+      "note": "City Code §§7.10.205,7.60.700,710,810,815,820: combined small-animal ceiling by nearest other dwelling (not property line), rooster ban over age four months, required two-year permit for >6, and side-setback restriction for permitted groups. §7.60.815's literal exactly-20/40/50-ft gaps are unresolved; city clarification needed. No parcel-specific decision or building-permit clearance.",
       "sources": [
         {
           "type": "current_municipal_code_or_public_agency_guidance",
@@ -1519,7 +1519,7 @@
         "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
         "verificationMethod": "Second-pass cross-reference of city/official-code publisher and public-agency materials; scoped to source-supported claims.",
-        "note": "San José Municipal Code §§7.60.810, 7.60.815 and 7.60.820; additional permit sections must be confirmed. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved."
+        "note": "City Code §§7.10.205,7.60.700,710,810,815,820: combined small-animal ceiling by nearest other dwelling (not property line), rooster ban over age four months, required two-year permit for >6, and side-setback restriction for permitted groups. §7.60.815's literal exactly-20/40/50-ft gaps are unresolved; city clarification needed. No parcel-specific decision or building-permit clearance."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -1533,7 +1533,7 @@
       "stateName": "California",
       "max": "Depends on zoning classification and applicable animal-control regulations",
       "roosters": "Not established from the cited city urban-agriculture zoning overview",
-      "permit": "A conditional use permit may be necessary in some zoning districts; verify before building or keeping poultry",
+      "permit": "Oakland requires zoning-specific authorization for animal raising within Community Garden or Extensive Agriculture uses: some zones allow the activity outright, others require a Conditional Use Permit (CUP), while other animal/health regulations apply. This DOES NOT imply that all ordinary backyard hens universally need a CUP.",
       "placement": "Consult Oakland Municipal Code and parcel zoning; no universal coop setback verified",
       "verified": "2026-10-13",
       "planner": {
@@ -1544,7 +1544,7 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Official Oakland planning guidance identifies animal raising under community gardens/extensive agriculture and zoning-dependent permissions; specific hen count/setback require an additional municipal-code review.",
+      "note": "Oakland's official Urban Agriculture/Community Gardens guide specifies zone-by-activity distinctions for animal raising and conditional use permits, subject to Chapters 6.04, 8.14, 8.18. It does not independently prove a citywide hen ceiling, a general rooster allowance or a universal setback. Confirm parcel's zoning and permitted use classification.",
       "sources": [
         {
           "type": "city_guidance",
@@ -1554,7 +1554,7 @@
       "audit": {
         "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "Official Oakland planning guidance identifies animal raising under community gardens/extensive agriculture and zoning-dependent permissions; specific hen count/setback require an additional municipal-code review."
+        "note": "Oakland's official Urban Agriculture/Community Gardens guide specifies zone-by-activity distinctions for animal raising and conditional use permits, subject to Chapters 6.04, 8.14, 8.18. It does not independently prove a citywide hen ceiling, a general rooster allowance or a universal setback. Confirm parcel's zoning and permitted use classification."
       },
       "rollout": {
         "batch": "first-100-2026-10",
@@ -2575,8 +2575,8 @@
       "state": "OR",
       "stateName": "Oregon",
       "max": "Chickens are permitted under the city's animal permit process; this source does not establish a universal flock maximum",
-      "roosters": "Rooster restriction not established in the official permit application",
-      "permit": "City Animal Permit Application explicitly required for poultry in city limits",
+      "roosters": "Hillsboro, OREGON city Code Compliance guidance says resident chickens are HENS ONLY, with a valid Animal Permit. This is not Hillsboro Kansas or Wisconsin.",
+      "permit": "A valid City of Hillsboro (Oregon) Animal Permit is REQUIRED to keep hens within city limits; site, applicant ownership and planning review apply. Coop construction approvals and HOA rules are separate.",
       "placement": "Site fencing, livestock enclosures, waste handling, zoning and permit review are required; a single universal setback is not stated in the application",
       "verified": "2026-10-13",
       "planner": {
@@ -2587,17 +2587,21 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+      "note": "Hillsboro Oregon City Code Compliance and Animal Permits pages confirm hens only plus valid city animal keeping permit. Numeric quota and lot-specific setbacks require HMC §6.20.070 and zoning review; do NOT borrow similarly named Hillsboro KS/WI backyard chicken limits.",
       "sources": [
         {
           "type": "municipal_source",
           "url": "https://www.hillsboro-oregon.gov/home/showpublisheddocument/30543/638467249898800000"
+        },
+        {
+          "type": "current_city_official_regulatory_guidance",
+          "url": "https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance"
         }
       ],
       "audit": {
         "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+        "note": "Hillsboro Oregon City Code Compliance and Animal Permits pages confirm hens only plus valid city animal keeping permit. Numeric quota and lot-specific setbacks require HMC §6.20.070 and zoning review; do NOT borrow similarly named Hillsboro KS/WI backyard chicken limits.",
         "verificationMethod": "Official municipal source; conditional rules preserved"
       },
       "rollout": {
