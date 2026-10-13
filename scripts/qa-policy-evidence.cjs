@@ -20,7 +20,7 @@ assert(/§5-107/.test(sa.note)&&/pet shop/i.test(sa.note),"San Antonio code numb
 const bySlug=Object.fromEntries(r.cities.map(c=>[c.slug,c]));
 for(const key of keys) assert.equal(e.cities["prescott-valley-az"][key].status,"primary_clause_checked","Prescott Valley "+key+" must retain code citation");
 for(const key of ["max","roosters","placement"])assert.equal(e.cities["anaheim-ca"][key].status,"primary_clause_checked","Anaheim "+key+" missing code citation");
-assert(/2024-09-13/.test(bySlug["lake-havasu-city-az"].note),"Lake Havasu grandfathering condition missing");
+assert(/(?:2024-09-13|September 13, 2024)/.test(bySlug["lake-havasu-city-az"].note),"Lake Havasu grandfathering condition missing");
 assert(bySlug["lake-havasu-city-az"].note.includes("A(2)"),"Lake Havasu limited-zone condition missing");
 assert.equal(e.cities["beaverton-or"].placement.url,"https://beaverton.municipal.codes/BC/5.09.015","Beaverton dwelling distance not grounded");
 assert.equal(e.cities["portland-or"].permit.status,"primary_clause_checked","Portland no livestock permit government source required");
