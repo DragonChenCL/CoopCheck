@@ -423,9 +423,9 @@
       },
       "placement": {
         "status": "primary_clause_checked",
-        "url": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities",
-        "section": "Chickens / enclosure guidance",
-        "detail": "For ≥2 chickens, enclosure should be ≥30 ft from adjacent residences/businesses, not a line-based blanket rule",
+        "url": "https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE",
+        "section": "Austin Municipal Code §§3-2-11(A)-(B), 3-2-16(A)-(E), amended Ord.20221013-030 effective 2022-10-24",
+        "detail": "All fowl enclosures (not only 2+ chickens) require covered secure four-sided housing; >=30 ft from adjacent residence/business other than keeper's own. >=50 ft if fowl/coop creates HEALTH HAZARD. Measured to buildings not property lines; additional zoning/building rules separately.",
         "checkedAt": "2026-10-13"
       }
     },
