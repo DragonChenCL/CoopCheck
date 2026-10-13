@@ -805,16 +805,28 @@
     },
     "san-francisco-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_health/0-0-0-43",
+        "section": "SF Health Code §37(a)",
+        "detail": "Residential district total is at most FOUR animals across enumerated species, including adult dogs, cats, and chickens; not a separate four-hen allotment.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "source_recorded"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_health/0-0-0-43",
+        "section": "SF Health Code §37(b)",
+        "detail": "Coops/enclosures for covered small animals must be approved by the Director of Public Health; this is NOT proof that an additional zoning/building permit is unnecessary.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_health/0-0-0-43",
+        "section": "SF Health Code §37(b), second sentence",
+        "detail": "An outdoor or rooftop coop/enclosure must be at least 20 feet from any door or window of a human-habitation building; NOT a lot-line setback.",
+        "checkedAt": "2026-10-13"
       }
     },
     "san-jose-ca": {
@@ -1731,7 +1743,11 @@
         "status": "source_recorded"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf",
+        "section": "NYC Health Code §161.19(a)",
+        "detail": "Live roosters prohibited in New York City except specified authorized slaughterhouses or Health Code §161.01(a) exemptions; city's Urban Agriculture FAQ confirms ordinary backyard hens are permitted, roosters are not.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
@@ -1745,10 +1761,18 @@
         "status": "source_recorded"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.minneapolismn.gov/resident-services/animals-pets/pet-licenses-animal-permits/",
+        "section": "Backyard chickens and other fowl / Annual Fowl Permit Application Fees (updated 2026-07-06)",
+        "detail": "City's official fee schedule lists a separate $110 rooster permit category. This does not guarantee permission at an address; neighbor consent, zoning approval, education and inspection remain required.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.minneapolismn.gov/resident-services/animals-pets/pet-licenses-animal-permits/",
+        "section": "Backyard chickens and other fowl / Application process (updated 2026-07-06)",
+        "detail": "Fowl permit MUST be approved before birds are bought; neighbor consent, approved course, zoning approval and animal-control inspection required; permit renewed annually. Building permissions separate.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
