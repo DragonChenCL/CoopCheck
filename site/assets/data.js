@@ -512,7 +512,7 @@ window.COOP_CITIES=[
     "max": "Chicken quantity is based on animal units and lot size: 1 unit per chicken, up to 2 animal units per 1,000 sq ft with tiered maximums",
     "roosters": "Male fowl prohibited under the urban-agriculture use standards, subject to specific code exceptions",
     "permit": "Verify lot zoning and any required approvals under Tucson Unified Development Code §6.6.5",
-    "placement": "Housing and setbacks depend on the use; Tucson animal code §4-57 generally references a 50-ft neighboring-dwelling separation with zoning exceptions",
+    "placement": "Under current UDC §6.6.5(E)(4), coop/shelter stays behind the main building and at least 20 ft from the dwelling on an abutting lot. Shelters <=6 ft tall AND <=16 sq ft have special side/rear line exemption; larger ones follow accessory-structure zoning setbacks. This is not a universal 50-ft rule.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -522,7 +522,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "Current 2026 Tucson UDC §6.6.5(E): lot-size animal-unit formula, male fowl restriction and section-specific coop setbacks. Front strip not allowed; 20 ft to neighbor dwelling and separate lot line rules by shelter size; existing exemptions and building/zoning approvals remain parcel-dependent.",
     "source": "https://codelibrary.amlegal.com/codes/tucson/latest/tucson_az_udc/0-0-0-23781"
   },
   {
@@ -950,10 +950,10 @@ window.COOP_CITIES=[
     "name": "Elk Grove",
     "state": "CA",
     "stateName": "California",
-    "max": "Up to 6 chickens in residential RD zoning districts under EGMC §23.27",
-    "roosters": "Rooster treatment requires animal-code confirmation; cited use-table provision covers chickens",
+    "max": "RD-zone residential lots allow up to 6 chickens with a clean coop/cage; up to 12 only when a 40-ft buffer from the chicken area to every neighboring property line is maintained (§23.27, residential note 3).",
+    "roosters": "Roosters prohibited in RD residential districts under EGMC Chapter 23.27 residential note 3(a)(iii); other zones must be checked.",
     "permit": "Verify zoning district and any structure/building requirements",
-    "placement": "Clean coop/cage, at least 5 ft from interior side and rear property lines for eligible RD residential lots",
+    "placement": "For standard RD-zoned 6-chicken use, clean coop/cage >=5 ft from interior side and rear lines. For up to 12 chickens a barrier must maintain >=40 ft from the chicken area to every neighboring property line; specific site/zoning also apply.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -963,7 +963,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "EGMC Chapter 23.27 Table 23.27-1 note 3(a) applies to RD residential zones ONLY; normal 6-chicken tier and conditional 12-chicken / 40-ft neighbor-buffer tier are separate. Not a citywide agricultural-district allowance.",
     "source": "https://ecode360.com/50245103"
   },
   {
@@ -1034,10 +1034,10 @@ window.COOP_CITIES=[
     "name": "Santa Rosa",
     "state": "CA",
     "stateName": "California",
-    "max": "Hen allowance varies by lot area and zoning under the city's Table 4-1; no single citywide hen count",
+    "max": "Residential hen limit under Table 4-1: up to 3 on lots <=5,000 sq ft, 6 on 5,001–10,000, up to 12 on 10,001–43,560 (6 per 10,000 sq ft), and up to 30 on lots >1 acre (6 per 10,000 sq ft). Different rules apply to qualifying livestock-farming uses.",
     "roosters": "Roosters prohibited",
     "permit": "Confirm zoning and accessory-structure rules; city hen-keeping guidance is zoning-dependent",
-    "placement": "Hens must be in a securely fenced rear-yard area; additional development standards in Zoning Code §20-42.040",
+    "placement": "Rear-yard securely fenced coop+pen. <=6 hens: >=5 ft from side/rear property lines; >6 hens: >=10 ft. In all cases >=20 ft from habitable structures on adjacent parcels (§20-42.040(C)).",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1047,7 +1047,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "Current Santa Rosa Zoning Code §20-42.040(C) Table 4-1 and coop standards. Do not confuse residential hen-keeping tiers with separate livestock farming on >=20,000-sq-ft parcels; zoning and private restrictions remain.",
     "source": "https://ecode360.com/42982346"
   },
   {
@@ -1446,7 +1446,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "City Everett Facility Licenses guidance: six-plus small poultry or any rooster requires annual small-livestock facility license. A Dec 2023 livestock/zoning note on the same official page must be reconciled for specific non-ag property; not evidence that a rooster is legal at any parcel. Building and coop-setback facts require independent city zoning text.",
     "source": "https://www.everettwa.gov/197/Facility-Licenses"
   },
   {
