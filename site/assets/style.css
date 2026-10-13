@@ -523,3 +523,67 @@
  .cc-home .cc-search-results,.cc-home .cc-dropdown-options{animation:none!important}
  .cc-home .cc-state-control .cc-chevron,.cc-filter-caret{transition:none!important}
 }
+
+
+/* Floating popovers: do not change search card height or move content below. */
+.cc-home-hero{
+  overflow:visible;
+  z-index:9;
+}
+.cc-home .cc-search-panel{overflow:visible}
+.cc-home .cc-search-controls{position:relative;z-index:3}
+.cc-home .cc-search-controls > .cc-search-results{
+  position:absolute!important;
+  top:calc(100% + 9px);
+  left:0!important;
+  right:0!important;
+  width:100%;
+  margin:0!important;
+  max-height:256px;
+  overflow-y:auto;
+  z-index:30;
+  background:#fff;
+  border:1px solid #d9e9dc;
+  box-shadow:0 18px 36px rgba(20,66,40,.16)!important;
+  border-radius:14px;
+}
+.cc-home .cc-state-control{position:relative;z-index:4}
+.cc-home .cc-state-control > .cc-dropdown-options{
+  position:absolute!important;
+  top:calc(100% + 9px);
+  right:0!important;
+  left:auto!important;
+  width:min(270px,calc(100vw - 42px));
+  margin:0!important;
+  max-height:254px;
+  overflow-y:auto;
+  z-index:40;
+  display:grid;
+  grid-template-columns:1fr;
+  background:#fff;
+  border:1px solid #d9e9dc;
+  box-shadow:0 18px 36px rgba(20,66,40,.16)!important;
+  border-radius:14px;
+}
+.cc-directory-search{position:relative;z-index:12}
+.cc-directory-controls{position:relative;z-index:3;overflow:visible}
+.cc-filter-dropdown{position:relative}
+.cc-filter-dropdown > .cc-dropdown-options{
+  position:absolute!important;
+  top:calc(100% + 8px);
+  left:auto!important;
+  right:0!important;
+  width:max(100%,235px);
+  max-height:248px;
+  margin:0!important;
+  z-index:50;
+  background:#fff;
+  border:1px solid #d9e9dc;
+  box-shadow:0 17px 35px rgba(20,66,40,.14)!important;
+}
+/* Keep other page sections and popular links stationary as the menu opens. */
+@media(max-width:600px){
+  .cc-home .cc-search-controls > .cc-search-results{max-height:218px}
+  .cc-home .cc-state-control > .cc-dropdown-options{width:min(270px,calc(100vw - 48px));max-height:225px}
+  .cc-filter-dropdown > .cc-dropdown-options{width:100%;max-height:205px}
+}
