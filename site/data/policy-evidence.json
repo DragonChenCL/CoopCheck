@@ -1039,16 +1039,32 @@
     },
     "santa-ana-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH5AN",
+        "section": "Santa Ana Code §5-6(a)",
+        "detail": "Up to FOUR fowl/rabbits in any COMBINATION before special keeping permit required. No separate four-chicken PLUS four-rabbit allotment; separate zoning requirements.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH5AN",
+        "section": "Santa Ana Code §5-6.5",
+        "detail": "Roosters prohibited in residential-used or residential-permitted zoning premises. Other city areas/zones not declared categorically banned by this section alone.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH5AN",
+        "section": "Santa Ana Code §5-6(a)-(b)",
+        "detail": "More than four combined fowl/rabbits require animal special permit with Planning approval. Does NOT mean no structure/building permit below that limit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH5AN",
+        "section": "Santa Ana Code §§5-18(b), 5-6(b)(1)",
+        "detail": "Fowl/rabbits cannot be within 30 ft of another's FAMILY residence or human occupancy building, not lot line; special >4-animal permit additional area and hygiene restrictions.",
+        "checkedAt": "2026-10-13"
       }
     },
     "stockton-ca": {
