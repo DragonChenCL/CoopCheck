@@ -68,4 +68,12 @@ assert(bySlug["tempe-az"].placement.includes("fence/wall"),"Tempe enclosure heig
 assert.equal(e.cities["austin-tx"].placement.status,"primary_clause_checked","Austin placement remains law-checked");
 assert(e.cities["austin-tx"].placement.section.includes("3-2-16"),"Austin effective 2022 code required");
 assert(bySlug["austin-tx"].placement.includes("ANY fowl enclosure")&&bySlug["austin-tx"].placement.includes("HEALTH HAZARD"),"Austin outdated >=2 flock trigger must not recur");
+// Scope-specific 2026 code/agency checks. A checked field is not a parcel-wide legal clearance.
+assert.equal(e.cities["tigard-or"].max.status,"primary_clause_checked","Tigard livestock chapter lacks uniform numeric cap");
+assert(bySlug["tigard-or"].max.includes("NO universal")&&bySlug["tigard-or"].max.includes("NOT an unlimited"),"Tigard negative finding must not become an unlimited allowance");
+assert.equal(e.cities["everett-wa"].roosters.status,"primary_clause_checked","Everett rooster licence trigger lost");
+assert(bySlug["everett-wa"].roosters.includes("ANY number")&&bySlug["everett-wa"].roosters.includes("NOT"),"Everett any-rooster license must not imply blanket permission");
+assert(e.cities["everett-wa"].roosters.url==="https://www.everettwa.gov/197/Facility-Licenses","Everett rooster claim must cite city source");
+for(const slug of ["medford-or","irving-tx"])assert.equal(e.cities[slug].permit.status,"primary_clause_checked",slug+" building/zoning approval duty missing");
+assert(bySlug["medford-or"].permit.includes("NOT")&&bySlug["irving-tx"].permit.includes("does not"),"Medford/Irving cannot claim a universal permit exemption");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

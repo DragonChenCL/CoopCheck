@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；220 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **132 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；224 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **128 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -89,3 +89,11 @@
 - **Sierra Vista, AZ**：按 [2026 §90.11](https://codelibrary.amlegal.com/codes/sierravista/latest/sierravista_az/0-0-0-17093) 核验数量、公鸡和位置三字段；需另问动物饲养许可与附属建筑许可（仍 source_recorded）。20英尺是相邻**property**，并非相邻住房。
 - **Tempe, AZ**：按 [§3-404(I)(8)](https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities) 核验鸡舍围栏高度，不把高度限制当作统一退距。
 - 最新 **220 / 400** 字段已逐条对照，**132 source_recorded / 48 unverified**，城市状态88/12保持不变。
+
+## 2026-10-13 — 现行法条四字段补验（边界声明）
+
+- Tigard OR：[法典6.02 Art VII](https://ecode360.com/43651072) 和政府 Code Compliance 联合确认**引用的畜禽章节未设统一鸡只数量**，不是无限制饲养许可。许可/建造审批仍未核实。
+- Everett WA：[动物管理许可证页](https://www.everettwa.gov/197/Facility-Licenses) 对**任何一只公鸡**都要求年度 small-livestock facility license；[生效 §6.04.070](https://everett.municipal.codes/EMC/6.04.070) 并未采纳旧2023议案中的全市禁止公鸡文字。不能据此自动推断某地块允许。
+- Medford OR：[§5.555(1)(e)](https://medford.municipal.codes/Code/5.555) 确认鸡舍等需遵守建筑/消防条款，建设许可按设施情况判定，未能确证一般鸡只饲养许可是否另需办理。
+- Irving TX：[§6-62(c)(1)](https://ecode360.com/45683221) 明确鸡舍须遵守城市建筑和分区规范，特别动物展览许可证与普通养鸡不同；不能宣称免审批。
+- 当前 **224/400** 逐字段政府条款匹配（部分为限制或不能确认的负结论），**128 source_recorded / 48 unverified**，12待审城市仍 noindex。
