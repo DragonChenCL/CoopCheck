@@ -1,0 +1,705 @@
+{
+  "version": 1,
+  "cities": [
+    {
+      "slug": "chandler-az",
+      "name": "Chandler",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "mesa-az",
+      "name": "Mesa",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "phoenix-az",
+      "name": "Phoenix",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "tempe-az",
+      "name": "Tempe",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "san-diego-ca",
+      "name": "San Diego",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "sacramento-ca",
+      "name": "Sacramento",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "denver-co",
+      "name": "Denver",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified"
+    },
+    {
+      "slug": "colorado-springs-co",
+      "name": "Colorado Springs",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified"
+    },
+    {
+      "slug": "portland-or",
+      "name": "Portland",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified"
+    },
+    {
+      "slug": "eugene-or",
+      "name": "Eugene",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified"
+    },
+    {
+      "slug": "salem-or",
+      "name": "Salem",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified"
+    },
+    {
+      "slug": "gresham-or",
+      "name": "Gresham",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified"
+    },
+    {
+      "slug": "seattle-wa",
+      "name": "Seattle",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified"
+    },
+    {
+      "slug": "spokane-wa",
+      "name": "Spokane",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified"
+    },
+    {
+      "slug": "vancouver-wa",
+      "name": "Vancouver",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "austin-tx",
+      "name": "Austin",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "arlington-tx",
+      "name": "Arlington",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified"
+    },
+    {
+      "slug": "fort-worth-tx",
+      "name": "Fort Worth",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified"
+    },
+    {
+      "slug": "gilbert-az",
+      "name": "Gilbert",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "scottsdale-az",
+      "name": "Scottsdale",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "glendale-az",
+      "name": "Glendale",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "peoria-az",
+      "name": "Peoria",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "needs_review"
+    },
+    {
+      "slug": "surprise-az",
+      "name": "Surprise",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "needs_review"
+    },
+    {
+      "slug": "goodyear-az",
+      "name": "Goodyear",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "avondale-az",
+      "name": "Avondale",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "buckeye-az",
+      "name": "Buckeye",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "queen-creek-az",
+      "name": "Queen Creek",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "needs_review"
+    },
+    {
+      "slug": "tucson-az",
+      "name": "Tucson",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "flagstaff-az",
+      "name": "Flagstaff",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "oro-valley-az",
+      "name": "Oro Valley",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "marana-az",
+      "name": "Marana",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "casa-grande-az",
+      "name": "Casa Grande",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "yuma-az",
+      "name": "Yuma",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "prescott-az",
+      "name": "Prescott",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "needs_review"
+    },
+    {
+      "slug": "prescott-valley-az",
+      "name": "Prescott Valley",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "lake-havasu-city-az",
+      "name": "Lake Havasu City",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified"
+    },
+    {
+      "slug": "apache-junction-az",
+      "name": "Apache Junction",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "needs_review"
+    },
+    {
+      "slug": "sierra-vista-az",
+      "name": "Sierra Vista",
+      "state": "AZ",
+      "stateName": "Arizona",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "los-angeles-ca",
+      "name": "Los Angeles",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "san-francisco-ca",
+      "name": "San Francisco",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "san-jose-ca",
+      "name": "San Jose",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "oakland-ca",
+      "name": "Oakland",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "fresno-ca",
+      "name": "Fresno",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "bakersfield-ca",
+      "name": "Bakersfield",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "riverside-ca",
+      "name": "Riverside",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "irvine-ca",
+      "name": "Irvine",
+      "state": "CA",
+      "stateName": "California",
+      "status": "needs_review"
+    },
+    {
+      "slug": "anaheim-ca",
+      "name": "Anaheim",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "long-beach-ca",
+      "name": "Long Beach",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "santa-ana-ca",
+      "name": "Santa Ana",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "stockton-ca",
+      "name": "Stockton",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "modesto-ca",
+      "name": "Modesto",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "elk-grove-ca",
+      "name": "Elk Grove",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "roseville-ca",
+      "name": "Roseville",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "folsom-ca",
+      "name": "Folsom",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "berkeley-ca",
+      "name": "Berkeley",
+      "state": "CA",
+      "stateName": "California",
+      "status": "needs_review"
+    },
+    {
+      "slug": "fremont-ca",
+      "name": "Fremont",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified"
+    },
+    {
+      "slug": "santa-rosa-ca",
+      "name": "Santa Rosa",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "escondido-ca",
+      "name": "Escondido",
+      "state": "CA",
+      "stateName": "California",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "aurora-co",
+      "name": "Aurora",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified"
+    },
+    {
+      "slug": "boulder-co",
+      "name": "Boulder",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "needs_review"
+    },
+    {
+      "slug": "fort-collins-co",
+      "name": "Fort Collins",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "lakewood-co",
+      "name": "Lakewood",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified"
+    },
+    {
+      "slug": "arvada-co",
+      "name": "Arvada",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "needs_review"
+    },
+    {
+      "slug": "thornton-co",
+      "name": "Thornton",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified"
+    },
+    {
+      "slug": "westminster-co",
+      "name": "Westminster",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified"
+    },
+    {
+      "slug": "pueblo-co",
+      "name": "Pueblo",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "needs_review"
+    },
+    {
+      "slug": "longmont-co",
+      "name": "Longmont",
+      "state": "CO",
+      "stateName": "Colorado",
+      "status": "verified"
+    },
+    {
+      "slug": "beaverton-or",
+      "name": "Beaverton",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified"
+    },
+    {
+      "slug": "hillsboro-or",
+      "name": "Hillsboro",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "bend-or",
+      "name": "Bend",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "needs_review"
+    },
+    {
+      "slug": "medford-or",
+      "name": "Medford",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "ashland-or",
+      "name": "Ashland",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified"
+    },
+    {
+      "slug": "corvallis-or",
+      "name": "Corvallis",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "lake-oswego-or",
+      "name": "Lake Oswego",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "tigard-or",
+      "name": "Tigard",
+      "state": "OR",
+      "stateName": "Oregon",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "tacoma-wa",
+      "name": "Tacoma",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified"
+    },
+    {
+      "slug": "bellevue-wa",
+      "name": "Bellevue",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "kent-wa",
+      "name": "Kent",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified"
+    },
+    {
+      "slug": "renton-wa",
+      "name": "Renton",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "needs_review"
+    },
+    {
+      "slug": "everett-wa",
+      "name": "Everett",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "olympia-wa",
+      "name": "Olympia",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "needs_review"
+    },
+    {
+      "slug": "bellingham-wa",
+      "name": "Bellingham",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "yakima-wa",
+      "name": "Yakima",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified"
+    },
+    {
+      "slug": "redmond-wa",
+      "name": "Redmond",
+      "state": "WA",
+      "stateName": "Washington",
+      "status": "verified"
+    },
+    {
+      "slug": "houston-tx",
+      "name": "Houston",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "dallas-tx",
+      "name": "Dallas",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "san-antonio-tx",
+      "name": "San Antonio",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified"
+    },
+    {
+      "slug": "plano-tx",
+      "name": "Plano",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "frisco-tx",
+      "name": "Frisco",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "irving-tx",
+      "name": "Irving",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified"
+    },
+    {
+      "slug": "garland-tx",
+      "name": "Garland",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "needs_review"
+    },
+    {
+      "slug": "mckinney-tx",
+      "name": "McKinney",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified"
+    },
+    {
+      "slug": "denton-tx",
+      "name": "Denton",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified"
+    },
+    {
+      "slug": "el-paso-tx",
+      "name": "El Paso",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "round-rock-tx",
+      "name": "Round Rock",
+      "state": "TX",
+      "stateName": "Texas",
+      "status": "needs_review"
+    },
+    {
+      "slug": "new-york-city-ny",
+      "name": "New York City",
+      "state": "NY",
+      "stateName": "New York",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "minneapolis-mn",
+      "name": "Minneapolis",
+      "state": "MN",
+      "stateName": "Minnesota",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "madison-wi",
+      "name": "Madison",
+      "state": "WI",
+      "stateName": "Wisconsin",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "indianapolis-in",
+      "name": "Indianapolis",
+      "state": "IN",
+      "stateName": "Indiana",
+      "status": "verified_limited_scope"
+    },
+    {
+      "slug": "raleigh-nc",
+      "name": "Raleigh",
+      "state": "NC",
+      "stateName": "North Carolina",
+      "status": "verified_limited_scope"
+    }
+  ]
+}

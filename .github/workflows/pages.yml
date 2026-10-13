@@ -30,6 +30,9 @@ jobs:
       - name: Verify generated city coverage and sitemap
         run: node scripts/generate-coverage-pages.cjs --check
 
+      - name: Verify city search and directory
+        run: node scripts/qa-city-search.cjs
+
       - name: Verify planner and payment regression checks
         run: node scripts/qa-coopcheck.cjs
 
