@@ -2,6 +2,17 @@
 
 按时间倒序追加记录。不要因为操作中断而伪造「成功」；记录执行前后状态、真实来源与下一步。
 
+## 2026-10-13 — 第二轮真实外链与增长渠道调查
+
+- GSC（9/14–10/12）：23 impressions / 0 clicks，唯一有展示的 URL 是首页、Portland 和 Oregon 州页；新版 94 URL sitemap 10/13 已被 Google 下载，错误/警告均为 0。
+- 单 Tab cfbrower 核验：BackYard Chickens Portland 2012 旧法规页显示约 21,612 历史浏览，内容仍有过时的 3 只规则；2023 已有读者评论提醒。**没有编辑该站、没有新发回复。**
+- BYC 原回复 /post-29302430 在本轮复查时仍提示「awaiting moderator approval」，账号界面仍提示邮箱验证。
+- 发现可联系编辑的网站 Backyard Chicken Pro（官方 Contact Us 明确允许网站/工具合作及引用请求），以及此前 Community Chickens 可投稿单篇文章的官方表单。
+- Reddit r/SideProject 页面确认仍有社区产品分享入口，但此轮**未提交帖子**。
+- 没有任何新公开 CoopCheck 外链；目前所有目标均是潜在机会，详见 [机会清单](OPPORTUNITIES_2026-10-13.md)。
+- 浏览器仅复用既有 Tab 0；Backyard Chicken Pro 联系页脚本负担较重，访问一度超时并触发页面导航上下文丢失；不在此阶段重复刷新或开新 Tab。
+- 下一步优先：BYC 验证与版主审核、1 篇编辑投稿、1 张可信的可分享法规对照图，再按 GSC/referral 观察效果。
+
 ## 2026-10-13 — 建立统一运营目录
 
 **决定：** 从此项目起，各项目优先使用 `docs/operations/` 保存 README + SOP + LOG；CoopCheck 固定四个运营步骤：GSC → Reddit → BackYard Chickens → cfbrower 仅复用一个 tab（实际执行时浏览器资源控制贯穿全过程）。
