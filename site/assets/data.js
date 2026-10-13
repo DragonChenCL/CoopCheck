@@ -1267,7 +1267,7 @@ window.COOP_CITIES=[
     "stateName": "Oregon",
     "max": "Medford Municipal Code §5.555 allows poultry for personal, noncommercial use but does not establish a universal flock-number limit in this section.",
     "roosters": "Roosters are expressly prohibited.",
-    "permit": "No commercial poultry activities under §5.555; construction/use of structures must comply with building/fire codes.",
+    "permit": "Medford §5.555(1)(e) explicitly requires poultry pens/runs/coops to satisfy all applicable building and fire codes. The city Building Safety permit guide says sheds/outbuildings MAY need a building permit; this does NOT itself prove a separate chicken-keeping license or universal no-permit exception. Ask Planning/Building Safety about your specific coop.",
     "placement": "Poultry enclosures at least 4 ft from abutting parcel property lines; none in required front-yard setback.",
     "verified": "2026-10-13",
     "planner": {
@@ -1278,7 +1278,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Medford Municipal Code §5.555 (current through Ord. 2026-56, Aug 19 2026). Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+    "note": "Current Medford §5.555 (through Ordinance 2026-56, Aug. 19 2026) permits personal-use fowl but prohibits roosters and requires four feet to neighboring property lines and no front-yard-setback pens. §5.555(1)(e) explicitly invokes applicable building/fire codes. City Building Safety says outbuildings may require permits; a separate poultry-keeping permit is NOT confirmed, and building-permit status is property/structure-dependent.",
     "source": "https://medford.municipal.codes/Code/5.555"
   },
   {
@@ -1349,7 +1349,7 @@ window.COOP_CITIES=[
     "name": "Tigard",
     "state": "OR",
     "stateName": "Oregon",
-    "max": "City guidance does not impose a uniform numeric chicken count; other animal welfare/nuisance rules still apply",
+    "max": "The current Tigard Livestock Article VII, §§6.02.610–630, specifies NO universal numerical chicken/flock ceiling. City Code Compliance says ownership of backyard livestock/poultry is not itself regulated as a numerical limit; rooster age, coop setbacks, nighttime enclosure, sanitation/nuisance and zoning standards still apply. This is NOT an unlimited-flock approval.",
     "roosters": "Roosters older than 3 months prohibited",
     "permit": "Comply with city livestock containment, sanitation and nuisance controls",
     "placement": "Coops at least 5 ft from all property lines (fenced runs exempt); animals must be enclosed at night",
@@ -1362,7 +1362,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "Current codified Tigard Chapter 6.02 Article VII (Ord. 22-09) and City Code Compliance describe no universal numeric hen limit in the livestock-keeping article, while prohibiting roosters over 3 months old and requiring >=5-ft shelter lot-line/public-access-easement offsets, shelters at night, and nuisance controls. Check zone, lot coverage and separate construction approvals; no all-clear on unusually large flocks.",
     "source": "https://www.tigard-or.gov/business-development/urban-agriculture"
   },
   {
@@ -1434,7 +1434,7 @@ window.COOP_CITIES=[
     "state": "WA",
     "stateName": "Washington",
     "max": "Everett's approved small-livestock facility regulation §2(4)(c) allows up to 6 chickens on lots up to 10,000 sq ft, 8 on 10,000–15,000, 10 on 15,000–35,000, plus 1 per additional 5,000 above 35,000; combined small-livestock cap 12 per 10,000 sq ft and zoning/permit conditions apply. At exactly 10,000 or 15,000 sq ft published tiers overlap; ask city.",
-    "roosters": "Any rooster triggers small-livestock license; city does not ban them categorically in current facility guidance",
+    "roosters": "Everett Animal Services' CURRENT facility-license page expressly treats ANY number of roosters as requiring a small-livestock facility license (annual; listed fee $50). This does NOT establish that roosters are permitted on every lot or in every zoning district; confirm with Animal Services/Planning. Do not misread the proposed 2023 rooster ban as enacted code.",
     "permit": "Small livestock license annually for 6+ domestic fowl or any number of roosters; permit inspection required",
     "placement": "Coops and enclosures are not permitted in front yards or street-facing corner-lot sides; enclosed pens >=5 ft from adjoining PROPERTY lines under Everett facilities standards §3(3)-(5), plus any greater setbacks under EMC Title 19. Housing conditions and possible construction permits separate.",
     "verified": "2026-10-13",
@@ -1446,7 +1446,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Everett 2024 Animal Shelter Advisory Board approved livestock/small-livestock facility permit standards §2(4), §3 and City Facility Licenses guidance: lot-size-based allowable chickens, separate combined animal caps and license for >=6 chickens or any rooster. Despite general 2023 FAQ note about livestock zoning, detailed city regulations treat chickens separately; verify the exact parcel with Planning. Published exact 10,000/15,000-sf threshold overlaps remain unresolved.",
+    "note": "Current Everett City Facility Licenses states any rooster requires small-livestock facility licensing and that 6+ domesticated fowl also trigger it. The operative EMC §6.04.070 through Sept. 2026 does NOT contain the proposed 2023 categorical rooster ban; its earlier clause is Reserved. This supports only a conditional license-trigger statement, not permission to keep a rooster on any residential parcel. Lot-size chicken limits and coop placement remain scoped to Jan 2024 approved facility regulations and zoning caveats; precise 10,000/15,000 sf tier endpoints overlap.",
     "source": "https://www.everettwa.gov/197/Facility-Licenses"
   },
   {
@@ -1645,7 +1645,7 @@ window.COOP_CITIES=[
     "stateName": "Texas",
     "max": "Up to 25 chickens on parcels <=1 acre; larger-parcel rooster-to-hen ratio rules apply",
     "roosters": "No more than 1 rooster per 6 hens on <=1 acre, and ratio of 1 rooster per 6 hens on larger lots; additional code exceptions",
-    "permit": "Follow building, zoning, sanitary enclosure requirements",
+    "permit": "Irving Code §6-62(c)(1) requires chicken enclosures to meet all applicable CITY building and zoning requirements. §6-62 does not provide a general building-permit waiver or resolve whether an ordinary chicken-keeping permit is required for a given property. Special permitted animal exhibitions under §6-62(d) are a different case.",
     "placement": "Chicken housing at least 25 ft from an occupied building on another person's property; roofed roosting area and outdoor run min 10 sq ft per chicken",
     "verified": "2026-10-13",
     "planner": {
@@ -1656,7 +1656,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Lot zoning, local amendments, and private restrictions can still affect the property.",
+    "note": "Current Irving Code §6-62(a)-(d) distinguishes <=1-acre maximum 25 chickens/conditional one rooster (>=6 hens), >1-acre rooster-to-hen ratio, 25-ft setback to other people's occupied buildings and enclosure specifications. §6-62(c)(1) requires compliance with separate building/zoning requirements; its special exhibition permit is NOT a generic ordinary residential chicken license or an exemption.",
     "source": "https://ecode360.com/45683221"
   },
   {

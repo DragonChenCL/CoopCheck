@@ -1,5 +1,15 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Tigard / Everett / Medford / Irving scoped city ordinance checks
+
+- Added **four claim-level primary/city-source mappings**: **224/400 clause checked**, **128 source-recorded**, **48 unverified**; 88 reviewed/12 paused/noindex unchanged. Some newly verified claims are only scoped legal duties/negative findings, NOT full permit or zoning clearance.
+- Tigard OR: [Article VII §§6.02.610-630](https://ecode360.com/43651072) no universal bird-count limit stated, corroborated by Tigard City Code Compliance; other regulations and building permits still separate.
+- Everett WA: [facility licensing](https://www.everettwa.gov/197/Facility-Licenses) specifically requires annual small-livestock license for **any rooster**, $50 listed, while [operative 2026 §6.04.070(C)(9)](https://everett.municipal.codes/EMC/6.04.070) is Reserved, so a draft 2023 categorical ban cannot be represented as current law. Property permission unresolved.
+- Medford OR: [§5.555(1)(e)](https://medford.municipal.codes/Code/5.555) demands applicable building/fire-code compliance for coops, sheds etc; city permit guidance says outbuildings may need permit. Separate chicken-keeping permit not proven.
+- Irving TX: [§6-62(c)(1)](https://ecode360.com/45683221) requires building/zoning compliance; exhibition permit under (d) cannot stand in for routine poultry-keeping/coop approvals.
+- Reviewed Fort Collins CO §4-117 leads and Hillsboro OR §6.20.070 claims; only third-party summaries/draft or an inaccessible current primary ordinance were found for the remaining specific figures. They remain source_recorded and were **not** upgraded.
+
+
 ## 2026-10-13 — Austin effective 2022 fowl enclosure ordinance correction
 
 - No new claims promoted: this correction keeps **220/400** primary-checked, **132** source-recorded and **48** unverified; latest other-city audit from main retained.

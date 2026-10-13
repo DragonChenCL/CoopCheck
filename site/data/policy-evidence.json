@@ -1597,7 +1597,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://medford.municipal.codes/Code/5.555",
+        "section": "Medford Municipal Code §5.555(1)(e), current through Ordinance 2026-56 (2026-08-19)",
+        "detail": "Expressly requires any poultry run/pen/coop construction and use to comply with applicable building/fire codes, including heat-lamp and electrical conditions. Current city Building Safety guidance says sheds/outbuildings MAY require permit. This positive building-code duty does not establish whether a distinct keeping license exists or whether this particular shed needs a permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1671,7 +1675,11 @@
     },
     "tigard-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/43651072",
+        "section": "Tigard Municipal Code Article VII §§6.02.610–630 (Ord. 22-09); companion City Code Compliance Livestock/Poultry guidance",
+        "detail": "Operative city's livestock-keeping chapter sets husbandry, rooster >3-mo prohibition and housing, but provides NO universal numeric hen/flock ceiling; city code-compliance page says ownership is not otherwise number-regulated. Negative finding limited to these sources; nuisance, zone, lot coverage and other approvals remain.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "primary_clause_checked",
@@ -1784,7 +1792,11 @@
         "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.everettwa.gov/197/Facility-Licenses",
+        "section": "Everett Animal Services: Facility Licenses > Livestock or Small Livestock; cross-check EMC §6.04.070(C)(9), current through 4203-26",
+        "detail": "City's official current licensing rule says ANY rooster triggers annual small-livestock facility license (listed $50) and inspection; current §6.04.070(C)(9) is Reserved, so historical 2023 proposed ban must NOT be claimed enacted. Does not establish parcel- or zoning-specific rooster permission.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "primary_clause_checked",
@@ -2052,7 +2064,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ecode360.com/45683221",
+        "section": "Irving current Animal Code §6-62(c)(1), (d); Ordinance 2021-10468",
+        "detail": "Chicken enclosure must comply with applicable city building and zoning law; extraordinary permitted animal exhibition under (d) is separate. §6-62 does NOT state that every routine coop is permit-free, nor does this isolated clause resolve routine keeping license or exact building approval.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",

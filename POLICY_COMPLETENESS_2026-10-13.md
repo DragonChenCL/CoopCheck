@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (45 general summaries; 43 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **220**; 132 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **224**; 128 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -79,16 +79,16 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Beaverton, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Hillsboro, OR | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
 | Bend, OR | verified_limited_scope | Clause checked (>=5,000 sq ft) | Clause checked (no roosters) | Source; permit unconfirmed | Source; coop setback unconfirmed |
-| Medford, OR | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Medford, OR | verified_limited_scope | Clause checked | Clause checked | Clause checked (building/fire duty only) | Clause checked |
 | Ashland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Corvallis, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Lake Oswego, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
-| Tigard, OR | verified_limited_scope | Source; clause pending | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Tigard, OR | verified_limited_scope | Clause checked (no numeric cap in cited chapter) | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Tacoma, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Bellevue, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Kent, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Renton, WA | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Everett, WA | verified_limited_scope | Clause checked | Source; clause pending | Clause checked | Clause checked |
+| Everett, WA | verified_limited_scope | Clause checked | Clause checked (license trigger only) | Clause checked | Clause checked |
 | Olympia, WA | verified_limited_scope | Clause checked | Clause checked | Source; permit still pending | Clause checked |
 | Bellingham, WA | verified_limited_scope | Clause checked | Source; clause pending | Source; clause pending | Clause checked |
 | Yakima, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
@@ -98,7 +98,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | San Antonio, TX | verified | City guidance checked (§5-107) | City guidance checked (§5-107) | City guidance checked (excess permit) | Source; clause pending |
 | Plano, TX | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Frisco, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked |
-| Irving, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Irving, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause checked (building/zoning duty only) | Clause/guidance checked |
 | Garland, TX | verified_limited_scope | Clause checked | Clause checked | Source; permits still pending | Clause checked |
 | McKinney, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
 | Denton, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
@@ -195,3 +195,11 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 - [Sierra Vista 2026 S-24 §90.11](https://codelibrary.amlegal.com/codes/sierravista/latest/sierravista_az/0-0-0-17093) as amended Ord. 2024-009: six fowl only for qualifying detached homes, roosters barred, secure side/rear enclosure at least 20 ft from **neighboring property** (not specified neighboring dwelling), enclosure <=200 sq ft and <=8 ft/below fence. Keeping and building permits are still unresolved.
 - [Tempe §3-404(I)(8)](https://www.tempe.gov/government/community-development/code-compliance-open-m-i-n-d/homeowners/violations/animals-insects/animal-quantities): enclosure for lots under one acre no taller than fence/wall line; no numeric setback or building-permit waiver proven.
 - **Six fields added**: **220/400 checked, 132 recorded, 48 unverified**. The existing 88 reviewed city summaries and 12 pending/noindex cities are unchanged; no geography expansion.
+
+## 2026-10-13 — Four narrowly scoped operative clauses / licensing disclosures
+
+- **Tigard, OR — flock field**: [Tigard current Code §6.02.610–630](https://ecode360.com/43651072) (Ord. 22-09) establishes livestock husbandry, coops, roosters, nuisances but **no uniform numerical chicken cap in this chapter**; [City Code Compliance](https://www.tigard-or.gov/your-government/departments/community-development/code-compliance/common-code-violations) explicitly describes backyard livestock ownership as not directly number-regulated. This is NOT confirmation of unlimited flocks, zoning clearance or exemption from structure permits.
+- **Everett, WA — rooster field**: [City Animal Services Facility Licenses](https://www.everettwa.gov/197/Facility-Licenses) says **ANY rooster triggers annual small-livestock facility license** ($50 listed; inspection), while [operative §6.04.070(C)(9)](https://everett.municipal.codes/EMC/6.04.070) through Ordinance 4203-26 reads **Reserved**, not the draft 2023 proposed rooster ban. Neither establishes that roosters are allowable on a particular lot.
+- **Medford, OR — permit/approval field**: [current Code §5.555(1)(e)](https://medford.municipal.codes/Code/5.555) explicitly requires animal-enclosure building/fire-code compliance, and [Medford Building Safety](https://www.medfordoregon.gov/Government/Departments/Building-Safety/Require-a-Permit) says sheds/outbuildings *may* need construction approval. No categorical keeping-permit waiver or guaranteed building permit requirement is established.
+- **Irving, TX — permit/approval field**: [current §6-62(c)(1)](https://ecode360.com/45683221) expressly requires compliance with applicable zoning and building rules for chicken coops; subsection (d)'s **animal exhibition permit** is NOT a default backyard poultry license. Actual construction and animal-keeping permit determinations remain property-specific.
+- **+4 scoped field mappings to 224/400**; **128** source-recorded, **48** pending-city unverified; **88 reviewed and 12 noindex cities unchanged**. A mapped negative/conditional finding is not a municipal full approval.
