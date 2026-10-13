@@ -5,12 +5,12 @@
 <title>Backyard Chicken Laws by City & Coop Setback Planner | CoopCheck</title>
 <meta name="description" content="Find backyard chicken laws in 100 US cities. Search local flock limits, rooster rules, permits and coop setbacks, then open a free map-based chicken coop planner.">
 <link rel="canonical" href="https://coopcheck.serunio.com/"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=20261013-premium2">
+<link rel="stylesheet" href="assets/style.css?v=20261013-dropdown3">
 <meta property="og:title" content="CoopCheck — Find Backyard Chicken Laws in Your City">
 <meta property="og:description" content="Search city poultry policies with transparent source verification, then sketch your proposed coop location on a map.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://coopcheck.serunio.com/">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"CoopCheck","url":"https://coopcheck.serunio.com/","description":"Backyard chicken law research and coop planning for 100 US cities."},{"@context":"https://schema.org","@type":"WebApplication","name":"CoopCheck Chicken Coop Planner","url":"https://coopcheck.serunio.com/planner.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]</script>
-<script src="assets/city-search.js?v=20261013-premium2" defer></script><script src="assets/homepage-motion.js?v=20261013-1" defer></script>
+<script src="assets/city-search.js?v=20261013-dropdown3" defer></script><script src="assets/homepage-motion.js?v=20261013-1" defer></script>
 </head>
 <body class="cc-home">
 <header class="site-header cc-header"><div class="container cc-nav">
@@ -33,9 +33,9 @@
 <div class="cc-search-controls">
 <div class="cc-search-input-wrap"><svg class="cc-search-icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
 <input id="homeCitySearch" data-search-input type="search" placeholder="Search a city — e.g. Seattle or Phoenix" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="homeCityResults" aria-describedby="homeCityHint"></div>
-<div class="cc-state-control"><svg aria-hidden="true" class="cc-pin-icon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
-<select data-search-state aria-label="Filter cities by state"><option value="">All states</option></select><svg class="cc-chevron" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m6 9 6 6 6-6"></path></svg></div>
+<div class="cc-state-control" data-search-state data-dropdown data-value=""><button class="cc-select-trigger" type="button" data-dropdown-trigger aria-haspopup="listbox" aria-expanded="false" aria-controls="homeStateOptions" aria-label="Filter cities by state"><svg aria-hidden="true" class="cc-pin-icon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.6"></circle></svg><span data-dropdown-label>All states</span><svg class="cc-chevron" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m6 9 6 6 6-6"></path></svg></button></div>
 </div>
+<div id="homeStateOptions" class="cc-dropdown-options cc-home-state-options" data-dropdown-menu role="listbox" aria-label="States" hidden></div>
 <div id="homeCityResults" class="cc-search-results" data-search-results role="listbox" aria-label="Matching city pages" hidden></div>
 <div class="cc-search-meta"><span id="homeCityHint" data-search-hint aria-live="polite">Search all 100 city profiles. Unverified cities are clearly marked.</span><button type="button" class="btn cc-search-submit" data-search-submit>Search city <span aria-hidden="true">→</span></button></div>
 </div>
