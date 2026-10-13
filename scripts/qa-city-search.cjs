@@ -51,4 +51,17 @@ assert(home.includes('href="planner.html"')&&home.includes('href="coverage.html"
 assert(home.includes('Illustrative map · Not a survey'),"demo geometry must be labeled illustrative");
 assert(!home.includes("6 hens")&&!home.includes("Permit required</span><strong>No"),"hero must not fabricate city-specific laws");
 assert(read("site/assets/favicon.svg").includes("<svg"),"new favicon is an SVG");
+
+assert(!home.includes('<select data-search-state'),"homepage must not use a native state select");
+assert(!directory.includes('<select data-directory-state')&&!directory.includes('<select data-directory-status'),"directory filters must be custom controls");
+assert(home.includes('data-dropdown-trigger')&&home.includes('id="homeStateOptions"'),"custom state trigger and menu required");
+assert(directory.includes('id="directoryStates"')&&directory.includes('id="directoryStatuses"'),"custom directory dropdowns required");
+const searchScript=read("site/assets/city-search.js");
+assert(searchScript.includes('rootEl.addEventListener("focusout"'),"suggestions must close on focus leaving search");
+assert(searchScript.includes('if(!input.value.trim()&&!selectedValue(state))'),"blank focused search must stay collapsed");
+assert(searchScript.includes('doc.addEventListener("pointerdown"'),"outside clicks must dismiss menus");
+assert(searchScript.includes('event.key==="Escape"'),"keyboard Escape must dismiss menu");
+const styles=read("site/assets/style.css");
+assert(styles.includes('position:static!important'),"suggestions should not float over lower content");
+assert(styles.includes('.cc-select-trigger')&&styles.includes('.cc-filter-trigger'),"custom dropdown visual styles required");
 console.log("PASS: all-city search, state/status filters, pending distinction, SEO HTML hooks");
