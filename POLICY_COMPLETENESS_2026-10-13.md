@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (45 general summaries; 43 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **201**; 151 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **204**; 148 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -51,7 +51,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | San Francisco, CA | verified | Clause checked | Source; clause pending | Clause checked (DPH enclosure approval; building/zoning open) | Clause checked (20 ft to door/window, not lot line) |
 | San Jose, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Oakland, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Fresno, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Fresno, CA | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Bakersfield, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Riverside, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Irvine, CA | needs_review | Not verified | Not verified | Not verified | Not verified |

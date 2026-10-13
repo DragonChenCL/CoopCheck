@@ -1,5 +1,10 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Fresno material law correction
+
+- [Fresno current Code §15-2707](https://library.municode.com/CA/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC) clarifies residential land-size tiers. Poultry prohibited as a household pet on typical <=36,000-sq-ft residential lot but allowed (up to twelve/gross acre) on larger qualifying lots. City roosters prohibited except accredited zoo, and enclosure on eligible residential lot >=40ft from lot lines AND >=50ft from neighbor residential structure. Prior blanket prohibition on ALL residential parcels was wrong; corrected. Permit remains unresolved without an affirmative source.
+- Primary law claims now **204/400**, source-recorded **148**; 48 unverified for paused 12 municipalities; 88 reviewed city summaries remain unchanged.
+
 ## 2026-10-13 — Santa Ana full four-field city animal ordinance check
 
 - City Chapter 5 [§§5-6, 5-6.5, 5-18](https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH5AN) checked all four city-specific claims: max four combined FOWL/RABBITS without excess-keeping special permit (not four hens plus rabbits), residential no-rooster clause, animal-keeping special permit for >four subject to Planning review, and >=30 ft to other persons' human-occupied building not parcel line. Building/HOA/zoning approvals separate.
