@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **103**; 245 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **109**; 239 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -48,7 +48,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Apache Junction, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Sierra Vista, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Los Angeles, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| San Francisco, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| San Francisco, CA | verified | Clause checked | Source; clause pending | Clause checked (DPH enclosure approval; building/zoning open) | Clause checked (20 ft to door/window, not lot line) |
 | San Jose, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Oakland, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Fresno, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -104,8 +104,8 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Denton, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | El Paso, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Round Rock, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
-| New York City, NY | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Minneapolis, MN | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| New York City, NY | verified_limited_scope | Source; clause pending | Clause checked | Source; clause pending | Source; clause pending |
+| Minneapolis, MN | verified_limited_scope | Source; clause pending | Clause/guidance checked (permit fee category; approval open) | Clause/guidance checked | Source; clause pending |
 | Madison, WI | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Indianapolis, IN | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Raleigh, NC | verified_limited_scope | Clause checked | Source; clause pending | Source; clause pending | Source; clause pending |

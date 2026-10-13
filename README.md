@@ -66,3 +66,7 @@ The previously noted **85/15** audit was a dated historical snapshot. Registry i
 ## Olympia 2026 Ordinance 7457 validation
 
 The live registry now includes **87 source-reviewed summaries, 13 pending**, with **23/400** individual field checks. Olympia, WA moves only to limited-scope thanks to OMC §18.04.060(KK); exactly one acre, permit/zoning and setback exceptions require human review. Older review counts above are historical.
+
+## Latest evidence progress (2026-10-13)
+
+The current authoritative completeness report is [POLICY_COMPLETENESS_2026-10-13.md](POLICY_COMPLETENESS_2026-10-13.md): **87** cities have source-reviewed summaries (not blanket legal approval), **13** remain pending/noindex, and **109/400** individual city×field claims have primary city code/guidance evidence. Earlier counts above are historical batch snapshots. Keep unconfirmed fields clearly scoped and property-specific zoning/permit/setback decisions manual.
