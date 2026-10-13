@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **60**; 288 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **79**; 269 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -20,9 +20,9 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Portland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Eugene, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Salem, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Gresham, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Gresham, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Seattle, WA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Spokane, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Spokane, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Vancouver, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
 | Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
@@ -61,7 +61,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Stockton, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Modesto, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Elk Grove, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Roseville, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Roseville, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Folsom, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Berkeley, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fremont, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -92,7 +92,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Olympia, WA | verified_limited_scope | Clause checked | Clause checked | Source; permit still pending | Clause checked |
 | Bellingham, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
 | Yakima, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Redmond, WA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Redmond, WA | verified | Clause checked | Clause checked | Clause checked | Source; clause pending |
 | Houston, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Dallas, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | San Antonio, TX | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -106,7 +106,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Round Rock, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
 | New York City, NY | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Minneapolis, MN | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Madison, WI | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Madison, WI | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Indianapolis, IN | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Raleigh, NC | verified_limited_scope | Clause checked | Source; clause pending | Source; clause pending | Source; clause pending |
 
@@ -166,3 +166,11 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 - San Diego: [city urban-farming chicken guidance](https://www.sandiego.gov/urban-farming/bees-and-livestock/chickens) and municipal §42.0709 specify the conditional 5/15/25 chicken tiers, no roosters, and distinct property-line vs neighboring-residence placement measurements. The typical five-hen 5-ft side/13-ft rear example is zone-dependent; structure permits are not universally resolved.
 - Sacramento: [current city animal-care licensing page](https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license) specifies three chickens, no roosters, current annual **$20 per chicken + $47 coop permit**, and a rear-yard coop 20 ft from a neighboring dwelling. An older city PDF application still quotes $15/$30: **the online page and legacy PDF disagree**; use the city's current fee guidance and verify before payment.
 - Fort Worth: [city Roosters and Fowl guidance](https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl) specifies size-tiered totals of 12 / 25 / 50 fowl, maximum two roosters, and pen/coop more than 50 ft from a regulated structure. The city's published text does not explicitly resolve the exactly-1-acre band; do not invent the threshold or a building-permit exemption.
+
+## 2026-10-13 — five further city source checks (Gresham, Spokane, Madison, Redmond, Roseville)
+
+- Gresham: city [Keeping Chickens guidance](https://www.greshamoregon.gov/residents/community-services/chickens/) maps 3 adult hens, no roosters, required keeping permit, rear-only coop and run, property-line 10-ft, neighboring dwelling 25-ft for coop. Four field checks.
+- Spokane: [SMC §17C.310.115](https://my.spokanecity.org/smc/?Section=17C.310.115) maps 1 animal or fowl/1,000 sq-ft **combined** limit, RA-only roosters, exclusion of chickens from WSU animal-care certification (NOT all permits), and accessory-structure setback rule. Four field checks.
+- Madison: [official Chicken License guidance](https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens) maps 8 hens on lots with ≤4 dwelling units, prohibition of roosters, annual city license + Wisconsin premises registration, and 25-ft separation **to neighboring residential structure**. Four field checks.
+- Redmond: [official Chicken Husbandry guidance](https://www.redmond.gov/228/Chicken-Husbandry) maps city-zone flock tiers, roosters prohibited, chicken registration before obtaining poultry. The claimed 15-ft coop setback and registration **no-fee** status are NOT independently supported by these HTML excerpts; placement stays source_recorded, fee unproven. Three field checks.
+- Roseville: [city Animal Control 2022 poultry guidance](https://www.roseville.ca.us/news/what_s_happening_in_roseville/keeping_chickens_within_roseville_city_limits) maps combined 10 domestic fowl, includes roosters (noise restrictions), discretionary special permit for **nonconforming** enclosure ($25/year **in 2022**, not all coops), and 20-ft **property-line** distance for coop AND fenced run. Current RMC chapter and fee schedule still deserve reconfirmation. Four field checks.

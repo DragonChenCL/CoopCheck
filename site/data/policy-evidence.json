@@ -289,16 +289,32 @@
     },
     "gresham-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.greshamoregon.gov/residents/community-services/chickens/",
+        "section": "City of Gresham Keeping Chickens in Gresham; Gresham Revised Code art. 7.17",
+        "detail": "Up to three adult hens on eligible single-family residential property; eligibility, occupancy, nuisance and HOA restrictions apply.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.greshamoregon.gov/residents/community-services/chickens/",
+        "section": "City of Gresham Keeping Chickens in Gresham; GRC art. 7.17",
+        "detail": "Roosters not allowed under Gresham's backyard chicken program.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.greshamoregon.gov/residents/community-services/chickens/",
+        "section": "City of Gresham Keeping Chickens in Gresham; GRC art. 7.17",
+        "detail": "City chicken-keeping permit required before keeping chickens; structure/building permits remain separately assessed. Fee and validity may change; verify with city.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.greshamoregon.gov/residents/community-services/chickens/",
+        "section": "City of Gresham Keeping Chickens in Gresham; GRC art. 7.17",
+        "detail": "Coop and run must be in rear yard; coop at least 25 ft from neighboring dwelling and 10 ft from property line; run at least 10 ft from property line; minimum 2 sq ft per adult chicken.",
+        "checkedAt": "2026-10-13"
       }
     },
     "seattle-wa": {
@@ -329,16 +345,32 @@
     },
     "spokane-wa": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://my.spokanecity.org/smc/?Section=17C.310.115",
+        "section": "Spokane Municipal Code §17C.310.115(B)(1)",
+        "detail": "Cumulative animal/fowl allowance of one small domestic animal or fowl per 1,000 sq ft of lot; other small domestic animals count in the combined area calculation, and zone eligibility matters.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://my.spokanecity.org/smc/?Section=17C.310.115",
+        "section": "Spokane Municipal Code §17C.310.115(B)(3)",
+        "detail": "Roosters and peacocks allowed only in the RA zone.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://my.spokanecity.org/smc/?Section=17C.310.115",
+        "section": "Spokane Municipal Code §17C.310.115(B)(2)",
+        "detail": "Chickens are excluded from the WSU animal-keeping certification obligation; this does NOT waive building permits, zoning approvals or all other animal permits.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://my.spokanecity.org/smc/?Section=17C.310.115",
+        "section": "Spokane Municipal Code §17C.310.115(B)(5)-(6)",
+        "detail": "Enclosures outside RA require suitable residential or same-owner adjacent lot; structures must comply with residential accessory-structure setbacks under SMC §17C.111.240; no single universal chicken setback is established here.",
+        "checkedAt": "2026-10-13"
       }
     },
     "vancouver-wa": {
@@ -939,16 +971,32 @@
     },
     "roseville-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.roseville.ca.us/news/what_s_happening_in_roseville/keeping_chickens_within_roseville_city_limits",
+        "section": "City of Roseville Animal Control guidance, Keeping Chickens Within Roseville City Limits (2022)",
+        "detail": "Up to ten ducks, chickens (including hens and roosters) and/or pigeons in combination on residentially zoned property; this dated city guidance should be reconfirmed against operative Title 7 ch. 7.36.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.roseville.ca.us/news/what_s_happening_in_roseville/keeping_chickens_within_roseville_city_limits",
+        "section": "City of Roseville Animal Control guidance, Keeping Chickens Within Roseville City Limits (2022)",
+        "detail": "Roosters included in permitted domestic-fowl total, NOT categorically prohibited; continuous noise for 20 minutes or intermittent for one hour disturbing neighbors may violate animal noise ordinance. Recheck current code.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.roseville.ca.us/news/what_s_happening_in_roseville/keeping_chickens_within_roseville_city_limits",
+        "section": "City of Roseville Animal Control guidance, Special Permit for nonconforming enclosures (2022)",
+        "detail": "Discretionary animal special permit may allow nonconforming chicken-enclosure siting after review, with annual renewal and 2022-described $25/year fee; this is NOT a blanket permit requirement for compliant enclosures; current fees and building approvals require confirmation.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.roseville.ca.us/news/what_s_happening_in_roseville/keeping_chickens_within_roseville_city_limits",
+        "section": "City of Roseville Animal Control guidance, enclosure location (2022)",
+        "detail": "Sanitary chicken enclosure including fenced runs must be at least 20 ft from any property line; discretionary exceptions may need animal special permit, updated legal text and building conditions should be checked.",
+        "checkedAt": "2026-10-13"
       }
     },
     "folsom-ca": {
@@ -1390,13 +1438,25 @@
     },
     "redmond-wa": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.redmond.gov/228/Chicken-Husbandry",
+        "section": "City of Redmond Chicken Husbandry: Maximum Number of Chickens",
+        "detail": "R-6:4; R-5:6; R-4:7; R-3:8; RA-5/R-1/R-2/Urban Recreation:10; RIN requires planner; R-8, multifamily, urban centers and business zones prohibit chickens. Zoning must be confirmed for each property.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.redmond.gov/228/Chicken-Husbandry",
+        "section": "City of Redmond Chicken Husbandry: Raising Chickens in Redmond",
+        "detail": "Roosters not permitted; standard program is for hens and pullets in qualifying single-family zones.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.redmond.gov/228/Chicken-Husbandry",
+        "section": "City of Redmond Chicken Husbandry: Submit a registration in advance",
+        "detail": "City instructs residents to submit a chicken husbandry registration before obtaining birds. The page does not itself establish whether a fee or additional structure permits are required.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -1600,16 +1660,32 @@
     },
     "madison-wi": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens",
+        "section": "City of Madison Chicken License: Regulations for Keeping Chickens, bullet 5",
+        "detail": "Up to eight chickens as accessory use on lots containing up to four dwelling units and at qualified school, daycare or museum sites.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens",
+        "section": "City of Madison Chicken License: Regulations for Keeping Chickens, bullet 2",
+        "detail": "No roosters permitted.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens",
+        "section": "City of Madison Chicken License: registration, application and renewal sections",
+        "detail": "City chicken license required, apply within 30 days of acquisition, renew by Jan 1; Wisconsin DATCP livestock premises registration also required; zoning/building permits not automatically waived.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens",
+        "section": "City of Madison Chicken License: Regulations for Keeping Chickens, bullets 7-8",
+        "detail": "Chickens must stay within a covered or fenced enclosure; enclosure at least 25 ft from any residential structure on an adjacent lot (not measured from property boundary).",
+        "checkedAt": "2026-10-13"
       }
     },
     "indianapolis-in": {

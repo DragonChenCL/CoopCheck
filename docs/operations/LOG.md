@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Gresham / Spokane / Madison / Redmond / Roseville follow-up audit
+
+- Added 19 field-specific government-code/guidance proofs: Gresham 4, Spokane 4, Madison 4, Redmond 3, Roseville 4. Total: **79/400**, with 269 fields source-recorded and 52 unverified in 13 pending cities.
+- Corrected conceptual risks: Spokane WSU certification exemption does not waive building permits; Madison requires Wisconsin livestock premises registration; Roseville roosters are not categorically banned, and annual $25 animal special permit in 2022 applies to non-conforming enclosures, not every keeper.
+- Redmond zoning tiers checked; still no independently verified 15-ft structure setback. 2022 Roseville fee could be stale; no authoritative blanket 2026 fee promise.
+- Pending cities are still noindex and excluded from planner; no city has been declared fully approved for a particular property.
+
+
 ## 2026-10-13 — Three more official-city field reviews
 
 - Official references: San Diego §42.0709 (flock, rooster, placement); Sacramento city poultry licensing page (four fields); Fort Worth fowl ordinance summary (flock, rooster, placement).
