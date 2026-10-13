@@ -96,4 +96,14 @@ assert(bySlug["bellevue-wa"].max.includes("6930"),"Bellevue pending legislation"
 assert(bySlug["dallas-tx"].placement.includes("NOT a universal"),"Dallas rooster rule not hen rule");
 assert(bySlug["yuma-az"].placement.includes("NEIGHBORING PROPERTY"),"Yuma lotline not neighbor dwelling");
 assert(bySlug["vancouver-wa"].placement.includes("cannot automatically"),"Vancouver livestock chicken distinction");
+// Second batch of exactly twenty scoped government poultry-law checks.
+for(const field of ["max","roosters","permit","placement"])assert.equal(e.cities["riverside-ca"][field].status,"primary_clause_checked","Riverside 2025 code "+field);
+for(const field of ["roosters","permit","placement"])assert.equal(e.cities["raleigh-nc"][field].status,"primary_clause_checked","Raleigh garden "+field);
+for(const field of ["max","placement"])assert.equal(e.cities["minneapolis-mn"][field].status,"primary_clause_checked","Minneapolis "+field);
+for(const [s,k] of [["stockton-ca","permit"],["elk-grove-ca","permit"],["santa-rosa-ca","permit"],["san-antonio-tx","placement"],["san-diego-ca","permit"],["beaverton-or","permit"],["new-york-city-ny","permit"],["seattle-wa","permit"],["bellingham-wa","permit"],["oakland-ca","max"],["oakland-ca","placement"]])assert.equal(e.cities[s][k].status,"primary_clause_checked",s+"/"+k);
+assert(bySlug["riverside-ca"].max.includes("RE and R-1")&&bySlug["riverside-ca"].placement.includes("NEIGHBORING RESIDENCE"),"Riverside residential 2025 correction");
+assert(bySlug["minneapolis-mn"].max.includes("NOT automatic"),"MACC extra-flock authorization");
+assert(bySlug["raleigh-nc"].placement.includes("NONRESIDENTIAL"),"Raleigh scope");
+assert(bySlug["san-antonio-tx"].placement.includes("EXCESS ANIMAL"),"San Antonio excess conditional only");
+assert(bySlug["oakland-ca"].max.includes("NO universal numeric")&&bySlug["oakland-ca"].placement.includes("numeric citywide"),"Oakland no invented number/distance");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

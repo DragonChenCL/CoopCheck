@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — 20 more primary-scope chicken law checks
+
+- Exactly twenty current municipal source / official planning-guide claim mappings verified. **266/400 checked, 86 source-recorded, 48 unverified**. 88 partial-reviewed cities and 12 pending/noindex unchanged. No city expansion.
+- Riverside 2025 zoning change recognized RE/R-1 poultry up to five and 10-ft neighbor residence rather than previous rural-only summary; Raleigh community-garden scope, Minneapolis permit tiers requiring approval; San Antonio permitted excess flocks vs normal, Oakland no numeric value under city zoning guide.
+- Other nine city permit fields narrow use eligibility, private owner authorization or structure code duties; not a universal building permit exemption.
+
+
 ## 2026-10-13 — Batch of 20 official poultry legal claims
 
 - Exactly **20** official code or specific government-guidance field matches on 9 existing cities; progress **246/400**, **106 source_recorded**, **48 unverified**. City statuses 88 partial source-reviewed, 12 pending/noindex unchanged.
