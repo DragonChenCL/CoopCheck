@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **87 条城市摘要有至少部分来源支持、13 城市仍处于 needs_review；109 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **239 项为 source_recorded、52 项为 unverified**。注意 87 ≠ 87 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；116 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **236 项为 source_recorded、48 项为 unverified**。注意 87 ≠ 87 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -18,20 +18,20 @@
 | Boulder, CO | [Boulder 市政府网站](https://bouldercolorado.gov/) | 需要本市现行家禽数量限制和建筑/分区审批证据，不以县法规代替市法规 | 待核验 |
 | Arvada, CO | [Arvada 市 Municode 法典](https://library.municode.com/co/arvada/codes/code_of_ordinances) | 曾找到较旧修订档，仍未确证 2026 生效版本 §§14-92, 14-123 具体条件；需区分农业分区和一般住宅 | 待核验 |
 | Pueblo, CO | [Pueblo 市 Municode 法典](https://library.municode.com/co/pueblo/codes/code_of_ordinances) | 核实第 11-4-32 条当前有效文本及位置/许可要求，不能复用旧论坛数字 | 待核验 |
-| Bend, OR | [市政府法典入口](https://bendoregon.gov/resources/city-codes-policies-ordinances-and-resolutions/city-codes/)、[BDC 法典](https://bend.municipal.codes/BDC)、[2026 法规修订清单](https://bendoregon.gov/resources/city-codes-policies-ordinances-and-resolutions/ordinances/) | 网上 2020 版资料写 5,000sqft 以上四只母鸡/兔，但现行 Code Publishing 仅到 2026-08-05，9 月的 Ordinance 2560 涉及 BDC 第 3.6 章；**必须先确认修改有无触及养鸡条款**。市 Planning: planning@bendoregon.gov | 待核验 |
+| Bend, OR | [市政府法典入口](https://bendoregon.gov/resources/city-codes-policies-ordinances-and-resolutions/city-codes/)、[BDC 法典](https://bend.municipal.codes/BDC)、[2026 法规修订清单](https://bendoregon.gov/resources/city-codes-policies-ordinances-and-resolutions/ordinances/) | 网上 2020 版资料写 5,000sqft 以上四只母鸡/兔，但现行 Code Publishing 仅到 2026-08-05，9 月的 Ordinance 2560 涉及 BDC 第 3.6 章；**已对照市政府发布的2026修订，未识别§3.6.300(I)被修改；母鸡/兔合计4只及禁公鸡已限定范围核验；鸡舍位置与许可仍需市政府答复**。市 Planning: planning@bendoregon.gov | **有限范围已核验；许可/退距待办** |
 | Renton, WA | [Renton 市政法典查询](https://renton.municipal.codes/RMC/4-4-010) | 必须核实适用住宅分区、地块面积与公鸡和退距规定，查询服务访问不稳定。可问 planningcustomerservice@rentonwa.gov | 待核验 |
 | Round Rock, TX | [Municode 2026.09 生效版本](https://library.municode.com/tx/round_rock/codes/code_of_ordinances) | 已找到 §8-31 牲畜一英亩规则，但该定义不含鸡鸭；**不可把畜牧条款误套家禽**。需另查城市养禽和住宅分区规则，关注未编入法典的修订 | 待核验 |
 
 ## 优先处理顺序
 
-1. **Bend**：先对比 2026 年 9 月 Ordinance 2560 与 BDC Chapter 3.6 中 Keeping Farm Animals 条文，取得现行证据后再提升。
+1. **Bend**：已限定范围核验 §3.6.300(I) 的家禽总数与公鸡规则；下一步向规划部门核实鸡舍位置和建设/养禽许可。该市已不属于 `needs_review`，但不能宣称全面合规。
 2. **Peoria、Arvada、Pueblo、Renton、Round Rock**：已有可定位的城市法典和疑似条款，核实完整上下文可获得最大产出。
 3. **Irvine、Berkeley、Boulder、Surprise、Queen Creek、Prescott、Apache Junction**：重新定位当地用地规范或向城市部门获取适用法规。
 4. **其他已上线城市**：还有大量 source_recorded 字段缺少具体法条；完成 13 城只是减少 pending，不等于 400 字段全部完成。
 
 ## 其他高风险、已发布城市的字段级核对（不计入 13 个 needs_review）
 
-- **San Antonio, TX**：现有 city registry 所引用的官方禽类/超额动物许可表格与 [San Antonio ACS 官方许可说明](https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits) 存在条款编号差异，分别提到 §§5-107 和 5-109。网页及官方 PDF 在 2026-10-13 直接抓取时出现 403，搜索引擎已索引的段落不足以证明现行合并法规全文。须取得当前生效的完整 Chapter 5 原文核对数量、公鸡、超额许可和鸡舍距离，不把 8 只/1 只公鸡等简述自动计入逐字段 primary_clause_checked。
+- **San Antonio, TX**：现有 city registry 所引用的官方禽类/超额动物许可表格与 [San Antonio ACS 官方许可说明](https://www.sa.gov/Directory/Departments/ACS/Laws-Fees/Permits) 存在条款编号差异，分别提到 §§5-107 和 5-109。**现行 Municode Chapter 5 目录明确 §5-107 为 Animal limits; excess animal permit，§5-109 为 Pet shop license**；市 ACS 页面仍误标 §5-109。本轮按政府 ACS 现行养禽指南确认常规8只、最多1公鸡和超额许可，但 PDF 鸡舍面积/距离字段尚待核对完整现行条文，不能将 §5-109 当家禽授权法条。
 - **NYC 和 Minneapolis**：已验证的公鸡/许可事实，不代表 25-ft 活禽市场条款适用于住宅鸡舍，或市许可收费梯度等于无条件禽群上限。参见 [逐字段证据表](../../POLICY_COMPLETENESS_2026-10-13.md)。
 
 ## 对无法线上判断的问题统一发问
@@ -58,3 +58,11 @@
 - The Bend city-hosted [reproduced chapter text / prior official memo](https://bendoregon.gov/wp-content/uploads/2025/12/Juniper_Ridge_Overlay_Use_Table_20200514-REVISED.pdf) states four rabbits and/or hens combined on residential lots of 5,000+ sq ft and no roosters. The 25-ft neighboring-residence and 15-ft interior/rear lot-line setbacks referenced there apply expressly to structures housing **large farm animals**, not automatically a chicken coop.
 - The old 2012 backyard-chickens forum claims of a $104 annual permit and universal 25-ft chicken-coop setback are not proven by the current municipal materials; DO NOT publish those numbers.
 - Until the town confirms current permit/building approval and precise chicken-coop siting conditions (contact planning@bendoregon.gov), Bend remains `needs_review`, `noindex` and disabled for automated compliance; its `unverified` entries are intentionally not upgraded.
+
+## 2026-10-13 双 P0 溯源进展
+
+- Bend, OR：经市政府发布的 BDC §3.6.300(I) 原文及 2026 Ordinance NS-2560 修订记录交叉检查，已限定范围升级（5000平方英尺以上住宅地块母鸡和兔合计不超过4，禁止公鸡）；permit 和鸡舍退距仍待市规划部门，禁止用大农畜建筑15/25英尺标准替代家禽鸡舍距离。
+- Pueblo, CO：发现 [2021 市政委员会议案附件](https://www.pueblo.us/AgendaCenter/ViewFile/Item/36624?fileID=132466) 引述 §11-4-32(b) 8/15/50 ft 距离，但议案附件不是独立的2026生效法典，现行代码全文尚未独立核对；未升级。
+- Round Rock, TX：[官方附属结构许可说明](https://www.roundrocktexas.gov/city-departments/planning-and-development-services/building-inspection/miscellaneous-building-permits/)规定附属建筑申请/地块位置图，小型棚屋仍可能需建设许可；不能当作鸡舍饲养许可证或直接推出禽类可饲养数量；未升级。
+- Arizona 5 待核验城市：[A.R.S. §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) 已确认对符合资格的独立住宅地块的六只家禽保护，但市级公鸡、围栏、HOA 和具体地块条例尚未解决，不凭州法把5座城市直接升级。
+- **逐字段待核验 236 项**继续按官方生效版本优先；证据变化和多重限制见 [主表](../../POLICY_COMPLETENESS_2026-10-13.md)。
