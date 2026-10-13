@@ -51,4 +51,8 @@ assert.equal(e.cities["frisco-tx"].placement.status,"primary_clause_checked");
 assert(bySlug["frisco-tx"].placement.includes("LIVESTOCK"),"Frisco livestock setbacks must not be copied onto fowl");
 assert.equal(e.cities["fort-collins-co"].permit.status,"primary_clause_checked");
 assert(bySlug["fort-collins-co"].permit.includes("$30")&&bySlug["fort-collins-co"].permit.includes("inspection"),"Fort Collins coop license/inspection must be stated");
+for(const k of keys)assert.equal(e.cities["san-jose-ca"][k].status,"primary_clause_checked","San Jose municipal clause missing "+k);
+assert(bySlug["san-jose-ca"].max.includes("Exactly 20, 40, 50"),"San Jose boundary gap must be flagged");
+for(const k of ["roosters","permit"])assert.equal(e.cities["hillsboro-or"][k].status,"primary_clause_checked","Hillsboro city permit/hen restrictions missing");
+assert.equal(e.cities["oakland-ca"].permit.status,"primary_clause_checked","Oakland zoning-specific CUP guidance missing");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
