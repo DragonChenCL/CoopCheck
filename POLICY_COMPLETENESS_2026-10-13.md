@@ -2,8 +2,8 @@
 
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
-Cities: 100. Source-reviewed: 88 (45 general summaries; 43 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **224**; 128 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Cities: 100. Source-reviewed: 88 (44 general summaries; 44 limited-scope). Pending: 12.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **226**; 126 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -70,7 +70,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Aurora, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Boulder, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fort Collins, CO | verified_limited_scope | Source; clause pending | Source; clause pending | Clause checked | Source; clause pending |
-| Lakewood, CO | verified | Source; clause pending | Source; clause pending | Clause checked | Source; clause pending |
+| Lakewood, CO | verified_limited_scope | 2025 ordinance; operative law pending | 2025 ordinance; operative law pending | Clause checked (application exists only) | 2025 ordinance; operative law pending |
 | Arvada, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Thornton, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Westminster, CO | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -80,9 +80,9 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Hillsboro, OR | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
 | Bend, OR | verified_limited_scope | Clause checked (>=5,000 sq ft) | Clause checked (no roosters) | Source; permit unconfirmed | Source; coop setback unconfirmed |
 | Medford, OR | verified_limited_scope | Clause checked | Clause checked | Clause checked (building/fire duty only) | Clause checked |
-| Ashland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Ashland, OR | verified | Clause checked | Clause checked | Clause checked (accessory structure rules only) | Clause checked |
 | Corvallis, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Lake Oswego, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
+| Lake Oswego, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked (manual siting required) |
 | Tigard, OR | verified_limited_scope | Clause checked (no numeric cap in cited chapter) | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Tacoma, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Bellevue, WA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -203,3 +203,10 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 - **Medford, OR — permit/approval field**: [current Code §5.555(1)(e)](https://medford.municipal.codes/Code/5.555) explicitly requires animal-enclosure building/fire-code compliance, and [Medford Building Safety](https://www.medfordoregon.gov/Government/Departments/Building-Safety/Require-a-Permit) says sheds/outbuildings *may* need construction approval. No categorical keeping-permit waiver or guaranteed building permit requirement is established.
 - **Irving, TX — permit/approval field**: [current §6-62(c)(1)](https://ecode360.com/45683221) expressly requires compliance with applicable zoning and building rules for chicken coops; subsection (d)'s **animal exhibition permit** is NOT a default backyard poultry license. Actual construction and animal-keeping permit determinations remain property-specific.
 - **+4 scoped field mappings to 224/400**; **128** source-recorded, **48** pending-city unverified; **88 reviewed and 12 noindex cities unchanged**. A mapped negative/conditional finding is not a municipal full approval.
+
+## 2026-10-13 — Ashland/Lake Oswego scope checks and Lakewood legal-effect correction
+
+- **Ashland OR permit/approval**: [current municipal Community Development FAQ](https://ashlandoregon.gov/m/faq?cat=16) requires chicken coops/runs to comply with **AMC §18.2.5.040 accessory-building rules**. This is a positive code obligation, not proof that every coop needs a construction permit, nor proof of a general livestock-keeping permit exemption. No changes to separately checked lot-line and neighboring-dwelling distances.
+- **Lake Oswego OR placement**: [current Chickens and Roosters FAQ](https://www.ci.oswego.or.us/zh-hans/publicaffairs/chickens-and-roosters) states **coop construction is regulated** and instructs residents to ask Planning (503-635-0290) which setbacks apply to a given parcel. No universal numeric setback and no permission to put coop directly on a boundary are established. Placement remains manual.
+- **Lakewood CO significant correction**: [official 2026 referenda resolutions](https://www.lakewoodco.gov/Local-Government/Departments/City-Clerks-Office/City-Council-Ordinances-Resolutions/2026-Resolutions) include R-2026-09 (O-2025-28: replacing **Article 4**); [April 2026 reporting](https://denverite.com/2026/04/07/lakewood-special-election-results/) describes voters rejecting the zoning rewrite. The previously linked 2025 Article 4 PDF cannot be assumed to be October 2026 operative law. City profile numeric flock, rooster and placement claims are WITHHELD, city review downgraded to limited-scope; the separate official Small Animal Permit application remains established. No field marked newly verified for Lakewood.
+- Evidence advances **+2 to 226/400**, **126 source-recorded**, **48 unverified**. **88 summaries source reviewed (44 general/44 limited-scope), 12 pending/noindex**. No new cities and no property-wide approval.
