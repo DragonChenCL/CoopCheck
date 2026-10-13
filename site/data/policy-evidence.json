@@ -49,7 +49,11 @@
         "detail": "Rooster noise disturbance may require removal"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock",
+        "section": "Mesa Animal Control Fowl, Rodents & Livestock government guide; §8-6-21 licensing scope",
+        "detail": "City guidance links fowl/rodent keeping to §8-6-21 zone and sanitation rules; official source does not confirm broad keeping/structure permit waiver; distinguish from dogs licenses.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -499,7 +503,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.fortworthtexas.gov/departments/code-compliance/animals/pet-resources/roosters-and-fowl",
+        "section": "Fort Worth City Animal Care Requirements for Roosters and Fowl, current",
+        "detail": "Official animal keeping rules mandate coops always enclosure daily cleanup and >50ft from regulated HUMAN-USE buildings; no blanket building/no license assumption.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -543,10 +551,18 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.scottsdaleaz.gov/codes-and-ordinances/sheds-garages-pergolas",
+        "section": "Scottsdale City Government Sheds/Garages/Pergolas Permitting Requirements, last updated 2026-05-21",
+        "detail": "Non-livable detached accessory structure under 200sqft no building permit but MUST meet setbacks and get Planning One Stop Shop plan approval, conditional if coop classified as such.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.scottsdaleaz.gov/codes-and-ordinances/sheds-garages-pergolas",
+        "section": "Scottsdale City Government Sheds/Garages/Pergolas: accessory structure setbacks and Foothills Overlay, updated 2026-05-21",
+        "detail": "Accessory structures have zoning-based setbacks; Foothills Overlay especially different by lot/zone/house floor area. Do not give universal chicken coop distance.",
+        "checkedAt": "2026-10-13"
       }
     },
     "glendale-az": {
@@ -631,10 +647,18 @@
     },
     "avondale-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.azleg.gov/ars/9/00462-12.htm",
+        "section": "Arizona Revised Statutes §9-462.12(A),(D)-(E), statewide 2024 law; Avondale Zoning §28-33(h)",
+        "detail": "State preempts outright municipal ban on up to six DOMESTIC CHICKENS on <=halfacre detached-home backyard; Avondale zoning also refers to city Ch3 ArticleII; not universal citywide limit.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/az/avondale/codes/code_of_ordinances?nodeId=CD_ORD_CH28ZOOR_ART1ADPR_28-1TIAUJUPU",
+        "section": "Avondale Zoning Code Article1 §28-5 definitions Backyard fowl (2025 amendment) and Arizona §9-462.12(A)(1)",
+        "detail": "Defined backyard fowl is domestic chicken excluding male roosters; AZ lets cities prohibit males; do not infer all farm districts ban roosters.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
@@ -645,16 +669,32 @@
     },
     "buckeye-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/az/buckeye/codes/code_of_ordinances?nodeId=CD_ORD_CH7DECO_ART5DEDESTGU_5.11EXLI",
+        "section": "Buckeye Development Code §3.2 Domesticated Farm Animals (B)(1)-(2), adopted Ord.28-25 effective 2025-11-20",
+        "detail": "Qualifying detached single-family residence may keep up to SIX DOMESTIC CHICKENS, not all fowl species, in backyard. ADU does not grant another quota; AG/R1-43/R1-18 livestock provisions separate.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/az/buckeye/codes/code_of_ordinances?nodeId=CD_ORD_CH7DECO_ART5DEDESTGU_5.11EXLI",
+        "section": "Buckeye Development Code §3.2 Domesticated Farm Animals (B)(5), Ord.28-25",
+        "detail": "No MALE domestic fowl, including roosters, under residential backyard-fowl exemption.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/az/buckeye/codes/code_of_ordinances?nodeId=CD_ORD_CH7DECO_ART5DEDESTGU_5.11EXLI",
+        "section": "Buckeye Development Code §3.1.1(A), §3.2(B), §3.2 backyard fowl / Ord.28-25",
+        "detail": "Backyard chicken keeping is accessory detached-house use permitted with enumerated conditions; additional livestock is restricted by AG/R1-43/R1-18 district and minimum lot half acre in rural districts. Not general coop building-permit waiver.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/az/buckeye/codes/code_of_ordinances?nodeId=CD_ORD_CH7DECO_ART5DEDESTGU_5.11EXLI",
+        "section": "Buckeye Development Code §3.2(B)(3)-(4), Ord.28-25",
+        "detail": "Roofed side/rear enclosure ≥20ft from neighboring PROPERTY line, ≤200sqft, height ≤required fence and ≤8ft; maintenance twice weekly. 2025 code also has perimeter fence conditions.",
+        "checkedAt": "2026-10-13"
       }
     },
     "queen-creek-az": {
@@ -743,16 +783,32 @@
     },
     "marana-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/maranaaz/latest/marana_az/0-0-0-12944",
+        "section": "Marana §17-4-3 Table 3 Chickens AG/RA, ER/NR, GR, MR/RR, NC/VC; Ord.2025.002 effective 2025-02-07",
+        "detail": "GR/MR-RR/NC-VC qualifying detached homes up to six; ER/NR 1 chicken per 1000 sqft; AG/RA roosters/other fowl as category 40 per acre; count zoning-specific.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/maranaaz/latest/marana_az/0-0-0-12929",
+        "section": "Marana §17-4-2 use matrix AG/RA roosters and other fowl U; ER/NR/GR/MR/RR/NC/VC X; §17-4-3 AG/RA 40/acre",
+        "detail": "Roosters and other fowl permitted WITH CONDITIONS only in agricultural AG/RA, prohibited under listed other ordinary residential zones; ordinary hens distinct.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/maranaaz/latest/marana_az/0-0-0-12929",
+        "section": "Marana §17-4-2 Table 2 legend U/C/A, permitted chickens conditioned by §17-4-3, amended 2025.002",
+        "detail": "U = allowed after complying with table-specific conditions, not an unconditional zoning exception; residential single family MR/RR development conditional CUP; coop building permit not resolved.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/maranaaz/latest/marana_az/0-0-0-12944",
+        "section": "Marana §17-4-3 Table 3 Chickens GR vs ER/NR; §17-6-7(D), Ord.2025.002",
+        "detail": "GR and eligible MR/RR/NC/VC detached homes side/rear enclosure ≥20ft neighboring PROPERTY, ≤200sqft and under fence/8ft; ER/NR ≤16sqft/6ft small-structure exemption for side/rear lines, ≥20ft from other dwelling; zone-specific.",
+        "checkedAt": "2026-10-13"
       }
     },
     "casa-grande-az": {
@@ -871,7 +927,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-35856",
+        "section": "Lake Havasu Development Code §14.03.02 A(2) grandfathering; §14.03.03(E)(9)(c), current 2026",
+        "detail": "Backyard fowl accessory use in certain districts restricted to single-family detached homes EXISTING 2024-09-13; fence >6ft in buildable area may need APPROVED city building permit; not keeping permit general.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -923,7 +983,11 @@
     },
     "los-angeles-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-2052",
+        "section": "Los Angeles 2026 Chapter I §12.08(A)(3), current R1; §12.05(A)(7), A1; §12.04 accessory animals",
+        "detail": "R1 explicitly allows noncommercial poultry as residential-use accessory without numeric number in THIS subsection; A1 allows poultry with separate larger-scale/commercial conditions; can't infer unlimited flock.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "primary_clause_checked",
@@ -933,7 +997,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-2052",
+        "section": "Los Angeles current §12.08(A)(3)(a), §12.05(A)(7), §12.04 accessory-use definitions",
+        "detail": "Poultry on ordinary R1 home explicitly allowed if noncommercial; commercial chicken production in A1 only under special lot size; not waive coop building permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -1471,10 +1539,18 @@
     },
     "fort-collins-co": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.fortcollins.gov/Government/City-Code-and-Charter",
+        "section": "Fort Collins Municipal Code §4-117(b)(3)(a)-(c), City-linked current municipal code; 2024 Ordinance 056 cross-reference",
+        "detail": "Under half acre up to eight female chicken/duck combined, 0.5–1ac 12, over1ac +6 per additional 0.5ac, notice neighbors beyond12; current chapter link and Humane Society license separate.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.fortcollins.gov/Government/City-Code-and-Charter",
+        "section": "Fort Collins Municipal Code §4-117(b)(2), current city code via city government index",
+        "detail": "Roosters and male ducks (drakes) prohibited under urban chicken/duck keeping section.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "primary_clause_checked",
@@ -1484,7 +1560,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.fortcollins.gov/Government/City-Code-and-Charter",
+        "section": "Fort Collins Municipal Code §4-117(b)(6)-(7), city code via official index",
+        "detail": "Enclosures/coops 15ft from abutting PROPERTY LINE unless written consent of affected neighbors, predator-proof and dusk-dawn secure coop; distinct accessory building permits.",
+        "checkedAt": "2026-10-13"
       }
     },
     "lakewood-co": {

@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；266 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **86 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；286 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **66 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -112,3 +112,9 @@
 ## 2026-10-13 再一次20字段复核
 
 实际完成20个已登记来源到市政法典/市政府指南的逐字段映射：**266/400 primary, 86 source_recorded, 48 unverified**。Riverside 2025新法规允许满足条件的 RE/R-1 住宅最多5只家禽；Minneapolis超过普通6只须MACC明确批准；Raleigh社区花园不能等同于普通住宅；San Antonio超额禽类许可50ft为第三方有人使用的建筑距离，不可套全部；Oakland法规页不提供统一数量/退距，只验证其缺失与用地区别。对应城市与来源请看POLICY_COMPLETENESS报告。
+
+## 2026-10-13 — 第三批 20 项逐字段法规核验
+
+- **286/400** 条字段有对应官方法典或指南；**66 source_recorded，48 unverified**；88城市至少部分审查、12城市不参与索引不变。
+- Buckeye AZ（max、roosters、permit、placement）；Marana AZ（max、roosters、permit、placement）；Fort Collins CO（max、roosters、placement）；Scottsdale AZ（permit、placement）；Los Angeles CA（max、permit）；Lake Havasu City AZ（permit）；Avondale AZ（max、roosters）；Fort Worth TX（permit）；Mesa AZ（permit）。
+- 本批注意事项：Buckeye 新法典2025-11-20生效、Marana 2025.002不同土地类型细分；Scottsdale小于200sf的附属建筑免建筑许可不等于免规划审批；LA R1非营利饲养与A1商业条件不同；Lake Havasu某些分区住宅必须是2024-09-13已存在住宅；Avondale州法底线不等于全分区规则；Fort Collins与 Fort Worth许可/鸡舍位置核验限于原始条文/市政府公告。准确来源逐字段见 policy-evidence.json。
