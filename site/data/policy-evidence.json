@@ -1183,16 +1183,30 @@
     },
     "olympia-wa": {
       "max": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://www.codepublishing.com/WA/Olympia/html/Olympia18/Olympia1804.html",
+        "section": "OMC §18.04.060(KK)(2) (Ord. 7457, 2026)",
+        "detail": "Up to five ducks or female chickens at ≤¼ acre; nine at quarter-to-acre; ten plus 1 per 1,000sqft above one acre until two acres. Overlap at exactly one acre requires clarification.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://www.codepublishing.com/WA/Olympia/html/Olympia18/Olympia1804.html",
+        "section": "OMC §18.04.060(KK)(2)(b) (Ord. 7457, 2026)",
+        "detail": "Roosters, geese, peacocks and similar loud fowl forbidden.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.codepublishing.com/WA/Olympia/html/Olympia18/Olympia1804.html",
+        "detail": "Animal allowance does not resolve accessory structure/building and special parcel permits."
       },
       "placement": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://www.codepublishing.com/WA/Olympia/html/Olympia18/Olympia1804.html",
+        "section": "OMC §18.04.060(KK)(4) (Ord. 7457, 2026)",
+        "detail": "Enclosures ≥10ft from ALL lot lines and may not be placed within applicable setbacks.",
+        "checkedAt": "2026-10-13"
       }
     },
     "bellingham-wa": {

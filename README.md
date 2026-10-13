@@ -62,3 +62,7 @@ For the GSC → Reddit → BackYard Chickens workflow, browser single-tab rules,
 ## Garland 2026-10-13 city-code update
 
 The previously noted **85/15** audit was a dated historical snapshot. Registry is now **86** source-reviewed summaries, **14** pending, **20/400** clause/guidance-checked fields. Garland, TX moved to limited-scope only; permit and parcel-specific review still needed.
+
+## Olympia 2026 Ordinance 7457 validation
+
+The live registry now includes **87 source-reviewed summaries, 13 pending**, with **23/400** individual field checks. Olympia, WA moves only to limited-scope thanks to OMC §18.04.060(KK); exactly one acre, permit/zoning and setback exceptions require human review. Older review counts above are historical.

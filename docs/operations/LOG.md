@@ -1,5 +1,11 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Olympia code §18.04.060(KK) (2026 Ordinance 7457)
+
+- Verified 5/9/10+ duck-or-female-chicken limits based on parcel acreage, rooster ban, 10-ft minimum setback from every boundary **plus prohibition on encroaching into zoning setback areas** against city-published code. Exact 1-acre tier overlap remains a specific municipal clarification task.
+- Updated city source and 3 individually checked fields; **permit not cleared**. Olympia promoted to limited-scope, manual planner. Audit 20→23 clause/guidance checks, 86→87 reviewed cities, 14→13 pending. Regenerated site and index/sitemap. No parcel-specific approvals claimed.
+
+
 ## 2026-10-13 — Garland municipal-law source audit
 
 - Compared city-published Garland §§22.14, 22.17: 4 female fowl older than one month, no roosters, 30 ft to other residence and 5 ft to adjoining residential-zoned property for pens/runs.

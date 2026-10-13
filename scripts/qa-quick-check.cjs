@@ -38,5 +38,5 @@ for(const file of ["index.html","planner.html"]){
 }
 for(const name of ["quick-check-data.js","quick-check.js"])new vm.Script(fs.readFileSync(path.join(site,"assets",name),"utf8"),{filename:name});
 const evidence=JSON.parse(fs.readFileSync(path.join(site,"data/policy-evidence.json"),"utf8"));
-assert.equal(Object.values(evidence.cities).flatMap(c=>Object.values(c)).filter(f=>f.status==="primary_clause_checked").length,20);
+assert.equal(Object.values(evidence.cities).flatMap(c=>Object.values(c)).filter(f=>f.status==="primary_clause_checked").length,23);
 console.log("PASS: Quick Check field validation, 5-city scenario screening, legal caveats, evidence panels and source metadata");

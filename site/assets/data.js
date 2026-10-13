@@ -1429,6 +1429,27 @@ window.COOP_CITIES=[
     "source": "https://www.everettwa.gov/197/Facility-Licenses"
   },
   {
+    "slug": "olympia-wa",
+    "name": "Olympia",
+    "state": "WA",
+    "stateName": "Washington",
+    "max": "≤¼ acre: up to 5 ducks or female chickens; >¼ to <1 acre: up to 9; ≥1 to <2 acres: 10 plus one per additional 1,000 sq ft (see exceptions)",
+    "roosters": "Roosters, geese, peacocks and similar loud fowl prohibited (OMC §18.04.060(KK)(2)(b))",
+    "permit": "The agricultural-use section does not establish a universal coop/building permit exemption; confirm zoning and structural permits per parcel",
+    "placement": "Agricultural animal enclosures ≥10 ft from every property line AND outside applicable setback areas (OMC §18.04.060(KK)(4))",
+    "verified": "2026-10-13",
+    "planner": {
+      "mode": "manual",
+      "side": 0,
+      "rear": 0,
+      "front": 0,
+      "rearOnly": false,
+      "rearHalf": false
+    },
+    "note": "OMC §18.04.060(KK), added by Ordinance 7457 in January 2026. The listed 10-ft enclosure distance is a minimum and does not override zone-specific setback areas. Exactly one-acre lot wording overlaps adjacent quantity tiers; lots ≥2 acres use USDA Animal Unit rules. Also confirm birds of other types, parcel zoning, structure permits, HOA restrictions and any more recent updates. No automated compliance clearance.",
+    "source": "https://www.codepublishing.com/WA/Olympia/html/Olympia18/Olympia1804.html"
+  },
+  {
     "slug": "bellingham-wa",
     "name": "Bellingham",
     "state": "WA",
