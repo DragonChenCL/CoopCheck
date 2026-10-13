@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (45 general summaries; 43 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **116**; 236 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **131**; 221 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -17,7 +17,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Sacramento, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Denver, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Colorado Springs, CO | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Portland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Portland, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Eugene, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Salem, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Gresham, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
@@ -43,8 +43,8 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Casa Grande, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Yuma, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Prescott, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Prescott Valley, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Lake Havasu City, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Prescott Valley, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
+| Lake Havasu City, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Apache Junction, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Sierra Vista, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Los Angeles, CA | verified_limited_scope | Source; clause pending | Clause checked (§53.71) | Source; clause pending | Source; clause pending |
@@ -55,14 +55,14 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Bakersfield, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Riverside, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Irvine, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Anaheim, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Anaheim, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Long Beach, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Santa Ana, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Stockton, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Modesto, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Elk Grove, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Roseville, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Folsom, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Folsom, CA | verified_limited_scope | Clause checked | Source; clause pending | Clause checked | Clause checked |
 | Berkeley, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fremont, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Santa Rosa, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -76,7 +76,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Westminster, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Pueblo, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Longmont, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Beaverton, OR | verified | Clause checked | Clause checked | Source; clause pending | Source; clause pending |
+| Beaverton, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Hillsboro, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Bend, OR | verified_limited_scope | Clause checked (>=5,000 sq ft) | Clause checked (no roosters) | Source; permit unconfirmed | Source; coop setback unconfirmed |
 | Medford, OR | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
