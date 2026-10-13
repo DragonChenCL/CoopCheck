@@ -320,9 +320,9 @@ window.COOP_CITIES=[
     "name": "Austin",
     "state": "TX",
     "stateName": "Texas",
-    "max": "Chickens allowed in most residential areas; quantity limits depend on code",
-    "roosters": "Check current city animal/noise rules",
-    "permit": "Verify enclosure/building requirements for the property",
+    "max": "Austin CURRENT Chapter 3 §§3-2-11,3-2-16 governs covered four-sided housing and enclosure geometry but sets NO SINGLE NUMERIC HEN CAP in those clauses: housing must be adequately sized for species and number. This is NOT an unlimited-hen entitlement; zoning, occupancy, nuisances and property restrictions still require review.",
+    "roosters": "Austin §3-2-2 bars keeping ANY ANIMAL making frequent, long, continued noise disturbing normal residents, applicable to roosters; §3-2-1 prohibits fowl roaming at large. The examined Chapter3 animal rules do NOT independently establish a CITYWIDE CATEGORICAL ROOSTER BAN or an unconditional right to keep them.",
+    "permit": "Austin City Code §§3-2-11 and 3-2-16 affirmatively REQUIRE any chicken enclosure to have four secure sides, overhead cover, adequate size, sanitation and comply with fence-height/setback rules. This legal enclosure standard does NOT independently decide whether a structure BUILDING permit or separate keeping license is needed on the parcel.",
     "placement": "Current Austin City Code §3-2-16(A)-(E) applies to ANY fowl enclosure, not just 2+ chickens: secure four-sided covered coop, at least 30 ft from adjacent residence/business building other than keeper's own. If birds/coop create a HEALTH HAZARD, at least 50 ft. These are building separations, not property-line offsets; fences and local building/zoning rules separately apply.",
     "verified": "2026-10-13",
     "planner": {
@@ -333,7 +333,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Current Austin Code §3-2-16(D)-(E) as amended effective 2022-10-24 controls over the city's older chicken-keeping handout and media summaries: ordinary fowl enclosure at least 30 ft from third-party residence/business, 50 ft when a health hazard exists. No minimum flock-count trigger. Bird maximum, rooster permission and ordinary animal-keeping permit remain source-recorded/unverified; do not claim ten permitted hens or an unconditional permit exemption.",
+    "note": "Current Austin Code §3-2-16(D)-(E) as amended effective 2022-10-24 controls over the city's older chicken-keeping handout and media summaries: ordinary fowl enclosure at least 30 ft from third-party residence/business, 50 ft when a health hazard exists. No minimum flock-count trigger. Bird maximum, rooster permission and ordinary animal-keeping permit remain source-recorded/unverified; do not claim ten permitted hens or an unconditional permit exemption.\n2026-10-13: 20-field batch effective code/source cross-check. Chapter 3 no universally stated hen number or poultry keeping-license waiver; loud-noise rule not a blanket rooster license. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.",
     "source": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities"
   },
   {
@@ -551,10 +551,10 @@ window.COOP_CITIES=[
     "name": "Oro Valley",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Chickens are allowed as noncommercial small animal husbandry on qualifying detached single-family residential property; the currently operative town-specific maximum for each lot-size tier has not been fully established in this review. Arizona A.R.S. §9-462.12 provides a six-fowl protection for qualifying detached-home properties of one-half acre or less.",
-    "roosters": "Rooster-specific restrictions require the operative Town Zoning Code §23.6.A.7 and nuisance provisions; do not infer blanket permission.",
-    "permit": "Review town zoning §23.6.A.7, accessory-use conditions and any applicable structure permits; no universally applicable permit conclusion established.",
-    "placement": "Rear-yard and enclosure provisions appear in town small-animal-husbandry standards, but the exact applicable setback must be confirmed from the currently enacted version for the property's zoning and lot size.",
+    "max": "Oro Valley ADOPTED 2024 (O)24-08, Zoning §23.6.A.7 Table 23.6.1: detached single-family parcels ≤41,999 sq ft allow up to SIX chickens; 42,000–143,999 up to TEN; ≥144,000 up to TWENTY-FOUR subject to zone eligibility. CONDITIONAL USE PERMIT to exceed applicable limits on eligible very large parcels. Arizona statewide protection for ≤0.5acre also applies; this is not a universal parcel permit.",
+    "roosters": "Oro Valley ADOPTED (O)24-08 §23.6.A.7(c)(ii): MALE FOWL INCLUDING ROOSTERS PROHIBITED under the town's small-animal-husbandry rules. Zoning and nuisance/animal welfare requirements still apply.",
+    "permit": "Oro Valley ADOPTED (O)24-08 §23.6.A.7(a)-(b) recognizes NONCOMMERCIAL chicken keeping as an ACCESSORY use at eligible DETACHED single-family dwellings. Table23.6.1 note requires CONDITIONAL USE PERMIT to increase animal quotas on lots exceeding 144,000 sq ft. No blanket zoning, coop-building or independent animal license waiver is established.",
+    "placement": "Oro Valley enacted §23.6.A.7: chicken enclosure REAR YARD ONLY. For ≤0.5-acre eligible lot, enclosure ≥20 ft from NEIGHBORING PROPERTY (not dwelling), possible §23.5.C.2(h) relief; larger lots ordinarily MAIN BUILDING setbacks. On lots UNDER 21,780 sq ft coop area ≤200 sq ft / height ≤8 ft; fully contained/screened and manure removed twice weekly.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -564,7 +564,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The town's Nov 2024 executive report confirms an adopted September 2024 zoning-code amendment allowing small animal husbandry on qualifying detached single-family parcels; later 2025 markup document is a DRAFT and must not be presented as operative city law. Lot-size bands, roosters, permits and enclosure setbacks need an effective-code check.",
+    "note": "The town's Nov 2024 executive report confirms an adopted September 2024 zoning-code amendment allowing small animal husbandry on qualifying detached single-family parcels; later 2025 markup document is a DRAFT and must not be presented as operative city law. Lot-size bands, roosters, permits and enclosure setbacks need an effective-code check.\n2026-10-13: 20-field batch effective code/source cross-check. Town formally adopted (O)24-08 in Sept 2024; ordinance Exhibit A provides tiers and male-bird ban. November 2025 draft had merely supplied matching text and must NOT be mistaken for adoption evidence. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.",
     "source": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/town-manager/executive-reports/2024_nov_tm-report-to-council.pdf"
   },
   {
@@ -803,10 +803,10 @@ window.COOP_CITIES=[
     "name": "Bakersfield",
     "state": "CA",
     "stateName": "California",
-    "max": "City fowl code restricts keeping chickens to agricultural and residential-suburban zones; no citywide residential flock size is established here",
-    "roosters": "Rooster-specific rule requires checking the current animal and zoning codes",
-    "permit": "Verify agricultural or residential-suburban zoning before keeping poultry",
-    "placement": "Animals must be securely enclosed; additional zoning-specific enclosure spacing applies",
+    "max": "Bakersfield CURRENT §17.10.020 Table 17.10-1 permits animal raising/breeding in R-S (and R-H) but NOT ordinary R-1 through R-6. §17.10.040(C)(1)(a) authorizes domestic poultry in R-S without giving a NUMERIC chicken cap in that subsection; NOT an unlimited-flock authorization or general agricultural cap.",
+    "roosters": "Bakersfield §6.08.010 covers chickens and other FOWL irrespective of sex, requiring secured confinement on agricultural or R-S parcels; §17.10.040(C)(1)(a) gives no rooster-specific ban or allowance. This is a NARROW NEGATIVE finding only: it does NOT prove every property may keep a crowing rooster.",
+    "permit": "Bakersfield §17.10.020 Table 17.10-1 marks animal raising P (by RIGHT, subject to ordinance) in R-S/R-H but N in R-1–R-6. §17.10.040(C)(3) authorizes TEMPORARY six-month FFA/4-H educational-project animal increase only after planning-director approval; not a routine residential coop-construction permit waiver.",
+    "placement": "Bakersfield R-S zone §17.10.040(C)(2): poultry coop ≥50 ft from ANY HUMAN HABITATION DWELLING, ≥100 ft from own FRONT LOT LINE, ≥10 ft from STREET SIDE of a CORNER LOT, and ≥100 ft from park/school/hospital. §6.08.010 requires securely confined birds. Agricultural zoning has separate setbacks.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -816,7 +816,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.\n2026-10-13: 20-field batch effective code/source cross-check. 2026 residential land-use table supersedes old blanket zoning descriptions; R-S and R-H P only, ordinary R1–R6 N. R-S pen distances 50ft to dwelling and 100ft front lot line. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.",
     "source": "https://docs.bakersfieldcity.us/weblink/0/edoc/721696/17.32%20%20%20A%20Zone.pdf"
   },
   {
@@ -929,10 +929,10 @@ window.COOP_CITIES=[
     "name": "Modesto",
     "state": "CA",
     "stateName": "California",
-    "max": "Up to 12 domestic fowl (hens only), rabbits, hares or similar household animals per dwelling in residential zones as a combined group",
-    "roosters": "Only hens allowed under residential domestic-fowl allowance",
-    "permit": "Conditional use permit needed for additional numbers above residential allowance",
-    "placement": "Coop/pen at least 40 ft from windows or doors of a habitable building; side-yard separation also applies",
+    "max": "Modesto §10-3.202(a)(3) authorizes MAX TWELVE combined domestic fowl (HENS ONLY), rabbits, hares and customary household pets per dwelling unit in R-1/R-2/R-3 zones. Not a universal 12-chicken permission in other zones.",
+    "roosters": "Modesto's ordinary §10-3.202 residential domestic-fowl allowance explicitly specifies HENS ONLY, so roosters are NOT included in the R-1/R-2/R-3 dwelling entitlement. Agricultural or other zoning rights are not decided by this section.",
+    "permit": "Modesto §10-3.202(b)(2) requires a CONDITIONAL USE PERMIT for ADDITIONAL NUMBERS beyond the standard combined twelve animals in residential zones. §10-3.202(e) preserves other licensing and housing regulations; routine coop building permit is NOT waived.",
+    "placement": "Modesto §10-3.202(c) requires chicken COOP ≥40 ft from a WINDOW OR DOOR of any HABITABLE BUILDING. §10-3.202(d) also requires coop-to-PROPERTY LINE distance at least the applicable zoning SIDE-YARD SETBACK. These are different measurements; animal containment and zoning still apply.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -942,7 +942,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.",
+    "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.\n2026-10-13: 20-field batch effective code/source cross-check. Combined 12 household pets and HENS-ONLY applies to R1–R3. Side-yard buffer and 40ft habitable WINDOW/DOOR are separate. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.",
     "source": "https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE"
   },
   {
@@ -992,10 +992,10 @@ window.COOP_CITIES=[
     "name": "Folsom",
     "state": "CA",
     "stateName": "California",
-    "max": "Folsom's Agricultural Combining District (A) permits small livestock farming, with a use permit required for raising more than 100 poultry/animals; this is NOT a general residential allowance.",
-    "roosters": "No general residential rooster permission or prohibition established by Agricultural Combining District Chapter 17.40 alone.",
-    "permit": "A use permit is required for more than 100 head of poultry/animals in an applicable A combining district; other districts require separate review.",
-    "placement": "Within the A combining district, barns/chicken houses and similar accessories must be at least 50 ft from front property line, 20 ft from side line and 30 ft from a dwelling (§17.40.040).",
+    "max": "Folsom 2026 Ordinance 1362 §4 (§7.04.080(C)) permits at most SIX CHICKENS as pets in residential and other nonagricultural/non-A combining zones. In Agricultural Combining District (A), separate §17.40 allows agriculture/livestock farming; its 100-head use-permit trigger is NOT a general six-hen cap. Roosters prohibited in ALL zoning districts.",
+    "roosters": "Folsom's 2026 Ordinance 1362 §4 amends §7.04.080(C) and expressly states ROOSTERS SHALL NOT BE KEPT IN ANY ZONING DISTRICT. This citywide prohibition applies regardless of separate A combining district poultry-use rules. The amended section also permits up to six chickens as pets in qualifying nonag zones; do not confuse this with §17.40 A-district livestock limits.",
+    "permit": "Folsom 2026 §7.04.080(C) permits up to six PET chickens in eligible nonagricultural zoning, but does NOT itself waive accessory-building approvals. In the Agricultural Combining District (A), §17.40.020/.030 requires a use permit to raise MORE THAN 100 poultry/livestock. Keeping and building licenses depend on zoning and property.",
+    "placement": "Folsom 2026 §7.04.080(C): in NONAGRICULTURAL zones, permitted pet chickens must be kept ≥5 ft from ANY PROPERTY LINE AND ≥20 ft from a NEIGHBORING DWELLING. In Agricultural Combining District (A), separate §17.40.040 provides agricultural chicken-house siting distances (50ft front line, 20ft side line, 30ft dwelling). Do not substitute one zone's distance for another.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1005,7 +1005,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Folsom Municipal Code Chapter 17.40, agricultural combining district only. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+    "note": "Folsom Municipal Code Chapter 17.40, agricultural combining district only. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.\n2026-10-13: 20-field batch effective code/source cross-check. 2026 enacted Ordinance 1362 confirmed all-zone rooster prohibition; already checked A combining district attributes remain limited to that separate code. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.\n2026-10-13 additional cross-field correction: 2026 enacted Ordinance 1362 expands ordinary NON-AGRICULTURAL residential chicken allowances to 6 pets, no roosters ANYWHERE, with 5ft PROPERTY LINE AND 20ft neighboring DWELLING distances. Previous registry only cited Agricultural Combining District; that limited section remains relevant only in A zoning.",
     "source": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html"
   },
   {
@@ -1727,10 +1727,10 @@ window.COOP_CITIES=[
     "name": "El Paso",
     "state": "TX",
     "stateName": "Texas",
-    "max": "Fewer than 6 fowl or rabbits may be kept as pets without the city fowl/rabbit permit; higher quantities require a permit and additional restrictions",
-    "roosters": "For permitted larger groups, rooster limitations in local animal code; exact conditions require current permit/code review",
-    "permit": "Fowl/rabbit permit required for 6 or more birds/rabbits",
-    "placement": "Coop placement depends on zoning and animal code; no universal setback confirmed from the cited fee/code record",
+    "max": "El Paso §7.24.020(B)(1): fewer than SIX fowl/rabbits as HOUSEHOLD PETS qualify for the specific poultry permit EXCEPTION. SIX OR MORE normally requires poultry permit outside permitted ranch-farm zones. The city does NOT set a universal max of six in this clause; permitted total decided by §7.24.050 veterinary officer and zoning.",
+    "roosters": "El Paso §7.24.020(B)(1) explicitly sets NO MORE THAN THREE ROOSTERS where keeping fowl is otherwise permitted. This does NOT override noise/nuisance limits, zoning or required permit for six-plus birds.",
+    "permit": "El Paso fowl/rabbit permit REQUIRED for SIX OR MORE outside farm-ranch/stable-permitted zoning; <6 maintained as household PETS exempt from this PARTICULAR permit. City animal officer determines permit's total-animal limit and nuisance/setback conditions; does not waive coop construction zoning.",
+    "placement": "El Paso §7.24.030(B): for FOWL SUBJECT TO PERMIT, secure coop ≥30 ft from third-party residence, hotel, school, church etc (NOT lot line). Can be 20 ft with PUBLIC ALLEY plus ≥6-ft solid wall; city veterinary officer may approve a waiver if health/nuisance safe. This is NOT automatically a 30-ft rule for <6 household pets.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1740,7 +1740,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.\n2026-10-13: 20-field batch effective code/source cross-check. <6 as pets is a permit EXCEPTION, not total citywide quota; permitted fowl housing 30ft to occupied buildings with alley/wall exception or vet waiver. Field status confirms only cited statement; property-specific permits, zoning and structures still require review.",
     "source": "https://www2.elpasotexas.gov/municipal-clerk/agenda/08-11-20/6.1.1.pdf"
   },
   {

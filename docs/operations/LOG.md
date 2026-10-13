@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Fourth 20-claim operative code evidence batch
+
+- Resolved **20** pending claim-level sources across Modesto(4), El Paso(4), Bakersfield(4), Oro Valley(4), Austin(3), Folsom(1), **306/400 scoped primary**, **46 source_recorded**, **48 unverified**. 88 source-reviewed, 12 paused/noindex and city count unchanged.
+- Recovered town council Sept 2024 **enacted** Oro Valley Ordinance (O)24-08 plus vote record to replace inadequate reliance on 2025 **DRAFT** table. Confirmed Modesto combined 12, El Paso >6 permit & permitted-coop 30ft with 20ft alley+6ft barrier exception; Bakersfield amended R-S animal code, Austin limited Chapter3 legal duties, Folsom 2026 ALL-ZONE roosters banned.
+- Sources, sections, dates and nuances in evidence JSON and top completeness report; no site auto-clearance or assumed structural permit exemption.
+
+
 ## 2026-10-13 — Third 20-field poultry source audit
 
 - **20** previously source_recorded claims matched to exact official city code, agency guidance or Arizona statewide preemption section. **286/400 mapped; 66 source_recorded; 48 unverified**, 88 partial-reviewed / 12 pending noindex unchanged.

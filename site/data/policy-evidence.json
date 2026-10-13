@@ -441,13 +441,25 @@
     },
     "austin-tx": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE",
+        "section": "Austin Ch3 §§3-2-1, 3-2-11, 3-2-16(A)-(E) current Oct2026",
+        "detail": "Animal enclosure statute does NOT specify absolute citywide numeric hen cap, imposes area appropriate to number. This negative finding limited to chapter not unlimited permission.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE",
+        "section": "Austin Code §§3-2-2 Noisy Animals, 3-2-1 Running at Large; §3-2-16",
+        "detail": "Noisy animals prohibited universally, no explicit categorical rooster ban in inspected chapter; cannot assert unconditional rooster permission.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE",
+        "section": "Austin Code §§3-2-11(A)-(B), 3-2-16(A)-(E), city Public Health Animal Pens guidance",
+        "detail": "Four secure sides, overhead covered, sanitation and fence height necessary; not a separate poultry licence exemption. Excerpt is positive facility duty only.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -765,16 +777,32 @@
     },
     "oro-valley-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf",
+        "section": "Oro Valley enacted Ordinance (O)24-08 Exhibit A §23.6.A.7(b) Table23.6.1 pp7–8; adopted 2024-09-18",
+        "detail": "≤21780sqft six; 21781–35999 six; 36000–41999 six; 42000–143999 ten; ≥144000 24; at >144000 special CUP for exceeding. State statute also applies; town 2025 markup unadopted not authoritative.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf",
+        "section": "Oro Valley enacted Ordinance (O)24-08 Exhibit A §23.6.A.7(c)(ii) p8; adopted 2024-09-18",
+        "detail": "Enacted small-animal-husbandry amendment explicitly bans male fowl including roosters, preserving distinct other livestock conditions.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf",
+        "section": "Oro Valley enacted (O)24-08 §23.6.A.7(a)-(b) Table23.6.1 footnote p8; §23.7.D.6/E.7",
+        "detail": "Small animal keeping is accessory noncommercial use on qualifying detached single-family land; CUP only for increase above 144k lot size tier and other uses; building permits not categorically waived.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf",
+        "section": "Oro Valley enacted (O)24-08 Exhibit A §23.6.A.7(d)-(f) pp8–9; §23.5.C.2(h)",
+        "detail": "Rear yard only; ≤half acre enclosure >=20ft from NEIGHBOR PROPERTY; >half acre main-building setback, reductions under §23.5; <21780 sqft 200sqft area/8ft tall; enclosed/screened.",
+        "checkedAt": "2026-10-13"
       }
     },
     "marana-az": {
@@ -1113,16 +1141,32 @@
     },
     "bakersfield-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://bakersfield.municipal.codes/Code/17.10.040",
+        "section": "Bakersfield §17.10.020 Table 17.10-1; §17.10.040(C)(1)(a), municipal code through Ord5223",
+        "detail": "R-S animal raising allowed domestic personal poultry WITHOUT a numerical cap in cited poultry paragraph; R-1–R-6 N; agricultural R-H separate. No unlimited-hen citywide entitlement.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://bakersfield.municipal.codes/Code/6.08.010",
+        "section": "Bakersfield §6.08.010 fowl housing; §17.10.040(C)(1)(a) sex-neutral R-S poultry",
+        "detail": "§6.08.010 controls chickens and all poultry irrespective of sex, restricts agricultural/R-S and enclosure, but DOES NOT itself enact a categorical rooster ban; nuisances/zoning elsewhere still apply.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://bakersfield.municipal.codes/Code/17.10.020",
+        "section": "Bakersfield §17.10.020 Table17.10-1 Animal Raising; §17.10.040(C)(3)",
+        "detail": "R-S Animal Raising and Breeding marked P; R-1 to R-6 not allowed; school fair >animal ratio temporary permit (FFA,4H) six months. No general coop building permit exception.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://bakersfield.municipal.codes/Code/17.10.040",
+        "section": "Bakersfield §17.10.040(C)(2)(a)-(d), §6.08.010",
+        "detail": "R-S fowl pens 50ft from dwelling ANY human habitation, 100ft from FRONT LOT LINE, 10ft from STREET SIDE corner, 100ft from school/park/hospital; require enclosure. Not all lots R1.",
+        "checkedAt": "2026-10-13"
       }
     },
     "riverside-ca": {
@@ -1287,16 +1331,32 @@
     },
     "modesto-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE",
+        "section": "Modesto 2026 zoning §10-3.202(a)(3); Table 3.1-1",
+        "detail": "Residential R-1,R-2,R-3 allowed TOTAL of 12 domestic fowl (hens ONLY), rabbits/hares or similar pets per DWELLING combined. This is not 12 hens plus 12 rabbits.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE",
+        "section": "Modesto Code §10-3.202(a)(3), residential fowl HENS ONLY",
+        "detail": "Residential allowance explicitly limits domestic fowl to hens only, not a citywide categorical agricultural rooster ban.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE",
+        "section": "Modesto Code §10-3.202(b)(2), (e); Table 3.1-1",
+        "detail": "Conditional Use Permit from Board required for exceeding 12 total qualifying poultry/rabbit/pet animals; other licences independently apply.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE",
+        "section": "Modesto Code §10-3.202(c)-(d), duplicated §10-7.407(a)-(b)",
+        "detail": "40 ft from ANY WINDOW OR DOOR of HUMAN-HABITABLE building to coops/pens (not property line); separately side yard setback distance from PROPERTY LINE applies.",
+        "checkedAt": "2026-10-13"
       }
     },
     "elk-grove-ca": {
@@ -1362,13 +1422,17 @@
     "folsom-ca": {
       "max": {
         "status": "primary_clause_checked",
-        "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html",
-        "section": "§17.40.020(2)-(3)",
-        "detail": "Only in agricultural combining (A) zones: animal husbandry/small livestock farming addressed; 100-head threshold is NOT a general residential flock cap.",
+        "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/folsomca-meet-83600f7149724af0bf7f37dd3c08f017/ITEM-Attachment-001-d6c1f73a8ced473da7b4309d2e7d7523.pdf",
+        "section": "Folsom 2026 Ordinance 1362 §4 / §7.04.080(C), plus existing A district §17.40.020",
+        "detail": "2026 adopted six pet chickens permitted in eligible NONAG residential zones, independent A Combining district §17.40 100-head conditional use threshold; all-zone rooster ban also applies.",
         "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/folsomca-meet-83600f7149724af0bf7f37dd3c08f017/ITEM-Attachment-001-d6c1f73a8ced473da7b4309d2e7d7523.pdf",
+        "section": "Folsom Ordinance 1362 §4 amending City Code §7.04.080(C), enacted 2026; official council attachment",
+        "detail": "All municipal zones ban roosters; nonag residential may keep up to 6 chickens, 5ft lot line and 20ft adjacent dwelling, but only update rooster field; other existing source fields are agricultural-only and do not supersede new ordinance.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "primary_clause_checked",
@@ -1379,9 +1443,9 @@
       },
       "placement": {
         "status": "primary_clause_checked",
-        "url": "https://www.codepublishing.com/CA/Folsom/html/Folsom17/Folsom1740.html",
-        "section": "§17.40.040",
-        "detail": "Only for A agricultural combining district chicken house: 50 ft from front lot line, 20 ft from side lot line, 30 ft from any dwelling; not citywide residential coop setback.",
+        "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/folsomca-meet-83600f7149724af0bf7f37dd3c08f017/ITEM-Attachment-001-d6c1f73a8ced473da7b4309d2e7d7523.pdf",
+        "section": "Folsom 2026 Ordinance 1362 §4 / §7.04.080(C); A-district §17.40.040 separately",
+        "detail": "2026 nonag backyard pets ≥5ft from any PROPERTY LINE and ≥20ft neighboring DWELLING; A agricultural combining has separate 50front/20side/30dwelling house setbacks. Do not generalize across zones.",
         "checkedAt": "2026-10-13"
       }
     },
@@ -2380,16 +2444,32 @@
     },
     "el-paso-tx": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN",
+        "section": "El Paso Code §7.24.020(B)(1); §7.24.050(A)",
+        "detail": "The phrase 'fewer than six' is a permit EXCEPTION for pets, not a six-bird universal legal maximum; higher flock with permit's veterinary officer discretion, subject to zoning.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN",
+        "section": "El Paso Code §7.24.020(B)(1) (current municipal code)",
+        "detail": "Up to 3 roosters wherever fowl otherwise allowed; max three is not unconditional rooster permission in every residential zone.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN",
+        "section": "El Paso §7.24.020(B)(1)-(3), §7.24.050(A)-(F), Title 7",
+        "detail": "Permit ordinarily required for six or more birds/rabbits except farm-ranch/stockyard-stable zones, household pets <6 exempt. Application inspection and veterinary officer conditions, potential revocation.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN",
+        "section": "El Paso §7.24.030(B)-(D), permitted fowl facilities",
+        "detail": "Only animals SUBJECT TO FOWL PERMIT: secure enclosure >=30 ft from another private RESIDENCE, apartment/hotel/church/school etc; special alley+solid wall allows 20-ft; vet may waive after nuisance/safety review. Not property line or automatic for <6 pets.",
+        "checkedAt": "2026-10-13"
       }
     },
     "round-rock-tx": {
