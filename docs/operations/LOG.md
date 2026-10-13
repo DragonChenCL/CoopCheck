@@ -1,5 +1,11 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — San José/Hillsboro/Oakland seven field proofs
+
+- Seven previously source-recorded fields mapped to operative San José [Title 7 Part 7](https://library.municode.com/ca/san_jose/codes/code_of_ordinances/410513?nodeId=TIT7ANCACO_CH7.20ANCAKE), Hillsboro 2026 [Code Compliance](https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance) / [Animal Permit](https://www.hillsboro-oregon.gov/services/permitting-center/property-owners/property-permits-construction), and Oakland [Urban Agriculture zone guidance](https://www.oaklandca.gov/Planning-Building/Planning-Zoning/Zoning/Urban-Agriculture-and-Community-Gardens). Total **214/400** primary checked, 138 source-recorded and 48 paused-city unverified; city review remains 88/12.
+- San José §7.60.815 counts mixed small animals by distance to OTHER dwellings, but exactly 20/40/50-ft distances remain undefined in the literal text. §§7.60.700, 7.60.810 and 7.60.820 confirm permit trigger above six animals, side setback, and rooster restriction only above four months.
+- Hillsboro city guidance says hens only with city Animal Permit; city fee schedule separately quotes $25, but coop construction permissions still require independent review. Oakland CUP needs depend on zoning and activity type, not generic citywide chicken licensing.
+
 ## 2026-10-13 — Bellingham / Frisco / Fort Collins scoped field evidence
 
 - Resolved **three** previously `source_recorded` claims; count **207/400 primary checked, 145 source-recorded, 48 unverified** (12 paused city profiles). No city statuses, indexing or planner modes changed.
