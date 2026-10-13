@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **40**; 308 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **43**; 305 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **No city has all four fields independently rechecked in this additional pass.** Three or fewer fields per benchmark city are backed by specific government code sections or city-issued guidance. A government guide is not a parcel-specific legal determination, and some official tips may lag effective ordinances.
 
@@ -32,7 +32,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Glendale, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Peoria, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Surprise, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Goodyear, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Goodyear, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Avondale, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Buckeye, AZ | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Queen Creek, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
