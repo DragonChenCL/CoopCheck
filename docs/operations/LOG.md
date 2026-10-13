@@ -1,5 +1,10 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Indianapolis four-field current municipal code audit
+
+- Checked Indianapolis-Marion County [§743-306(W)](https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIIIPUHEWE_CH743USUECST) and Table 743-306-3: up to 12 adult chickens/quail/pigeons/ducks combined (not each), at most one rooster fully enclosed dusk to dawn, no personal livestock license within qualifying standard allowance; licenses needed to increase animals, no front yard pens/coops and setback set by the actual zone. No blanket parcel compliance guarantee.
+- Primary matched fields now **197/400**, source-recorded **155**, unverified in paused 12 cities **48**; 88 source-reviewed city summaries remain unchanged.
+
 ## 2026-10-13 — Current Redmond 2025 amendment and Everett official facility rules
 
 - 4 additional field-specific government-code/guidance checks: Redmond WA placement, Everett WA flock number and placement, Lakewood CO small-animal-permit application. Evidence now **193/400** primary, **159** source-recorded, **48** unverified (12 paused cities), still **88 reviewed**. No new cities.

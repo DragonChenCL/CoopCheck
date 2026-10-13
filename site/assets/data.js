@@ -1811,10 +1811,10 @@ window.COOP_CITIES=[
     "name": "Indianapolis",
     "state": "IN",
     "stateName": "Indiana",
-    "max": "Up to 12 adult chickens, quail, pigeons and ducks collectively as category-one personal livestock without livestock license, subject to other animal and zoning conditions",
-    "roosters": "Rooster-specific noise and livestock restrictions require further city-code review",
-    "permit": "Personal livestock license can permit higher quantities or smaller lots; code allows up to 12 category-one birds without one under its personal-livestock standards",
-    "placement": "Coop zoning and enclosure setbacks must be checked under Marion County's zoning ordinance and personal livestock rules; no universal setback concluded from §743-306",
+    "max": "Indianapolis §743-306(W) permits up to 12 ADULT chickens/quail/pigeons/ducks COMBINED for qualifying personal accessory husbandry at single-/two-family residence without livestock license; more require approval.",
+    "roosters": "At most ONE rooster per lot and it must stay in a fully enclosed coop from dusk to dawn (§743-306(W)(5)).",
+    "permit": "No personal livestock license needed for standard eligible up-to-12 combined adult category-one birds; above that a personal livestock license may be required (§743-306(W)(3)-(4)). Other building/zoning permits separate.",
+    "placement": "No coops, roosts, pens or outside exercise areas in front yard; comply with actual zoning district setback and fencing/confinement requirements (§743-306(W)(7)); the code section gives NO universal numerical coop setback.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1824,7 +1824,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Rechecked official city statute or guidance on 2026-10-13; restrictions are zoning- and parcel-dependent, and unstated conditions remain outside the summary.",
+    "note": "Current Indianapolis-Marion County §743-306(W) personal livestock clause (not commercial farming): combined adult chickens, quail, pigeons and ducks <=12 with narrow personal-livestock license rules; up to one rooster subject to overnight enclosure. Check district-based structure setback, zoning and HOA.",
     "source": "https://library.municode.com/in/indianapolis_-_marion_county/codes/code_of_ordinances?nodeId=TITIIIPUHEWE_CH743USUECST"
   },
   {
