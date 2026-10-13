@@ -927,16 +927,28 @@
     },
     "fresno-ca": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/CA/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC",
+        "section": "Fresno City Code §15-2707(B)(2), (C)(1)(d)",
+        "detail": "Chickens/fowl are NOT household pets in residential lots <=36k sq ft; larger than 36k sq ft residential lots permit up to 12 fowl per gross acre with land-use and health restrictions.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/CA/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC",
+        "section": "Fresno City Code §15-2707(G)",
+        "detail": "No roosters within city limits except accredited zoological park exception; citywide ordinary residential prohibition.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/CA/fresno/codes/code_of_ordinances?nodeId=MUCOCHFRCA_CH15CIDECOINRE_PTIIIREAPSOALDI_ART27STSPUSAC",
+        "section": "Fresno City Code §15-2707(C)(4)",
+        "detail": "For eligible >36k sq ft residential lots where farm animals including poultry allowed, animal housing/pens >=40 ft from PROPERTY lines and >=50 ft from neighboring residences (not 50-ft lot-line setback).",
+        "checkedAt": "2026-10-13"
       }
     },
     "bakersfield-ca": {
