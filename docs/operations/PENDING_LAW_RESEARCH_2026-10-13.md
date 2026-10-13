@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；116 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **236 项为 source_recorded、48 项为 unverified**。注意 87 ≠ 87 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；131 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **221 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -66,3 +66,19 @@
 - Round Rock, TX：[官方附属结构许可说明](https://www.roundrocktexas.gov/city-departments/planning-and-development-services/building-inspection/miscellaneous-building-permits/)规定附属建筑申请/地块位置图，小型棚屋仍可能需建设许可；不能当作鸡舍饲养许可证或直接推出禽类可饲养数量；未升级。
 - Arizona 5 待核验城市：[A.R.S. §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) 已确认对符合资格的独立住宅地块的六只家禽保护，但市级公鸡、围栏、HOA 和具体地块条例尚未解决，不凭州法把5座城市直接升级。
 - **逐字段待核验 236 项**继续按官方生效版本优先；证据变化和多重限制见 [主表](../../POLICY_COMPLETENESS_2026-10-13.md)。
+
+## 2026-10-13 最新一轮：12 pending 城市司法辖区/原文辨认
+
+- **Pueblo CO**：找到 Pueblo 官方市政法典 [2026 Supplement 109](https://library.municode.com/co/pueblo)，其目录显示截止 2026-02-23 的编纂正文和其后未编入法规清单；2021 市议会议案所引 §11-4-32(b) 距离规定可作为线索，但在排除 2026 修订和获得现行 §11-4-32 正文前，不直接解除 pending。
+- **Boulder CO vs Boulder County / Boulder City NV**：同名跨辖区高风险；[Boulder County FAQ](https://bouldercounty.gov/property-and-land/land-use/planning/frequently-asked-questions/) 的农畜单位上限不能当 City of Boulder 规则，[Boulder City NV 官网](https://www.flybouldercity.com/1133/Chicken-Hen-Keeping) 的10只鸡和退距也不是科罗拉多州 Boulder 市的法规。该城保持 noindex。
+- **Queen Creek AZ**：已找到镇政府在 [2026 年 1 月](https://www.queencreekaz.gov/home/showpublisheddocument/40766/639087556691430000) 和 [2026 年 5 月](https://www.queencreekaz.gov/home/showpublisheddocument/40938/639147840971500000) 发布的 Article 6 Zoning PDF（住宅地块低于10,000 sq ft 6 只、10,000 至不足35,000 sq ft 10只；仅 ≥1 acre 的用地允许公鸡）。**该 PDF 当前直接访问返回 403，尚不能检查完整页及是否有未编入修订**；州法 [A.R.S. §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) 对符合资格的住宅六只家禽有优先保护，且对围栏还有约束。不能仅凭搜索摘要断言镇许可和建筑规则，保持 pending，优先人工验证官方 5 月原本及生效时点。
+- **Arvada CO、Renton WA、Round Rock TX、Irvine CA、Berkeley CA、Peoria/Surprise/Prescott/Apache Junction AZ**：尚未取得可逐字段对应的完整最新本市执行条文，未升级，也没有使用第三方 SEO 汇总/论坛替代官方法律。
+
+### 已发布条款的交叉核验
+
+- Prescott Valley §6-02-030(B) 本轮补足 4/4 字段，电气/机械/供排水设施会触发单独建筑许可。
+- Anaheim §18.38.030 对密度计算、公鸡/孔雀限制、20-ft **地界**和50-ft **第三方居所**双重条件按段核对。
+- Beaverton §5.09.015 明确 20-ft 从**邻居住宅**起算，并非地界；至少5000 sq ft，独栋/双拼和居住权条件。
+- Folsom 17.40 是农业复合分区特例：>100头使用许可**绝不是**普通住宅允许100只鸡。
+- Lake Havasu City §14.03.02 表中的 A(2) 只适用于 **2024-09-13 前已存在的独栋住宅居民**，不可统一展示“任意独栋住宅可养六只”；详细要求见 §14.03.03(E)(9)。
+- Portland 官方饲养指南明确鸡禽无需一般 livestock permit，但附属建筑/分区许可仍需另外核实。
