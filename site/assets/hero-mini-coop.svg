@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 170" role="img" aria-label="Illustrated wooden backyard chicken coop">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eef4e7"/><stop offset="1" stop-color="#cee2c5"/></linearGradient></defs>
+<rect width="220" height="170" rx="20" fill="url(#g)"/><path d="M11 136q48-10 94-2t104-3v34H11Z" fill="#9dbf90"/><path d="M26 136q66-13 132-6l31 8" fill="none" stroke="#6c9a65" stroke-width="5"/>
+<path d="m49 76 66-39 62 39v67H49Z" fill="#dcb475" stroke="#986535" stroke-width="5"/><path d="m35 78 79-51 77 51-12 15-65-44-69 44Z" fill="#46654b" stroke="#284c37" stroke-width="5" stroke-linejoin="round"/><path d="M62 92h25v34H62Zm69 0h28v34h-28Z" fill="#fff4d6" stroke="#b47d47" stroke-width="5"/><rect x="96" y="87" width="28" height="56" rx="4" fill="#996239" stroke="#633f26" stroke-width="4"/><circle cx="117" cy="117" r="3" fill="#f7d88d"/>
+<path d="M46 142v18m130-18v18" stroke="#6d814d" stroke-width="6"/><path d="M20 137q6-38 16-11m151 10q11-36 17-11" fill="none" stroke="#518559" stroke-width="5" stroke-linecap="round"/>
+</svg>

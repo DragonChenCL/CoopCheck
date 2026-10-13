@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="730" viewBox="0 0 940 730" role="img" aria-labelledby="name desc">
+<title id="name">Illustrative backyard map sketch</title><desc id="desc">Stylized aerial image of a home, trees, property boundary and small chicken coop; not a real surveyed parcel.</desc>
+<defs>
+<linearGradient id="lawn" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4b7952"/><stop offset=".48" stop-color="#78a66c"/><stop offset="1" stop-color="#37674a"/></linearGradient>
+<linearGradient id="roof" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#777d74"/><stop offset="1" stop-color="#434d45"/></linearGradient>
+<linearGradient id="drive" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8c9d90"/><stop offset="1" stop-color="#66756d"/></linearGradient>
+<pattern id="grass" width="37" height="37" patternUnits="userSpaceOnUse"><circle cx="5" cy="6" r="6" fill="#b9d5a4" opacity=".16"/><path d="m11 28 4-8m-4 8 6-4m10 1 3-7" stroke="#204d37" opacity=".15" stroke-width="2"/></pattern>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
+<g id="tree"><ellipse cx="7" cy="10" rx="45" ry="31" fill="#173d31" opacity=".24"/><circle cx="0" cy="0" r="35" fill="#2b6142"/><circle cx="-19" cy="-11" r="27" fill="#477f52"/><circle cx="16" cy="-13" r="29" fill="#3d7a4c"/><circle cx="0" cy="8" r="25" fill="#609c5b"/><path d="M-14-9Q0-17 14-7M-13 12q13-7 23 0" stroke="#85b776" stroke-width="5" opacity=".3" fill="none"/></g>
+<g id="shrub"><circle r="13" fill="#254f37"/><circle cx="-7" cy="-5" r="9" fill="#669862"/><circle cx="6" cy="-6" r="9" fill="#4e8353"/></g>
+</defs>
+<rect width="940" height="730" fill="#466950"/><path d="M0 0H940V730H0Z" fill="url(#lawn)"/><rect width="940" height="730" fill="url(#grass)"/>
+<path d="M0 0H190L65 730H0Z" fill="#838e81"/><path d="M0 0H190L65 730H0Z" fill="url(#drive)" opacity=".7"/><path d="M151 0 26 730" stroke="#ccd4c8" stroke-width="10"/><path d="M35 0 0 226M0 464 40 730" stroke="#f0e9d0" stroke-width="5" opacity=".4" stroke-dasharray="50 36"/>
+<path d="M188 0h752v730H65Z" fill="#6a975f" opacity=".35"/>
+<path d="M270 0 122 730M405 0 257 730M810 0 662 730" stroke="#bed0af" stroke-width="6" opacity=".3"/>
+<path d="M164 550 940 385v35L164 585Z" fill="#a3ab84" opacity=".3"/>
+<g opacity=".9"><use href="#tree" x="205" y="28"/><use href="#tree" x="333" y="70" transform="translate(333 70) scale(.9) translate(-333 -70)"/><use href="#tree" x="698" y="45"/><use href="#tree" x="871" y="80"/><use href="#tree" x="892" y="323"/><use href="#tree" x="843" y="611"/><use href="#tree" x="490" y="679"/><use href="#tree" x="245" y="660"/><use href="#tree" x="386" y="540"/></g>
+<path d="M312 142 781 101 837 541 373 595Z" fill="#a0bd72" opacity=".65" stroke="#dee8c2" stroke-width="3"/>
+<path d="M350 175 741 141 798 501 411 550Z" fill="#8bb76f" opacity=".7"/>
+<path d="M388 184 398 485M768 183 786 468" stroke="#b2ca93" stroke-width="6" stroke-dasharray="9 9" opacity=".5"/>
+<g transform="translate(465 221) rotate(-5)">
+<rect x="1" y="23" width="248" height="164" rx="8" fill="#172c22" opacity=".24" filter="url(#shadow)"/>
+<rect x="0" y="0" width="245" height="164" rx="7" fill="#d1c4a7" stroke="#eee7d2" stroke-width="7"/>
+<path d="M-10 51 123-26 255 50 231 67 122 4 15 67Z" fill="#4a5d4d" stroke="#b7b4a0" stroke-width="6"/>
+<path d="M17 69 122 6 229 68V144H17Z" fill="url(#roof)" stroke="#3d5143" stroke-width="4"/>
+<path d="M29 81 122 24 218 81" fill="none" stroke="#748577" stroke-width="4" opacity=".65"/>
+<path d="M46 90h42v35H46Zm115 0h41v35h-41Z" fill="#aec2b9" stroke="#f2eee0" stroke-width="6"/>
+</g>
+<path d="M501 394 551 396 571 443 520 453Z" fill="#b5a98c" stroke="#d7c9a7" stroke-width="4"/>
+<path d="M539 444 618 534" stroke="#ded0aa" stroke-width="20" stroke-linecap="round" stroke-dasharray="5 20"/>
+<g transform="translate(633 454) rotate(8)">
+<rect x="4" y="17" width="120" height="86" rx="6" fill="#172d21" opacity=".4" filter="url(#shadow)"/>
+<rect x="4" y="17" width="112" height="80" rx="3" fill="#bc8e55" stroke="#ead49b" stroke-width="5"/>
+<path d="M-7 26 59-10 127 26 116 36 59 7 7 36Z" fill="#7a4d2a" stroke="#dec294" stroke-width="6"/>
+<path d="M21 50h20v44H21Zm50 0h29v30H71Z" fill="#5c4029" stroke="#efc986" stroke-width="4"/>
+</g>
+<path d="M312 142 781 101 837 541 373 595Z" fill="none" stroke="#e4f6c5" stroke-width="9" stroke-linejoin="round" stroke-dasharray="19 10"/>
+<circle cx="312" cy="142" r="11" fill="#f7ffe7" stroke="#32764e" stroke-width="5"/><circle cx="781" cy="101" r="11" fill="#f7ffe7" stroke="#32764e" stroke-width="5"/><circle cx="837" cy="541" r="11" fill="#f7ffe7" stroke="#32764e" stroke-width="5"/><circle cx="373" cy="595" r="11" fill="#f7ffe7" stroke="#32764e" stroke-width="5"/>
+<g><rect x="676" y="370" rx="22" width="181" height="45" fill="#fffdf1" opacity=".96"/><circle cx="701" cy="393" r="9" fill="#319b5e"/><text x="718" y="398" fill="#285039" font-size="17" font-family="Arial,sans-serif" font-weight="bold">Proposed coop</text></g>
+<g><rect x="278" y="108" rx="19" width="184" height="39" fill="#fffdf1" opacity=".95"/><text x="296" y="133" fill="#285039" font-size="15" font-family="Arial,sans-serif" font-weight="bold">Property sketch</text></g>
+<g opacity=".85"><use href="#shrub" x="327" y="378"/><use href="#shrub" x="343" y="409"/><use href="#shrub" x="731" y="510"/><use href="#shrub" x="671" y="183"/><use href="#shrub" x="389" y="183"/></g>
+</svg>
