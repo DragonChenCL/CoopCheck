@@ -656,10 +656,10 @@ window.COOP_CITIES=[
     "name": "Lake Havasu City",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Up to 6 backyard fowl at a single-family detached residence",
-    "roosters": "Male fowl, including roosters, prohibited",
+    "max": "Lake Havasu City §14.03.03(E)(9) states up to six domestic chickens on qualifying single-family detached residences; eligibility also depends on zoning table §14.03.02, including a September 13, 2024 existing-residence condition in zones marked A(2). Not a citywide permit for all parcels.",
+    "roosters": "No male fowl, including roosters, within the qualifying backyard-fowl use (§14.03.03(E)(9)(b)).",
     "permit": "Confirm property zoning and accessory-structure requirements",
-    "placement": "Enclosure in rear or side yard, at least 20 ft from neighboring property line and up to 200 sq ft",
+    "placement": "On qualifying properties, fowl enclosure must be in rear or side yard at least 20 ft from neighboring lot line, roofed, no more than 200 sq ft; maximum height/opacity/fence rules also apply (§14.03.03(E)(9)(c)).",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -669,7 +669,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.",
+    "note": "2026 municipal Code §14.03.03(E)(9) and §14.03.02 zoning use table: six domestic chickens only on qualifying single-family detached residences in districts where backyard fowl is an allowed accessory use. Table entries A(2) restrict use to single-family detached dwelling residents existing September 13, 2024. Do not assume all current residents or all parcels qualify; some fence heights require building permit. Site zoning and HOA plus any separate structure permit require confirmation.",
     "source": "https://codelibrary.amlegal.com/codes/lakehavasucity/latest/lakehavasu_az/0-0-0-32782"
   },
   {

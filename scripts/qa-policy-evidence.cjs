@@ -16,4 +16,13 @@ for(const k of ["max","roosters"]) assert.equal(e.cities["bend-or"][k].status,"p
 for(const k of ["permit","placement"]) assert.notEqual(e.cities["bend-or"][k].status,"primary_clause_checked","Bend permit/setback unproven: "+k);
 const sa=r.cities.find(c=>c.slug==="san-antonio-tx");
 assert(/§5-107/.test(sa.note)&&/pet shop/i.test(sa.note),"San Antonio code numbering must not regress to §5-109 as animal-limit authority");
+// Protect P0 corrections: code-specific source conditions are not general parcel clearance.
+const bySlug=Object.fromEntries(r.cities.map(c=>[c.slug,c]));
+for(const key of keys) assert.equal(e.cities["prescott-valley-az"][key].status,"primary_clause_checked","Prescott Valley "+key+" must retain code citation");
+for(const key of ["max","roosters","placement"])assert.equal(e.cities["anaheim-ca"][key].status,"primary_clause_checked","Anaheim "+key+" missing code citation");
+assert(/(?:2024-09-13|September 13, 2024)/.test(bySlug["lake-havasu-city-az"].note),"Lake Havasu grandfathering condition missing");
+assert(bySlug["lake-havasu-city-az"].note.includes("A(2)"),"Lake Havasu limited-zone condition missing");
+assert.equal(e.cities["beaverton-or"].placement.url,"https://beaverton.municipal.codes/BC/5.09.015","Beaverton dwelling distance not grounded");
+assert.equal(e.cities["portland-or"].permit.status,"primary_clause_checked","Portland no livestock permit government source required");
+assert(bySlug["folsom-ca"].max.includes("Agricultural Combining District"),"Folsom zone-specific use must not be generalized");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
