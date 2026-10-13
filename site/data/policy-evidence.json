@@ -387,16 +387,28 @@
     },
     "glendale-az": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.glendaleaz.gov/Business/Planning-Zoning/FAQ?OC_EA_EmergencyAnnouncementList_Dismiss=95475043-ad4d-4aca-9387-62ea50e4202d",
+        "section": "Planning & Zoning FAQ, Animals > How many chickens & roosters",
+        "detail": "Six domestic chickens at detached single-family residence, subject to state and city qualifications.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.glendaleaz.gov/Business/Planning-Zoning/FAQ?OC_EA_EmergencyAnnouncementList_Dismiss=95475043-ad4d-4aca-9387-62ea50e4202d",
+        "section": "Planning & Zoning FAQ, Animals > How many chickens & roosters",
+        "detail": "Roosters and all male domestic chickens prohibited in city.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.glendaleaz.gov/Business/Planning-Zoning/FAQ?OC_EA_EmergencyAnnouncementList_Dismiss=95475043-ad4d-4aca-9387-62ea50e4202d",
+        "section": "Planning & Zoning FAQ, Animals > How many chickens & roosters",
+        "detail": "Rear/side enclosure ≥20 ft from neighbor property, ≥10 ft from structures, ≤200 sq ft and ≤8 ft, plus zoning/IBC conditions.",
+        "checkedAt": "2026-10-13"
       }
     },
     "peoria-az": {
