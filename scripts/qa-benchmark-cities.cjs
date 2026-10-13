@@ -4,7 +4,7 @@ const root=path.resolve(__dirname,"../site");
 const cities={
  "portland-or":["10 sq ft","3 ft","10 ft","portland.gov/code/13/40"],
  "austin-tx":["30 ft","adjacent residences","does not provide one universal","austintexas.gov"],
- "arlington-tx":["50 ft","four birds","exactly 10","arlingtontx.gov"],
+ "arlington-tx":["50 ft","four birds","exactly ten","arlingtontx.gov"],
  "denver-co":["16 sq ft","rear 50%","$25","denvergov.org"],
  "seattle-wa":["10 ft","8 domestic fowl","urban-farm","seattle.gov"]
 };
