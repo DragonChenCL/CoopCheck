@@ -41,6 +41,8 @@ assert.equal(policyRegistry.schemaVersion,1,"supported policy registry schema");
 assert.equal(policyRegistry.cities.length,100,"100 cities tracked in registry");
 assert.equal(new Set(policyRegistry.cities.map(c=>c.slug)).size,100,"city slugs are unique");
 const reviewedCities=policyRegistry.cities.filter(c=>c.audit?.status!=="needs_review");
+assert.equal(reviewedCities.length,85,"85 source-reviewed city summaries");
+assert.equal(policyRegistry.cities.filter(c=>c.audit.status==="needs_review").length,15,"15 pending policies");
 assert(reviewedCities.length>=24,"at least the initial 24 reviewed cities are preserved");
 assert.equal(policyRegistry.cities.filter(c=>c.audit?.status==="needs_review").length,100-reviewedCities.length,"all city records have a review status");
 assert.equal((cityDataSource.match(/"slug":/g)||[]).length,reviewedCities.length,"browser rules include reviewed cities only");

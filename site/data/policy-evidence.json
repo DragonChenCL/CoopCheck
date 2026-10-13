@@ -1,0 +1,1419 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-13",
+  "meaning": "Per-field clause proof, not a full compliance clearance",
+  "cities": {
+    "chandler-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "mesa-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "phoenix-az": {
+      "max": {
+        "status": "primary_clause_checked",
+        "url": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630",
+        "section": "G-7300 (adopted city report, six-fowl rule)",
+        "checkedAt": "2026-10-13"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "primary_clause_checked",
+        "url": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630",
+        "section": "G-7300 (adopted city report, twenty-foot neighboring-property-line rule)",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "tempe-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "san-diego-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "sacramento-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "denver-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "colorado-springs-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "portland-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "eugene-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "salem-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "gresham-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "seattle-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "spokane-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "vancouver-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "austin-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "arlington-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "fort-worth-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "gilbert-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "scottsdale-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "glendale-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "peoria-az": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "surprise-az": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "goodyear-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "avondale-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "buckeye-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "queen-creek-az": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "tucson-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "flagstaff-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "oro-valley-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "marana-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "casa-grande-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "yuma-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "prescott-az": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "prescott-valley-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "lake-havasu-city-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "apache-junction-az": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "sierra-vista-az": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "los-angeles-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "san-francisco-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "san-jose-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "oakland-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "fresno-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "bakersfield-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "riverside-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "irvine-ca": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "anaheim-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "long-beach-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "santa-ana-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "stockton-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "modesto-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "elk-grove-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "roseville-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "folsom-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "berkeley-ca": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "fremont-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "santa-rosa-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "escondido-ca": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "aurora-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "boulder-co": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "fort-collins-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "lakewood-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "arvada-co": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "thornton-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "westminster-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "pueblo-co": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "longmont-co": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "beaverton-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "hillsboro-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "bend-or": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "medford-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "ashland-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "corvallis-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "lake-oswego-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "tigard-or": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "tacoma-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "bellevue-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "kent-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "renton-wa": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "everett-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "olympia-wa": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "bellingham-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "primary_clause_checked",
+        "url": "https://bellingham.municipal.codes/BMC/7.12.060",
+        "section": "BMC §7.12.060(A), current through 2026-08-022",
+        "checkedAt": "2026-10-13"
+      }
+    },
+    "yakima-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "redmond-wa": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "houston-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "dallas-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "san-antonio-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "plano-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "frisco-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "irving-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "garland-tx": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "mckinney-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "denton-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "el-paso-tx": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "round-rock-tx": {
+      "max": {
+        "status": "unverified"
+      },
+      "roosters": {
+        "status": "unverified"
+      },
+      "permit": {
+        "status": "unverified"
+      },
+      "placement": {
+        "status": "unverified"
+      }
+    },
+    "new-york-city-ny": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "minneapolis-mn": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "madison-wi": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "indianapolis-in": {
+      "max": {
+        "status": "source_recorded"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    },
+    "raleigh-nc": {
+      "max": {
+        "status": "primary_clause_checked",
+        "url": "https://raleighnc.gov/climate-action-and-sustainability/services/home-gardens",
+        "section": "Raleigh Home Gardens guidance, updated 2026-07-13",
+        "checkedAt": "2026-10-13"
+      },
+      "roosters": {
+        "status": "source_recorded"
+      },
+      "permit": {
+        "status": "source_recorded"
+      },
+      "placement": {
+        "status": "source_recorded"
+      }
+    }
+  }
+}
