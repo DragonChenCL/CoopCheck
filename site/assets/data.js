@@ -48,7 +48,7 @@ window.COOP_CITIES=[
     "state": "AZ",
     "stateName": "Arizona",
     "max": "Up to 6 poultry on the first ½ acre; larger lots scale under the ordinance, and written adjoining-neighbor consent can allow more on lots ½ acre or less",
-    "roosters": "Male poultry are allowed only if incapable of making vocal noise that disturbs nearby residents",
+    "roosters": "Phoenix current §8-7(c), preserved in 2024 adopted poultry amendment G-7300, permits male poultry ONLY if incapable of vocal noise disturbing residents; not permission for crowing roosters.",
     "permit": "Verify zoning and accessory-structure requirements for the property",
     "placement": "Rear or side yard; enclosure at least 20 ft from a neighboring property line unless adjoining owners/occupants consent in writing; no front-yard poultry",
     "verified": "2026-10-12",
@@ -60,7 +60,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Phoenix uses a 20-ft neighboring-property-line rule plus rear/side-yard placement, with written-consent exceptions. The planner cannot yet identify which drawn boundary is a neighboring property line or determine legal yard orientation.",
+    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
     "source": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630"
   },
   {
@@ -154,7 +154,7 @@ window.COOP_CITIES=[
     "stateName": "Colorado",
     "max": "Up to 10 rabbits or chickens aged 6 months or older",
     "roosters": "Prohibited",
-    "permit": "Coops must comply with applicable zoning/building rules for accessory structures",
+    "permit": "Colorado Springs government guidance says chicken coops must meet zoning/building rules; accessory structures SMALLER THAN 200 sq ft generally need no Pikes Peak regional BUILDING permit but zoning, site setbacks, overlays and chicken-keeping permit questions remain separate.",
     "placement": "At least 4 sq ft of shelter space per chicken; accessory-structure setbacks vary by zoning/size",
     "verified": "2026-10-12",
     "planner": {
@@ -165,7 +165,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "There is no single universal coop setback in the cited city guidance; accessory-structure rules vary.",
+    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
     "source": "https://coloradosprings.gov/page/city-regulations-animals"
   },
   {
@@ -299,10 +299,10 @@ window.COOP_CITIES=[
     "name": "Vancouver",
     "state": "WA",
     "stateName": "Washington",
-    "max": "Chickens are allowed; verify parcel-specific quantity/animal standards",
+    "max": "Vancouver VMC §20.895.050(B)(5) permits chickens/ducks/geese/rabbits for personal hobby uses with NO MINIMUM LOT SIZE; this is NOT an unlimited numeric flock allowance; roosters prohibited.",
     "roosters": "Prohibited",
-    "permit": "Check zoning and accessory-structure requirements for the property",
-    "placement": "Domestic-animal and accessory-structure rules apply",
+    "permit": "Vancouver domestic poultry personal/hobby keeping is a listed permitted use across zoning districts subject to VMC 8.20/8.24 and off-site impacts; this does NOT settle chicken-keeping licenses or construction/building permits.",
+    "placement": "Chicken-coop siting remains zone/structure-dependent. VMC §20.895.050(B)(6) barn setback applies to LIVESTOCK facilities and cannot automatically be copied to domestic chicken coops.",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
@@ -312,7 +312,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "The city's public FAQ confirms chickens are allowed and roosters are not, but does not state one universal coop setback.",
+    "note": "2026-10-13 claim-level government official-source update: 2 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
     "source": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/code-compliance/"
   },
   {
@@ -383,7 +383,7 @@ window.COOP_CITIES=[
     "name": "Gilbert",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Gilbert's official Code Compliance FAQ says that on each lot up to 20,000 sq ft, up to 25 fowl and rodents combined are allowed under town code/Land Development Code provisions; the count is NOT a universal hen entitlement and must be reconciled with parcel zoning and Arizona's 2024 backyard-fowl preemption.",
+    "max": "Gilbert official Code Compliance FAQ states up to 25 FOWL+RODENTS COMBINED on a lot up to 20,000 sq ft. NOT an automatic 25-hen entitlement: current Land Development Code §2.107, parcel zoning and Arizona §9-462.12 preemption remain to verify.",
     "roosters": "Gilbert Code Compliance FAQ does not establish a simple citywide rooster entitlement or prohibition; inspect Chapter 6 and Land Development Code §2.107 for the parcel and any current nuisance restrictions.",
     "permit": "Confirm Town Code §§6-126–127, Land Development Code §2.107, and parcel zoning with Gilbert Code Compliance.",
     "placement": "Coop siting and structure rules require parcel-level checks; no universal chicken-coop setback confirmed in the official FAQ.",
@@ -396,7 +396,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Source-backed only for the town FAQ's fowl/rodent category and code references. Arizona A.R.S. §9-462.12 separately protects up to six fowl on eligible detached-home lots <=1/2 acre, so verify zoning and municipal ordinance applicability before using the 25-combined figure as an actual poultry allowance.",
+    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
     "source": "https://www.gilbertaz.gov/departments/development-services/plan-review-inspection/inspection-code-compliance/code-compliance/faq-municipal-code-land-development-code"
   },
   {
@@ -614,10 +614,10 @@ window.COOP_CITIES=[
     "name": "Yuma",
     "state": "AZ",
     "stateName": "Arizona",
-    "max": "Up to 6 on lots of 1/2 acre or less; an additional 20 fowl/rodents for each additional 1/2 acre, subject to city code",
-    "roosters": "A rooster is allowed only if incapable of vocal noise",
-    "permit": "Verify residential/agricultural zoning and coop structure requirements",
-    "placement": "Rear or side yard; at least 20 ft from a neighboring property, with stricter rules possible by lot size/zoning; generally 200-sq-ft enclosure limit on smaller lots",
+    "max": "Yuma §130-075: eligible detached single-family lots <=1/2 acre SIX fowl/rodents COMBINED; extra 1/2-acre tiers allow 20 more; >2.5 acres no numeric ceiling in this section. Zoning and Arizona state preemption separately apply.",
+    "roosters": "Yuma §130-076: male poultry only if INCAPABLE of vocal noises that disturb residents; neither unconditional rooster permission nor blanket rooster ban.",
+    "permit": "Yuma R-1-40 zone specifically permits poultry raising as principal use under §154-05.04(C)(7); SR uses addressed separately, subject to current animal Chapter130 and Arizona state preemption. This is ZONING use eligibility, NOT a universal animal-keeping or building permit determination.",
+    "placement": "Yuma §130-071: enclosure at least 20 ft from NEIGHBORING PROPERTY on lots <=1/2 acre; 30 ft on larger lots. §130-073 enclosure <=200 sq ft, height at/below fence on <1 acre or <=8 ft on >1 acre. Different dwelling, zoning and state rules separately.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -627,7 +627,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is subject to parcel zoning, HOA and later municipal amendments.",
+    "note": "2026-10-13 claim-level government official-source update: 4 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance. Arizona state preemption and 2025 animal-code amendments control.",
     "source": "https://www.yumaaz.gov/home/showpublisheddocument/11170/638943904295970000"
   },
   {
@@ -1013,10 +1013,10 @@ window.COOP_CITIES=[
     "name": "Fremont",
     "state": "CA",
     "stateName": "California",
-    "max": "On residential lots greater than 6,000 sq ft, up to 6 FEMALE chickens/rabbits/pigeons/doves combined without an animal-fancier permit, maximum two eligible species per lot. Lots smaller than 6,000 sq ft cannot keep chickens; confirm treatment of exactly 6,000 sq ft.",
-    "roosters": "Roosters prohibited on residentially zoned property under §6.10.030.",
-    "permit": "An animal fancier permit under Chapter 6.40 is needed for numbers beyond the ordinary permitted aggregate.",
-    "placement": "Must comply with Fremont Municipal Code §6.10.130 minimum 10 sq ft permeable land per chicken, and setback tiers based on chicken count and lot size; verify exact measurements.",
+    "max": "Residential lots GREATER THAN 6,000 sq ft: at most 6 female chickens/rabbits/pigeons/doves COMBINED (two species max); city table states ZERO chickens for 6,000 sq ft or less; extra animals require Chapter 6.40 fancier permit.",
+    "roosters": "Fremont §6.10.030: roosters PROHIBITED on residential-zoned parcels; no claim about unrelated agricultural/other zones.",
+    "permit": "Animal-fancier permit under Chapter 6.40 needed beyond ordinary combined six female chicken/rabbit/pigeon/dove allowance; no universal building-permit waiver.",
+    "placement": "Chicken enclosure needs >=10 sq ft permeable land per bird. Table PROPERTY-line offsets: 1–5 chickens on 6,001–9,999 sq ft lots 10 ft, 6–10 chickens on 10,000–21,779 35 ft, 11–15 on >=21,780 50 ft (larger flocks need separate §6.40 permit). No front-yard coops. Section preamble also references residences: verify actual measurement.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1026,7 +1026,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "City of Fremont official Pet Licenses & Animal Ownership Limits, §§6.10.030-.040, and published §6.10.130. Scope: reviewed numerical/rooster/placement facts supported by cited authorities, with parcel-specific conditions still requiring confirmation.",
+    "note": "2026-10-13 claim-level government official-source update: 4 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
     "source": "https://www.fremont.gov/government/departments/animal-services/tri-city/animal-shelter/services/pet-licenses"
   },
   {
@@ -1055,10 +1055,10 @@ window.COOP_CITIES=[
     "name": "Escondido",
     "state": "CA",
     "stateName": "California",
-    "max": "City zoning ordinance Table 33-95a allows up to 6 hens in R-1, and up to 25 domesticated fowl in R-A/R-E, subject to other conditions",
-    "roosters": "The cited R-1 animal table specifies hens only; other zoning classes require verification",
-    "permit": "Animal allowances are zoning-specific and subject to nuisance, building and county standards",
-    "placement": "No universal setback established by the cited zoning table",
+    "max": "Escondido Table 33-95a: in R-1 up to 6 hens/domesticated fowl, in eligible R-A/R-E up to 25 domesticated fowl across species COMBINED; R-T/R-2–R-5 do not list chicken permission. §33-116 property split halves quantities.",
+    "roosters": "Escondido rooster rights ZONING-SPECIFIC: R-A 1–2 by lot size, R-E one only with CONDITIONAL USE PERMIT; no R-1 rooster authorization.",
+    "permit": "Escondido R-E one rooster requires CONDITIONAL USE PERMIT (CUP); commercial egg/poultry production in R-A has a separate CUP under §33-94; neither establishes a building-permit exemption for ordinary hen coops.",
+    "placement": "Escondido animal coops/enclosures are accessory structures subject to §§33-144(b),33-145 and parcel-specific attached/detached standards under §33-102; NO universal property-line chicken-coop distance established.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1068,7 +1068,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Official city guidance/code was examined on October 13, 2026. This summary is limited to the cited source; some citywide or parcel-specific details remain unresolved.",
+    "note": "2026-10-13 claim-level government official-source update: 4 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
     "source": "https://escondido.gov/DocumentCenter/View/4518/Ordinance-Number-2019-16-PDF"
   },
   {
@@ -1391,10 +1391,10 @@ window.COOP_CITIES=[
     "name": "Bellevue",
     "state": "WA",
     "stateName": "Washington",
-    "max": "King County Public Health reports the CITY OF BELLEVUE allows up to 6 domestic fowl; Bellevue's own older code interpretation treats fewer than six fowl as household pets, so the precise threshold and special-animal rules merit current code confirmation.",
+    "max": "Bellevue codified §20.20.130(B) counts SIX FOWL as household pets; over six become small domestic animals with additional lot-size rules. Official site says Ordinance 6930 PENDING codification; not a parcel-wide approval.",
     "roosters": "A 2013 Bellevue City Council meeting record did not establish an outright rooster ban at that time; do not assume that remains current without checking subsequent amendments.",
     "permit": "Verify with Bellevue Development Services if six or more domestic fowl would be treated as a small domestic animal use and whether a permit is needed.",
-    "placement": "No single setback for a standard backyard flock established from the reviewed King County guidance; check Bellevue zoning and animal facilities regulations.",
+    "placement": "Bellevue household pet coops must stand >=15 ft from PROPERTY LINE; small-domestic animal structures (over six fowl) >=25 ft from property line. Fenced free-roaming exception does NOT waive coop structure setback; Ord6930 PENDING codification.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1404,7 +1404,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "King County Public Health local poultry guidance; City of Bellevue development code interpretation and council historical minutes. Limited current-law verification. Scope: only the explicitly stated claims are source-backed; other requirements remain unresolved.",
+    "note": "2026-10-13 claim-level government official-source update: 2 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance. Bellevue Ordinance 6930 pending codification.",
     "source": "https://kingcounty.gov/so-so/dept/dph/health-safety/disease-illness/zoonotic-diseases/diseases-by-animal/backyard-poultry"
   },
   {
@@ -1562,7 +1562,7 @@ window.COOP_CITIES=[
     "max": "No universal number of backyard hens established from this cited code excerpt",
     "roosters": "Rooster restrictions with agricultural/animal-production exceptions apply; parcel category matters",
     "permit": "Verify current zoning, nuisance and animal-control rules",
-    "placement": "No universal chicken coop property-line setback established in this summary",
+    "placement": "Dallas §7-7.3(d)(2),(e): enclosures for LEGAL-EXCEPTION ROOSTERS must be >=20 ft from adjacent PROPERTY LINE measured straight from enclosure exterior, with public alleys/right-of-way width considered. This is NOT a universal hen-coop setback.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1572,7 +1572,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 official local source review. Only the stated provisions could be substantiated; check remaining legal details before relying on this guide.",
+    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
     "source": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613"
   },
   {
