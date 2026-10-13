@@ -323,8 +323,8 @@ window.COOP_CITIES=[
     "max": "Chickens allowed in most residential areas; quantity limits depend on code",
     "roosters": "Check current city animal/noise rules",
     "permit": "Verify enclosure/building requirements for the property",
-    "placement": "For 2+ chickens, enclosures should be at least 30 ft from adjacent residences or businesses",
-    "verified": "2026-10-12",
+    "placement": "Current Austin City Code §3-2-16(A)-(E) applies to ANY fowl enclosure, not just 2+ chickens: secure four-sided covered coop, at least 30 ft from adjacent residence/business building other than keeper's own. If birds/coop create a HEALTH HAZARD, at least 50 ft. These are building separations, not property-line offsets; fences and local building/zoning rules separately apply.",
+    "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
       "side": 0,
@@ -333,7 +333,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "Austin's cited rule measures from adjacent residences/businesses rather than the property line.",
+    "note": "Current Austin Code §3-2-16(D)-(E) as amended effective 2022-10-24 controls over the city's older chicken-keeping handout and media summaries: ordinary fowl enclosure at least 30 ft from third-party residence/business, 50 ft when a health hazard exists. No minimum flock-count trigger. Bird maximum, rooster permission and ordinary animal-keeping permit remain source-recorded/unverified; do not claim ten permitted hens or an unconditional permit exemption.",
     "source": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities"
   },
   {
