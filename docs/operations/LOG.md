@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Second official law batch: Aurora / Longmont / Beaverton / Medford / Ashland
+
+- Reviewed official city codes or permit forms for five cities; newly marked 16 field-specific government statements. Total is now **95/400**, remaining 253 source-recorded and 52 unverified.
+- Kept Beaverton permit/structure location unresolved, Medford construction permit unresolved, and Ashland exactly-5,000-sq-ft boundary unclear. State zone, property, building approvals are never assumed.
+- Detailed primary document references recorded directly per field in `site/data/policy-evidence.json` and completeness report. No pending-city noindex flags changed.
+
+
 ## 2026-10-13 — Gresham / Spokane / Madison / Redmond / Roseville follow-up audit
 
 - Added 19 field-specific government-code/guidance proofs: Gresham 4, Spokane 4, Madison 4, Redmond 3, Roseville 4. Total: **79/400**, with 269 fields source-recorded and 52 unverified in 13 pending cities.

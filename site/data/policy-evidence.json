@@ -1071,16 +1071,32 @@
     },
     "aurora-co": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Animal%20Services/Ordinances%20%26%20Enforcements/019377.pdf",
+        "section": "Aurora permit application; city Code §14-134, Rules Regarding Chickens",
+        "detail": "Up to six chicken hens ordinarily; up to eight on single-family residential lots >=20,000 sq ft. City permit and lot/HOA restrictions remain.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Animal%20Services/Ordinances%20%26%20Enforcements/019377.pdf",
+        "section": "Aurora permit application; Code §14-134, Rules Regarding Chickens",
+        "detail": "Roosters explicitly prohibited on residential property under this program.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.auroragov.org/residents/animal_services/field_services/ordinances_enforcement/chickensducks",
+        "section": "Aurora city Chickens & Ducks, Permits section",
+        "detail": "City permit required BEFORE getting chickens/ducks, issued to single-family residents, one-time $40 listed; owner/neighbor written consent may be required. Other building permissions not decided.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Animal%20Services/Ordinances%20%26%20Enforcements/019377.pdf",
+        "section": "Aurora §14-134 permit application, Housing Structure requirements",
+        "detail": "Structure at least 15 ft from boundary of abutting properties unless affected neighbor gives written consent; rear yard opaque fence and structure protection rules apply; check parcel zoning.",
+        "checkedAt": "2026-10-13"
       }
     },
     "boulder-co": {
@@ -1183,24 +1199,48 @@
     },
     "longmont-co": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.longmontcolorado.gov/de/wp-content/uploads/2024/07/CHICKEN-HENS-PERMIT-APPLICATION_NEW.pdf",
+        "section": "City Longmont Backyard Chicken Hen Permit Application; Regulations §2",
+        "detail": "At most four chicken hens per parcel in nonagricultural zones; chickens other than hens not allowed under standard program.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.longmontcolorado.gov/de/wp-content/uploads/2024/07/CHICKEN-HENS-PERMIT-APPLICATION_NEW.pdf",
+        "section": "Longmont Backyard Chicken Hen Permit Application; Regulations §3",
+        "detail": "Roosters prohibited outside agricultural zones except narrowly specified educational/scientific research uses.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.longmontcolorado.gov/de/wp-content/uploads/2024/07/CHICKEN-HENS-PERMIT-APPLICATION_NEW.pdf",
+        "section": "Longmont Backyard Chicken Hen Permit Application, Permit Requirements and Regulations §17",
+        "detail": "One-time city chicken hen permit required in nonagricultural districts; original form lists $30 with no annual renewal, but confirm current fee before payment.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.longmontcolorado.gov/de/wp-content/uploads/2024/07/CHICKEN-HENS-PERMIT-APPLICATION_NEW.pdf",
+        "section": "Longmont Backyard Chicken Hen Permit Application; Regulations §§4,9-13",
+        "detail": "Rear yard; coop/run <=120 sq ft and <=7 ft tall; coop at least 6 ft from other structures and side/rear lot lines, except qualifying pre-February-2009 structure with written neighbor consent; not general free range.",
+        "checkedAt": "2026-10-13"
       }
     },
     "beaverton-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://beaverton.municipal.codes/BC/5.09.020",
+        "section": "Beaverton Code §5.09.020(A),(C) (current through Ordinance 4882 of July 2026)",
+        "detail": "At most four hens per eligible property. Young chicks <=12 weeks may be kept indoors as pets; §5.09.020 alone does not establish lot-size or dwelling-type eligibility.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://beaverton.municipal.codes/BC/5.09.020",
+        "section": "Beaverton Code §5.09.020(B) (current through Ordinance 4882 of July 2026)",
+        "detail": "Roosters prohibited.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
@@ -1239,30 +1279,54 @@
     },
     "medford-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://medford.municipal.codes/Code/5.555",
+        "section": "Medford Municipal Code §5.555(1)-(2) current through Ordinance 2026-56",
+        "detail": "Residential property may keep domesticated chicken/duck and comparable poultry for noncommercial personal use, subject to other applicable code; §5.555 does NOT provide a universal numeric flock limit.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://medford.municipal.codes/Code/5.555",
+        "section": "Medford Municipal Code §5.555(1)(b)",
+        "detail": "Roosters prohibited.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://medford.municipal.codes/Code/5.555",
+        "section": "Medford Municipal Code §5.555(1)(c)-(e)",
+        "detail": "Poultry enclosure/structure >=4 ft from abutting parcel property lines, no confinement enclosure in required front setback; building/fire code compliance separately mandatory.",
+        "checkedAt": "2026-10-13"
       }
     },
     "ashland-or": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ashlandoregon.gov/m/faq?cat=16",
+        "section": "Ashland Community Development FAQ, Are chickens allowed?",
+        "detail": "Under 5,000 sq ft: up to five hens; above 5,000 sq ft: one hen per 1,000 sq ft up to 20. The FAQ does NOT expressly resolve exactly 5,000 sq ft or zone-specific exceptions.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ashlandoregon.gov/m/faq?cat=16",
+        "section": "Ashland Community Development FAQ, Are chickens allowed?",
+        "detail": "Roosters prohibited within city.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://ashlandoregon.gov/m/faq?cat=16",
+        "section": "Ashland Community Development FAQ, Are chickens allowed? (AMC 18.2.5.040 referenced)",
+        "detail": "Keep chickens >=20 ft from neighboring dwellings and >=10 ft from adjoining property; coop/run construction subject to accessory building rules, and no free roaming.",
+        "checkedAt": "2026-10-13"
       }
     },
     "corvallis-or": {

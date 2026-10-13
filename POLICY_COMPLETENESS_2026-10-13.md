@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 87 (45 general summaries; 42 limited-scope). Pending: 13.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **79**; 269 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **95**; 253 fields have source links but still need per-field confirmation; 52 fields belong to 13 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -67,7 +67,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Fremont, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Santa Rosa, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Escondido, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Aurora, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Aurora, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Boulder, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fort Collins, CO | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Lakewood, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -75,12 +75,12 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Thornton, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Westminster, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Pueblo, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Longmont, CO | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Beaverton, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Longmont, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
+| Beaverton, OR | verified | Clause checked | Clause checked | Source; clause pending | Source; clause pending |
 | Hillsboro, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Bend, OR | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Medford, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Ashland, OR | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Medford, OR | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Ashland, OR | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Corvallis, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Lake Oswego, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | Tigard, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -174,3 +174,11 @@ City of Glendale Planning & Zoning FAQ, Animals > chickens and roosters, confirm
 - Madison: [official Chicken License guidance](https://www.cityofmadison.com/dpced/building-inspection/zoning-signs/chickens) maps 8 hens on lots with ≤4 dwelling units, prohibition of roosters, annual city license + Wisconsin premises registration, and 25-ft separation **to neighboring residential structure**. Four field checks.
 - Redmond: [official Chicken Husbandry guidance](https://www.redmond.gov/228/Chicken-Husbandry) maps city-zone flock tiers, roosters prohibited, chicken registration before obtaining poultry. The claimed 15-ft coop setback and registration **no-fee** status are NOT independently supported by these HTML excerpts; placement stays source_recorded, fee unproven. Three field checks.
 - Roseville: [city Animal Control 2022 poultry guidance](https://www.roseville.ca.us/news/what_s_happening_in_roseville/keeping_chickens_within_roseville_city_limits) maps combined 10 domestic fowl, includes roosters (noise restrictions), discretionary special permit for **nonconforming** enclosure ($25/year **in 2022**, not all coops), and 20-ft **property-line** distance for coop AND fenced run. Current RMC chapter and fee schedule still deserve reconfirmation. Four field checks.
+
+## 2026-10-13 primary sources — Aurora, Longmont, Beaverton, Medford and Ashland
+
+- Aurora, CO: City official [chicken permit application](https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Animal%20Services/Ordinances%20%26%20Enforcements/019377.pdf) and [Chickens & Ducks page](https://www.auroragov.org/residents/animal_services/field_services/ordinances_enforcement/chickensducks) verify six hens (eight on eligible >=20,000 sq-ft single-family lots), no residential roosters, chicken permit before acquiring birds, 15-ft from abutting property lines unless neighbor consent. Distinguish the latter from distance-to-dwelling.
+- Longmont, CO: [official chicken hen permit form](https://www.longmontcolorado.gov/de/wp-content/uploads/2024/07/CHICKEN-HENS-PERMIT-APPLICATION_NEW.pdf) directly identifies four hens, no residential roosters outside narrow exceptions, one-time chicken-keeping permit, rear-yard structures with 6-ft minimum lot-line and other-structure offsets and pre-2009 exception. It lists a $30 historic/current-form permit fee, which must be checked before purchase.
+- Beaverton, OR: [Code §5.09.020](https://beaverton.municipal.codes/BC/5.09.020) verifies maximum four hens and no roosters. Eligibility by property type/area, permits and exact coop distance **still need other clauses**; not upgraded.
+- Medford, OR: [Code §5.555](https://medford.municipal.codes/Code/5.555) explicitly allows noncommercial small poultry on residential property without giving a universal numeric ceiling in this provision; no roosters and 4-ft minimum to abutting-property boundary, not in front required setback. Other zoning/building/fire provisions remain applicable. This is scoped evidence of the section, **not** proof that no other numeric limits exist.
+- Ashland, OR: [Community Development FAQ](https://ashlandoregon.gov/m/faq?cat=16) shows hens tiered on lots under/over 5,000 sq ft (max 20), no roosters, 20-ft to adjacent dwelling / 10-ft to adjoining lot. FAQ does not expressly resolve the **exactly-5,000-sq-ft** boundary. Independent building permits remain open.
