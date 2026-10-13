@@ -118,4 +118,15 @@ assert(bySlug["los-angeles-ca"].max.includes("NO numeric")&&bySlug["los-angeles-
 assert(bySlug["lake-havasu-city-az"].permit.includes("2024-09-13")&&bySlug["lake-havasu-city-az"].permit.includes("BUILDING PERMIT"),"LHC conditional grandfathering");
 assert(bySlug["avondale-az"].max.includes("Arizona")&&bySlug["avondale-az"].roosters.includes("EXCLUDING MALE"),"Avondale state versus local zone conditions");
 assert(bySlug["fort-worth-tx"].permit.includes("DAILY")&&bySlug["denton-tx"].permit.includes("ZONING"),"Fort Worth and Denton scoped code duties");
+// Fourth batch 2026-10-13: 20 official source-verified narrow poultry claims.
+for(const slug of ["modesto-ca","el-paso-tx","bakersfield-ca","oro-valley-az"])for(const key of keys)assert.equal(e.cities[slug][key].status,"primary_clause_checked",slug+" "+key+" code required");
+for(const key of ["max","roosters","permit"])assert.equal(e.cities["austin-tx"][key].status,"primary_clause_checked","Austin Title 3 "+key);
+assert.equal(e.cities["folsom-ca"].roosters.status,"primary_clause_checked","Folsom 2026 citywide rooster ban missing");
+assert(bySlug["modesto-ca"].max.includes("COMBINED")&&bySlug["modesto-ca"].roosters.includes("HENS ONLY"),"Modesto 12 combined and no R1 rooster entitlement");
+assert(bySlug["el-paso-tx"].max.includes("NOT")&&bySlug["el-paso-tx"].placement.includes("20 ft")&&bySlug["el-paso-tx"].placement.includes("PUBLIC ALLEY"),"El Paso exception/pen distance scope");
+assert(bySlug["bakersfield-ca"].max.includes("R-1")&&bySlug["bakersfield-ca"].placement.includes("FRONT LOT LINE"),"Bakersfield use zoning and building distance");
+assert(e.cities["oro-valley-az"].max.url.includes("20240918")&&bySlug["oro-valley-az"].roosters.includes("PROHIBITED"),"Oro must cite enacted 2024 text not 2025 draft");
+assert(bySlug["oro-valley-az"].placement.includes("NEIGHBORING PROPERTY")&&bySlug["oro-valley-az"].permit.includes("CONDITIONAL USE PERMIT"),"Oro parcel/CUP caveats");
+assert(bySlug["austin-tx"].max.includes("NOT")&&bySlug["austin-tx"].roosters.includes("NOT"),"Austin absence of rule is not broad allowance");
+assert(bySlug["folsom-ca"].roosters.includes("ANY ZONING DISTRICT"),"Folsom all zone prohibition");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

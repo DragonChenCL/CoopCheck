@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (44 general summaries; 44 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **286**; 66 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **306**; 46 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -24,7 +24,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Seattle, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Spokane, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Vancouver, WA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
-| Austin, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Clause checked |
+| Austin, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Fort Worth, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Gilbert, AZ | verified_limited_scope | Clause/guidance checked | Source; clause pending | Source; clause pending | Source; clause pending |
@@ -38,7 +38,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Queen Creek, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Tucson, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Flagstaff, AZ | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
-| Oro Valley, AZ | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Oro Valley, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Marana, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Casa Grande, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Yuma, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -52,17 +52,17 @@ Four fields per city: 400. Independently matched to specific current official ci
 | San Jose, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Oakland, CA | verified_limited_scope | Clause/guidance checked | Source; clause pending | Clause/guidance checked | Clause/guidance checked |
 | Fresno, CA | verified_limited_scope | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Bakersfield, CA | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Bakersfield, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Riverside, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Irvine, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Anaheim, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
 | Long Beach, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Santa Ana, CA | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Stockton, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Modesto, CA | verified | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| Modesto, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Elk Grove, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Roseville, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Folsom, CA | verified_limited_scope | Clause checked | Source; clause pending | Clause checked | Clause checked |
+| Folsom, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Berkeley, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Fremont, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Santa Rosa, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -102,7 +102,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Garland, TX | verified_limited_scope | Clause checked | Clause checked | Source; permits still pending | Clause checked |
 | McKinney, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
 | Denton, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| El Paso, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
+| El Paso, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Round Rock, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
 | New York City, NY | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
 | Minneapolis, MN | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -297,3 +297,32 @@ Upgraded exactly **20** existing source-recorded city-field entries, across **9 
 | Denton, TX | `permit` | Denton 2026 Building Safety accessory structures: detached similar sheds ≤200 sq ft and no utilities may be permit-exempt, ZONING STILL APPLIES | [Denton City Building Safety](https://www.cityofdenton.com/658/Accessory-Structures) |
 
 **Applicability exceptions:** Buckeye code effective 2025-11-20; Marana Ordinance 2025.002 effective 2025-02-07 and its zone-specific 40/acre versus six-bird or per-1000sqft rules. Fort Collins 2024 zoning-link updates and Humane Society license still require parcel eligibility. Scottsdale's <200sf accessory-building permit exclusion NEVER waives zoning One Stop Shop plan review. Los Angeles R1 noncommercial use is not unlimited hens. Lake Havasu 2024 grandfathered-zone and tall fence BUILDING permit are not a chicken-keeping licence. Avondale Arizona statutory six-bird floor and backyard-fowl rooster EXCLUSION do not settle agricultural zoning. Fort Worth animal housing duties do not establish permit waivers; Denton sheds <=200sqft and without utilities MAY avoid building permit but zoning/animal licensing still separate. No automated coop site clearance.
+
+## 2026-10-13 — Fourth twenty-field claim-level audit against enacted city code
+
+**Exactly 20** earlier `source_recorded` fields mapped to official/current legal citations across **six cities**. Current **306/400 primary clause/guidance mapped (76.5%)**, **46 source_recorded**, **48 unverified** in the 12 paused/noindex cities. All 100-city SEO scope and 88 source-reviewed summaries unchanged. **A scoped negative/conditional finding is not permit clearance.**
+
+| City | Field | Specific code/ordinance | Linked source |
+|---|---|---|---|
+| Modesto, CA | `max` | Modesto 2026 zoning §10-3.202(a)(3); Table 3.1-1 | [City primary text](https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE) |
+| Modesto, CA | `roosters` | Modesto Code §10-3.202(a)(3), residential fowl HENS ONLY | [City primary text](https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE) |
+| Modesto, CA | `permit` | Modesto Code §10-3.202(b)(2), (e); Table 3.1-1 | [City primary text](https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE) |
+| Modesto, CA | `placement` | Modesto Code §10-3.202(c)-(d), duplicated §10-7.407(a)-(b) | [City primary text](https://library.municode.com/ca/modesto/codes/code_of_ordinances?nodeId=TIT10ZORE) |
+| El Paso, TX | `max` | El Paso Code §7.24.020(B)(1); §7.24.050(A) | [City primary text](https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN) |
+| El Paso, TX | `roosters` | El Paso Code §7.24.020(B)(1) (current municipal code) | [City primary text](https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN) |
+| El Paso, TX | `permit` | El Paso §7.24.020(B)(1)-(3), §7.24.050(A)-(F), Title 7 | [City primary text](https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN) |
+| El Paso, TX | `placement` | El Paso §7.24.030(B)-(D), permitted fowl facilities | [City primary text](https://library.municode.com/tx/el_paso/codes/code_of_ordinances?nodeId=TIT7AN_CH7.24LIOTAN) |
+| Bakersfield, CA | `max` | Bakersfield §17.10.020 Table 17.10-1; §17.10.040(C)(1)(a), municipal code through Ord5223 | [City primary text](https://bakersfield.municipal.codes/Code/17.10.040) |
+| Bakersfield, CA | `roosters` | Bakersfield §6.08.010 fowl housing; §17.10.040(C)(1)(a) sex-neutral R-S poultry | [City primary text](https://bakersfield.municipal.codes/Code/6.08.010) |
+| Bakersfield, CA | `permit` | Bakersfield §17.10.020 Table17.10-1 Animal Raising; §17.10.040(C)(3) | [City primary text](https://bakersfield.municipal.codes/Code/17.10.020) |
+| Bakersfield, CA | `placement` | Bakersfield §17.10.040(C)(2)(a)-(d), §6.08.010 | [City primary text](https://bakersfield.municipal.codes/Code/17.10.040) |
+| Oro Valley, AZ | `max` | Oro Valley enacted Ordinance (O)24-08 Exhibit A §23.6.A.7(b) Table23.6.1 pp7–8; adopted 2024-09-18 | [City primary text](https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf) |
+| Oro Valley, AZ | `roosters` | Oro Valley enacted Ordinance (O)24-08 Exhibit A §23.6.A.7(c)(ii) p8; adopted 2024-09-18 | [City primary text](https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf) |
+| Oro Valley, AZ | `permit` | Oro Valley enacted (O)24-08 §23.6.A.7(a)-(b) Table23.6.1 footnote p8; §23.7.D.6/E.7 | [City primary text](https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf) |
+| Oro Valley, AZ | `placement` | Oro Valley enacted (O)24-08 Exhibit A §23.6.A.7(d)-(f) pp8–9; §23.5.C.2(h) | [City primary text](https://public.destinyhosted.com/orovadocs/2024/TC/20240918_924/5645_Attachment_1_-_Small_Animal_Husbandry_Code_Amendments.pdf) |
+| Austin, TX | `max` | Austin Ch3 §§3-2-1, 3-2-11, 3-2-16(A)-(E) current Oct2026 | [City primary text](https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE) |
+| Austin, TX | `roosters` | Austin Code §§3-2-2 Noisy Animals, 3-2-1 Running at Large; §3-2-16 | [City primary text](https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE) |
+| Austin, TX | `permit` | Austin Code §§3-2-11(A)-(B), 3-2-16(A)-(E), city Public Health Animal Pens guidance | [City primary text](https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT3ANRE_CH3-2REAN_ART1GERE) |
+| Folsom, CA | `roosters` | Folsom Ordinance 1362 §4 amending City Code §7.04.080(C), enacted 2026; official council attachment | [City primary text](https://mccmeetingspublic.blob.core.usgovcloudapi.net/folsomca-meet-83600f7149724af0bf7f37dd3c08f017/ITEM-Attachment-001-d6c1f73a8ced473da7b4309d2e7d7523.pdf) |
+
+**Legality nuance:** Modesto twelve is COMBINED hens/rabbits/hares/pets and CUP required above; El Paso <6 is a permit exception, no universal six-bird max, 30ft occupied-building separation is for permitted fowl, with alley+wall exception and health officer waiver; Bakersfield R-S zone is distinct from R1, and there is NO separate categorical rooster rule established solely in Ch6.08 / R-S section; Oro Valley enacted O24-08 Exhibit A + council adoption minutes support lot tiers, roosters prohibited, CUP for >144k-sqft parcel to exceed tier and 20ft neighboring PROPERTY for small lots, while 2025 redline draft is excluded as adoption proof; Austin animal code does not settle numeric limit, rooster entitlement or holding/construction license, though positive noise and enclosure duties apply; Folsom 2026 Ord1362 specifically bans rooster in ALL zones while prior checked A-district field mappings remain agricultural only. All city planners stay manual.

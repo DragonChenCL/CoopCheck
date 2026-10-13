@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；286 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **66 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；306 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **46 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -118,3 +118,9 @@
 - **286/400** 条字段有对应官方法典或指南；**66 source_recorded，48 unverified**；88城市至少部分审查、12城市不参与索引不变。
 - Buckeye AZ（max、roosters、permit、placement）；Marana AZ（max、roosters、permit、placement）；Fort Collins CO（max、roosters、placement）；Scottsdale AZ（permit、placement）；Los Angeles CA（max、permit）；Lake Havasu City AZ（permit）；Avondale AZ（max、roosters）；Fort Worth TX（permit）；Mesa AZ（permit）。
 - 本批注意事项：Buckeye 新法典2025-11-20生效、Marana 2025.002不同土地类型细分；Scottsdale小于200sf的附属建筑免建筑许可不等于免规划审批；LA R1非营利饲养与A1商业条件不同；Lake Havasu某些分区住宅必须是2024-09-13已存在住宅；Avondale州法底线不等于全分区规则；Fort Collins与 Fort Worth许可/鸡舍位置核验限于原始条文/市政府公告。准确来源逐字段见 policy-evidence.json。
+
+## 2026-10-13 — 第四批20项核验（6城市）
+
+- **306/400** 字段有已对照现行法典或政府批准文件，**46 source_recorded、48 unverified**；88 城市部分有来源、12 城市 noindex 未变。
+- 完成：Modesto CA（max、roosters、permit、placement）；El Paso TX（max、roosters、permit、placement）；Bakersfield CA（max、roosters、permit、placement）；Oro Valley AZ（max、roosters、permit、placement）；Austin TX（max、roosters、permit）；Folsom CA（roosters）。
+- 重要：Oro Valley 2024-09-18 议会一致通过 O24-08 的官方条文/会议记录取代 2025 年未通过草案充当证据；Modesto12个是母禽和其他宠物合计；El Paso <6只免家禽许可证并不等于最多只准6只；Bakersfield R-S 条例的具体附属饲养规则不适用于所有住宅；Austin 鸡只数、公鸡和许可证只证明条款范围内的否定/条件义务；Folsom 2026 §7.04.080 立法新增全市公鸡禁令。需要逐地块排查分区、建筑批准。
