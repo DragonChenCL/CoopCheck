@@ -35,6 +35,7 @@ docs/operations/
 8. [增长实验：免费鸡舍退距图解与尺寸试算](SEO_EXPERIMENT_SETBACK_GUIDE_2026-10-13.md)
 9. [免费鸡舍平面图生成器 MVP：功能边界、开源依据和流量验证](COOP_PLAN_GENERATOR_MVP_2026-10-13.md)
 10. [法规 × 图纸 × 地图：证据边界与用户联动](LAW_TO_COOP_PLAN_HANDOFF_2026-10-13.md)
+11. [鸡舍尺寸计算器 × 6 个鸡只数 × 3 个室内占地规格：SEO 长尾词首批实验](SEO_CHICKEN_COOP_SIZE_CLUSTER_2026-10-14.md)
 
 网站：https://coopcheck.serunio.com/
 
