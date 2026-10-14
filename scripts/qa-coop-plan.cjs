@@ -16,7 +16,7 @@ for(const field of ["flock","width","depth","style"]){
 for(const hook of ["coopPlanForm","planGenerate","planSvgPreview","planResult","planStats","planNotes","planDownloadSvg","planDownloadPng","planPrint","importHint"]){
  assert(html.includes('id="'+hook+'"'),"missing active control "+hook);
 }
-for(const kw of ["not construction engineering","not municipal legal minima","not a measured site survey","not a build-ready","PDF","No account","Oregon State","Penn State","University of Minnesota"]){
+for(const kw of ["not construction engineering","not municipal legal minima","does not produce a measured site survey","not a build-ready","PDF","No account","Oregon State","Penn State","University of Minnesota"]){
  assert((html+" "+home).toLowerCase().includes(kw.toLowerCase()),"missing safety copy "+kw);
 }
 assert(home.includes('href="coop-plan.html"'),"homepage discoverability");
