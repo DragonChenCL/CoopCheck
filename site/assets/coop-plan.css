@@ -87,3 +87,9 @@
 .cc-plan-legal-links a{font-size:12px;font-weight:750;color:#26764c;text-decoration:underline}
 .cc-plan-print-law{font-size:12px;color:#5a705f;padding:12px 15px;border:1px solid #cfe1d3;background:#f3f8f3;border-radius:12px;line-height:1.6;margin-top:12px}
 @media(max-width:650px){.cc-plan-city{padding:12px}.cc-plan-law-details dl{max-height:260px}}
+
+/* Keep long municipal ordinance clauses inside narrow phone viewport. */
+.cc-plan-grid > *, .cc-plan-city, .cc-plan-law-details, .cc-plan-form, .cc-plan-preview,
+.cc-plan-print-law, .cc-plan-city select, .cc-plan-law-inputs, .cc-plan-law-details dl {min-width:0;max-width:100%}
+.cc-plan-law-details dd,.cc-plan-law-result,.cc-plan-print-law {overflow-wrap:anywhere}
+@media(max-width:980px){.cc-plan-grid{grid-template-columns:minmax(0,1fr)}}
