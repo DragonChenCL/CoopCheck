@@ -40,6 +40,8 @@ jobs:
         run: node scripts/qa-setback-guide.cjs
       - name: Verify local-only chicken coop plan generator and diagram geometry
         run: node scripts/qa-coop-plan.cjs
+      - name: Verify per-city ordinance evidence integration and map handoff
+        run: node scripts/qa-plan-law.cjs
 
       - name: Verify source-backed city benchmark pages
         run: node scripts/qa-benchmark-cities.cjs
