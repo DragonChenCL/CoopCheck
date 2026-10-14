@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Chicken Coop Plan Generator — 2D Layout & Dimensions | CoopCheck</title>
+<meta name="description" content="Free chicken coop plan generator. Enter flock size and available space, compare three 2D coop layouts, add nest boxes and roosts, and download an SVG or PNG. No signup.">
+<link rel="canonical" href="https://coopcheck.serunio.com/coop-plan.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/coop-plan.css">
+<meta property="og:title" content="Chicken Coop Plan Generator — Free 2D Layouts">
+<meta property="og:description" content="Sketch a practical coop and run layout using flock size, dimensions, nest boxes and roosts, then download a concept drawing.">
+<meta property="og:url" content="https://coopcheck.serunio.com/coop-plan.html">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CoopCheck","item":"https://coopcheck.serunio.com/"},{"@type":"ListItem","position":2,"name":"Chicken Coop Plan Generator","item":"https://coopcheck.serunio.com/coop-plan.html"}]},{"@type":"WebApplication","name":"CoopCheck Chicken Coop Plan Generator","url":"https://coopcheck.serunio.com/coop-plan.html","applicationCategory":"DesignApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free conceptual 2D chicken-coop and outdoor-run layout planner; not structural construction drawings or regulatory approval."}]}</script>
+<script defer src="assets/project.js"></script>
+<script defer src="assets/coop-plan.js"></script>
+</head>
+<body class="cc-plan-page">
+<header class="site-header no-print"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark"><img src="assets/logo-mark.svg" alt="" width="36" height="36"></span>CoopCheck</a><nav class="nav-links"><a href="index.html">Home</a><a href="coverage.html">City rules</a><a href="guides/chicken-coop-setback-from-property-line.html">Setback guide</a><a class="btn" href="planner.html">Map planner ↗</a></nav></div></header>
+<main>
+<section class="cc-plan-hero"><div class="container">
+<div class="breadcrumbs"><a href="index.html">Home</a> / Chicken Coop Plan Generator</div>
+<span class="eyebrow">100% Free · No AI API · Works in your browser</span>
+<h1>Design a chicken coop layout that fits your flock.</h1>
+<p class="lead">Enter the number of chickens and the rectangular space you have. Get a <strong>dimensioned 2D coop + run concept</strong>, with nest box and roost estimates, then save a picture or print to PDF. No account or checkout required.</p>
+<div class="cc-plan-hints"><span>✓ Three layouts</span><span>✓ SVG &amp; PNG downloads</span><span>✓ PDF via browser print</span><span>✓ Poultry extension references</span></div>
+</div></section>
+<section class="cc-plan-main"><div class="container cc-plan-grid">
+<form class="cc-plan-form cc-plan-card no-print" id="coopPlanForm" novalidate>
+<h2>1. Customize your plan</h2>
+<p>All dimensions are in feet. The input space is the entire proposed <strong>coop + outdoor run</strong> rectangle, not your whole property.</p>
+<fieldset><legend>Flock size</legend>
+<label for="planFlock">Number of adult laying hens
+<input id="planFlock" name="flock" type="number" min="2" max="24" step="1" value="6" inputmode="numeric" required>
+<small>2–24 birds. Different breeds or climates may need more space.</small>
+</label>
+</fieldset>
+<fieldset><legend>Available coop + run area</legend><div class="cc-plan-inputs">
+<label for="planWidth">Width (ft)<input id="planWidth" name="width" type="number" min="6" max="50" step="0.5" value="12" required></label>
+<label for="planDepth">Depth (ft)<input id="planDepth" name="depth" type="number" min="8" max="80" step="0.5" value="18" required></label>
+</div><small>Use measured dimensions; any imported map geometry is only a rough bounding box.</small></fieldset>
+<fieldset><legend>Choose a coop layout</legend><div class="cc-plan-options">
+<label><input type="radio" name="style" value="walkin" checked><span>Walk-in / easy access<small>Coop on the rear-left, run wraps around it</small></span></label>
+<label><input type="radio" name="style" value="raised"><span>Raised / loft-style<small>Smaller elevated footprint on the rear-right</small></span></label>
+<label><input type="radio" name="style" value="compact"><span>Compact / rear band<small>Shallower coop zone across the back</small></span></label>
+</div></fieldset>
+<button class="btn" type="submit" id="planGenerate">Generate my 2D plan →</button>
+<div class="cc-plan-hint" id="importHint" role="status">Have a saved coop outline from the map? <a href="planner.html">Open the map planner</a> to sketch your property first. This page also works independently.</div>
+</form>
+<section class="cc-plan-preview cc-plan-card" id="conceptPreview" aria-live="off">
+<div class="cc-plan-preview-header"><div><span class="eyebrow">FREE CONCEPT PREVIEW</span><h2>2. Your coop layout</h2><p>Generated locally in your browser. Area planning, not construction engineering.</p></div></div>
+<div class="cc-plan-status" id="planResult" role="status" aria-live="polite">Creating your concept layout…</div>
+<div class="cc-plan-canvas" id="planSvgPreview" aria-label="Dimensioned indoor coop and outdoor run concept plan">
+<p class="small">The diagram uses JavaScript. Please enable JavaScript to generate a conceptual coop plan.</p>
+</div>
+<div class="cc-plan-actions no-print">
+<button type="button" id="planDownloadSvg">↓ Download SVG</button>
+<button type="button" id="planDownloadPng">↓ Download PNG</button>
+<button type="button" id="planPrint">↗ Print / Save PDF</button>
+</div>
+<div class="cc-plan-facts" id="planStats" aria-live="polite"></div>
+<div class="cc-plan-notes-wrap"><h3>Checks and design notes</h3><ul id="planNotes"><li>Run the generator to see planning recommendations.</li></ul></div>
+<p class="cc-plan-legal"><strong>Important:</strong> This is a conceptual schematic. It does not produce a measured site survey, engineering-approved structural plans, cut lists, predator-proof specifications, building permission, zoning clearance, or a guarantee of animal welfare. Nest and roost marks are illustrative and require detailed layout and accessibility review. The diagram is drawn proportionally, but displayed elements are not shop drawings.</p>
+</section>
+</div></section>
+<section class="cc-plan-info"><div class="container cc-plan-info-grid">
+<article class="cc-plan-card"><h2>How does the generator size the coop?</h2>
+<p>CoopCheck uses a <strong>4 sq ft indoor space per bird</strong> and <strong>10 sq ft outdoor run per bird</strong> planning target for typical adult laying hens with run access. These are simplified, deliberately conservative space targets derived from university poultry guidance, <strong>not municipal legal minima</strong>. Actual needs depend on breed, climate, confinement, age, ventilation and local restrictions.</p>
+<p>As a starting point, the tool estimates approximately <strong>one 12-inch-square nest box per four birds</strong> and <strong>9 inches of total roost length per bird</strong>. The diagram is a schematic: it does not guarantee these components physically fit for every custom shape or flock.</p>
+<div class="cc-plan-links"><a target="_blank" rel="noopener noreferrer" href="https://extension.oregonstate.edu/catalog/ec-1644-living-land-backyard-chicken-coop-design">Oregon State University Extension ↗</a><a target="_blank" rel="noopener noreferrer" href="https://extension.psu.edu/small-scale-poultry-housing">Penn State Extension ↗</a><a target="_blank" rel="noopener noreferrer" href="https://extension.umn.edu/agriculture/animals-and-livestock/poultry/caring-for-chickens-in-cold-weather">University of Minnesota ↗</a></div>
+</article>
+<article class="cc-plan-card"><h2>Before turning a concept into a build</h2>
+<ul>
+<li>Confirm local <strong>flock-size, roosters, zoning and building-permit</strong> requirements. A source-reviewed city rule is not parcel approval.</li>
+<li>Check measured property lines, setbacks, existing buildings, easements and HOA restrictions.</li>
+<li>Work out secure roof, predator-resistant enclosure, ventilation without drafts, drainage and cleanout access.</li>
+<li>Have a qualified builder review the detailed foundation, framing, doors, roof and attachment loads if you intend to build.</li>
+</ul>
+<p>Our existing <a href="planner.html">map-based setback planner</a> helps you sketch an approximate coop location, while our <a href="guides/chicken-coop-setback-from-property-line.html">setback guide</a> explains why city boundary distances differ. Neither substitutes for local officials or a survey.</p>
+</article>
+</div></section>
+</main>
+<footer class="footer no-print"><div class="container footer-grid"><strong>CoopCheck</strong><span>Practical, source-led backyard chicken planning.</span><a href="states/oregon.html">Oregon chicken rules</a><a href="coverage.html">Browse 100 cities</a></div></footer>
+</body></html>
