@@ -16,6 +16,82 @@
     const hint=root.document.getElementById("importHint");
     let latest=null;
     let imported=false;
+    const contextData=root.COOP_PLAN_LAW_DATA||{};
+    const law=root.CoopPlanLaw;
+    const quick=root.CoopQuickCheck;
+    const params=new URLSearchParams(root.location.search);
+    const cityInput=root.document.getElementById("planCity");
+    const cityFacts=root.document.getElementById("planCityFacts");
+    const cityDetails=root.document.getElementById("planLawDetails");
+    const citySummary=root.document.getElementById("planCitySummary");
+    const lawResult=root.document.getElementById("planLawResult");
+    const lawNotes=root.document.getElementById("planLawNotes");
+    const sourceLink=root.document.getElementById("planSourceLink");
+    const rulesLink=root.document.getElementById("planRuleLink");
+    const mapLink=root.document.getElementById("planMapLink");
+    const printLaw=root.document.getElementById("planPrintLaw");
+    const flockInput=form.elements.namedItem("flock");
+    const lotInput=form.elements.namedItem("lot");
+    const roosterInput=form.elements.namedItem("rooster");
+    const cityList=Object.values(contextData).filter(x=>x&&x.slug&&x.name&&x.state).sort((a,b)=>(a.name+", "+a.state).localeCompare(b.name+", "+b.state));
+    for(const row of cityList){
+      const option=root.document.createElement("option");
+      option.value=row.slug;option.textContent=row.name+", "+row.state+(row.status==="needs_review"?" · review pending":"");
+      cityInput.appendChild(option);
+    }
+    let entry=law?.resolve(contextData,params.get("city")||"");
+    if(entry)cityInput.value=entry.slug;
+    function chooseCity(slug,applyDefault){
+      const city=law?.resolve(contextData,slug);
+      cityInput.value=city?.slug||"";
+      if(city&&applyDefault){
+        const number=law.suggestedFlock(city);
+        if(number)flockInput.value=String(number);
+      }
+      renderCity();
+    }
+    function renderCity(){
+      const selected=law?.resolve(contextData,cityInput.value);
+      cityDetails.hidden=!selected;
+      printLaw.hidden=!selected;
+      if(!selected){
+        citySummary.textContent="Optional: select a city to see source-checked law notes alongside this geometry-only concept.";
+        printLaw.textContent="";
+        return;
+      }
+      const count=Number(flockInput.value);
+      const lot=lotInput.value.trim();
+      const checked=law.review(contextData,selected.slug,count,lot,roosterInput.checked,quick);
+      citySummary.textContent=(selected.status==="needs_review"?"Research pending for ":"City context: ")+selected.name+", "+selected.state+". This is not parcel approval.";
+      cityFacts.replaceChildren();
+      const labels={max:"Flock allowance",roosters:"Roosters",permit:"Permits / approval",placement:"Coop siting / setback"};
+      for(const key of Object.keys(labels)){
+        const dt=root.document.createElement("dt");dt.textContent=labels[key];
+        const dd=root.document.createElement("dd");
+        const claim=checked.facts[key];
+        dd.textContent=claim?.text||"Not independently confirmed for this field.";
+        if(claim?.section){
+          const small=root.document.createElement("small");small.textContent=" Evidence: "+claim.section;dd.appendChild(small);
+        }
+        cityFacts.append(dt,dd);
+      }
+      lawResult.dataset.level=checked.kind;
+      lawResult.textContent=checked.title+" "+checked.detail;
+      lawNotes.replaceChildren();
+      for(const text of checked.notes){
+        const item=root.document.createElement("li");item.textContent=text;lawNotes.appendChild(item);
+      }
+      rulesLink.href="cities/"+encodeURIComponent(selected.slug)+".html";
+      mapLink.href="planner.html?city="+encodeURIComponent(selected.slug);
+      const source=checked.source||["max","placement","roosters","permit"].map(k=>checked.facts[k]?.url).find(u=>/^https:\/\//.test(u||""));
+      sourceLink.hidden=!source;
+      if(source)sourceLink.href=source;else sourceLink.removeAttribute("href");
+      printLaw.textContent="USER-SELECTED CITY: "+checked.city+". Municipal rule context: "+checked.title+" "+checked.detail+" The generated drawing is NOT proof of legal compliance. Official source: "+(source||"Not verified")+".";
+    }
+    cityInput.addEventListener("change",()=>{chooseCity(cityInput.value,true);generate();});
+    lotInput.addEventListener("change",renderCity);
+    roosterInput.addEventListener("change",renderCity);
+    flockInput.addEventListener("change",renderCity);
     function track(event,fields){
       if(typeof root.coopTrack==="function")root.coopTrack(event,fields||{});
     }
@@ -34,6 +110,7 @@
         latest=null;return;
       }
       latest=computed;
+      renderCity();
       const svg=api.renderSvg(computed);
       preview.innerHTML=svg;
       const summary=computed.meetsTargets
@@ -66,7 +143,7 @@
       add("The outside-run area is calculated as the input rectangle minus the indoor-coop footprint; no area beneath a raised coop is double-counted.","");
       add("Nest boxes and roost symbols are schematic; actual clearance, ventilation, door/ramp and maintenance access require detailed design.","");
       add("These targets are poultry-husbandry planning suggestions, not municipality-specific permits or engineering approval.","");
-      track("chicken_coop_plan_generate",{template:computed.style,flock_group:computed.flock<=6?"2-6":computed.flock<=12?"7-12":"13-24",targets_met:computed.meetsTargets?1:0,from_saved_map:imported?1:0});
+      track("chicken_coop_plan_generate",{template:computed.style,flock_group:computed.flock<=6?"2-6":computed.flock<=12?"7-12":"13-24",targets_met:computed.meetsTargets?1:0,from_saved_map:imported?1:0,city_slug:cityInput.value||undefined});
     }
     form.addEventListener("submit",generate);
     root.document.getElementById("planDownloadSvg")?.addEventListener("click",()=>{
@@ -78,20 +155,26 @@
       catch(e){result.textContent="PNG export is unavailable in this browser. Try SVG download instead.";result.dataset.level="warning";}
     });
     root.document.getElementById("planPrint")?.addEventListener("click",()=>{if(latest){track("chicken_coop_plan_export",{format:"print_pdf"});root.print();}});
-    if(new URLSearchParams(root.location.search).get("from")==="map"){
+    if(params.get("from")==="map"){
       let saved=null;
       try{const id=root.localStorage.getItem("coopcheck:project-id");saved=id&&root.CoopProject?.load(root.localStorage,id);}catch(e){}
-      const outline=saved?.features?.find(f=>f.properties.role==="coop");
-      const dimensions=api.dimensionsFromPolygon(outline);
-      if(dimensions&&dimensions.width>=6&&dimensions.width<=50&&dimensions.depth>=8&&dimensions.depth<=80){
-        form.elements.namedItem("width").value=api.format(dimensions.width);
-        form.elements.namedItem("depth").value=api.format(dimensions.depth);
-        imported=true;
-        hint.textContent="Approximate width/depth imported from your saved map's axis-aligned coop outline. This is NOT a surveyed or rotated-building measurement; edit these values to match the real buildable area.";
+      if(saved){
+        if(!entry&&law?.resolve(contextData,saved.city))chooseCity(saved.city,true);
+        const mapMismatch=saved.addressMatched!==true?" The selected city was NOT matched to the address by the map geocoder.":" The saved geocoder city matched the selected city at the time of the sketch; parcel zoning is still unknown.";
+        const outline=saved.features?.find(f=>f.properties.role==="coop");
+        const dimensions=api.dimensionsFromPolygon(outline);
+        if(dimensions){
+          imported=true;
+          hint.textContent="Saved map coop-only outline: approximately "+api.format(dimensions.width)+" × "+api.format(dimensions.depth)+" ft (axis-aligned bounding box). This measures the proposed COOP, not the entire coop + run. The total area inputs above remain unchanged; enter your measured combined space manually. No survey or legal buildable-area conclusion."+mapMismatch;
+        }else{
+          hint.textContent="Saved map project found, but it has no usable coop outline. Enter the TOTAL coop + run dimensions yourself."+mapMismatch;
+        }
       }else{
-        hint.textContent="No usable saved coop outline was found for automatic dimensions. Enter your available space manually. Saved map sketches are never sent to a server.";
+        hint.textContent="No locally saved map sketch found. Enter your TOTAL coop + run dimensions. The generator does not send map coordinates or addresses to a server.";
       }
     }
+    if(!cityInput.value&&entry)chooseCity(entry.slug,true);
+    else renderCity();
     generate();
   }
   if(root.document.readyState==="loading")root.document.addEventListener("DOMContentLoaded",start);
