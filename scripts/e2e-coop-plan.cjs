@@ -100,13 +100,44 @@ async function main(){
       }));
     });
     await page.goto(base+"/coop-plan.html?from=map",{waitUntil:"networkidle"});
-    assert.match(await page.locator("#importHint").innerText(),/Approximate.*imported/i);
+    assert.match(await page.locator("#importHint").innerText(),/Saved map coop-only outline/i);
+    assert.match(await page.locator("#importHint").innerText(),/not the entire coop \+ run/i);
     const dims=await page.evaluate(()=>({
       width:Number(document.getElementById("planWidth").value),depth:Number(document.getElementById("planDepth").value)
     }));
-    assert(dims.width>6&&dims.width<20&&dims.depth>8&&dims.depth<30,"approximately loaded saved map dimensions");
+    assert.deepEqual(dims,{width:12,depth:18},"map coop-only rectangle must NOT overwrite combined coop+run area");
+    assert.equal(await page.locator("#planCity").inputValue(),"portland-or","map transfers selected municipality");
+    assert.equal(await page.locator("#planFlock").inputValue(),"4","screened Portland default when selected from map");
     assert.equal(await page.locator("#planSvgPreview svg").count(),1);
-    console.log("PASS: saved-map import applies approximate dimensions and disclaimer");
+    assert.match(await page.locator("#planLawResult").innerText(),/standard small-fowl count tier/i);
+    console.log("PASS: map transfers city and separate COOP-only outline while preserving total combined area");
+
+    // Real rule-screening interactions, including conditional Portland lot area.
+    await page.goto(base+"/coop-plan.html?city=portland-or&source=rules",{waitUntil:"networkidle"});
+    assert.equal(await page.locator("#planCity").inputValue(),"portland-or");
+    assert.equal(await page.locator("#planFlock").inputValue(),"4");
+    assert.match(await page.locator("#planCityFacts").innerText(),/4 on any lot/i);
+    assert((await page.locator("#planSourceLink").getAttribute("href")).startsWith("https://"));
+    assert.match(await page.locator("#planLawResult").innerText(),/within the standard small-fowl count tier/i);
+    await page.locator("#planFlock").fill("5");
+    await page.locator("#planGenerate").click();
+    assert.match(await page.locator("#planLawResult").innerText(),/Enter lot size/i);
+    await page.locator("#planLot").fill("10000");
+    await page.locator("#planGenerate").click();
+    assert.match(await page.locator("#planLawResult").innerText(),/within the standard small-fowl count tier/i);
+    await page.locator("#planRooster").check();
+    await page.locator("#planGenerate").click();
+    assert.equal(await page.locator("#planLawResult").getAttribute("data-level"),"warning","rooster condition warns");
+    await page.screenshot({path:path.join(screens,"coop-portland-rules.png"),fullPage:true});
+    console.log("PASS: Portland 4/6 conditional rule, city source and rooster screening");
+
+    await page.goto(base+"/coop-plan.html?city=peoria-az&source=rules",{waitUntil:"networkidle"});
+    assert.match(await page.locator("#planLawResult").innerText(),/research is still pending/i);
+    assert.match(await page.locator("#planCityFacts").innerText(),/Not independently confirmed/i);
+    assert.equal(await page.locator("#planFlock").inputValue(),"6","pending city cannot prefill numerical allowance");
+    await page.goto(base+"/coop-plan.html?city=austin-tx&source=rules",{waitUntil:"networkidle"});
+    assert.match(await page.locator("#planLawResult").innerText(),/More city or property checks needed/i);
+    console.log("PASS: pending and scope-limited city law screens fail closed");
 
     await page.setViewportSize({width:375,height:812});
     await page.reload({waitUntil:"networkidle"});

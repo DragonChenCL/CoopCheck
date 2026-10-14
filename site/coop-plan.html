@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://coopcheck.serunio.com/coop-plan.html">
 <meta property="og:type" content="website">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CoopCheck","item":"https://coopcheck.serunio.com/"},{"@type":"ListItem","position":2,"name":"Chicken Coop Plan Generator","item":"https://coopcheck.serunio.com/coop-plan.html"}]},{"@type":"WebApplication","name":"CoopCheck Chicken Coop Plan Generator","url":"https://coopcheck.serunio.com/coop-plan.html","applicationCategory":"DesignApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free conceptual 2D chicken-coop and outdoor-run layout planner; not structural construction drawings or regulatory approval."}]}</script>
-<script defer src="assets/project.js"></script>
+<script defer src="assets/project.js"></script><script defer src="assets/plan-law-data.js"></script><script defer src="assets/quick-check-data.js"></script><script defer src="assets/plan-law.js"></script>
 <script defer src="assets/coop-plan.js"></script>
 </head>
 <body class="cc-plan-page">
@@ -29,6 +29,29 @@
 <form class="cc-plan-form cc-plan-card no-print" id="coopPlanForm" novalidate>
 <h2>1. Customize your plan</h2>
 <p>All dimensions are in feet. The input space is the entire proposed <strong>coop + outdoor run</strong> rectangle, not your whole property.</p>
+<section class="cc-plan-city" id="planCityContext" aria-labelledby="planCityTitle">
+  <h3 id="planCityTitle">City rule context <span>(optional)</span></h3>
+  <label for="planCity">City or local jurisdiction</label>
+  <select id="planCity" name="city" aria-describedby="planCityCaveat">
+    <option value="">No city selected — layout only</option>
+  </select>
+  <p class="cc-plan-city-summary" id="planCitySummary" role="status">Choose a city to see which rule fields we have independently checked.</p>
+  <div class="cc-plan-law-details" id="planLawDetails" hidden>
+    <dl id="planCityFacts"></dl>
+    <div class="cc-plan-inputs cc-plan-law-inputs">
+      <label for="planLot">Lot size (sq ft) <small>optional</small><input id="planLot" name="lot" type="number" min="1" max="100000000" step="1" placeholder="e.g. 8000"></label>
+      <label class="cc-plan-rooster"><input id="planRooster" name="rooster" type="checkbox"> Include a rooster?</label>
+    </div>
+    <div class="cc-plan-law-result" id="planLawResult" role="status" aria-live="polite"></div>
+    <ul id="planLawNotes"></ul>
+    <div class="cc-plan-legal-links">
+      <a id="planRuleLink" href="coverage.html">View city rules →</a>
+      <a id="planSourceLink" href="coverage.html" target="_blank" rel="noopener noreferrer" hidden>Official evidence ↗</a>
+      <a id="planMapLink" href="planner.html">Check location on map →</a>
+    </div>
+  </div>
+  <p class="cc-plan-city-caveat" id="planCityCaveat">City snippets are source-scoped guidance, not a compliance decision. Unsupported or unverified fields remain unanswered.</p>
+</section>
 <fieldset><legend>Flock size</legend>
 <label for="planFlock">Number of adult laying hens
 <input id="planFlock" name="flock" type="number" min="2" max="24" step="1" value="6" inputmode="numeric" required>
@@ -38,7 +61,7 @@
 <fieldset><legend>Available coop + run area</legend><div class="cc-plan-inputs">
 <label for="planWidth">Width (ft)<input id="planWidth" name="width" type="number" min="6" max="50" step="0.5" value="12" required></label>
 <label for="planDepth">Depth (ft)<input id="planDepth" name="depth" type="number" min="8" max="80" step="0.5" value="18" required></label>
-</div><small>Use measured dimensions; any imported map geometry is only a rough bounding box.</small></fieldset>
+</div><small>Use your verified measurement for the <strong>combined coop and run</strong>. A saved map coop-only outline is shown separately, not automatically treated as this entire area.</small></fieldset>
 <fieldset><legend>Choose a coop layout</legend><div class="cc-plan-options">
 <label><input type="radio" name="style" value="walkin" checked><span>Walk-in / easy access<small>Coop on the rear-left, run wraps around it</small></span></label>
 <label><input type="radio" name="style" value="raised"><span>Raised / loft-style<small>Smaller elevated footprint on the rear-right</small></span></label>
@@ -59,6 +82,7 @@
 <button type="button" id="planPrint">↗ Print / Save PDF</button>
 </div>
 <div class="cc-plan-facts" id="planStats" aria-live="polite"></div>
+<div class="cc-plan-print-law" id="planPrintLaw" hidden></div>
 <div class="cc-plan-notes-wrap"><h3>Checks and design notes</h3><ul id="planNotes"><li>Run the generator to see planning recommendations.</li></ul></div>
 <p class="cc-plan-legal"><strong>Important:</strong> This is a conceptual schematic. It does not produce a measured site survey, engineering-approved structural plans, cut lists, predator-proof specifications, building permission, zoning clearance, or a guarantee of animal welfare. Nest and roost marks are illustrative and require detailed layout and accessibility review. The diagram is drawn proportionally, but displayed elements are not shop drawings.</p>
 </section>

@@ -941,6 +941,13 @@
     $(id)?.addEventListener("input",refreshGeometry);
   });
   $("city")?.addEventListener("change",refreshGeometry);
+  $("mapPlanLink")?.addEventListener("click",event=>{
+    saveSnapshot();
+    const selected=city()?.slug||"";
+    event.currentTarget.href="coop-plan.html?from=map"+(selected?"&city="+encodeURIComponent(selected):"");
+    track("map_to_coop_plan",{city_slug:selected,sketch_saved:mapLoaded?1:0});
+  });
+
 
   async function geocode(){
     const input=$("addressSearch");

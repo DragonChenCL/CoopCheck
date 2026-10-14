@@ -1,6 +1,6 @@
 const fs=require("node:fs");
 const path=require("node:path");
-function generateAll(registry){
+function generateAll(registry,evidence){
   const BASE="https://coopcheck.serunio.com";
   const states={AZ:"Arizona",CA:"California",CO:"Colorado",OR:"Oregon",WA:"Washington",TX:"Texas",NY:"New York",MN:"Minnesota",WI:"Wisconsin",IN:"Indiana",NC:"North Carolina"};
   const existingStates=new Set(["AZ","CA","CO","OR","WA","TX"]);
@@ -48,7 +48,7 @@ function generateAll(registry){
 <section class="section"><div class="container"><div class="card">${rules}
 <div class="notice"><strong>Verification scope:</strong> A source-linked summary does not mean that all four legal rule fields have been cross-checked against their currently effective code sections. <a href="https://github.com/DragonChenCL/CoopCheck/blob/main/POLICY_COMPLETENESS_2026-10-13.md">Read the field-level evidence audit</a>.</div><div class="prose"><h2>Scope and limitations</h2><p>${esc(c.note)}</p>
 <h2>Official sources</h2>${sourcelinks}${statewide}
-${faq}<h2>Before buying birds or constructing a coop</h2><p>Confirm that your address is inside the correct city jurisdiction; look up your parcel zoning; confirm flock-size and rooster restrictions, any poultry permit, neighboring-dwelling or property-line separation, accessory-structure/building permits, and HOA or deed restrictions. City rules can change.</p><h2>Plan a coop sketch</h2>${planner}<p class="small">Informational planning aid only. This is not a permit approval, a parcel survey or legal advice.</p></div></div></div></section></main>
+${faq}<h2>Before buying birds or constructing a coop</h2><p>Confirm that your address is inside the correct city jurisdiction; look up your parcel zoning; confirm flock-size and rooster restrictions, any poultry permit, neighboring-dwelling or property-line separation, accessory-structure/building permits, and HOA or deed restrictions. City rules can change.</p><h2>Plan a coop sketch</h2>${isActive?`<div class="notice"><strong>Try a source-aware concept layout.</strong> Bring this municipality's reviewed evidence into the free chicken-coop layout tool; it will warn where a count or setback has NOT been checked, without claiming construction or permit approval. <a class="btn" href="/coop-plan.html?city=${encodeURIComponent(c.slug)}&amp;source=rules">Generate a coop concept for ${esc(c.name)} →</a></div>`:""}${planner}<p class="small">Informational planning aid only. This is not a permit approval, a parcel survey or legal advice.</p></div></div></div></section></main>
 <footer class="footer"><div class="container footer-grid"><strong>CoopCheck</strong><a href="/coverage.html">City coverage directory</a></div></footer></body></html>\n`;
   }
   function coveragePage(){
@@ -75,6 +75,20 @@ ${faq}<h2>Before buying birds or constructing a coop</h2><p>Confirm that your ad
 <footer class="footer"><div class="container footer-grid"><strong>CoopCheck</strong><span>Official sources and transparent verification status</span></div></footer></body></html>\n`;
   }
   const pages={};
+  const lawRows={};
+  for(const c of registry.cities){
+    const pending=c.audit.status==="needs_review";
+    const proof=evidence.cities?.[c.slug]||{};
+    const fields={};
+    for(const k of ["max","roosters","permit","placement"]){
+      const e=proof[k];
+      const ok=!pending&&e?.status==="primary_clause_checked"&&e.verifiedClaim!==false;
+      fields[k]=ok?{verified:true,text:String(c[k]),url:typeof e.url==="string"&&e.url.startsWith("https://")?e.url:null,section:String(e.section||""),checkedAt:String(e.checkedAt||"")}:null;
+    }
+    lawRows[c.slug]={slug:c.slug,name:c.name,state:c.state,status:c.audit.status,fields,url:null};
+  }
+  pages["site/assets/plan-law-data.js"]="/* Generated from cities.json and policy-evidence.json. Primary-checked claims only. */\nwindow.COOP_PLAN_LAW_DATA="+JSON.stringify(lawRows).replace(/</g,"\\u003c")+";\n";
+
   for(const c of batches)pages["site/cities/"+c.slug+".html"]=page(c);
   pages["site/coverage.html"]=coveragePage();
   pages["site/assets/city-search-index.json"]=JSON.stringify({version:1,cities:registry.cities.map(c=>({slug:c.slug,name:c.name,state:c.state,stateName:c.stateName,status:c.audit.status}))},null,2)+"\n";
@@ -84,7 +98,8 @@ ${faq}<h2>Before buying birds or constructing a coop</h2><p>Confirm that your ad
   return pages;
 }
 const registry=JSON.parse(fs.readFileSync(path.resolve(__dirname,"../site/data/cities.json"),"utf8"));
-const files=generateAll(registry);
+const evidence=JSON.parse(fs.readFileSync(path.resolve(__dirname,"../site/data/policy-evidence.json"),"utf8"));
+const files=generateAll(registry,evidence);
 const check=process.argv.includes("--check");
 for(const [file,expected] of Object.entries(files)){
   const dest=path.resolve(__dirname,"..",file);
