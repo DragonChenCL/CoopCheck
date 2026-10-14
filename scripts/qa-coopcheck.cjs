@@ -104,3 +104,8 @@ assert(read("planner.html").includes('id="checkHouseWithin"'),"house containment
 assert(read("assets/map.js").includes('houseInsideProperty=turf.booleanWithin(house,property)'),"house containment evaluated");
 assert(read("assets/map.js").includes("invalidPolygon"),"invalid drawn geometry rejected");
 console.log("PASS: malformed-geometry and parcel-boundary safeguards wired");
+
+// Pages build must inject nonblocking analytics for every city, state and directory page.
+const pagesWorkflow=fs.readFileSync(path.resolve(__dirname,"../.github/workflows/pages.yml"),"utf8");
+assert(pagesWorkflow.includes('const tag = \'<script defer src="/assets/analytics.js"></script>\';'),"GA4 injection must not block HTML parsing");
+assert(pagesWorkflow.includes("walk(root)")&&pagesWorkflow.includes("html.includes('/assets/analytics.js')"),"GA4 injection must recurse and not duplicate");
