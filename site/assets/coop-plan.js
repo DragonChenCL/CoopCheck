@@ -160,7 +160,7 @@
       try{const id=root.localStorage.getItem("coopcheck:project-id");saved=id&&root.CoopProject?.load(root.localStorage,id);}catch(e){}
       if(saved){
         if(!entry&&law?.resolve(contextData,saved.city))chooseCity(saved.city,true);
-        const mapMismatch=saved.addressMatched!==true?" The selected city was NOT matched to the address by the map geocoder.":" The saved geocoder city matched the selected city at the time of the sketch; parcel zoning is still unknown.";
+        const mapMismatch=!(saved.addressMatched===true&&saved.addressCity===cityInput.value)?" The selected city was NOT matched to the address by the map geocoder.":" The saved geocoder city matched the selected city at the time of the sketch; parcel zoning is still unknown.";
         const outline=saved.features?.find(f=>f.properties.role==="coop");
         const dimensions=api.dimensionsFromPolygon(outline);
         if(dimensions){
@@ -173,7 +173,7 @@
         hint.textContent="No locally saved map sketch found. Enter your TOTAL coop + run dimensions. The generator does not send map coordinates or addresses to a server.";
       }
     }
-    if(!cityInput.value&&entry)chooseCity(entry.slug,true);
+    if(entry)chooseCity(entry.slug,true);
     else renderCity();
     generate();
   }
