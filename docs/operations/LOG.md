@@ -1,5 +1,16 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — City law → free coop plans → map product integration
+
+- Implemented `/coop-plan.html?city=<slug>&source=rules` route from all 88 reviewed city guides (82 generated and 18 hand-maintained), without indexing or endorsing the 12 pending profiles.
+- New generated city context bundle derives from `cities.json` **and** `policy-evidence.json`; displays only `primary_clause_checked` positive field claims with `verifiedClaim!==false`. Source-locator-only fields explicitly show not confirmed.
+- Existing five-city quick screening reused (including Portland 4/6 tiers with optional lot size, rooster warnings and context links); other cities display relevant verified facts and official sources but get no inferred numeric approval.
+- From map planner, selected city is passed to free plan generator with a saved-coop-only bounding-box reference. **Important correction:** coop-only polygon is NOT prefilled as total coop-and-run area. No automatic buildable-area or legal compliance guarantee.
+- Printable preview includes source-scoped selected-city caution. Controls preserve independent 2D geometry targets and no new paid API.
+- Regression suite: `qa-plan-law.cjs`, `qa-coop-plan.cjs` and real Chromium `e2e-coop-plan.cjs`. A mobile overflow defect in the new long-law card was identified by E2E and fixed before merge.
+- Track `chicken_coop_plan_generate` with optional city slug and `map_to_coop_plan` city referral; no street address, survey polygon or precise measurements sent in new tracking fields.
+- Full scope: `docs/operations/LAW_TO_COOP_PLAN_HANDOFF_2026-10-13.md`. PR #47. **No claimed organic traffic, paid conversion, legal approval or public deployment until CI and Pages confirm.**
+
 ## 2026-10-13 — Free parametric chicken-coop plan generator MVP
 
 - User authorized building a free 2D coop-plan generator rather than expanding city-law page count. Implemented local JavaScript dimension/area engine, 3 conceptual templates, self-contained SVG layout preview, SVG/PNG download, native print/PDF option and responsive UI.
