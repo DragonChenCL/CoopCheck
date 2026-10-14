@@ -143,4 +143,9 @@ assert(bySlug["lake-oswego-or"].permit.includes("CHICKEN COOPS"),"Lake Oswego ac
 assert(bySlug["corvallis-or"].permit.includes("LIVESTOCK REGISTRATION"),"Corvallis exemption only animal registration");
 assert(bySlug["new-york-city-ny"].placement.includes("LIVE POULTRY MARKETS")&&bySlug["new-york-city-ny"].placement.includes("NOT"),"NYC commercial 25ft not residential");
 assert(bySlug["avondale-az"].placement.includes("SHORTER THAN PROPERTY FENCE"),"Arizona fence height mandatory, 20ft optional");
+// Final 26 follow-up: checked statements are narrowly scoped; no automatic permit or numerical entitlement.
+assert.equal(e.cities["yakima-wa"].permit.status,"primary_clause_checked","Yakima accessory-building threshold not source-verified");
+assert(e.cities["yakima-wa"].permit.detail.includes("NOT decide")&&e.cities["yakima-wa"].permit.detail.includes("200 sq ft"),"Yakima general building permit != poultry license");
+assert.equal(e.cities["new-york-city-ny"].max.status,"primary_clause_checked","NYC official guidance hen allowance missing");
+assert(e.cities["new-york-city-ny"].max.detail.includes("NOT unlimited"),"NYC no citywide number must not become unlimited hens");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");

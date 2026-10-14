@@ -1,5 +1,11 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Last 26 source-recorded legal field triage
+
+- Inspected all 26 remaining source-recorded city×field gaps; 2 positively scope-verified with direct current city government FAQ; 24 unresolved preserved. New totals **328/400 checked, 24 source recorded, 48 unverified**. No new cities, no extra planner clearances or synthetic permits.
+- Yakima WA: municipal accessory-construction permit threshold; NYC NY: official FAQ's hen allowance without a universal numeric quantity assertion. Details and citations in `docs/operations/FINAL_26_FIELD_REVIEW_2026-10-13.md`.
+- **Critical newly discovered:** Dallas official August 12, 2026 approved item 26-2375A describes repeal of rooster ban, which may supersede current site's cited §7-7.3 exception/setback text. Dedicated P0 follow-up required before publicly relying on the old figures.
+
 ## 2026-10-13 — Fifth batch twenty animal and coop structure permissions
 
 - 20 more existing field-specific claims scoped against official permit, building and animal code guidance. **326/400 mapped, 26 source_recorded, 48 pending**, 88 city summaries reviewed and 12 withheld cities unchanged.

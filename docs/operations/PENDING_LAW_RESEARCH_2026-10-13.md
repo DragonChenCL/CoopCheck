@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；326 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **26 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；328 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **24 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -131,3 +131,12 @@
 - 本批已核城市：Phoenix（permit）；Tucson（permit）；Glendale（permit）；Arlington（permit）；Gilbert（roosters、placement、permit）；Lake Oswego（permit）；Tigard（permit）；Kent（permit）；Hillsboro（placement）；Corvallis（permit）；Goodyear（permit）；Casa Grande（permit）；McKinney（placement、permit）；Avondale（placement）；Vancouver（placement）；New York City（placement）；Anaheim（permit）。
 - **Gilbert 严重旧口径已修**：2024正式通过 Ord2911 后，≤半英亩只有6只 fowl，旧 FAQ 25 fowl+rodents 不能当作25只鸡；鸡舍20ft是地界不是住宅，公鸡每20,000sqft有年龄及噪声约束。
 - 绝不能以建筑许可证尺寸豁免推导养鸡证书豁免；Tucson 无论<200sqft仍要建筑/附属建筑申请和规划场地图。NYC 25ft只适用活禽商业市场。Mesa/Sierra Vista/Bend等证据不足字段仍保留 source_recorded。
+
+
+## 2026-10-13 — 最后26个旧记录复核的结果（并非26个均已证实）
+
+- 本次对原剩余 **26 项**逐一给出结论；其中 **2 项**获得可精确对应的市级官方依据并升级，**24 项**继续缺少足够适用的正式条款或政府明确答复。总计 **328/400 primary_clause_checked、24 source_recorded、48 unverified**；88 城市部分来源复核、12 城市暂停/noindex 不变。
+- **Yakima WA / permit**：规划局官网 FAQ 对独栋一层附属构筑物≤200平方英尺的一般建设许可豁免明确，不是养鸡登记豁免；鸟舍动物专项退距仍生效。
+- **NYC NY / max**：市政府农耕办公室原文确认母鸡可饲养、公鸡不可；对应页面未提供住宅母鸡通用数量，因此仅核实“这些来源没有统一数字”，**不代表无限饲养**。
+- **Dallas TX 法规版本 P0**：市议会2026年8月12日已批准涉及撤销公鸡禁令的市政修订，历史§7-7.3公鸡/专属鸡舍退距引用存在过期风险，列为单独修法核验和网页纠偏问题。官方：[City Council 26-2375A](https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=)。
+- 逐条审查表：[FINAL_26_FIELD_REVIEW_2026-10-13.md](FINAL_26_FIELD_REVIEW_2026-10-13.md)。对未找到官方已生效条文的剩余项，不伪造来源、不擅自将普通建筑施工许可说成养禽许可证豁免。
