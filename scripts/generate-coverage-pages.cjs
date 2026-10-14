@@ -78,7 +78,7 @@ ${faq}<h2>Before buying birds or constructing a coop</h2><p>Confirm that your ad
   for(const c of batches)pages["site/cities/"+c.slug+".html"]=page(c);
   pages["site/coverage.html"]=coveragePage();
   pages["site/assets/city-search-index.json"]=JSON.stringify({version:1,cities:registry.cities.map(c=>({slug:c.slug,name:c.name,state:c.state,stateName:c.stateName,status:c.audit.status}))},null,2)+"\n";
-  const urls=[["/","2026-10-13"],["/planner.html","2026-10-12"],...["arizona","california","colorado","oregon","washington","texas"].map(x=>["/states/"+x+".html","2026-10-12"]),["/coverage.html","2026-10-13"],...verified.map(x=>[cityLink(x),["portland-or","austin-tx","arlington-tx","denver-co","seattle-wa"].includes(x.slug)?"2026-10-13":x.verified])];
+  const urls=[["/","2026-10-13"],["/planner.html","2026-10-12"],["/guides/chicken-coop-setback-from-property-line.html","2026-10-13"],...["arizona","california","colorado","oregon","washington","texas"].map(x=>["/states/"+x+".html",x==="oregon"?"2026-10-13":"2026-10-12"]),["/coverage.html","2026-10-13"],...verified.map(x=>[cityLink(x),["portland-or","austin-tx","arlington-tx","denver-co","seattle-wa"].includes(x.slug)?"2026-10-13":x.verified])];
   const lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',...urls.map(([u,date])=>"<url><loc>"+BASE+u+"</loc><lastmod>"+date+"</lastmod></url>"),"</urlset>",""];
   pages["site/sitemap.xml"]=lines.join("\n");
   return pages;
