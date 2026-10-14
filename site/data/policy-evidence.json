@@ -2222,7 +2222,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.yakimawa.gov/services/planning/faq/",
+        "section": "City of Yakima Planning FAQ, 'What regulations do I need to follow for putting up an accessory structure at my residence?' / 'Building Permits'; YMC §15.05.020(E)",
+        "detail": "City Planning says a qualifying one-story detached residential accessory structure with floor area <=200 sq ft is exempt from the general BUILDING permit and structures above 200 sq ft require building permit review; general structures >200 sq ft require 5-ft side/rear setbacks. Coop-specific animal rule still requires 10 ft from dwelling or property line and 5 ft from other structures, even if building-permit exempt. This does NOT decide whether a particular coop meets the accessory-building classification, animal-keeping permit, utilities, HOA, or site permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -2564,7 +2568,11 @@
     },
     "new-york-city-ny": {
       "max": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.nyc.gov/site/agriculture/faqs/frequently-asked-questions.page",
+        "section": "NYC Mayor's Office of Urban Agriculture official FAQ: 'Can I keep chickens in New York City?'; NYC Health Code §161.19 referenced there",
+        "detail": "The City confirms HENS are allowed but ROOSTERS and other birds/fowl are not. The city FAQ and referenced Health Code section DO NOT state one universally applicable numeric backyard-hen quota. This is a checked narrow negative finding, NOT unlimited permission; noise, housing, sanitation, zoning and private restrictions remain.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
         "status": "primary_clause_checked",
