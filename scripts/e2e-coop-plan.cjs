@@ -37,7 +37,8 @@ async function main(){
     console.log("PASS: desktop initial render and default flock/area math");
 
     for(const template of ["raised","compact","walkin"]){
-      await page.locator('input[name="style"][value="'+template+'"]').check();
+      await page.locator('label:has(input[name="style"][value="'+template+'"])').click();
+      assert(await page.locator('input[name="style"][value="'+template+'"]').isChecked());
       await page.locator("#planGenerate").click();
       assert.equal(await page.locator("#planSvgPreview svg").count(),1);
       const title=await page.locator("#planSvgPreview svg title").innerText();
