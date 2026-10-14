@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Updated GSC/GA4 and Dallas ordinance 33485
+
+- Live Windsor.ai GSC + GA4 snapshot for 2026-09-15..2026-10-12: Search Console **23 impressions, 0 clicks** across Oregon 9 (mean position 9.33), Portland 9 (41.67) and homepage 5 (29.6). Only two query rows visible; GA4 **5 active users, 12 sessions, 55 pageviews; all sessions Direct**. Full sourced baseline and next checkpoints: `docs/operations/SEO_GSC_BASELINE_2026-10-13.md`.
+- Payment errors are historical Sept 23 cluster from one active user: 8 starts / 7 errors / 1 created. Not enough evidence to label current checkout broken; no confirmed paying customers. Follow-up sandbox payment flow test outstanding.
+- Dallas **Ordinance No. 33485** now confirmed in published city-ordinance legal notice dated August 15 after Aug 12 approval. Public page now describes repeal without asserting universal rooster entitlement. Old 20-ft special-exception placement remains unverified; P0 #38 stays open.
+- Verified GA4 deployment pipeline covers static pages. Updated injected analytics script to `defer` to avoid parser blocking and added CI guard. No claimed ranking increase or successful new backlinks.
+
 ## 2026-10-13 — Last 26 source-recorded legal field triage
 
 - Inspected all 26 remaining source-recorded city×field gaps; 2 positively scope-verified with direct current city government FAQ; 24 unresolved preserved. New totals **328/400 checked, 24 source recorded, 48 unverified**. No new cities, no extra planner clearances or synthetic permits.

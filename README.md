@@ -76,3 +76,7 @@ The current authoritative completeness report is [POLICY_COMPLETENESS_2026-10-13
 Of 26 originally source-recorded legal claims, **2** gained explicit city-official, scope-limited evidence (Yakima permit/building threshold; NYC lack of a universal numeric statement in its guidance). **24** must stay unconfirmed; 48 fields remain unverified for the 12 paused/noindex cities. See [26-field disposition and Dallas 2026 critical law change](docs/operations/FINAL_26_FIELD_REVIEW_2026-10-13.md). Research completeness is not parcel permission.
 
 **Dallas August 2026 effective-law caveat:** The final-26 audit initially promoted 2 fields, but Dallas old rooster/placement claims were later downgraded by 2 due to city-council-approved repeal of prior §7-7.3. Current **326/400 checked, 26 source_recorded, 48 unverified**; see [P0 #38](https://github.com/DragonChenCL/CoopCheck/issues/38).
+
+## Acquisition baseline after legal evidence pass
+
+Windsor.ai GSC/GA4 2026-09-15..10-12 reports 23 organic impressions, zero search clicks, 5 GA4 active users and 12 Direct sessions. The checkout errors were all from one active user on 2026-09-23, not evidence of a current production outage. See [timestamped GSC/GA4 baseline and priorities](docs/operations/SEO_GSC_BASELINE_2026-10-13.md). Dallas Ordinance No. 33485's official public notice confirms a repeal of the prior categorical rooster ban, but property-specific zoning and enclosure rules remain manual; see [P0 #38](https://github.com/DragonChenCL/CoopCheck/issues/38).

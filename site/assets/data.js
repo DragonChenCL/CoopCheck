@@ -1560,7 +1560,7 @@ window.COOP_CITIES=[
     "state": "TX",
     "stateName": "Texas",
     "max": "No universal number of backyard hens established from this cited code excerpt",
-    "roosters": "Dallas City Council approved a repeal of the rooster-keeping ban on August 12, 2026 (file 26-2375A), but the final operative ordinance and effective date have not been independently confirmed. The prior categorical rooster ban may be superseded. Confirm zoning, noise and current city code; approval is NOT unrestricted permission.",
+    "roosters": "Dallas City Council passed Ordinance No. 33485 on August 12, 2026. The public legal notice dated August 15 states that it repeals the former rooster-keeping prohibition and takes effect on publication. This does NOT establish unconditional rooster permission on every parcel; zoning, nuisance, health and other current rules remain to be checked.",
     "permit": "Verify current zoning, nuisance and animal-control rules",
     "placement": "Dallas former §7-7.3 exception-rooster enclosure 20-ft property-line rule MAY be superseded by the August 2026 rooster-ban repeal. A currently operative poultry enclosure setback is NOT confirmed. This is NOT a universal hen-coop setback. Obtain the amended text and check lot zoning before building.",
     "verified": "2026-10-13",
@@ -1572,7 +1572,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "CRITICAL effective-law warning: Dallas City Council approved file 26-2375A on August 12, 2026 to repeal the §7-7.3 rooster ban. Earlier July code rooster and 20-ft exception-enclosure claims may be obsolete. Approved ordinance attachment unavailable during review; exact effective date and surviving zoning/noise/structure rules NOT confirmed. Manual parcel-only planning.",
+    "note": "SOURCE UPDATE (October 13, 2026): Dallas Council approved item 26-2375A as Ordinance No. 33485 on August 12. City-ordinance legal notice published August 15 states that the repeal of the former rooster ban takes effect on publication. The enrolled full text and post-amendment codified section 7-7.3 remain unavailable for independent comparison. Older exception-only 20-ft enclosure setback cannot be represented as current law; no parcel zoning or keeping permit is cleared. Manual planning required.",
     "source": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613"
   },
   {
