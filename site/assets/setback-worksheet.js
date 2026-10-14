@@ -14,7 +14,8 @@
       const result=api.calculate(values);
       output.dataset.fit=result.valid?String(result.fits):"invalid";
       output.textContent=result.valid
-        ? "Inside your example buffers: "+api.formatFeet(result.availableWidth)+" ft wide × "+api.formatFeet(result.availableDepth)+" ft deep. A "+api.formatFeet(values.coopWidth)+" × "+api.formatFeet(values.coopDepth)+" ft coop footprint "+(result.fits?"FITS":"DOES NOT FIT")+" this simple rectangle. This is geometry only—not an approval or city setback lookup."
+        ? result.buffersOverlap?"Your example buffers exceed your lot dimensions, leaving no usable rectangle. This is not a legal setback check."
+          : "Inside your example buffers: "+api.formatFeet(result.availableWidth)+" ft wide × "+api.formatFeet(result.availableDepth)+" ft deep. A "+api.formatFeet(values.coopWidth)+" × "+api.formatFeet(values.coopDepth)+" ft coop footprint "+(result.fits?"FITS":"DOES NOT FIT")+" this simple rectangle. This is geometry only—not an approval or city setback lookup."
         : "Enter positive lot/coop dimensions and non-negative distances in feet.";
       if(result.valid&&typeof root.coopTrack==="function")root.coopTrack("setback_worksheet_check",{fits:result.fits?1:0,calculator:"manual_example"});
     });
@@ -27,9 +28,12 @@
   function calculate(v){
     if(!v||keys.some(k=>typeof v[k]!=="number"||!Number.isFinite(v[k])))return {valid:false};
     if(["lotWidth","lotDepth","coopWidth","coopDepth"].some(k=>v[k]<=0)||["left","right","front","rear"].some(k=>v[k]<0))return {valid:false};
-    const availableWidth=v.lotWidth-v.left-v.right;
-    const availableDepth=v.lotDepth-v.front-v.rear;
-    return {valid:true,availableWidth,availableDepth,fits:availableWidth>=v.coopWidth&&availableDepth>=v.coopDepth};
+    const rawWidth=v.lotWidth-v.left-v.right;
+    const rawDepth=v.lotDepth-v.front-v.rear;
+    const availableWidth=Math.max(0,rawWidth);
+    const availableDepth=Math.max(0,rawDepth);
+    const buffersOverlap=rawWidth<0||rawDepth<0;
+    return {valid:true,availableWidth,availableDepth,buffersOverlap,fits:!buffersOverlap&&availableWidth>=v.coopWidth&&availableDepth>=v.coopDepth};
   }
   return {calculate,keys,formatFeet};
 });
