@@ -2301,21 +2301,17 @@
         "status": "source_recorded"
       },
       "roosters": {
-        "status": "primary_clause_checked",
-        "url": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613",
-        "section": "Dallas City Code §7-7.3(b)-(e), 7/2026 current",
-        "detail": "General offense for owning a rooster on city premises, with express animal-production zoning, government, exhibition, research and slaughterhouse defenses; qualifying roosters still need enclosure >=20 ft from adjacent property lines, noise restrictions.",
-        "checkedAt": "2026-10-13"
+        "status": "source_recorded",
+        "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=",
+        "detail": "Dallas council approved 2026-08-12 item 26-2375A describing repeal of §7-7.3 rooster ban; earlier July roosters clause may be superseded. Enrolled operative ordinance/effective date unavailable, so this is NOT a current legal permission or required setback."
       },
       "permit": {
         "status": "source_recorded"
       },
       "placement": {
-        "status": "primary_clause_checked",
-        "section": "§7-7.3(d)(2),(e), 7/2026 S-33",
-        "detail": "20ft from neighboring property line is for legally excepted rooster enclosures ONLY, not ordinary hen coops; straight line and alley width measurement.",
-        "url": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613",
-        "checkedAt": "2026-10-13"
+        "status": "source_recorded",
+        "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=",
+        "detail": "Dallas council approved 2026-08-12 item 26-2375A describing repeal of §7-7.3 rooster ban; earlier July placement clause may be superseded. Enrolled operative ordinance/effective date unavailable, so this is NOT a current legal permission or required setback."
       }
     },
     "san-antonio-tx": {
