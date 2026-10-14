@@ -53,7 +53,7 @@ for(const style of ["walkin","raised","compact"]){
    assert(svg.startsWith('<svg xmlns="http://www.w3.org/2000/svg"'),"self-contained SVG");
    assert(svg.includes("INDOOR COOP")&&svg.includes("OUTDOOR RUN"),"explain inner and outer area");
    assert(svg.includes("NOT PERMIT")&&svg.includes("No construction details"),"plan is never represented as build-ready");
-   assert(!svg.includes("<script")&&!svg.includes("http://")&&!svg.includes("https://"),"no active or external content in drawing");
+   assert(!svg.includes("<script")&&!svg.replace('xmlns="http://www.w3.org/2000/svg"','').includes("http://")&&!svg.includes("https://"),"no active or external content in drawing");
   }
  }
 }
