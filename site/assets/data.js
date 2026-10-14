@@ -60,7 +60,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.\n2026-10-13: Official city rule mapping for permit. Building-permit classification, animal keeping licence and parcel-level zoning must be independently established; only cited positive duties and conditional exemptions are confirmed.",
+    "note": "CRITICAL effective-law warning: Dallas City Council approved file 26-2375A on August 12, 2026 to repeal the §7-7.3 rooster ban. Earlier July code rooster and 20-ft exception-enclosure claims may be obsolete. Approved ordinance attachment unavailable during review; exact effective date and surviving zoning/noise/structure rules NOT confirmed. Manual parcel-only planning.\n2026-10-13: Official city rule mapping for permit. Building-permit classification, animal keeping licence and parcel-level zoning must be independently established; only cited positive duties and conditional exemptions are confirmed.",
     "source": "https://phoenix.legistar.com/LegislationDetail.aspx?From=RSS&GUID=4C872857-BCB9-4161-B849-8607885ACB28&ID=6861630"
   },
   {
@@ -165,7 +165,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
+    "note": "CRITICAL effective-law warning: Dallas City Council approved file 26-2375A on August 12, 2026 to repeal the §7-7.3 rooster ban. Earlier July code rooster and 20-ft exception-enclosure claims may be obsolete. Approved ordinance attachment unavailable during review; exact effective date and surviving zoning/noise/structure rules NOT confirmed. Manual parcel-only planning.",
     "source": "https://coloradosprings.gov/page/city-regulations-animals"
   },
   {
@@ -396,7 +396,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.\n2026-10-13: official 2024 Ord2911 supersedes old FAQ bird max; now 6 birds on ≤half-acre lot, 12 for each additional 10,000sf beyond; older FAQ 25 rodents+fowl not a small-home chicken allowance.",
+    "note": "CRITICAL effective-law warning: Dallas City Council approved file 26-2375A on August 12, 2026 to repeal the §7-7.3 rooster ban. Earlier July code rooster and 20-ft exception-enclosure claims may be obsolete. Approved ordinance attachment unavailable during review; exact effective date and surviving zoning/noise/structure rules NOT confirmed. Manual parcel-only planning.\n2026-10-13: official 2024 Ord2911 supersedes old FAQ bird max; now 6 birds on ≤half-acre lot, 12 for each additional 10,000sf beyond; older FAQ 25 rodents+fowl not a small-home chicken allowance.",
     "source": "https://www.gilbertaz.gov/departments/development-services/plan-review-inspection/inspection-code-compliance/code-compliance/faq-municipal-code-land-development-code"
   },
   {
@@ -1560,9 +1560,9 @@ window.COOP_CITIES=[
     "state": "TX",
     "stateName": "Texas",
     "max": "No universal number of backyard hens established from this cited code excerpt",
-    "roosters": "Rooster restrictions with agricultural/animal-production exceptions apply; parcel category matters",
+    "roosters": "Dallas City Council approved a repeal of the rooster-keeping ban on August 12, 2026 (file 26-2375A), but the final operative ordinance and effective date have not been independently confirmed. The prior categorical rooster ban may be superseded. Confirm zoning, noise and current city code; approval is NOT unrestricted permission.",
     "permit": "Verify current zoning, nuisance and animal-control rules",
-    "placement": "Dallas §7-7.3(d)(2),(e): enclosures for LEGAL-EXCEPTION ROOSTERS must be >=20 ft from adjacent PROPERTY LINE measured straight from enclosure exterior, with public alleys/right-of-way width considered. This is NOT a universal hen-coop setback.",
+    "placement": "Dallas former §7-7.3 exception-rooster enclosure 20-ft property-line rule MAY be superseded by the August 2026 rooster-ban repeal. A currently operative poultry enclosure setback is NOT confirmed. This is NOT a universal hen-coop setback. Obtain the amended text and check lot zoning before building.",
     "verified": "2026-10-13",
     "planner": {
       "mode": "manual",
@@ -1572,7 +1572,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026-10-13 claim-level government official-source update: 1 independent city-law or current municipal-guidance field(s) section-matched. Verify exact parcel/zoning, code amendments, building approval and HOA separately; no unconditional local poultry clearance.",
+    "note": "CRITICAL effective-law warning: Dallas City Council approved file 26-2375A on August 12, 2026 to repeal the §7-7.3 rooster ban. Earlier July code rooster and 20-ft exception-enclosure claims may be obsolete. Approved ordinance attachment unavailable during review; exact effective date and surviving zoning/noise/structure rules NOT confirmed. Manual parcel-only planning.",
     "source": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-136613"
   },
   {
