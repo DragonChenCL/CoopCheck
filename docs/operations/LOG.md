@@ -1,5 +1,15 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-14 — SEO intent-cluster expansion: practical coop size and flock dimensions
+
+- Implemented first **10 high-intent landing pages**: interactive `chicken-coop-size-calculator`, flock count 4/6/8/10/12/16, and measured indoor coop footprints 4×6/4×8/6×8. Generated with original on-page answer, variable-specific constraints, separate coop/run size illustrations, university husbandry source links and working layout-generator CTA. No unverified keyword search-volume claim.
+- Upgraded homepage, existing setback explainer and layout generator internal links; new guides crosslink with one another and link to city rules.
+- Implemented `?flock=N` controlled plan prefill from SEO guides (2–24 valid hens only; city law context takes priority), and true client-side size calculator without external API.
+- Added 10 canonical sitemap URLs, expected site total **109** (99 previous + 10). Pending city profiles remain excluded.
+- Added CI checks for generated guide drift, canonical/unique titles/description, capacity math, source boundaries, and actual browser calculator → SVG planning funnel.
+- **Status to validate:** PR/CI, public Pages deploy, live browser, then GSC indexing. Content existence is not proof Google indexed it.
+- Keyword/measurement details: `docs/operations/SEO_CHICKEN_COOP_SIZE_CLUSTER_2026-10-14.md`.
+
 ## 2026-10-13 — Austin enacted-code consistency follow-up
 
 - Compared old `quick-check-data.js` wording against Austin enacted Ordinance 20221013-030 (§3-2-16(D)-(E), effective 2022-10-24) at https://services.austintexas.gov/edims/document.cfm?id=396841 . The 30-ft enclosure-to-adjacent-residence/business structure rule applies to **all fowl enclosures**, not only 2+ chickens; the 50-ft provision applies when fowl or enclosure creates a health hazard. The current city overview still retains older threshold wording.
