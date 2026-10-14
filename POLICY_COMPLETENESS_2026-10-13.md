@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (44 general summaries; 44 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **306**; 46 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **326**; 26 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -11,7 +11,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 |---|---|---|---|---|---|
 | Chandler, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Mesa, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
-| Phoenix, AZ | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Phoenix, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Tempe, AZ | verified | Clause checked | Clause checked | Clause checked | Clause/guidance checked |
 | San Diego, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Sacramento, CA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
@@ -23,24 +23,24 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Gresham, OR | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Seattle, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Spokane, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
-| Vancouver, WA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
+| Vancouver, WA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Austin, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Arlington, TX | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Arlington, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Fort Worth, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Gilbert, AZ | verified_limited_scope | Clause/guidance checked | Source; clause pending | Source; clause pending | Source; clause pending |
+| Gilbert, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Scottsdale, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Glendale, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Glendale, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Peoria, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Surprise, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Goodyear, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
-| Avondale, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
+| Goodyear, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
+| Avondale, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
 | Buckeye, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Queen Creek, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Tucson, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Tucson, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Flagstaff, AZ | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Oro Valley, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Marana, AZ | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Casa Grande, AZ | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Casa Grande, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Yuma, AZ | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Prescott, AZ | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Prescott Valley, AZ | verified | Clause checked | Clause checked | Clause checked | Clause checked |
@@ -55,7 +55,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Bakersfield, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Riverside, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Irvine, CA | needs_review | Not verified | Not verified | Not verified | Not verified |
-| Anaheim, CA | verified | Clause checked | Clause checked | Source; clause pending | Clause checked |
+| Anaheim, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Long Beach, CA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Santa Ana, CA | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Stockton, CA | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
@@ -77,16 +77,16 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Pueblo, CO | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Longmont, CO | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Beaverton, OR | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
-| Hillsboro, OR | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
+| Hillsboro, OR | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Bend, OR | verified_limited_scope | Clause checked (>=5,000 sq ft) | Clause checked (no roosters) | Source; permit unconfirmed | Source; coop setback unconfirmed |
 | Medford, OR | verified_limited_scope | Clause checked | Clause checked | Clause checked (building/fire duty only) | Clause checked |
 | Ashland, OR | verified | Clause checked | Clause checked | Clause checked (accessory structure rules only) | Clause checked |
-| Corvallis, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
-| Lake Oswego, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked (manual siting required) |
-| Tigard, OR | verified_limited_scope | Clause checked (no numeric cap in cited chapter) | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Corvallis, OR | verified_limited_scope | Source; clause pending | Source; clause pending | Clause/guidance checked | Source; clause pending |
+| Lake Oswego, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
+| Tigard, OR | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Tacoma, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Bellevue, WA | verified_limited_scope | Clause/guidance checked | Source; clause pending | Source; clause pending | Clause/guidance checked |
-| Kent, WA | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Kent, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Renton, WA | needs_review | Not verified | Not verified | Not verified | Not verified |
 | Everett, WA | verified_limited_scope | Clause checked | Clause checked (license trigger only) | Clause checked | Clause checked |
 | Olympia, WA | verified_limited_scope | Clause checked | Clause checked | Source; permit still pending | Clause checked |
@@ -100,11 +100,11 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Frisco, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked |
 | Irving, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause checked (building/zoning duty only) | Clause/guidance checked |
 | Garland, TX | verified_limited_scope | Clause checked | Clause checked | Source; permits still pending | Clause checked |
-| McKinney, TX | verified | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Source; clause pending |
+| McKinney, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Denton, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | El Paso, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Round Rock, TX | needs_review | Not verified | Not verified | Not verified | Not verified |
-| New York City, NY | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Source; clause pending |
+| New York City, NY | verified_limited_scope | Source; clause pending | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Minneapolis, MN | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Madison, WI | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Indianapolis, IN | verified | Clause checked | Clause checked | Clause checked | Clause checked |
@@ -326,3 +326,32 @@ Upgraded exactly **20** existing source-recorded city-field entries, across **9 
 | Folsom, CA | `roosters` | Folsom Ordinance 1362 §4 amending City Code §7.04.080(C), enacted 2026; official council attachment | [City primary text](https://mccmeetingspublic.blob.core.usgovcloudapi.net/folsomca-meet-83600f7149724af0bf7f37dd3c08f017/ITEM-Attachment-001-d6c1f73a8ced473da7b4309d2e7d7523.pdf) |
 
 **Legality nuance:** Modesto twelve is COMBINED hens/rabbits/hares/pets and CUP required above; El Paso <6 is a permit exception, no universal six-bird max, 30ft occupied-building separation is for permitted fowl, with alley+wall exception and health officer waiver; Bakersfield R-S zone is distinct from R1, and there is NO separate categorical rooster rule established solely in Ch6.08 / R-S section; Oro Valley enacted O24-08 Exhibit A + council adoption minutes support lot tiers, roosters prohibited, CUP for >144k-sqft parcel to exceed tier and 20ft neighboring PROPERTY for small lots, while 2025 redline draft is excluded as adoption proof; Austin animal code does not settle numeric limit, rooster entitlement or holding/construction license, though positive noise and enclosure duties apply; Folsom 2026 Ord1362 specifically bans rooster in ALL zones while prior checked A-district field mappings remain agricultural only. All city planners stay manual.
+
+## 2026-10-13 — Fifth batch: twenty narrowly scoped city-field source verifications
+
+Exactly **20** source_recorded fields mapped to the operative published city code or agency guidelines, including conditional building approval thresholds. **326/400 primary-mapped**, **26 source_recorded**, 48 unverified belonging to 12 paused/noindex cities. 88 city summaries partially source-reviewed; original 100 cities unchanged.
+
+| City | Field | Source scope | Government source |
+|---|---|---|---|
+| Phoenix, AZ | `permit` | Phoenix Planning & Development Residential Projects 2026: detached structure >200 sqft, electrical and plumbing permit triggers | [Official](https://www.phoenix.gov/administration/departments/pdd/residential-building/resident-plan-reviews.html) |
+| Tucson, AZ | `permit` | Tucson PDS Permit Exemptions and 2025 Residential Shed Permitting Guide | [Official](https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Tucson-Permit-Exemptions) |
+| Glendale, AZ | `permit` | Glendale Planning and Zoning FAQ, backyard chickens, Residential Zoning Clearance, Accessory Buildings | [Official](https://www.glendaleaz.gov/Business/Planning-Zoning/FAQ?OC_EA_EmergencyAnnouncementList_Dismiss=95475043-ad4d-4aca-9387-62ea50e4202d) |
+| Arlington, TX | `permit` | Arlington Texas 2024 City DIY Permit Guide: storage shed >100 sqft / location setbacks | [Official](https://www.arlingtontx.gov/News-Articles/2024/December/Do-I-Need-A-Permit-A-DIY-Guide) |
+| Gilbert, AZ | `roosters` | Gilbert LDC §5.2.2(A)(5)(b), 2024 enacted Ord2911, zoning revision through 2026 | [Official](https://www.gilbertaz.gov/departments/development-services/planning/land-development-code) |
+| Gilbert, AZ | `placement` | Gilbert LDC §5.2.2(A)(5)(c)-(d), effective Ord2911 2024 | [Official](https://www.gilbertaz.gov/departments/development-services/planning/land-development-code) |
+| Gilbert, AZ | `permit` | Gilbert LDC §5.2.2(A)(5)(a)-(e), residential fowl accessory use and Chapter6 animal duties | [Official](https://www.gilbertaz.gov/departments/development-services/planning/land-development-code) |
+| Lake Oswego, OR | `permit` | Lake Oswego Building: Why Do I Need a Permit?; Residential Accessory Structures handout expressly includes chicken coops | [Official](https://www.ci.oswego.or.us/building/why-do-i-need-permit) |
+| Tigard, OR | `permit` | Tigard Building Services When You Need a Permit, standard detached nonhabitable accessory structures | [Official](https://www.tigard-or.gov/your-government/departments/community-development/building-services/when-you-need-a-permit) |
+| Kent, WA | `permit` | Kent City FAQ Sheds/Garages/Outbuildings, accessory structure permit >=200sqft | [Official](https://www.kentwa.gov/government/frequently-asked-questions) |
+| Hillsboro, OR | `placement` | Hillsboro City Code Compliance Accessory Structures HMC12.40.104 and animal permit conditions | [Official](https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance) |
+| Corvallis, OR | `permit` | Corvallis Municipal Code §5.03.050.020.06(7)(a), municipal livestock registration exception | [Official](https://library.municode.com/or/corvallis/codes/code_of_ordinances) |
+| Goodyear, AZ | `permit` | Goodyear Homeowner Permit FAQs Storage Sheds, Playhouses and Similar Structures | [Official](https://www.goodyearaz.gov/government/departments/engineering-development-services/development-services/homeowner-permit-faqs) |
+| Casa Grande, AZ | `permit` | Casa Grande City Planning & Development FAQ: small accessory structures exempt construction permit, require Planning sign-off | [Official](https://www.casagrandeaz.gov/m/faq?cat=48) |
+| McKinney, TX | `placement` | McKinney Animal Control FAQ, current chickens and proper enclosure | [Official](https://www.mckinneytexas.org/m/faq?cat=20) |
+| Avondale, AZ | `placement` | Arizona A.R.S. §9-462.12(B),(C),(D) mandatory under-fence-line rule for municipal residential communities | [Official](https://www.azleg.gov/ars/9/00462-12.htm) |
+| Vancouver, WA | `placement` | Vancouver VMC §20.895.050(B)(5)-(6), (E) and VMC Chapter20.935 offsite impacts | [Official](https://vancouver.municipal.codes/VMC/20.895.050) |
+| New York City, NY | `placement` | NYC Health Code Article161 §161.19(b)-(c), 25ft live poultry MARKET coop setback only | [Official](https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf) |
+| McKinney, TX | `permit` | McKinney UDC current March 2026, Section205(G) Accessory Uses/Buildings and 2024 IRC building code permit administration | [Official](https://www.mckinneytexas.org/285/Unified-Development-Code) |
+| Anaheim, CA | `permit` | Anaheim City Building Division Permit Processing Information, current 2025 California Building Standards Code cycle | [Official](https://www.anaheim.net/6010/Permit-Processing-Info) |
+
+**Especially important:** Gilbert adopted Ord2911 Sept 2024 means pre-2024 mixed 25 fowl/rodents FAQ is NOT a current 25-hen small-lot right: updated already-primary `max` proof to ≤six chickens for eligible ≤half-acre lots, and added actual 20ft LOT LINE coop/setback and mature rooster tiers. Phoenix/Tucson/Glendale/Arlington/Goodyear/Casa Grande/Kent/Tigard/Lake Oswego confirm conditional *accessory-building* permit triggers, not blanket poultry licence determinations. Hillsboro zoning accessory structures have parcel-specific property line offsets; Corvallis livestock-registration exception is not a coop building waiver; McKinney proper enclosure and accessory building zone duties do NOT provide a universal numerical distance or permit-exemption. NYC 25ft distance in §161.19(c) is specifically LIVE POULTRY MARKET buildings, NOT ordinary backyard hen coops. Avondale Arizona state requires <1acre enclosure below fence, while municipal 20ft is optional and not independently established. Vancouver livestock B(6) does not categorically govern domestic chicken coops. All parcel approvals remain manual.

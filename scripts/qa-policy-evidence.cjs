@@ -133,4 +133,14 @@ assert(bySlug["folsom-ca"].roosters.includes("ANY ZONING DISTRICT"),"Folsom all 
 assert(bySlug["folsom-ca"].max.includes("SIX CHICKENS")&&bySlug["folsom-ca"].max.includes("Agricultural Combining District"),"Folsom 2026 normal pets versus A-zone must coexist");
 assert(bySlug["folsom-ca"].placement.includes("5 ft")&&bySlug["folsom-ca"].placement.includes("20 ft"),"Folsom new normal residential two distance objects");
 assert(e.cities["folsom-ca"].max.url.includes("ITEM-Attachment")&&e.cities["folsom-ca"].placement.url.includes("ITEM-Attachment"),"Folsom enacted 1362 code citations required");
+// Fifth batch: 20 scoped city-government code/approval checks.
+for(const [s,k] of [["phoenix-az","permit"],["tucson-az","permit"],["glendale-az","permit"],["arlington-tx","permit"],["gilbert-az","roosters"],["gilbert-az","placement"],["gilbert-az","permit"],["lake-oswego-or","permit"],["tigard-or","permit"],["kent-wa","permit"],["hillsboro-or","placement"],["corvallis-or","permit"],["goodyear-az","permit"],["casa-grande-az","permit"],["mckinney-tx","placement"],["avondale-az","placement"],["vancouver-wa","placement"],["new-york-city-ny","placement"],["mckinney-tx","permit"],["anaheim-ca","permit"]])assert.equal(e.cities[s][k].status,"primary_clause_checked",s+"/"+k+" official source lost");
+assert(bySlug["gilbert-az"].max.includes("SIX")&&bySlug["gilbert-az"].max.includes("2024"),"Gilbert old mixed 25 FAQ must not override Ordinance 2911");
+assert(bySlug["gilbert-az"].placement.includes("ANY PROPERTY LINE")&&bySlug["gilbert-az"].roosters.includes("FOUR MONTHS"),"Gilbert precise setback and rooster age");
+assert(bySlug["tucson-az"].permit.includes("site-plan")&&bySlug["tucson-az"].permit.includes("200"),"Tucson small sheds require planning");
+assert(bySlug["glendale-az"].permit.includes("ZONING CLEARANCE"),"Glendale prior city zoning review mandatory");
+assert(bySlug["lake-oswego-or"].permit.includes("CHICKEN COOPS"),"Lake Oswego accessory structure guide includes chicken coop");
+assert(bySlug["corvallis-or"].permit.includes("LIVESTOCK REGISTRATION"),"Corvallis exemption only animal registration");
+assert(bySlug["new-york-city-ny"].placement.includes("LIVE POULTRY MARKETS")&&bySlug["new-york-city-ny"].placement.includes("NOT"),"NYC commercial 25ft not residential");
+assert(bySlug["avondale-az"].placement.includes("SHORTER THAN PROPERTY FENCE"),"Arizona fence height mandatory, 20ft optional");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
