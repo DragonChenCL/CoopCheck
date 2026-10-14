@@ -29,6 +29,10 @@ assert.equal(law.review(rows,"portland-or",4,"",true,quick).kind,"warning","roos
 assert.equal(law.review(rows,"seattle-wa",9,"5000",false,quick).kind,"warning");
 assert.equal(law.review(rows,"denver-co",9,"",false,quick).kind,"warning");
 assert.equal(law.review(rows,"austin-tx",6,"",false,quick).kind,"review","Austin is not universal numeric clearance");
+assert.match(law.review(rows,"austin-tx",6,"",false,quick).detail,/all fowl enclosures/);
+assert.match(law.review(rows,"austin-tx",6,"",false,quick).detail,/30 ft/);
+assert.doesNotMatch(law.review(rows,"austin-tx",6,"",false,quick).detail,/For two or more chickens/);
+
 const chandler=law.review(rows,"chandler-az",8,"",false,quick);
 assert.equal(chandler.kind,"review","other city claims may be source-backed without a universal machine-verifiable ceiling");
 assert(chandler.facts.max?.verified===true);
