@@ -11,8 +11,8 @@ assert.equal(specsPages.filter(x=>x.group==="flock").length,6);
 assert.equal(specsPages.filter(x=>x.group==="footprint").length,3);
 assert.equal(specsPages.filter(x=>x.group==="calculator").length,1);
 const sitemap=read("site/sitemap.xml");
-assert.equal((sitemap.match(/<loc>/g)||[]).length,109,"99 originals + 10 new guides, no withdrawn city URLs");
-assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1])).size,109);
+assert.equal((sitemap.match(/<loc>/g)||[]).length,115,"99 originals + 10 sizing pages + 6 tool intent pages");
+assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1] )).size,115);
 const titleSet=new Set(),descSet=new Set(),h1Set=new Set();
 const blogBase="https://coopcheck.serunio.com";
 for(const p of specsPages){
