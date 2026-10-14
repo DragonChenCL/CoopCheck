@@ -87,7 +87,7 @@ ${faq}<h2>Before buying birds or constructing a coop</h2><p>Confirm that your ad
     }
     lawRows[c.slug]={slug:c.slug,name:c.name,state:c.state,status:c.audit.status,fields,url:null};
   }
-  pages["site/assets/plan-law-data.js"]="/* Generated from cities.json and policy-evidence.json. Primary-checked claims only. */\\nwindow.COOP_PLAN_LAW_DATA="+JSON.stringify(lawRows).replace(/</g,"\\\\u003c")+";\\n";
+  pages["site/assets/plan-law-data.js"]="/* Generated from cities.json and policy-evidence.json. Primary-checked claims only. */\nwindow.COOP_PLAN_LAW_DATA="+JSON.stringify(lawRows).replace(/</g,"\\u003c")+";\n";
 
   for(const c of batches)pages["site/cities/"+c.slug+".html"]=page(c);
   pages["site/coverage.html"]=coveragePage();
