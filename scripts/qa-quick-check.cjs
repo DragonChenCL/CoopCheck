@@ -12,6 +12,12 @@ assert.equal(test("portland-or",9,22000,false).kind,"review");
 assert.equal(test("portland-or",2,8000,true).kind,"over");
 assert.equal(test("austin-tx",2,9000,false).kind,"review");
 assert.match(test("austin-tx",2,9000,false).details,/30 ft/);
+assert.equal(test("austin-tx",1,9000,false).kind,"review");
+assert.match(test("austin-tx",1,9000,false).details,/all fowl enclosures \(including for one bird\)/);
+assert.match(test("austin-tx",2,9000,false).details,/50 ft.*health hazard/);
+assert(!test("austin-tx",2,9000,false).details.includes("For two or more chickens"),"obsolete Austin quantity trigger");
+assert.equal(r.cities["austin-tx"].primary,"https://services.austintexas.gov/edims/document.cfm?id=396841");
+
 assert.equal(test("arlington-tx",4,1000,false).kind,"within");
 assert.equal(test("arlington-tx",6,6000,false).kind,"review");
 assert.equal(test("denver-co",8,1000,false).kind,"within");
