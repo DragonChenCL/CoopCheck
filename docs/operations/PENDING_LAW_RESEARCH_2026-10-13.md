@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；326 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **26 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；329 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **26 项为 source_recorded、45 项为 unverified**。其中 Apache Junction 已获得 3 项当前市政法规证据，但由于许可未证实，仍保持 needs_review/noindex；因此 12 个 pending 城市不代表其 48 字段仍全部 unverified。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -12,7 +12,7 @@
 | Surprise, AZ | [亚利桑那州相关法律](https://www.azleg.gov/ars/9/00462-12.htm)（只适用于满足条件的地块） | 获取 Surprise 本市 2026 生效的动物和用地法典，核实州法优先适用情形，不套用全市统一限制 | 待核验 |
 | Queen Creek, AZ | [州法律](https://www.azleg.gov/ars/9/00462-12.htm) | 查该镇当前土地用途分区及鸡舍附属结构限制，区分镇与县地块 | 待核验 |
 | Prescott, AZ | [州法律](https://www.azleg.gov/ars/9/00462-12.htm) | 市政家禽/农业土地用途原文和许可证情况，必须核查地块所属区域 | 待核验 |
-| Apache Junction, AZ | [州法律](https://www.azleg.gov/ars/9/00462-12.htm) | 需要本市地块/分区的家禽法规和卫生条例，不按邻近城市推断 | 待核验 |
+| Apache Junction, AZ | [**2026 现行 LDC §1-6-17(C),(I)**](https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17845)、[Table 5-2 footnote 4](https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17475)、[亚州 §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) | **max、roosters、placement 三字段有现行条款及适用范围；permit/建造批准仍未获证据**。地方法典非 RS-GR 每 1500sqft 2 只，须受州法符合条件地块 6 只保护限制，不能按地方公式否决。鸡舍侧后 15ft 与州法可要求至邻地产 20ft、<1acre 围栏高度约束需逐地块合读。2014 会议草案不是法律。 | **已核验 3/4 字段，仍 noindex / needs_review** |
 | Irvine, CA | [Irvine 市 Municode 动物法典](https://library.municode.com/ca/irvine/codes/code_of_ordinances?nodeId=TIT4PUSA_DIV5ANRE_CH11HUTRAN_S4-5-1107ANSAPUPLPR) | 已找到的第4-5-1109节是幼禽销售限制，**不是家庭饲养许可**。必须再查土地分区和居住物业养禽规定 | 待核验 |
 | Berkeley, CA | [Berkeley 官方市政法规入口](https://berkeleyca.gov/your-government/public-records/berkeley-municipal-code)、[市卫生部门养鸡防鼠建议](https://berkeleyca.gov/sites/default/files/2022-02/Rodent-Vector-Attractant-Prevention-Chicken-Coops.pdf) | 防鼠手册不是数量/公鸡/距离的授权条款。需确定动物条例及 zoning 允许范围和许可是否独立要求 | 待核验 |
 | Boulder, CO | [Boulder 市政府网站](https://bouldercolorado.gov/) | 需要本市现行家禽数量限制和建筑/分区审批证据，不以县法规代替市法规 | 待核验 |
@@ -146,3 +146,10 @@
 - 因Dallas市议会已于2026年8月12日批准撤销公鸡禁令的修订，旧§7-7.3公鸡及特例20英尺退距条文不再具备可靠的现行效力证明；两条旧primary字段回退为source_recorded，页面展示显式风险提示，并继续人工判定。
 - **最新总数 326/400 primary，26 source_recorded，48 unverified**。之前最后26字段补证的328/24是安全降级前的历史值；2条Yakima、NYC补证保留。
 - [市政府批准文件](https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=)；跟踪 [Issue #38](https://github.com/DragonChenCL/CoopCheck/issues/38)。
+
+
+## 2026-10-13 partial pending-city field breakthrough — Apache Junction
+
+- 现行 [Apache Junction LDC §1-6-17](https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17845) 为 2026 当前编纂法典；与 [§1-5-2 Table 5-2](https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17475)、[Arizona preemption §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) 一并核查。升级数量、公鸡、鸡舍位置 3 字段，仅限定现有明文事实，仍需城建/动物管理答复普通养鸡许可和建筑审批。
+- 不从旧 2014 工作会草案恢复数量或退距；不把州法「至少保障合条件 6 只」写成「全市只准 6 只」；保留 Apache Junction needs_review、noindex、manual 规划。
+- 三字段后 **329/400 primary，26 source_recorded，45 unverified**；**12** 城市仍待上线前审查。
