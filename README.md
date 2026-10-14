@@ -69,8 +69,10 @@ The live registry now includes **87 source-reviewed summaries, 13 pending**, wit
 
 ## Latest evidence progress (2026-10-13)
 
-The current authoritative completeness report is [POLICY_COMPLETENESS_2026-10-13.md](POLICY_COMPLETENESS_2026-10-13.md): **88** cities have at least some source-reviewed facts (not blanket legal approval), **12** remain pending/noindex, and **328/400** individual city×field claims have primary city code/guidance evidence. Bend's flock/rooster facts are limited-scope; chicken-coop permits and location remain unverified. Earlier counts above are historical batch snapshots. Keep unconfirmed fields clearly scoped and property-specific zoning/permit/setback decisions manual.
+The current authoritative completeness report is [POLICY_COMPLETENESS_2026-10-13.md](POLICY_COMPLETENESS_2026-10-13.md): **88** cities have at least some source-reviewed facts (not blanket legal approval), **12** remain pending/noindex, and **326/400** individual city×field claims have primary city code/guidance evidence. Bend's flock/rooster facts are limited-scope; chicken-coop permits and location remain unverified. Earlier counts above are historical batch snapshots. Keep unconfirmed fields clearly scoped and property-specific zoning/permit/setback decisions manual.
 
 ## Final 26-field follow-up (2026-10-13)
 
 Of 26 originally source-recorded legal claims, **2** gained explicit city-official, scope-limited evidence (Yakima permit/building threshold; NYC lack of a universal numeric statement in its guidance). **24** must stay unconfirmed; 48 fields remain unverified for the 12 paused/noindex cities. See [26-field disposition and Dallas 2026 critical law change](docs/operations/FINAL_26_FIELD_REVIEW_2026-10-13.md). Research completeness is not parcel permission.
+
+**Dallas August 2026 effective-law caveat:** The final-26 audit initially promoted 2 fields, but Dallas old rooster/placement claims were later downgraded by 2 due to city-council-approved repeal of prior §7-7.3. Current **326/400 checked, 26 source_recorded, 48 unverified**; see [P0 #38](https://github.com/DragonChenCL/CoopCheck/issues/38).
