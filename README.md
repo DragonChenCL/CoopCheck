@@ -90,3 +90,8 @@ Direct current Apache Junction **2026** municipal Land Development Code §1-6-17
 ## Latest owner-approved relaxed source inventory (2026-10-13)
 
 ONLY the 45 remaining `unverified` city-policy entries have been given official-code/government research references and per-field `verifiedClaim:false` caveats. The strict original 329 primary-checked and prior 26 source-recorded fields are NOT changed. New registry tally **329 primary, 71 source-recorded, 0 no-reference**. **Still 71 legally unresolved fields**, not 400 approved/chicken-safe legal answers. All 12 pending city profiles stay noindex/manual and outside automated rules. See [the 45-field evidence-strength ledger](docs/operations/PENDING_45_EVIDENCE_TIER_2026-10-13.md) and [completeness audit](POLICY_COMPLETENESS_2026-10-13.md). Earlier count snapshots are historical.
+
+
+## First SEO acquisition experiment — free chicken coop setback guide
+
+Launched a source-led [property-line vs neighboring-house setback explainer](site/guides/chicken-coop-setback-from-property-line.html) with a geometric, **user-supplied-distance** fit worksheet. Page links to the free map sketcher and cites specific Portland/Seattle/San Diego city rules; it makes no nationwide numeric permit promise or parcel compliance finding. Home, Oregon and Portland hub link to it; a single canonical guide URL is added to the generated sitemap. Build/QA: `node scripts/qa-setback-guide.cjs`. See [GSC and event-funnel baseline + 7/14/28-day measurement plan](docs/operations/SEO_EXPERIMENT_SETBACK_GUIDE_2026-10-13.md). Traffic and indexing outcomes are not yet established.

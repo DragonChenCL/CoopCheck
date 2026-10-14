@@ -1,0 +1,41 @@
+/* Standalone, source-led setback explainer and free geometry worksheet. */
+.cc-guide-hero{background:linear-gradient(115deg,#ebf3e9,#f8f9f2);border-bottom:1px solid var(--line)}
+.cc-guide-hero .container{padding-top:60px;padding-bottom:52px}
+.cc-guide-hero h1{font-size:clamp(36px,5.6vw,61px);max-width:920px;line-height:1.08}
+.cc-guide-hero .lead{max-width:820px}
+.cc-guide-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(260px,.75fr);gap:30px;align-items:start}
+.cc-guide-body{min-width:0}
+.cc-guide-body h2{font-size:clamp(25px,3vw,34px);margin:34px 0 12px}
+.cc-guide-body h2:first-child{margin-top:0}
+.cc-guide-body h3{font-size:19px;margin:22px 0 8px}
+.cc-guide-body p,.cc-guide-body li{line-height:1.75}
+.cc-guide-body li{margin-bottom:8px}
+.cc-guide-body a{text-decoration:underline;text-underline-offset:2px}
+.cc-guide-aside{position:sticky;top:93px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+.cc-guide-aside h2{font-size:19px;margin:0 0 14px}
+.cc-guide-aside a:not(.btn){display:block;margin:8px 0}
+.cc-guide-aside .btn{width:100%;margin-top:12px}
+.cc-guide-alert{border-left:4px solid #bd934c;background:#fff8e9;padding:15px 18px;border-radius:4px 12px 12px 4px;margin:20px 0}
+.cc-guide-diagram{margin:23px 0;background:#fff;border:1px solid var(--line);border-radius:19px;padding:18px}
+.cc-guide-diagram svg{display:block;width:100%;height:auto;max-width:820px;margin:auto}
+.cc-guide-diagram figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+.cc-guide-comparison{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
+.cc-guide-comparison table{border-collapse:collapse;width:100%;min-width:600px}
+.cc-guide-comparison th,.cc-guide-comparison td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:14px}
+.cc-guide-comparison th{background:#eef4ed}
+.cc-guide-comparison tr:last-child td{border-bottom:0}
+.cc-worksheet{background:#fff;border:1px solid var(--line);padding:24px;border-radius:19px;margin:22px 0}
+.cc-worksheet h2{margin-top:0}
+.cc-worksheet-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.cc-worksheet label{display:block;font-size:14px;font-weight:700;color:var(--ink)}
+.cc-worksheet label span{display:block;font-size:12px;font-weight:400;color:var(--muted)}
+.cc-worksheet input{display:block;width:100%;padding:11px 12px;border-radius:10px;border:1px solid #bacbbc;font:inherit;margin-top:5px;background:#fff;color:var(--ink)}
+.cc-worksheet input:focus-visible,.cc-worksheet button:focus-visible{outline:3px solid #83b68e;outline-offset:2px}
+.cc-worksheet button{font:inherit;margin-top:18px}
+.cc-worksheet output{display:block;border-radius:12px;background:#edf6ee;padding:15px 17px;margin-top:16px;font-weight:650}
+.cc-worksheet output[data-fit="false"]{background:#fff3e6;color:#754a20}
+.cc-guide-related{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+.cc-guide-related a{display:inline-flex;align-items:center;padding:10px 14px;background:#edf5ed;border-radius:12px;font-weight:650}
+@media(max-width:780px){.cc-guide-layout{grid-template-columns:1fr}.cc-guide-aside{position:static;order:-1}.cc-guide-hero .container{padding-top:35px;padding-bottom:35px}.cc-worksheet{padding:16px}.cc-guide-comparison table{min-width:540px}}
+@media(max-width:480px){.cc-worksheet-grid{grid-template-columns:1fr}.cc-guide-diagram{padding:9px}}
+@media(max-width:620px){.cc-guide-page .nav{flex-wrap:wrap;padding:10px 0}.cc-guide-page .nav-links{flex-wrap:wrap;gap:10px}.cc-guide-page .nav-links a{font-size:13px}}

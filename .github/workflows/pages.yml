@@ -36,6 +36,9 @@ jobs:
       - name: Verify city search and directory
         run: node scripts/qa-city-search.cjs
 
+      - name: Verify source-backed setback guide and free spacing worksheet
+        run: node scripts/qa-setback-guide.cjs
+
       - name: Verify source-backed city benchmark pages
         run: node scripts/qa-benchmark-cities.cjs
 

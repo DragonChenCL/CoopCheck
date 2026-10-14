@@ -20,6 +20,9 @@ jobs:
         run: node scripts/generate-policy-data.cjs --check
       - name: Check generated city pages, coverage and sitemap
         run: node scripts/generate-coverage-pages.cjs --check
+      - name: Verify source-backed setback guide and free spacing worksheet
+        run: node scripts/qa-setback-guide.cjs
+
       - name: Verify field-specific evidence status
         run: node scripts/qa-policy-evidence.cjs
       - name: Protect current Garland and Olympia ordinance details

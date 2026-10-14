@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — First source-led SEO acquisition experiment
+
+- Built a dedicated, canonical free [chicken coop setback explainer](https://coopcheck.serunio.com/guides/chicken-coop-setback-from-property-line.html) with original educational property-line vs neighboring-dwelling diagram, official Portland/Seattle/San Diego primary links, and in-browser user-buffer **geometry-only** worksheet (not a municipal compliance check).
+- Added internal links from homepage, Portland and Oregon already visible in GSC, and guide links back to city evidence and planner; included sitemap canonical URL. The generator now updates the Oregon hub lastmod to this date. No new city-law claim promoted.
+- Added privacy-minimal `setback_worksheet_check` submit event with boolean fit only; existing site analytics captures guide-to-planner `planner_click` with source path.
+- Added regression test and included it in PR + Pages CI. Baseline and 7/14/28-day conditions in `SEO_EXPERIMENT_SETBACK_GUIDE_2026-10-13.md`. This entry records implementation, **not indexed status, new traffic, published external links or conversions**.
+
 ## 2026-10-13 — Relaxed evidence registration ONLY for 45 unverified entries
 
 - Per owner request, checked city-specific municipal code publishers, approved ordinance listings, municipal animal/zoning/building FAQ and qualifying state law for the **45 formerly `unverified` fields** in 12 paused cities. Each entry now provides an official research URL, strength label, scope caveat and `verifiedClaim:false`. No independently proved new permit, flock maximum, rooster authorization or structure-setback clearance was claimed.
