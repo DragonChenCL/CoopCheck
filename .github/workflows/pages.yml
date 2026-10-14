@@ -63,7 +63,7 @@ jobs:
           const fs = require('fs');
           const path = require('path');
           const root = 'site';
-          const tag = '<script src="/assets/analytics.js"></script>';
+          const tag = '<script defer src="/assets/analytics.js"></script>';
           function walk(dir) {
             for (const name of fs.readdirSync(dir)) {
               const p = path.join(dir, name);
