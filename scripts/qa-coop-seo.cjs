@@ -57,5 +57,5 @@ const setback=read("site/guides/chicken-coop-setback-from-property-line.html"),e
 assert(home.includes('href="guides/chicken-coop-size-calculator.html"'),"homepage internal hub");
 assert(setback.includes('href="chicken-coop-size-calculator.html"'),"setback contextual connection");
 assert(planner.includes('href="guides/chicken-coop-size-calculator.html"'),"free 2D plan can send users to sizing utility");
-assert(engine.includes('params.get("flock")')&&engine.includes('["size-guide","size-calculator","coop-size","coop-footprint"]'),"deep linked flock should prefill ONLY from known sizing sources");
-console.log("PASS: 10 independent SEO landing pages, 109 canonical sitemap URLs, credible sources and functioning size calculator");
+assert(engine.includes('params.get("flock")')&&["size-guide","size-calculator","coop-size","coop-footprint","run-size","nesting-box","roost"].every(x=>engine.includes('"'+x+'"')),"deep linked flock should prefill ONLY from known sizing sources");
+console.log("PASS: 10 original SEO landing pages, 115 canonical sitemap URLs, credible sources and functioning size calculator");
