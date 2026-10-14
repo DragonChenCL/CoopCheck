@@ -2,7 +2,15 @@ const fs=require("node:fs");const p=require("node:path");const assert=require("n
 const root=p.resolve(__dirname,".."),r=JSON.parse(fs.readFileSync(p.join(root,"site/data/cities.json"),"utf8")),e=JSON.parse(fs.readFileSync(p.join(root,"site/data/policy-evidence.json"),"utf8"));
 const keys=["max","roosters","permit","placement"];assert.equal(r.cities.length,100);assert.equal(Object.keys(e.cities).length,100);
 let confirmed=0;
-for(const c of r.cities){const rec=e.cities[c.slug];assert(rec,c.slug+" missing");for(const key of keys){const x=rec[key];assert(x,c.slug+"/"+key+" missing");assert(["unverified","source_recorded","primary_clause_checked"].includes(x.status));if(c.audit.status==="needs_review"&&x.status!=="unverified")assert(c.audit.searchStatus==="partial_primary_fields_confirmed"&&c.verified===null&&c.planner.mode==="manual","No reviewed evidence can be used for an indexed/automated pending city");if(x.status==="primary_clause_checked"){assert(x.section&&x.url&&x.checkedAt,"field-specific evidence metadata missing");assert(c.sources.some(s=>s.url===x.url),"field source not in city registry");confirmed++;}}}
+for(const c of r.cities){const rec=e.cities[c.slug];assert(rec,c.slug+" missing");for(const key of keys){const x=rec[key];assert(x,c.slug+"/"+key+" missing");assert(["unverified","source_recorded","primary_clause_checked"].includes(x.status));if(c.audit.status==="needs_review"){
+  assert(c.verified===null&&c.planner.mode==="manual","pending-city source evidence MUST NOT enable index or automatic planning: "+c.slug);
+  if(x.status==="primary_clause_checked")assert(c.audit.searchStatus==="partial_primary_fields_confirmed","Only Apache scoped official clause may be checked while city withheld");
+  if(x.status==="source_recorded"){
+    assert(x.url&&x.checkedAt&&x.evidenceLevel&&x.detail&&x.verifiedClaim===false,"pending source-only record must explicitly NOT establish a legal conclusion: "+c.slug+"/"+key);
+    assert(c.sources.some(s=>s.url===x.url),"source-only evidence URL absent in city registry "+c.slug+"/"+key);
+    assert(["source_locator_recorded_only","partial_primary_fields_confirmed"].includes(c.audit.searchStatus),"no pending publication from research lead");
+  }
+}if(x.status==="primary_clause_checked"){assert(x.section&&x.url&&x.checkedAt,"field-specific evidence metadata missing");assert(c.sources.some(s=>s.url===x.url),"field source not in city registry");confirmed++;}}}
 const queue=fs.readFileSync(p.join(root,"docs/operations/PENDING_LAW_RESEARCH_2026-10-13.md"),"utf8");
 const recorded=Object.values(e.cities).flatMap(fields=>keys.map(key=>fields[key])).filter(x=>x.status==="source_recorded").length;
 const unverified=Object.values(e.cities).flatMap(fields=>keys.map(key=>fields[key])).filter(x=>x.status==="unverified").length;
@@ -160,7 +168,25 @@ const apache=bySlug["apache-junction-az"];
 assert.equal(apache.audit.status,"needs_review","Apache Junction must remain paused without permit evidence");
 assert.equal(apache.audit.searchStatus,"partial_primary_fields_confirmed","Apache current-law audit marker lost");
 for(const k of ["max","roosters","placement"])assert.equal(e.cities["apache-junction-az"][k].status,"primary_clause_checked","Apache current LDC primary clause lost: "+k);
-assert.equal(e.cities["apache-junction-az"].permit.status,"unverified","Apache chicken/building permits are unproven");
+assert.equal(e.cities["apache-junction-az"].permit.status,"source_recorded","Apache chicken/building permits are source-recorded only");
+assert.equal(e.cities["apache-junction-az"].permit.verifiedClaim,false,"Apache building permit evidence is still not a legal conclusion");
 assert(apache.max.includes("Arizona A.R.S.")&&apache.max.includes("SIX"),"Arizona six-hen override must remain explicit");
 assert(apache.placement.includes("15-ft")&&apache.placement.includes("20 ft"),"Apache setback state/city distinction lost");
 assert(apache.planner.mode==="manual"&&apache.verified===null,"No automated Apache legal approval");
+
+// Relaxed source registration does not count as fully reviewed law, and never enables withheld cities.
+const pendingCities=r.cities.filter(c=>c.audit.status==="needs_review");
+const pendingCounts={primary:0,source:0,unverified:0};
+for(const city of pendingCities){
+ assert(city.planner.mode==="manual"&&city.verified===null,city.slug+" cannot go public from weaker sources");
+ for(const f of keys){const record=e.cities[city.slug][f];pendingCounts[record.status==="primary_clause_checked"?"primary":record.status==="source_recorded"?"source":"unverified"]++;}
+}
+assert.equal(pendingCounts.primary,3,"Only scoped Apache primary claims belong to paused cities");
+assert.equal(pendingCounts.source,45,"All 45 formerly unverified pending-city fields now carry traceable research source records");
+assert.equal(pendingCounts.unverified,0,"Initial pending-city source research remains incomplete");
+assert.equal(recorded-pendingCounts.source,26,"Previously recorded 26 reviewed-city unresolved fields must be unchanged");
+for(const city of pendingCities){
+ const page=fs.readFileSync(p.join(root,"site/cities",city.slug+".html"),"utf8");
+ assert(page.includes('name="robots" content="noindex,follow"'),"Pending city pages must remain noindex: "+city.slug);
+ assert(!page.includes('application/ld+json'),"No FAQ rich claims on source-only city page: "+city.slug);
+}

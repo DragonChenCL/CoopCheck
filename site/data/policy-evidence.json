@@ -629,30 +629,70 @@
     },
     "peoria-az": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://codelibrary.amlegal.com/codes/peoriaaz/latest/peoria_az/0-0-0-62665",
+        "evidenceLevel": "operative_city_clause_with_state_interaction",
+        "detail": "2026 Peoria zoning §21-411(C) refers fowl to Arizona legislation but cites §9-462.10 whereas relevant 2024 law appears under §9-462.12. No unconditional city count established; resolve citation error and lot eligibility.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://codelibrary.amlegal.com/codes/peoriaaz/latest/peoria_az/0-0-0-62665",
+        "evidenceLevel": "operative_city_clause_with_state_interaction",
+        "detail": "§21-411(C) references state fowl law; Arizona §9-462.12 permits local male-fowl restrictions. The linked section does not itself state Peoria's exact rooster rule.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://codelibrary.amlegal.com/codes/peoriaaz/latest/peoria_az/0-0-0-54316",
+        "evidenceLevel": "city_animal_code_related_only",
+        "detail": "Peoria Chapter 16 addresses animal welfare/nuisance while §21-411 handles land-use reference. Whether separate chicken registration or coop construction approval is required is not decided by this source.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://codelibrary.amlegal.com/codes/peoriaaz/latest/peoria_az/0-0-0-62665",
+        "evidenceLevel": "operative_city_zoning_related_only",
+        "detail": "§21-411(D) addresses noncommercial aviaries; its 100-ft neighboring-residence condition must NOT automatically be applied to ordinary backyard hen coops. Actual enclosure siting still needs city interpretation.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "surprise-az": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/az/surprise/ordinances/municipal_code?nodeId=2024",
+        "evidenceLevel": "adopted_ordinance_index_only",
+        "detail": "The municipal ordinance register identifies adopted Ordinance 2024-42 amending §§10-113 and 10-114 on keeping fowl; enacted text/current code and numeric threshold were not directly reconciled.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/az/surprise/ordinances/municipal_code?nodeId=2024",
+        "evidenceLevel": "adopted_ordinance_index_only",
+        "detail": "Adopted 2024-42 explicitly covers keeping fowl but the index does not settle rooster permission or parcel exceptions.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/az/surprise/codes/code_of_ordinances",
+        "evidenceLevel": "official_city_code_lookup_only",
+        "detail": "Official current city code is available for looking up animal, zoning and structure permits; no chicken-keeping or building permit waiver has been established.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/az/surprise/ordinances/municipal_code?nodeId=2024",
+        "evidenceLevel": "adopted_ordinance_index_only",
+        "detail": "2024-42 concerns city fowl restrictions; whether it includes a coop siting rule and how distance is measured remain unverified.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "goodyear-az": {
@@ -743,16 +783,36 @@
     },
     "queen-creek-az": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.queencreekaz.gov/home/showpublisheddocument/40766/639087556691430000",
+        "evidenceLevel": "city_published_zoning_text_scope_limited",
+        "detail": "Town January 2026 Article 6 gives tiered chickens by lot area (six below 10k sqft; ten on 10k–35k), but compare later amendments and AZ §9-462.12 before treating as operative on a specific detached-home parcel.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.queencreekaz.gov/home/showpublisheddocument/40766/639087556691430000",
+        "evidenceLevel": "city_published_zoning_text_scope_limited",
+        "detail": "Town Article 6 mentions roosters only for acre-plus parcels under its animal-unit framework; verify exact 2026 effective text, other districts and nuisance provisions.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.queencreekaz.gov/government/development-services/building-safety/accessory-structure-information",
+        "evidenceLevel": "city_chicken_and_accessory_building_guidance",
+        "detail": "Town Building Safety gives accessory shed construction-permit thresholds (above 200 sqft); shed permission is NOT a poultry-keeping license waiver and other approvals may apply.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.queencreekaz.gov/government/development-services/building-safety/accessory-structure-information",
+        "evidenceLevel": "city_explicit_chicken_coop_guidance",
+        "detail": "Town's Building Safety FAQ says coops on under-one-acre lots belong in building envelope or rear half, and rear-half coops have a 5ft lot-line distance and 6ft screened height; confirm operative zoning and parcel conditions.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "tucson-az": {
@@ -937,16 +997,36 @@
     },
     "prescott-az": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.azleg.gov/ars/9/00462-12.htm",
+        "evidenceLevel": "state_protection_city_specific_scope_unknown",
+        "detail": "Arizona A.R.S. §9-462.12 protects up to six domestic chickens on qualifying detached-home lots <=0.5 acre. Prescott-specific higher cap, zoning exclusions and other local rules are not identified in this source.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.azleg.gov/ars/9/00462-12.htm",
+        "evidenceLevel": "state_protection_city_specific_scope_unknown",
+        "detail": "Arizona §9-462.12 preserves municipal authority to prohibit male fowl; this does NOT say whether Prescott actually bans or allows roosters.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://prescott-az.gov/prescott-city-clerk/city-law/",
+        "evidenceLevel": "official_city_code_lookup_only",
+        "detail": "Prescott City Clerk directs residents to its regularly updated municipal code covering business licensing, public health and construction; no chicken-specific license/permit conclusion located.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://prescott-az.gov/government/code-standards/",
+        "evidenceLevel": "official_city_land_development_index_only",
+        "detail": "Prescott government lists separate Land Development Code and code-compliance resources; chicken coop lot-line and building envelopes are not stated in the directory.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "prescott-valley-az": {
@@ -1025,7 +1105,12 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17845",
+        "evidenceLevel": "operative_city_animal_use_clause_no_permit_clearance",
+        "detail": "Current LDC §1-6-17 regulates poultry keeping and shelters, but it does not establish either a general chicken-keeping license requirement or a building permit exemption. Request property/zoning-specific development-services interpretation.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1257,16 +1342,36 @@
     },
     "irvine-ca": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/ca/irvine/codes/code_of_ordinances?nodeId=TIT4PUSA_DIV5ANRE_CH1INGE_S4-5-109REKE",
+        "evidenceLevel": "official_animal_code_related_only",
+        "detail": "Irvine Title 4 Division 5 defines poultry and private animal owners, but this excerpt gives no residential flock numerical entitlement. Separate zoning and land-use allowances must be researched.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/ca/irvine/codes/code_of_ordinances?nodeId=TIT4PUSA_DIV5ANRE_CH1INGE_S4-5-109REKE",
+        "evidenceLevel": "official_animal_code_related_only",
+        "detail": "Animal ordinance identifies poultry as domesticated fowl; specific rooster restrictions are not determined by these definitions.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/ca/irvine/codes/code_of_ordinances?nodeId=TIT4PUSA_DIV5ANRE_CH6PRES_S4-5-613SUPEAP",
+        "evidenceLevel": "operative_city_aviary_permit_scope_unclear",
+        "detail": "Irvine §4-5-601 requires a permit for a private aviary/stable; private aviary is NOT automatically synonymous with a household chicken coop. Ask Animal Services/Planning if a proposed hen enclosure qualifies.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/ca/irvine/codes/zoning/298553?nodeId=ZONING_ORDINANCE_DIV3GEDESTLAUSRE_CH3-4COZOMA",
+        "evidenceLevel": "operative_city_aviary_zoning_not_coop_clearance",
+        "detail": "Irvine zoning §3-7-1 restricts private/commercial aviaries on residentially zoned properties and within 300ft of residential zones. Scope for ordinary personal hens/coops is unresolved; do NOT publish 300ft as a hen-coop setback.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "anaheim-ca": {
@@ -1511,16 +1616,36 @@
     },
     "berkeley-ca": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://berkeleyca.gov/your-government/public-records/berkeley-municipal-code",
+        "evidenceLevel": "official_city_code_locator_only",
+        "detail": "Berkeley's municipal code is the authoritative ordinance entry point; retrieved chicken-coop health guidance does not supply a universal residential flock numerical cap.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://berkeleyca.gov/your-government/public-records/berkeley-municipal-code",
+        "evidenceLevel": "official_city_code_locator_only",
+        "detail": "Official city ordinance register and animal/environmental health sources are located; a current citywide rooster rule is NOT established by the returned records.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://berkeleyca.gov/your-government/public-records/berkeley-municipal-code",
+        "evidenceLevel": "official_city_code_locator_only",
+        "detail": "The city hosts its legal code and uncodified ordinance notices; no household hen permit/coop structural approval exemption is determined from the index.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://berkeleyca.gov/sites/default/files/2022-02/Rodent-Vector-Attractant-Prevention-Chicken-Coops.pdf",
+        "evidenceLevel": "official_city_specific_coop_health_guidance",
+        "detail": "City-hosted rodent-vector prevention information explicitly concerns chicken coops and safe housing; it is sanitation guidance, NOT a confirmed legal side/rear setback or building permit authorization.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "fremont-ca": {
@@ -1645,16 +1770,36 @@
     },
     "boulder-co": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/co/boulder/codes/municipal_code?nodeId=TIT6HESASA_CH1AN_6-1-6SUANUNSU",
+        "evidenceLevel": "operative_city_animal_chapter_related_only",
+        "detail": "Boulder municipal animal chapter regulates types and keeping conditions, including fowl water and enclosure care; it does not establish a citywide hen quota from the observed paragraphs.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/co/boulder/codes/municipal_code?nodeId=TIT6HESASA_CH1AN_6-1-6SUANUNSU",
+        "evidenceLevel": "operative_city_animal_chapter_related_only",
+        "detail": "Boulder Title 6 Chapter 1 is municipal animal-law source; the retrieved sections do not independently prove rooster eligibility or a prohibition. Boulder City, Nevada is a different jurisdiction.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://bouldercolorado.gov/services/building-permits-and-inspections",
+        "evidenceLevel": "city_building_permit_process_only",
+        "detail": "Boulder building permit portal outlines construction applications, zoning verification and inspection; it does not decide whether poultry licensing/coop building approval is required for a particular project.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/co/boulder/codes/municipal_code?nodeId=TIT6HESASA_CH1AN_6-1-6SUANUNSU",
+        "evidenceLevel": "operative_city_animal_chapter_related_only",
+        "detail": "Boulder §6-1-7 sets minimum animal care and enclosure health; it provides no numeric coop-to-dwelling or coop-to-property-line setback in the retrieved text.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "fort-collins-co": {
@@ -1707,16 +1852,36 @@
     },
     "arvada-co": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.arvadaco.gov/164/Municipal-Code",
+        "evidenceLevel": "official_current_code_locator_with_chapter_lead",
+        "detail": "City directs to latest Municode for animal §§14-92 and 14-123 and notes historic copies can be outdated. Third-party quoted 5-hen tiers are leads only; verify current enactment and RA/RN-32.5 conditions.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.arvadaco.gov/164/Municipal-Code",
+        "evidenceLevel": "official_current_code_locator_with_chapter_lead",
+        "detail": "City official code publisher must resolve §14-123 rooster/tom restrictions and RA/RN-32.5 exceptions; unverified third-party summary is not operative law proof.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.arvadaco.gov/162/Codes-Law",
+        "evidenceLevel": "official_city_zoning_and_code_index",
+        "detail": "Official Arvada website links zoning Land Development Code and Municipal Code; no ordinary chicken-keeping permit or coop construction-permit exemption confirmed.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.arvadaco.gov/164/Municipal-Code",
+        "evidenceLevel": "official_current_code_locator_with_chapter_lead",
+        "detail": "Reported §14-123 35ft neighboring dwelling and front-yard restrictions need direct current Municode clause confirmation; do not apply unverified distance to an address.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "thornton-co": {
@@ -1781,16 +1946,36 @@
     },
     "pueblo-co": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/co/pueblo/codes/code_of_ordinances",
+        "evidenceLevel": "city_code_poultry_section_lead_unreconciled",
+        "detail": "Pueblo Municode 2026 code and adopted-pending supplement lists are available; §11-4-32(d) is a documented poultry-limit lead but currently-effective amended text, pet vs commercial scope, and permits still need comparison.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/co/pueblo/codes/code_of_ordinances",
+        "evidenceLevel": "city_code_poultry_section_lead_unreconciled",
+        "detail": "Pueblo municipal Chapter 11 §11-4-32 and zoning code may regulate chicken keeping. Retrieved older summaries do not resolve current residential rooster eligibility.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/co/pueblo/codes/code_of_ordinances",
+        "evidenceLevel": "official_municipal_code_locator_only",
+        "detail": "Pueblo Chapter 11 fowl law and Title 17 zoning/Title 4 construction may have independent conditions. Code access does NOT prove waiver or necessity of a hen-keeping license.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/co/pueblo/codes/code_of_ordinances?nodeId=TITXVIIZO",
+        "evidenceLevel": "official_city_zoning_and_animals_related",
+        "detail": "Pueblo Title 17 Article II concerns accessory buildings; §11-4-32(b) reported enclosure vs open-pen and adjacent dwelling distances require current code/supplement verification before publication.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "longmont-co": {
@@ -2123,16 +2308,36 @@
     },
     "renton-wa": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://renton.municipal.codes/RMC/4-4-010",
+        "evidenceLevel": "current_city_code_link_access_not_confirmed",
+        "detail": "Renton RMC §4-4-010 is the city-specific domestic animal zoning source. 2026 secondary summaries mention lot-area tiers different from a 2012 forum; current publisher text inaccessible in this read, so no numerical conclusion.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://renton.municipal.codes/RMC/4-4-010",
+        "evidenceLevel": "current_city_code_link_access_not_confirmed",
+        "detail": "Renton §4-4-010 is current-law lookup target; a current rooster clause was not directly retrievable; historical and third-party claims are not verified.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.codepublishing.com/WA/Renton/html/Renton04/Renton0408/Renton0408120.html",
+        "evidenceLevel": "historic_code_publisher_specific_application_reference",
+        "detail": "A city-code publisher snapshot of RMC §4-8-120 has a named 'Additional Animals Permit' application category. This does NOT mean an ordinary legal flock needs it or that a chicken coop is exempt; check current RMC.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://renton.municipal.codes/RMC/4-4-010",
+        "evidenceLevel": "current_city_code_link_access_not_confirmed",
+        "detail": "RMC §4-4-010 is the domestic-animal zoning section, but no current primary text confirming pen setback or referenced measurement origin was available.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "everett-wa": {
@@ -2562,16 +2767,36 @@
     },
     "round-rock-tx": {
       "max": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/tx/round_rock/codes/code_of_ordinances",
+        "evidenceLevel": "official_current_code_and_enacted_history_locator",
+        "detail": "Round Rock Municode updated Sep 2026 contains Chapter 8 animals; 2018 proposed §8-6 fowl tiers were considered/adopted in council action but the PROPOSAL is not proof of current numeric limits.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/tx/round_rock/codes/code_of_ordinances",
+        "evidenceLevel": "official_current_code_and_enacted_history_locator",
+        "detail": "Round Rock Chapter 8 animal code is current reference; 2018 adopted changes alone do not prove any positive/negative rooster rule in 2026.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://www.roundrocktexas.gov/city-departments/police/divisions/animal-control/",
+        "evidenceLevel": "city_animal_control_enforcement_information",
+        "detail": "Round Rock city Animal Control enforces animal ordinances and can advise residents. This department page does NOT state hen keeping needs no permit or what construction requires.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "unverified"
+        "status": "source_recorded",
+        "url": "https://library.municode.com/tx/round_rock/codes/code_of_ordinances",
+        "evidenceLevel": "official_current_code_and_enacted_history_locator",
+        "detail": "Round Rock current Chapter 8 plus Part III zoning are actual legal references. 2018 *proposed* §8-6 pen-to-neighbor distance cannot be treated as operative without current codification.",
+        "verifiedClaim": false,
+        "checkedAt": "2026-10-13"
       }
     },
     "new-york-city-ny": {

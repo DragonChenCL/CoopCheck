@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Relaxed evidence registration ONLY for 45 unverified entries
+
+- Per owner request, checked city-specific municipal code publishers, approved ordinance listings, municipal animal/zoning/building FAQ and qualifying state law for the **45 formerly `unverified` fields** in 12 paused cities. Each entry now provides an official research URL, strength label, scope caveat and `verifiedClaim:false`. No independently proved new permit, flock maximum, rooster authorization or structure-setback clearance was claimed.
+- Count changed **329 primary / 26 source_recorded / 45 unverified → 329 primary / 71 source_recorded / 0 unverified**. The **71 source-only fields are still unconfirmed**; this is source coverage, not a legal verification achievement.
+- Original 329 + original 26 were untouched. All 12 candidate cities remain needs_review/noindex, absent from sitemap and verified planner data; regenerated official-source reference links in their pages.
+- Provenance ledger: `docs/operations/PENDING_45_EVIDENCE_TIER_2026-10-13.md`. Especially avoid treating generic city code indexes, old Renton code, proposed Round Rock redline, or animal-aviary permit rules as a blanket household chicken law.
+
 ## 2026-10-13 — 12-city pending primary-law recheck (Apache Junction)
 
 - Researched all 12 outstanding first-100 pending cities via city-site, ordinance/publication and code searches, but only Apache Junction provided unambiguous CURRENT 2026 city-code section content for three fields: **max / roosters / placement** at municipal LDC §1-6-17(C),(I), Table 5-2 note 4, reconciled with state A.R.S. §9-462.12. No current municipal chicken license or building-permit result obtained, so status stays noindex/manual and `needs_review`.

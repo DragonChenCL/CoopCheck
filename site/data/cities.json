@@ -786,13 +786,21 @@
         {
           "type": "state_statute_only",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://codelibrary.amlegal.com/codes/peoriaaz/latest/peoria_az/0-0-0-62665"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://codelibrary.amlegal.com/codes/peoriaaz/latest/peoria_az/0-0-0-54316"
         }
       ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -803,6 +811,13 @@
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
           "warning": "Peoria Code §§21-427/21-686 points to A.R.S. §9-462.10 whereas current Arizona backyard-fowl preemption appears as §9-462.12; obtain city correction/confirmation before publishing a simple cap."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -833,13 +848,21 @@
         {
           "type": "state_statute_only",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/az/surprise/ordinances/municipal_code?nodeId=2024"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/az/surprise/codes/code_of_ordinances"
         }
       ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -850,6 +873,13 @@
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
           "warning": "Ordinance 2024-42 changed fowl §§10-113/10-114, but operative codified text and any later amendment could not be fully confirmed from search snippets."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -1002,13 +1032,21 @@
         {
           "type": "state_statute_only",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://www.queencreekaz.gov/home/showpublisheddocument/40766/639087556691430000"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://www.queencreekaz.gov/government/development-services/building-safety/accessory-structure-information"
         }
       ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -1019,6 +1057,13 @@
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
           "warning": "Published Queen Creek zoning guide's 5-hen allowance for 5k–10k sq ft lots may conflict with Arizona 2024 state protection of six for eligible ≤0.5 acre detached-home properties. Municipal clarification required."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -1334,13 +1379,21 @@
         {
           "type": "state_statute_only",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://prescott-az.gov/prescott-city-clerk/city-law/"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://prescott-az.gov/government/code-standards/"
         }
       ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -1350,6 +1403,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -1470,7 +1530,7 @@
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "2026 code Vol II §1-6-17(C),(I), §1-5-2 Table 5-2 note 4 read with A.R.S. §9-462.12 establish scoped flock/rooster/placement provisions; permission and building approval still not determined. Three fields primary clause checked; permit pending. Do NOT index pending city or enable automated clearance.",
+        "note": "2026 code Vol II §1-6-17(C),(I), §1-5-2 Table 5-2 note 4 read with A.R.S. §9-462.12 establish scoped flock/rooster/placement provisions; permission and building approval still not determined. Three fields primary clause checked; permit pending. Do NOT index pending city or enable automated clearance. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
         "searchStatus": "partial_primary_fields_confirmed",
         "secondPass": {
           "status": "three_primary_one_unverified",
@@ -1481,6 +1541,13 @@
           ],
           "note": "Direct operative LDC resolves scope and numbers for 3 fields. Permit not proven. 2014 Commission work-session proposed fowl revisions are NOT cited as enacted law.",
           "warning": "State §9-462.12 preempts incompatible local hen cap for qualifying <=0.5 acre detached homes; property-specific permit and use approval still unresolved. Keep noindex."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -1830,12 +1897,25 @@
         "rearHalf": false
       },
       "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "sources": [
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/ca/irvine/codes/code_of_ordinances?nodeId=TIT4PUSA_DIV5ANRE_CH1INGE_S4-5-109REKE"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/ca/irvine/codes/code_of_ordinances?nodeId=TIT4PUSA_DIV5ANRE_CH6PRES_S4-5-613SUPEAP"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/ca/irvine/codes/zoning/298553?nodeId=ZONING_ORDINANCE_DIV3GEDESTLAUSRE_CH3-4COZOMA"
+        }
+      ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -1845,6 +1925,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -2189,12 +2276,21 @@
         "rearHalf": false
       },
       "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "sources": [
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://berkeleyca.gov/your-government/public-records/berkeley-municipal-code"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://berkeleyca.gov/sites/default/files/2022-02/Rodent-Vector-Attractant-Prevention-Chicken-Coops.pdf"
+        }
+      ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -2204,6 +2300,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -2391,12 +2494,21 @@
         "rearHalf": false
       },
       "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "sources": [
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/co/boulder/codes/municipal_code?nodeId=TIT6HESASA_CH1AN_6-1-6SUANUNSU"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://bouldercolorado.gov/services/building-permits-and-inspections"
+        }
+      ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -2406,6 +2518,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -2522,12 +2641,21 @@
         "rearHalf": false
       },
       "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "sources": [
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://www.arvadaco.gov/164/Municipal-Code"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://www.arvadaco.gov/162/Codes-Law"
+        }
+      ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -2537,6 +2665,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -2637,12 +2772,21 @@
         "rearHalf": false
       },
       "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "sources": [
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/co/pueblo/codes/code_of_ordinances"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/co/pueblo/codes/code_of_ordinances?nodeId=TITXVIIZO"
+        }
+      ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -2652,6 +2796,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -3159,12 +3310,21 @@
         "rearHalf": false
       },
       "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "sources": [
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://renton.municipal.codes/RMC/4-4-010"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://www.codepublishing.com/WA/Renton/html/Renton04/Renton0408/Renton0408120.html"
+        }
+      ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -3174,6 +3334,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {
@@ -3794,12 +3961,21 @@
         "rearHalf": false
       },
       "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
-      "sources": [],
+      "sources": [
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://library.municode.com/tx/round_rock/codes/code_of_ordinances"
+        },
+        {
+          "type": "official_research_reference_not_field_clearance",
+          "url": "https://www.roundrocktexas.gov/city-departments/police/divisions/animal-control/"
+        }
+      ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner. Source-only update 2026-10-13: remaining research fields now have traceable official regulatory entry points, but this does not verify item-specific legal permission, limits, or permits. City remains needs_review/noindex/manual.",
+        "searchStatus": "source_locator_recorded_only",
         "secondPass": {
           "status": "researched_not_proven",
           "channels": [
@@ -3809,6 +3985,13 @@
             "secondary cross-check only (not sufficient for publication)"
           ],
           "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions."
+        },
+        "thirdPass": {
+          "status": "reference_located_without_field_clearance",
+          "date": "2026-10-13",
+          "scope": "Only 45 original unverified field records upgraded to source_recorded; prior 329 primary fields and 26 pre-existing source-recorded records unchanged. Per-field evidenceLevel/verifiedClaim=false stored in policy-evidence.json.",
+          "indexed": false,
+          "automatedPlanner": false
         }
       },
       "rollout": {

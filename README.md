@@ -85,3 +85,8 @@ Windsor.ai GSC/GA4 2026-09-15..10-12 reports 23 organic impressions, zero search
 ## Pending-city 2026 primary-source follow-up
 
 Direct current Apache Junction **2026** municipal Land Development Code §1-6-17 and Table 5-2 establishes 3 scoped claims (lot-dependent hen count with Arizona statewide six-bird preemption, non-RS-GR rooster prohibition, livestock-structure setbacks). **Permit not established; Apache Junction remains needs_review/noindex/manual.** New totals: **329/400 primary-checked; 26 source_recorded; 45 unverified**, with 12 paused/noindex city profiles. See [current pending law research](docs/operations/PENDING_LAW_RESEARCH_2026-10-13.md). Historical totals earlier in this README are snapshots.
+
+
+## Latest owner-approved relaxed source inventory (2026-10-13)
+
+ONLY the 45 remaining `unverified` city-policy entries have been given official-code/government research references and per-field `verifiedClaim:false` caveats. The strict original 329 primary-checked and prior 26 source-recorded fields are NOT changed. New registry tally **329 primary, 71 source-recorded, 0 no-reference**. **Still 71 legally unresolved fields**, not 400 approved/chicken-safe legal answers. All 12 pending city profiles stay noindex/manual and outside automated rules. See [the 45-field evidence-strength ledger](docs/operations/PENDING_45_EVIDENCE_TIER_2026-10-13.md) and [completeness audit](POLICY_COMPLETENESS_2026-10-13.md). Earlier count snapshots are historical.
