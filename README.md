@@ -80,3 +80,8 @@ Of 26 originally source-recorded legal claims, **2** gained explicit city-offici
 ## Acquisition baseline after legal evidence pass
 
 Windsor.ai GSC/GA4 2026-09-15..10-12 reports 23 organic impressions, zero search clicks, 5 GA4 active users and 12 Direct sessions. The checkout errors were all from one active user on 2026-09-23, not evidence of a current production outage. See [timestamped GSC/GA4 baseline and priorities](docs/operations/SEO_GSC_BASELINE_2026-10-13.md). Dallas Ordinance No. 33485's official public notice confirms a repeal of the prior categorical rooster ban, but property-specific zoning and enclosure rules remain manual; see [P0 #38](https://github.com/DragonChenCL/CoopCheck/issues/38).
+
+
+## Pending-city 2026 primary-source follow-up
+
+Direct current Apache Junction **2026** municipal Land Development Code §1-6-17 and Table 5-2 establishes 3 scoped claims (lot-dependent hen count with Arizona statewide six-bird preemption, non-RS-GR rooster prohibition, livestock-structure setbacks). **Permit not established; Apache Junction remains needs_review/noindex/manual.** New totals: **329/400 primary-checked; 26 source_recorded; 45 unverified**, with 12 paused/noindex city profiles. See [current pending law research](docs/operations/PENDING_LAW_RESEARCH_2026-10-13.md). Historical totals earlier in this README are snapshots.
