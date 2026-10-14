@@ -33,6 +33,7 @@ docs/operations/
 6. [GSC/GA4 获客与转化真实基线](SEO_GSC_BASELINE_2026-10-13.md)
 7. [仅针对45个未核字段放宽证据等级：逐项链接与缺口](PENDING_45_EVIDENCE_TIER_2026-10-13.md)
 8. [增长实验：免费鸡舍退距图解与尺寸试算](SEO_EXPERIMENT_SETBACK_GUIDE_2026-10-13.md)
+9. [免费鸡舍平面图生成器 MVP：功能边界、开源依据和流量验证](COOP_PLAN_GENERATOR_MVP_2026-10-13.md)
 
 网站：https://coopcheck.serunio.com/
 
