@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Next acquisition step after GSC manual submissions
+
+- User confirmed GSC manual URL inspection/index request work completed; no verified Google index outcome implied, avoid duplicate submissions.
+- Gmail `SENT` confirmed Community Chickens guest feature email was already sent 2026-10-13; no relevant editorial reply confirmed; **do not send duplicate outreach**.
+- Public BYC Portland article still carries old pre-2025 3-bird rule (2012 article); compared against official current Portland City Code §§13.40.020, 13.40.040 (amended Ordinance 192002 effective 2025-01-10). BYC Terms ban ads outside specific areas and restrict competing-site promotion absent relevant approval.
+- Prepared a *correction-only*, source-first English message and verified contact-form URL in `BYC_PORTLAND_EDITORIAL_CORRECTION_2026-10-13.md`. **No form submission, published backlink, referral or editorial acceptance claimed**. CAPTCHA/manual verification prevents automated submission until user completes it or browser tool is available.
+- Await the existing Search Console indexing validation and later measure actual GSC impressions/clicks, GA4 guide worksheet submissions + map-planner transitions. No new generic city pages until there is evidence of demand.
+
 ## 2026-10-13 — First source-led SEO acquisition experiment
 
 - Built a dedicated, canonical free [chicken coop setback explainer](https://coopcheck.serunio.com/guides/chicken-coop-setback-from-property-line.html) with original educational property-line vs neighboring-dwelling diagram, official Portland/Seattle/San Diego primary links, and in-browser user-buffer **geometry-only** worksheet (not a municipal compliance check).
