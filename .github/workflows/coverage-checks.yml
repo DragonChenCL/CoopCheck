@@ -22,6 +22,10 @@ jobs:
         run: node scripts/generate-coverage-pages.cjs --check
       - name: Verify source-backed setback guide and free spacing worksheet
         run: node scripts/qa-setback-guide.cjs
+      - name: Verify indexable coop sizing guides are up to date
+        run: node scripts/generate-coop-seo-pages.cjs --check
+      - name: Verify ten SEO utility pages and real calculator
+        run: node scripts/qa-coop-seo.cjs
       - name: Verify local-only chicken coop plan generator and diagram geometry
         run: node scripts/qa-coop-plan.cjs
       - name: Verify per-city ordinance evidence integration and map handoff

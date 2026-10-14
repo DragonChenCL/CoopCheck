@@ -174,7 +174,11 @@
       }
     }
     if(entry)chooseCity(entry.slug,true);
-    else renderCity();
+    else if(params.get("from")!=="map"&&["size-guide","size-calculator","coop-size","coop-footprint"].includes(params.get("source"))){
+      const incoming=Number(params.get("flock"));
+      if(Number.isSafeInteger(incoming)&&incoming>=2&&incoming<=24)flockInput.value=String(incoming);
+      renderCity();
+    }else renderCity();
     generate();
   }
   if(root.document.readyState==="loading")root.document.addEventListener("DOMContentLoaded",start);

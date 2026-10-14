@@ -143,6 +143,48 @@ async function main(){
     assert.doesNotMatch(await page.locator("#planLawResult").innerText(),/two or more chickens/i);
     console.log("PASS: pending and scope-limited city law screens fail closed");
 
+    // Search landing pages must provide actual utility rather than keyword-only gateways.
+    const hub=await page.goto(base+"/guides/chicken-coop-size-calculator.html",{waitUntil:"networkidle"});
+    assert.equal(hub.status(),200);
+    assert.equal(await page.locator("#calcIndoor").innerText(),"24 sq ft");
+    assert.equal(await page.locator("#calcRun").innerText(),"60 sq ft");
+    await page.locator("#flockCount").fill("12");
+    await page.locator('#coopSizeForm button[type="submit"]').click();
+    assert.equal(await page.locator("#calcIndoor").innerText(),"48 sq ft");
+    assert.equal(await page.locator("#calcRun").innerText(),"120 sq ft");
+    assert.equal(await page.locator("#calcNests").innerText(),"3");
+    assert.equal(await page.locator("#calcRoost").innerText(),"9 ft");
+    assert.match(await page.locator("#calcPlanLink").getAttribute("href"),/flock=12/);
+    await page.locator("#flockCount").fill("25");
+    await page.locator('#coopSizeForm button[type="submit"]').click();
+    assert.match(await page.locator("#calcFeedback").innerText(),/Enter a whole number from 2 to 24/i);
+    await page.locator("#flockCount").fill("12");
+    await page.locator('#coopSizeForm button[type="submit"]').click();
+    await page.screenshot({path:path.join(screens,"coop-seo-calculator.png"),fullPage:true});
+    console.log("PASS: real SEO hub calculator recalculates 12 hens and rejects invalid counts");
+
+    await page.locator("#calcPlanLink").click();
+    await page.locator("#planSvgPreview svg").waitFor();
+    assert.equal(await page.locator("#planFlock").inputValue(),"12");
+    assert.equal(await page.locator("#planResult").getAttribute("data-level"),"good","12 hens fit illustrated 48 + 120 sq ft targets in default 12×18 ft overall space");
+    assert.match(await page.locator("#planStats").innerText(),/48 sq ft/);
+    assert.match(await page.locator("#planStats").innerText(),/120 sq ft/);
+    console.log("PASS: SEO calculator deep-links 12-hen context to actual SVG plan engine");
+
+    const sizeGuide=await page.goto(base+"/guides/coop-size-for-8-chickens.html",{waitUntil:"networkidle"});
+    assert.equal(sizeGuide.status(),200);
+    assert.match(await page.locator("h1").innerText(),/8 chickens/i);
+    assert.match(await page.locator("main").innerText(),/32 sq ft/);
+    assert.match(await page.locator("main").innerText(),/80 sq ft/);
+    assert.equal(await page.locator("figure svg").count(),1,"flock guide includes original layout comparison");
+    const fp=await page.goto(base+"/guides/4x8-chicken-coop-capacity.html",{waitUntil:"networkidle"});
+    assert.equal(fp.status(),200);
+    assert.match(await page.locator("main").innerText(),/32 sq ft/);
+    assert.match(await page.locator("main").innerText(),/80 sq ft/);
+    console.log("PASS: static flock and measured-footprint pages provide independent useful values");
+
+    await page.goto(base+"/coop-plan.html?flock=12&source=coop-size",{waitUntil:"networkidle"});
+    assert.equal(await page.locator("#planFlock").inputValue(),"12");
     await page.setViewportSize({width:375,height:812});
     await page.reload({waitUntil:"networkidle"});
     const metrics=await page.evaluate(()=>({
