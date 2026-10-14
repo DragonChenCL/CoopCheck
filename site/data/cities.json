@@ -1439,10 +1439,10 @@
       "name": "Apache Junction",
       "state": "AZ",
       "stateName": "Arizona",
-      "max": "Not yet verified for this city",
-      "roosters": "Not yet verified for this city",
-      "permit": "Not yet verified for this city",
-      "placement": "Not yet verified for this city",
+      "max": "Current Apache Junction LDC §1-6-17(C) states two chickens per 1,500 sq ft in single-family zoning districts other than RS-GR (which has no count limit under this subsection). IMPORTANT: Arizona A.R.S. §9-462.12 preempts incompatible local restrictions on keeping up to SIX domestic chickens in the backyard of eligible single-family detached homes on lots of one-half acre or less; the local formula cannot be used to deny the state-protected minimum. Verify parcel/lot and additional applicable standards; no unconditional count is asserted.",
+      "roosters": "Apache Junction current Land Development Code §1-6-17(C)(2)(b) explicitly prohibits roosters and peafowl in non-RS-GR single-family zones. RS-GR is treated separately and remains subject to other animal and noise rules. Arizona A.R.S. §9-462.12(A)(1) expressly permits a municipality to prohibit male fowl. Do not infer rooster approval in any zoning district from a count exemption.",
+      "permit": "NOT YET VERIFIED: §1-6-17 addresses keeping and livestock structures but does not determine whether a separate residential chicken-keeping license, zoning clearance, or coop building permit is required. Check Apache Junction Development Services/Animal Control for the specific property and construction size; do not infer an exemption.",
+      "placement": "Current Apache Junction §1-6-17(I) and Table 5-2 footnote 4 set 15-ft minimum side and rear setbacks for accessory structures housing small livestock/fowl; front-of-main-building placement is restricted. Arizona A.R.S. §9-462.12(A)(2),(B) may preempt inconsistent requirements for qualifying detached-home lots: state law allows specified rear/side enclosures at least 20 ft from neighboring property and requires enclosures on lots under one acre to be shorter than the fence. Lot zoning, enclosure dimensions, easements and current building approval must be checked; this is NOT an automatic setback clearance.",
       "verified": null,
       "planner": {
         "mode": "manual",
@@ -1452,28 +1452,35 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "Candidate coverage only. Local poultry ordinances, zoning, permits and coop setbacks have not been verified; do not use this page as compliance advice.",
+      "note": "Three of four city-specific claims have been scoped against Apache Junction CURRENT 2026 Land Development Code §1-6-17(C),(I) and Table 5-2 footnote 4, plus Arizona's preemptive A.R.S. §9-462.12. Local hen-per-area formula conflicts with the statewide protected six on eligible detached-home lots <=0.5 acre: do not deny the state-protected minimum or claim 6 is universally a maximum. Permit/license and zoning/building approval remain unresolved. Until confirmed this city stays needs_review, unindexed, and manual only.",
       "sources": [
         {
-          "type": "state_statute_only",
+          "type": "current_2026_municipal_development_code",
+          "url": "https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17845"
+        },
+        {
+          "type": "current_2026_municipal_bulk_regulations",
+          "url": "https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17475"
+        },
+        {
+          "type": "state_backyard_fowl_preemption",
           "url": "https://www.azleg.gov/ars/9/00462-12.htm"
         }
       ],
       "audit": {
         "status": "needs_review",
         "reviewedAt": "2026-10-13",
-        "note": "First-pass official-source search completed 2026-10-13, but a current authoritative city-specific poultry rule for flock count, roosters, permits and/or setbacks was not reliably established; manual municipal-code section check and/or city confirmation is required. Not eligible for index or automated planner.",
-        "searchStatus": "official_code_section_unresolved",
+        "note": "2026 code Vol II §1-6-17(C),(I), §1-5-2 Table 5-2 note 4 read with A.R.S. §9-462.12 establish scoped flock/rooster/placement provisions; permission and building approval still not determined. Three fields primary clause checked; permit pending. Do NOT index pending city or enable automated clearance.",
+        "searchStatus": "partial_primary_fields_confirmed",
         "secondPass": {
-          "status": "researched_not_proven",
+          "status": "three_primary_one_unverified",
           "channels": [
-            "municipal government website",
-            "municipal code publisher / ordinance amendments",
-            "planning / animal control / state preemption",
-            "secondary cross-check only (not sufficient for publication)"
+            "current 2026 American Legal Publishing municipal LDC",
+            "Arizona enacted 2024 state preemption statute",
+            "2014 planning-only DRAFT cross-check, not operative evidence"
           ],
-          "note": "Second-pass search completed. Current authoritative city-specific operative poultry conditions were not reliably reconciled. Remains noindex and excluded from automated city-law decisions.",
-          "warning": "Online §1-6-17 zoning text and 2026 amendment documents show possible numerical changes, plus Arizona state preemption. Reconcile enacted latest code and lot-specific treatment before publishing."
+          "note": "Direct operative LDC resolves scope and numbers for 3 fields. Permit not proven. 2014 Commission work-session proposed fowl revisions are NOT cited as enacted law.",
+          "warning": "State §9-462.12 preempts incompatible local hen cap for qualifying <=0.5 acre detached homes; property-specific permit and use approval still unresolved. Keep noindex."
         }
       },
       "rollout": {
