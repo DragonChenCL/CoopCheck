@@ -39,7 +39,7 @@
      status.textContent=ans.meets?"Your run meets the illustrative 10 sq ft per bird area target. This does NOT check predator safety, outdoor access, zoning or usable obstacles.":"Your run is below the 10 sq ft per bird planning target. Increase length/width or lower flock size. These targets are not municipal code.";
      status.dataset.level=ans.meets?"ok":"warning";
      if(chart)chart.innerHTML=api.shapeSvg(ans.width,ans.depth,"Proposed outdoor run");
-     if(plan){plan.href="/coop-plan.html?flock="+ans.flock+"&source=run-size";plan.hidden=false;}
+     if(plan){plan.hidden=ans.flock>24;if(!plan.hidden)plan.href="/coop-plan.html?flock="+ans.flock+"&source=run-size";}
    }else if(kind==="mesh"){
      line("Run fencing perimeter",api.fmt(ans.perimeter)+" linear ft");
      line("Wall mesh (no openings subtracted)",api.fmt(ans.walls)+" sq ft");
@@ -56,7 +56,7 @@
      status.textContent="Allow roughly one nest for every four standard laying hens. Boxes are for laying—not sleeping—and should be placed accessibly. This does not substitute for coop floor area.";
      status.dataset.level="neutral";
      if(chart)chart.innerHTML=api.nestSvg(ans.boxes);
-     if(plan){plan.href="/coop-plan.html?flock="+ans.flock+"&source=nesting-box";plan.hidden=false;}
+     if(plan){plan.hidden=ans.flock>24;if(!plan.hidden)plan.href="/coop-plan.html?flock="+ans.flock+"&source=nesting-box";}
    }else if(kind==="roost"){
      line("Combined perch length",api.fmt(ans.total)+" ft");
      line("Entered bar length",api.fmt(ans.barLength)+" ft each");
@@ -65,7 +65,7 @@
      status.textContent="Length-only arithmetic; clearance, gaps between bars, height, bird breed and access are not determined. OSU Extension discusses 5–10 inches per chicken; we use 9 inches.";
      status.dataset.level="neutral";
      if(chart)chart.innerHTML=api.roostSvg(ans.bars,ans.barLength);
-     if(plan){plan.href="/coop-plan.html?flock="+ans.flock+"&source=roost";plan.hidden=false;}
+     if(plan){plan.hidden=ans.flock>24;if(!plan.hidden)plan.href="/coop-plan.html?flock="+ans.flock+"&source=roost";}
    }else if(kind==="cost"){
      line("Entered setup subtotal","$"+ans.subtotal.toFixed(2));
      line("Categories priced",ans.priced+" of "+api.budgetNames.length);
