@@ -26,14 +26,14 @@
   "austin-tx": {
     "city": "Austin",
     "state": "TX",
-    "scope": "Official city chicken guidance; not an exhaustive animal-code clearance",
-    "primary": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities",
-    "rules": "https://www.austintexas.gov/climate/food-resources-businesses-schools-and-communities",
-    "notice": "City overview does not establish a universal numeric flock cap, rooster permission, or an all-clear on permits. Contact city staff for property-specific details.",
-    "placement": "For 2+ chickens, city guidance says enclosures should be at least 30 ft from adjacent residences or businesses, excluding your home—not necessarily 30 ft from the fence.",
-    "permit": "Not established by the referenced city overview; confirm current building/enclosure requirements.",
-    "rooster": "Not established by the referenced city overview; check animal/noise rules.",
-    "area": "Check the applicable enclosure and zoning requirements for the property.",
+    "scope": "Adopted Austin Ordinance 20221013-030 (effective October 24, 2022), City Code §3-2-16; not parcel-wide clearance",
+    "primary": "https://services.austintexas.gov/edims/document.cfm?id=396841",
+    "rules": "https://services.austintexas.gov/edims/document.cfm?id=396841",
+    "notice": "The examined fowl-enclosure provision does not set a universal hen cap or an automatic rooster permission/ban or building-permit waiver. Check zoning, adjacent buildings, nuisance rules, local construction approvals, and your parcel.",
+    "placement": "Austin City Code §3-2-16(D) requires all fowl enclosures (no 2-bird trigger) to be at least 30 ft from an adjacent residence or business structure other than the keeper’s own. §3-2-16(E) requires 50 ft if the fowl or enclosure creates a health hazard. These distances are to buildings, not property lines.",
+    "permit": "§3-2-16(A) requires secure four-sided enclosures with overhead cover; this provision does not independently decide a separate building/keeping permit or zoning approval.",
+    "rooster": "The checked enclosure law does not establish citywide permission or a categorical rooster ban; Austin animal/noise requirements and site rules still apply.",
+    "area": "The enclosure must meet current Code §3-2-11 housing and §3-2-16 fowl enclosure requirements; confirm usable area, distances and zoning on the parcel.",
     "verifiedFields": [
       "placement"
     ]
@@ -109,7 +109,7 @@
       else if(lot!==null&&lot>=20000){details="Above the standard six-bird tier. Some 20,000+ sq-ft lots may qualify for an agricultural-use exception; acreage alone is insufficient.";}
       else{kind="over";title="Above the standard small-fowl count for this lot tier.";details="The published standard limit is "+max+" small fowl; confirm age and any qualifying exception with the city.";}
     }else if(slug==="austin-tx"){
-      details="The official city overview does not give one universally applicable flock cap. "+(n>=2?"For two or more chickens, it advises 30 ft to adjacent residences/businesses (not a blanket property-line setback).":"The 30-ft enclosure guidance is stated for two or more chickens.");
+      details="The checked City Code §3-2-16 does not establish a universal numeric hen cap. It requires all fowl enclosures (including for one bird) to be at least 30 ft from an adjacent residence or business structure other than the keeper’s own; 50 ft applies if the fowl or enclosure creates a health hazard. These are building separations, NOT property-line setbacks.";
       if(roo)details+=" Rooster rules still require current code review.";
     }else if(slug==="arlington-tx"){
       if(roo){title="Roosters require agricultural zoning.";details="Roosters are prohibited under the ordinary residential rule. Check parcel zoning before relying on an exception.";}

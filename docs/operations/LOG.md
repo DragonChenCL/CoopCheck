@@ -1,5 +1,12 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Austin enacted-code consistency follow-up
+
+- Compared old `quick-check-data.js` wording against Austin enacted Ordinance 20221013-030 (§3-2-16(D)-(E), effective 2022-10-24) at https://services.austintexas.gov/edims/document.cfm?id=396841 . The 30-ft enclosure-to-adjacent-residence/business structure rule applies to **all fowl enclosures**, not only 2+ chickens; the 50-ft provision applies when fowl or enclosure creates a health hazard. The current city overview still retains older threshold wording.
+- Updated Quick Check's Austin source, description, enclosure/permit caveats and result across home, map and coop plan without inventing an unconditional flock allowance, rooster permission or permit waiver.
+- Versioned shared quick-check data assets to invalidate browser caches; added 1-fowl and 30/50-ft regression tests in Node and real Chromium.
+- PR #49, status tracked separately from deployment. Legal notes are **not parcel approval**.
+
 ## 2026-10-13 — City law → free coop plans → map product integration
 
 - Implemented `/coop-plan.html?city=<slug>&source=rules` route from all 88 reviewed city guides (82 generated and 18 hand-maintained), without indexing or endorsing the 12 pending profiles.
