@@ -166,7 +166,9 @@ async function main(){
     await page.locator("#calcPlanLink").click();
     await page.locator("#planSvgPreview svg").waitFor();
     assert.equal(await page.locator("#planFlock").inputValue(),"12");
-    assert.equal(await page.locator("#planResult").getAttribute("data-level"),"warning","original default area is too small for 12 hens");
+    assert.equal(await page.locator("#planResult").getAttribute("data-level"),"good","12 hens fit illustrated 48 + 120 sq ft targets in default 12×18 ft overall space");
+    assert.match(await page.locator("#planStats").innerText(),/48 sq ft/);
+    assert.match(await page.locator("#planStats").innerText(),/120 sq ft/);
     console.log("PASS: SEO calculator deep-links 12-hen context to actual SVG plan engine");
 
     const sizeGuide=await page.goto(base+"/guides/coop-size-for-8-chickens.html",{waitUntil:"networkidle"});
