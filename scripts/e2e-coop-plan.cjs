@@ -41,7 +41,7 @@ async function main(){
       assert(await page.locator('input[name="style"][value="'+template+'"]').isChecked());
       await page.locator("#planGenerate").click();
       assert.equal(await page.locator("#planSvgPreview svg").count(),1);
-      const title=await page.locator("#planSvgPreview svg title").innerText();
+      const title=await page.locator("#planSvgPreview svg title").textContent();
       assert(title.toLowerCase().includes(template==="walkin"?"walk-in":template),"selected template visible");
     }
     console.log("PASS: all three radio-selected styles re-render");
