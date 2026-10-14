@@ -62,3 +62,28 @@
 @media(max-width:650px){.cc-plan-hero{padding:33px 0 26px}.cc-plan-page .nav{flex-wrap:wrap;padding:11px 0}.cc-plan-page .nav-links{flex-wrap:wrap;gap:12px;font-size:13px}.cc-plan-main{padding-top:18px}.cc-plan-card{padding:16px}.cc-plan-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-plan-actions button{flex:1}.cc-plan-hints span{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.cc-plan-options span{transition:none}}
 @media print{body.cc-plan-page{background:#fff!important;color:#222}.cc-plan-page .site-header,.cc-plan-hero,.cc-plan-form,.cc-plan-actions,.cc-plan-info,.cc-plan-page footer{display:none!important}.cc-plan-main{padding:0}.cc-plan-grid{display:block}.cc-plan-card{border:0;box-shadow:none;padding:0}.cc-plan-preview-header{display:block}.cc-plan-preview-header h2{font-size:20px}.cc-plan-canvas{border:0;max-width:730px}.cc-plan-facts{grid-template-columns:repeat(3,1fr);margin-top:6px}.cc-plan-stat{padding:6px}.cc-plan-notes-wrap{margin-top:8px;padding:9px}.cc-plan-legal{display:block}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* Source-gated city law context: independent of plan geometry targets */
+.cc-plan-city{margin:16px 0 22px;padding:15px;background:#eff6ee;border:1px solid #cbdcca;border-radius:14px}
+.cc-plan-city h3{margin:0 0 12px;font-size:16px;color:#28553a}
+.cc-plan-city h3 span{font-size:12px;font-weight:500;color:#657966}
+.cc-plan-city select{width:100%;border-radius:11px;border:1px solid #adc5b3;background:#fff;padding:12px 36px 12px 12px;font-size:14px;min-height:45px;color:#2e543b}
+.cc-plan-city-summary,.cc-plan-city-caveat{margin:11px 0 0;font-size:12px;line-height:1.6;color:#586d5e}
+.cc-plan-law-details{border-top:1px solid #cbdcca;margin-top:14px;padding-top:12px}
+.cc-plan-law-details dl{margin:0;max-height:310px;overflow-y:auto;scrollbar-width:thin}
+.cc-plan-law-details dt{font-weight:800;font-size:12px;margin-top:10px}
+.cc-plan-law-details dd{font-size:12px;line-height:1.6;margin:4px 0 10px;overflow-wrap:anywhere}
+.cc-plan-law-details dd small{display:block;color:#6e796c;margin-top:3px}
+.cc-plan-law-inputs{grid-template-columns:minmax(0,1fr);margin-top:13px}
+.cc-plan-law-inputs input[type=number]{font-size:14px}
+.cc-plan-law-inputs .cc-plan-rooster{font-weight:650;display:flex;align-items:center;gap:8px}
+.cc-plan-rooster input{width:18px;height:18px;accent-color:#3b9064}
+.cc-plan-law-result{margin-top:12px;background:#f7f9f6;border:1px solid #d5e3d5;border-radius:10px;padding:12px;font-size:12px;line-height:1.6;color:#526956}
+.cc-plan-law-result[data-level=warning]{background:#fff1dc;border-color:#e9c99c;color:#85501f}
+.cc-plan-law-result[data-level=within]{background:#e7f5e9;border-color:#bbe1c3;color:#276140}
+.cc-plan-law-result[data-level=review]{background:#fff8ea;border-color:#e9d9b8}
+.cc-plan-law-details ul{padding-left:19px;margin:9px 0;font-size:12px;line-height:1.6}
+.cc-plan-legal-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}
+.cc-plan-legal-links a{font-size:12px;font-weight:750;color:#26764c;text-decoration:underline}
+.cc-plan-print-law{font-size:12px;color:#5a705f;padding:12px 15px;border:1px solid #cfe1d3;background:#f3f8f3;border-radius:12px;line-height:1.6;margin-top:12px}
+@media(max-width:650px){.cc-plan-city{padding:12px}.cc-plan-law-details dl{max-height:260px}}
