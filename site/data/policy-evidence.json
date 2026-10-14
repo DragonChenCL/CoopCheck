@@ -443,7 +443,7 @@
         "status": "primary_clause_checked",
         "url": "https://vancouver.municipal.codes/VMC/20.895.050",
         "section": "Vancouver VMC §20.895.050(B)(5)-(6), (E) and VMC Chapter20.935 offsite impacts",
-        "detail": "Vancouver §20.895.050(B)(5) classifies chicken keeping as domestic poultry requiring proper containment and nuisance compliance under VMC8.20/8.24 and OFF-SITE IMPACTS §20.935. Livestock shelter rear-yard/house-setback standard in (B)(6) is specifically for LIVESTOCK and does NOT automatically set a chicken-coop numerical setback. Separate accessory building zone rules need parcel review.",
+        "detail": "Vancouver §20.895.050(B)(5) classifies chicken keeping as domestic poultry requiring proper containment and nuisance compliance under VMC8.20/8.24 and OFF-SITE IMPACTS §20.935. Livestock shelter rear-yard/house-setback standard in (B)(6) is specifically for LIVESTOCK and cannot automatically set a chicken-coop numerical setback. Separate accessory building zone rules need parcel review.",
         "checkedAt": "2026-10-13"
       }
     },

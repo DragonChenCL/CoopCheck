@@ -302,7 +302,7 @@ window.COOP_CITIES=[
     "max": "Vancouver VMC §20.895.050(B)(5) permits chickens/ducks/geese/rabbits for personal hobby uses with NO MINIMUM LOT SIZE; this is NOT an unlimited numeric flock allowance; roosters prohibited.",
     "roosters": "Prohibited",
     "permit": "Vancouver domestic poultry personal/hobby keeping is a listed permitted use across zoning districts subject to VMC 8.20/8.24 and off-site impacts; this does NOT settle chicken-keeping licenses or construction/building permits.",
-    "placement": "Vancouver §20.895.050(B)(5) classifies chicken keeping as domestic poultry requiring proper containment and nuisance compliance under VMC8.20/8.24 and OFF-SITE IMPACTS §20.935. Livestock shelter rear-yard/house-setback standard in (B)(6) is specifically for LIVESTOCK and does NOT automatically set a chicken-coop numerical setback. Separate accessory building zone rules need parcel review.",
+    "placement": "Vancouver §20.895.050(B)(5) classifies chicken keeping as domestic poultry requiring proper containment and nuisance compliance under VMC8.20/8.24 and OFF-SITE IMPACTS §20.935. Livestock shelter rear-yard/house-setback standard in (B)(6) is specifically for LIVESTOCK and cannot automatically set a chicken-coop numerical setback. Separate accessory building zone rules need parcel review.",
     "verified": "2026-10-12",
     "planner": {
       "mode": "manual",
