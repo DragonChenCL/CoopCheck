@@ -211,7 +211,7 @@
       '<rect x="80" y="648" width="18" height="18" fill="#f6ddaf" stroke="#98713e"/>',
       '<text x="107" y="663" font-size="16" font-family="Arial,sans-serif" fill="#3d5948">Coop '+xml(format(m.indoorArea))+' sq ft</text>',
       '<rect x="354" y="648" width="18" height="18" fill="#eaf6e8" stroke="#2d7658"/>',
-      '<text x="382" y="663" font-size="16" font-family="Arial,sans-serif" fill="#3d5948">Run '+xml(format(m.runArea))+' sq ft</text>',
+      '<text x="382" y="663" font-size="16" font-family="Arial,sans-serif" fill="#3d5948">OUTDOOR RUN '+xml(format(m.runArea))+' sq ft</text>',
       '<text x="905" y="663" text-anchor="end" font-size="14" font-family="Arial,sans-serif" fill="'+color+'">'+(m.meetsTargets?"AREA TARGETS MET":"AREA TARGET WARNING")+'</text>',
       '<text x="80" y="699" font-family="Arial,sans-serif" font-size="13" fill="#687a6e">Educational layout only. No construction details, engineering, zoning, survey or permit verification.</text>',
       '<text x="80" y="718" font-family="Arial,sans-serif" font-size="12" fill="#73867b">Guidance: Oregon State University / Penn State / University of Minnesota Extension. Generated locally.</text>',
