@@ -1,5 +1,11 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — 12-city pending primary-law recheck (Apache Junction)
+
+- Researched all 12 outstanding first-100 pending cities via city-site, ordinance/publication and code searches, but only Apache Junction provided unambiguous CURRENT 2026 city-code section content for three fields: **max / roosters / placement** at municipal LDC §1-6-17(C),(I), Table 5-2 note 4, reconciled with state A.R.S. §9-462.12. No current municipal chicken license or building-permit result obtained, so status stays noindex/manual and `needs_review`.
+- 2014 Apache Junction Commission DRAFT explicitly rejected as current law; Queen Creek March 2026 proposal/2026 ordinance changes still need enrolled final effective text; Renton third-party September compilation cannot substitute inaccessible current code text; Pueblo council agenda amendment needs final enacted version. Not promoted.
+- Verified 3 additional primary fields, **329/400 primary, 26 source_recorded, 45 unverified**. Search was not 48 independent complete legal confirmations. See policy completeness and city registry. No synthetic municipal replies or indexing claims.
+
 ## 2026-10-13 — Updated GSC/GA4 and Dallas ordinance 33485
 
 - Live Windsor.ai GSC + GA4 snapshot for 2026-09-15..2026-10-12: Search Console **23 impressions, 0 clicks** across Oregon 9 (mean position 9.33), Portland 9 (41.67) and homepage 5 (29.6). Only two query rows visible; GA4 **5 active users, 12 sessions, 55 pageviews; all sessions Direct**. Full sourced baseline and next checkpoints: `docs/operations/SEO_GSC_BASELINE_2026-10-13.md`.

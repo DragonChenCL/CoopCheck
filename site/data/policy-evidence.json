@@ -1011,16 +1011,28 @@
     },
     "apache-junction-az": {
       "max": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17845",
+        "section": "Current 2026 Apache Junction LDC §1-6-17(C)(2)(a)-(b) read with A.R.S. §9-462.12(A),(D)",
+        "detail": "City law: RS-GR no local count under this subsection; other single-family districts nominally two chickens per 1500 sq ft. STATE PREEMPTION: eligible detached homes on lots <=0.5 acre are protected up to six backyard domestic chickens even where incompatible city formula would restrict; not a universal citywide maximum.",
+        "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17845",
+        "section": "Current 2026 LDC §1-6-17(C)(2)(b), Arizona A.R.S. §9-462.12(A)(1)",
+        "detail": "Roosters and peafowl expressly prohibited under LDC (C)(2)(b) for non-RS-GR residential zones; state statute allows male-bird prohibitions. Not proof roosters allowed on RS-GR or other parcels.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
         "status": "unverified"
       },
       "placement": {
-        "status": "unverified"
+        "status": "primary_clause_checked",
+        "url": "https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17475",
+        "section": "Current 2026 LDC §1-5-2 Table 5-2 footnote 4; §1-6-17(I); A.R.S. §9-462.12(A)(2),(B)",
+        "detail": "Accessory structures for small livestock/fowl have city 15ft side/rear setback and front-placement restrictions. Arizona state law permits municipal rear/side enclosure rules up to 20ft from neighboring property on protected lots and requires enclosure height below fence on <1acre lots; cannot convert one distance into universal compliance approval.",
+        "checkedAt": "2026-10-13"
       }
     },
     "sierra-vista-az": {
