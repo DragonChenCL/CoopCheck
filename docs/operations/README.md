@@ -32,6 +32,7 @@ docs/operations/
 5. [五个城市 SEO 标杆实践](../SEO_FIVE_BENCHMARK_CITIES_2026-10-13.md)
 6. [GSC/GA4 获客与转化真实基线](SEO_GSC_BASELINE_2026-10-13.md)
 7. [仅针对45个未核字段放宽证据等级：逐项链接与缺口](PENDING_45_EVIDENCE_TIER_2026-10-13.md)
+8. [增长实验：免费鸡舍退距图解与尺寸试算](SEO_EXPERIMENT_SETBACK_GUIDE_2026-10-13.md)
 
 网站：https://coopcheck.serunio.com/
 
