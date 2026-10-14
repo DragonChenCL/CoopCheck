@@ -89,7 +89,7 @@ assert(lakewood.planner.mode==="manual","Lakewood cannot auto clear site");
 assert.equal(e.cities["lakewood-co"].permit.status,"primary_clause_checked","Lakewood current city application fact preserved");
 // 2026-10-13 twenty-claim municipal source evidence guard
 for(const slug of ["fremont-ca","escondido-ca","yuma-az"])for(const k of keys)assert.equal(e.cities[slug][k].status,"primary_clause_checked",slug+"/"+k);
-for(const [slug,k] of [["bellevue-wa","max"],["bellevue-wa","placement"],["vancouver-wa","max"],["vancouver-wa","permit"],["phoenix-az","roosters"],["dallas-tx","placement"],["gilbert-az","max"],["colorado-springs-co","permit"]])assert.equal(e.cities[slug][k].status,"primary_clause_checked",slug+"/"+k);
+for(const [slug,k] of [["bellevue-wa","max"],["bellevue-wa","placement"],["vancouver-wa","max"],["vancouver-wa","permit"],["phoenix-az","roosters"],["gilbert-az","max"],["colorado-springs-co","permit"]])assert.equal(e.cities[slug][k].status,"primary_clause_checked",slug+"/"+k);
 assert(bySlug["fremont-ca"].max.includes("COMBINED"),"Fremont combined fowl and species");
 assert(bySlug["escondido-ca"].permit.includes("CONDITIONAL USE PERMIT"),"Escondido R-E rooster CUP");
 assert(bySlug["bellevue-wa"].max.includes("6930"),"Bellevue pending legislation");
@@ -149,3 +149,8 @@ assert(e.cities["yakima-wa"].permit.detail.includes("NOT decide")&&e.cities["yak
 assert.equal(e.cities["new-york-city-ny"].max.status,"primary_clause_checked","NYC official guidance hen allowance missing");
 assert(e.cities["new-york-city-ny"].max.detail.includes("NOT unlimited"),"NYC no citywide number must not become unlimited hens");
 const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8");assert(m.includes("**"+confirmed+"**"),"report count out of sync");console.log("PASS: policy evidence completeness checks ("+confirmed+"/400 independently section-checked)");
+
+// Dallas July 2026 rooster exceptions are not verified as operative after August council action.
+for(const key of ["roosters","placement"])assert.equal(e.cities["dallas-tx"][key].status,"source_recorded","post-August Dallas clause must not be marked current: "+key);
+assert(bySlug["dallas-tx"].roosters.includes("August 12, 2026")&&bySlug["dallas-tx"].placement.includes("NOT confirmed"),"Dallas warning lost");
+assert(bySlug["dallas-tx"].planner.mode==="manual","Dallas planner must remain manual");
