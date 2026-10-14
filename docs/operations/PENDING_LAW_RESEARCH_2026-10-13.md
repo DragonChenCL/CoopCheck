@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；306 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **46 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；326 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **26 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -124,3 +124,10 @@
 - **306/400** 字段有已对照现行法典或政府批准文件，**46 source_recorded、48 unverified**；88 城市部分有来源、12 城市 noindex 未变。
 - 完成：Modesto CA（max、roosters、permit、placement）；El Paso TX（max、roosters、permit、placement）；Bakersfield CA（max、roosters、permit、placement）；Oro Valley AZ（max、roosters、permit、placement）；Austin TX（max、roosters、permit）；Folsom CA（roosters）。
 - 重要：Oro Valley 2024-09-18 议会一致通过 O24-08 的官方条文/会议记录取代 2025 年未通过草案充当证据；Modesto12个是母禽和其他宠物合计；El Paso <6只免家禽许可证并不等于最多只准6只；Bakersfield R-S 条例的具体附属饲养规则不适用于所有住宅；Austin 鸡只数、公鸡和许可证只证明条款范围内的否定/条件义务；Folsom 2026 §7.04.080 立法新增全市公鸡禁令。需要逐地块排查分区、建筑批准。
+
+## 2026-10-13 第五批20字段（审批门槛与鸡舍退距）
+
+- **326/400 primary_checked、26 source_recorded、48 unverified**；88已有官方来源部分审查城市、12 pending noindex 不变。
+- 本批已核城市：Phoenix（permit）；Tucson（permit）；Glendale（permit）；Arlington（permit）；Gilbert（roosters、placement、permit）；Lake Oswego（permit）；Tigard（permit）；Kent（permit）；Hillsboro（placement）；Corvallis（permit）；Goodyear（permit）；Casa Grande（permit）；McKinney（placement、permit）；Avondale（placement）；Vancouver（placement）；New York City（placement）；Anaheim（permit）。
+- **Gilbert 严重旧口径已修**：2024正式通过 Ord2911 后，≤半英亩只有6只 fowl，旧 FAQ 25 fowl+rodents 不能当作25只鸡；鸡舍20ft是地界不是住宅，公鸡每20,000sqft有年龄及噪声约束。
+- 绝不能以建筑许可证尺寸豁免推导养鸡证书豁免；Tucson 无论<200sqft仍要建筑/附属建筑申请和规划场地图。NYC 25ft只适用活禽商业市场。Mesa/Sierra Vista/Bend等证据不足字段仍保留 source_recorded。

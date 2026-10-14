@@ -74,7 +74,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.phoenix.gov/administration/departments/pdd/residential-building/resident-plan-reviews.html",
+        "section": "Phoenix Planning & Development Residential Projects 2026: detached structure >200 sqft, electrical and plumbing permit triggers",
+        "detail": "City says NEW detached residential structures LARGER THAN 200 SQ FT require a BUILDING PERMIT; electrics/plumbing require their own approvals. Whether a coop is classified as a detached accessory building or qualifies for a small-structure exception must be confirmed with Phoenix PDD; chicken KEEPING permit status is not established.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -436,7 +440,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://vancouver.municipal.codes/VMC/20.895.050",
+        "section": "Vancouver VMC §20.895.050(B)(5)-(6), (E) and VMC Chapter20.935 offsite impacts",
+        "detail": "Vancouver §20.895.050(B)(5) classifies chicken keeping as domestic poultry requiring proper containment and nuisance compliance under VMC8.20/8.24 and OFF-SITE IMPACTS §20.935. Livestock shelter rear-yard/house-setback standard in (B)(6) is specifically for LIVESTOCK and does NOT automatically set a chicken-coop numerical setback. Separate accessory building zone rules need parcel review.",
+        "checkedAt": "2026-10-13"
       }
     },
     "austin-tx": {
@@ -485,7 +493,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.arlingtontx.gov/News-Articles/2024/December/Do-I-Need-A-Permit-A-DIY-Guide",
+        "section": "Arlington Texas 2024 City DIY Permit Guide: storage shed >100 sqft / location setbacks",
+        "detail": "Arlington official DIY guide: storage sheds OVER 100 SQ FT require a BUILDING PERMIT; accessory structures may NOT be placed within zoning setbacks. This threshold is for SHEDS, not automatically every open wire poultry run. City animal guidance separately permits up to four ordinary hens subject to property confinement.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -528,19 +540,31 @@
     "gilbert-az": {
       "max": {
         "status": "primary_clause_checked",
-        "section": "Town Code Compliance FAQ: MINIMUM AREA (FOWL AND RODENTS), LDC §2.107 cited",
-        "detail": "Official town FAQ states 25 combined fowl/rodents per lots up to 20000sf, not 25 unconditional hens; latest code and AZ state preemption unresolved.",
-        "url": "https://www.gilbertaz.gov/departments/development-services/plan-review-inspection/inspection-code-compliance/code-compliance/faq-municipal-code-land-development-code",
+        "url": "https://www.gilbertaz.gov/departments/development-services/planning/land-development-code",
+        "section": "Gilbert adopted Ord2911 2024, LDC §5.2.2(A)(5)(a); current June2026 LDC index and Council adoption minutes",
+        "detail": "On ≤0.5acre eligible single-family lot up to 6 CHICKENS/FOWL, 12 more for each extra 10,000 sqft over 0.5acre, no applicability of previous FAQ 25 combined fowl+rodents as hen entitlement; AZ §9-462.12 state preemption.",
         "checkedAt": "2026-10-13"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.gilbertaz.gov/departments/development-services/planning/land-development-code",
+        "section": "Gilbert LDC §5.2.2(A)(5)(b), 2024 enacted Ord2911, zoning revision through 2026",
+        "detail": "Gilbert LDC §5.2.2(A)(5)(b): ONE rooster older than FOUR MONTHS per 20,000 sqft lot area, subject to Chapter 6 NOISY ANIMAL limits. Roosters are not categorically barred citywide nor allowed automatically on small parcels. Verify commercial raising exceptions separately.",
+        "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.gilbertaz.gov/departments/development-services/planning/land-development-code",
+        "section": "Gilbert LDC §5.2.2(A)(5)(a)-(e), residential fowl accessory use and Chapter6 animal duties",
+        "detail": "Gilbert CURRENT LDC §5.2.2(A)(5) expressly allows qualifying residential FOWL subject to lot-size caps, coop siting and Municipal Code Chapter 6 animal/nuisance requirements. This establishes ZONING CONDITIONAL USE STANDARDS, NOT a determination that every chicken coop is exempt from construction approval or a municipal keeping license.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.gilbertaz.gov/departments/development-services/planning/land-development-code",
+        "section": "Gilbert LDC §5.2.2(A)(5)(c)-(d), effective Ord2911 2024",
+        "detail": "Gilbert LDC §5.2.2(A)(5): poultry enclosures must be in SIDE OR REAR YARD, at least TWENTY FEET from ANY PROPERTY LINE, no more than 200 SQ FT and 8ft high; on lots <1 acre enclosure must also be LOWER THAN fence line. AZ §9-462.12 preemption affects eligible existing enclosures and lot rights.",
+        "checkedAt": "2026-10-13"
       }
     },
     "scottsdale-az": {
@@ -589,7 +613,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.glendaleaz.gov/Business/Planning-Zoning/FAQ?OC_EA_EmergencyAnnouncementList_Dismiss=95475043-ad4d-4aca-9387-62ea50e4202d",
+        "section": "Glendale Planning and Zoning FAQ, backyard chickens, Residential Zoning Clearance, Accessory Buildings",
+        "detail": "Glendale requires RESIDENTIAL ZONING CLEARANCE before applicable coop/accessory BUILDING permits. City FAQ requires chicken enclosure side/rear yard, ≥20 ft to NEIGHBOR PROPERTY, ≥10 ft from buildings, ≤200 sqft/8ft. Accessory structures >120 sqft need building permits under FAQ. This does not establish a routine chicken-keeping permit waiver.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -643,7 +671,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.goodyearaz.gov/government/departments/engineering-development-services/development-services/homeowner-permit-faqs",
+        "section": "Goodyear Homeowner Permit FAQs Storage Sheds, Playhouses and Similar Structures",
+        "detail": "Goodyear exempts qualifying SINGLE-STORY detached accessory sheds/playhouses/SIMILAR structures of ≤200 SQ FT WITH NO ELECTRIC, PLUMBING, OR MECHANICAL SYSTEMS from BUILDING PERMIT; CITY ZONING still governs location. A chicken coop's classification/animal-keeping approval must be confirmed; do not assume universal coop permit exemption.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -672,7 +704,11 @@
         "status": "source_recorded"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.azleg.gov/ars/9/00462-12.htm",
+        "section": "Arizona A.R.S. §9-462.12(B),(C),(D) mandatory under-fence-line rule for municipal residential communities",
+        "detail": "Arizona §9-462.12(B) REQUIRES cities including Avondale to enact rules keeping backyard fowl enclosures on RESIDENTIAL-COMMUNITY lots UNDER ONE ACRE SHORTER THAN PROPERTY FENCE. §(A)(2) only ALLOWS, not forces, city to adopt 20ft neighboring-property buffer, ≤200sf/8ft cap; no citywide numerical Avondale coop setback proven. §(C) preserves enclosures predating Sept 14, 2024 from later ordinances.",
+        "checkedAt": "2026-10-13"
       }
     },
     "buckeye-az": {
@@ -735,7 +771,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Permits/Tucson-Permit-Exemptions",
+        "section": "Tucson PDS Permit Exemptions and 2025 Residential Shed Permitting Guide",
+        "detail": "Tucson requires Residential Addition/Alteration permit APPLICATION and site-plan ZONING REVIEW for residential sheds and SIMILAR structures regardless of size. Detached ≤200 sqft without utilities may avoid structural plans/inspections; with utilities or >200 sqft needs building plans and inspections. A particular chicken coop must be classified by PDS; do not claim exemption from zoning permit.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -851,7 +891,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.casagrandeaz.gov/m/faq?cat=48",
+        "section": "Casa Grande City Planning & Development FAQ: small accessory structures exempt construction permit, require Planning sign-off",
+        "detail": "Casa Grande city code FAQ: qualifying detached SMALL RESIDENTIAL accessory buildings ≤200 SQ FT, height-limited and WITHOUT UTILITIES can avoid building permit, BUT CITY PLANNING APPROVAL for size/height/LOT-LINE SETBACKS is still REQUIRED. A specific chicken coop must qualify for similar-use exemption; §6.06 poultry rights and licensing separately unresolved.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1229,7 +1273,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.anaheim.net/6010/Permit-Processing-Info",
+        "section": "Anaheim City Building Division Permit Processing Information, current 2025 California Building Standards Code cycle",
+        "detail": "Anaheim BUILDING DIVISION confirms proposed new construction is reviewed under 2025 California Building Standards Code and local ordinances; required building permits depend on specific accessory coop dimensions, usage, site, and plans. Existing Animal Code §8.24 and zoning still apply to the keeping of domestic poultry. City guidance does NOT establish a general hen licence waiver or universal coop permit trigger.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1812,7 +1860,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.hillsboro-oregon.gov/our-city/departments/police/programs-and-services/code-compliance",
+        "section": "Hillsboro City Code Compliance Accessory Structures HMC12.40.104 and animal permit conditions",
+        "detail": "Hillsboro city Code Compliance cites HMC 12.40.104 requiring ACCESSORY BUILDINGS to maintain separation from LOT LINES; the actual setback depends on residential zone and needs Planning verification. This applies separately from the City Animal Permit required to keep hens; no citywide numeric coop setback established.",
+        "checkedAt": "2026-10-13"
       }
     },
     "bend-or": {
@@ -1905,7 +1957,11 @@
         "status": "source_recorded"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://library.municode.com/or/corvallis/codes/code_of_ordinances",
+        "section": "Corvallis Municipal Code §5.03.050.020.06(7)(a), municipal livestock registration exception",
+        "detail": "Corvallis §5.03.050.020.06(7)(a) EXPRESSLY EXEMPTS domesticated fowl kept in pens/cages from the specific LIVESTOCK REGISTRATION obligation imposed on other livestock. This does NOT establish exemption from zoning review, animal nuisance rules or a construction/building permit for an actual coop.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "source_recorded"
@@ -1927,7 +1983,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.ci.oswego.or.us/building/why-do-i-need-permit",
+        "section": "Lake Oswego Building: Why Do I Need a Permit?; Residential Accessory Structures handout expressly includes chicken coops",
+        "detail": "Lake Oswego official RESIDENTIAL ACCESSORY STRUCTURES guide expressly includes CHICKEN COOPS. City Building requires permits for most sheds/garages ≥200 SQ FT or >10ft HIGH; smaller coops may qualify for exemptions (handout discusses ≤200sqft and ≤15ft for CERTAIN structures), but must meet separate zoning/placement rules and other utility permits. Confirm height measurement and type with Building/Planning; no keeping licence conclusion.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -1953,7 +2013,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.tigard-or.gov/your-government/departments/community-development/building-services/when-you-need-a-permit",
+        "section": "Tigard Building Services When You Need a Permit, standard detached nonhabitable accessory structures",
+        "detail": "Tigard states a detached single-story NONHABITABLE standard accessory structure ≤200 SQ FT and ≤15ft roof-height does NOT need a building permit, subject to structural/use conditions. Larger or taller structures may require one. Front setbacks and maximum accessory area apply EVEN IF PERMIT EXEMPT; a specific chicken coop and any poultry-keeping license require city confirmation.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -2031,7 +2095,11 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.kentwa.gov/government/frequently-asked-questions",
+        "section": "Kent City FAQ Sheds/Garages/Outbuildings, accessory structure permit >=200sqft",
+        "detail": "Kent city FAQ: a shed that is 200 SQ FT OR LARGER needs a BUILDING PERMIT, and smaller sheds still must satisfy zoning setbacks, height and lot coverage. Whether a chicken house falls into this classification is site-specific; this is NOT a categorical animal-keeping permit exemption.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
         "status": "primary_clause_checked",
@@ -2406,10 +2474,18 @@
         "checkedAt": "2026-10-13"
       },
       "permit": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.mckinneytexas.org/285/Unified-Development-Code",
+        "section": "McKinney UDC current March 2026, Section205(G) Accessory Uses/Buildings and 2024 IRC building code permit administration",
+        "detail": "McKinney's CURRENT UDC §205(G) regulates accessory buildings on residential properties: setback per underlying district, behind front face of principal building, never in easements; current Building Inspections administers adopted 2024 residential code. Chicken shelter classification, structural permit thresholds and any separate keeping license are NOT universally determined by the City's FAQ.",
+        "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.mckinneytexas.org/m/faq?cat=20",
+        "section": "McKinney Animal Control FAQ, current chickens and proper enclosure",
+        "detail": "McKinney Animal Control explicitly permits up to 12 HENS only when kept in a PROPER ENCLOSURE, with NO ROOSTERS. This confirms a positive enclosure/confinement duty but the city FAQ DOES NOT specify a universal numeric coop-to-line or neighboring-building distance; verify UDC and structure plans.",
+        "checkedAt": "2026-10-13"
       }
     },
     "denton-tx": {
@@ -2505,7 +2581,11 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "primary_clause_checked",
+        "url": "https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf",
+        "section": "NYC Health Code Article161 §161.19(b)-(c), 25ft live poultry MARKET coop setback only",
+        "detail": "NYC Health Code §161.19(c) imposes at least 25 FT between buildings and coops of LIVE POULTRY MARKETS, which may not operate on a residential dwelling's premises. It is NOT a general 25ft backyard hen coop setback. Regular home-hen coops need separate property/building/zoning review; no uniform citywide residential line-offset proven.",
+        "checkedAt": "2026-10-13"
       }
     },
     "minneapolis-mn": {

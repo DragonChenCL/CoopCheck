@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Fifth batch twenty animal and coop structure permissions
+
+- 20 more existing field-specific claims scoped against official permit, building and animal code guidance. **326/400 mapped, 26 source_recorded, 48 pending**, 88 city summaries reviewed and 12 withheld cities unchanged.
+- **Gilbert 2024 Ord2911 correction**: previous FAQ 25 combined fowl/rodents not valid as an unconditional chicken quota on <=0.5acre homes: current LDC 5.2.2(A)(5) 6 chickens, 20ft line, 1 mature rooster / 20k sqft. Changed previously checked maximum without claiming extra progress.
+- Permit work identifies precise construction thresholds (Phoenix >200, Arlington shed >100, Goodyear <=200 no utilities, Casa Grande <=200 still site approval, Tucson all small sheds still zoning review, Kent >=200 shed permit, Tigard <=200/15ft conditional, Glendale >120 sqft and zoning clearance, Lake Oswego chicken coop explicitly accessory structure). Non-construction animal licences are distinct.
+- Corvallis animal registration exception narrow; NYC commercial 25ft must not be copied to home hens; Avondale state fence-height mandate versus optional municipality 20ft distance. All permit and site clearance manual.
+
+
 ## 2026-10-13 — Fourth 20-claim operative code evidence batch
 
 - Resolved **20** pending claim-level sources across Modesto(4), El Paso(4), Bakersfield(4), Oro Valley(4), Austin(3), Folsom(1), **306/400 scoped primary**, **46 source_recorded**, **48 unverified**. 88 source-reviewed, 12 paused/noindex and city count unchanged.
