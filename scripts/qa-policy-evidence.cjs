@@ -161,6 +161,6 @@ assert.equal(apache.audit.status,"needs_review","Apache Junction must remain pau
 assert.equal(apache.audit.searchStatus,"partial_primary_fields_confirmed","Apache current-law audit marker lost");
 for(const k of ["max","roosters","placement"])assert.equal(e.cities["apache-junction-az"][k].status,"primary_clause_checked","Apache current LDC primary clause lost: "+k);
 assert.equal(e.cities["apache-junction-az"].permit.status,"unverified","Apache chicken/building permits are unproven");
-assert(apache.max.includes("STATE")&&apache.max.includes("SIX"),"Arizona six-hen override must remain explicit");
+assert(apache.max.includes("Arizona A.R.S.")&&apache.max.includes("SIX"),"Arizona six-hen override must remain explicit");
 assert(apache.placement.includes("15-ft")&&apache.placement.includes("20 ft"),"Apache setback state/city distinction lost");
 assert(apache.planner.mode==="manual"&&apache.verified===null,"No automated Apache legal approval");
