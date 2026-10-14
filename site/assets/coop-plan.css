@@ -1,0 +1,64 @@
+/* Original static coop plan generator; no third-party runtime or font dependencies. */
+.cc-plan-page{background:#f7f9f3;color:#213c2b}
+.cc-plan-page .nav{min-height:68px}
+.cc-plan-page .nav-links{display:flex;align-items:center;gap:16px}
+.cc-plan-hero{padding:54px 0 37px;background:radial-gradient(ellipse 35% 100% at 95% 5%,#dcefdc 0,transparent 100%),linear-gradient(140deg,#f1f8ec,#fbfcf7);border-bottom:1px solid #e0e9da}
+.cc-plan-hero .eyebrow{letter-spacing:.07em;text-transform:uppercase}
+.cc-plan-hero h1{font-size:clamp(38px,5.6vw,62px);line-height:1.08;max-width:840px;margin:20px 0 17px}
+.cc-plan-hero .lead{max-width:850px;font-size:18px;margin:0}
+.cc-plan-hints{display:flex;gap:11px;flex-wrap:wrap;margin-top:22px}
+.cc-plan-hints span{display:inline-flex;gap:7px;align-items:center;border:1px solid #ccdec8;background:#fff;border-radius:50px;padding:7px 13px;font-weight:750;font-size:13px;color:#3f7553}
+.cc-plan-main{padding:36px 0 52px}
+.cc-plan-grid{display:grid;grid-template-columns:minmax(285px,355px) minmax(0,1fr);gap:24px;align-items:start}
+.cc-plan-card{background:#fff;border:1px solid #dbe8d8;border-radius:20px;padding:24px;box-shadow:0 12px 38px rgba(38,71,44,.05)}
+.cc-plan-form{position:sticky;top:94px}
+.cc-plan-form h2{font-size:24px;margin:0 0 7px}
+.cc-plan-form > p{font-size:13px;color:#6a7e6d;margin:0 0 20px}
+.cc-plan-form fieldset{padding:0;border:0;margin:0 0 20px;min-width:0}
+.cc-plan-form legend{font-size:14px;font-weight:800;margin-bottom:9px;color:#2e553b}
+.cc-plan-form label{display:block;font-weight:700;font-size:14px}
+.cc-plan-form label small{display:block;font-weight:400;color:#66766a}
+.cc-plan-form input[type=number]{width:100%;border:1px solid #b6c9b9;background:#fff;border-radius:11px;padding:12px;font-size:17px;font-weight:700;color:#243e2d;margin-top:6px}
+.cc-plan-form input[type=number]:focus-visible,.cc-plan-form button:focus-visible,.cc-plan-form input[type=radio]:focus-visible+span{outline:3px solid #8bc29e;outline-offset:2px}
+.cc-plan-inputs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cc-plan-options{display:grid;gap:8px}
+.cc-plan-options label{position:relative;cursor:pointer}
+.cc-plan-options input{position:absolute;opacity:0;pointer-events:none}
+.cc-plan-options span{display:block;border:1px solid #d3e1d3;border-radius:12px;padding:12px 14px;background:#fcfdf9;font-weight:750;transition:background .15s,border-color .15s}
+.cc-plan-options small{font-weight:400;line-height:1.4;margin-top:2px}
+.cc-plan-options input:checked+span{border-color:#3b9064;background:#ecf7ed;box-shadow:inset 0 0 0 1px #6fb184}
+.cc-plan-form .btn{width:100%;font-size:16px;padding:14px}
+.cc-plan-form .cc-plan-hint{font-size:13px;line-height:1.6;padding:12px;border-radius:12px;background:#f0f5ed;border:1px solid #d8e5d8;margin-top:14px}
+.cc-plan-preview-header{display:flex;align-items:start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:13px}
+.cc-plan-preview-header h2{font-size:26px;margin:0}
+.cc-plan-preview-header p{margin:0;font-size:13px;color:#647967}
+.cc-plan-status{margin:12px 0 17px;padding:12px 14px;border-radius:12px;font-size:14px;line-height:1.55;font-weight:650;background:#eaf5eb;color:#1c633c;border:1px solid #c8e4cc}
+.cc-plan-status[data-level=warning]{background:#fff5e3;color:#875824;border-color:#ead4ae}
+.cc-plan-canvas{border-radius:16px;background:#fbfcf6;overflow:hidden;border:1px solid #dfe8da}
+.cc-plan-canvas svg{display:block;width:100%;height:auto}
+.cc-plan-preview .cc-plan-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.cc-plan-actions button{font:inherit;cursor:pointer;border:1px solid #bad4c1;border-radius:11px;background:#f2f8f0;padding:10px 14px;color:#2a6a46;font-weight:750}
+.cc-plan-actions button:hover{background:#e0f0e4}
+.cc-plan-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:19px}
+.cc-plan-stat{border:1px solid #e2eae0;background:#fafcf9;border-radius:13px;padding:13px}
+.cc-plan-stat span{display:block;font-size:12px;color:#6d806f;margin-bottom:4px}
+.cc-plan-stat strong{font-size:18px;color:#2b543d}
+.cc-plan-notes-wrap{margin-top:20px;background:#fff9ec;border:1px solid #e9d9b8;border-radius:14px;padding:16px 19px}
+.cc-plan-notes-wrap h3{font-size:17px;margin:0 0 9px}
+.cc-plan-notes-wrap ul{padding-left:18px;margin:0}
+.cc-plan-notes-wrap li{font-size:13px;line-height:1.65;margin-top:5px;color:#596955}
+.cc-plan-notes-wrap li.warning{color:#8b5628;font-weight:650}
+.cc-plan-legal{margin-top:16px;border-left:4px solid #829f89;padding-left:13px;font-size:12px;color:#64776a;line-height:1.7}
+.cc-plan-info{padding:16px 0 66px}
+.cc-plan-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cc-plan-info-grid .cc-plan-card h2{font-size:24px;margin:0 0 11px}
+.cc-plan-info-grid .cc-plan-card p,.cc-plan-info-grid .cc-plan-card li{font-size:14px;line-height:1.8}
+.cc-plan-info-grid ul{padding-left:19px}
+.cc-plan-links{display:flex;gap:11px;flex-wrap:wrap;margin-top:14px}
+.cc-plan-links a{font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.cc-plan-sources{font-size:13px;line-height:1.8}
+.cc-plan-sources a{overflow-wrap:anywhere}
+@media(max-width:980px){.cc-plan-grid{grid-template-columns:1fr}.cc-plan-form{position:static}.cc-plan-info-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.cc-plan-hero{padding:33px 0 26px}.cc-plan-page .nav{flex-wrap:wrap;padding:11px 0}.cc-plan-page .nav-links{flex-wrap:wrap;gap:12px;font-size:13px}.cc-plan-main{padding-top:18px}.cc-plan-card{padding:16px}.cc-plan-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-plan-actions button{flex:1}.cc-plan-hints span{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.cc-plan-options span{transition:none}}
+@media print{body.cc-plan-page{background:#fff!important;color:#222}.cc-plan-page .site-header,.cc-plan-hero,.cc-plan-form,.cc-plan-actions,.cc-plan-info,.cc-plan-page footer{display:none!important}.cc-plan-main{padding:0}.cc-plan-grid{display:block}.cc-plan-card{border:0;box-shadow:none;padding:0}.cc-plan-preview-header{display:block}.cc-plan-preview-header h2{font-size:20px}.cc-plan-canvas{border:0;max-width:730px}.cc-plan-facts{grid-template-columns:repeat(3,1fr);margin-top:6px}.cc-plan-stat{padding:6px}.cc-plan-notes-wrap{margin-top:8px;padding:9px}.cc-plan-legal{display:block}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}

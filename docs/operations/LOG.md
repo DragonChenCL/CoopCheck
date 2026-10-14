@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — Free parametric chicken-coop plan generator MVP
+
+- User authorized building a free 2D coop-plan generator rather than expanding city-law page count. Implemented local JavaScript dimension/area engine, 3 conceptual templates, self-contained SVG layout preview, SVG/PNG download, native print/PDF option and responsive UI.
+- Added separate **illustrative** 4sqft indoor + 10sqft outdoor run per adult laying hen target with sources from OSU, PSU and UMN extension. This is *not* a verified local chicken ordinance or structural construction drawing. Warning if available space fails either target; roost/nest symbols and spatial access remain schematic.
+- Added planner → generator map handoff using locally saved **approximate axis-aligned coop-polygon bounding box** where available. No coordinates, address or measurements sent by the generator.
+- Added route from homepage and free setback guide, new canonical sitemap URL, free-without-checkout download UX, privacy-minimal generate/export analytics events and regression tests in PR / Pages CI.
+- Technical details, safety scope and planned GSC/GA4 7/14/28-day checks: `docs/operations/COOP_PLAN_GENERATOR_MVP_2026-10-13.md`. No claim of search indexing, organic visits, paying customers or structural approval.
+
 ## 2026-10-13 — BYC contact-form failure; stop repeats
 
 - User attempted the BackYard Chickens contact form twice: first a referenced Portland city-ordinance correction request, then a shorter plain-text/no-URL version. Both returned: "Your content can not be submitted. This is likely because your content is spam-like or contains inappropriate elements." **Neither submission succeeded.** Do NOT count either as outreach sent, article correction, backlink or approved post.

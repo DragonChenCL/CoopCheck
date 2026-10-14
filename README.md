@@ -95,3 +95,8 @@ ONLY the 45 remaining `unverified` city-policy entries have been given official-
 ## First SEO acquisition experiment — free chicken coop setback guide
 
 Launched a source-led [property-line vs neighboring-house setback explainer](site/guides/chicken-coop-setback-from-property-line.html) with a geometric, **user-supplied-distance** fit worksheet. Page links to the free map sketcher and cites specific Portland/Seattle/San Diego city rules; it makes no nationwide numeric permit promise or parcel compliance finding. Home, Oregon and Portland hub link to it; a single canonical guide URL is added to the generated sitemap. Build/QA: `node scripts/qa-setback-guide.cjs`. See [GSC and event-funnel baseline + 7/14/28-day measurement plan](docs/operations/SEO_EXPERIMENT_SETBACK_GUIDE_2026-10-13.md). Traffic and indexing outcomes are not yet established.
+
+
+## Free chicken coop plan generator MVP
+
+Open [Chicken Coop Plan Generator](site/coop-plan.html) to enter a flock size, rectangular space and one of three coop styles. All rendering is deterministic local JS, with free SVG/PNG downloads and browser Print / Save as PDF. The planning-area targets come from university poultry Extension references, not from city law. The new map-planner link can import only an *approximate axis-aligned coop bounding rectangle* from the locally saved outline; do not confuse this with survey or permit clearance. Building structure, roof loads, framing, real run details and cut lists are **not designed**. Build test: `node scripts/qa-coop-plan.cjs`. [Implementation and measurement plan](docs/operations/COOP_PLAN_GENERATOR_MVP_2026-10-13.md).
