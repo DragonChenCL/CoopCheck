@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,"..");
 const registry=JSON.parse(fs.readFileSync(path.join(root,"site/data/cities.json"),"utf8"));
 const evidence=JSON.parse(fs.readFileSync(path.join(root,"site/data/policy-evidence.json"),"utf8"));
 const body=fs.readFileSync(path.join(root,"site/assets/plan-law-data.js"),"utf8");
-const sandbox={};
+const sandbox={};sandbox.window=sandbox;
 vm.runInNewContext(body,sandbox,{timeout:5000});
 const rows=sandbox.COOP_PLAN_LAW_DATA;
 const law=require("../site/assets/plan-law.js");
