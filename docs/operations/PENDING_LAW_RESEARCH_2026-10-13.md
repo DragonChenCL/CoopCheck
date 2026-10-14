@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；328 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **24 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；326 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **26 项为 source_recorded、48 项为 unverified**。注意 88 ≠ 88 城市全部合规。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -140,3 +140,9 @@
 - **NYC NY / max**：市政府农耕办公室原文确认母鸡可饲养、公鸡不可；对应页面未提供住宅母鸡通用数量，因此仅核实“这些来源没有统一数字”，**不代表无限饲养**。
 - **Dallas TX 法规版本 P0**：市议会2026年8月12日已批准涉及撤销公鸡禁令的市政修订，历史§7-7.3公鸡/专属鸡舍退距引用存在过期风险，列为单独修法核验和网页纠偏问题。官方：[City Council 26-2375A](https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=)。
 - 逐条审查表：[FINAL_26_FIELD_REVIEW_2026-10-13.md](FINAL_26_FIELD_REVIEW_2026-10-13.md)。对未找到官方已生效条文的剩余项，不伪造来源、不擅自将普通建筑施工许可说成养禽许可证豁免。
+
+## Dallas 2026年8月法律变更安全修复
+
+- 因Dallas市议会已于2026年8月12日批准撤销公鸡禁令的修订，旧§7-7.3公鸡及特例20英尺退距条文不再具备可靠的现行效力证明；两条旧primary字段回退为source_recorded，页面展示显式风险提示，并继续人工判定。
+- **最新总数 326/400 primary，26 source_recorded，48 unverified**。之前最后26字段补证的328/24是安全降级前的历史值；2条Yakima、NYC补证保留。
+- [市政府批准文件](https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=)；跟踪 [Issue #38](https://github.com/DragonChenCL/CoopCheck/issues/38)。
