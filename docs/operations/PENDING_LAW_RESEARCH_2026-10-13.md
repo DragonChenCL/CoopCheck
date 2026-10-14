@@ -2,7 +2,7 @@
 
 更新：2026-10-13 · 范围：首批 100 城市、每城市 4 核心字段（数量／公鸡／许可／鸡舍位置）
 
-当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；329 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **26 项为 source_recorded、45 项为 unverified**。其中 Apache Junction 已获得 3 项当前市政法规证据，但由于许可未证实，仍保持 needs_review/noindex；因此 12 个 pending 城市不代表其 48 字段仍全部 unverified。注意 88 ≠ 88 城市全部合规。
+当前 **88 条城市摘要有至少部分来源支持、12 城市仍处于 needs_review；329 / 400 核心字段已映射至明确现行法规条款或市政府发布的具体指南**。其余 **71 项为 source_recorded、0 项为 unverified**。但这是**降低来源登记标准之后的资料覆盖口径**：其中 45 项仅有市政法典/官方城市政策检索入口及线索，并未确认适用法条或作出法律结论；原有 26 项仍待核验。真正未完成内容核验的仍是 **71 项**。12 城继续 needs_review/noindex/manual，不因登记入口链接而公开。
 
 本队列用于逐城定位「现行法典/生效日期/冲突来源/必须联系市政府的未决问题」，任何一项缺失都不能宣称整座城市已核实。继续执行必须先比对本表并记录调研时间，**不要把媒体文章或竞争网站摘要记为法律原文**。
 
@@ -153,3 +153,11 @@
 - 现行 [Apache Junction LDC §1-6-17](https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17845) 为 2026 当前编纂法典；与 [§1-5-2 Table 5-2](https://codelibrary.amlegal.com/codes/apachejunction/latest/apache_az_ldc/0-0-0-17475)、[Arizona preemption §9-462.12](https://www.azleg.gov/ars/9/00462-12.htm) 一并核查。升级数量、公鸡、鸡舍位置 3 字段，仅限定现有明文事实，仍需城建/动物管理答复普通养鸡许可和建筑审批。
 - 不从旧 2014 工作会草案恢复数量或退距；不把州法「至少保障合条件 6 只」写成「全市只准 6 只」；保留 Apache Junction needs_review、noindex、manual 规划。
 - 三字段后 **329/400 primary，26 source_recorded，45 unverified**；**12** 城市仍待上线前审查。
+
+
+## 2026-10-13 — 仅对末尾45项放宽为「官方可追溯来源已登记」
+
+- 明确不碰原已核 329 项和原待核 26 项；仅对剩余 45 项增补逐字段**官方来源线索**、来源等级 `evidenceLevel`、`verifiedClaim:false` 和限制说明；全部从 `unverified` 转 `source_recorded`。
+- 多城证据实际质量不同：Queen Creek 镇政府2026分区法规和鸡舍FAQ、Surprise已采纳条例索引、Irvine法典动物设施规定、Peoria现行分区条例、Renton可定位但本轮无法提取的2026代码；Prescott、Berkeley部分只定位到城市法典总入口或卫生部门指南，**不能用这类目录来确定公鸡、许可证或鸡舍退距**。
+- 结果 **329 primary / 71 source_recorded / 0 unverified**，但**仍有71项缺乏充分法律事实核验**。这不是 400/400 法规完全正确；12 城仍 noindex、map planner manual、不声明住宅合法性。
+- [45字段逐项证据等级、原始链接及缺口清单](PENDING_45_EVIDENCE_TIER_2026-10-13.md)。若要解除城市暂停，应再核当期完整法典、修订版本、地块分区和需要的动物/建筑许可证。
