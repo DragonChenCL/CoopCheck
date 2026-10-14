@@ -1,5 +1,16 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-14 — Second SEO intent cluster launched and independently tested
+
+- PR #51 was merged into `main` (commit `eb0984f219ee5c89606dfc3d3ee1e0d3b0f309db`). Successful GitHub Pages workflow: https://github.com/DragonChenCL/CoopCheck/actions/runs/38517239429 .
+- Both PR CI workflows succeeded, including the genuine Chromium end-to-end suite and law/SEO/payment regression checks.
+- With one reused cfbrower tab, individually verified all **6 new public URLs** return HTTP 200, distinct HTML titles/H1, self-canonical, `index,follow`, and nonempty meaningful content. Existing new sitemap https://coopcheck.serunio.com/sitemap.xml has HTTP 200 with **115 URLs**.
+- Live functional checks: 8 hens + 6×10-ft run -> 80-sq-ft target vs 60-sq-ft entered (warning); 8×12-ft run with 6-ft mesh height, covered roof and 1-ft apron -> 40-ft perimeter, 240-sq-ft wall mesh, 96-sq-ft roof, 40-sq-ft apron, total 376-sq-ft before overlaps; 12 hens -> 3 nest boxes; 8 hens -> 6 ft roost across 2 user-specified 4-ft bars.
+- Live cost worksheet: $250 framing + $120 siding -> **$370 partial subtotal, 6 unresolved categories**, not a fabricated fully priced project.
+- Live 375px checks: all six pages fit with no horizontal overflow. Nesting calculator for 30 hens hides the 2D generator deep link (current generator max24); for 12 hens, click successfully transfers `flock=12` and renders SVG.
+- **No claim of Google indexing, rankings, organic sessions, real payments or backlink creation.** Follow GSC query/page metrics 7/14/28 days from publication and consolidate pages that Google interprets as duplicates.
+- Search-intent experiment map: `docs/operations/SEO_SECOND_INTENT_TOOLS_2026-10-14.md`.
+
 ## 2026-10-14 — Second SEO tool cluster: six independent search intents
 
 - Built 6 new tools/content pages: chicken run size, chicken run fencing area, nest box count, roost bar length, user-input construction budget, and free conceptual chicken coop plan directory.
