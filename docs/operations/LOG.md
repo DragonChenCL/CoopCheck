@@ -1,5 +1,13 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-13 — BYC contact-form failure; stop repeats
+
+- User attempted the BackYard Chickens contact form twice: first a referenced Portland city-ordinance correction request, then a shorter plain-text/no-URL version. Both returned: "Your content can not be submitted. This is likely because your content is spam-like or contains inappropriate elements." **Neither submission succeeded.** Do NOT count either as outreach sent, article correction, backlink or approved post.
+- Stop repeated submissions or filter circumvention; no proof which content or account/anti-spam rule caused rejection. Mark BYC public contact form `blocked_by_spam_filter`. Do not advise new accounts, IP rotation, alternate spelling tricks or further variants.
+- Editorial target remains a valid documented outdated ordinance lead, but do not retry via the failed form. Community Chickens guest pitch was already sent on 2026-10-13; avoid duplicate.
+- Alternate researched publication: https://boskizbackyard.com/write-for-us explicitly permits one genuinely relevant disclosed link and requests short topic pitches; **requires firsthand chicken-keeping/DIY experience**. Do not invent credentials or send an AI-written expert impersonation. Only contact with verified personal experience/accurate research framing that the publisher accepts.
+- Next practical focus: monitor actual GSC indexed pages and original guide worksheet-to-planner engagement; consider ethical link opportunities from editorial resource pages based on the original legal geometry explainer, not mass guest-post spam.
+
 ## 2026-10-13 — Next acquisition step after GSC manual submissions
 
 - User confirmed GSC manual URL inspection/index request work completed; no verified Google index outcome implied, avoid duplicate submissions.
