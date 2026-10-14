@@ -2,7 +2,7 @@ const fs=require("node:fs");const p=require("node:path");const assert=require("n
 const root=p.resolve(__dirname,".."),r=JSON.parse(fs.readFileSync(p.join(root,"site/data/cities.json"),"utf8")),e=JSON.parse(fs.readFileSync(p.join(root,"site/data/policy-evidence.json"),"utf8"));
 const keys=["max","roosters","permit","placement"];assert.equal(r.cities.length,100);assert.equal(Object.keys(e.cities).length,100);
 let confirmed=0;
-for(const c of r.cities){const rec=e.cities[c.slug];assert(rec,c.slug+" missing");for(const key of keys){const x=rec[key];assert(x,c.slug+"/"+key+" missing");assert(["unverified","source_recorded","primary_clause_checked"].includes(x.status));if(c.audit.status==="needs_review")assert.equal(x.status,"unverified","unreviewed city cannot claim verified policy");if(x.status==="primary_clause_checked"){assert(x.section&&x.url&&x.checkedAt,"field-specific evidence metadata missing");assert(c.sources.some(s=>s.url===x.url),"field source not in city registry");confirmed++;}}}
+for(const c of r.cities){const rec=e.cities[c.slug];assert(rec,c.slug+" missing");for(const key of keys){const x=rec[key];assert(x,c.slug+"/"+key+" missing");assert(["unverified","source_recorded","primary_clause_checked"].includes(x.status));if(c.audit.status==="needs_review"&&x.status!=="unverified")assert(c.audit.searchStatus==="partial_primary_fields_confirmed"&&c.verified===null&&c.planner.mode==="manual","No reviewed evidence can be used for an indexed/automated pending city");if(x.status==="primary_clause_checked"){assert(x.section&&x.url&&x.checkedAt,"field-specific evidence metadata missing");assert(c.sources.some(s=>s.url===x.url),"field source not in city registry");confirmed++;}}}
 const queue=fs.readFileSync(p.join(root,"docs/operations/PENDING_LAW_RESEARCH_2026-10-13.md"),"utf8");
 const recorded=Object.values(e.cities).flatMap(fields=>keys.map(key=>fields[key])).filter(x=>x.status==="source_recorded").length;
 const unverified=Object.values(e.cities).flatMap(fields=>keys.map(key=>fields[key])).filter(x=>x.status==="unverified").length;
@@ -154,3 +154,13 @@ const m=fs.readFileSync(p.join(root,"POLICY_COMPLETENESS_2026-10-13.md"),"utf8")
 for(const key of ["roosters","placement"])assert.equal(e.cities["dallas-tx"][key].status,"source_recorded","post-August Dallas clause must not be marked current: "+key);
 assert(bySlug["dallas-tx"].roosters.includes("August 12, 2026")&&bySlug["dallas-tx"].placement.includes("NOT confirmed"),"Dallas warning lost");
 assert(bySlug["dallas-tx"].planner.mode==="manual","Dallas planner must remain manual");
+
+// Apache Junction has 3 scoped 2026 city-law clauses, but is still NOINDEX/needs_review until permit confirmed.
+const apache=bySlug["apache-junction-az"];
+assert.equal(apache.audit.status,"needs_review","Apache Junction must remain paused without permit evidence");
+assert.equal(apache.audit.searchStatus,"partial_primary_fields_confirmed","Apache current-law audit marker lost");
+for(const k of ["max","roosters","placement"])assert.equal(e.cities["apache-junction-az"][k].status,"primary_clause_checked","Apache current LDC primary clause lost: "+k);
+assert.equal(e.cities["apache-junction-az"].permit.status,"unverified","Apache chicken/building permits are unproven");
+assert(apache.max.includes("STATE")&&apache.max.includes("SIX"),"Arizona six-hen override must remain explicit");
+assert(apache.placement.includes("15-ft")&&apache.placement.includes("20 ft"),"Apache setback state/city distinction lost");
+assert(apache.planner.mode==="manual"&&apache.verified===null,"No automated Apache legal approval");
