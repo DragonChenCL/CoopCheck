@@ -185,6 +185,76 @@ async function main(){
 
     await page.goto(base+"/coop-plan.html?flock=12&source=coop-size",{waitUntil:"networkidle"});
     assert.equal(await page.locator("#planFlock").inputValue(),"12");
+    // Independently useful second-cluster tools: live browser formulas, not just keyword strings.
+    const toolPages=["chicken-run-size-calculator","chicken-run-fencing-calculator","chicken-nesting-box-calculator","chicken-roost-length-calculator","chicken-coop-cost-calculator","free-chicken-coop-floor-plans"];
+    for(const slug of toolPages){
+      const res=await page.goto(base+"/guides/"+slug+".html",{waitUntil:"networkidle"});
+      assert.equal(res.status(),200,"intent tool 200 "+slug);
+      assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"),"https://coopcheck.serunio.com/guides/"+slug+".html");
+      assert.equal(await page.locator("h1").count(),1);
+    }
+    await page.goto(base+"/guides/chicken-run-size-calculator.html",{waitUntil:"networkidle"});
+    assert.match(await page.locator("#toolOutput").innerText(),/60 sq ft/);
+    await page.locator('input[name="flock"]').fill("8");
+    await page.locator('form[data-coop-tool="run"] button').click();
+    assert.match(await page.locator("#toolStatus").innerText(),/below the 10 sq ft per bird/i);
+    await page.locator('input[name="flock"]').fill("6");
+    await page.locator('form[data-coop-tool="run"] button').click();
+    assert.match(await page.locator("#toolStatus").innerText(),/meets the illustrative/i);
+    await page.locator("#toolPlanLink").click();
+    await page.locator("#planSvgPreview svg").waitFor();
+    assert.equal(await page.locator("#planFlock").inputValue(),"6");
+    console.log("PASS: actual run-size target shortfall and deep-linked plan generator");
+
+    await page.goto(base+"/guides/chicken-run-fencing-calculator.html",{waitUntil:"networkidle"});
+    const mesh=await page.locator("#toolOutput").innerText();
+    assert(mesh.includes("40 linear ft")&&mesh.includes("240 sq ft")&&mesh.includes("96 sq ft")&&mesh.includes("376 sq ft"));
+    await page.locator('input[name="roof"]').uncheck();
+    await page.locator('form[data-coop-tool="mesh"] button').click();
+    assert.match(await page.locator("#toolOutput").innerText(),/280 sq ft/);
+    console.log("PASS: mesh perimeter, wall, covered roof and optional apron geometry");
+
+    await page.goto(base+"/guides/chicken-nesting-box-calculator.html",{waitUntil:"networkidle"});
+    await page.locator('input[name="flock"]').fill("12");
+    await page.locator('form[data-coop-tool="nests"] button').click();
+    assert.match(await page.locator("#toolOutput").innerText(),/3/);
+    await page.locator("#toolPlanLink").click();
+    await page.locator("#planSvgPreview svg").waitFor();
+    assert.equal(await page.locator("#planFlock").inputValue(),"12");
+    console.log("PASS: nest box count and plan prefill");
+
+    await page.goto(base+"/guides/chicken-roost-length-calculator.html",{waitUntil:"networkidle"});
+    assert.match(await page.locator("#toolOutput").innerText(),/6 ft/);
+    assert.match(await page.locator("#toolOutput").innerText(),/2/);
+    await page.locator('input[name="flock"]').fill("12");
+    await page.locator('form[data-coop-tool="roost"] button').click();
+    assert.match(await page.locator("#toolOutput").innerText(),/9 ft/);
+    assert.match(await page.locator("#toolOutput").innerText(),/3/);
+    console.log("PASS: perch length and bar count");
+
+    await page.goto(base+"/guides/chicken-coop-cost-calculator.html",{waitUntil:"networkidle"});
+    await page.locator('input[name="framing"]').fill("250");
+    await page.locator('input[name="siding"]').fill("120");
+    await page.locator('form[data-coop-tool="cost"] button').click();
+    assert.match(await page.locator("#toolOutput").innerText(),/370\.00/);
+    assert.match(await page.locator("#toolStatus").innerText(),/Partial subtotal only/);
+    assert.match(await page.locator("#toolStatus").innerText(),/Missing costs/);
+    console.log("PASS: real quotes produce partial subtotal, not fabricated construction price");
+
+    await page.goto(base+"/guides/free-chicken-coop-floor-plans.html",{waitUntil:"networkidle"});
+    assert.match(await page.locator("h1").innerText(),/free chicken coop floor plans/i);
+    assert.match(await page.locator("main").innerText(),/not pre-engineered/i);
+    const cards=await page.locator(".ct-mini").count();
+    assert.equal(cards,4);
+    await page.setViewportSize({width:375,height:812});
+    for(const slug of ["chicken-run-size-calculator","chicken-coop-cost-calculator","free-chicken-coop-floor-plans"]){
+      await page.goto(base+"/guides/"+slug+".html",{waitUntil:"networkidle"});
+      const sizes=await page.evaluate(()=>({viewport:innerWidth,scroll:document.documentElement.scrollWidth}));
+      assert(sizes.scroll<=sizes.viewport+2,"mobile intent tool overflow "+slug+" "+JSON.stringify(sizes));
+    }
+    console.log("PASS: six new SEO pages including mobile layout and real numeric interactions");
+    await page.goto(base+"/coop-plan.html?flock=12&source=roost",{waitUntil:"networkidle"});
+    assert.equal(await page.locator("#planFlock").inputValue(),"12");
     await page.setViewportSize({width:375,height:812});
     await page.reload({waitUntil:"networkidle"});
     const metrics=await page.evaluate(()=>({

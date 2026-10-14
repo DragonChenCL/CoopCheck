@@ -42,6 +42,10 @@ jobs:
         run: node scripts/generate-coop-seo-pages.cjs --check
       - name: Verify ten SEO utility pages and real calculator
         run: node scripts/qa-coop-seo.cjs
+      - name: Verify six task-specific search intent landing tools in sync
+        run: node scripts/generate-coop-intent-tools.cjs --check
+      - name: Verify run, mesh, nesting, roost and cost calculations
+        run: node scripts/qa-coop-intent-tools.cjs
       - name: Verify local-only chicken coop plan generator and diagram geometry
         run: node scripts/qa-coop-plan.cjs
       - name: Verify per-city ordinance evidence integration and map handoff
