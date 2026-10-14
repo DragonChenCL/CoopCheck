@@ -3,7 +3,7 @@
 Checked 2026-10-13. **The presence of an official source is NOT proof that each flock, rooster, permit and placement claim has been verified against its operative code section.** Historical `verified` means a source-reviewed summary, not a complete zoning or legal clearance.
 
 Cities: 100. Source-reviewed: 88 (44 general summaries; 44 limited-scope). Pending: 12.
-Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **328**; 24 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
+Four fields per city: 400. Independently matched to specific current official city code sections or published city regulatory guidance in this additional pass: **326**; 26 fields have source links but still need per-field confirmation; 48 fields belong to 12 pending city profiles.
 
 **Some cities now have all four field entries mapped to individual operative clauses or official government guidance, but this is NOT a parcel-specific approval.** Each city may still have zoning, property size, separate building-permit, effective-date and legal exception issues. A city government guide is not necessarily the latest enacted code.
 
@@ -94,7 +94,7 @@ Four fields per city: 400. Independently matched to specific current official ci
 | Yakima, WA | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Redmond, WA | verified | Clause checked | Clause checked | Clause checked | Clause checked |
 | Houston, TX | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
-| Dallas, TX | verified_limited_scope | Source; clause pending | Clause/guidance checked | Source; clause pending | Clause/guidance checked |
+| Dallas, TX | verified_limited_scope | Source; clause pending | Source; clause pending | Source; clause pending | Source; clause pending |
 | San Antonio, TX | verified | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked | Clause/guidance checked |
 | Plano, TX | verified_limited_scope | Clause checked | Clause checked | Clause checked | Clause checked |
 | Frisco, TX | verified_limited_scope | Clause/guidance checked | Clause/guidance checked | Source; clause pending | Clause checked |
@@ -362,3 +362,7 @@ Exactly **20** source_recorded fields mapped to the operative published city cod
 New scope-matched official entries (2): Yakima WA `permit` ([Planning FAQ](https://www.yakimawa.gov/services/planning/faq/): 200-sq-ft detached residential accessory building threshold is **building** permit, not chicken-keeping license) and NYC NY `max` ([Mayor's Office FAQ](https://www.nyc.gov/site/agriculture/faqs/frequently-asked-questions.page): hens permitted but these sources state no uniform numeric quota; **not unlimited**). Current **328/400**, **24 source_recorded**, **48 unverified**. The full disposition of the 26 original entries is [FINAL_26_FIELD_REVIEW_2026-10-13.md](docs/operations/FINAL_26_FIELD_REVIEW_2026-10-13.md).
 
 **Dallas TX high-severity supersession alert:** On **August 12, 2026**, Dallas City Council official [approved agenda 26-2375A](https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=) describes **repeal of the rooster-keeping prohibition** through amendments to §7-7.3. The older, already checked `roosters`/rooster-only `placement` legal conclusion in CoopCheck was derived from an older code and is **at risk of being superseded**. The ordinance attachment did not resolve via direct retrieval during this review. Verify operative effective text and immediately correct website, planner, SEO pages, source links, generated data and tests in a dedicated P0 code fix; do not treat old categorical rooster restrictions or 20-ft special-exception pen offset as applicable to current users.
+
+## 2026-10-13 Dallas supersession correction
+
+Council approved [item 26-2375A](https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=) on 2026-08-12 describing repeal of the rooster ban. The enrolled ordinance and exact effective date are not available from the official attachment during this check. Withdraw prior July 2026 §7-7.3 rooster and rooster-exception 20-ft placement claims as current-law proof; both fields revert to source_recorded. Dallas public guide now warns of uncertainty, manual planner unchanged. **Current counts: 326/400 checked, 26 source_recorded, 48 unverified.** Historical 328/24 was the narrow two-field batch before this necessary correction.
