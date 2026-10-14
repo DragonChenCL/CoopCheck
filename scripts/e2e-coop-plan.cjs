@@ -137,6 +137,10 @@ async function main(){
     assert.equal(await page.locator("#planFlock").inputValue(),"6","pending city cannot prefill numerical allowance");
     await page.goto(base+"/coop-plan.html?city=austin-tx&source=rules",{waitUntil:"networkidle"});
     assert.match(await page.locator("#planLawResult").innerText(),/More city or property checks needed/i);
+    assert.match(await page.locator("#planLawResult").innerText(),/all fowl enclosures/i);
+    assert.match(await page.locator("#planLawResult").innerText(),/30 ft/i);
+    assert.match(await page.locator("#planLawResult").innerText(),/50 ft/i);
+    assert.doesNotMatch(await page.locator("#planLawResult").innerText(),/two or more chickens/i);
     console.log("PASS: pending and scope-limited city law screens fail closed");
 
     await page.setViewportSize({width:375,height:812});
