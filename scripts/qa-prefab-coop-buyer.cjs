@@ -40,7 +40,7 @@ for(const item of api.PRODUCTS){
 const h=read('site/guides/prefab-chicken-coop-capacity-checker.html');
 assert(h.includes('<link rel="canonical" href="https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html">'));
 assert(h.includes('name="robots" content="index,follow"'));
-assert(h.includes('/assets/prefab-capacity.js?v=20261015-1'));
+assert(h.includes('/assets/prefab-capacity.js?v=20261015-2'));
 assert(h.includes('/assets/prefab-capacity.css?v=20261015-1'));
 for(const id of ['bcFlock','bcOutdoor','bcResults','bcBar','bcCopyQuestion','bcPrint','bcCustomFields','bcCustomLength','bcCustomWidth','bcCustomRunLength','bcCustomRunWidth','bcCustomName','bcUnit','bcRunEvidence','bcSellerSource'])
   assert(h.includes('id="'+id+'"'),'Required form/control ID '+id);
