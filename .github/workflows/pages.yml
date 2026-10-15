@@ -42,6 +42,8 @@ jobs:
         run: node scripts/generate-coop-seo-pages.cjs --check
       - name: Verify ten SEO utility pages and real calculator
         run: node scripts/qa-coop-seo.cjs
+      - name: Guard every sitemap URL canonical and indexability
+        run: node scripts/qa-sitemap-indexability.cjs
       - name: Verify six task-specific search intent landing tools in sync
         run: node scripts/generate-coop-intent-tools.cjs --check
       - name: Verify run, mesh, nesting, roost and cost calculations
