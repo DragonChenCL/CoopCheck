@@ -52,12 +52,13 @@
 <button type="button" class="bc-choice" data-bc-pick="pawhut" aria-pressed="false"><span>PawHut</span><strong>Wooden House</strong><small>Advertised 4–6 hens</small></button>
 <button type="button" class="bc-choice bc-choice-custom" data-bc-pick="custom" aria-pressed="false"><span>ANOTHER LISTING</span><strong>My dimensions +</strong><small>Manually enter measurements</small></button>
 </div>
-<fieldset class="bc-custom-fields" id="bcCustomFields"><legend>If checking your own listing, enter clear indoor-floor dimensions</legend>
+<fieldset class="bc-custom-fields" id="bcCustomFields" hidden><legend>If checking your own listing, enter clear indoor-floor dimensions</legend>
 <div class="bc-field"><label for="bcCustomName">Product name <span>(optional)</span></label><input id="bcCustomName" type="text" maxlength="70" placeholder="e.g., My local coop listing" autocomplete="off"></div>
 <div class="bc-custom-grid"><div class="bc-field"><label for="bcCustomLength">Inside length</label><input id="bcCustomLength" type="number" step="any" min="0.1" placeholder="e.g., 5"></div>
 <div class="bc-field"><label for="bcCustomWidth">Inside width</label><input id="bcCustomWidth" type="number" step="any" min="0.1" placeholder="e.g., 4"></div>
 <div class="bc-field"><label for="bcUnit">Unit</label><select id="bcUnit"><option value="ft">feet</option><option value="in">inches</option></select></div></div>
-<p>Use the <strong>usable house interior</strong>, not the outside overall width or the house-plus-run footprint. Entering your own dimensions does not verify them.</p>
+<div class="bc-custom-grid bc-run-inputs"><div class="bc-field"><label for="bcCustomRunLength">Separate run length <span>(optional)</span></label><input id="bcCustomRunLength" type="number" step="any" min="0.1" placeholder="e.g., 10"></div><div class="bc-field"><label for="bcCustomRunWidth">Separate run width <span>(optional)</span></label><input id="bcCustomRunWidth" type="number" step="any" min="0.1" placeholder="e.g., 8"></div></div>
+<p>Use the <strong>clear sleeping-house interior</strong>, not the exterior width or the house-plus-run footprint. Both indoor and run figures you enter are unverified by CoopCheck. This page compares indoor area only; it does not certify your run.</p>
 </fieldset>
 </div>
 
