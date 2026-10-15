@@ -1,5 +1,12 @@
 # CoopCheck 真实外链及获客机会清单 — 2026-10-13
 
+## 2026-10-15 执行状态补充（覆盖本文 10-13 的历史“未提交”状态）
+
+- **Backyard Chicken Pro：已通过官网联系表单提交一次定制编辑建议。** 现场确认 `Thanks for contacting us! We will be in touch with you shortly.`；提交的是其 predator-proof checklist 增补 Portland 真实法规和核对工具的建议，透明披露项目关系。**待编辑回复；未取得外链。不要重复联系。** 见 [10-15 执行日志](LOG.md)。
+- **BackYard Chickens：** `coop-ordinances-in-your-town` 帖子的 #4 官方法规比较回复已在已登录浏览器中显示、无待审提示；正文没有 CoopCheck URL，不计外链。BYC 联系表单此前反垃圾失败，不再重试。
+- **Pinterest：** 经浏览器实查，Pin creation URL 重定向到未登录首页，且显示 reCAPTCHA 服务连接失败。需账号持有人正常登录后再试；目前**零 Pin**。
+- **Community Chickens：** 先前邮件已经发送，等待答复；勿重发。**新增被证实公开的 CoopCheck URL 引荐仍为 0**。
+
 ## 状态与执行原则
 
 **截至本次调查：新增已公开 CoopCheck 引荐链接 = 0。** 候选站点不是已获得的 backlink，编辑投稿/评论提交也不算公开外链。
