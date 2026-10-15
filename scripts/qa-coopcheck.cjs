@@ -129,3 +129,12 @@ console.log("PASS: Portland lot-size screen threshold boundaries and source-back
 const pagesWorkflow=fs.readFileSync(path.resolve(__dirname,"../.github/workflows/pages.yml"),"utf8");
 assert(pagesWorkflow.includes('const tag = \'<script defer src="/assets/analytics.js"></script>\';'),"GA4 injection must not block HTML parsing");
 assert(pagesWorkflow.includes("walk(root)")&&pagesWorkflow.includes("html.includes('/assets/analytics.js')"),"GA4 injection must recurse and not duplicate");
+
+// Keep San Diego's three distinct chicken setback tiers sourced and explicit.
+const sdCity=read("cities/san-diego-ca.html");
+assert(sdCity.includes("§42.0709(e)(2)"),"San Diego enacted ordinance reference");
+assert(sdCity.includes("Up to 5 hens:")&&sdCity.includes("Up to 15 hens:")&&sdCity.includes("Up to 25 hens:"),"San Diego three-tier explanation");
+assert(sdCity.includes("whichever is greater")&&sdCity.includes("any structure used for residential purposes"),"San Diego property-line versus residential-structure distinction");
+assert(sdCity.includes("not a blanket 50-ft property-line setback"),"San Diego 50-ft separation is not a property-line setback");
+assert(sdCity.includes("../coop-plan.html?city=san-diego-ca&amp;source=rules"),"Keep San Diego city-to-plan handoff");
+console.log("PASS: source-backed San Diego setbacks and existing plan handoff");
