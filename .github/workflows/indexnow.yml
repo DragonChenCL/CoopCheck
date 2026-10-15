@@ -19,7 +19,7 @@ jobs:
       - name: Checkout successfully deployed production commit
         uses: actions/checkout@v4
         with:
-          ref: \${{ github.event.workflow_run.head_sha }}
+          ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 2
       - name: Submit only changed canonical and indexable URLs
         shell: bash
