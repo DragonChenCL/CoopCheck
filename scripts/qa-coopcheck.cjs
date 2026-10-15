@@ -75,7 +75,7 @@ for(const city of policyRegistry.cities){
   }
 }
 assert(read("coverage.html").includes("100 cities tracked"),"coverage directory generated");
-assert.equal((read("sitemap.xml").match(/<url>/g)||[]).length,27+reviewedCities.length,"sitemap includes reviewed city pages, existing entrypoints and 16 coop SEO pages");
+assert.equal((read("sitemap.xml").match(/<url>/g)||[]).length,28+reviewedCities.length,"sitemap includes reviewed city pages, existing entrypoints and 17 coop SEO/buyer pages");
 
 const phoenixPolicy=policyRegistry.cities.find(c=>c.slug==="phoenix-az");
 assert(phoenixPolicy.max.startsWith("Up to 6 poultry"),"Phoenix uses current six-poultry baseline");
