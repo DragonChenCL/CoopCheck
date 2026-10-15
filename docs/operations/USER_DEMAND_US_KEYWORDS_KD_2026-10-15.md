@@ -97,3 +97,23 @@ Not all posts in the 38-thread register have been re-fetched in this cross-study
 - Human problem repetition: **L2** for sizes, plans, and build-vs-buy at a **thread** level; not a representative prevalence estimate.
 - Search opportunity: **conditional L3 evidence** for the **29 exact keyword estimates from one provider** (independent demand signal, subject to source discrepancies). This is NOT proof of our ability to rank or access clicks.
 - Business validation: **not L4**. No verified real-user paid conversion, affiliate revenue or sales trace. CPC never equals our earning per click.
+
+
+## Second-pass safety, ventilation and purchase threads, not part of the original 38 denominator
+
+During a follow-up query explicitly targeting the high-volume keywords `predator proof chicken coop` and `chicken coop ventilation`, **10 additional distinct original threads** within the same 90-day date window were found and checked by direct search result source. These are **deliberately separate from the previously registered 38**; numbers from different search passes are not added to a demand-rate percentage, and OP identity has not been fully checked across discussions.
+
+| Original date | Thread | First-hand need or caution |
+|---|---|---|
+| 2026-08-12 | [BYC: Official run underway](https://www.backyardchickens.com/threads/official-run-is-underway%E2%80%94comments-concerns.1694130/) | 10×13 protected run for five hens; seeks feedback about door, dig skirt, predator vulnerabilities and expansion |
+| 2026-09-01 | [Reddit: Rehoming flock with coop](https://www.reddit.com/r/BackYardChickens/comments/1w46yrl/rehoming_chickens_with_their_coop_question/) | Moving existing secure enclosure versus rebuilding for first-time owners |
+| 2026-09-06 | [Reddit: Coop design questions](https://www.reddit.com/r/BackYardChickens/comments/1w8jlrz/chicken_coop_design_questions/) | South Dakota owner building 8×8 for 12 chicks needs winter roof/eave ventilation, insulation and covered run advice |
+| 2026-09-07 | [Reddit: Pet chickens lost during heat](https://www.reddit.com/r/BackYardChickens/comments/1w9v3se/pet_chickens/) | First-hand tragic heat exposure concern; demonstrates important welfare risk, **not** a safe opportunity for simplistic ventilation calculations |
+| 2026-09-23 | [Reddit: Hawk in backyard](https://www.reddit.com/r/BackYardChickens/comments/1woa9mf/hawk_in_my_backyard_trying_to_prey_on_my_chickens/) | Owner seeks protection against a specific avian predator; responses note roofed runs and no enclosure is perfectly safe |
+| 2026-10-01 | [Reddit: Fox-proof run](https://www.reddit.com/r/BackYardChickens/comments/1wvev7k/fox_proof_run/) | Asks actual hardware-cloth height and buried skirt, because existing Amazon run has only chicken wire |
+| 2026-10-01 | [Reddit: Heatwave incoming](https://www.reddit.com/r/BackYardChickens/comments/1wuy9du/heatwave_incoming_want_your_thoughts/) | Owner worried about hot nesting area after suspected heat-related fatality; needs contextual heat safety, not a generic open-window count |
+| 2026-10-03 | [Reddit: Nestera coops](https://www.reddit.com/r/BackYardChickens/comments/1wwntmx/nestera_chicken_coops/) | Three-bird buyer comparing winter suitability and prefab durability; commenter says may improve ventilation |
+| 2026-10-06 | [Reddit: Coop and water heating](https://www.reddit.com/r/BackYardChickens/comments/1wys26x/coop_and_water_heating/) | Winter setup with a distant water source, insulated coop, power/solar heating dilemma |
+| 2026-10-14 | [Reddit: Chicken coop thoughts](https://www.reddit.com/r/BackYardChickens/comments/1x5gt8l/chicken_coop_thoughts/) | Finished 6×12 enclosure owner requests predator-fastener feedback and joins between mesh panels |
+
+**Interpretation:** High volume `predator proof chicken coop` (9,900 / KD 0 / $1.45 CPC) and `chicken coop ventilation` (6,600 / KD 0 / $0.76 CPC) represent genuinely recurring recent problems. However, safety and animal-welfare impacts are material. CoopCheck should avoid a fictitious `100% predator proof` badge or a universal ventilation formula derived from a tiny anecdotal dataset. Better potential content: sourced hazard/verification checklists, illustrations and links to qualified extension/husbandry guidance. These ten newly found cases are not evidence of nationwide growth or commercial conversion.
