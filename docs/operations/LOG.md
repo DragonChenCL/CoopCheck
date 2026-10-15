@@ -1,5 +1,32 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-15 — Full production sitemap audit, San Diego freshness and BYC source correction
+
+**Scope:** Organic-search discoverability and transparent reader benefit; Pinterest and GA4 explicitly deferred by site owner.
+
+### Full actual production audit (115 of 115)
+- Reused a single browser tab and read https://coopcheck.serunio.com/sitemap.xml (HTTP 200; **115 URLs**).
+- Fetched **every one** of the 115 public URLs in batches; **115 returned HTTP 200**.
+- All 115 had sitemap-URL-matching canonical tags, nonempty H1 and unique page titles; **0 explicit noindex**, **0 canonical mismatches**, **0 errors**, **0 duplicate titles** among sitemap URLs. This confirms *basic HTTP/indexability markup only*; it does **not** mean Google or Bing crawled/indexed them, nor prove complete usefulness, content uniqueness or legal accuracy.
+- GSC connected search analytics as checked this session: 2026-09-15..10-15 still reports **23 impressions / 0 clicks**, three visible pages (Oregon state 9; Portland city 9; home 5). Recently created content needs more time; no new indexing requests were made.
+- Bing Webmaster Tools not authenticated in the current browser; Windsor.ai has GSC but no Bing Webmaster account connected. **No Bing index/rank analytics claim**. Bing officially supports importing a verified Google Search Console property.
+
+### Actual fix and CI
+- Found **San Diego city page was updated Oct 15** but its sitemap `lastmod` still said **Oct 12**. Preserved the historical source-review field; changed only the content modification timestamp in both `scripts/generate-coverage-pages.cjs` and generated `site/sitemap.xml`.
+- Added `scripts/qa-sitemap-indexability.cjs` to PR and GitHub Pages CI: checks all sitemap targets exist as local HTML, matching canonical, no noindex, unique title, nonempty H1, valid `lastmod`, and `robots.txt` sitemap reference. This prevents obvious future regressions but is not a live SEO audit.
+- [PR #56](https://github.com/DragonChenCL/CoopCheck/pull/56) merged after validation CI success. [GitHub Pages deploy](https://github.com/DragonChenCL/CoopCheck/actions/runs/38713825376) **success**. [Triggered IndexNow notifier](https://github.com/DragonChenCL/CoopCheck/actions/runs/38713879601) **success**: exactly **1** URL (`https://coopcheck.serunio.com/cities/san-diego-ca.html`), IndexNow **HTTP 200**. IndexNow receipt **is not confirmation of indexing**.
+
+### External editorial-source correction (no backlink)
+- BYC 2012 article https://www.backyardchickens.com/articles/portland-oregon-chicken-ordinance.61358/ still states `Three or less without permit` and outdated Title 13 citations, though a 2023 review already hints four birds. Actual Portland City Code §13.40.020(A)(1), amended effective Jan 10, 2025: ordinarily up to **4** small fowl on any lot, **6** on 10,000+ sq-ft lots, with specified additional young-fowl and agricultural exceptions. Original official citations: https://www.portland.gov/code/13/40/020 and https://www.portland.gov/bps/sustainability/guide-bees-and-livestock/chickens-and-fowl .
+- Logged-in BYC account used **Report content** dialog once, submitting a polite factual correction (not a marketing link). Dialog closed after submission; **no explicit moderator-acceptance receipt** was displayed, so this is an *attempted/submitted correction, unconfirmed moderation result*. No public comment, link, rating, follow-up or duplicate report submitted. **Do not repeatedly report**.
+
+### Next practical checks
+- Review GSC five-URL cohort around Oct 21/28 for actual new crawl and indexing decisions; separate impressions from clicks and do not resend requests prematurely.
+- Bing Webmaster Tools can be imported from verified GSC after owner connects an account; IndexNow alone doesn't unlock search performance reports.
+- Check editorial replies (Community Chickens, Backyard Chicken Pro, Waddle & Cluck) before further outreach; no replies were found in Gmail in this session. Prior editorial pitches are still pending, not backlinks.
+- Organic traffic is not yet verified. Avoid adding low-quality pages, repeated forum posts, or implying any ranking improvement from IndexNow.
+
+
 ## 2026-10-15 — Bing/IndexNow first five URLs successfully acknowledged
 
 - Owner explicitly deferred Pinterest and GA4. We targeted search discoverability instead of further city/page expansion.
