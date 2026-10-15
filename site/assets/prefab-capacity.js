@@ -163,7 +163,7 @@
       }
     });
     $("bcPrint").addEventListener("click",()=>window.print());
-    const params=new URLSearchParams(root.location?.search||"");
+    const params=new URLSearchParams(doc.defaultView?.location?.search||"");
     const q=Number(params.get("hens"));
     if(validFlock(q))flock.value=String(q);
     choose("cabana");

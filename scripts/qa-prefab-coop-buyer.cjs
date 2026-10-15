@@ -60,4 +60,35 @@ const url='https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-che
 assert.equal(sitemap.split('<loc>'+url+'</loc>').length-1,1);
 assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-10-15</lastmod>'));
 assert(read('site/index.html').includes('href="guides/prefab-chicken-coop-capacity-checker.html"'));
-console.log('PASS: sourced prefab products, scenario arithmetic, invalid inputs, unknown run, buyer controls, mobile/print and canonical sitemap');
+// Simulate the first DOM mount (not just post-click handlers). This previously threw
+// a ReferenceError and left the initial result stuck on its HTML placeholder.
+function element(value=''){
+ return {value,textContent:'',dataset:{},style:{},hidden:false,href:'',
+   addEventListener(){},setAttribute(){},removeAttribute(){},
+   classList:{toggle(){}},focus(){},select(){}};
+}
+const mockEls=new Map();
+for(const id of ['bcFlock','bcResults','bcOutdoor','bcBar','bcCustomName','bcCustomLength',
+  'bcCustomWidth','bcUnit','bcCustomRunLength','bcCustomRunWidth','bcCustomFields',
+  'bcCopyStatus','bcBarLabel','bcProductHeading','bcProductId','bcBenchmark','bcAvailable',
+  'bcRun','bcResultTitle','bcResultText','bcAssumptions','bcAreaEvidence','bcRunEvidence',
+  'bcFootnote','bcSellerSource','bcPlanLink','bcCalcLink','bcCopyQuestion','bcPrint',
+  'bcCopyFallback'])mockEls.set(id,element());
+mockEls.get('bcFlock').value='6';
+mockEls.get('bcOutdoor').value='yes';
+mockEls.get('bcUnit').value='ft';
+const choices=api.PRODUCTS.map(p=>({dataset:{bcPick:p.id},setAttribute(){},classList:{toggle(){}},addEventListener(){}}));
+choices.push({dataset:{bcPick:'custom'},setAttribute(){},classList:{toggle(){}},addEventListener(){}});
+const fakeDoc={
+  getElementById:id=>mockEls.get(id)||null,
+  querySelectorAll:sel=>sel==='[data-bc-pick]'?choices:[],
+  defaultView:{location:{search:'?hens=7'},print(){}}
+};
+assert.doesNotThrow(()=>api.mount(fakeDoc),'Mount should not reference an out-of-scope root');
+assert.equal(mockEls.get('bcFlock').value,'7','URL parameter prefills valid user flock');
+assert.equal(mockEls.get('bcBenchmark').textContent,'21 sq ft');
+assert.equal(mockEls.get('bcResults').dataset.state,'below');
+assert.match(mockEls.get('bcResultText').textContent,/7 hens/,'First render must compute actual verdict, not retain static placeholder');
+assert.equal(mockEls.get('bcSellerSource').hidden,false,'Seller citation is linked at startup');
+
+console.log('PASS: sourced prefab products, scenario arithmetic, invalid inputs, unknown run, buyer controls, mobile/print first-render boot and canonical sitemap');
