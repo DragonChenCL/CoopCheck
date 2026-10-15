@@ -67,7 +67,8 @@ jobs:
           prev = sitemap_entries(subprocess.check_output(
               ['git', 'show', 'HEAD^:site/sitemap.xml'], text=True))
           diff = subprocess.check_output(
-              ['git', 'diff', '--name-status', '-M', 'HEAD^', 'HEAD', '--', 'site/'], text=True)
+              ['git', 'diff', '--name-status', '-M', 'HEAD^', 'HEAD', '--', 'site/',
+               'docs/operations/INDEXNOW_ACTIVATION_2026-10-15.md'], text=True)
           changed = set()
           for line in diff.splitlines():
               parts = line.split('\t')
@@ -79,7 +80,9 @@ jobs:
                   changed.add(path)
           changed.update(p for p, mod in now.items() if prev.get(p) != mod)
           # Bootstrap only recently updated priority URLs, not all 115 sitemap entries.
-          if any(line == 'A\t' + str(key_file) for line in diff.splitlines()):
+          if any(line in ('A\t' + str(key_file),
+              'A\tdocs/operations/INDEXNOW_ACTIVATION_2026-10-15.md')
+              for line in diff.splitlines()):
               changed.update(BOOTSTRAP & now.keys())
 
           eligible = []
