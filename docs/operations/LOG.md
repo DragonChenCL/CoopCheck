@@ -1,5 +1,19 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-15 — Bing/IndexNow first five URLs successfully acknowledged
+
+- Owner explicitly deferred Pinterest and GA4. We targeted search discoverability instead of further city/page expansion.
+- Read repo source: existing GitHub Pages workflow and canonical 115-entry sitemap; found no IndexNow integration. Official protocol: https://www.indexnow.org/documentation and Microsoft Bing guide: https://www.bing.com/indexnow/getstarted .
+- Added IndexNow ownership-key file at the **site root** and a successful-Page-deployment notifier with canonical sitemap intersection, noindex exclusion and Git-diff filtering. CI passed, merged [PR #53](https://github.com/DragonChenCL/CoopCheck/pull/53). Added documented one-time activation for the 5 recently updated pages, CI passed, merged [PR #54](https://github.com/DragonChenCL/CoopCheck/pull/54).
+- **Real notification receipts via connected browser on 2026-10-15**:
+  - `https://coopcheck.serunio.com/` — IndexNow `GET` returned **HTTP 202** (received, validation pending).
+  - `https://coopcheck.serunio.com/cities/portland-or.html`, `/guides/chicken-coop-size-calculator.html`, `/guides/chicken-run-size-calculator.html`, `/guides/free-chicken-coop-floor-plans.html` — one IndexNow JSON `POST` containing only those 4 URLs returned **HTTP 200**.
+  - First five total **all acknowledged**, **not proven crawled/indexed or ranked**. No claim of Google IndexNow support.
+- The automated notifier was triggered normally after Pages deployment and selected exactly 5 canonical URLs, but it **failed before POST** because GitHub Actions runners received HTTP errors while fetching the public key from the site. The same key URL was independently opened in cfbrower and returned the exact expected contents. Initial escaped checkout ref bug was diagnosed from actual Actions logs and fixed; the next workflow run completed successfully with 0 changed pages (correct for a code-only repair).
+- Adjusted notifier so public-key preflight from GitHub Actions becomes **diagnostic only**; participating search engines themselves verify ownership, avoiding false blocking from runner-vs-browser network differences. Future **automatic notification from Actions is not yet independently demonstrated by an actual changed-page POST**, so its end-to-end success remains a follow-up. Manual IndexNow GET/POST results above are confirmed.
+- No unauthorized forum posting, bulk submission, new account signup, GA4 analysis, rankings or referrals claimed. Do not re-submit those five URLs without changes; inspect actual Bing Webmaster crawl/index and site search activity when available.
+
+
 ## 2026-10-14 LA / 2026-10-15 browser — Source-led distribution (GA4 intentionally deferred)
 
 - GSC priority inspection/indexing actions are recorded separately in [SEO_GSC_PRIORITY_INDEX_REQUESTS_2026-10-15.md](SEO_GSC_PRIORITY_INDEX_REQUESTS_2026-10-15.md): five accepted requests, not five indexed URLs. **Do not resubmit**.
