@@ -17,7 +17,8 @@ for(const [slug,needles]of Object.entries(cities)){
  assert(html.includes('rel="canonical" href="https://coopcheck.serunio.com/cities/'+slug+'.html"'),slug+": incorrect canonical");
  assert((html.match(/<h1\b/g)||[]).length===1,slug+": unexpected H1 count");
  assert(!html.includes('name="robots" content="noindex'),slug+": cannot be noindex");
- assert(fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes('/cities/'+slug+'.html</loc><lastmod>2026-10-13</lastmod>'),slug+": sitemap lastmod");
+ assert(fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").includes('/cities/'+slug+'.html</loc><lastmod>'+(slug==="portland-or"?"2026-10-14":"2026-10-13")+"</lastmod>"),slug+": sitemap lastmod");
 }
 assert(fs.readFileSync(path.join(root,"assets/style.css"),"utf8").includes(".cc-benchmark-inner"));
+assert(fs.readFileSync(path.join(root,"cities/portland-or.html"),"utf8").includes('id="portlandFlockForm"'),"Portland original flock screen is linked");
 console.log("PASS: five city benchmark pages and evidence/SEO safeguards");
