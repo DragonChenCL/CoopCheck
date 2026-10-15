@@ -28,7 +28,6 @@ jobs:
           import json
           import re
           import subprocess
-          import time
           import urllib.request
           from pathlib import Path
           from xml.etree import ElementTree
@@ -102,16 +101,16 @@ jobs:
               raise SystemExit(0)
 
           key_location = ORIGIN + '/' + key_file.name
-          for attempt in range(5):
-              try:
-                  with urllib.request.urlopen(key_location, timeout=10) as response:
-                      if response.status == 200 and response.read().decode().strip() == key:
-                          break
-              except Exception as exc:
-                  print('Public key not ready:', type(exc).__name__, flush=True)
-              if attempt == 4:
-                  raise RuntimeError('IndexNow key not yet visible on published site')
-              time.sleep(3)
+          # Diagnostic only: CDN/WAF responses to GitHub runner IPs can differ
+          # from what search crawlers or real browsers receive. IndexNow itself
+          # validates ownership; do not block a valid request on this probe.
+          try:
+              with urllib.request.urlopen(key_location, timeout=8) as response:
+                  content_matches = response.status == 200 and response.read().decode().strip() == key
+                  print('Runner key probe:', response.status, 'content matches:', content_matches, flush=True)
+          except Exception as exc:
+              print('Runner key probe unavailable; IndexNow will validate ownership:',
+                    type(exc).__name__, getattr(exc, 'code', ''), flush=True)
 
           payload = json.dumps({
               'host': HOST,
