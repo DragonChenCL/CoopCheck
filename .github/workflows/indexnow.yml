@@ -1,0 +1,127 @@
+name: Notify IndexNow of changed CoopCheck pages
+
+on:
+  workflow_run:
+    workflows: ["Deploy CoopCheck to GitHub Pages"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout successfully deployed production commit
+        uses: actions/checkout@v4
+        with:
+          ref: \${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 2
+      - name: Submit only changed canonical and indexable URLs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import re
+          import subprocess
+          import time
+          import urllib.request
+          from pathlib import Path
+          from xml.etree import ElementTree
+
+          HOST = 'coopcheck.serunio.com'
+          ORIGIN = 'https://' + HOST
+          ROOT = Path('site')
+          BOOTSTRAP = {
+              '/', '/cities/portland-or.html',
+              '/guides/chicken-coop-size-calculator.html',
+              '/guides/chicken-run-size-calculator.html',
+              '/guides/free-chicken-coop-floor-plans.html',
+          }
+          keys = list(ROOT.glob('[0-9a-f]' * 32 + '.txt'))
+          if len(keys) != 1:
+              raise RuntimeError('Expected exactly one site-root 32-character hex IndexNow key file')
+          key_file = keys[0]
+          key = key_file.stem
+          if key_file.read_text().strip() != key:
+              raise RuntimeError('IndexNow key file content mismatch')
+
+          def sitemap_entries(xml):
+              entries = {}
+              for node in ElementTree.fromstring(xml).findall('{*}url'):
+                  loc = node.findtext('{*}loc')
+                  mod = node.findtext('{*}lastmod') or ''
+                  if not loc or not loc.startswith(ORIGIN + '/'):
+                      continue
+                  uri_path = loc[len(ORIGIN):]
+                  if '?' in uri_path or '#' in uri_path:
+                      continue
+                  entries[uri_path] = mod
+              return entries
+
+          now = sitemap_entries((ROOT / 'sitemap.xml').read_text())
+          prev = sitemap_entries(subprocess.check_output(
+              ['git', 'show', 'HEAD^:site/sitemap.xml'], text=True))
+          diff = subprocess.check_output(
+              ['git', 'diff', '--name-status', '-M', 'HEAD^', 'HEAD', '--', 'site/'], text=True)
+          changed = set()
+          for line in diff.splitlines():
+              parts = line.split('\t')
+              status, file = parts[0], parts[-1]
+              if status[0] not in 'AMR' or not file.endswith('.html'):
+                  continue
+              path = '/' if file == 'site/index.html' else '/' + file.removeprefix('site/')
+              if path in now:
+                  changed.add(path)
+          changed.update(p for p, mod in now.items() if prev.get(p) != mod)
+          # Bootstrap only recently updated priority URLs, not all 115 sitemap entries.
+          if any(line == 'A\t' + str(key_file) for line in diff.splitlines()):
+              changed.update(BOOTSTRAP & now.keys())
+
+          eligible = []
+          for path in sorted(changed):
+              file = ROOT / ('index.html' if path == '/' else path.lstrip('/'))
+              if path not in now or not file.is_file():
+                  continue
+              html = file.read_text(encoding='utf-8')
+              if re.search(r'<meta\b[^>]*name=["\']robots["\'][^>]*content=["\'][^"\']*noindex',
+                           html, re.IGNORECASE):
+                  continue
+              eligible.append(ORIGIN + path)
+          print('Eligible updated IndexNow URLs:', len(eligible), flush=True)
+          for url in eligible:
+              print(' -', url, flush=True)
+          if not eligible:
+              raise SystemExit(0)
+
+          key_location = ORIGIN + '/' + key_file.name
+          for attempt in range(5):
+              try:
+                  with urllib.request.urlopen(key_location, timeout=10) as response:
+                      if response.status == 200 and response.read().decode().strip() == key:
+                          break
+              except Exception as exc:
+                  print('Public key not ready:', type(exc).__name__, flush=True)
+              if attempt == 4:
+                  raise RuntimeError('IndexNow key not yet visible on published site')
+              time.sleep(3)
+
+          payload = json.dumps({
+              'host': HOST,
+              'key': key,
+              'keyLocation': key_location,
+              'urlList': eligible,
+          }).encode()
+          request = urllib.request.Request(
+              'https://api.indexnow.org/indexnow', data=payload, method='POST',
+              headers={'Content-Type': 'application/json; charset=utf-8'})
+          with urllib.request.urlopen(request, timeout=20) as response:
+              code = response.status
+          print('IndexNow response:', code, '(receipt only, not indexing)', flush=True)
+          if code not in (200, 202):
+              raise RuntimeError('IndexNow rejected the URL notification')
+          PY
