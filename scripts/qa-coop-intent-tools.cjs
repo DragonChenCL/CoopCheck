@@ -7,8 +7,8 @@ const calc=require("../site/assets/coop-intent-tools.js");
 assert.equal(pages.length,6);
 assert.equal(new Set(pages.map(x=>x.slug)).size,6);
 const sitemap=read("site/sitemap.xml");
-assert.equal((sitemap.match(/<loc>/g)||[]).length,115);
-assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1])).size,115);
+assert.equal((sitemap.match(/<loc>/g)||[]).length,116);
+assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1])).size,116);
 const headings=new Set(),descs=new Set(),titles=new Set();
 for(const p of pages){
  const html=read("site/guides/"+p.slug+".html");
@@ -76,4 +76,4 @@ assert(plan.includes('guides/chicken-run-size-calculator.html')&&plan.includes('
 for(const kind of ["run-size","nesting-box","roost"])assert(engine.includes('"'+kind+'"'),"handoff "+kind);
 const old=read("site/guides/chicken-coop-size-calculator.html");
 assert(old.includes("chicken-run-size-calculator.html")&&old.includes("chicken-coop-cost-calculator.html"),"first cluster backlinked");
-console.log("PASS: six authentic intent tools, 115 canonical URLs, formulas, quoted cost handling and full internal links");
+console.log("PASS: six authentic intent tools, 116 canonical URLs, formulas, quoted cost handling and full internal links");
