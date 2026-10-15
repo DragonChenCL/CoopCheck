@@ -105,6 +105,26 @@ assert(read("assets/map.js").includes('houseInsideProperty=turf.booleanWithin(ho
 assert(read("assets/map.js").includes("invalidPolygon"),"invalid drawn geometry rejected");
 console.log("PASS: malformed-geometry and parcel-boundary safeguards wired");
 
+// Portland's original city-code quick screen: arithmetic and legal-boundary guardrails.
+const {screenPortlandFlock}=require("../site/assets/portland-flock-check.js");
+const portland=(lotSqFt,adultFowl,youngFowl=0,multipleUnits=false)=>screenPortlandFlock({lotSqFt,adultFowl,youngFowl,multipleUnits});
+assert.equal(portland(9999,4).standardMax,4,"sub-10000 lots have 4-fowl standard tier");
+assert.equal(portland(10000,6).standardMax,6,"10,000 exactly moves to the 6-fowl tier");
+assert.equal(portland(9999,5).withinStandardCount,false,"five older birds exceed the ordinary small-lot tier");
+assert.equal(portland(10000,6,4).withinStandardCount,true,"up to four young fowl may be in addition");
+assert.equal(portland(10000,6,5).withinStandardCount,false,"five young fowl are outside the ordinary exception");
+assert.equal(portland(12000,6).shelterOrPenSqFt,60,"10 sq ft per older bird");
+assert.equal(portland(20000,7).agriculturalExceptionRequiresReview,true,"large lot is not automatic agricultural approval");
+assert.equal(portland(12000,6,0,true).multipleUnits,true,"multi-unit additional separation warning must be preserved");
+assert.throws(()=>portland(-1,1),/lot size/,"bad lot area rejected");
+assert.throws(()=>portland(8000,1.5),/older birds/,"fractional bird count rejected");
+const portlandHtml=read("cities/portland-or.html");
+assert(portlandHtml.includes('id="portlandFlockForm"')&&portlandHtml.includes('src="../assets/portland-flock-check.js"'),"Portland form and evaluator linked");
+assert(portlandHtml.includes('§13.40.040')&&portlandHtml.includes("official"),"Portland legal source and limits visible in static HTML");
+assert(read("index.html").includes('cities/portland-or.html#portland-flock-check'),"homepage links to source-backed Portland checker");
+assert(read("sitemap.xml").includes('/cities/portland-or.html</loc><lastmod>2026-10-14</lastmod>'),"Portland updated lastmod");
+console.log("PASS: Portland lot-size screen threshold boundaries and source-backed SEO entry");
+
 // Pages build must inject nonblocking analytics for every city, state and directory page.
 const pagesWorkflow=fs.readFileSync(path.resolve(__dirname,"../.github/workflows/pages.yml"),"utf8");
 assert(pagesWorkflow.includes('const tag = \'<script defer src="/assets/analytics.js"></script>\';'),"GA4 injection must not block HTML parsing");
