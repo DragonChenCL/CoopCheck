@@ -1,5 +1,14 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-14/15 — Community proof, editorial resource outreach and browser connection failure
+
+- **BYC actual publication confirmed**: single reused connected browser tab opened https://www.backyardchickens.com/threads/coop-ordinances-in-your-town.1663608/post-29302430 . Post #4 by tom dated 2026-10-13 is visible in the regular public thread, with the Portland/Seattle municipality source comparison and no moderator-pending text. This was a real useful participation, **not a CoopCheck backlink** (no site link); do not repost or duplicate.
+- **Gmail existing outreach**: verified an earlier Community Chickens email in SENT dated 2026-10-13 with subject “Guest feature proposal: why backyard chicken rules differ so much between U.S. cities.” No duplicate submission was made. No acceptance/positive reply was established.
+- **Fresh editorial outreach**: sent one transparent, source-based email to **editor@waddleandcluck.com** (Gmail message ID `1a13d9221cd38611`, label SENT), subject “Source-backed resource for your backyard chicken beginner's guide.” Offered Portland's free city-code lot-size checker as a potential reader resource relevant to local ordinance checks, referenced both Portland City Code government sources, disclosed involvement with CoopCheck, and expressly said no link/coverage expected. **Email sent only**; no delivery confirmation, editorial acceptance, public mention, backlink or referral traffic is established.
+- **Browser blocker**: after BYC check, connected cfbrower initialization repeatedly timed out (30 s), even though one-tab reuse was intended. No forum posting, Pinterest publishing or form submission after that. Do not claim the browser actions succeeded.
+- **Current focus**: avoid GA4 work as owner requested; wait for meaningful editorial reply, verify public source/acceptance and track directly in GSC at 7/14/28 days rather than promising immediate rank gains. Prior BYC spam-blocked contact form remains off-limits.
+
+
 ## 2026-10-14 — Second SEO intent cluster launched and independently tested
 
 - PR #51 was merged into `main` (commit `eb0984f219ee5c89606dfc3d3ee1e0d3b0f309db`). Successful GitHub Pages workflow: https://github.com/DragonChenCL/CoopCheck/actions/runs/38517239429 .
