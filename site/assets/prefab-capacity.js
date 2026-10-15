@@ -83,6 +83,7 @@
     }
     function choose(id){
       selected=id;
+      $("bcCustomFields").hidden=id!=="custom";
       const buttons=doc.querySelectorAll("[data-bc-pick]");
       buttons.forEach(b=>{
         const picked=b.dataset.bcPick===id;
@@ -95,20 +96,27 @@
       if(selected!=="custom")return PRODUCTS.find(x=>x.id===selected);
       const area=customL.value.trim()!==""&&customW.value.trim()!==""?
         calculateArea(customL.value,customW.value,customUnit.value):null;
+      const runL=$("bcCustomRunLength"),runW=$("bcCustomRunWidth");
+      const runArea=runL.value.trim()!==""&&runW.value.trim()!==""?
+        calculateArea(runL.value,runW.value,customUnit.value):null;
       return {id:"custom",name:customName.value.trim().slice(0,70)||"Your listing",model:"Measurements supplied by you (unverified)",
-        claim:"Seller's stated capacity: not entered",indoor:area,run:null,runIncluded:null,
+        claim:"Seller's stated capacity: not entered",indoor:area,run:runArea,runIncluded:runArea===null?null:true,
         indoorEvidence:area===null?"Usable indoor length and width required":"Your dimensions: "+customL.value+" × "+customW.value+" "+customUnit.value+"; clear inside dimensions assumed",
-        runEvidence:"Separate run area has not been verified",nests:null,roostBars:null,source:null,sourceName:null,
+        runEvidence:runArea===null?"Separate run area has not been verified":"Your entered run dimensions: "+runL.value+" × "+runW.value+" "+customUnit.value+"; not independently checked",nests:null,roostBars:null,source:null,sourceName:null,
         note:"Your measurements are not independently verified or stored. Subtract obstacles/fixtures and confirm all other housing conditions."};
     }
     function render(){
       const value=flock.value.trim(),n=Number(value);
       const r=$("bcResults"),bar=$("bcBar");
       if(!validFlock(n)||value===""){
-        r.textContent="Enter a whole number from 1 to 24 hens to see a comparison.";
         r.dataset.state="unknown";
-        $("bcBarLabel").textContent="Waiting for flock size";
+        $("bcResultTitle").textContent="Check your flock number";
+        $("bcResultText").textContent="Enter a whole number from 1 to 24 hens to see a comparison.";
+        $("bcBarLabel").textContent="Waiting for valid flock size";
         bar.style.width="0%";
+        $("bcBenchmark").textContent="—";
+        $("bcAvailable").textContent="—";
+        $("bcRun").textContent="—";
         return;
       }
       const item=dataForSelection(),calc=analyze(item,n,access.value==="yes"),ref=calc.reference;
@@ -140,7 +148,7 @@
       showFeedback("");
     }
     doc.querySelectorAll("[data-bc-pick]").forEach(b=>b.addEventListener("click",()=>choose(b.dataset.bcPick)));
-    [flock,access,customName,customL,customW,customUnit].forEach(el=>el.addEventListener("input",render));
+    [flock,access,customName,customL,customW,customUnit,$("bcCustomRunLength"),$("bcCustomRunWidth")].forEach(el=>el.addEventListener("input",render));
     access.addEventListener("change",render);
     $("bcCopyQuestion").addEventListener("click",async()=>{
       const msg=sellerQuestion(dataForSelection());
