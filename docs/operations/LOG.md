@@ -1,5 +1,15 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-16 — connected search baseline and primary-source permit worksheet experiment
+
+- GSC (Windsor.ai, account sc-domain:coopcheck.serunio.com, Sep 15–Oct 16): 23 impressions, 0 clicks. Oregon state 9, Portland 9, homepage 5. Daily nonzero last recorded Oct 1; source may lag through Oct 14.
+- GA4 555450721 (Oct 1–16): Direct 24 sessions / 3 active users; no Organic Search channel reported. Possible owner/browser QA visits prevent valid demand conclusions.
+- Official Grand Rapids, Blaine, and Marietta municipal permit pages read, confirming site-plan/measurement requirements. Blaine source contradicts itself on application fee; no fee amounts in worksheet.
+- Prepared one print-friendly, browser-local ten-step permit site plan checklist, city-source examples, distinct coop vs run areas, explicit legal/survey limits. Canonical sitemap updated 116 to 117; homepage editorial link; CI regression guard.
+- Community: Reddit/BYC search examples read for real user questions; no comments, promotion, emails or third-party submissions made. Previous pitches not duplicated.
+- Browser cfbrower list-tabs call timed out repeatedly; no authenticated GSC/BYC use and no extra tab created. Latest indexing state not independently confirmed.
+- Follow-up: 7/14/28 days, see PERMIT_SITE_PLAN_EXPERIMENT_2026-10-16.md. Five previous GSC index requests must not be repeated. Dallas #38 and Lakewood #41 legal P0 remain unresolved.
+
 ## 2026-10-15 — Full production sitemap audit, San Diego freshness and BYC source correction
 
 **Scope:** Organic-search discoverability and transparent reader benefit; Pinterest and GA4 explicitly deferred by site owner.
