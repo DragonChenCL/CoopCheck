@@ -1,0 +1,26 @@
+/* Protect the original source-scoped chicken permit site plan worksheet. */
+const fs=require('node:fs');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const url='https://coopcheck.serunio.com/guides/backyard-chicken-permit-site-plan-checklist.html';
+const page=fs.readFileSync(path.join(root,'site/guides/backyard-chicken-permit-site-plan-checklist.html'),'utf8');
+const home=fs.readFileSync(path.join(root,'site/index.html'),'utf8');
+const sitemap=fs.readFileSync(path.join(root,'site/sitemap.xml'),'utf8');
+const generator=fs.readFileSync(path.join(root,'scripts/generate-coverage-pages.cjs'),'utf8');
+assert(page.includes('<link rel="canonical" href="'+url+'">'),'self canonical');
+assert(page.includes('<meta name="robots" content="index,follow">'),'indexable');
+assert(page.includes('<h1>Chicken coop permit site plan checklist</h1>'),'clear intent-led H1');
+assert(page.includes('Print / Save as PDF')&&page.includes('window.print()'),'browser printable');
+assert(page.includes('@media print'),'print layout');
+assert.equal((page.match(/class="permit-check"/g)||[]).length,10,'ten actual preparation checks');
+assert(page.includes('id="permit-complete"')&&page.includes('addEventListener(\'change\',update)'),'functional completion progress');
+assert(page.includes("id='permit-reset'")||page.includes('id="permit-reset"'),'clear worksheet button');
+assert(!/localStorage|sessionStorage|fetch\s*\(|XMLHttpRequest|sendBeacon/.test(page),'no data upload or browser persistence');
+for(const source of ['grandrapidsmi.gov','blainemn.gov','mariettaga.gov'])assert(page.includes(source),'primary government example: '+source);
+for(const concept of ['property lines','neighboring dwellings','outdoor run','certified','not an official'])assert(page.toLowerCase().includes(concept.toLowerCase()),'scope check: '+concept);
+assert(home.includes('href="guides/backyard-chicken-permit-site-plan-checklist.html"'),'homepage link');
+assert.equal(sitemap.split('<loc>'+url+'</loc>').length-1,1,'one canonical sitemap entry');
+assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-10-16</lastmod>'),'date is accurate');
+assert(generator.includes('["/guides/backyard-chicken-permit-site-plan-checklist.html","2026-10-16"]'),'deterministic sitemap generator');
+console.log('PASS: 10-item private/local printable permit worksheet, scoped government sources, SEO and internal linking');
