@@ -629,3 +629,23 @@
 .cc-qc-loading{background:#f2f8ef;border-radius:16px;padding:20px}.cc-qc-loading a{font-weight:700}
 .cc-field-matrix{margin:24px 0;background:#f8faf6;border:1px solid #dce7dc;border-radius:15px;padding:20px}.cc-field-matrix h3{margin:0 0 10px}.cc-field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.cc-field-card{background:#fff;border:1px solid #e2ebe1;border-radius:12px;padding:15px}.cc-field-card header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}.cc-field-status{font-size:11px;font-weight:750;border-radius:99px;padding:4px 8px;background:#e6f4e7;color:#236139}.cc-field-status.cc-field-partial{background:#fff0d5;color:#865921}.cc-field-card p{margin:0 0 7px;font-size:14px;line-height:1.6;color:#45564a}.cc-field-card a{font-size:12px;overflow-wrap:anywhere}
 @media(max-width:760px){.cc-qc-form{grid-template-columns:1fr}.cc-qc-actions{flex-direction:column;align-items:stretch}.cc-qc-submit{width:100%}.cc-qc-icon{display:none}.cc-qc-section{padding:15px 0 32px}.cc-field-grid{grid-template-columns:1fr}}
+
+
+/* City-by-city legal reading UX (2026-10-17). Keep official text accessible. */
+.cc-law-section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0 0 22px}
+.cc-law-section-head h2{font-size:clamp(24px,3vw,33px);margin:6px 0}
+.cc-law-section-head p{color:#647569;font-size:14px;line-height:1.65;margin:0}
+.cc-law-section-head>a{font-size:14px;font-weight:750;text-underline-offset:3px}
+.cc-law-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:0 0 18px}
+.cc-law-card{border:1px solid #d5e4d6;border-radius:16px;background:#f8fbf6;padding:19px;min-width:0;overflow-wrap:anywhere}
+.cc-law-label{color:#597561;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.055em}
+.cc-law-answer{color:#234b36;font-size:clamp(16px,1.5vw,19px);font-weight:700;line-height:1.5;margin:9px 0}
+.cc-law-detail{border-top:1px solid #d6e5d7;padding-top:10px;margin-top:11px}
+.cc-law-detail summary,.cc-law-audit summary{cursor:pointer;color:#237344;font-size:14px;font-weight:750;padding:5px 0}
+.cc-law-detail summary:focus-visible,.cc-law-audit summary:focus-visible{outline:3px solid #80b89a;outline-offset:3px;border-radius:4px}
+.cc-law-detail p{font-size:14px;line-height:1.75;color:#506458;margin:10px 0 3px;font-weight:400;overflow-wrap:anywhere}
+.cc-law-audit{background:#f4f8f1;border:1px solid #d8e4d6;border-radius:12px;padding:11px 16px;margin-bottom:24px}
+.cc-law-audit p{font-size:13px;line-height:1.7;color:#576f60}
+.cc-law-checklist{background:#f7faf5;border-left:4px solid #70a981;padding:14px 20px 14px 36px}
+.cc-law-checklist li{margin:6px 0}
+@media(max-width:680px){.cc-law-grid{grid-template-columns:minmax(0,1fr)}.cc-law-card{padding:15px}.cc-law-section-head{margin-bottom:14px}}

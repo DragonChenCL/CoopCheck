@@ -95,8 +95,8 @@
     function track(event,fields){
       if(typeof root.coopTrack==="function")root.coopTrack(event,fields||{});
     }
-    function generate(event){
-      if(event)event.preventDefault();
+    function generate(event,recordUsage=false){
+      if(event&&typeof event.preventDefault==="function")event.preventDefault();
       const values={flock:Number(form.elements.namedItem("flock").value),
         width:Number(form.elements.namedItem("width").value),
         depth:Number(form.elements.namedItem("depth").value),
@@ -107,9 +107,25 @@
         result.dataset.level="warning";
         preview.textContent="";
         notes.replaceChildren();stats.replaceChildren();
-        latest=null;return;
+        latest=null;
+        for(const btn of ["planDownloadSvg","planDownloadPng","planPrint"]){const el=root.document.getElementById(btn);if(el)el.disabled=true;}
+        const meters=root.document.getElementById("planMeters");if(meters)meters.hidden=true;
+        if(event?.type==="submit"){
+          for(const field of ["flock","width","depth"]){const el=form.elements.namedItem(field);if(el&&!el.checkValidity()){el.focus();break;}}
+        }
+        return;
       }
       latest=computed;
+      for(const btn of ["planDownloadSvg","planDownloadPng","planPrint"]){const el=root.document.getElementById(btn);if(el)el.disabled=false;}
+      const meters=root.document.getElementById("planMeters");if(meters)meters.hidden=false;
+      const meterPairs=[["Indoor",computed.indoorArea,computed.targetIndoor],["Run",computed.runArea,computed.targetRun]];
+      for(const [key,actual,target] of meterPairs){
+        const bar=root.document.getElementById("plan"+key+"Meter");
+        const caption=root.document.getElementById("plan"+key+"MeterText");
+        if(bar)bar.style.width=Math.min(100,actual/target*100).toFixed(1)+"%";
+        if(bar)bar.dataset.status=actual+1e-7>=target?"good":"warning";
+        if(caption)caption.textContent=api.format(actual)+" / "+api.format(target)+" sq ft";
+      }
       renderCity();
       const svg=api.renderSvg(computed);
       preview.innerHTML=svg;
@@ -143,18 +159,41 @@
       add("The outside-run area is calculated as the input rectangle minus the indoor-coop footprint; no area beneath a raised coop is double-counted.","");
       add("Nest boxes and roost symbols are schematic; actual clearance, ventilation, door/ramp and maintenance access require detailed design.","");
       add("These targets are poultry-husbandry planning suggestions, not municipality-specific permits or engineering approval.","");
-      track("chicken_coop_plan_generate",{template:computed.style,flock_group:computed.flock<=6?"2-6":computed.flock<=12?"7-12":"13-24",targets_met:computed.meetsTargets?1:0,from_saved_map:imported?1:0,city_slug:cityInput.value||undefined});
+      if(recordUsage)track("chicken_coop_plan_generate",{template:computed.style,flock_group:computed.flock<=6?"2-6":computed.flock<=12?"7-12":"13-24",targets_met:computed.meetsTargets?1:0,from_saved_map:imported?1:0,city_slug:cityInput.value||undefined});
     }
-    form.addEventListener("submit",generate);
+    form.addEventListener("submit",e=>generate(e,true));
+    // Keep the concept preview in sync with edits without flooding analytics events.
+    const refreshFields=new Set(["flock","width","depth","style"]);
+    form.addEventListener("input",e=>{if(refreshFields.has(e.target?.name))generate();});
+    form.addEventListener("change",e=>{if(refreshFields.has(e.target?.name))generate();});
+    const exportFeedback=root.document.getElementById("planExportFeedback");
+    function announceExport(message){if(exportFeedback)exportFeedback.textContent=message;}
+    const fitBtn=root.document.getElementById("planAutoFit");
+    fitBtn?.addEventListener("click",()=>{
+      const flock=Number(flockInput.value),style=form.elements.namedItem("style").value;
+      const suggested=api.suggestFootprint(flock,style);
+      if(!suggested){result.textContent="Choose 2–24 hens before finding a footprint.";result.dataset.level="warning";flockInput.focus();return;}
+      form.elements.namedItem("width").value=String(suggested.width);
+      form.elements.namedItem("depth").value=String(suggested.depth);
+      announceExport("Suggested combined rectangle: "+suggested.width+" × "+suggested.depth+" ft. Verify the space and site conditions yourself.");
+      generate();
+    });
+    for(const button of root.document.querySelectorAll("[data-plan-flock]")){
+      button.addEventListener("click",()=>{
+        flockInput.value=button.dataset.planFlock;
+        for(const item of root.document.querySelectorAll("[data-plan-flock]"))item.setAttribute("aria-pressed",String(item===button));
+        generate();
+      });
+    }
     root.document.getElementById("planDownloadSvg")?.addEventListener("click",()=>{
-      if(!latest)return;api.download("coopcheck-concept-plan.svg",new Blob([api.renderSvg(latest)],{type:"image/svg+xml;charset=utf-8"}));track("chicken_coop_plan_export",{format:"svg"});
+      if(!latest)return;api.download("coopcheck-concept-plan.svg",new Blob([api.renderSvg(latest)],{type:"image/svg+xml;charset=utf-8"}));announceExport("SVG concept downloaded.");track("chicken_coop_plan_export",{format:"svg"});
     });
     root.document.getElementById("planDownloadPng")?.addEventListener("click",async()=>{
       if(!latest)return;
-      try{await api.downloadPng(api.renderSvg(latest));track("chicken_coop_plan_export",{format:"png"});}
+      try{await api.downloadPng(api.renderSvg(latest));announceExport("PNG concept downloaded.");track("chicken_coop_plan_export",{format:"png"});}
       catch(e){result.textContent="PNG export is unavailable in this browser. Try SVG download instead.";result.dataset.level="warning";}
     });
-    root.document.getElementById("planPrint")?.addEventListener("click",()=>{if(latest){track("chicken_coop_plan_export",{format:"print_pdf"});root.print();}});
+    root.document.getElementById("planPrint")?.addEventListener("click",()=>{if(latest){announceExport("Opening the browser print dialog. Choose Save as PDF to download.");track("chicken_coop_plan_export",{format:"print_pdf"});root.print();}});
     if(params.get("from")==="map"){
       let saved=null;
       try{const id=root.localStorage.getItem("coopcheck:project-id");saved=id&&root.CoopProject?.load(root.localStorage,id);}catch(e){}
@@ -323,6 +362,20 @@
     if(!Number.isFinite(width)||!Number.isFinite(depth)||width<=0||depth<=0)return null;
     return {width,depth,method:"north-south / east-west axis-aligned bounding rectangle only"};
   }
+  function suggestFootprint(flock,style){
+    if(!Number.isInteger(flock)||flock<2||flock>24||!Object.prototype.hasOwnProperty.call(styles,style))return null;
+    let best=null;
+    for(let width=6;width<=50;width+=1){
+      for(let depth=8;depth<=80;depth+=1){
+        const candidate=design({flock,width,depth,style});
+        if(!candidate?.meetsTargets)continue;
+        const area=width*depth;
+        const score=area+Math.abs(depth/width-1.5)*1.2;
+        if(!best||score<best.score)best={width,depth,area,score};
+      }
+    }
+    return best?{width:best.width,depth:best.depth,area:best.area}:null;
+  }
   function download(filename,blob){
     const url=URL.createObjectURL(blob);
     const a=document.createElement("a");
@@ -351,5 +404,5 @@
       image.src=url;
     });
   }
-  return {sanitize,design,renderSvg,dimensionsFromPolygon,format,download,downloadPng,styles,SOURCE_OSU,SOURCE_PSU,SOURCE_UMN};
+  return {sanitize,design,suggestFootprint,renderSvg,dimensionsFromPolygon,format,download,downloadPng,styles,SOURCE_OSU,SOURCE_PSU,SOURCE_UMN};
 });

@@ -71,4 +71,19 @@ assert.equal(engine.dimensionsFromPolygon({geometry:{type:"Polygon",coordinates:
 assert.equal(engine.dimensionsFromPolygon({geometry:{type:"Polygon",coordinates:[[[0,0],[1,0],[1,1],[0,1]]]}}),null,"reject unclosed rings");
 assert.equal(engine.format(4.04),"4");
 assert.equal(engine.format(4.16),"4.2");
+for(const control of ["planAutoFit","planMeters","planIndoorMeter","planRunMeter","planExportFeedback"]){
+ assert(html.includes('id="'+control+'"'),"missing new plan usability control "+control);
+}
+assert(html.includes("data-plan-flock"),"quick flock presets should be directly usable");
+for(const style of ["walkin","raised","compact"]){
+ for(const flock of [2,4,6,12,24]){
+  const suggested=engine.suggestFootprint(flock,style);
+  assert(suggested,"auto-fit must find a rectangle");
+  const plan=engine.design({flock,width:suggested.width,depth:suggested.depth,style});
+  assert(plan.meetsTargets,"auto-fit meets both illustrative targets");
+  assert.equal(plan.width*plan.depth,suggested.area,"suggestion reports correct total area");
+ }
+}
+assert.equal(engine.suggestFootprint(25,"walkin"),null);
+assert.equal(engine.suggestFootprint(6,"unknown"),null);
 console.log("PASS: self-hosted 2D coop generator, 3 styles × 4 flocks × 6 sizes, exports, geometry, privacy, caveats and sitemap");

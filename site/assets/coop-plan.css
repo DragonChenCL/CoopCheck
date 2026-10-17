@@ -93,3 +93,28 @@
 .cc-plan-print-law, .cc-plan-city select, .cc-plan-law-inputs, .cc-plan-law-details dl {min-width:0;max-width:100%}
 .cc-plan-law-details dd,.cc-plan-law-result,.cc-plan-print-law {overflow-wrap:anywhere}
 @media(max-width:980px){.cc-plan-grid{grid-template-columns:minmax(0,1fr)}}
+
+
+/* 2026-10-17: practical live planning controls and readable area checks. */
+.cc-plan-form .cc-plan-live-note{font-size:13px;color:#2c7c4c;margin:0 0 13px;font-weight:750}
+.cc-plan-presets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:12px}
+.cc-plan-presets button,.cc-plan-fit button{font:inherit;cursor:pointer;border:1px solid #b9d1c0;color:#285f40;background:#fff;border-radius:11px;padding:10px 8px;min-height:44px;font-size:13px;font-weight:750}
+.cc-plan-presets button[aria-pressed=true]{background:#285f40;color:#fff;border-color:#285f40}
+.cc-plan-presets button:hover:not([aria-pressed=true]),.cc-plan-fit button:hover{background:#eaf7ec}
+.cc-plan-fit{margin:13px 0;display:flex;align-items:start;gap:12px;flex-direction:column}
+.cc-plan-fit button{padding:12px 15px;background:#eef8ed}
+.cc-plan-fit small{font-size:12px;color:#647a69;line-height:1.6}
+.cc-plan-presets button:focus-visible,.cc-plan-fit button:focus-visible,.cc-plan-actions button:focus-visible{outline:3px solid #73b28e;outline-offset:2px}
+.cc-plan-meter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:13px 0 18px}
+.cc-plan-meter{min-width:0;border:1px solid #d9e8d9;border-radius:13px;padding:12px;background:#f8fbf6}
+.cc-plan-meter>div:first-child{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-size:12px;margin-bottom:9px}
+.cc-plan-meter strong{font-weight:780;color:#395846}
+.cc-plan-meter span{color:#517563;font-variant-numeric:tabular-nums}
+.cc-plan-meter-track{background:#e1eae0;height:13px;border-radius:50px;overflow:hidden}
+.cc-plan-meter-track span{display:block;height:100%;background:#409465;border-radius:50px;transition:width .22s ease}
+.cc-plan-meter-track span[data-status=warning]{background:#c78b3f}
+.cc-plan-export-feedback{margin:7px 0 0;min-height:18px;font-size:13px;color:#35724e}
+.cc-plan-actions button:disabled{opacity:.4;cursor:not-allowed;background:#edf0ed}
+@media(max-width:650px){.cc-plan-meter-grid{grid-template-columns:1fr}.cc-plan-presets{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-plan-canvas{overflow-x:auto}}
+@media(prefers-reduced-motion:reduce){.cc-plan-meter-track span{transition:none}}
+@media print{.cc-plan-meter-grid{gap:5px;margin:5px 0}.cc-plan-meter{padding:6px}.cc-plan-presets,.cc-plan-fit,.cc-plan-export-feedback{display:none!important}}

@@ -58,4 +58,15 @@ assert(home.includes('href="guides/chicken-coop-size-calculator.html"'),"homepag
 assert(setback.includes('href="chicken-coop-size-calculator.html"'),"setback contextual connection");
 assert(planner.includes('href="guides/chicken-coop-size-calculator.html"'),"free 2D plan can send users to sizing utility");
 assert(engine.includes('params.get("flock")')&&["size-guide","size-calculator","coop-size","coop-footprint","run-size","nesting-box","roost"].every(x=>engine.includes('"'+x+'"')),"deep linked flock should prefill ONLY from known sizing sources");
+const hub=read("site/guides/chicken-coop-size-calculator.html");
+for(const hook of ["flockSlider","calcIndoorBar","calcRunBar","calcReadableResult","calcIndoorExample","calcRunExample"]){
+ assert(hub.includes('id="'+hook+'"'),"calculator visual control "+hook);
+}
+assert(hub.includes("data-flock-preset"),"calculator quick presets exist");
+for(const n of [16,24,40,60,96,240]){
+ const rect=calc.exampleRectangle(n);
+ assert(rect.width*rect.depth>=n,"illustrative rectangle must fit target area");
+ assert(rect.width*rect.depth-n<rect.width,"example is not arbitrarily oversized");
+}
+assert.equal(calc.exampleRectangle(0),null);
 console.log("PASS: 10 original SEO landing pages, 129 canonical sitemap URLs (12 pending noindex), credible sources and functioning size calculator");
