@@ -6,14 +6,14 @@
 <meta name="description" content="Free chicken coop plan generator. Enter flock size and available space, compare three 2D coop layouts, add nest boxes and roosts, and download an SVG or PNG. No signup.">
 <link rel="canonical" href="https://coopcheck.serunio.com/coop-plan.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/coop-plan.css?v=20261013-law1">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/coop-plan.css?v=20261017-ux1">
 <meta property="og:title" content="Chicken Coop Plan Generator — Free 2D Layouts">
 <meta property="og:description" content="Sketch a practical coop and run layout using flock size, dimensions, nest boxes and roosts, then download a concept drawing.">
 <meta property="og:url" content="https://coopcheck.serunio.com/coop-plan.html">
 <meta property="og:type" content="website">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CoopCheck","item":"https://coopcheck.serunio.com/"},{"@type":"ListItem","position":2,"name":"Chicken Coop Plan Generator","item":"https://coopcheck.serunio.com/coop-plan.html"}]},{"@type":"WebApplication","name":"CoopCheck Chicken Coop Plan Generator","url":"https://coopcheck.serunio.com/coop-plan.html","applicationCategory":"DesignApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free conceptual 2D chicken-coop and outdoor-run layout planner; not structural construction drawings or regulatory approval."}]}</script>
 <script defer src="assets/project.js"></script><script defer src="assets/plan-law-data.js?v=20261013-law1"></script><script defer src="assets/quick-check-data.js?v=20261013-austin2"></script><script defer src="assets/plan-law.js?v=20261013-law1"></script>
-<script defer src="assets/coop-plan.js?v=20261014-intent2"></script>
+<script defer src="assets/coop-plan.js?v=20261017-ux1"></script>
 </head>
 <body class="cc-plan-page">
 <header class="site-header no-print"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark"><img src="assets/logo-mark.svg" alt="" width="36" height="36"></span>CoopCheck</a><nav class="nav-links"><a href="index.html">Home</a><a href="coverage.html">City rules</a><a href="guides/chicken-coop-setback-from-property-line.html">Setback guide</a><a class="btn" href="planner.html">Map planner ↗</a></nav></div></header>
@@ -28,6 +28,7 @@
 <section class="cc-plan-main"><div class="container cc-plan-grid">
 <form class="cc-plan-form cc-plan-card no-print" id="coopPlanForm" novalidate>
 <h2>1. Customize your plan</h2>
+<p class="cc-plan-live-note">● Live preview — changes show immediately.</p>
 <p>All dimensions are in feet. The input space is the entire proposed <strong>coop + outdoor run</strong> rectangle, not your whole property.</p>
 <section class="cc-plan-city" id="planCityContext" aria-labelledby="planCityTitle">
   <h3 id="planCityTitle">City rule context <span>(optional)</span></h3>
@@ -56,12 +57,12 @@
 <label for="planFlock">Number of adult laying hens
 <input id="planFlock" name="flock" type="number" min="2" max="24" step="1" value="6" inputmode="numeric" required>
 <small>2–24 birds. Different breeds or climates may need more space.</small>
-</label>
+</label><div class="cc-plan-presets" role="group" aria-label="Common flock sizes"><button type="button" data-plan-flock="4">4 hens</button><button type="button" data-plan-flock="6" aria-pressed="true">6 hens</button><button type="button" data-plan-flock="8">8 hens</button><button type="button" data-plan-flock="12">12 hens</button></div>
 </fieldset>
 <fieldset><legend>Available coop + run area</legend><div class="cc-plan-inputs">
 <label for="planWidth">Width (ft)<input id="planWidth" name="width" type="number" min="6" max="50" step="0.5" value="12" required></label>
 <label for="planDepth">Depth (ft)<input id="planDepth" name="depth" type="number" min="8" max="80" step="0.5" value="18" required></label>
-</div><small>Use your verified measurement for the <strong>combined coop and run</strong>. A saved map coop-only outline is shown separately, not automatically treated as this entire area.</small></fieldset>
+</div><div class="cc-plan-fit"><button type="button" id="planAutoFit">Find a suggested rectangle ↗</button><small>Suggests a combined coop + run footprint meeting the two illustrative area targets. Not a property-fit or construction check.</small></div><small>Use your verified measurement for the <strong>combined coop and run</strong>. A saved map coop-only outline is shown separately, not automatically treated as this entire area.</small></fieldset>
 <fieldset><legend>Choose a coop layout</legend><div class="cc-plan-options">
 <label><input type="radio" name="style" value="walkin" checked><span>Walk-in / easy access<small>Coop on the rear-left, run wraps around it</small></span></label>
 <label><input type="radio" name="style" value="raised"><span>Raised / loft-style<small>Smaller elevated footprint on the rear-right</small></span></label>
@@ -71,8 +72,8 @@
 <div class="cc-plan-hint" id="importHint" role="status">Have a saved coop outline from the map? <a href="planner.html">Open the map planner</a> to sketch your property first. This page also works independently.</div>
 </form>
 <section class="cc-plan-preview cc-plan-card" id="conceptPreview" aria-live="off">
-<div class="cc-plan-preview-header"><div><span class="eyebrow">FREE CONCEPT PREVIEW</span><h2>2. Your coop layout</h2><p>Generated locally in your browser. Area planning, not construction engineering.</p></div></div>
-<div class="cc-plan-status" id="planResult" role="status" aria-live="polite">Creating your concept layout…</div>
+<div class="cc-plan-preview-header"><div><span class="eyebrow">FREE CONCEPT PREVIEW</span><h2>2. Your coop layout</h2><p>Generated locally in your browser and updated as you edit. Area planning, not construction engineering.</p></div></div>
+<div class="cc-plan-status" id="planResult" role="status" aria-live="polite">Creating your concept layout…</div><div class="cc-plan-meter-grid" id="planMeters" aria-label="Available floor space compared with illustrative targets"><div class="cc-plan-meter"><div><strong>Indoor coop space</strong><span id="planIndoorMeterText">—</span></div><div class="cc-plan-meter-track"><span id="planIndoorMeter" role="presentation"></span></div></div><div class="cc-plan-meter"><div><strong>Outdoor run space</strong><span id="planRunMeterText">—</span></div><div class="cc-plan-meter-track"><span id="planRunMeter" role="presentation"></span></div></div></div>
 <div class="cc-plan-canvas" id="planSvgPreview" aria-label="Dimensioned indoor coop and outdoor run concept plan">
 <p class="small">The diagram uses JavaScript. Please enable JavaScript to generate a conceptual coop plan.</p>
 </div>
@@ -80,7 +81,7 @@
 <button type="button" id="planDownloadSvg">↓ Download SVG</button>
 <button type="button" id="planDownloadPng">↓ Download PNG</button>
 <button type="button" id="planPrint">↗ Print / Save PDF</button>
-</div>
+</div><p class="cc-plan-export-feedback no-print" id="planExportFeedback" role="status" aria-live="polite"></p>
 <div class="cc-plan-facts" id="planStats" aria-live="polite"></div>
 <div class="cc-plan-print-law" id="planPrintLaw" hidden></div>
 <div class="cc-plan-notes-wrap"><h3>Checks and design notes</h3><ul id="planNotes"><li>Run the generator to see planning recommendations.</li></ul></div>
