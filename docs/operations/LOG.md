@@ -1,5 +1,23 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-17 — Sitemap expansion and authenticated GSC priority requests
+
+- Owner requested all content pages in sitemap and ten priority indexing requests.
+- Verified GitHub tree: 131 HTML files; 129 content HTML and 2 explicitly excluded system/transaction pages (`404.html`, `payment-success/index.html`). Expanded sitemap from 117 to 129 URLs, including 12 pending research-city status pages that **retain noindex,follow**. Did not change unverified municipal claims. Generator and CI guards updated. PR #61 merged: https://github.com/DragonChenCL/CoopCheck/pull/61 . Fixed additional hard-coded sitemap-count and pending-exclusion tests through commit 8c12daa5c84ae7c0229b8c14ad536a57442308b7. GitHub Pages deployment run 38994031977 **success**, IndexNow notification run 38994059463 **success** (acknowledgement only, not Google indexing).
+- Inspected authenticated GSC at sc-domain:coopcheck.serunio.com. Homepage URL inspection: crawled successfully Oct 15, crawl and indexing allowed, but crawled/not indexed. Coverage.html: crawled Oct 13, not indexed. These were baseline observations, not signs of indexing approval.
+- **GSC indexing request CONFIRMED** by dialog text `已将网址添加到优先抓取队列中` for exactly eight distinct URLs:
+  1. https://coopcheck.serunio.com/coverage.html
+  2. https://coopcheck.serunio.com/states/arizona.html
+  3. https://coopcheck.serunio.com/states/texas.html
+  4. https://coopcheck.serunio.com/guides/chicken-coop-cost-calculator.html
+  5. https://coopcheck.serunio.com/guides/chicken-roost-length-calculator.html
+  6. https://coopcheck.serunio.com/guides/chicken-run-fencing-calculator.html
+  7. https://coopcheck.serunio.com/guides/coop-size-for-4-chickens.html
+  8. https://coopcheck.serunio.com/coop-plan.html
+- **Inspected / attempted, no reliable indexing confirmation**: California state page, 4x6 coop capacity page, nesting-box calculator, 6x8 capacity page, prefab capacity checker. GSC asynchronous UI and transient browser connection failures prevented proof of queue insertion. Do **not** claim ten were submitted or automatically retry already-confirmed eight. Homepage was only inspected, not requested again (avoid duplicate historical request).
+- Browser: one reused tab throughout. Google URL inspection sometimes requires live testing for 1–2 minutes; popup confirmation can arrive later than click. Some MCP calls failed with `Connection failed` or 5-second timeout despite subsequent browser availability.
+- Follow up: check GSC outcome for the eight confirmed requests after 7–14 days; request remaining two only if owner still wishes and tool/UI offers reliable confirmation. Sitemap submission does not override noindex or ensure indexing.
+
 ## 2026-10-17 CST — 129 URL sitemap deployment and GSC request quota
 
 - Owner requested every content page in sitemap and **10 priority GSC indexing requests**.
