@@ -12,30 +12,30 @@ function generateAll(registry,evidence){
   if(registry.cities.length!==100||batches.length!==82||verified.length+registry.cities.filter(c=>c.audit.status==="needs_review").length!==100)throw Error("Unexpected coverage counts "+[registry.cities.length,batches.length,verified.length]);
   const zoneLink=c=>existingStates.has(c.state)?"/states/"+c.stateName.toLowerCase().replaceAll(" ","-")+".html":"/coverage.html#"+c.state.toLowerCase();
   const cityLink=c=>"/cities/"+c.slug+".html";
+  // Show a scannable excerpt without changing the source-reviewed legal claim.
+  // Longer exceptions always remain available in the adjacent native disclosure.
+  function lawCard(c,key,label){
+    const full=String(c[key]||"").trim();
+    const long=full.length>150;
+    const first=full.split(/;\s*|(?<=[.!?])\s+/)[0].trim();
+    const excerpt=!long?full:first.length>=24&&first.length<=145?first:"This field has conditions that need a closer look.";
+    return `<article class="cc-law-card"><span class="cc-law-label">${esc(label)}</span><p class="cc-law-answer">${esc(excerpt)}</p>${long?`<details class="cc-law-detail"><summary>Read the full rule and exceptions</summary><p>${esc(full)}</p></details>`:""}</article>`;
+  }
   function page(c){
     const isActive=active(c),title=isActive?"Backyard Chicken Laws in "+c.name+", "+c.state+" | CoopCheck":"Backyard Chicken Rules in "+c.name+", "+c.state+" — Verification Pending | CoopCheck";
     const desc=isActive?"Official-source summary of chicken keeping, flock size, permits and coop placement in "+c.name+". Verify parcel rules before building.":"Coverage candidate for "+c.name+", "+c.state+". City-specific chicken rules have not been verified; do not rely on this page for permit or coop decisions.";
-    const structured=isActive?'<script type="application/ld+json">'+JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"How many backyard chickens can I keep in "+c.name+"?","acceptedAnswer":{"@type":"Answer","text":c.max}},
-      {"@type":"Question","name":"Are roosters allowed in "+c.name+"?","acceptedAnswer":{"@type":"Answer","text":c.roosters}},
-      {"@type":"Question","name":"Do I need a permit for backyard chickens in "+c.name+"?","acceptedAnswer":{"@type":"Answer","text":c.permit}}
-    ]}).replace(/</g,"\\u003c")+"</script>":"";
-    const rules=isActive?`<div class="rules">
-       <div class="rule"><span class="label">Flock allowance</span><strong>${esc(c.max)}</strong></div>
-       <div class="rule"><span class="label">Roosters</span><strong>${esc(c.roosters)}</strong></div>
-       <div class="rule"><span class="label">Permit or approval</span><strong>${esc(c.permit)}</strong></div>
-       <div class="rule"><span class="label">Coop placement</span><strong>${esc(c.placement)}</strong></div>
-      </div>`:`<div class="notice"><strong>City-specific rules are not verified yet.</strong> CoopCheck has not confirmed ${esc(c.name)}'s flock limit, rooster restrictions, permit requirements or legal coop setbacks. Please contact the city’s animal control or zoning office and consult the current municipal code before keeping poultry or placing a coop.</div>`;
+    const structured="";
+    const rules=isActive?`<div class="cc-law-grid" aria-label="City poultry rules">
+      ${lawCard(c,"max","Flock size")}${lawCard(c,"roosters","Roosters")}
+      ${lawCard(c,"permit","Permits and approvals")}${lawCard(c,"placement","Coop placement")}
+      </div>`:`<div class="notice"><strong>Not verified yet.</strong> We have not confirmed this city’s chicken limits, rooster rules, permits or setbacks. Ask local zoning or animal control before making plans.</div>`;
     const sources=c.sources.filter(s=>s.type!=="state_statute_only");
     const sourcelinks=sources.length?`<ul>${sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.type.replaceAll("_"," "))} — ${s.type.includes("draft")?"draft, NOT enacted-law proof":"cited document"}</a></li>`).join("")}</ul>`:"<p>The city-specific official code/source has not yet been checked. No city-wide legal conclusion is provided here.</p>";
     const statewide=c.sources.filter(s=>s.type==="state_statute_only").map(s=>`<p><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">Arizona statewide backyard-fowl statute</a> is relevant to eligible properties, but is <strong>not</strong> a verification of ${esc(c.name)}'s municipal code, permit rules or HOA restrictions.</p>`).join("");
     const status=isActive?(c.audit.status==="verified_limited_scope"?"Limited-scope policy summary · ":"Official-source summary reviewed · ")+esc(c.verified):"Research queue · not verified";
-    const intro=isActive?"Below are the limited city-level points supported by the cited government sources. Some permits, zoning, HOA and site-specific conditions remain outside this summary.":"This city is included in CoopCheck's first 100-city coverage queue, but its poultry rules are still undergoing source review. We are withholding unverified numerical and placement claims rather than guessing.";
-    const faq=isActive?`<h2>Questions to check before building</h2>
-      <div class="faq"><details><summary>How many chickens can I keep here?</summary><p>${esc(c.max)}</p></details>
-      <details><summary>Are roosters allowed?</summary><p>${esc(c.roosters)}</p></details>
-      <details><summary>Do I need a permit?</summary><p>${esc(c.permit)}</p></details>
-      <details><summary>Where can the coop be placed?</summary><p>${esc(c.placement)}</p></details></div>`:"";
+    const intro=isActive?"Start with the four essentials below: flock size, roosters, permits and coop location. Open any long rule to read its full conditions and check the linked official sources before acting.":"This profile is still being reviewed. We do not publish unverified local limits or setbacks as settled facts.";
+    // Do not duplicate long ordinance statements in FAQ accordions or structured data.
+    const faq="";
     const planner=isActive?`<p>Use the map planner only as a visual sketching tool: rule-specific setback automation is not supported for ${esc(c.name)}. A geometry result is not a legal compliance determination.</p><a class="btn secondary" href="/planner.html?city=${encodeURIComponent(c.slug)}">Open manual map planner</a>`:"<p>This city is not selectable as a verified ruleset in the planner yet. You can still sketch your lot independently, but do not infer permitted coop placement.</p><a class=\"btn secondary\" href=\"/planner.html\">Open general map planner</a>";
     return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -44,11 +44,11 @@ function generateAll(registry,evidence){
 <link rel="canonical" href="${BASE}${cityLink(c)}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="${BASE}${cityLink(c)}">${structured}</head>
 <body><header class="site-header"><div class="container nav"><a class="brand" href="/"><span class="brand-mark"><img src="/assets/logo-mark.svg" alt="" width="36" height="36"></span>CoopCheck</a><nav class="nav-links"><a href="/coverage.html">100-city coverage</a><a href="/planner.html">Map planner</a></nav></div></header>
-<main><section class="city-hero"><div class="container"><div class="breadcrumbs"><a href="/">Home</a> / <a href="${zoneLink(c)}">${esc(c.stateName)}</a> / ${esc(c.name)}</div><span class="eyebrow">${status}</span><h1>${isActive?"Backyard chicken laws in":"Backyard chicken rule research for"} ${esc(c.name)}, ${esc(c.state)}</h1><p class="lead">${esc(intro)}</p><div class="hero-actions"><a class="btn" href="/coverage.html">Browse city coverage</a></div></div></section>
-<section class="section"><div class="container"><div class="card">${rules}
-<div class="notice"><strong>Verification scope:</strong> A source-linked summary does not mean that all four legal rule fields have been cross-checked against their currently effective code sections. <a href="https://github.com/DragonChenCL/CoopCheck/blob/main/POLICY_COMPLETENESS_2026-10-13.md">Read the field-level evidence audit</a>.</div><div class="prose"><h2>Scope and limitations</h2><p>${esc(c.note)}</p>
-<h2>Official sources</h2>${sourcelinks}${statewide}
-${faq}<h2>Before buying birds or constructing a coop</h2><p>Confirm that your address is inside the correct city jurisdiction; look up your parcel zoning; confirm flock-size and rooster restrictions, any poultry permit, neighboring-dwelling or property-line separation, accessory-structure/building permits, and HOA or deed restrictions. City rules can change.</p><h2>Plan a coop sketch</h2>${isActive?`<div class="notice"><strong>Try a source-aware concept layout.</strong> Bring this municipality's reviewed evidence into the free chicken-coop layout tool; it will warn where a count or setback has NOT been checked, without claiming construction or permit approval. <a class="btn" href="/coop-plan.html?city=${encodeURIComponent(c.slug)}&amp;source=rules">Generate a coop concept for ${esc(c.name)} →</a></div>`:""}${planner}<p class="small">Informational planning aid only. This is not a permit approval, a parcel survey or legal advice.</p></div></div></div></section></main>
+<main><section class="city-hero"><div class="container"><div class="breadcrumbs"><a href="/">Home</a> / <a href="${zoneLink(c)}">${esc(c.stateName)}</a> / ${esc(c.name)}</div><span class="eyebrow">${status}</span><h1>${isActive?"Backyard chicken laws in":"Backyard chicken rule research for"} ${esc(c.name)}, ${esc(c.state)}</h1><p class="lead">${esc(intro)}</p><div class="hero-actions">${isActive?`<a class="btn" href="#city-rules">See city rules ↓</a><a class="btn secondary" href="/coop-plan.html?city=${encodeURIComponent(c.slug)}&amp;source=rules">Try a coop layout →</a>`:`<a class="btn" href="/coverage.html">Browse verified cities</a>`}</div></div></section>
+<section class="section" id="city-rules"><div class="container"><div class="card"><div class="cc-law-section-head"><div><span class="eyebrow">Quick guide · ${esc(c.name)}, ${esc(c.state)}</span><h2>Chicken rules at a glance</h2><p>Short reading summaries only. Expand longer statements for the complete reviewed wording.</p></div><a href="#city-sources">Official sources ↘</a></div>${rules}
+<details class="cc-law-audit"><summary>What was reviewed — and what is not confirmed?</summary><p>These field notes reflect the linked sources, but not every rule or exception has been confirmed against the currently effective code. <a href="https://github.com/DragonChenCL/CoopCheck/blob/main/POLICY_COMPLETENESS_2026-10-13.md">See the evidence audit</a>.</p><p>${esc(c.note)}</p></details><div class="prose">
+<h2 id="city-sources">Check the original sources</h2><p>Use the city or government documents below when checking your own property.</p>${sourcelinks}${statewide}
+${faq}<h2>Before you buy birds or build</h2><ul class="cc-law-checklist"><li>Confirm your address is inside the city limits and find its zoning.</li><li>Check the current chicken and rooster rules, plus any permit requirements.</li><li>Measure setbacks to the correct boundaries or neighboring buildings.</li><li>Check building rules, easements and private HOA restrictions.</li></ul><h2>Sketch a layout for your flock</h2>${isActive?`<p>Our free plan generator carries the reviewed city context alongside an editable 2D layout. It does not certify a permit or setback.</p><a class="btn" href="/coop-plan.html?city=${encodeURIComponent(c.slug)}&amp;source=rules">Plan a coop for ${esc(c.name)} →</a>`:""}${planner}<p class="small">Informational planning aid only. This is not a permit approval, a parcel survey or legal advice.</p></div></div></div></section></main>
 <footer class="footer"><div class="container footer-grid"><strong>CoopCheck</strong><a href="/coverage.html">City coverage directory</a></div></footer></body></html>\n`;
   }
   function coveragePage(){
