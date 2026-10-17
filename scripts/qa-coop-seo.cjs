@@ -11,8 +11,8 @@ assert.equal(specsPages.filter(x=>x.group==="flock").length,6);
 assert.equal(specsPages.filter(x=>x.group==="footprint").length,3);
 assert.equal(specsPages.filter(x=>x.group==="calculator").length,1);
 const sitemap=read("site/sitemap.xml");
-assert.equal((sitemap.match(/<loc>/g)||[]).length,116,"99 originals + 10 sizing pages + 6 tool intent pages + 1 buyer checker");
-assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1] )).size,116);
+assert.equal((sitemap.match(/<loc>/g)||[]).length,117,"99 originals + 10 sizing pages + 6 tool intent pages + buyer checker + permit worksheet");
+assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1] )).size,117);
 const titleSet=new Set(),descSet=new Set(),h1Set=new Set();
 const blogBase="https://coopcheck.serunio.com";
 for(const p of specsPages){
@@ -58,4 +58,4 @@ assert(home.includes('href="guides/chicken-coop-size-calculator.html"'),"homepag
 assert(setback.includes('href="chicken-coop-size-calculator.html"'),"setback contextual connection");
 assert(planner.includes('href="guides/chicken-coop-size-calculator.html"'),"free 2D plan can send users to sizing utility");
 assert(engine.includes('params.get("flock")')&&["size-guide","size-calculator","coop-size","coop-footprint","run-size","nesting-box","roost"].every(x=>engine.includes('"'+x+'"')),"deep linked flock should prefill ONLY from known sizing sources");
-console.log("PASS: 10 original SEO landing pages, 116 canonical sitemap URLs, credible sources and functioning size calculator");
+console.log("PASS: 10 original SEO landing pages, 117 canonical sitemap URLs, credible sources and functioning size calculator");
