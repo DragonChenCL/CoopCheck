@@ -1,5 +1,16 @@
 # CoopCheck 运营执行日志
 
+## 2026-10-17 CST — browser recovered, verified GSC, Reddit engagement, BYC timeout
+
+- **Real browser access recovered:** cfbrower reused exactly one existing tab, initially `about:blank`, and successfully navigated authenticated GSC and logged-in Reddit. This verifies actual Chrome/CDP/MCP browser operations, not merely ports or service status.
+- **Authenticated GSC performance** (screen observed at ~2026-10-17 09:16–09:18 CST; default view chart Sep 22–Oct 14): 23 total impressions, 0 clicks, average position 26.4. GSC said data updated ~6 hours before visit; avoid representing that as completed-day performance.
+- **GSC Indexing** (report last updated Oct 12): 1 indexed URL, 27 not indexed, of which 19 discovered/not indexed and 8 crawled/not indexed. Report is a delayed Google-known URL subset, not a count of all 117 canonical sitemap entries.
+- **Sitemaps:** `/sitemap.xml` submitted and successful, last read Oct 15 showing 115 discovered URLs; earlier legacy `/sitemap` succeeded Sep 30 with 26. Live generated canonical sitemap has since advanced to 117 entries, which the dated GSC report does not yet reflect. Did not resubmit sitemap or duplicate URL indexing requests.
+- **GSC links:** external links 0; internal links displayed 1. This is what GSC currently reports, not proof no third-party URL can link to the site.
+- **Reddit community, actual verified public comment:** reused same Chrome tab, inspected r/BackYardChickens thread about a 40,000 sq-ft zoning threshold (approx. 701 votes and 142 comments): https://www.reddit.com/r/BackYardChickens/comments/1wymt6i/the_end_of_an_era/ . Posted one empathetic, informative, **non-promotional** English comment about obtaining exact written ordinances, zoning checks, grandfathering/variances/appeals and distinguishing lot area from setbacks; **no CoopCheck link**. Verified publicly rendered comment and permalink https://www.reddit.com/r/BackYardChickens/comments/1wymt6i/comment/ph833b1/ . No additional comments or external links; later moderation persistence unverified.
+- **Browser stability:** one Reddit navigation tool returned `Connection closed`, but immediately following list-tabs confirmed that same tab had navigated and it continued responding. Subsequent navigation to BackyardChickens.com timed out, and one lightweight list-tabs attempt returned `async initializeServer: Timeout 15000ms exceeded` after the CDP WebSocket was connected. Stopped further browser operations to avoid stressing the small server. **No BYC posting, account operation, or backlink.** Exact hang cause (page load, MCP startup, host memory/CPU) remains unverified.
+- **Next:** check `systemctl status`, journal of Chrome/MCP and memory/Swap/CPU before resuming BYC; confirm watchdog is actually enabled and recovers MCP after CDP/browser hang, rather than assuming it is. On Oct 21 and later, recheck priority URLs' GSC index states without duplicate requests. Keep low-tab, respectful community engagement, and log any confirmed public results.
+
 ## 2026-10-16 — connected search baseline and primary-source permit worksheet experiment
 
 - GSC (Windsor.ai, account sc-domain:coopcheck.serunio.com, Sep 15–Oct 16): 23 impressions, 0 clicks. Oregon state 9, Portland 9, homepage 5. Daily nonzero last recorded Oct 1; source may lag through Oct 14.
