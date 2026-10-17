@@ -1,4 +1,4 @@
-/* Guard indexability and canonical metadata for every URL published in site/sitemap.xml.
+/* Guard sitemap completeness, canonical metadata, and pending-city noindex.
  * This is an offline build check, not a claim of Google/Bing indexing or a live crawl.
  */
 'use strict';
@@ -12,11 +12,12 @@ const sitemap = fs.readFileSync(path.join(SITE, 'sitemap.xml'), 'utf8');
 const entries = [...sitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>\s*<\/url>/g)]
   .map((match) => ({loc: match[1], lastmod: match[2]}));
 
-assert(entries.length >= 100, 'Unexpectedly few indexable URLs in generated sitemap');
+assert(entries.length >= 100, 'Unexpectedly few content URLs in generated sitemap');
 assert.equal(entries.length, (sitemap.match(/<url>/g) || []).length, 'Every sitemap entry must include a loc and lastmod');
 assert.equal(new Set(entries.map((entry) => entry.loc)).size, entries.length, 'Duplicate URL in sitemap');
 
 const titles = new Map();
+const pendingUrls = [];
 for (const {loc, lastmod} of entries) {
   const url = new URL(loc);
   assert.equal(url.origin, ORIGIN, 'Cross-domain sitemap URL: ' + loc);
@@ -35,7 +36,14 @@ for (const {loc, lastmod} of entries) {
   assert.equal(canonicalMatches[0][1], loc, 'Canonical must equal the sitemap URL: ' + loc);
   const robotsTag = [...html.matchAll(/<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']+)["']/gi)]
     .map((match) => match[1].toLowerCase());
-  assert(robotsTag.every((x) => !/\bnoindex\b/.test(x)), 'noindex page must not be in sitemap: ' + loc);
+  const noindex = robotsTag.some((x) => /\bnoindex\b/.test(x));
+  const pendingCity = url.pathname.startsWith('/cities/') && /Verification Pending \| CoopCheck/.test(html);
+  if (pendingCity) {
+    assert(noindex, 'Pending unverified city must retain noindex: ' + loc);
+    pendingUrls.push(loc);
+  } else {
+    assert(!noindex, 'Only pending city content can carry noindex in sitemap: ' + loc);
+  }
   const titleMatch = html.match(/<title>([\s\S]*?)<\/title>/i);
   assert(titleMatch && titleMatch[1].trim(), 'Missing title: ' + loc);
   const title = titleMatch[1].replace(/\s+/g, ' ').trim();
@@ -43,6 +51,25 @@ for (const {loc, lastmod} of entries) {
   titles.set(title, loc);
   assert(/<h1\b[^>]*>[\s\S]+?<\/h1>/i.test(html), 'Missing H1: ' + loc);
 }
+// Every content HTML page belongs in the sitemap. System and transaction
+// routes must remain noindex and are deliberately excluded.
+const excluded = new Set(['404.html', 'payment-success/index.html']);
+const contentPaths = [];
+function collectHtml(dir) {
+  for (const item of fs.readdirSync(dir, {withFileTypes: true})) {
+    const absolute = path.join(dir, item.name);
+    if (item.isDirectory()) collectHtml(absolute);
+    else if (item.isFile() && item.name.endsWith('.html')) {
+      const relative = path.relative(SITE, absolute).split(path.sep).join('/');
+      if (!excluded.has(relative)) contentPaths.push(relative);
+    }
+  }
+}
+collectHtml(SITE);
+const expectedUrls = contentPaths.map((p) => ORIGIN + (p === 'index.html' ? '/' : '/' + p)).sort();
+assert.deepEqual(entries.map((x) => x.loc).sort(), expectedUrls,
+  'Sitemap must exactly cover all content HTML pages (excluding 404 and payment flow)');
+assert(pendingUrls.length > 0, 'Expected pending city noindex guard to be exercised');
 assert(sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'), 'XML sitemap namespace');
 assert(fs.readFileSync(path.join(SITE, 'robots.txt'), 'utf8').includes('Sitemap: ' + ORIGIN + '/sitemap.xml'), 'robots.txt should reference the canonical sitemap');
-console.log('PASS: ' + entries.length + ' canonical, unique, indexable HTML sitemap targets and valid lastmod dates');
+console.log('PASS: ' + entries.length + ' canonical content URLs; ' + pendingUrls.length + ' pending cities remain noindex; valid lastmod and complete coverage');
