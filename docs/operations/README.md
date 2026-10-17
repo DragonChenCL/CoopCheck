@@ -37,6 +37,7 @@ docs/operations/
 10. [法规 × 图纸 × 地图：证据边界与用户联动](LAW_TO_COOP_PLAN_HANDOFF_2026-10-13.md)
 11. [鸡舍尺寸计算器 × 6 个鸡只数 × 3 个室内占地规格：SEO 长尾词首批实验](SEO_CHICKEN_COOP_SIZE_CLUSTER_2026-10-14.md)
 12. [第二批 SEO 长尾：活动场地、围栏、巢箱、栖架、建造成本、免费图纸六个独立工具](SEO_SECOND_INTENT_TOOLS_2026-10-14.md)
+13. [2026-10-16 免费鸡舍许可 site plan 工作表：证据、实验边界与 GSC 复盘](PERMIT_SITE_PLAN_EXPERIMENT_2026-10-16.md)
 
 网站：https://coopcheck.serunio.com/
 
