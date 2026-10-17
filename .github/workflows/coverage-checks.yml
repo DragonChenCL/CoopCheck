@@ -28,6 +28,8 @@ jobs:
         run: node scripts/qa-coop-seo.cjs
       - name: Verify evidence-backed prefab coop buyer checker
         run: node scripts/qa-prefab-coop-buyer.cjs
+      - name: Validate printable chicken permit worksheet and source scope
+        run: node scripts/qa-permit-worksheet.cjs
       - name: Guard every sitemap URL canonical and indexability
         run: node scripts/qa-sitemap-indexability.cjs
       - name: Verify six task-specific search intent landing tools in sync
