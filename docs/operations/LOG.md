@@ -9,6 +9,10 @@
 - Community: Reddit/BYC search examples read for real user questions; no comments, promotion, emails or third-party submissions made. Previous pitches not duplicated.
 - Browser cfbrower list-tabs call timed out repeatedly; no authenticated GSC/BYC use and no extra tab created. Latest indexing state not independently confirmed.
 - Follow-up: 7/14/28 days, see PERMIT_SITE_PLAN_EXPERIMENT_2026-10-16.md. Five previous GSC index requests must not be repeated. Dallas #38 and Lakewood #41 legal P0 remain unresolved.
+- **Delivery verified after initial log entry (2026-10-16 LA):** PR #60 https://github.com/DragonChenCL/CoopCheck/pull/60 merged via squash commit 6f0c91f05bd8411af4911f58f19ec07453b9b1d5. Latest PR validation workflow #83 passed all steps, including permit worksheet regression and sitemap checks.
+- GitHub Pages deployment https://github.com/DragonChenCL/CoopCheck/actions/runs/38987350292 completed with SUCCESS. This confirms the deployment workflow, but direct public HTTP validation was not possible because browser tab initialization timed out and local curl DNS resolution failed; do not overclaim live HTTP.
+- Automatic IndexNow notifier https://github.com/DragonChenCL/CoopCheck/actions/runs/38987377387 successfully submitted exactly two updated canonical URLs (homepage and new permit checklist), receiving HTTP 200. Runner public-key preflight returned 403 but did not prevent IndexNow receipt; 200 is notification acknowledgement only, **not search indexing**.
+- Additional content correction in same PR: homepage source-review badge updated from outdated 87 reviewed / 13 pending to 88 reviewed / 12 pending.
 
 ## 2026-10-15 — Full production sitemap audit, San Diego freshness and BYC source correction
 
