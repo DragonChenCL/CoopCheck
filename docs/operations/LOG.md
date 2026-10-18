@@ -1,5 +1,16 @@
 # CoopCheck Operations Log
 
+## 2026-10-19 — Reddit 第二轮逐帖回复（4 条已确认）
+
+- **新发布 4 条**，都在 r/BackYardChickens，由已登录 Reddit 账号在真实页面逐个提交，并且随后检查到 `shreddit-comment` 节点与 `permalink`。复用浏览器唯一 Tab；未购买曝光、未批量重复灌水。
+- **冬季雪荷载与顶梁损坏**：https://www.reddit.com/r/BackYardChickens/comments/1x8mo8l/comment/phljdk0/ 。讨论用户的轻型围栏棚顶梁被雪压弯，胶带/金属片临时固定；说明继续承受积雪的塌陷危险、避免继续信任受损顶梁、考虑可靠替代屋顶与查看当地高度/退距规则。无自站链接。
+- **散养鸡冬季雨淋、鸡舍包篷后的湿气和冻伤**：https://www.reddit.com/r/BackYardChickens/comments/1x8nr7p/comment/phljm5y/ 。说明高位通风、防直吹、检查结露/潮湿垫料、室外遮雨区等。无自站链接。
+- **明尼苏达保温双层鸡鸭舍冬季湿度**：https://www.reddit.com/r/BackYardChickens/comments/1x9adco/comment/phljz9t/ 。关注鸡鸭混养湿气、湿度计监测、可控换气/补风、冷热结露风险及加热设施防火。无自站链接。
+- **加拿大阿尔伯塔新房附带鸡群，养鸡新手入门**：https://www.reddit.com/r/BackYardChickens/comments/1x8kv52/comment/phlkco2/ 。个性化清单：清点品种数量，舍和围栏防捕食者，北方冬天水不结冰、丝羽乌骨鸡保暖与干燥、检查加热器用电安全、核查所在地政策。无自站链接。
+- 核查上一轮 CoopCheck 链接 https://www.reddit.com/r/BackYardChickens/comments/1x2etj8/comment/phlc6fh/ 仍在已登录浏览器中可见，指向 `https://coopcheck.serunio.com/guides/chicken-coop-size-calculator.html`，`rel="noopener nofollow ugc"`。这次没有新增可确认反向链接。
+- **本轮净增统计**：4 条实际显示的评论、0 条新外链、0 美元支出。平台页面出现的评论不代表第三方可见、搜索引擎抓取或引荐点击均已完成验证。浏览器页面的持续可见性后续仍应按公开链接复核。
+- 主题筛查：Reddit 站内检索 r/BackYardChickens 的 `coop`、`run` 和 `city ordinance`，以及 r/homestead `chicken run`；法规检索结果缺乏近期高匹配投稿，不硬推 CoopCheck 链接。筛除重复既有讨论、患病/喂养或纯晒照帖。
+ 
 ## 2026-10-19 — Reddit 鸡舍讨论精准回复与实际外链核验
 
 - 范围：复用 cfbrower 唯一 Tab；Reddit 登录账号已有会话。用户表示已电话获得 r/BackYardChickens 和 r/chickens 版主对代发内容的同意（**用户陈述，未见书面确认**）。两版公开规则仍写 No AI，因此仍须谨慎遵守其它反垃圾/商品推广要求。
