@@ -1,3 +1,20 @@
+# CoopCheck Operations Log
+
+## 2026-10-18 — CoopCheck 外链自主申请（真实提交与待审核）
+
+**结果统计：成功送审 2；已验证公开新外链 0；付费 0；新注册账号 0。** 复用 cfbrower 的唯一 tab；避免重复联系 10/13–10/15 已联络的 Community Chickens、Backyard Chicken Pro、Waddle & Cluck。
+
+1. **Ignlab Launch — 送审成功**：https://launch.ignlab.net/submit.html。提交 CoopCheck 官网、免费产品定位、100 城市法规来源、2D 概念规划与面积工具；选 Other / Free；邮箱留空。提交后页面明确回执 “Thanks! Your tool is in the queue”。**审核中，不代表公开外链。** 其私人 edit token 不写入公开仓库。
+2. **public.tools — 投稿成功**：https://tally.so/r/Gx75Qz （入口 https://public.tools/）。推荐可直接使用的鸡舍尺寸计算器 https://coopcheck.serunio.com/guides/chicken-coop-size-calculator.html，选择 Utilities，说明 2–24 只鸡的室内/户外独立面积计算、巢箱/栖架、免费无账号。提交后 Tally 明确显示 “Form submitted / Thanks for completing this form!”。**待编辑审核，尚无公开列表 URL**。
+3. **The Free Tools Directory — 未提交确认**：https://thefreetoolsdirectory.com/submit 。网站提供免费投稿表单、允许 Email optional、分类包括 Home & Household/Construction；浏览器页面上下文持续销毁或连接失败，未收到回执。待浏览器恢复后再试，避免重复未知请求。
+4. **The Tool Directory — 未提交**：https://thetooldirectory.com/submit-a-tool/ 浏览器返回 403 / checking browser。免费审核是真实政策，但当前不能自动提交。站内说明免费 listing 不承诺 dofollow，付费推广有单独套餐，**不采购**。
+5. **Ultimate Free Tools — 账号门槛**：https://ultimatefreetools.com/submit-a-tool/ 需要 Publisher 登录/注册后提交，未私自开户。
+6. **Uneed — 页面校验阻止**：https://www.uneed.best/submit-a-tool 。现存浏览器 tab 原先为 Cloudflare 校验。没有成功投递证据，不能当已入队。
+7. **Linkrena — 发现渠道但放弃本轮提交**：https://linkrena.com/ 更偏 AI 工具/代理，CoopCheck 不是 AI-first；避免误报类目。
+8. **其他待核验（优先真工具/自然编辑引用）**：https://www.saashub.com/services/submit 、https://alternativeto.net/faq/#add-a-new-application 、https://homesteadhow-to.com/contribute/ 、https://boskizbackyard.com/write-for-us 、https://www.flowpath.cloud/ 、https://www.somuch.com/submit-links/ 。其中要注册或人工原创稿的渠道不能假称免费无门槛。
+
+**后续验收**：检查公开列表 URL、是否确实链回 coopcheck.serunio.com、nofollow/sponsored 标记、被 Google 发现/收录状态、GA4 referral。只有实际公开且可访问的编辑链接才计入成功外链；不要根据搜索结果里的第三方 DR 声称 SEO 收益。优先垂直养鸡/家禽内容引用，软件目录只作为补充。避免论坛刷帖、伪造养鸡经验或购买链接。
+
 # CoopCheck 运营执行日志
 
 ## 2026-10-17 — Sitemap expansion and authenticated GSC priority requests
