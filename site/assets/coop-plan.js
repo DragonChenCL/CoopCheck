@@ -101,6 +101,10 @@
         width:Number(form.elements.namedItem("width").value),
         depth:Number(form.elements.namedItem("depth").value),
         style:form.elements.namedItem("style").value};
+      // Keep pressed states accurate after typing, not only after clicking a preset.
+      for(const button of root.document.querySelectorAll("[data-plan-flock]")){
+        button.setAttribute("aria-pressed",String(values.flock===Number(button.dataset.planFlock)));
+      }
       const computed=api.design(values);
       if(!computed){
         result.textContent="Enter 2–24 birds, width 6–50 ft, and depth 8–80 ft.";
@@ -298,14 +302,16 @@
       '<path d="M'+(left-29)+' '+top+'H'+(left-6)+' M'+(left-29)+' '+(top+D)+'H'+(left-6)+'" stroke="#5e8c6a" stroke-width="1.4"/>',
       '<text x="'+(left-44)+'" y="'+(top+D/2)+'" transform="rotate(-90 '+(left-44)+' '+(top+D/2)+')" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#37684d" text-anchor="middle">'+xml(format(m.depth))+' ft total depth</text>'
     ];
-    const headingSize=cw>170?18:13;
-    parts.push('<text x="'+(cx+cw/2)+'" y="'+(cy+Math.min(28,cd*.28))+'" font-family="Arial,sans-serif" font-size="'+headingSize+'" font-weight="700" fill="#6f4a25" text-anchor="middle">INDOOR COOP</text>');
-    parts.push('<text x="'+(cx+cw/2)+'" y="'+(cy+Math.min(46,cd*.42))+'" font-family="Arial,sans-serif" font-size="12" fill="#6f4a25" text-anchor="middle">'+xml(format(m.coop.width))+' × '+xml(format(m.coop.depth))+' ft</text>');
+    // Small coop rectangles must not cram labels, nest icons and roost markers together.
+    const headingSize=cw>170?16:12;
+    const showInteriorFittings=cw>=150&&cd>=155;
+    parts.push('<text x="'+(cx+cw/2)+'" y="'+(cy+Math.min(25,Math.max(16,cd*.32)))+'" font-family="Arial,sans-serif" font-size="'+headingSize+'" font-weight="700" fill="#6f4a25" text-anchor="middle">INDOOR COOP</text>');
+    if(cd>=67)parts.push('<text x="'+(cx+cw/2)+'" y="'+(cy+Math.min(46,cd*.55))+'" font-family="Arial,sans-serif" font-size="12" fill="#6f4a25" text-anchor="middle">'+xml(format(m.coop.width))+' × '+xml(format(m.coop.depth))+' ft</text>');
     const nb=m.nestBoxes;
     // 1-foot nest-box symbols, arranged along one or two coop walls as required.
     const size=Math.min(scale*.78,32);
     const maxCols=Math.max(1,Math.floor((Math.max(0,cw-20))/(size+3)));
-    for(let i=0;i<nb;i++){
+    for(let i=0;showInteriorFittings&&i<nb;i++){
       const cols=Math.min(nb,maxCols);
       const xx=cx+10+(i%cols)*(size+3),yy=cy+Math.max(52,cd*.50)+Math.floor(i/cols)*(size+4);
       if(xx+size<=cx+cw-4&&yy+size<=cy+cd-4){
@@ -313,7 +319,7 @@
         if(size>=16)parts.push('<text x="'+(xx+size/2)+'" y="'+(yy+size*.67)+'" font-size="'+Math.max(9,size*.5)+'" font-family="Arial,sans-serif" text-anchor="middle" fill="#94682e">N</text>');
       }
     }
-    if(cd>=75){
+    if(showInteriorFittings&&cd>=175){
       const ry=cy+cd-Math.min(25,cd*.20);
       parts.push('<line x1="'+(cx+16)+'" y1="'+ry+'" x2="'+(cx+cw-16)+'" y2="'+ry+'" stroke="#755d48" stroke-width="5" stroke-linecap="round"/>');
       parts.push('<text x="'+(cx+cw/2)+'" y="'+(ry-7)+'" text-anchor="middle" fill="#755d48" font-size="11" font-family="Arial,sans-serif">ROOST (SCHEMATIC)</text>');
