@@ -1,5 +1,15 @@
 # CoopCheck Operations Log
 
+## 2026-10-19 — Reddit 鸡舍讨论精准回复与实际外链核验
+
+- 范围：复用 cfbrower 唯一 Tab；Reddit 登录账号已有会话。用户表示已电话获得 r/BackYardChickens 和 r/chickens 版主对代发内容的同意（**用户陈述，未见书面确认**）。两版公开规则仍写 No AI，因此仍须谨慎遵守其它反垃圾/商品推广要求。
+- **新发布 #1**：https://www.reddit.com/r/BackYardChickens/comments/1x2etj8/comment/phlc6fh/ 。主题：10 只鸡与 7×7 英尺树脂鸡舍；比较约 49 sq ft 室内空间、栖架支撑、通风、捕食者防护，披露自己开发的免费 CoopCheck 鸡舍尺寸计算器。浏览器确认评论节点 `t1_phlc6fh` 和可点击产品链接 `https://coopcheck.serunio.com/guides/chicken-coop-size-calculator.html`，该链接 `rel="noopener nofollow ugc"`。**这是一条实际 Reddit UGC 外链，但不是 dofollow，也不能直接当排名提升或已收录。**
+- **新发布 #2**：https://www.reddit.com/r/BackYardChickens/comments/1x943n4/comment/phlcsgh/ 。主题：北卡 10–15 只鸡对比 Producers Pride Defender、Zylina、OverEZ；强调真实室内面积/活动区分开核算、通风、可清洁性、栖架长度，未带站点链接；确认评论节点已显示。
+- **新发布 #3**：https://www.reddit.com/r/chickens/comments/1x4vwwo/comment/phld1z8/ 。主题：11 只青年鸡长期在 8×4 英尺鸡舍；计算约 2.9 sq ft/只、提醒年龄差异/活动区与成鸡夜宿安全等，未带站点链接；确认评论节点已显示。
+- **避免重复**：r/chickens `/comments/1x5cg76/` 与此前 r/homestead `/comments/1x5cdk6/` 为同一作者重复求助，已在后者回复，前者未发；患病鸡的诊断帖与项目不相关，未参与。
+- 当天另发现 https://www.reddit.com/r/BackYardChickens/comments/1x8uk37/comment/phie22t/ 账号已有针对密歇根州鸡舍冬季设计的回复，本轮只核验现存，不计入本轮新增。
+- **本轮新增**：成功发出 3 条评论，其中含自站链接 1 条，已验证 Reddit 展示及属性 `nofollow ugc`；付费=0、未复制粘贴批量刷屏。后续应观察公开保留状态、referral、被点击率；不要将社区链接计为编辑推荐型外链。
+
 ## 2026-10-18 — CoopCheck 外链自主申请（真实提交与待审核）
 
 **结果统计：成功送审 2；已验证公开新外链 0；付费 0；新注册账号 0。** 复用 cfbrower 的唯一 tab；避免重复联系 10/13–10/15 已联络的 Community Chickens、Backyard Chicken Pro、Waddle & Cluck。
