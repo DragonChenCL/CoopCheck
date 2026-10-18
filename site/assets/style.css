@@ -649,3 +649,11 @@
 .cc-law-checklist{background:#f7faf5;border-left:4px solid #70a981;padding:14px 20px 14px 36px}
 .cc-law-checklist li{margin:6px 0}
 @media(max-width:680px){.cc-law-grid{grid-template-columns:minmax(0,1fr)}.cc-law-card{padding:15px}.cc-law-section-head{margin-bottom:14px}}
+
+
+/* 2026-10-18 browser QA: contain wide evidence tables and official-source URLs on narrow phones. */
+.cc-benchmark,.cc-benchmark-inner,.cc-benchmark-scroll{min-width:0;max-width:100%;box-sizing:border-box}
+.cc-benchmark-scroll{display:block;width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.city-hero,.prose,.card,.source-box,.cc-benchmark-inner{overflow-wrap:anywhere}
+.prose a[href^="http"],.source-box a,.cc-benchmark-evidence a,.cc-law-card a{overflow-wrap:anywhere;word-break:break-word}
+@media(max-width:680px){.cc-benchmark-inner{padding:15px}.cc-benchmark-table{min-width:625px}}

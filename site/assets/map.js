@@ -14,14 +14,34 @@
 
   mapboxgl.accessToken=TOKEN;
 
-  const map=new mapboxgl.Map({
-    container:"map",
-    style:"mapbox://styles/mapbox/standard-satellite",
-    center:[-98.5795,39.8283],
-    zoom:3.2,
-    attributionControl:true
-  });
-  map.addControl(new mapboxgl.NavigationControl({visualizePitch:true}),"top-right");
+  // An inaccessible WebGL context (remote desktops, privacy-restricted browsers, etc.)
+  // should show a useful alternative instead of crashing and leaving "Loading map…" forever.
+  function showMapUnavailable(){
+    $("map").innerHTML='<div class="map-missing"><strong>Interactive map unavailable in this browser.</strong><p>The map needs WebGL graphics support. Try enabling hardware acceleration or use our <a href="/coop-plan.html">free 2D coop layout tool</a>, which works without a map.</p></div>';
+    const status=$("mapStatus");
+    if(status)status.textContent="Unable to load the interactive map. No parcel or setback result was calculated.";
+    for(const id of ["findAddress","drawProperty","drawHouse","drawCoop","finishShape","finishShapeMobile","undoPoint","clearMap"]){
+      const element=$(id);if(element)element.disabled=true;
+    }
+  }
+  if(typeof mapboxgl.supported==="function"&&!mapboxgl.supported()){
+    showMapUnavailable();
+    return;
+  }
+  let map;
+  try{
+    map=new mapboxgl.Map({
+      container:"map",
+      style:"mapbox://styles/mapbox/standard-satellite",
+      center:[-98.5795,39.8283],
+      zoom:3.2,
+      attributionControl:true
+    });
+    map.addControl(new mapboxgl.NavigationControl({visualizePitch:true}),"top-right");
+  }catch(error){
+    showMapUnavailable();
+    return;
+  }
 
   const drawRoleColor=[
     "match",["get","user_role"],
