@@ -35,6 +35,18 @@ async function main(){
     assert(defaultStats.includes("2 × 12 in"),"nest boxes");
     await page.screenshot({path:path.join(screens,"coop-desktop.png"),fullPage:true});
     console.log("PASS: desktop initial render and default flock/area math");
+    // Browser QA regression: the small default indoor area must not cram nest/roost glyphs into labels.
+    const defaultSvg=await page.locator("#planSvgPreview svg").innerHTML();
+    assert(!defaultSvg.includes("ROOST (SCHEMATIC)"),"small coop preview should not overlap a roost marker");
+    assert(!defaultSvg.includes(">N</text>"),"small coop preview should not place overlapping nest glyphs");
+    await page.locator('[data-plan-flock="12"]').click();
+    assert.equal(await page.locator('#planFlock').inputValue(),"12");
+    assert.equal(await page.locator('[data-plan-flock="12"]').getAttribute("aria-pressed"),"true");
+    await page.locator("#planFlock").fill("10");
+    assert.equal(await page.locator('[data-plan-flock="12"]').getAttribute("aria-pressed"),"false","preset highlight must clear on manual edit");
+    await page.locator("#planFlock").fill("6");
+    console.log("PASS: live presets accurately reflect typed count; small SVG labels are uncluttered");
+
 
     for(const template of ["raised","compact","walkin"]){
       await page.locator('label:has(input[name="style"][value="'+template+'"])').click();
@@ -266,6 +278,21 @@ async function main(){
     assert(metrics.doc<=metrics.viewport+2,"horizontal overflow "+JSON.stringify(metrics));
     assert(metrics.button>200&&metrics.svg>240,"mobile controls remain visible");
     console.log("PASS: 375px mobile layout fits without horizontal overflow");
+    // Verify real mobile city-law pages, long links, and evidence-table containment.
+    for(const slug of ["austin-tx","vancouver-wa","denver-co"]){
+      await page.goto(base+"/cities/"+slug+".html",{waitUntil:"networkidle"});
+      const mobile=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));
+      assert(mobile.scroll<=mobile.width+2,"city law mobile overflow "+slug+" "+JSON.stringify(mobile));
+      const details=page.locator(".cc-law-detail summary");
+      if(await details.count()){
+        await details.first().click();
+        assert(await page.locator(".cc-law-detail[open]").count()>0,"long legal claim remains available "+slug);
+        const expanded=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));
+        assert(expanded.scroll<=expanded.width+2,"city law expansion causes overflow "+slug);
+      }
+    }
+    console.log("PASS: source-backed Austin, Vancouver and Denver city guides fit mobile with expanded rules");
+
 
     assert.deepEqual(fatal,[],"page JS and console errors");
     console.log("PASS: no uncaught browser exceptions or console errors");
