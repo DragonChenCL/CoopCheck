@@ -34,6 +34,9 @@
   };
 
   const ctx=context();
+  if(location.pathname.endsWith("/report.html")){
+    window.coopTrack("paid_report_offer_view",{offer_sku:"permit-report"});
+  }
 
   if(location.pathname.endsWith("/planner.html")){
     window.coopTrack("planner_open");
@@ -47,6 +50,11 @@
     const a=e.target.closest&&e.target.closest("a");
     if(!a)return;
 
+    const allowed=new Set(["paid_report_offer_click","paid_report_sample_click","paid_report_planner_click"]);
+    const eventName=a.dataset?.ccEvent;
+    if(allowed.has(eventName)){
+      window.coopTrack(eventName,{offer_sku:"permit-report",source_page:location.pathname});
+    }
     const href=a.getAttribute("href")||"";
     const text=(a.textContent||"").trim().replace(/\s+/g," ").slice(0,100);
 
