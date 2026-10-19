@@ -11,7 +11,7 @@ const sitemap=read("sitemap.xml"),generator=fs.readFileSync(path.join(__dirname,
 const index=read("index.html"),guide=read("guides/backyard-chicken-permit-site-plan-checklist.html");
 assert(offer.includes('href="https://coopcheck.serunio.com/report.html"'),"Canonical report URL");
 assert(offer.includes('This is a fictional example') && offer.includes("NOT VALID FOR PERMITS"),"Sample must be visibly fictional");
-assert(offer.includes('One-time $4.99 unlock')&&offer.includes("no payment"),"Transparent pricing and free preview");
+assert(offer.includes('One-time $4.99 unlock')&&offer.toLowerCase().includes("no payment"),"Transparent pricing and free preview");
 assert(offer.includes('href="planner.html?from=report#start-map"'),"Preview-to-map path");
 assert(offer.includes("Free chicken coop layout vs. paid site plan report"),"Free vs paid clarified");
 assert(planner.includes('id="start-map"')&&planner.includes('href="report.html#sample"'),"Sample before map drawing");
