@@ -7,8 +7,8 @@ const calc=require("../site/assets/coop-intent-tools.js");
 assert.equal(pages.length,6);
 assert.equal(new Set(pages.map(x=>x.slug)).size,6);
 const sitemap=read("site/sitemap.xml");
-assert.equal((sitemap.match(/<loc>/g)||[]).length,129);
-assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1])).size,129);
+assert.equal((sitemap.match(/<loc>/g)||[]).length,130);
+assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1])).size,130);
 const headings=new Set(),descs=new Set(),titles=new Set();
 for(const p of pages){
  const html=read("site/guides/"+p.slug+".html");
