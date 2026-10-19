@@ -657,3 +657,7 @@
 .city-hero,.prose,.card,.source-box,.cc-benchmark-inner{overflow-wrap:anywhere}
 .prose a[href^="http"],.source-box a,.cc-benchmark-evidence a,.cc-law-card a{overflow-wrap:anywhere;word-break:break-word}
 @media(max-width:680px){.cc-benchmark-inner{padding:15px}.cc-benchmark-table{min-width:625px}}
+
+/* Paywall-free offer preview above map. */
+.cc-site-report-teaser{margin:22px 0 26px;border:1px solid #cde2d1;border-radius:18px;background:linear-gradient(115deg,#f5faf3,#fffbf3);padding:22px 24px;display:flex;gap:18px;justify-content:space-between;align-items:center}
+.cc-site-report-teaser h2{font-size:clamp(23px,3vw,32px);margin:8px 0}.cc-site-report-teaser p{max-width:850px;line-height:1.65;margin:8px 0}.cc-site-report-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:13px 0}.cc-site-report-links>a:not(.btn){color:#22694f;font-weight:750}.cc-site-report-price{white-space:nowrap;color:#1c6546;font-size:32px;text-align:center}.cc-site-report-price small{display:block;font-size:12px;color:#5b7363;font-weight:500}#start-map{scroll-margin-top:18px}@media(max-width:700px){.cc-site-report-teaser{flex-direction:column;align-items:flex-start;padding:17px}.cc-site-report-price{font-size:26px;text-align:left}}@media print{.cc-site-report-teaser{display:none!important}}
