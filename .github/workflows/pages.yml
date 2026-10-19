@@ -72,6 +72,9 @@ jobs:
       - name: Verify mocked payment flow without charge
         run: node scripts/qa-coop-payment.cjs
 
+      - name: Verify paid report offer, purchase deduplication, and mocked entitlement
+        run: node scripts/qa-report-conversion.cjs
+
       - name: Build runtime config
         env:
           MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
