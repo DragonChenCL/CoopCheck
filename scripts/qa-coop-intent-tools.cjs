@@ -76,4 +76,4 @@ assert(plan.includes('guides/chicken-run-size-calculator.html')&&plan.includes('
 for(const kind of ["run-size","nesting-box","roost"])assert(engine.includes('"'+kind+'"'),"handoff "+kind);
 const old=read("site/guides/chicken-coop-size-calculator.html");
 assert(old.includes("chicken-run-size-calculator.html")&&old.includes("chicken-coop-cost-calculator.html"),"first cluster backlinked");
-console.log("PASS: six authentic intent tools, 129 canonical URLs, formulas, quoted cost handling and full internal links");
+console.log("PASS: six authentic intent tools, 130 canonical URLs, formulas, quoted cost handling and full internal links");
