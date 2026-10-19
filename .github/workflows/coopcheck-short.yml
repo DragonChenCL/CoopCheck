@@ -1,0 +1,46 @@
+name: CoopCheck Shorts — genuine browser screencast
+
+on:
+  push:
+    paths:
+      - ".github/workflows/coopcheck-short.yml"
+      - "scripts/marketing/render_short.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout CoopCheck
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install browser, voice and video dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright==1.56.0 edge-tts==7.2.7
+          python -m playwright install --with-deps chromium
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak ffmpeg fonts-dejavu-core
+      - name: Record the live site and render narrated Shorts video
+        run: python scripts/marketing/render_short.py
+      - name: Check output is a valid 1080x1920 MP4
+        run: |
+          test -s marketing-output/coopcheck_short_01.mp4
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height,codec_name -of default=noprint_wrappers=1 marketing-output/coopcheck_short_01.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 marketing-output/coopcheck_short_01.mp4
+      - name: Save production-ready video and review image
+        uses: actions/upload-artifact@v4
+        with:
+          name: CoopCheck-Shorts-01
+          path: |
+            marketing-output/coopcheck_short_01.mp4
+            marketing-output/end_snapshot.png
+            marketing-output/captions.ass
+          retention-days: 30
