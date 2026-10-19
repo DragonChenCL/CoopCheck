@@ -1,5 +1,16 @@
 # CoopCheck Operations Log
 
+## 2026-10-19 — First direct B2B outreach batch (five sent)
+
+- Gmail account sent **5 targeted first-contact messages**, all returned provider message IDs (sent, not reply or deliverability proof). B2B builder pitch: branded coop-size/quote-intake widget, first offer to review a tailored mockup for free, then an optional fixed-price paid pilot. Creator pitch: free planner evaluation, optional collaboration, no positive-review obligation. No proven conversion claims, no follow-up automation.
+- Cocalico Coops — `customcoopsbyjordan@gmail.com` — message `1a152032bed8599a`.
+- San Tan Valley Coops — `santanvalleycoops@gmail.com` — message `1a1520330099aa8a`.
+- Triano Farms — `office@trianofarms.com` — message `1a15203375c59235`.
+- All Purpose Construction — `leslie@allpurposeconstructionok.com` — message `1a152033fa43bd32`.
+- Eggsistential Farms (creator) — `eggsistentialfarms@gmail.com` — message `1a152034501e17b4`.
+- Previously contacted Waddle & Cluck, Community Chickens and Homestead How-To were excluded. **5 sent, 0 verified replies, 0 revenues as of this action.** Verify response/bounce outcomes before proceeding with a second stage.
+
+
 ## 2026-10-19 — Reddit 第二轮逐帖回复（4 条已确认）
 
 - **新发布 4 条**，都在 r/BackYardChickens，由已登录 Reddit 账号在真实页面逐个提交，并且随后检查到 `shreddit-comment` 节点与 `permalink`。复用浏览器唯一 Tab；未购买曝光、未批量重复灌水。
