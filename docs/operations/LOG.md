@@ -1,5 +1,30 @@
 # CoopCheck Operations Log
 
+## 2026-10-19 — First-user acquisition, second active outreach wave
+
+### Live data checks
+- GSC CoopCheck domain, available Oct 12–16: 0 impressions, 0 clicks; Oct 17–19 have no rows yet, not proven zeros. GA4 Oct 15–19 query: 7 sessions (6 direct, 1 chatgpt.com/ai-assistant), 3 active users. No Reddit or UTM email sessions in returned source/campaign reports. Page views and tool events may include developer tests. Current externally attributable new users: **0 verified**.
+- Gmail inbox search for CoopCheck/chicken-related replies and mailer-daemon bounces newer than four days returned zero relevant messages at check time, not proof of delivery.
+
+### Targeted editorial invitation sent
+- **The Happy Chicken Coop**: site currently has Sept 2026 updated DIY coop plans and build-design guides, relevant to a free size-checker resource. Public email `contact@thehappychickencoop.com` found in its own historical PDF; verified no earlier sent Gmail to that recipient. Sent subject “Free coop-size cross-check for your DIY coop plans readers”; Gmail ID `1a152588a2568bda`.
+- Invited honest evaluation from editors or readers; no request for payment, positive review, or mandatory link. Measurement URL: https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html?utm_source=editor_outreach&utm_medium=email&utm_campaign=first_users_oct26&utm_content=happy_chicken_coop
+- **Actual outcome:** Gmail sent confirmation only; delivery, reply, editorial inclusion and referral visits not verified.
+
+### Reddit project feedback post published
+- Subreddit: r/SideProject, which describes itself as a place to share projects and receive constructive feedback. Avoided subreddits with explicit AI-generated text restrictions.
+- Live post: https://www.reddit.com/r/SideProject/comments/1x9n6xj/coopcheck_free_chickencoop_size_checker_seeking/
+- Exact title: “CoopCheck – free chicken-coop size checker; seeking feedback from actual chicken keepers”. Honest product-owner disclosure, no account/payment needed, invites critical 4–8 bird real measurement checks. Separates inside coop and run and notes tool is not engineered plans or permit approval.
+- UTM link: https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html?utm_source=reddit&utm_medium=community&utm_campaign=first_users_oct26&utm_content=sideproject
+- Submitted using logged-in cfbrower, verified new post ID `1x9n6xj` on subreddit feed and exact post detail page: title, content, link visible; no removal notice at time of check. It may be moderated or taken down later. Single browser tab used throughout; no duplicate submission after transient first click error.
+- **Net new this wave:** 1 verified on-page Reddit post with CoopCheck URL, 1 sent editorial invitation, 0 verified resulting external site visitors, 0 confirmed product feedback, 0 orders. r/SideProject's audience is makers, not necessarily chicken keepers; classify feedback visitors separately from high-intent poultry buyers.
+
+### Next measurement
+- Watch GA4 `session_source_medium` plus `session_manual_campaign_name` and `session_manual_source` for `first_users_oct26`, page views on `prefab-chicken-coop-capacity-checker.html`, and tool calculation events. Exclude owner/test activity where feasible.
+- Check Reddit thread for real comments/questions and continued public visibility before further post submissions. No duplicate posts in r/SideProject.
+- Check Gmail for replied editorial feedback and bounces. Avoid immediate repeat emails to previously contacted sites. Consider user feedback before modifying paid report.
+
+
 ## 2026-10-19 — First-user acquisition: targeted feedback invitation
 
 - Connected GSC (2026-10-15..16): 0 impressions and 0 clicks; no available Oct 17–18 rows. GA4 Oct 1–18 reported 27 sessions (26 Direct, 1 AI Assistant), no organic search, and only four active users; existing visits may include developer/testing activity.
