@@ -1,5 +1,15 @@
 # CoopCheck Operations Log
 
+## 2026-10-19 — First-user acquisition: targeted feedback invitation
+
+- Connected GSC (2026-10-15..16): 0 impressions and 0 clicks; no available Oct 17–18 rows. GA4 Oct 1–18 reported 27 sessions (26 Direct, 1 AI Assistant), no organic search, and only four active users; existing visits may include developer/testing activity.
+- Checked already logged Reddit activity to prevent duplicates. Examined [four-hen build vs. buy discussion](https://www.reddit.com/r/BackYardChickens/comments/1x3iswq/overwhelmed_by_the_amount_of_coop_and_choices/), a genuine question about prefab capacity, plans and budget. Browser comment-composer attempts timed out; **zero new Reddit comments were verified or counted**.
+- **One tailored first-contact email sent**, to Backyard Chickens Coop site contact (admin@backyardchickenscoop.com), subject “Free chicken-coop size checker — looking for real-world feedback”, Gmail message ID `1a152503b3be52bc`. Invited an honest no-payment, no-signup trial with real 4–8-hen dimensions, explicitly disclosed product authorship and no expectation of a published link. Send confirmed by Gmail; delivery, opens, reply, visits, and customers **not confirmed**.
+- Tagged tool URL: https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html?utm_source=outreach&utm_medium=email&utm_campaign=first_users_oct26&utm_content=backyardchickenscoop
+- New verified outcomes this session: 1 email sent, 0 confirmed external visits, 0 verified published Reddit comments, 0 purchases, 0 public backlinks.
+- Next: check response/bounce and GA4 UTM acquisition after data lag; only expand to other genuinely relevant audiences based on feedback, avoid repeat outreach and spam.
+
+
 ## 2026-10-19 — Alternative income experiment: plan-publisher PDF workflows
 
 Goal: test direct services revenue *outside* the $4.99 site report and outside chicken-coop retailer widgets. Keep it separate from organic SEO metrics.
