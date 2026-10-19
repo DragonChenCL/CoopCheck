@@ -26,14 +26,14 @@
   function setUnlocked(){
     unlocked=true;
     button.disabled=false;
-    button.textContent="Print / Save as PDF";
+    button.textContent="Print site plan report / Save PDF";
     setStatus("Full report unlocked. Your sketch is saved in this browser; print or save as PDF anytime.");
   }
 
   function setLocked(){
     unlocked=false;
     button.disabled=false;
-    button.textContent="Unlock Full Report — "+PRICE;
+    button.textContent="Unlock Site Plan & Setback Report — "+PRICE;
   }
 
   async function verify(record){
@@ -48,6 +48,7 @@
       if(valid){
         localStorage.setItem(entitlementKey,JSON.stringify(record));
         setUnlocked();
+        window.coopTrack?.("paid_report_entitlement_restored",{app:APP,sku:SKU});
         return true;
       }
     }catch(e){
@@ -73,15 +74,18 @@
     const planner=window.CoopPlanner;
     if(!planner?.isReady()){
       setStatus("First draw all three shapes to preview the result. No payment has been started.");
+      window.coopTrack?.("paid_report_checkout_blocked",{app:APP,sku:SKU,reason:"incomplete_geometry"});
       $("complianceHero")?.scrollIntoView({behavior:"smooth",block:"center"});
       return;
     }
     if(planner.jurisdictionStatus?.()==="mismatch"){
       setStatus("The selected city rules conflict with your searched address. Re-select the correct city or search again before purchasing.");
+      window.coopTrack?.("paid_report_checkout_blocked",{app:APP,sku:SKU,reason:"jurisdiction_mismatch"});
       return;
     }
     if(!planner.save()){
       setStatus("Your drawing could not be saved locally. Export a backup or free up browser storage before checkout. No payment has been started.");
+      window.coopTrack?.("paid_report_checkout_blocked",{app:APP,sku:SKU,reason:"save_failed"});
       return;
     }
 
