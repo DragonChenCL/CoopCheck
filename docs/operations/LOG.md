@@ -1,5 +1,22 @@
 # CoopCheck Operations Log
 
+## 2026-10-19 — Alternative income experiment: plan-publisher PDF workflows
+
+Goal: test direct services revenue *outside* the $4.99 site report and outside chicken-coop retailer widgets. Keep it separate from organic SEO metrics.
+
+### Three first-contact emails actually sent
+- **CoopPlansDIY** — `contact@coopplansdiy.com`, Gmail message `1a1521827b3c0bc3`. Their public FAQ explicitly says US-only measurements and that metric plans are being worked on. Proposal: source-approved unit conversion, cut-list reconciliation, discrepancy flags, printable PDF production; technical/construction dimensions checked by the seller, not asserted as engineered.
+- **Standish WoodStory** — `info@standishwoodstory.com`, Gmail message `1a152182ae47d68c`. Its catalog contains PDF tutorials with SVG/CNC assets, and some dual-unit cut lists. Proposal: version-control, format/linkage audit, bundle preflight for approved plans. No structural redraw or unsolicited attachment.
+- **Rogue Engineer** — `support@rogueengineer.com`, Gmail message `1a15218335a233cd`. Seller offers individual downloadable PDFs plus an Everything Bundle. Proposal: batch plan-release checks, synchronized BOM/cut-list tables, versioned delivery bundles using creator-approved source data.
+- Sender: authenticated Gmail account. Each send returned a Gmail message/thread ID. **Sent != delivered/accepted/response.** No pricing acceptance and no revenue recorded. Checked no matching sent recipient for these prior to emailing.
+
+### Freelance job demand and application blocker
+- Public Upwork posting, "$900 fixed" Airtable + CSV sequencing + one-page HTML-template PDF automation: https://www.upwork.com/freelance-jobs/apply/Python-Script-for-Airtable-and-PDF_~022107855717124495593/ . Search evidence of a listing does not confirm still open.
+- Also found $500 API automation https://www.upwork.com/freelance-jobs/apply/Automate-Website-with-API_~022107450255782019417/ and $500 Google Sheets/Apps Script/Python audit https://www.upwork.com/freelance-jobs/apply/Automation-Engineer-Needed-Audit-Google-Sheets-Apps-Script-Python-Windows-Machine-Controller_~022105471245779183596/ .
+- Direct browser navigation to the $900 Upwork listing returned **HTTP 403** (blocked access); no Upwork account access or platform application, proposal or client communication was completed. Do **not** represent listing views as bid submissions, nor bypass platform processes by taking client off platform.
+- Prospecting success criterion: one qualified reply or willingness to share a safe sample for a scoped paid pilot. Do not infer responses/purchases until independently verified.
+
+
 ## 2026-10-19 — First direct B2B outreach batch (five sent)
 
 - Gmail account sent **5 targeted first-contact messages**, all returned provider message IDs (sent, not reply or deliverability proof). B2B builder pitch: branded coop-size/quote-intake widget, first offer to review a tailored mockup for free, then an optional fixed-price paid pilot. Creator pitch: free planner evaluation, optional collaboration, no positive-review obligation. No proven conversion claims, no follow-up automation.
