@@ -9,28 +9,39 @@ src=pathlib.Path("input-video/coopcheck_short_01.mp4")
 voice=pathlib.Path("input-voice/voice_natural_v2.wav")
 frame=pathlib.Path("input-video/end_snapshot.png")
 if not all(x.exists() for x in (src,voice,frame)):raise RuntimeError("Required input video/voice/frame missing")
-im=Image.open(frame).convert("RGB").resize((1080,1920),Image.Resampling.LANCZOS)
-# Brand colors, sharp contrast and handbuilt thumbnail hierarchy.
-im=ImageEnhance.Color(im).enhance(.85)
-im=ImageEnhance.Brightness(im).enhance(.72)
-ov=Image.new("RGBA",im.size,(0,0,0,0));d=ImageDraw.Draw(ov)
-d.rounded_rectangle((24,55,1056,750),radius=55,fill=(7,32,24,242),outline=(222,241,158,115),width=5)
-d.rounded_rectangle((62,740,1018,896),radius=27,fill=(230,248,169,250))
-d.rounded_rectangle((55,1630,1025,1826),radius=33,fill=(7,42,31,236))
-d.rounded_rectangle((615,940,1023,1080),radius=30,fill=(252,197,58,245))
+W,H=1080,1920
+im=Image.new("RGB",(W,H),(11,42,32))
+d=ImageDraw.Draw(im)
+# Clean, contrast-first design: no illegible page text bleeding through.
+for y in range(H):
+  dy=y/H
+  col=(int(12+16*dy),int(46+15*dy),int(33+12*dy))
+  d.line([(0,y),(W,y)],fill=col)
+for x in range(0,W,72):
+  d.line([(x,0),(x,H)],fill=(29,66,49),width=2)
 font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 def f(n):return ImageFont.truetype(font,n)
-def centered(txt,y,font,color):
-  b=d.textbbox((0,0),txt,font=font,stroke_width=0)
-  d.text(((1080-(b[2]-b[0]))/2,y),txt,font=font,fill=color,stroke_width=0)
-centered("14 HENS?",110,f(155),(245,205,56,255))
-centered("REALLY?",365,f(168),(255,255,243,255))
-centered("CHECK THE REAL",660,f(85),(255,255,249,255))
-centered("COOP SIZE",757,f(104),(21,55,43,255))
-d.text((646,983),"FREE TOOL",font=f(54),fill=(9,46,36,255))
-centered("CoopCheck",1680,f(111),(244,248,230,255))
-im=Image.alpha_composite(im.convert("RGBA"),ov).convert("RGB")
-cover=root/"cover_v2.jpg";im.save(cover,quality=91,optimize=True)
+def center(txt,y,font,color):
+  b=d.textbbox((0,0),txt,font=font)
+  d.text(((W-(b[2]-b[0]))/2,y),txt,font=font,fill=color)
+center('14 HENS?',98,f(160),(255,208,58))
+center('REALLY?',300,f(168),(248,250,235))
+d.rounded_rectangle((55,536,1025,678),radius=26,fill=(233,246,183))
+center('CHECK THE REAL SIZE',568,f(72),(20,61,41))
+# Actual site graphic clearly illustrating indoor vs. run space.
+src=Image.open(frame).convert("RGB")
+diagram=src.crop((13,565,530,935))
+diagram=diagram.resize((1010,724),Image.Resampling.LANCZOS)
+mask=Image.new("L",diagram.size,0)
+ImageDraw.Draw(mask).rounded_rectangle((0,0,diagram.width,diagram.height),radius=55,fill=255)
+im.paste(diagram,(35,745),mask)
+d=ImageDraw.Draw(im)
+d.rounded_rectangle((35,745,1045,1469),radius=55,outline=(221,244,173),width=8)
+d.rounded_rectangle((320,1510,760,1622),radius=45,fill=(251,203,67))
+center('FREE CHECKER',1537,f(55),(9,51,35))
+center('CoopCheck',1710,f(105),(243,248,230))
+cover=root/"cover_v2.jpg"
+im.save(cover,quality=92,optimize=True)
 out=root/"coopcheck_short_01_v2.mp4"
 args=["ffmpeg","-y","-hide_banner","-loglevel","error","-loop","1","-framerate","30","-t","2.0",
       "-i",str(cover),"-i",str(src),"-i",str(voice),
