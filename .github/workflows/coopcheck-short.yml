@@ -44,3 +44,4 @@ jobs:
             marketing-output/end_snapshot.png
             marketing-output/captions.ass
           retention-days: 30
+          compression-level: 0
