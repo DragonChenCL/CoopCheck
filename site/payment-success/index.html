@@ -31,6 +31,24 @@
   const message=document.getElementById("paymentMessage");
   const back=document.getElementById("backToPlanner");
 
+  // Only a gateway-validated entitlement counts as a confirmed purchase.
+  // A checkout-created event alone must never become revenue.
+  function trackConfirmedPurchase(record){
+    const analyticsKey="coopcheck:purchase-event:"+record.gatewayOrderId;
+    if(localStorage.getItem(analyticsKey))return;
+    function emit(){
+      if(typeof window.coopTrack!=="function")return;
+      window.coopTrack("payment_entitlement_granted",{app:APP,sku:SKU});
+      window.coopTrack("purchase",{
+        transaction_id:record.gatewayOrderId,currency:"USD",value:4.99,
+        items:[{item_id:SKU,item_name:"Chicken Coop Site Plan & Setback Report",price:4.99,quantity:1}]
+      });
+      localStorage.setItem(analyticsKey,"1");
+    }
+    if(typeof window.coopTrack==="function")emit();
+    else window.addEventListener("load",emit,{once:true});
+  }
+
   function showBack(){
     back.hidden=false;
   }
@@ -67,6 +85,7 @@
           if(data.granted===true&&data.app===APP&&data.sku===SKU&&data.referenceId===record.referenceId){
             localStorage.setItem("coopcheck:entitlement:"+SKU+":"+record.referenceId,JSON.stringify(record));
             localStorage.setItem("coopcheck:project-id",record.referenceId);
+            trackConfirmedPurchase(record);
             title.textContent="Payment confirmed";
             message.textContent="Your full CoopCheck planning report is unlocked.";
             back.href="/planner.html?paid=1";
