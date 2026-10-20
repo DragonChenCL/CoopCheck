@@ -1,5 +1,12 @@
 # CoopCheck Operations Log
 
+## 2026-10-20 UTC — YouTube channel profile aligned with CoopCheck brand
+
+- Authenticated YouTube Studio channel `UCY09A42glQ3u4lOxAo2Dbzw` (`https://www.youtube.com/@CoopCheck`) had initial display name `CoopCheck`, handle `@CoopCheck`, and an already-configured site link `https://coopcheck.serunio.com/`.
+- Uploaded a 1024×1024 PNG rendition of `site/assets/logo-mark.svg` (dark green coop, hen, checkmark on ivory background) as channel profile image, completed crop, and changed the YouTube display name to **`CoopCheck | Chicken Coop Plans`**. Did not modify the handle or website link.
+- Clicked **Publish**, then reloaded the profile settings page. Verified new display name persisted, profile-photo image URL changed from the prior asset to a new YouTube image asset, and Publish became disabled. This confirms the channel customization is saved; public-channel propagation may be cached temporarily.
+- This is a channel-branding operation, not a new video upload or evidence of viewers/traffic. TikTok was not modified after the user clarified that YouTube was intended.
+
 ## 2026-10-19 PDT — GSC/GA4 review, Shorts publication and community follow-up
 
 ### Verified connected analytics (at review)
