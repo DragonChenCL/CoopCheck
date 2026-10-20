@@ -1,5 +1,14 @@
 # CoopCheck Operations Log
 
+## 2026-10-20 UTC — Pinterest launch, domain claim and link block
+
+- Logged into new Pinterest account; converted profile display name to `CoopCheck | Chicken Coop Plans`, username to `@coopcheckplans` (`@coopcheck` unavailable), added description and `coopcheck.serunio.com` site reference. Actual avatar image was not verified changed: existing Pinterest avatar URL remained unchanged after attempted upload, so do not assert branding complete.
+- Created public board: https://www.pinterest.com/coopcheckplans/chicken-coop-plans-layouts/ .
+- Produced three 1000×1500 original instructional graphics (4×8 layout, free coop floor-plan concept, property-line setback concept), saved in ChatGPT Library under `/CoopCheck/Pinterest/`.
+- Published first original Pin **4x8 Chicken Coop Layout: Is 32 Sq Ft Enough?** at https://www.pinterest.com/pin/1125337025678021256/ ; confirmed Pin visible in board/profile. Published **without external link** because Pinterest repeatedly flagged `coopcheck.serunio.com` domain (root and specific guide, with or without UTM) as possibly spam. The other 2 graphics are saved, not yet published.
+- Claimed domain successfully via Pinterest's meta tag `<meta name="p:domain_verify" content="b1886bac1b41311db1481a2a03161e5f"/>` deployed to `site/index.html`, GitHub commit `d70a4bbfb3111448c3fbd48fd99c110994a962fb`. Verified live homepage HTTP 200 and tag present; Pinterest confirmation dialog stated website connected. This has **not** removed Pinterest's destination URL restriction. Avoid bypassing with URL shorteners; request formal review for suspected false positive before counting outbound traffic.
+- Browser kept in single tab. Next: clarify link block with Pinterest support; correct avatar and profile name rendering if needed; create/release remaining 2 Pins after verifying content policies, preferably with landing URLs once allowed.
+
 ## 2026-10-20 UTC — YouTube channel profile aligned with CoopCheck brand
 
 - Authenticated YouTube Studio channel `UCY09A42glQ3u4lOxAo2Dbzw` (`https://www.youtube.com/@CoopCheck`) had initial display name `CoopCheck`, handle `@CoopCheck`, and an already-configured site link `https://coopcheck.serunio.com/`.
