@@ -1,5 +1,26 @@
 # CoopCheck Operations Log
 
+## 2026-10-19 PDT — GSC/GA4 review, Shorts publication and community follow-up
+
+### Verified connected analytics (at review)
+- Google Search Console property `sc-domain:coopcheck.serunio.com`: 2026-10-06..2026-10-17 daily rows each 0 search impressions, 0 clicks; 2026-09-24..2026-10-01 had 23 impressions/0 clicks; no October 18+ search-performance rows confirmed, not proven zeros.
+- GSC sitemap connector: `/sitemap.xml` shows 115 submitted URLs, 0 errors/warnings, last downloaded 2026-10-15T01:06:10Z. This is a *last-seen GSC snapshot*, not a fresh read of the 129-URL sitemap deployed Oct 17; do not confuse submitted URLs with indexed URLs.
+- GA4 CoopCheck property `555450721`, queried 2026-10-06..2026-10-19: 35 session_start events / 35 sessions by source, 183 page_view events. Source/medium: Direct 33, Bing organic 1, ChatGPT AI-assistant 1. No Google organic sessions returned. Daily rows only through 2026-10-18, with 7 active users/10 sessions that date. Traffic likely includes owner/tests.
+- GA4 tool events in that same requested range: `chicken_coop_plan_generate` 16, `chicken_coop_plan_export` 7, `coop_intent_tool_calculate` 10, `quick_check_submit` 2; event counts are not distinct users or externally verified trials.
+- 2026-10-18: `paid_report_offer_view` 1, `paid_report_planner_click` 1, `paid_report_checkout_blocked` 1; zero verified paid order or checkout success in returned events. From `site/assets/payment.js`, `checkout_blocked` can be caused by incomplete geometry, jurisdiction mismatch or save failure, **not** necessarily a payment gateway outage; event reason was not available as report dimension. Investigate with end-to-end no-charge path, do not manufacture a failure cause.
+
+### Actual actions and externally verified state
+- YouTube Studio CoopCheck Shorts `CoopCheck_Shorts_V2.mp4`, 31 sec, video ID `XZFpD0V3_0w`, title `14 Hens in This Coop? Check the REAL Size 🐔 | CoopCheck #shorts`: HD completed, uploaded custom thumbnail present. Changed visibility from **Private** to **Public**, clicked completion, then re-read Studio which confirmed `公开`. Public video URL: https://youtube.com/shorts/XZFpD0V3_0w . Publication is verified; views/click-through are not.
+- Reddit r/SideProject feedback post https://www.reddit.com/r/SideProject/comments/1x9n6xj/ : browser still shows existing CoopCheck post, score 1, a `commentCount` metadata value of 1 but *zero loaded `shreddit-comment` nodes*. No qualified response/visit verified and no duplicate post.
+- BackYardChickens https://www.backyardchickens.com/threads/coop-ordinances-in-your-town.1663608/ : public search/browser-visible thread now shows the prior Oct 13 municipal rules comparison as a comment. It links municipal sources but not CoopCheck, so **0 newly verified product backlinks** in this pass.
+- Found active relevant Joliet ordinance conversation https://www.backyardchickens.com/threads/city-of-joliet-illinois-chicken-ordinance-amendment.1694938/ but did not reply absent current local-law verification.
+- Browser reused Reddit/BYC tab after YouTube. Studio's `beforeunload` prevented same-tab navigation; briefly opened a second tab, attempted to close Studio via tab action but the tool reported `Tab not found` despite listing it. Do not claim a successful tab cleanup. Subsequent BYC browser evaluation timed out; public thread result was supported by externally indexed text.
+
+### Next 3 priorities
+1. Track actual views/clicks/referrals from published Shorts and user comments from the SideProject post; only count qualified external users, not owner/test traffic.
+2. Distinguish the 2026-10-18 report checkout block reasons using GA4 custom dimension or better UX, and manually test the no-charge journey before modifying payment flow.
+3. On/after Oct 21 PDT, recheck whether GSC has downloaded the new 129-URL sitemap and whether the previously accepted 8 + older 5 indexing-request cohort saw a new crawl; avoid repeating accepted indexing requests.
+
 ## 2026-10-19 — First-user acquisition, second active outreach wave
 
 ### Live data checks
