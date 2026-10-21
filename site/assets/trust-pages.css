@@ -1,0 +1,25 @@
+/* CoopCheck trust & support information pages — 2026-10-20 */
+:root{--trust-green:#234c38;--trust-muted:#587062;--trust-line:#dbe6d9}
+.trust-head{background:#f8fbf6;border-bottom:1px solid var(--trust-line)}
+.trust-nav{width:min(1080px,calc(100% - 40px));margin:auto;min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.trust-brand{font-size:26px;font-weight:850;letter-spacing:-.05em;text-decoration:none;color:#214d38}
+.trust-brand span{color:#7b9d77}.trust-nav-links{display:flex;flex-wrap:wrap;gap:20px}
+.trust-nav-links a{font-size:14px;font-weight:650;color:#436351;text-decoration:none}
+.trust-page{background:radial-gradient(circle at 82% 3%,#eaf4e5 0%,transparent 34%),#f8faf5;min-height:85vh;padding:72px 20px 100px}
+.trust-article{max-width:850px;margin:auto}.trust-kicker{text-transform:uppercase;letter-spacing:.18em;color:#5d8365;font-size:12px;font-weight:850;margin-bottom:22px}
+.trust-article h1{font:600 clamp(40px,5vw,65px)/1.08 Georgia,serif;letter-spacing:-.035em;color:#214632;max-width:760px;margin:0 0 24px}
+.trust-article .trust-lead{font-size:clamp(18px,2.2vw,22px);line-height:1.6;color:#526959;max-width:780px}
+.trust-article section{margin-top:35px;padding:25px 29px;background:white;border:1px solid var(--trust-line);border-radius:18px;box-shadow:0 6px 28px #193b2810}
+.trust-article section h2{font-size:23px;color:#284835;margin:0 0 15px}
+.trust-article section h3{font-size:17px;color:#284835;margin:0 0 8px}
+.trust-article section p,.trust-article section li{line-height:1.8;color:#45584b;font-size:16px}
+.trust-article section p:last-child{margin-bottom:0}
+.trust-article ul{padding-left:23px}.trust-article li{margin-bottom:12px}
+.trust-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.trust-grid>div{padding:14px 18px;background:#f5faf3;border-radius:13px}
+.trust-button{display:inline-flex;background:#285a3e;color:#fff!important;border-radius:10px;padding:12px 20px;font-weight:700;text-decoration:none}
+.trust-email a{font-size:24px;font-weight:700;overflow-wrap:anywhere}
+.trust-foot{background:#163d2c;color:#f5f9f2;padding:28px 20px;font-size:14px}
+.trust-foot-inner{width:min(1080px,100%);margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.trust-foot a{color:#e9f8e9;text-decoration:none;margin-right:15px;display:inline-block}
+.trust-foot a:hover,.trust-nav-links a:hover{text-decoration:underline}
+@media(max-width:660px){.trust-nav{flex-direction:column;align-items:flex-start;padding:15px 0}.trust-nav-links{gap:11px 18px}.trust-page{padding-top:43px}.trust-article section{padding:20px}.trust-grid{grid-template-columns:1fr}.trust-foot-inner{display:block}.trust-foot a{margin-bottom:10px}}
