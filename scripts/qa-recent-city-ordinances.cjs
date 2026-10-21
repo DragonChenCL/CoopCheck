@@ -45,7 +45,7 @@ assert.match(city("olympia-wa").placement,/setback areas/i);
 assert.match(city("olympia-wa").note,/one-acre/);
 for(const c of registry.cities.filter(c=>c.audit.status==="needs_review")){
  assert.equal(c.planner.mode,"manual");
- assert(sitemap.includes("/cities/"+c.slug+".html"),"pending research status URL listed in sitemap: "+c.slug);
+ assert(!sitemap.includes("/cities/"+c.slug+".html"),"pending noindex city excluded from sitemap: "+c.slug);
  const html=fs.readFileSync(path.join(root,"site/cities",c.slug+".html"),"utf8");
  assert(html.includes('content="noindex,follow"'));
 }
