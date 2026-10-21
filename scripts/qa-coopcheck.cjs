@@ -122,7 +122,7 @@ const portlandHtml=read("cities/portland-or.html");
 assert(portlandHtml.includes('id="portlandFlockForm"')&&portlandHtml.includes('src="../assets/portland-flock-check.js"'),"Portland form and evaluator linked");
 assert(portlandHtml.includes('§13.40.040')&&portlandHtml.includes("official"),"Portland legal source and limits visible in static HTML");
 assert(read("index.html").includes('cities/portland-or.html#portland-flock-check'),"homepage links to source-backed Portland checker");
-assert(read("sitemap.xml").includes('/cities/portland-or.html</loc><lastmod>2026-10-17</lastmod>'),"Portland updated lastmod");
+assert(read("sitemap.xml").includes('/cities/portland-or.html</loc><lastmod>2026-10-21</lastmod>'),"Portland updated lastmod");
 console.log("PASS: Portland lot-size screen threshold boundaries and source-backed SEO entry");
 
 // Pages build must inject nonblocking analytics for every city, state and directory page.
