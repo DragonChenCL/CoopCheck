@@ -67,7 +67,7 @@ for(const city of policyRegistry.cities){
   const html=read("cities/"+city.slug+".html");
   if(city.audit.status==="needs_review"){
     assert(html.includes('content="noindex,follow"'),"pending page must be noindex: "+city.slug);
-    assert(read("sitemap.xml").includes("/cities/"+city.slug+".html"),"pending research page listed in sitemap but kept noindex: "+city.slug);
+    assert(!read("sitemap.xml").includes("/cities/"+city.slug+".html"),"pending research page excluded from sitemap: "+city.slug);
   }else{
     assert(html.includes(city.verified)||html.includes(longDate(city.verified)),"city page date matches registry: "+city.slug);
     assert(city.sources.some(s=>html.includes(s.url)),"city page includes official source: "+city.slug);
@@ -75,7 +75,7 @@ for(const city of policyRegistry.cities){
   }
 }
 assert(read("coverage.html").includes("100 cities tracked"),"coverage directory generated");
-assert.equal((read("sitemap.xml").match(/<url>/g)||[]).length,34+policyRegistry.cities.length,"sitemap includes all 100 city pages, existing entrypoints and 17 coop SEO/buyer pages");
+assert.equal((read("sitemap.xml").match(/<url>/g)||[]).length,34+reviewedCities.length,"sitemap contains 88 reviewed cities and excludes 12 noindex pages");
 
 const phoenixPolicy=policyRegistry.cities.find(c=>c.slug==="phoenix-az");
 assert(phoenixPolicy.max.startsWith("Up to 6 poultry"),"Phoenix uses current six-poultry baseline");
