@@ -1,4 +1,4 @@
-/* Guard sitemap completeness, canonical metadata, and pending-city noindex.
+/* Guard sitemap completeness, canonical metadata, and noindex exclusions.
  * This is an offline build check, not a claim of Google/Bing indexing or a live crawl.
  */
 'use strict';
@@ -17,7 +17,7 @@ assert.equal(entries.length, (sitemap.match(/<url>/g) || []).length, 'Every site
 assert.equal(new Set(entries.map((entry) => entry.loc)).size, entries.length, 'Duplicate URL in sitemap');
 
 const titles = new Map();
-const pendingUrls = [];
+const noindexUrls = [];
 for (const {loc, lastmod} of entries) {
   const url = new URL(loc);
   assert.equal(url.origin, ORIGIN, 'Cross-domain sitemap URL: ' + loc);
@@ -37,13 +37,8 @@ for (const {loc, lastmod} of entries) {
   const robotsTag = [...html.matchAll(/<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']+)["']/gi)]
     .map((match) => match[1].toLowerCase());
   const noindex = robotsTag.some((x) => /\bnoindex\b/.test(x));
-  const pendingCity = url.pathname.startsWith('/cities/') && /Verification Pending \| CoopCheck/.test(html);
-  if (pendingCity) {
-    assert(noindex, 'Pending unverified city must retain noindex: ' + loc);
-    pendingUrls.push(loc);
-  } else {
-    assert(!noindex, 'Only pending city content can carry noindex in sitemap: ' + loc);
-  }
+  if (noindex) noindexUrls.push(loc);
+  assert(!noindex, 'No noindex URL is allowed in the sitemap: ' + loc);
   const titleMatch = html.match(/<title>([\s\S]*?)<\/title>/i);
   assert(titleMatch && titleMatch[1].trim(), 'Missing title: ' + loc);
   const title = titleMatch[1].replace(/\s+/g, ' ').trim();
@@ -61,15 +56,18 @@ function collectHtml(dir) {
     if (item.isDirectory()) collectHtml(absolute);
     else if (item.isFile() && item.name.endsWith('.html')) {
       const relative = path.relative(SITE, absolute).split(path.sep).join('/');
-      if (!excluded.has(relative)) contentPaths.push(relative);
+      if (!excluded.has(relative)) {
+        const content = fs.readFileSync(absolute, 'utf8');
+        if (!/<meta\\b[^>]*name=["']robots["'][^>]*content=["'][^"']*\\bnoindex\\b/i.test(content)) contentPaths.push(relative);
+      }
     }
   }
 }
 collectHtml(SITE);
 const expectedUrls = contentPaths.map((p) => ORIGIN + (p === 'index.html' ? '/' : '/' + p)).sort();
 assert.deepEqual(entries.map((x) => x.loc).sort(), expectedUrls,
-  'Sitemap must exactly cover all content HTML pages (excluding 404 and payment flow)');
-assert(pendingUrls.length > 0, 'Expected pending city noindex guard to be exercised');
+  'Sitemap must contain all indexable HTML pages (excluding noindex, 404 and payment flow)');
+assert.equal(noindexUrls.length, 0, 'Sitemap excludes every noindex page');
 assert(sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'), 'XML sitemap namespace');
 assert(fs.readFileSync(path.join(SITE, 'robots.txt'), 'utf8').includes('Sitemap: ' + ORIGIN + '/sitemap.xml'), 'robots.txt should reference the canonical sitemap');
-console.log('PASS: ' + entries.length + ' canonical content URLs; ' + pendingUrls.length + ' pending cities remain noindex; valid lastmod and complete coverage');
+console.log('PASS: ' + entries.length + ' canonical indexable HTML URLs; no noindex pages; valid lastmod and complete coverage');
