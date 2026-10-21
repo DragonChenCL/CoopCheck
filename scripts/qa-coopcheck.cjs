@@ -40,6 +40,18 @@ const policyRegistry=JSON.parse(read("data/cities.json"));
 assert.equal(policyRegistry.schemaVersion,1,"supported policy registry schema");
 assert.equal(policyRegistry.cities.length,100,"100 cities tracked in registry");
 assert.equal(new Set(policyRegistry.cities.map(c=>c.slug)).size,100,"city slugs are unique");
+// SEO P0: submitted URLs must be indexable and must never include unreviewed city profiles.
+const sitemapXml=read("sitemap.xml");
+const sitemapUrls=[...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+assert.equal(sitemapUrls.length,new Set(sitemapUrls).size,"sitemap URLs must be unique");
+assert(sitemapUrls.every(u=>u.startsWith("https://coopcheck.serunio.com/")),"sitemap URLs use canonical site origin");
+for(const city of policyRegistry.cities){
+  const url="https://coopcheck.serunio.com/cities/"+city.slug+".html";
+  assert.equal(sitemapUrls.includes(url),city.audit.status!=="needs_review","sitemap indexability: "+city.slug);
+}
+assert(!sitemapUrls.some(u=>u.endsWith("/sitemap.xml")||u.endsWith("/robots.txt")),"control files must not be listed as search pages");
+console.log("PASS: sitemap canonical, unique, and excludes 12 noindex pending cities");
+
 const reviewedCities=policyRegistry.cities.filter(c=>c.audit?.status!=="needs_review");
 assert(reviewedCities.length>=85,"at least the original 85 reviewed cities");
 assert.equal(policyRegistry.cities.filter(c=>c.audit.status==="needs_review").length,100-reviewedCities.length,"pending profile count reconciles");
