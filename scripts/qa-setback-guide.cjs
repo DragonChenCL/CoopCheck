@@ -24,9 +24,9 @@ for(const [page,html]of [["home",home],["oregon",oregon],["portland",portland]])
  assert(html.includes("guides/chicken-coop-setback-from-property-line.html"),page+": no inbound internal link");
 }
 assert(!sitemap.includes("needs_review"),"sitemap should contain only URLs");
-const match=sitemap.match(/<loc>https:\/\/coopcheck\.serunio\.com\/guides\/chicken-coop-setback-from-property-line\.html<\/loc><lastmod>2026-10-13<\/lastmod>/g)||[];
+const match=sitemap.match(/<loc>https:\/\/coopcheck\.serunio\.com\/guides\/chicken-coop-setback-from-property-line\.html<\/loc><lastmod>2026-10-21<\/lastmod>/g)||[];
 assert.equal(match.length,1,"guide must appear once in generated sitemap");
-assert(sitemap.includes("/states/oregon.html</loc><lastmod>2026-10-13</lastmod>"),"updated Oregon sitemap lastmod");
+assert(sitemap.includes("/states/oregon.html</loc><lastmod>2026-10-21</lastmod>"),"updated Oregon sitemap lastmod");
 assert(planner.includes("assets/map.js"),"map planner must remain available and independent");
 const v={lotWidth:40,lotDepth:70,coopWidth:8,coopDepth:10,left:5,right:5,front:10,rear:10};
 assert.deepEqual(calc.calculate(v),{valid:true,availableWidth:30,availableDepth:50,buffersOverlap:false,fits:true});
