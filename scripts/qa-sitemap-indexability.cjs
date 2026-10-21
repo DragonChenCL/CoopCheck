@@ -58,7 +58,7 @@ function collectHtml(dir) {
       const relative = path.relative(SITE, absolute).split(path.sep).join('/');
       if (!excluded.has(relative)) {
         const content = fs.readFileSync(absolute, 'utf8');
-        if (!/<meta\\b[^>]*name=["']robots["'][^>]*content=["'][^"']*\\bnoindex\\b/i.test(content)) contentPaths.push(relative);
+        if (!/<meta\b[^>]*name=["']robots["'][^>]*content=["'][^"']*\bnoindex\b/i.test(content)) contentPaths.push(relative);
       }
     }
   }
