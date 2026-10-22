@@ -20,6 +20,8 @@ jobs:
         run: node scripts/generate-policy-data.cjs --check
       - name: Check generated city pages, coverage and sitemap
         run: node scripts/generate-coverage-pages.cjs --check
+      - name: Preserve city-specific local planning examples
+        run: node scripts/qa-thin-city-content.cjs
       - name: Verify source-backed setback guide and free spacing worksheet
         run: node scripts/qa-setback-guide.cjs
       - name: Verify indexable coop sizing guides are up to date
