@@ -61,6 +61,56 @@
       "Lot size and tenant consent are separate requirements",
       "Beaverton's cited law permits up to four hens on qualifying properties of at least 5,000 square feet containing a detached single-family home or duplex. For a renter on a qualifying 6,000-square-foot parcel, written permission from the property owner is still necessary; the sufficient lot size does not automatically replace that consent.",
       "A coop cannot occupy the prohibited front-of-house area and has to satisfy the city's published distance from neighboring dwellings. That twenty-foot separation should not be confused with a universal twenty-foot setback from every fence. Confirm accessory-structure permits, the actual neighbor-building location and private HOA conditions separately."
+    ],
+    "mesa-az": [
+      "Mesa's combined animals rule needs a parcel-specific reading",
+      "Mesa's recorded ordinance uses a combined count for fowl and certain small animals on the first half-acre. For example, six hens and four rabbits may use the ordinary ten-animal allowance, subject to exceptions and zoning. This is not a blanket permission for ten chickens plus ten rabbits or an automatic eligibility finding for any small backyard.",
+      "Mesa's cited 40-foot enclosure and 75-foot building-to-neighbor-residence provisions may be affected for qualifying small lots by Arizona state preemption. Those figures cannot be blindly treated as universal fence-line buffers. Determine which law controls the actual parcel and separately check unresolved building and animal permits."
+    ],
+    "tempe-az": [
+      "A seventh hen raises a different use-permit question",
+      "Tempe's official zoning summary allows up to six domestic chickens on eligible residential lots. Adding a seventh cannot be justified merely by providing extra floor space: the city describes a use-permit process for exceeding the normal allowance. Roosters are restricted outside agricultural zoning, so replacing a hen with a rooster also changes the result.",
+      "For a site under one acre, Tempe's published rule limits chicken enclosure height relative to the property's fence or wall. This is a height restriction, not a universal numerical lot-line setback. Record the parcel zoning, enclosure height and proposed bird count before relying on any drawing."
+    ],
+    "salem-or": [
+      "Salem measures some setbacks to buildings, not lot lines",
+      "Salem's reviewed residential poultry category allows up to twelve birds and says no routine keeping license is necessary. For an illustrative six-hen site in the rear yard, a keeper should identify each other building on the same parcel and the residential building on the next lot. The city cites three feet to other on-site buildings and twenty-five feet to a neighboring residence.",
+      "A large rear yard can still fail the neighboring-dwelling distance. The 25-foot requirement cannot be converted to a property-line inset without measuring the neighbor's building location. No normal poultry-keeping permit does not establish a blanket exemption for constructing an accessory structure or complying with zoning restrictions."
+    ],
+    "spokane-wa": [
+      "A 5,000-square-foot lot gives an animal-count starting point",
+      "Spokane's cited small-domestic-animal provision uses a combined allowance of one qualifying animal or fowl for each 1,000 square feet of parcel area. A 5,000-square-foot lot therefore suggests five under that calculation if the property otherwise qualifies and no other covered animals use the allowance. It is not an automatic promise to keep five hens on every parcel.",
+      "Roosters are restricted to the RA district. The published exception from a WSU animal-keeping certificate for chickens is narrower than a general building-permit or zoning waiver. Structures still follow residential accessory-building setbacks, which should be drawn from the correct zone's actual rules."
+    ],
+    "prescott-valley-az": [
+      "Utility upgrades can change coop permitting",
+      "Prescott Valley's reviewed code allows up to ten chickens per eligible residential lot and prohibits adult male chickens. The cited minimum separation for coops and hutches is one foot from the applicable property or easement line. If an easement is inside the apparent fence boundary, measuring from the fence alone may be inadequate.",
+      "The local poultry rules describe a routine no-permit path with an important qualification: a coop containing electrical, mechanical or plumbing installations can trigger a building permit. Before turning a simple shelter into a wired, heated or plumbed structure, verify the current permit classification and land survey rather than assuming the smallest numeric setback approves it."
+    ],
+    "olympia-wa": [
+      "Check the lot-size category before choosing a flock",
+      "Olympia's revised animal-keeping rule distinguishes parcels of one-quarter acre or less, with up to five female chickens or ducks, from parcels larger than a quarter-acre and under an acre, with up to nine. The larger-lot categories have their own formulas and exceptions; a simple one-bird-per-acre multiplier would therefore misrepresent the code. Roosters and certain loud fowl are excluded.",
+      "Enclosures must remain at least ten feet from every property line and also outside applicable zoning setback areas. Meeting the ten-foot measurement alone may be insufficient. The reviewed animal provision does not resolve whether an accessory building permit is required for a specific coop."
+    ],
+    "frisco-tx": [
+      "A twelve-bird enclosure cap is not a property-wide guarantee",
+      "Frisco's cited ordinance applies a cap of twelve gallinaceous birds in one enclosure; that wording should not be presented as unconditional permission to keep twelve hens on any residential lot. Its rooster clause includes a conditional affirmative defense for premises of at least one acre, which is not a general exemption from nuisance and zoning standards.",
+      "Frisco's fowl provisions emphasize enclosed, sanitary housing, but the separate 100-foot rule in the livestock section cannot automatically be transferred to chicken coops. Confirm the operative land-use and structure provisions instead of drawing an invented universal hundred-foot buffer in the planner."
+    ],
+    "garland-tx": [
+      "The neighbor's house and the lot line are two different tests",
+      "Garland's cited city rule allows up to four qualifying female domestic fowl older than one month and excludes roosters. For a proposed four-hen backyard coop, first mark the nearest neighboring residence and the boundary of any adjoining residentially zoned property, as those are different reference points.",
+      "The reviewed provisions use a 30-foot separation from another residence and a separate five-foot buffer for certain pens, runs or cages beside residentially zoned land. Passing five feet from a fence does not prove compliance with the 30-foot house distance. Other building-permit and zoning conditions remain unconfirmed by the poultry section."
+    ],
+    "minneapolis-mn": [
+      "Permit tiers do not automatically authorize thirty backyard hens",
+      "Minneapolis describes permit tiers for one to six hens, seven to fifteen and sixteen to thirty, but the normal residential six-bird standard remains important. Applicants in higher categories may need additional authorization from Animal Care and Control; choosing the highest fee tier does not itself permit thirty hens at an ordinary home.",
+      "The permit application involves neighbor consent, education, zoning approval and inspection before acquiring birds. The coop and run must be behind the principal dwelling and at least twenty feet from a habitable building on an adjacent property, not twenty feet from the shared boundary. A separate rooster permit category is not automatic rooster permission."
+    ],
+    "madison-wi": [
+      "Animal licensing and a dwelling-distance test both apply",
+      "Madison's official chicken-keeping guidance allows up to eight hens on eligible parcels and does not allow roosters. Keeping chickens requires a municipal chicken license and Wisconsin livestock-premises registration, which should not be confused with one another. Confirm the city's renewal and timing rules before birds arrive.",
+      "The covered or fenced chicken enclosure must be at least twenty-five feet from a residential structure on an adjoining lot. Measure the distance to that building, not a made-up property-line inset. Even when the flock count fits, separate zoning, private covenants and construction conditions can affect a particular rear-yard plan."
     ]
   }
 }
