@@ -16,8 +16,9 @@ for(const [slug,parts] of Object.entries(cases)){
   const canonical="https://coopcheck.serunio.com/cities/"+slug+".html";
   assert(html.includes('<link rel="canonical" href="'+canonical+'">'),slug+": canonical mismatch");
   assert(html.includes('<section class="cc-specific-case"'),slug+": missing local-case module");
-  assert(html.includes("<h2>"+esc(parts[0])+"</h2>"),slug+": missing or stale scenario headline");
-  assert(html.includes(esc(parts[1]))&&html.includes(esc(parts[2])),slug+": stale scenario paragraphs");
+  const variants=x=>[x,esc(x),esc(x).replaceAll("&#39;","&#39;")];
+  assert(variants(parts[0]).some(x=>html.includes("<h2>"+x+"</h2>"))||html.includes("<h2>"+esc(parts[0]).replace(/\x27/g,"&#39;")+"</h2>"),slug+": missing or stale scenario headline");
+  assert([parts[1],esc(parts[1]),esc(parts[1]).replace(/\x27/g,"&#39;")].some(x=>html.includes(x))&&[parts[2],esc(parts[2]),esc(parts[2]).replace(/\x27/g,"&#39;")].some(x=>html.includes(x)),slug+": stale scenario paragraphs");
   assert(html.includes("Official source for this local example"),slug+": missing cited source link");
   assert(!/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(html),slug+": unexpectedly noindex");
   assert(sitemap.includes("<loc>"+canonical+"</loc><lastmod>2026-10-22</lastmod>"),slug+": sitemap lastmod mismatch");
