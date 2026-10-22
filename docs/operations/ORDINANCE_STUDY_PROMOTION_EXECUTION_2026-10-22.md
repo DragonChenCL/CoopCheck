@@ -33,3 +33,19 @@ Both successful forms used CoopCheck Research / support@serunio.com, with specif
 ## Follow-up checklist
 - At day 7 and day 14: manually verify editor replies, live citations/links, GSC report URL indexability and crawling, 123 URL sitemap processing, and priority city page coverage.
 - Actual external backlinks established this round: 0 confirmed. Editorial outreaches with delivery confirmation: 2.
+
+
+## Further individualized editorial outreach — October 22
+
+| Recipient | Source of contact | Individualization | Actual state |
+|---|---|---|---|
+| The Coop Guide — runbookify@gmail.com | https://thecoopguide.com/contact | Arizona state-law preemption & Chandler Ordinance 5113 supplement to https://thecoopguide.com/posts/are-backyard-chickens-legal-how-to-check-local-rules | Gmail sent, ID 1a16428891a14928 |
+| Bob the Chicken Global — alexlongpc@gmail.com | Publicly surfaced contact in research | Advocacy uses of municipal evidence matrix, Portland and San Diego examples | Gmail sent, ID 1a16428927bfac3d |
+| E-Impact Marketing — sales@eimpact.marketing | https://eimpact.marketing/contact/ ; linked website/SEO agency for The Hen House Collection | Specific error in https://www.thehenhousecollection.com/chicken-laws-by-state/arizona/ saying Chandler five birds, with adopted 2024 six-bird ordinance citation; requested forward to editor | Gmail sent, ID 1a16429278f50087 |
+| ChickenJournal — chickenjournalcontact@gmail.com | https://chickenjournal.com/about-us/ | August 17 legal guide; permit differences Denver/Seattle and open source CSV | Gmail sent, ID 1a1642b4ab5caaa9 |
+| GRIT — Letters@Grit.com | https://www.grit.com/guidelines/ | Source-linked three-city story query, editorial-specific | Attempt FAILED: Gmail FORBIDDEN, do not count as sent |
+| The Hen House Collection direct contact | Site contact requires telephone number | Chandler amendment | NOT sent directly; did not invent a phone number |
+| The Happy Chicken Coop | Prior sent email Oct 18 | Previously contacted about coop space guide | Skipped intentionally to avoid repeat |
+| ChickenJournal website form | Contact uses Turnstile | legal guide | Not submitted through website; used publicly listed email instead |
+
+Editorial response, actual link publication and traffic outcomes remain UNCONFIRMED. Do not claim backlink acquisition from outgoing messages alone.
