@@ -49,3 +49,35 @@ Both successful forms used CoopCheck Research / support@serunio.com, with specif
 | ChickenJournal website form | Contact uses Turnstile | legal guide | Not submitted through website; used publicly listed email instead |
 
 Editorial response, actual link publication and traffic outcomes remain UNCONFIRMED. Do not claim backlink acquisition from outgoing messages alone.
+
+
+## October 22, 2026 — 20 further new personalized outreaches (completed)
+
+The user specifically requested **20 NEW contacts**, excluding existing historical outreaches. Each row below is backed by a Gmail **send_email** success response and a distinct provider message ID. These are message dispatch acknowledgements, **not verified human delivery, reply, editorial acceptance, live citation or backlink**. Recipient roles differ: magazine editor mailboxes, independent publishers and some business/education support addresses for internal forwarding.
+
+| # | Recipient / publication | Destination | Personalized editorial value | Gmail message ID | Status |
+|---|---|---|---|---|---|
+| 1 | Hobby Farms | hobbyfarms@hobbyfarms.com | Editorial comparison: municipal flock rules vs coop setbacks | `1a1643d33edf094f` | SENT |
+| 2 | CHICKENS magazine | chickens@chickensmagazine.com | Reader checklist: permit vs placement | `1a1643d3d6d7675e` | SENT |
+| 3 | Farming My Backyard | kathryn@farmingmybackyard.com | Small urban lot: Portland 4/6 thresholds | `1a1643d43a5e81f1` | SENT |
+| 4 | The Cape Coop | liz@thecapecoop.com | Coop placement for home chicken keepers | `1a1643d4c8cb2fc0` | SENT |
+| 5 | Urban Homestead | info@urbanhomestead.org | City-law research for chicken/duck workshops | `1a1643e668dca96b` | SENT |
+| 6 | Homestead Daily | support@homesteaddaily.app | Planning binder and ordinance verification | `1a1643e6e4b38b59` | SENT |
+| 7 | Peaches and Pigs Homestead | kelsie@peachesandpigshomestead.com | What to know before buying backyard chickens | `1a1643e749d87767` | SENT |
+| 8 | Homesteading Family | joshandcarolyn@homesteadingfamily.com | Family chicken education: zoning checklist | `1a1644027cbb083f` | SENT |
+| 9 | Wholesome Roots | wholesomerootsblog@gmail.com | Farmstead beginners: check city rules first | `1a1644032c2d3219` | SENT |
+| 10 | Dare 2 Dream Farms | customerservice@dare2dreamfarms.com | Request forward to buyer-guide editor; San Diego tiers | `1a164403b81c40dc` | SENT |
+| 11 | Heritage Skills USA | info@heritageskillsusa.com | Homestead homeschool local ordinance research activity | `1a1644042e0a21c9` | SENT |
+| 12 | Urban Chicken Tractors | ira@urbanchickentractors.com | Mobile coop and local placement compliance FAQ | `1a1644048970d433` | SENT |
+| 13 | Fresh Eggs Daily | fresheggsdaily@gmail.com | Urban chicken prep: official municipal sources | `1a164431622abef7` | SENT |
+| 14 | Backyard Poultry magazine | editor@backyardpoultrymag.com | Coop design vs municipal animal permits | `1a164431f3e19ebd` | SENT |
+| 15 | Southern Living | editors@southernliving.com | Reader-service tip: rules before building | `1a1644327e6210e0` | SENT |
+| 16 | Mother Earth News | AskOurExperts@MotherEarthNews.com | Expert question background: flock vs coop permits | `1a164432e631fd8f` | SENT |
+| 17 | Chicken Whisperer Magazine | editorial@acreagelife.com | Source-backed municipal-law editorial angle | `1a16444287093b13` | SENT |
+| 18 | RaisingChickens.net | contact@raisingchickens.net | Coop buyer's legal-location checklist | `1a164443071530c6` | SENT |
+| 19 | Backyard Chicken Zone | backyardchickenzone@gmail.com | Predator-proof run design vs lawful coop placement | `1a1644438e52cfe6` | SENT |
+| 20 | Chase Hatchery | service@chasehatchery.com | Chick Care Guide buyer responsibility plus city-law checks | `1a1644602217b545` | SENT |
+
+**Do not count these failed/blocked attempts:** contact@cityrulelookup.com (Gmail FORBIDDEN); info@clorofil.org, hello@thecoopplanner.com, hello@homesteadandchill.com, cflott08@gmail.com, email@CityChickAtl.com (OpenAI safety checks blocked). No retries or alternate-channel bypasses for blocked recipients. Previously contacted websites were excluded, including The Happy Chicken Coop, Homestead How-To, Waddle & Cluck, Community Chickens.
+
+**Success accounting:** 20 new successfully dispatched Gmail messages in this batch. Earlier 2 confirmed website contact forms + 4 separately confirmed Gmail messages = 6 prior study-promotion contacts, or 26 across those two rounds (do not count unrelated historical pitches). **Editorial replies accepted: not verified. Published referring domains/backlinks gained from this batch: 0 confirmed.** Verify unique live referring pages before logging an earned citation. Follow up selectively after 7–14 days, only on relevant, permitted channels; no automated repeated unsolicited messages.
