@@ -34,6 +34,8 @@ jobs:
         run: node scripts/qa-permit-worksheet.cjs
       - name: Guard every sitemap URL canonical and indexability
         run: node scripts/qa-sitemap-indexability.cjs
+      - name: Validate evidence report data and source integrity
+        run: node scripts/qa-ordinance-report.cjs
       - name: Verify six task-specific search intent landing tools in sync
         run: node scripts/generate-coop-intent-tools.cjs --check
       - name: Verify run, mesh, nesting, roost and cost calculations
