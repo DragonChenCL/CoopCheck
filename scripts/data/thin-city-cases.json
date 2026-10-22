@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "reviewedScope": "City-specific examples derived from recorded source-backed fields, not new independent parcel approvals",
+  "cases": {
+    "thornton-co": [
+      "Thornton's indoor six-square-foot rule differs from generic sizing",
+      "Thornton's official FAQ allows up to six hens at eligible detached single-family homes and requires at least six square feet of indoor coop floor for each hen. Six birds therefore need at least 36 square feet of usable coop floor. CoopCheck's generic planning rule of four square feet per bird would give 24 and must not be used as proof of local compliance.",
+      "A Thornton plan also needs a fenced backyard, one coop, a maximum coop area of 120 square feet and height of seven feet, and five-foot separation from side and rear property lines. The city says no standard chicken-keeping permit is required, but an attached townhouse does not meet the detached-home condition and other construction or HOA restrictions remain separate."
+    ],
+    "westminster-co": [
+      "A quarter-acre flock tier also changes the coop area",
+      "Westminster's official animal-management rules allow up to six hens on detached-home lots of one-quarter acre or less, with higher flock tiers available for larger qualifying parcels. Its coop rule requires at least six square feet of indoor floor area per hen. A six-hen layout therefore needs at least 36 square feet; twelve hens require at least 72 under the same rule, before checking the permitted flock tier.",
+      "The city requires an approved backyard-livestock permit, currently listed at $25. Coop placement is limited to a screened rear yard at least ten feet from side and rear property lines, and other size and height limits apply. A large lot alone does not waive the permit or site-layout checks."
+    ],
+    "long-beach-ca": [
+      "The fifth chicken changes both permits and dwelling distance",
+      "Long Beach provides a useful comparison between four and five chickens. The cited municipal code requires a separation of ten feet from an adjacent person's dwelling for one to four live chickens; for five to ten it rises to 35 feet, and five or more chickens require an animal-care permit. Eleven to twenty birds use a 50-foot dwelling-distance tier. These distances are to buildings, not simply to boundary fences.",
+      "The city separately calls for at least ten square feet of permeable outdoor containment per bird. Five chickens therefore imply at least fifty square feet of permeable enclosure. The general twenty-fowl maximum does not override the distance bands, zoning and additional permit requirements."
+    ],
+    "roseville-ca": [
+      "Mixed species count together, and the run has a boundary setback",
+      "Roseville's reviewed city guidance groups ducks, chickens and pigeons under a ten-bird combined allowance. Six chickens and four ducks use all ten under that category rather than allowing ten birds of each species. Roosters are not categorically excluded by this allowance, but animal-noise rules still apply.",
+      "The city requires a 20-foot separation from property lines for chicken enclosures, including fenced runs. For an illustrative 45-foot-wide lot, the two opposing 20-foot bands leave only five feet of width before other restrictions; fitting an animal shelter could be impractical. The city's discretionary special permit for nonconforming locations is not automatic permission."
+    ],
+    "aurora-co": [
+      "Six hens or eight depends on actual parcel size",
+      "Aurora's reviewed program normally allows up to six residential hens; a qualifying single-family residential lot of at least 20,000 square feet may keep up to eight. A 19,000-square-foot parcel cannot simply select eight hens because the coop is large. The city requires its chicken or duck permit before acquisition and prohibits residential roosters.",
+      "Housing must generally remain in the rear yard with at least fifteen feet of separation from abutting property boundaries unless the specific affected owners provide the written consent contemplated by the rule. That possibility does not waive other zoning restrictions. Draw the true lot lines and consent requirements before arranging the coop footprint."
+    ],
+    "longmont-co": [
+      "A one-time hen permit does not authorize free-range placement",
+      "Longmont's standard nonagricultural allowance is four hens, and the reviewed city form requires a one-time chicken-hen permit. Roosters do not qualify for the routine residential program apart from narrow educational or scientific exceptions. A four-hen drawing should begin with the existing rear-yard structures, not just the count and suggested indoor area.",
+      "The city's application adds enclosure and separation rules for side and rear lot lines and nearby structures, plus specific exceptions. It also restricts free-ranging without relevant abutting-owner permission. An owner's written permission for an exception is not a substitute for the city permit; confirm the current form and actual parcel conditions before building."
+    ],
+    "tacoma-wa": [
+      "Extra birds require more than a larger coop",
+      "Tacoma's ordinary adult-poultry allowance is six per parcel. A higher count toward ten requires specified written consent from qualifying nearby residence owners, not just more coop floor area. A homeowner planning eight hens should establish whether the additional-bird approval exists before buying materials.",
+      "Animal enclosures also have to remain behind the main building's front wall, outside required side-yard setbacks and at least twelve feet from certain dwelling or lodging buildings. Structures exceeding 200 square feet trigger the city's building-permit rule. That is not a promise that smaller structures ignore all zoning requirements."
+    ],
+    "yakima-wa": [
+      "A four-hen count can pass while the coop location fails",
+      "Yakima's planning guidance describes up to four hens on eligible residential premises and excludes roosters. For a four-hen coop beside a garage, measure separately to the residential building, property lines and the other nearby structures. The cited rules require ten feet from a residence or property line, five feet from other structures and backyard confinement.",
+      "A coop can satisfy a generic space calculator yet be too close to a fence or a building. Some detached accessory structures have different permit thresholds, but that does not override chicken-specific placement regulations. Verify the residential zoning, site survey and construction category."
+    ],
+    "sacramento-ca": [
+      "The actual yearly licensing calculation for three hens",
+      "Sacramento's current city page lists a maximum of three chickens per residential parcel and requires annual poultry licenses plus a coop permit. Using the published amounts, three $20 chicken licenses and one $47 coop permit add up to $107 in annual city poultry charges. Confirm current fees before applying because older downloadable documents have shown previous prices.",
+      "A qualifying coop belongs in the rear yard, between fifteen and forty-two square feet, and at least twenty feet from the nearest neighboring dwelling rather than a blanket twenty feet from every property line. The city also requires a roof, walls, nests and appropriate upkeep. A generic size calculation alone cannot verify this."
+    ],
+    "gresham-or": [
+      "Three hens need two different distance measurements",
+      "Gresham's official guidance permits up to three adult hens on qualifying single-family properties, with a chicken permit required before keeping them; the posted fee is $50 for two years. A minimum two square feet of indoor coop floor per adult hen gives six square feet for three birds, but that statutory figure is not necessarily a comfortable winter housing target.",
+      "Both coop and run must be in the rear yard. The coop needs ten feet to a property line and twenty-five feet to a neighboring dwelling, while the run must also remain ten feet from lot lines. Overnight coop-confinement hours and HOA restrictions require independent attention."
+    ],
+    "kent-wa": [
+      "A 7,000-square-foot lot changes the fowl count",
+      "Kent's official FAQ describes up to three domesticated fowl on a qualifying lot of 5,000 square feet, plus one for each additional 1,000 square feet. A qualifying 7,000-square-foot parcel therefore suggests up to five fowl under this arithmetic, subject to other conditions. The city's FAQ does not publish a categorical rooster ban, but noise and nuisance rules still matter.",
+      "The city also lists ten feet between a chicken coop and the property line. Its general shed guidance discusses building permits at 200 square feet or larger, but applying that threshold to a specific chicken house requires a building-classification check. Property easements may impose further siting restrictions."
+    ],
+    "beaverton-or": [
+      "Lot size and tenant consent are separate requirements",
+      "Beaverton's cited law permits up to four hens on qualifying properties of at least 5,000 square feet containing a detached single-family home or duplex. For a renter on a qualifying 6,000-square-foot parcel, written permission from the property owner is still necessary; the sufficient lot size does not automatically replace that consent.",
+      "A coop cannot occupy the prohibited front-of-house area and has to satisfy the city's published distance from neighboring dwellings. That twenty-foot separation should not be confused with a universal twenty-foot setback from every fence. Confirm accessory-structure permits, the actual neighbor-building location and private HOA conditions separately."
+    ]
+  }
+}
