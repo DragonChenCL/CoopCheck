@@ -147,3 +147,22 @@ Note: Gmail 'sent' indicates dispatch, NOT inbox delivery or actual backlink. So
 - **PoultryHatch author/editor via flockhatch@proton.me:** Gmail successful dispatch ID `1a166a99bd58bbc5`. Its `https://www.poultryhatch.com/2025/05/backyard-chicken-coop-laws-us-cities-guide.html` retains Portland three-hen-plus-permit claim and Denver $50 annually. Current city documents support Portland ordinary 4/6 without husbandry permit and Denver Food-Producing Animals permit $25 one time per property. Public contact explicitly lists this editorial email at `https://www.poultryhatch.com/p/contact-us.html`.
 - **Not contacted:** CoopCodes Chandler, since it accurately describes six hens and cites the amended law despite reproducing an explicitly outdated five-hen city handout. BackyardChickenBarn has an article still claiming Portland 3 hens without a permit and up to eight with an application, but the public contact page did not display a usable contact address. Do not invent an address.
 - **Dispatch-count note:** 56 cumulative outbound/form acknowledgements before this focused follow-up, now **60 cumulative (four this round)**; four known hard-bounced historical emails (Farm Flavor, Edible Portland, Heritage Skills USA, Homestead Daily). Acknowledgement is not proof of delivery/read, and no editorial backlink is verified yet.
+
+
+## 2026-10-23 — three source-backed Folsom 2026 ordinance story tips (quality-first)
+
+All three targets were newly checked against Gmail Sent history before outreach. These are independently operated editorial channels, not bought submissions or duplicate contacts; pitches were tailored in language and use case. **Gmail returned success IDs (dispatch only), not proof of delivery or coverage.**
+
+| Target | Publicly published editorial channel | Individualized value | Gmail dispatch ID | State |
+| --- | --- | --- | --- | --- |
+| Folsom Times | news@folsomtimes.com — https://folsomtimes.com/about-us/ | Reader-service explainer: newly adopted Ordinance 1362, Folsom city chicken limit now up to six for qualifying lots, no roosters, setbacks | `1a166bdc51ad90e8` | Gmail sent |
+| The Folsom Telegraph (Gold Country Media) | jessicah@goldcountrymedia.com — publication's official social Linktree https://linktr.ee/thefolsomtelegraph | Independent local reporting angle: current six-hen city code versus widespread older three-hen references | `1a166be38077f085` | Gmail sent |
+| Sacramento Bee — Bee Curious | beecurious@sacbee.com — https://www.sacbee.com/news/bee-curious/ | Community-driven public-service question: what Folsom 2026 Ordinance 1362 actually permits and what siting rules apply | `1a166bfab2378be7` | Gmail sent |
+
+Primary evidence shared: current Folsom Municipal Code §7.04.080(C), https://ecode360.com/51019653 ; adoption date March 10, 2026 on https://www.folsom.ca.us/government/city-clerk-s-office . Detailed ordinance scope: up to six chickens kept as pets where allowed in nonagricultural zones; roosters banned; 5 ft from lot lines and 20 ft from neighboring dwellings; other land-use rules also apply. Contrasting March 2026 residents' discussion online mentioned three, but not treated as law. All emails explicitly disclosed a nonlocal municipal-data researcher as sender and did not assert parcel-specific permission.
+
+Other research candidates screened but **not contacted**: Portland discussions dated 2009–2014 (historically accurate at original posting), accurate CoopCodes Folsom entry, prior-contact CityHubGo, Press Democrat (no current newsroom tip address verified; general customer support and letters channels not appropriate). This avoids sending redundant or misleading corrections.
+
+**Omlet follow-up:** inbox auto-acknowledgement with support-ticket subject `[#271087] Editorial correction for Omlet's US chicken-law guide: Portland's 2025 permit rules`. Automated reply only, NOT an editor commitment or live earned link. Four historical bounced contacts remain: Farm Flavor, Edible Portland, Heritage Skills USA, Homestead Daily.
+
+**Arithmetic:** previous recorded 60 total send/form acknowledgements + this batch 3 distinct Gmail IDs = **63 cumulative dispatch/form confirmations** toward 100 outreach attempts (at least four have subsequently bounced, so 59 is only the maximum not-known-bounced count, not proven deliveries). Actual published editorial links from this campaign remain **unverified**. Monitor editorial responses and URL changes before booking backlink wins; no unsolicited follow-ups to nonresponsive addresses yet.
