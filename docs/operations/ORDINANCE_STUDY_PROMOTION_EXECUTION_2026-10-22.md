@@ -279,3 +279,36 @@ Recommended follow-up: watch for editor replies, confirm actual online citation 
 **Count reconciliation:** previous cumulative 81 send or accepted form confirmations + 7 new Gmail send confirmations = **88/100 cumulative dispatch/form acknowledgments**. At least **7 previously known hard bounces** (including KGW) remain. Immediately after these seven sends, inbox scan showed no newly received specific bounce; absence of bounce is not verified delivery. Previously verified natural earned links from campaign **0**. Outbound emails do not entitle CoopCheck to editorial placement.
 
 **Priority next**: monitor near-term reactions from Kalamazoo and city-paper journalists. Future city facts must distinguish drafted / adopted / effective, and editors should be invited to check original law, not promised SEO outcomes. Stop outreach to prior hard-bounced addresses.
+
+
+## 2026-10-23 — FIRST 100 SEND/FORM CONFIRMATIONS ACHIEVED (12 new local newsroom pitches)
+
+**Milestone reached:** previous audit recorded **88** distinct outreach dispatch/form submit confirmations. This batch added **12 new distinct personalized newsroom emails**, all with Gmail successful-send IDs, bringing the running count to **100 confirmed outbound/form submission acknowledgements**. They are NOT 100 proven delivered/accepted editorial relationships or 100 backlinks.
+
+**No duplicate recipients:** each address was screened with Gmail `in:sent to:` search and returned no older messages. Each email was individually written for its existing reporting and readers; no mass BCC and no link/promotion quid pro quo. Three geography-specific reporting angles: Grover Beach (CA), Myerstown (PA), and Charles City (IA).
+
+| # | Outlet | Recipient | Source-backed lead and important scope note | Gmail sent ID | Public editorial contact |
+|---|---|---|---|---|---|
+| 1 | New Times SLO — Bulbul Rajagopal | brajagopal@newtimesslo.com | Grover Beach: original reporter; Oct 26 poultry policy agenda; not enacted | `1a167b5247910ed5` | https://www.newtimesslo.com/sanluisobispo-contacts-page/ |
+| 2 | KSBY News | news@ksby.com | Grover Beach: enforcement stay vs proposed legal change; household questions | `1a167b52d0ad09b5` | https://www.ksby.com/about-us/contact-us |
+| 3 | SLO Tribune — Kaytlyn Leslie | kleslie@thetribunenews.com | Grover Beach: small-lot setback feasibility and primary city agenda | `1a167b5337460866` | https://www.sanluisobispo.com/trust-transparency/article313732539.html |
+| 4 | KCBX Public Radio | news@kcbx.org | Grover Beach: council discussion, public-service survey of rules | `1a167b53826034d6` | https://www.kcbx.org/how-to-communicate-with-us |
+| 5 | Cal Coast News | tips@calcoastnews.com | Grover Beach: enforcement pause and pending poultry policy review | `1a167b540363029b` | https://calcoastnews.com/contact-us/ |
+| 6 | LebTown — Emily Bixler | emily@lebtown.com | Myerstown: Oct 13 advertised draft, Nov 10 hearing; coop fit for narrow lots | `1a167b6341e7f1e9` | https://lebtown.com/listings/places/myerstown-borough/ |
+| 7 | WITF News | news@witf.org | Myerstown: proposed 4/10/24 lot tiers; permit and setbacks, NOT adopted | `1a167b643b095779` | https://www.witf.org/news/connect/ |
+| 8 | WGAL News 8 | news8@wgal.com | Myerstown: Nov 10 public hearing, draft annual permit and housing conditions | `1a167b64de140c8c` | https://www.wgal.com/article/contact-us/3618440 |
+| 9 | PennLive | newstips@pennlive.com | Myerstown: chicken ordinance public notice; small parcel limits and permit | `1a167b6546362693` | https://link.pennlive.com/public/31879260 |
+| 10 | Iowa Public Radio | news@iowapublicradio.org | Charles City: hen ordinance adopted; Oct 19 fees and inspection-cost debate | `1a167b6fc4a63c3a` | https://www.iowapublicradio.org/contact |
+| 11 | North Iowa Today | northiowatoday@gmail.com | Charles City: first-year permit cost and council fee resolution follow-up | `1a167b7045e59352` | https://northiowatoday.com/about/ |
+| 12 | KWWL News 7 | news@kwwl.com | Charles City: law approved and fee plan; request original ordinance/resolution | `1a167b70a4755d0b` | https://kwwl.com/contact-us/ |
+
+**Primary / near-primary record references provided in pitches:**
+- Grover Beach council official meeting archive **Oct 26 2026 policy discussion** `https://grover.org/Archive.aspx?ADID=2661`; reporter original Sept 2026 article `https://www.newtimesslo.com/grover-beach-will-discuss-easing-poultry-ban-in-october/`. Not an adopted change; enforcement pause does not establish a general chicken-keeping entitlement.
+- Myerstown local council meeting reporting **Oct 13 2026 vote to ADVERTISE DRAFTS; Nov 10 hearing pending**, proposed 4/10/24 chickens by lot tier and annual permit: `https://lebtown.com/2026/10/19/myerstown-advances-ordinance-allowing-chickens-in-all-lot-sizes/`. No claim this is final operative law. Reporters encouraged to verify original borough documents and parcel-specific siting.
+- Charles City KCHA original local reporting **Oct 21 2026**: final ordinance reading reportedly completed earlier in month, Oct 19 resolution on poultry fees approved 4–0; original audio clips provided. `https://kchanews.com/2026/10/21/chicken-ownership-in-charles-city-will-cost-a-few-buck-buck-bucks/`. Because exact adopted fee document wasn't independently retrieved, outreach expressly DID NOT assert dollar amount, dates of enforcement or legal clearance. Journalists urged to secure official fee resolution.
+
+All three news localities **are outside CoopCheck's 100 selected audited city records**. Each pitch explicitly disclosed this and pointed to public research methods rather than inventing local dataset coverage. Study used as background: `https://coopcheck.serunio.com/research/2026-backyard-chicken-laws.html`.
+
+**Delivery / response reality check:** Inbox was searched immediately after the 12 sends. No **new** delivery-failure notification or human reply from these 12 had yet appeared. Historic **at least 7 confirmed hard bounces** from earlier rounds still stand (Farm Flavor, Edible Portland, Heritage Skills USA, Homestead Daily, Edible San Antonio, Edible Inland Northwest, KGW). Across all 100 acknowledgements, **93 are only not currently known to have bounced, not proven successfully delivered**. The earlier human reply from Tualatin Life publisher remains confirmed and user has replied; Omlet ticket is automated; My Favorite Chicken auto-OOO; Raising Chickens $50 paid-guest-post offer is neither editorial citation nor backlink. **Confirmed earned links: 0** as of last independent check; no new offsite live citation verified in this batch.
+
+**Next strategy:** Stop optimizing only outbound count, wait for / review human editor responses, verify actual on-page editorial citations, selectively prepare requested source follow-ups (especially Tualatin Life/Tigard case study), continue watching hard bounces. Do not resend to rejected addresses to bypass email blocks.
