@@ -223,3 +223,12 @@ The user explicitly requested a bigger batch while retaining source-backed outre
 **Government verification outreach:** `codecompliance@tigard-or.gov` was sent one factual public-source clarification (Gmail ID `1a1673b8edbe3f72`), asking about later hen caps/licenses, building rules, and a publicly filed related court docket if one exists. This is a **government research inquiry**, not a new editorial backlink/outreach target. Do not count it toward 100 editor contacts. Await response, no assumptions.
 
 **Next editorial step:** Once the new case-study URL is live and one original city government response is received (or independent docket proof), prepare a **single non-spam follow-up** to Michael and Jackson with the source sheet and factual caveat. Avoid sending a new message immediately on top of the user's earlier reply. Track any actual citation/referral separately.
+
+
+### Follow-up deploy verification — 2026-10-23
+
+- The comparison page is committed as `site/research/tigard-vs-tualatin-backyard-chicken-laws-2026.html`, linked from the 100-city report and included via deterministic sitemap generator; sitemap now has 124 entries.
+- Fixed three previously fixed-to-123 CI assertions in `scripts/qa-coop-seo.cjs`, `scripts/qa-coop-intent-tools.cjs`, and `scripts/qa-coopcheck.cjs` (latter now counts 36 noncity + reviewed city entries). No city registry or reviewed-city count was changed.
+- **GitHub Pages deploy passed**: run https://github.com/DragonChenCL/CoopCheck/actions/runs/39906172586, SHA `6e71a16e`. Subsequent **IndexNow workflow passed**: https://github.com/DragonChenCL/CoopCheck/actions/runs/39906212809. This submits to Bing-compatible endpoints, not Google indexing proof.
+- **Caveat:** Independent public HTTP fetch from this execution environment was blocked by DNS/network; direct public URL status / current browser rendering not separately verified here. Do not claim Google indexed the page. URL anticipated by Pages deployment: https://coopcheck.serunio.com/research/tigard-vs-tualatin-backyard-chicken-laws-2026.html .
+- A single Tigard Code Compliance information request was sent with Gmail ID `1a1673b8edbe3f72` to the municipality; user already sent the earlier publisher reply. No duplicate follow-up sent to publisher during immediate work.
