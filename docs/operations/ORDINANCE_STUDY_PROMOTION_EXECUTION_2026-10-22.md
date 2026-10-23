@@ -166,3 +166,33 @@ Other research candidates screened but **not contacted**: Portland discussions d
 **Omlet follow-up:** inbox auto-acknowledgement with support-ticket subject `[#271087] Editorial correction for Omlet's US chicken-law guide: Portland's 2025 permit rules`. Automated reply only, NOT an editor commitment or live earned link. Four historical bounced contacts remain: Farm Flavor, Edible Portland, Heritage Skills USA, Homestead Daily.
 
 **Arithmetic:** previous recorded 60 total send/form acknowledgements + this batch 3 distinct Gmail IDs = **63 cumulative dispatch/form confirmations** toward 100 outreach attempts (at least four have subsequently bounced, so 59 is only the maximum not-known-bounced count, not proven deliveries). Actual published editorial links from this campaign remain **unverified**. Monitor editorial responses and URL changes before booking backlink wins; no unsolicited follow-ups to nonresponsive addresses yet.
+
+
+## 2026-10-23 — quality-first larger batch: 12 additional distinct dispatch confirmations
+
+The user explicitly requested a bigger batch while retaining source-backed outreach. Each of 12 is a **new** contact checked against previous outreach. All 12 returned a distinct Gmail message ID. **TWO have now explicitly bounced**; dispatch acknowledgement is NOT proof of delivery, editor attention, citation or backlink.
+
+| # | Publication / contact | To | Specific editorial value | Gmail ID | Source / editorial contact |
+|---|---|---|---|---|---|
+| 1 | AZ Chickens | sales@azchickens.com | Arizona state 2024 statutory preemption vs local and HOA exceptions | `1a166d1dc0e93737` | https://azchickens.com/blogs/news/backyard-chicken-laws-in-arizona-2025-what-new-owners-need-to-know |
+| 2 | My Favorite Chicken | info@myfavoritechicken.com | Add AZ 2024 statutory example to August 2026 HOA guide | `1a166d1e2a43785d` | https://myfavoritechicken.com/2026/08/14/backyard-chicken-laws-hoa-rules/ |
+| 3 | Edible Dallas/Fort Worth | editorial@edibledfw.com | Aug 2026 Dallas rooster-ban repeal local-food story tip | `1a166d3774453634` | https://www.edibledfw.com/can-join-team/ |
+| 4 | Edible Seattle | info@edibleseattle.com | Seattle eight-fowl baseline vs Tacoma six-plus-exceptions | `1a166d37ed949198` | https://edibleseattle.com/contact-edible/ |
+| 5 | Edible San Antonio | angela@ediblesanantonio.com | Eight domestic fowl vs excess animal permit; city source | `1a166d385b8a3aad` | https://www.ediblesanantonio.com/staff/ |
+| 6 | Edible Inland Northwest | info@edibleinlandnw.com | Spokane lot-size bird allowance vs Yakima four-hen rule | `1a166d6e20d80578` | https://www.edibleinlandnw.com/contributors/ |
+| 7 | Dallas Observer | editorial@dallasobserver.com | Local 2026 Dallas council action on rooster provision, legacy code caution | `1a166d6e8fa070e5` | https://www.dallasobserver.com/about/contact/ |
+| 8 | Beaverton-Tigard-Tualatin Times | mmiller@pamplinmedia.com | Tualatin Apr 2026 four domestic fowl with permit, not same as Portland | `1a166d6ef6b9f982` | https://orenews.com/beaverton |
+| 9 | The Spokesman-Review | news@spokesman.com | Spokane code one fowl per 1000 square feet; WA jurisdiction differences | `1a166d6f42edff5a` | https://www.spokesman.com/customer-service/ |
+| 10 | Oregon Public Broadcasting | opbnews@opb.org | Tualatin five-year license and four-fowl rule vs Portland no keeping permit | `1a166d7ff61422bc` | https://www.opb.org/submit-idea/ |
+| 11 | Tualatin Life | mike@tualatinlife.com | Follow-up to April 2 duck reform reporting: licensing, setback details | `1a166d8059e012db` | https://tualatinlife.com/featured/ducks-and-many-other-domestic-fowl-now-allowed-in-tualatin/ |
+| 12 | Elk Grove Citizen | publisher@mpg8.com | Unincorporated Sacramento County July 2026 rooster rules vs Elk Grove city | `1a166d80c6a951f2` | https://www.egcitizen.com/pages/about |
+
+- **Hard bounce 1:** `info@edibleinlandnw.com` Gmail failure `1a166d6eb75c1311`; SMTP **554 5.7.1 Relay access denied**. Do NOT classify as delivered.
+- **Hard bounce 2:** `angela@ediblesanantonio.com` Gmail `1a166d38c2b29e71` “Undelivered Mail Returned to Sender,” containing original sent message. This is a non-delivery indication, do NOT classify as delivered.
+- **Auto reply:** My Favorite Chicken `info@myfavoritechicken.com` returned an out-of-office response until **November 2, 2026**. This is **not a human editorial acceptance**.
+- **Website form failure, not counted:** HenRules official contact form about Portland current permit and Denver one-time $25 license returned alert `There was a problem sending your message. Please try again in a moment.` Do not count or bypass.
+
+**Official source basis:** AZ A.R.S. 9-462.12 `https://www.azleg.gov/ars/9/00462-12.htm`; Dallas council Aug 12 2026 Legistar item 26-2375A `https://cityofdallas.legistar.com/LegislationDetail.aspx?GUID=9ED973CF-9968-4580-ABA5-E5F996136AA2&ID=8154790&Options=&Search=`; Spokane one fowl/1k square ft `https://my.spokanecity.org/smc/?Section=17C.310.115`; Seattle `https://www.seattle.gov/construction-and-inspections/codes/common-code-questions/animal-codes`; Tacoma `https://ecode360.com/48384481`; San Antonio permit `https://www.sa.gov/files/assets/main/acs/documents/permit-excessanimal.pdf`; Tualatin Apr 2026 amendments `https://www.tualatinoregon.gov/planning/chickens`; Portland `https://www.portland.gov/code/13/40/020`; Sacramento County July 2026 ordinance `https://planning.saccounty.gov/us/en/planning-environmental-review/projects/zoning-admin/crowing-fowl.html`. No claims that a non-covered city is part of first 100; Tualatin and Sacramento County clearly flagged as separate source tips.
+
+**Total tally reconciliation:** previous **63** cumulative outgoing messages/form submission confirmations + 12 new distinct Gmail sends = **75 dispatch confirmations** toward initial target of 100. Historically four known bounces (Farm Flavor, Edible Portland, Heritage Skills USA, Homestead Daily) + these two new bounces = **at least SIX definite non-deliveries**. Of 75, **69 are only 'not known bounced'**, not verified real inbox receipt. Actual natural editorial backlinks from this outreach: **0 confirmed**. Next practical priority is tracking editor responses, correcting city data, and verifying any live article changes or genuine links rather than blind volume.
+
