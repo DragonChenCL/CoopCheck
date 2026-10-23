@@ -81,3 +81,35 @@ The user specifically requested **20 NEW contacts**, excluding existing historic
 **Do not count these failed/blocked attempts:** contact@cityrulelookup.com (Gmail FORBIDDEN); info@clorofil.org, hello@thecoopplanner.com, hello@homesteadandchill.com, cflott08@gmail.com, email@CityChickAtl.com (OpenAI safety checks blocked). No retries or alternate-channel bypasses for blocked recipients. Previously contacted websites were excluded, including The Happy Chicken Coop, Homestead How-To, Waddle & Cluck, Community Chickens.
 
 **Success accounting:** 20 new successfully dispatched Gmail messages in this batch. Earlier 2 confirmed website contact forms + 4 separately confirmed Gmail messages = 6 prior study-promotion contacts, or 26 across those two rounds (do not count unrelated historical pitches). **Editorial replies accepted: not verified. Published referring domains/backlinks gained from this batch: 0 confirmed.** Verify unique live referring pages before logging an earned citation. Follow up selectively after 7–14 days, only on relevant, permitted channels; no automated repeated unsolicited messages.
+
+
+## Continuation: third round of 20 NEW individualized editorial messages (2026-10-22)
+
+**Purpose:** another 20 distinct, verifiable editorial-source invitations in response to the user's continued outreach request. All below yielded a **Gmail send_email success message ID**; this shows outgoing dispatch only, not human receipt, interest, editorial adoption or a backlink. We deliberately avoid reusing the previous 26 recipients. Sources and contacts were checked against publicly listed editorial contacts and relevant existing articles; not every target has local city data, and those emails expressly say so.
+
+| # | Publication | New address | Relevant data / angle | Gmail message ID |
+|---|---|---|---|---|
+| 1 | Country Living | countryliving@hearst.com | General US reader guide: San Diego placement vs Portland lot-area limits | `1a1665de187aa51d` |
+| 2 | Farm and Dairy | editorial@farmanddairy.com | General ag news tip: coop permissions vs flock-size rules | `1a1665de78981076` |
+| 3 | Edible Ojai & Ventura County | tami@edibleventuracounty.com | Propose update method for old Ventura-area chicken-regulation resource; city-example scoped | `1a1665defa876d89` |
+| 4 | Edible South Florida | gretchen@ediblesouthflorida.com | Source-verification framework only; NO Florida profile in this inventory | `1a1665df7023a8cc` |
+| 5 | Edible Delmarva | editor@edibledelmarva.com | Four-part pre-flock city-code checklist; NO local Delmarva coverage claimed | `1a1665dfc25a3af8` |
+| 6 | Cornell Small Farm Quarterly | kacey.deamer@cornell.edu | Source-checked urban livestock guidance; 71 full field audits, not representative | `1a1665e0390bf24d` |
+| 7 | Garden Culture Magazine | cat@gardenculturemagazine.com | Urban food growing and local chicken zoning: placement vs bird count | `1a1665e080dc85dd` |
+| 8 | Edible Houston | info@ediblehouston.com | Houston §6-31 / §6-35 / §6-39 permit exception correction to 2018 article | `1a1665e0e963188d` |
+| 9 | Edible Sacramento | editorial@ediblesacramento.com | Sacramento §9.44.860: three hens by permit and enclosure distances | `1a1666050bc3c9d0` |
+| 10 | Edible Denver | molly@edibledenver.com | Denver combined eight hen/duck rule, Food-Producing Animals permit | `1a16660565c72717` |
+| 11 | Edible Austin | info@edibleaustin.com | Austin covered enclosure geometry vs no blanket hen cap in cited clauses | `1a166605c12578ff` |
+| 12 | Edible Portland | deborah@edibleportland.com | Portland 4/6 fowl lot size thresholds, permit exception and guide | `1a1666072857b8d9` |
+| 13 | Edible Phoenix | info@ediblephoenix.com | Chandler older five-hen guidance vs 2024 Ordinance 5113 six | `1a16660786eee86b` |
+| 14 | Edible San Francisco | melody@ediblesf.com | San Francisco combined household animal counts, not generic hen cap | `1a166607fb0f90f0` |
+| 15 | Edible San Diego | katie@ediblesandiego.com | San Diego city 5/15/25 conditional chicken allowance graphic | `1a16660859dec939` |
+| 16 | Edible Orange County | gina@edibleoc.com | Anaheim vs Santa Ana: city-specific animal zoning, not borrowed San Diego rule | `1a166608bcfe8a9e` |
+| 17 | Phoenix New Times | editorial@newtimes.com | Local Chandler six-hen amendment, correcting old public sources | `1a16661b173c9c35` |
+| 18 | Denverite | tips@denverite.com | Denver eight bird Food-Producing Animals city permit vs placement | `1a16661b64296360` |
+| 19 | Bay Area News Group | local@bayareanewsgroup.com | San José combined small-animal enclosure distance bands and permit caveat | `1a16661be8545086` |
+| 20 | Edible Marin & Wine Country | info@ediblemarinandwinecountry.com | Santa Rosa lot-size tiered backyard hens in Sonoma County | `1a16661c5422bcfe` |
+
+**Replies reviewed before sending:** 2026-10-22 reply from RaisingChickens.net to our earlier note states **“Guest posts are $50.”** Classified as **paid guest-post offer, not editorial citation**; no payment or paid placement was initiated or authorized. Relevant GSC inbox mail says “Crawled — currently not indexed” revalidation in progress, affecting 19 pages. This is a new verification queue report, not a claim that Google has indexed the research page.
+
+**Tally across 3 study promotion rounds:** prior 6 verified outgoing contacts (2 website forms, 4 Gmail) + second round 20 Gmail + this round 20 Gmail = **46 total outreach dispatch confirmations**. Human replies confirmed at least one paid guest-post offer; **earned links confirmed 0** until independently verified on a live editorial page. Do not use guest-post quote as a backlink or assume these messages reached inboxes. Do not initiate an automated follow-up campaign to everyone; selectively watch replies and editorial citations, ideally 7–14 days out.
