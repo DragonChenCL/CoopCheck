@@ -7,8 +7,8 @@ const calc=require("../site/assets/coop-intent-tools.js");
 assert.equal(pages.length,6);
 assert.equal(new Set(pages.map(x=>x.slug)).size,6);
 const sitemap=read("site/sitemap.xml");
-assert.equal((sitemap.match(/<loc>/g)||[]).length,123);
-assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1])).size,123);
+assert.equal((sitemap.match(/<loc>/g)||[]).length,124);
+assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1])).size,124);
 const headings=new Set(),descs=new Set(),titles=new Set();
 for(const p of pages){
  const html=read("site/guides/"+p.slug+".html");
@@ -66,7 +66,7 @@ assert.equal(partial.subtotal,370);assert.equal(partial.priced,2);assert.equal(p
 assert.equal(calc.budget(Object.fromEntries(calc.budgetNames.map(x=>[x,"0"]))).subtotal,0);
 assert.equal(calc.budget(Object.fromEntries(calc.budgetNames.map(x=>[x,"-100"]))),null);
 assert.equal(calc.budget(Object.fromEntries(calc.budgetNames.map(x=>[x,"abc"]))),null);
-assert.equal(calc.budget(Object.fromEntries(calc.budgetNames.map(x=>[x,"100.123"]))),null);
+assert.equal(calc.budget(Object.fromEntries(calc.budgetNames.map(x=>[x,"100.124"]))),null);
 assert.match(calc.shapeSvg(6,10,"Run"),/<svg /);
 assert.match(calc.nestSvg(2),/<svg /);
 assert.match(calc.roostSvg(2,4),/<svg /);
@@ -76,4 +76,4 @@ assert(plan.includes('guides/chicken-run-size-calculator.html')&&plan.includes('
 for(const kind of ["run-size","nesting-box","roost"])assert(engine.includes('"'+kind+'"'),"handoff "+kind);
 const old=read("site/guides/chicken-coop-size-calculator.html");
 assert(old.includes("chicken-run-size-calculator.html")&&old.includes("chicken-coop-cost-calculator.html"),"first cluster backlinked");
-console.log("PASS: six authentic intent tools, 123 canonical URLs, formulas, quoted cost handling and full internal links");
+console.log("PASS: six authentic intent tools, 124 canonical URLs, formulas, quoted cost handling and full internal links");
