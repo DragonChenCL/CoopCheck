@@ -252,3 +252,30 @@ User requested further channel discovery and actual distribution, maintaining ac
 **Count reconciliation:** prior 75 editorial/publication dispatch or form-submit confirmations; plus 6 this round = **81 recorded attempts with success receipts** toward 100. Previously known hard bounces: 6. New KGW hard bounce: 1. Thus **7 confirmed failed deliveries among the 81; the other 74 are NOT proven delivered**, merely not known bounced at this point. The separate Tigard municipal-government question and user's email reply to Tualatin Life were not counted as new editorial prospects. Verified newly earned backlinks: still **0** at last independent check. Publisher Michael Antonelli's earlier personal response remains a strong editorial relationship but not a published link.
 
 Recommended follow-up: watch for editor replies, confirm actual online citation before counting a backlink, share new verified official findings only if they materially help, avoid repetitive unsolicited emails. The project remains a source transparency and legal-uncertainty reporting aid, not property-specific permission.
+
+
+## 2026-10-23 — 7 new newsroom pitches: adopted Schoolcraft and proposed Cedar Lake/Stuart
+
+**Purpose**: quality-first follow-up to user request to keep publishing personalized research-based editorial outreach. New targets were checked against Gmail Sent before outreach. **Seven distinct new sends returned Gmail success IDs**; no human editorial acceptance or public backlinks known yet. Each message explicitly distinguished original dataset coverage from outside-sample city developments.
+
+| # | Publication | Recipient | Source-backed angle | Gmail ID | Public address/source |
+|---|---|---|---|---|---|
+| 1 | WQCS Public Radio | news@wqcs.org | Stuart Oct 26 resident survey presentation; city hasn't adopted the hen proposal | `1a167a8ac50c4a0b` | https://www.wqcs.org/irsc-public-media-staff-directory |
+| 2 | Lakeshore Public Media | info@lakeshorepublicmedia.org | Cedar Lake 16-town comparison and draft v5 under eight unresolved policy questions — NOT adopted | `1a167a8b5e0b63b5` | https://www.lakeshorepublicmedia.org/contact |
+| 3 | Cherry Hill Courier-Post / USA Today | rinaganti@usatodayco.com | Existing Collingswood story: four-hen first year, conditional up to 12 later, initial 30 licenses | `1a167a8be6980dd3` | https://www.aol.com/articles/collingswood-passes-ordinance-allowing-backyard-090544000.html |
+| 4 | WKZO | wkzonews@wkzo.com | Schoolcraft Ord 251+252 adopted Oct5, effective Oct28; resident preparation before effective date | `1a167aa9a380a86a` | https://wkzo.com/contact-us/ |
+| 5 | WWMT News Channel 3 | desk@wwmt.com | Schoolcraft news assignment: adopted law vs not-yet-effective; village building compliance angle | `1a167aaa1032f855` | https://wwmt.com/station/contact |
+| 6 | Kalamazoo Gazette / MLive | kznews@mlive.com | Schoolcraft primary published ordinances and effective-date change after public hearing | `1a167aaa662b6e4a` | https://swmichjournalism.com/about/media-guide/ |
+| 7 | Public Media Network | stories@publicmedianet.org | Schoolcraft community service: new backyard hen rules and practical village interview | `1a167aaaf381ae88` | https://publicmedianet.org/about/contact/ |
+
+**Two NOT sent (connector FORBIDDEN):** `submissions.SCN@gmail.com` (South County News editor Kathy Oswalt-Forsythe); `jade.jarvis@hearst.com` (WPBF 25 journalist). Do not count, resend, or bypass channel safety checks. **Kalamazoo Press contact form**: no successful submission, cfbrower CDP initialization timed out. Do not count.
+
+**Key independently surfaced official-source news:**
+- Schoolcraft, Michigan legal notices for Ordinances 251 and 252 publicly state council adoption **October 5, 2026** and future effective date **October 28, 2026**. Primary published legal notices `https://classifieds.mlive.com/mlive/advert/-general_305015`, `https://classifieds.mlive.com/mlive/advert/-general_305016`. They were NOT yet in force at the time of these messages. Prior South County News Oct 1 article anticipated the hearing; this is a new verifiable follow-up. Village of Schoolcraft is not among the original 100 reviewed CoopCheck city records.
+- Cedar Lake Indiana **October 6, 2026 Town Council packet** `https://cedarlakein.gov/Documents/Agenda_Minutes/Town_Council/2026/2026-10-06_Town_Council_Packet.html` contains 16-municipality comparison, 25-year police incident audit, and **draft v5** backyard hen ordinance. Eight issues unresolved, not enacted; do NOT present proposed six-hen permit as operative law. Town is not among 100 reviewed CoopCheck cities.
+- Stuart FL City bulletin `https://www.stuartfl.gov/CivicSend/ViewMessage/Message/302419` says staff will present revised two-part public-opinion survey October 26, 2026; this is NOT enacted chicken legalization. The project has no audited Stuart city profile.
+- Collingswood NJ newspaper report `https://www.aol.com/articles/collingswood-passes-ordinance-allowing-backyard-090544000.html` reports Oct 5 passage and staged flock licensing. Do not call Collingswood part of our reviewed dataset.
+
+**Count reconciliation:** previous cumulative 81 send or accepted form confirmations + 7 new Gmail send confirmations = **88/100 cumulative dispatch/form acknowledgments**. At least **7 previously known hard bounces** (including KGW) remain. Immediately after these seven sends, inbox scan showed no newly received specific bounce; absence of bounce is not verified delivery. Previously verified natural earned links from campaign **0**. Outbound emails do not entitle CoopCheck to editorial placement.
+
+**Priority next**: monitor near-term reactions from Kalamazoo and city-paper journalists. Future city facts must distinguish drafted / adopted / effective, and editors should be invited to check original law, not promised SEO outcomes. Stop outreach to prior hard-bounced addresses.
