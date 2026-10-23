@@ -11,8 +11,8 @@ assert.equal(specsPages.filter(x=>x.group==="flock").length,6);
 assert.equal(specsPages.filter(x=>x.group==="footprint").length,3);
 assert.equal(specsPages.filter(x=>x.group==="calculator").length,1);
 const sitemap=read("site/sitemap.xml");
-assert.equal((sitemap.match(/<loc>/g)||[]).length,123,"all 123 content URLs, excluding 12 pending excluded city status pages");
-assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1] )).size,123);
+assert.equal((sitemap.match(/<loc>/g)||[]).length,124,"all 124 content URLs, excluding 12 pending excluded city status pages");
+assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1] )).size,124);
 const titleSet=new Set(),descSet=new Set(),h1Set=new Set();
 const blogBase="https://coopcheck.serunio.com";
 for(const p of specsPages){
@@ -69,4 +69,4 @@ for(const n of [16,24,40,60,96,240]){
  assert(rect.width*rect.depth-n<rect.width,"example is not arbitrarily oversized");
 }
 assert.equal(calc.exampleRectangle(0),null);
-console.log("PASS: 10 original SEO landing pages, 123 canonical sitemap URLs (12 pending excluded), credible sources and functioning size calculator");
+console.log("PASS: 10 original SEO landing pages, 124 canonical sitemap URLs (12 pending excluded), credible sources and functioning size calculator");
