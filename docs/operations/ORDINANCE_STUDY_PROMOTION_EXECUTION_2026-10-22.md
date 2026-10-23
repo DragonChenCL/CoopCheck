@@ -232,3 +232,23 @@ The user explicitly requested a bigger batch while retaining source-backed outre
 - **GitHub Pages deploy passed**: run https://github.com/DragonChenCL/CoopCheck/actions/runs/39906172586, SHA `6e71a16e`. Subsequent **IndexNow workflow passed**: https://github.com/DragonChenCL/CoopCheck/actions/runs/39906212809. This submits to Bing-compatible endpoints, not Google indexing proof.
 - **Caveat:** Independent public HTTP fetch from this execution environment was blocked by DNS/network; direct public URL status / current browser rendering not separately verified here. Do not claim Google indexed the page. URL anticipated by Pages deployment: https://coopcheck.serunio.com/research/tigard-vs-tualatin-backyard-chicken-laws-2026.html .
 - A single Tigard Code Compliance information request was sent with Gmail ID `1a1673b8edbe3f72` to the municipality; user already sent the earlier publisher reply. No duplicate follow-up sent to publisher during immediate work.
+
+
+## 2026-10-23 — six targeted editorial channels for Tigard–Tualatin source report
+
+User requested further channel discovery and actual distribution, maintaining accuracy-first outreach. All six are **new recipients**, checked against the Gmail Sent history before execution. Each got a distinct `send_email` success provider message ID, but **KGW was later rejected**. Each pitch used city-law primary sources, the public case-study URL (https://coopcheck.serunio.com/research/tigard-vs-tualatin-backyard-chicken-laws-2026.html), an angle matched to the publication's audience, and the explicit caveat that rumored Tigard litigation has no independently verified case docket.
+
+| # | Newsroom | Public tip/editor channel | Specific angle | Outgoing Gmail ID | Contact evidence | Final known delivery status |
+|---|---|---|---|---|---|---|
+| 1 | The Oregonian / OregonLive | newsroom@oregonian.com | Tigard–Tualatin–Hillsboro resident permit comparison | `1a167452cfa8db84` | https://www.oregonianmediagroup.com/contact-news | Dispatched; no confirmation of inbox receipt |
+| 2 | Axios Portland | portland@axios.com | Four-hen coop metro boundaries; practical fast-read reader service | `1a167453577072f7` | https://www.axios.com/local/portland/2025/12/23/portlands-2025-wrapped | Dispatched; no confirmation of inbox receipt |
+| 3 | Willamette Week | newstips@wweek.com | 2018 Tigard repeal, 2022 council compromise, 2026 Tualatin contrasted | `1a167453abb096cd` | https://www.wweek.com/contact-us/ | Dispatched; no confirmation of inbox receipt |
+| 4 | Oregon Capital Chronicle | jshumway@oregoncapitalchronicle.com | Municipal policy research, not a statewide representative survey | `1a167454082fae35` | https://oregoncapitalchronicle.com/2025/04/15/hello-from-the-capital-chronicles-newish-editor/ | Dispatched; no confirmation of inbox receipt |
+| 5 | Focus Hillsboro | newsroom@focushillsboro.com | Hillsboro keeping permit versus neighboring town laws | `1a167454993aa1d2` | https://focushillsboro.com/contact-us/ | Dispatched; no confirmation of inbox receipt |
+| 6 | KGW News | tips@kgw.com | Local broadcast: chicken-keeping differences across metro city limits | `1a16745d096ce5be` | https://x.com/KGWNews/with_replies | Hard bounced |
+
+**Known new delivery failure:** KGW `tips@kgw.com` (message `1a16745d096ce5be`) led to a `Delivery Status Notification (Failure)` (ID `1a16745d6ed98f89`): recipient rejected, SMTP `550 5.4.1 Recipient address rejected: Access denied`. This must NOT be counted as delivered; do not attempt bypass or resend to alternate address simply to evade the restriction.
+
+**Count reconciliation:** prior 75 editorial/publication dispatch or form-submit confirmations; plus 6 this round = **81 recorded attempts with success receipts** toward 100. Previously known hard bounces: 6. New KGW hard bounce: 1. Thus **7 confirmed failed deliveries among the 81; the other 74 are NOT proven delivered**, merely not known bounced at this point. The separate Tigard municipal-government question and user's email reply to Tualatin Life were not counted as new editorial prospects. Verified newly earned backlinks: still **0** at last independent check. Publisher Michael Antonelli's earlier personal response remains a strong editorial relationship but not a published link.
+
+Recommended follow-up: watch for editor replies, confirm actual online citation before counting a backlink, share new verified official findings only if they materially help, avoid repetitive unsolicited emails. The project remains a source transparency and legal-uncertainty reporting aid, not property-specific permission.
