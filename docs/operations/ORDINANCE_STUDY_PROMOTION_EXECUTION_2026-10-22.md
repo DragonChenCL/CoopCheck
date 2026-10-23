@@ -139,3 +139,11 @@ Note: Gmail 'sent' indicates dispatch, NOT inbox delivery or actual backlink. So
 
 **Screening note:** CoopCodes' Chandler page is already correct on the six-hen maximum and explicitly cites the 2024 amendment; although it also quotes the obsolete 2023 city handout alongside the amended code, we did not send an unsolicited duplicate correction to this already substantially accurate guide.
 
+
+
+### 2026-10-23 — two further verified editorial-source corrections
+
+- **Omlet US guide editor via info@omlet.us:** Gmail successful dispatch ID `1a166a747f8bb236`. Omlet's page `https://www.omlet.us/guide/chickens/laws_about_keeping_chickens/oregon_pennsylvania_rhode_island_south_carolina_south_dakota/` still says a permit *may* be required for Portland flocks above three. Supplied Portland's Jan 2025 amended official §13.40.020 and city guidance that permits are not required for qualifying ordinary 4/6 fowl keeping. Contact channel `https://www.omlet.us/misc/contact_us/` lists info@omlet.us. Requested forwarding to guide editor, no commercial link.
+- **PoultryHatch author/editor via flockhatch@proton.me:** Gmail successful dispatch ID `1a166a99bd58bbc5`. Its `https://www.poultryhatch.com/2025/05/backyard-chicken-coop-laws-us-cities-guide.html` retains Portland three-hen-plus-permit claim and Denver $50 annually. Current city documents support Portland ordinary 4/6 without husbandry permit and Denver Food-Producing Animals permit $25 one time per property. Public contact explicitly lists this editorial email at `https://www.poultryhatch.com/p/contact-us.html`.
+- **Not contacted:** CoopCodes Chandler, since it accurately describes six hens and cites the amended law despite reproducing an explicitly outdated five-hen city handout. BackyardChickenBarn has an article still claiming Portland 3 hens without a permit and up to eight with an application, but the public contact page did not display a usable contact address. Do not invent an address.
+- **Dispatch-count note:** 56 cumulative outbound/form acknowledgements before this focused follow-up, now **60 cumulative (four this round)**; four known hard-bounced historical emails (Farm Flavor, Edible Portland, Heritage Skills USA, Homestead Daily). Acknowledgement is not proof of delivery/read, and no editorial backlink is verified yet.
