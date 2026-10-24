@@ -55,6 +55,19 @@
     if(allowed.has(eventName)){
       window.coopTrack(eventName,{offer_sku:"permit-report",source_page:location.pathname});
     }
+
+    if(location.pathname.endsWith("/guides/prefab-chicken-coop-buying-guide.html")){
+      try {
+        const target=new URL(a.href,location.href);
+        if(["www.tractorsupply.com","www.aosom.com"].includes(target.hostname)){
+          window.coopTrack("buyer_product_source_click",{
+            outbound_host:target.hostname,
+            product_source:a.textContent.trim().slice(0,80),
+            referral_type:"non_affiliate_primary_source"
+          });
+        }
+      } catch (_) {}
+    }
     const href=a.getAttribute("href")||"";
     const text=(a.textContent||"").trim().replace(/\s+/g," ").slice(0,100);
 

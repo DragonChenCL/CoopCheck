@@ -28,6 +28,8 @@ jobs:
         run: node scripts/generate-coop-seo-pages.cjs --check
       - name: Verify ten SEO utility pages and real calculator
         run: node scripts/qa-coop-seo.cjs
+      - name: Validate P0 product, embeds, and ordinance content
+        run: node scripts/qa-growth-p0.cjs
       - name: Verify evidence-backed prefab coop buyer checker
         run: node scripts/qa-prefab-coop-buyer.cjs
       - name: Validate printable chicken permit worksheet and source scope
