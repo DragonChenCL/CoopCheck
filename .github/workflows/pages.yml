@@ -44,6 +44,8 @@ jobs:
         run: node scripts/generate-coop-seo-pages.cjs --check
       - name: Verify ten SEO utility pages and real calculator
         run: node scripts/qa-coop-seo.cjs
+      - name: Validate P0 product, embeds, and ordinance content
+        run: node scripts/qa-growth-p0.cjs
       - name: Verify evidence-backed prefab coop buyer checker
         run: node scripts/qa-prefab-coop-buyer.cjs
       - name: Verify printable chicken permit checklist and government source scope
@@ -97,7 +99,7 @@ jobs:
               const p = path.join(dir, name);
               const stat = fs.statSync(p);
               if (stat.isDirectory()) walk(p);
-              else if (name.endsWith('.html')) {
+              else if (name.endsWith('.html') && !p.startsWith(path.join(root, 'embed') + path.sep)) {
                 let html = fs.readFileSync(p, 'utf8');
                 if (!html.includes('/assets/analytics.js')) {
                   html = html.replace('</head>', tag + '</head>');
