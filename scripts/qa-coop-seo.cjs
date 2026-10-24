@@ -11,8 +11,9 @@ assert.equal(specsPages.filter(x=>x.group==="flock").length,6);
 assert.equal(specsPages.filter(x=>x.group==="footprint").length,3);
 assert.equal(specsPages.filter(x=>x.group==="calculator").length,1);
 const sitemap=read("site/sitemap.xml");
-assert.equal((sitemap.match(/<loc>/g)||[]).length,124,"all 124 content URLs, excluding 12 pending excluded city status pages");
-assert.equal(new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1] )).size,124);
+const indexed=[...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(x=>x[1]);
+assert(indexed.length>=124,"retain the original 124 indexable content URLs; new validated pages may be added");
+assert.equal(new Set(indexed).size,indexed.length,"all indexable sitemap URLs must be unique");
 const titleSet=new Set(),descSet=new Set(),h1Set=new Set();
 const blogBase="https://coopcheck.serunio.com";
 for(const p of specsPages){
