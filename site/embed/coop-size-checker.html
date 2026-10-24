@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CoopCheck Embedded Indoor Space Calculator</title>
+<meta name="robots" content="noindex,follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<style>
+:root{color-scheme:light;--ink:#18332c;--muted:#52645d;--line:#d5e4dc;--soft:#eef7f0;--accent:#196a50}*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{padding:16px;max-width:720px;margin:auto}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px}
+.brand a{color:var(--accent);font-weight:800;text-decoration:none}.eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(19px,4vw,25px);line-height:1.2;margin:0 0 6px}p{margin:0 0 12px}
+.intro{font-size:13px;color:var(--muted)}fieldset{border:0;margin:0;padding:0}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+label{display:grid;gap:5px;font-size:12px;color:var(--muted);font-weight:700}
+input,select{min-width:0;width:100%;padding:9px 10px;border:1px solid #b4cbbd;border-radius:9px;background:white;color:var(--ink);font:inherit}
+input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #78bb99;outline-offset:2px}
+.results{background:var(--soft);padding:13px 14px;border-radius:12px;margin-top:14px;border:1px solid #d3e7d9}
+.result-title{font-weight:800;font-size:16px;margin-bottom:5px}
+.metric{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0}.metric div{background:#fff;padding:10px;border-radius:9px}
+.metric small{display:block;color:var(--muted);font-size:11px}.metric strong{display:block;font-size:19px}
+.note{font-size:12px;color:#475b51}.links{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:11px;font-size:12px}
+.links a{color:var(--accent)}footer{border-top:1px solid var(--line);margin-top:12px;padding-top:9px;font-size:11px;color:var(--muted)}
+@media(max-width:430px){main{padding:12px}.fields{gap:8px}.metric strong{font-size:17px}}
+</style>
+<script defer src="/assets/prefab-capacity.js"></script>
+</head><body>
+<main>
+<div class="brand"><a href="https://coopcheck.serunio.com/" target="_blank" rel="noopener noreferrer">CoopCheck ↗</a><span class="eyebrow">Free planning tool</span></div>
+<h1>Is your coop's indoor floor big enough?</h1>
+<p class="intro">Enter clear indoor sleeping-house dimensions, <strong>not</strong> the full product footprint or outdoor run.</p>
+<fieldset class="fields" aria-label="Indoor chicken coop measurement inputs">
+<label>Adult hens<input id="flock" type="number" inputmode="numeric" min="1" max="24" step="1" value="6"></label>
+<label>Outdoor/run access<select id="access"><option value="yes">Reliable daily access</option><option value="no">No outdoor access</option></select></label>
+<label>Indoor length<input id="length" type="number" inputmode="decimal" min="0.1" step="any" value="6"></label>
+<label>Indoor width<input id="width" type="number" inputmode="decimal" min="0.1" step="any" value="4"></label>
+<label>Measurement unit<select id="unit"><option value="ft">Feet</option><option value="in">Inches</option></select></label>
+</fieldset>
+<section class="results" aria-label="Indoor-area planning comparison" aria-live="polite" aria-atomic="true">
+<p id="verdict" class="result-title">Calculating…</p>
+<div class="metric"><div><small>Area you entered</small><strong id="actual">—</strong></div><div><small>Indoor planning reference</small><strong id="reference">—</strong></div></div>
+<p id="explain" class="note"></p>
+</section>
+<p class="note" style="margin-top:11px">Uses one Oregon State University Extension indoor-area guideline: at least 3 sq ft per adult hen with regular outdoor access; 8 sq ft is the low end of its 8–10 sq ft guidance without access. It is <strong>not</strong> a full animal-welfare assessment or legal approval. Usable floor may be smaller than a simple rectangle.</p>
+<div class="links"><a href="https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html" target="_blank" rel="noopener noreferrer">Compare documented models ↗</a><a href="https://coopcheck.serunio.com/coverage.html" target="_blank" rel="noopener noreferrer">Check city rules ↗</a><a href="https://extension.oregonstate.edu/catalog/ec-1644-living-land-backyard-chicken-coop-design" target="_blank" rel="noopener noreferrer">University reference ↗</a></div>
+<footer>Embedded by an independent publisher · No login · No external analytics script within this frame · Measurements are processed in your browser and are not submitted to CoopCheck.</footer>
+</main>
+<script>
+(function(){
+"use strict";
+const ids=["flock","access","length","width","unit"];
+const $=id=>document.getElementById(id);
+function render(){
+  const api=window.CoopBuyerCheck;
+  const hens=Number($("flock").value),access=$("access").value==="yes";
+  const area=api&&$("length").value.trim()!==""&&$("width").value.trim()!==""?api.calculateArea($("length").value,$("width").value,$("unit").value):null;
+  const ref=api?api.benchmark(hens,access):null;
+  if(!ref||area===null||$("flock").value.trim()===""){
+    $("verdict").textContent="Enter valid measurements and 1–24 hens";
+    $("actual").textContent="—";$("reference").textContent="—";
+    $("explain").textContent="All lengths must be positive; measure the clear sleeping-house floor, not the outdoor run.";
+    return;
+  }
+  const gap=Number((area-ref.minimum).toFixed(2));
+  $("actual").textContent=area+" sq ft";
+  $("reference").textContent=ref.minimum+" sq ft";
+  if(gap<0){
+    $("verdict").textContent="Below this indoor-area reference";
+    $("explain").textContent="The rectangle is "+Math.abs(gap).toFixed(2)+" sq ft below the selected guideline for "+hens+" adult hens. Recheck clear floor and flock size.";
+  }else{
+    $("verdict").textContent="One indoor-area reference met — not an approval";
+    $("explain").textContent="The area reaches this single floor-space guideline, but roosts, nesting, ventilation, run space, climate, predators and local law have not been evaluated.";
+  }
+}
+ids.forEach(id=>$(id).addEventListener("input",render));
+document.addEventListener("DOMContentLoaded",render);
+})();
+</script>
+</body></html>
