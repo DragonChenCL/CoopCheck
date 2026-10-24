@@ -70,4 +70,4 @@ for(const n of [16,24,40,60,96,240]){
  assert(rect.width*rect.depth-n<rect.width,"example is not arbitrarily oversized");
 }
 assert.equal(calc.exampleRectangle(0),null);
-console.log("PASS: 10 original SEO landing pages, 124 canonical sitemap URLs (12 pending excluded), credible sources and functioning size calculator");
+console.log("PASS: 10 original SEO landing pages and expandable canonical sitemap (12 pending excluded), credible sources and functioning size calculator");
