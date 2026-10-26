@@ -129,8 +129,8 @@
 
 1. **先复用成品**：检查 LOG 中既有 MP4 / 竖图 / 封面 / 标题 / 配文和上次发布状态；核实文件真实存在、体积、分辨率/编码/时长，避免因浏览器问题重新生成内容。已发布的视频绝不重复发布。
 2. **GitHub 桥接（首选）**：按已成功过的“素材 → GitHub 仓库、Release、Actions 可下载产物等经过授权的承载方式 → 可由远端访问的 HTTPS 下载位置”中转。先检索现有 Shorts 制作工作流及旧执行记录，不重新发明传输管道。**GitHub Actions artifact 通常需要身份验证，不等于公开直链**；确认访问控制。二进制 MP4 / JPG / PNG 应通过真正支持二进制上传的路径传递，**不要**把 UTF-8 文本更新接口当二进制上传器。只对允许公开的成品使用公开 URL，不将 Cookie、令牌、私有图像或未授权素材公开。
-3. **把内容下载到浏览器端**：用远程环境实际支持的下载/文件传输操作将文件保存至 Playwright 当前允许的目录（上述目录仅为本次实测示例），不能把“网页能打开 GitHub URL”当成“上传控件能读取文件”。远程与生成容器路径不同；必要时以允许的下载链先取得可读取本地副本。验证 HTTP 状态、类型/体积（适用时比较 SHA-256）和远端文件确实存在，不使用 HTML 预览页冒充视频文件。
-4. **完成平台上传**：在唯一浏览器 tab 内打开 Studio 或 Pin 创建页，使用浏览器支持的文件选择器/拖放操作引用**远端允许目录内的真实绝对路径**；完成标题、说明、图片/封面、版权/生成内容披露和公开权限，提交并获得成功回执。YouTube 上传网页不能直接粘贴 MP4 URL 来代替本地文件选择；**桥接 URL 是传输介质，不是发布视频 URL**。
+3. **真实打通的优先路径（2026-10-26 实测 Pinterest + YouTube 成功）**：GitHub Actions 在仓库生成可公开的媒体文件；远端 Playwright 会话通过 `page.request.get('https://api.github.com/repos/<owner>/<repo>/contents/<path>')` 获取仓库文件的 `encoding:base64` 与 `content`；剔除 Base64 换行后 `Buffer.from(content,'base64')`，核对解码字节数严格等于 API 的 `size`，然后对平台真实的 `input[type=file]` 执行 `setInputFiles({name,mimeType,buffer})`。**该方案不必写入远端受限文件路径**，避免 `/mnt/data` 与 allow-root 不匹配问题。GitHub Contents API 直接 Base64 返回通常只适合小于约 1 MiB 的文件；大文件必须改用授权的 Release/Actions artifact/其他文件流方案，不可强行套用。严禁把私有媒体、token、Cookie 等内容通过公开仓库转存。
+4. **备选路径与平台上传**：若不能获得可用字节缓冲，才在有权限的远程环境里下载到 Playwright 允许的真实目录，验证 HTTP、MIME、大小、必要时哈希，然后使用 `browser_file_upload` / `setInputFiles(absolutePath)`。Pin 真实上传控件曾为 `input#storyboard-upload-input`，YouTube 视频为 `input[name=Filedata]`，缩略图为 `input#file-loader`；选择器必须每轮实查，不能永远假设未变。填写标题、说明、图板/受众、原创/生成内容披露等，提交并保留平台公开回执；**桥接 URL 不是视频或 Pin 的发布 URL**。
 5. **验收+清理**：核对新 Shorts / Pin 公开 permalink，平台公开视频/图片状态，是否链接正确；清理不再需要的中转副本/临时公开素材（勿误删其他正在使用的工作流、共享素材）。未取得公开 URL 时只计“成品/传输成功/待审核”的对应真实阶段，仍按 SOP 第 2A 节记 🟡/⛔，不得记 ✅。
 6. **桥接失败的分支**：如果当前工具没有安全可靠的 GitHub 二进制上传能力、公开文件访问被拒绝或浏览器无法接收/下载文件，记录卡在哪一跳以及具体权限报错，尝试现有合法授权的 Actions 工作流或服务器侧文件传输；不要反复对错误的 `/mnt/data` 路径调用浏览器上传，也不要声称只有“手动上传”可选。
 
