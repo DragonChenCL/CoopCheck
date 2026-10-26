@@ -1,5 +1,12 @@
 # CoopCheck Operations Log
 
+## 2026-10-26 — SOP V1.2 发布操作故障预案固化（制度变更，非新一轮运营）
+
+- **用户新增明确要求**：恢复并默认复用已经成功过的 **GitHub 素材中转 → 远端浏览器允许的文件目录 → 上传 YouTube/Pinterest → 平台公开链接核验**；出现远程 Chrome/Pinterest 空白、超时时，**先清理多余 tab、复用单 tab、减少 2C2G 内存占用**，再定位页面、文件或登录故障。
+- **已实写 SOP**：`docs/operations/SOP.md` 升级 V1.2，新增 **§5A GitHub 素材中转上传 SOP**、**§5B 远程浏览器减负与空白页恢复 SOP**，并强化 Pinterest/YouTube 与通用浏览器规则，commit [2d3a2b7](https://github.com/DragonChenCL/CoopCheck/commit/2d3a2b774bcbaf8418957aaabcf6a979bbf8f8f0)。入口 `README.md` 同步 V1.2 / 新章节导航，commit [2d05f99](https://github.com/DragonChenCL/CoopCheck/commit/2d05f9946f4dcf0d8ce82180fc2e58c8fc1f414d)。
+- **当场 browser_tabs 清理实测**：`list` 持续列出 Tab 0（YouTube Studio）与 Tab 1（无关商城 `0168.cn`）。对 Tab 1 `select(index:1)` 和 `close(index:1)` 均返回 `Tab 1 not found`，重新 list 仍报告两标签；**没有可核验的标签页关闭成功**，不可称已减负或主因确定为内存。后续须检查浏览器服务标签索引状态/权限，在未确认可安全关闭前不影响当前 Studio 会话。
+- **发布状态不变**：Pinterest 新 Pin / YouTube 新 Shorts 仍缺公开 URL，之前 ✅8/10 + 🟡2/10 的运营验收保持不变；本次只改变下轮处理顺序，并未宣称上传完成。今后遇同类故障应先按 §5A/§5B 实际执行、检查，再决定是否阻塞。
+
 ## 2026-10-25 PDT（UTC 2026-10-26）— 同轮继续执行与额外验收补记
 
 > 补记不新增新的 10 模块轮次，不在现有 ✅8/10 基础上重复给同一模块计分；Pinterest / YouTube 仍未取得公开发布证明。
