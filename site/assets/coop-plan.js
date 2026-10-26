@@ -88,7 +88,11 @@
       if(source)sourceLink.href=source;else sourceLink.removeAttribute("href");
       printLaw.textContent="USER-SELECTED CITY: "+checked.city+". Municipal rule context: "+checked.title+" "+checked.detail+" The generated drawing is NOT proof of legal compliance. Official source: "+(source||"Not verified")+".";
     }
-    cityInput.addEventListener("change",()=>{chooseCity(cityInput.value,true);generate();});
+    cityInput.addEventListener("change",()=>{
+      const selected=law?.resolve(contextData,cityInput.value);
+      if(selected)track("chicken_coop_city_selected",{city_slug:selected.slug,city_status:selected.status,source_page:"coop-plan"});
+      chooseCity(cityInput.value,true);generate();
+    });
     lotInput.addEventListener("change",renderCity);
     roosterInput.addEventListener("change",renderCity);
     flockInput.addEventListener("change",renderCity);

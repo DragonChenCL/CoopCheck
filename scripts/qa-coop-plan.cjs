@@ -3,7 +3,7 @@ const fs=require("node:fs"),path=require("node:path");
 const root=path.resolve(__dirname,"../site");
 const read=file=>fs.readFileSync(path.join(root,file),"utf8");
 const engine=require("../site/assets/coop-plan.js");
-const html=read("coop-plan.html"),css=read("assets/coop-plan.css");
+const html=read("coop-plan.html"),css=read("assets/coop-plan.css"),planJs=read("assets/coop-plan.js");
 const home=read("index.html"),mapPlanner=read("planner.html"),setback=read("guides/chicken-coop-setback-from-property-line.html");
 const sitemap=read("sitemap.xml");
 assert.equal((html.match(/<h1\b/g)||[]).length,1,"one descriptive H1 only");
@@ -19,6 +19,7 @@ for(const hook of ["coopPlanForm","planGenerate","planSvgPreview","planResult","
 for(const kw of ["not construction engineering","not municipal legal minima","does not produce a measured site survey","not a build-ready","PDF","No account","Oregon State","Penn State","University of Minnesota"]){
  assert((html+" "+home).toLowerCase().includes(kw.toLowerCase()),"missing safety copy "+kw);
 }
+assert(planJs.includes('track("chicken_coop_city_selected",{city_slug:selected.slug,city_status:selected.status,source_page:"coop-plan"})'),"explicit city selection should be tracked without lot/address data");
 assert(home.includes('href="coop-plan.html"'),"homepage discoverability");
 assert(mapPlanner.includes('href="coop-plan.html?from=map"'),"map workflow entrypoint");
 assert(setback.includes('href="../coop-plan.html"'),"setback-to-generator funnel");
