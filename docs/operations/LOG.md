@@ -1,5 +1,14 @@
 # CoopCheck Operations Log
 
+## 2026-10-25 — SOP V1.0 固化（仅文档变更，未执行渠道运营）
+
+- 根据项目负责人确认，将“运营一下鸡舍项目 / 继续运营 / 复盘一下”的固定流程写入 docs/operations/SOP.md 并在 README.md 设置统一入口。
+- 新增 10 个常规模块：邮件、外链/编辑合作、Reddit、BackYardChickens、Pinterest、YouTube、GSC/收录、GA4/转化、SEO 内容、代码/线上。
+- 规定 P0/P1/P2 优先级、各渠道可执行动作、质量与合规边界、必须记录的执行状态/公开 URL/数据时间窗口/下一轮事项。重点区分提交、公开、反链、引荐和付费收入；不为了配额进行低质操作。
+- 延续 cfbrower 默认唯一 tab、法规证据核验、BYC/Reddit 社区规则、Pinterest 受限域名不绕过、YouTube 公共可见性验证等约束。
+- **本次只更新运营制度文档；没有新发邮件、社媒内容、外链或索引请求；本次新增访问/订单未知。**
+- 下次触发运营：先读取 SOP 与本日志，优先接续待回复邮件、Pinterest 域名申诉、已发布 Shorts 与近期 GSC/GA4 指标。
+
 ## 2026-10-20 UTC — Pinterest launch, domain claim and link block
 
 - Logged into new Pinterest account; converted profile display name to `CoopCheck | Chicken Coop Plans`, username to `@coopcheckplans` (`@coopcheck` unavailable), added description and `coopcheck.serunio.com` site reference. Actual avatar image was not verified changed: existing Pinterest avatar URL remained unchanged after attempted upload, so do not assert branding complete.
