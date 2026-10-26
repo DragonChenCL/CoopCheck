@@ -899,3 +899,12 @@
     transition:none!important;
   }
 }
+
+/* Keep the animated hero glow inside the narrow viewport without clipping search popovers. */
+@media(max-width:900px){
+  .cc-home .cc-hero-aurora{
+    width:min(64vw,420px);
+    height:min(64vw,420px);
+    right:11%;
+  }
+}
