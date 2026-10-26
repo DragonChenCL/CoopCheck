@@ -176,7 +176,7 @@
         trackBuyerAction("buyer_seller_question_fallback",{model_id:selected});
       }
     });
-    $("bcPrint").addEventListener("click",()=>{trackBuyerAction("buyer_comparison_print",{model_id:selected});window.print();});
+    $("bcPrint").addEventListener("click",()=>{trackBuyerAction("buyer_comparison_print",{model_id:selected});doc.defaultView?.print?.();});
     const params=new URLSearchParams(doc.defaultView?.location?.search||"");
     const q=Number(params.get("hens"));
     if(validFlock(q))flock.value=String(q);
