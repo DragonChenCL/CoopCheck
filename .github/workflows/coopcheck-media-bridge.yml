@@ -1,0 +1,64 @@
+name: CoopCheck public media bridge (4x8)
+
+on:
+  push:
+    paths:
+      - ".github/workflows/coopcheck-media-bridge.yml"
+      - "scripts/marketing/render_4x8_bridge.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  build-and-bridge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Optional first-hand CoopCheck site screenshot
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: CoopCheck-Shorts-01
+          run-id: 39210106095
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: input-video
+      - name: Install renderer
+        run: |
+          python -m pip install "Pillow>=10,<13"
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Render original 4x8 buyer explainer for social upload
+        run: python scripts/marketing/render_4x8_bridge.py
+      - name: Validate outputs
+        run: |
+          test -s bridge-media/CoopCheck-4x8-Short-20261026.mp4
+          test -s bridge-media/CoopCheck-4x8-Pin-20261026.jpg
+          ffprobe -v error -show_entries stream=codec_name,width,height -show_entries format=duration,size -of default=noprint_wrappers=1 bridge-media/CoopCheck-4x8-Short-20261026.mp4
+          file bridge-media/CoopCheck-4x8-Pin-20261026.jpg
+      - name: Publish downloadable temporary bridge files to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bridge-media/CoopCheck-4x8-Short-20261026.mp4 bridge-media/CoopCheck-4x8-Pin-20261026.jpg bridge-media/CoopCheck-4x8-Cover-20261026.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(marketing): publish verified 4x8 social media bridge assets [skip ci]"
+            git push origin HEAD:main
+          fi
+          echo "MP4: https://raw.githubusercontent.com/DragonChenCL/CoopCheck/main/bridge-media/CoopCheck-4x8-Short-20261026.mp4"
+          echo "Pin: https://raw.githubusercontent.com/DragonChenCL/CoopCheck/main/bridge-media/CoopCheck-4x8-Pin-20261026.jpg"
+      - name: Keep downloadable build artifact as fallback
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CoopCheck-4x8-Social-Bridge-20261026
+          path: bridge-media/
+          retention-days: 14
+          compression-level: 0
