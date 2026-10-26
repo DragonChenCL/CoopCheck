@@ -81,6 +81,10 @@
     function showFeedback(message){
       $("bcCopyStatus").textContent=message;
     }
+    // Measure deliberate buyer actions, not every input keystroke.
+    function trackBuyerAction(name,detail){
+      if(typeof root.coopTrack==="function")root.coopTrack(name,Object.assign({tool:"prefab_buyer_checker"},detail||{}));
+    }
     function choose(id){
       selected=id;
       $("bcCustomFields").hidden=id!=="custom";
@@ -147,7 +151,10 @@
       $("bcCalcLink").href="/guides/chicken-coop-size-calculator.html";
       showFeedback("");
     }
-    doc.querySelectorAll("[data-bc-pick]").forEach(b=>b.addEventListener("click",()=>choose(b.dataset.bcPick)));
+    doc.querySelectorAll("[data-bc-pick]").forEach(b=>b.addEventListener("click",()=>{
+      choose(b.dataset.bcPick);
+      trackBuyerAction("buyer_model_selected",{model_id:b.dataset.bcPick});
+    }));
     [flock,access,customName,customL,customW,customUnit,$("bcCustomRunLength"),$("bcCustomRunWidth")].forEach(el=>el.addEventListener("input",render));
     access.addEventListener("change",render);
     $("bcCopyQuestion").addEventListener("click",async()=>{
@@ -156,13 +163,15 @@
         if(!navigator.clipboard?.writeText)throw Error("Clipboard unavailable");
         await navigator.clipboard.writeText(msg);
         showFeedback("Seller question copied. No information was sent.");
+        trackBuyerAction("buyer_seller_question_copied",{model_id:selected});
       }catch(e){
         const box=$("bcCopyFallback");
         box.hidden=false;box.value=msg;box.focus();box.select();
         showFeedback("Copy the question from the selected text below.");
+        trackBuyerAction("buyer_seller_question_fallback",{model_id:selected});
       }
     });
-    $("bcPrint").addEventListener("click",()=>window.print());
+    $("bcPrint").addEventListener("click",()=>{trackBuyerAction("buyer_comparison_print",{model_id:selected});window.print();});
     const params=new URLSearchParams(doc.defaultView?.location?.search||"");
     const q=Number(params.get("hens"));
     if(validFlock(q))flock.value=String(q);
