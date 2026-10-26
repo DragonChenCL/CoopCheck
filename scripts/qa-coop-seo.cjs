@@ -50,6 +50,11 @@ for(const n of FL){
 }
 for(const {w,d} of PRINTS){
  const h=read("site/guides/"+w+"x"+d+"-chicken-coop-capacity.html");
+ const pageDate=h.match(/"dateModified":"(\d{4}-\d{2}-\d{2})"/)?.[1];
+ const url=blogBase+"/guides/"+w+"x"+d+"-chicken-coop-capacity.html";
+ const sitemapEntry=[...sitemap.matchAll(/<url><loc>(.*?)<\/loc><lastmod>(.*?)<\/lastmod><\/url>/g)].find(x=>x[1]===url);
+ assert(pageDate&&sitemapEntry,"dated footprint guide and sitemap entry "+w+"x"+d);
+ assert.equal(sitemapEntry[2],pageDate,"sitemap lastmod must match Article dateModified "+w+"x"+d);
  assert(h.includes(w*d+" sq ft"),"interior floor arithmetic");
  assert(h.includes("interior")||h.includes("indoor"),"do not count run as indoor");
  assert(h.includes("Advertised exterior dimensions are not usable indoor dimensions."),"retail footprint cannot be assumed usable interior");
