@@ -1,5 +1,38 @@
 # CoopCheck Operations Log
 
+## 2026-10-25 PDT — SOP V1.0 第 1 轮实际运营（GSC/GA4 直读、合作跟进及索引诊断）
+
+**执行时区**：America/Los_Angeles（2026-10-25；连接器检索部分发生在 UTC 2026-10-26）。**目标**：依 SOP 十模块巡检与实际推进。阅读 SOP.md 与本日志，检查上轮 Pinterest 域名限制、邮件合作、已发 Reddit/BYC/YouTube 以及 GSC/GA4。
+
+### 本轮十模块结果（检查不等于新发布）
+
+| 模块 | 状态与可核实动作 | 公开证据 / 阻塞 / 下一步 |
+|---|---|---|
+| 1 邮件 | **已检查 + 跟进 1 封成功发送**。发现 CityHubGo 回信确认已核对 Sacramento/San Diego 两条市政法规；实查其网页已更新，发送原线程感谢和可选研究引用。Gmail 发送消息 `1a175d1f9cf88a07`。此外 Grubbly Farms、Carolina Coops 主要是自动回执，SaaSHub 申请待审核排队，Raising Chickens 报 $50、Homestead How-To 报 $125 投稿价。 | 当前**没有收到公开引用的证据**，不计有效反链；无任何付费投稿/购买。CityHubGo：https://www.cityhubgo.com/backyard-chicken-laws/california.aspx |
+| 2 编辑外链合作 | **已跟进 1 个有回应的渠道，未追加无差别群发**。CityHubGo 已发布更正；已告知 CoopCheck 可选研究方法论页面，编辑是否引用尚未知。 | 研究：https://coopcheck.serunio.com/research/2026-backyard-chicken-laws.html；**本轮新证实公开 CoopCheck 反链 0** |
+| 3 Reddit | **已巡检，未新发**。https://www.reddit.com/r/SideProject/comments/1x9n6xj/ CoopCheck 测试招募仍公开；浏览器显示约 **193 views**、页面未加载实质性用户评论；r/alphaandbetausers 已有 **2 天前** 的 CoopCheck Beta 测试帖，因此避免重复同类发帖。 | 帖子浏览≠网站访问。历史内容继续观察反馈，不刷屏、不违反 No AI content 版规 |
+| 4 BYC | **已巡检，未新发**。已确认历史法规回复位于 https://www.backyardchickens.com/threads/coop-ordinances-in-your-town.1663608/ （Oct 13 发布）；其中解释 Portland vs Seattle 距离参照物区别，未插入 CoopCheck。 | 历史公开回答存在；**不是自有站外链**，新提问需城市官方原文支持才能答 |
+| 5 Pinterest | **已巡检，未新发**。图板 https://www.pinterest.com/coopcheckplans/chicken-coop-plans-layouts/ 显示 **6 Pin**，为已有内容；抽查 https://www.pinterest.com/pin/1125337025678091279/ ，页面未见站点跳转链接。 | 10 月 20 日域名链接受限历史问题尚未确认解除；不使用跳转/短链绕过，不把无外链 Pin 计算为引荐 |
+| 6 YouTube | **已巡检，未新上传**。公开视频 https://www.youtube.com/shorts/XZFpD0V3_0w 可访问，题为 14 Hens in This Coop? Check the REAL Size。 | 未确认新增官网点击或订单，避免把可播放等同转化 |
+| 7 GSC | **已从真实登录界面读取**。效果：默认三个月范围 2026-09-22 至 2026-10-23，**23 曝光、0 点击、CTR 0%、平均位置 26.4**；报告刚更新。索引报告**上次更新 2026-10-19**：**1 已索引、115 未索引**，其中 **95 已发现未收录、20 已抓取未收录**。Sitemap `/sitemap.xml` **2026-10-22** 读取“成功”、发现 **123** 页面；旧 `/sitemap` 仍提交，旧读 9/30，26 页面。 | **没有重复提交已请求的 URL**。SOP 对应诊断 Issue：https://github.com/DragonChenCL/CoopCheck/issues/68 |
+| 8 GA4/转化 | **已从真实登录 UI 读取**（Windsor.ai 因免费计划 4 connected accounts 超额只返回假的占位数据，**全部舍弃**）。最近 7 天首页指标：**35 活跃用户、169 事件、54 网页浏览、0 GA4 关键事件**；**48 会话**：Direct 45、AI Assistant 2、Organic Search 1（来源/媒介为 Bing organic）。未看到 Google organic 会话。 | Direct/活跃用户包含运营者或测试流量可能性，35 不可当成 35 真实顾客；0 key events 不等于核验 0 订单，**真实订单/净收入未知**。 |
+| 9 SEO/内容 | **完成基础抽样技术检查与选题归因**。GitHub `site/robots.txt` Allow all 且 Sitemap 指向 /sitemap.xml；仓库当前 Sitemap 为 **127 个互异 loc**（88 城市，20 指南），4 个条目 lastmod 晚于 GSC 的 10/22 读取日期，不能把 123/127 差异直接判定为错误。首页自指 canonical、74 内部链接；Portland 和 prefab checker 源文件有 self-canonical，未见普遍 noindex。 | 不能凭此断言 Google 必然收录；需要在 GSC 实查 95/20 样本、页面差异度、链接/爬取原因，按证据优化。法规定义未核城市继续 noindex |
+| 10 代码/线上 | **已检查 + 新增专项 Issue（未改业务代码）**。在线首页可通过浏览器打开；最新站点代码已包含 Dallas 2026 Ordinance No. 33485 的有限范围提示（本轮未全面复核现行条例）。创建 https://github.com/DragonChenCL/CoopCheck/issues/68 ，按证据列诊断任务和验收标准。 | 这轮**没有代码修复、CI 或线上发布**；无可靠证据证明 robots / canonical 错误，未盲改。现有法规 P0 Issue #38、#41 需另行依法核验 |
+
+### 事实、实际动作与结果口径
+
+- **本轮新增发送邮件：1**（CityHubGo 编辑纠错感谢及 CoopCheck 可选研究引用，原线程消息 `1a175d1f9cf88a07`，发送状态为 Gmail SENT；未验证对方收到、采用或新增引荐）。
+- **本轮新公布自有外链：0 已核实**；**本轮 Reddit/BYC 新发帖、Pinterest 新发 Pin、YouTube 新上传：均为 0**（本轮做过巡检，未为凑量重复推广）。
+- **本轮新索引请求：0**；没有解除 needs_review noindex、没有改政策法条数值、没有购买服务/投放。
+- **本轮 GitHub 实际新增**：Issue [#68](https://github.com/DragonChenCL/CoopCheck/issues/68) —— GSC 95 discovered/20 crawled 未索引专项诊断。当前记录的搜索与 GA4 数值不等于站点真实商业成果；**本轮新增真实独立站外访客、付费订单、净收入未知**。
+- **浏览器资源**：cfbrower 顺序复用单 tab 查 GSC、官网、Reddit、BYC、Pinterest、YouTube、GA4；曾出现可恢复的连接失败；末次 browser_tabs(list) 只剩 **1 个 GA4 tab**。
+
+### 下一轮 P0/P1 优先级
+
+1. **#68 索引专项**：在 GSC 页面各抽样已发现/已抓取未索引 3–5 个真实 URL，核对 Google 所选 canonical、抓取时间、内容重复性、站内入口与站点渲染；记录后按证据修复，避免批量重复提交。
+2. **Pinterest 域名链接限制**：通过正规支持流程确认/申诉；在链接受限情况下不要刷无落地页 Pin；检查六张旧 Pin 的站点链接和来源。
+3. **真实流量/转化闭环**：复查 CityHubGo 是否追加编辑引用、Grubbly/Carolina Coops 是否有真人回复；用 GA4 原生报表对照 key events、工具行为、UTM/referral，尽量排除测试流量，按收入优先决定后续社媒投入。
+
 ## 2026-10-25 — SOP V1.0 固化（仅文档变更，未执行渠道运营）
 
 - 根据项目负责人确认，将“运营一下鸡舍项目 / 继续运营 / 复盘一下”的固定流程写入 docs/operations/SOP.md 并在 README.md 设置统一入口。
