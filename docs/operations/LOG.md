@@ -1,5 +1,27 @@
 # CoopCheck Operations Log
 
+## 2026-10-26 UTC 08:37–09:05 — 新一轮实操运营（未满 10/10，按成果独立核算）
+
+> **本轮状态：✅4 / ❌6（不是上轮的 10/10 续记）**。已完成两个独立合作邮件动作和一项 3 页 SEO 内容纠错，同时加入独立的技术 QA 回归保护；其余模块未取得本轮新增的有效外部发布/实施证据，绝不将巡检当作完成。
+
+| 模块 | 验收 | 结果 |
+|---|---|---|
+| #1 Gmail | ✅ | 向 Tualatin Life 原线程发送 Tigard 官方确认范围及尚无诉讼案号的澄清，抄送 Jackson；message ID `1a17760a02d09929`，thread `1a166d8059e012db`。未声称编辑采纳/获得反链。 |
+| #2 编辑合作 | ✅ | 向 American Poultry Association 的 `info@amerpoultryassn.com` 发送一封独立原创投稿提案：如何核实 4×8 prefab 的真实室内面积；message ID `1a177611d1f5a11e`。Gmail SENT ≠ 投递至真人/接受稿件；仍待真实回应与公开采纳。 |
+| #3 Reddit | ❌ | 用单 Tab 进入已登录 `r/chickens`，看过版规和近期帖子；不少是疾病/品种识别，与法规/图纸产品定位不契合。未发布新评论，未新增反链。 |
+| #4 BackYardChickens | ❌ | 这轮没有获得新发布确认；此前 Joliet 回复不得重复计数。 |
+| #5 Pinterest | ❌ | 已核查上一轮公开 Pin `https://www.pinterest.com/pin/1125337025678611641/`，本轮没有新增 Pin；历史官网链接拦截问题也未获正式解除。 |
+| #6 YouTube | ❌ | 已核查上一轮公开 20s Shorts `https://www.youtube.com/shorts/zLbD9vgNwkU`；本轮没有新增公开视频。 |
+| #7 GSC / 索引 | ❌ | 官方登录界面截至 2026-10-24 查询窗口曝光 23、点击 0、平均位置 26.4；索引数据截至 2026-10-19：收录 1、未收录 115（已发现未索引 95、已抓取未索引 20）。本轮没有单独的 Google URL 重提交。SEO 页面修改另计 #9，不重复报成绩。 |
+| #8 GA4 / 转化 | ❌ | 官方已登录 GA4 过去 7 天活跃 35、会话 51、事件 183、浏览 63、关键事件 0；Direct 47、AI Assistant 2、Organic Search 1、Unassigned 1，测试访问比例不明。本轮没有独立上线的埋点修改。Windsor.ai 免费配额连接 4 账户超过 1 账户上限，返回占位行非真实数据。 |
+| #9 SEO 页面 | ✅ | 3 个脚印尺寸页 4×6、4×8、6×8 的搜索摘要和正文统一纠正“整套产品外部尺寸≠可用室内面积”的错误推断；页面最终 commit `701df9f7fe017942c07d627c08bd51d0985d3da9`，`4x8` 线上 metadata 和新增 caveat 浏览器核验通过。 |
+| #10 代码 QA | ✅ | 确定性生成脚本同步修正，新增 `scripts/qa-coop-seo.cjs` 两条针对面积误读的回归断言，代码测试独立 commit `6924cf684442ee9bc362b82308b9340a9f379dbb`。第一次工作流因 meta-description >170 chars 失败，立即修正并复验：最终 Pages workflow [40296299279](https://github.com/DragonChenCL/CoopCheck/actions/runs/40296299279) **completed/success**；IndexNow workflow [40296377753](https://github.com/DragonChenCL/CoopCheck/actions/runs/40296377753) **completed/success**。这不等于 Google 已索引。 |
+
+**真实增长结果：** 本轮新公开可索引 CoopCheck 第三方反链 0 已核实；新 Reddit/BYC 回帖 0；新 Pin 0；新 Shorts 0；用户订单和净收入未知。复盘的搜索窗口为 2026-09-22 至 2026-10-24，索引报告滞后；不能将站点 10/26 变更视为已获收录。
+
+**待续优先级：** 1. 用 Google 官方 GSC 按页面检查 3 篇更改的发现/抓取进度（避免重复提交）；2. 跟进 APA 真人编辑回应及 Tualatin Life 真实报道/引用；3. 找到本周真实适配的 Reddit/BYC 新问题，按版规回答；4. Pinterest 下次发布前验证 CoopCheck 域名限制，YouTube 制作非重复、带真实配音/演示的新短片；5. 配置真实 GA4 高意图事件与排除运营者测试的分析范围。原则：不把浏览、联系、自动邮件、内容公开和实际转化混为一谈。
+
+
 ## 2026-10-26 — SOP V1.2 发布阻塞闭环（接续 2026-10-25 的同轮，不重复计数）
 
 > **验收更新：✅10/10；上一记录 ✅8 / 🟡2 的两项未发布任务在本次完成**。本节是延续执行，不是新的 10 模块轮次；旧记录保留历史时间节点和当时真实状态。
