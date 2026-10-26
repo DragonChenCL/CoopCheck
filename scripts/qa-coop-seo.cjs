@@ -52,6 +52,8 @@ for(const {w,d} of PRINTS){
  const h=read("site/guides/"+w+"x"+d+"-chicken-coop-capacity.html");
  assert(h.includes(w*d+" sq ft"),"interior floor arithmetic");
  assert(h.includes("interior")||h.includes("indoor"),"do not count run as indoor");
+ assert(h.includes("Advertised exterior dimensions are not usable indoor dimensions."),"retail footprint cannot be assumed usable interior");
+ assert(h.includes("A marketed overall footprint may include the outdoor run."),"metadata clarifies exterior footprint");
 }
 const home=read("site/index.html"),planner=read("site/coop-plan.html");
 const setback=read("site/guides/chicken-coop-setback-from-property-line.html"),engine=read("site/assets/coop-plan.js");
