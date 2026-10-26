@@ -149,6 +149,9 @@
       else {link.removeAttribute("href");link.hidden=true;}
       $("bcPlanLink").href="/coop-plan.html?flock="+n+"&source=size-guide";
       $("bcCalcLink").href="/guides/chicken-coop-size-calculator.html";
+      // A prior clipboard fallback must not show stale text after the model or flock changes.
+      const copyFallback=$("bcCopyFallback");
+      if(copyFallback){copyFallback.hidden=true;copyFallback.value="";}
       showFeedback("");
     }
     doc.querySelectorAll("[data-bc-pick]").forEach(b=>b.addEventListener("click",()=>{
@@ -162,6 +165,8 @@
       try{
         if(!navigator.clipboard?.writeText)throw Error("Clipboard unavailable");
         await navigator.clipboard.writeText(msg);
+        const stale=$("bcCopyFallback");
+        if(stale){stale.hidden=true;stale.value="";}
         showFeedback("Seller question copied. No information was sent.");
         trackBuyerAction("buyer_seller_question_copied",{model_id:selected});
       }catch(e){
