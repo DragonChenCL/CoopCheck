@@ -1,0 +1,54 @@
+name: CoopCheck Shorts — Sacramento city rules
+
+on:
+  push:
+    paths:
+      - ".github/workflows/coopcheck-city-rules-short.yml"
+      - "scripts/marketing/render_city_rules_short.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout CoopCheck
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install browser, neural voice, and video dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright==1.56.0 kokoro-onnx soundfile numpy pillow
+          python -m playwright install --with-deps chromium
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Record live Sacramento rules page and create natural narration
+        run: python scripts/marketing/render_city_rules_short.py
+      - name: Validate final MP4, cover, source screenshot, and captions
+        run: |
+          test -s marketing-output/coopcheck_city_rules_short.mp4
+          test -s marketing-output/cover_city_rules.jpg
+          test -s marketing-output/rule_cards_snapshot.png
+          test -s marketing-output/captions.ass
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height,codec_name -of default=noprint_wrappers=1 marketing-output/coopcheck_city_rules_short.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 marketing-output/coopcheck_city_rules_short.mp4
+          file marketing-output/cover_city_rules.jpg
+      - name: Save production-ready Short for review and upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: CoopCheck-City-Rules-Short-20261026
+          path: |
+            marketing-output/coopcheck_city_rules_short.mp4
+            marketing-output/cover_city_rules.jpg
+            marketing-output/rule_cards_snapshot.png
+            marketing-output/end_snapshot.png
+            marketing-output/captions.ass
+            marketing-output/voice_city_rules.wav
+          retention-days: 30
+          compression-level: 0
