@@ -21,7 +21,10 @@ for(const route of routes){
   assert(/<meta name="robots" content="index,follow">/.test(html),"Indexable page: "+route);
   assert(/<h1\b[^>]*>[\s\S]*?<\/h1>/.test(html),"H1 for "+route);
   assert(sitemap.includes("<loc>"+base+route+"</loc>"),"Sitemap inclusion: "+route);
-  assert(generator.includes('["'+route+'","2026-10-24"]'),"Generated sitemap source: "+route);
+  const stampPattern=new RegExp("<loc>"+base.replace(/[.*+?^\x24{}()|[\]\\]/g,"\\  assert(generator.includes('["'+route+'","2026-10-24"]'),"Generated sitemap source: "+route);")+route.replace(/[.*+?^\x24{}()|[\]\\]/g,"\\  assert(generator.includes('["'+route+'","2026-10-24"]'),"Generated sitemap source: "+route);")+"</loc><lastmod>(\\d{4}-\\d{2}-\\d{2})</lastmod>");
+  const stamp=sitemap.match(stampPattern)?.[1];
+  assert(stamp,"Dated sitemap entry: "+route);
+  assert(generator.includes('["'+route+'","'+stamp+'"]'),"Generated sitemap source: "+route);
   const title=html.match(/<title>([\s\S]*?)<\/title>/i)?.[1];
   assert(title&&!titles.has(title),"Unique nonempty title: "+route);
   titles.add(title);
