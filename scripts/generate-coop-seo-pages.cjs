@@ -68,7 +68,7 @@ function flockPage(n){
 function footprintPage(w,d){
  const a=w*d,n=Math.floor(a/4),inside=fpUrl(w,d),head="How many chickens fit in a "+w+" × "+d+" ft coop?";
  const title=w+"×"+d+" Chicken Coop Capacity: "+a+" Sq Ft & Run Space | CoopCheck";
- const desc="If a "+w+"×"+d+" ft measurement is the actual usable enclosed indoor floor, it provides "+a+" sq ft. A marketed overall footprint may include the outdoor run. Compare flock size and local rules.";
+ const desc="A "+w+"×"+d+" ft usable enclosed interior is "+a+" sq ft. A marketed overall footprint may include the outdoor run. Check indoor space and local rules.";
  const sp=specs(n);
  const suggestions= [Math.max(2,n-2),n].filter((x,i,arr)=>arr.indexOf(x)===i);
  const comparator=suggestions.map(count=>'<tr><th scope="row">'+count+' hens</th><td>'+a+' sq ft</td><td>'+f(a/count)+' sq ft / hen</td><td>'+10*count+' sq ft</td><td>'+(a>=4*count?"Meets illustrative indoor-area target":"Below target")+'</td></tr>').join("");
