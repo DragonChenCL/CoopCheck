@@ -83,7 +83,7 @@
     }
     // Measure deliberate buyer actions, not every input keystroke.
     function trackBuyerAction(name,detail){
-      if(typeof root.coopTrack==="function")root.coopTrack(name,Object.assign({tool:"prefab_buyer_checker"},detail||{}));
+      if(typeof globalThis.coopTrack==="function")globalThis.coopTrack(name,Object.assign({tool:"prefab_buyer_checker"},detail||{}));
     }
     function choose(id){
       selected=id;
