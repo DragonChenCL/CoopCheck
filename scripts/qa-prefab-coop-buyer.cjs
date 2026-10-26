@@ -63,8 +63,8 @@ assert(read('site/index.html').includes('href="guides/prefab-chicken-coop-capaci
 // Simulate the first DOM mount (not just post-click handlers). This previously threw
 // a ReferenceError and left the initial result stuck on its HTML placeholder.
 function element(value=''){
- return {value,textContent:'',dataset:{},style:{},hidden:false,href:'',
-   addEventListener(){},setAttribute(){},removeAttribute(){},
+ return {value,textContent:'',dataset:{},style:{},hidden:false,href:'',handlers:{},
+   addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},removeAttribute(){},
    classList:{toggle(){}},focus(){},select(){}};
 }
 const mockEls=new Map();
@@ -77,8 +77,9 @@ for(const id of ['bcFlock','bcResults','bcOutdoor','bcBar','bcCustomName','bcCus
 mockEls.get('bcFlock').value='6';
 mockEls.get('bcOutdoor').value='yes';
 mockEls.get('bcUnit').value='ft';
-const choices=api.PRODUCTS.map(p=>({dataset:{bcPick:p.id},setAttribute(){},classList:{toggle(){}},addEventListener(){}}));
-choices.push({dataset:{bcPick:'custom'},setAttribute(){},classList:{toggle(){}},addEventListener(){}});
+const makeChoice=id=>({dataset:{bcPick:id},handlers:{},setAttribute(){},classList:{toggle(){}},addEventListener(type,fn){this.handlers[type]=fn;}});
+const choices=api.PRODUCTS.map(p=>makeChoice(p.id));
+choices.push(makeChoice('custom'));
 const fakeDoc={
   getElementById:id=>mockEls.get(id)||null,
   querySelectorAll:sel=>sel==='[data-bc-pick]'?choices:[],
@@ -90,5 +91,20 @@ assert.equal(mockEls.get('bcBenchmark').textContent,'21 sq ft');
 assert.equal(mockEls.get('bcResults').dataset.state,'below');
 assert.match(mockEls.get('bcResultText').textContent,/7 hens/,'First render must compute actual verdict, not retain static placeholder');
 assert.equal(mockEls.get('bcSellerSource').hidden,false,'Seller citation is linked at startup');
+const analyticsEvents=[];
+const originalTracker=globalThis.coopTrack;
+globalThis.coopTrack=(name,params)=>analyticsEvents.push({name,params});
+mockEls.get('bcCopyFallback').hidden=false;
+mockEls.get('bcCopyFallback').value='Old seller question for prior coop';
+choices[1].handlers.click();
+assert.equal(mockEls.get('bcCopyFallback').hidden,true,'Changing the selected model must hide stale copied-question fallback');
+assert.equal(mockEls.get('bcCopyFallback').value,'','Stale fallback text must be cleared after model switch');
+assert.equal(analyticsEvents[0].name,'buyer_model_selected','Only intentional model-click is tracked');
+assert.equal(analyticsEvents[0].params.model_id,'guardian');
+mockEls.get('bcPrint').handlers.click();
+assert.equal(analyticsEvents[1].name,'buyer_comparison_print');
+if(originalTracker===undefined)delete globalThis.coopTrack;
+else globalThis.coopTrack=originalTracker;
 
-console.log('PASS: sourced prefab products, scenario arithmetic, invalid inputs, unknown run, buyer controls, mobile/print first-render boot and canonical sitemap');
+
+console.log('PASS: sourced prefab products, scenario arithmetic, invalid inputs, unknown run, buyer controls, mobile/print first-render boot, clipboard fallback reset, deliberate analytics actions, and canonical sitemap');
