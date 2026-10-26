@@ -68,6 +68,20 @@
         }
       } catch (_) {}
     }
+    // Reader-service funnel: buying guide -> free, source-based capacity checker.
+    // This measures a meaningful transition rather than treating a page view as a conversion.
+    if(location.pathname==="/guides/prefab-chicken-coop-buying-guide.html"){
+      try{
+        const dest=new URL(a.href,location.href);
+        if(dest.origin===location.origin&&dest.pathname==="/guides/prefab-chicken-coop-capacity-checker.html"){
+          window.coopTrack("buyer_guide_checker_click",{
+            source_page:location.pathname,
+            destination_page:dest.pathname,
+            funnel_step:"buyer_guide_to_free_checker"
+          });
+        }
+      }catch(_){}
+    }
     const href=a.getAttribute("href")||"";
     const text=(a.textContent||"").trim().replace(/\s+/g," ").slice(0,100);
 
