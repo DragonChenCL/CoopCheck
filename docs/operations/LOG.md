@@ -1,3 +1,54 @@
+# 2026-10-26 14:21–16:00 UTC — CoopCheck 运营轮次（4/10 完成，6/10 部分完成）
+
+## 0. 本轮结论
+
+- **完成：4/10**；**部分完成：6/10**；没有把邮件发送、素材生成或代码部署冒充成已获得外链、已发布内容或新增流量。
+- GSC 近 7 天曝光 **0**，近 28 天曝光 **9**，近 3 个月曝光 **23、点击 0**。索引报告截至 2026-10-23：已编入索引 1，未编入索引 115，其中已发现未编入 95、已抓取未编入 20。
+- GSC URL 检查显示 4×8 footprint 页面尚未被 Google 识别，且未显示引荐 Sitemap/页面；但线上 Sitemap 文件含该 URL。已修正 4×6、4×8、6×8 三页的 JSON-LD dateModified 与 Sitemap lastmod，并更新 4×8 页的实用购买清单和内部链接。
+- 远程浏览器自动化多次报错：CDP 连接建立后，Playwright MCP 初始化超时/连接关闭。没有在无法检查远端资源使用率的情况下盲目重启服务；因此 Reddit/BYC 实际发帖、Pinterest 上传、YouTube 上传、GSC 请求编入索引均未完成。
+- Windsor.ai 的 GA4 查询被免费套餐账户上限阻断（已连接 4 个账户，免费套餐仅允许 1 个）；没有使用占位结果冒充真实流量。
+
+## 1. 十模块验收
+
+| 模块 | 状态 | 本轮结果与证据 |
+|---|---|---|
+| 1. Gmail / 合作跟进 | ✅ | 复核 CityHubGo 合作线程并确认其 California backyard-chicken 法规页已更新 Sacramento、San Diego 相关表述；没有重复催促刚转交给编辑团队的联系人。 |
+| 2. 编辑合作 / 外链 | ✅ | 新发 3 封个性化邮件：Rediscover Rural、Chicken Whisperer Magazine、Mother Earth News。邮件已发送，不代表对方已接受；目前没有新增已发布外链。 |
+| 3. Reddit | 🟡 | 核对社区规则后，没有向禁止 AI 内容的社区发帖；保存了一份不含自链的实用回复草稿，见 docs/operations/drafts/2026-10-26-community-replies-and-media.md。没有公开评论。 |
+| 4. BackYardChickens | 🟡 | 排除已回复过的 Joliet 线程和过时的旧大帖；保存通用、来源优先的答复模板。远程浏览器故障导致无法验证并发布新的适合主题。 |
+| 5. Pinterest | 🟡 | 生成原创竖版图稿并准备标题、描述、alt text；未发布，Pinterest 域名拦截仍未解决，也未尝试用短链/重定向绕过。 |
+| 6. YouTube Shorts | 🟡 | 生成一条 Sacramento 规则主题的 30 秒竖版 Short，含实际网页录屏、Kokoro 神经语音、字幕、封面；Actions artifact 已成功生成，但未上传到频道。 |
+| 7. GSC / 收录 | 🟡 | 读取真实 GSC 数据并检查 4×8 URL；修正三页日期元数据与 Sitemap。尚未通过 URL Inspection 请求编入索引，因为浏览器自动化服务失效。IndexNow 成功不等于 Google 已收录。 |
+| 8. GA4 / 转化 | 🟡 | 新增 chicken_coop_city_selected 事件，只发送 city slug、city status、source page，不发送地址/地块数据；代码已部署，但受 Windsor 套餐限制及浏览器故障影响，未能验证实时事件。 |
+| 9. SEO 内容 | ✅ | 4×8 指南新增“购买前向卖家索取哪些可用尺寸”清单，并链接到 prefab capacity checker；更新 4×6/4×8/6×8 三页日期元数据。 |
+| 10. 代码 QA / 部署 | ✅ | 新增日期与 Sitemap 同步断言、城市选择事件断言和 4×8 购买清单断言；GitHub Actions 检查通过。 |
+
+## 2. 本轮新增提交与验证
+
+- [7372128 — 同步 footprint 页面日期与 Sitemap](https://github.com/DragonChenCL/CoopCheck/commit/7372128ab9be9adde68f80742972431194dc1b1c)：更新 4×6/4×8/6×8 的 dateModified 和 lastmod，增加日期一致性 QA。
+  - [Pages 部署成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40343992628)
+  - [IndexNow 通知成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40344066029)
+- [4a54c3f — 增加城市选择分析事件](https://github.com/DragonChenCL/CoopCheck/commit/4a54c3f34eefc2f28d03e956cccfc6a3d156bace)。
+  - [Pages 部署成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40351045114)
+  - [IndexNow 通知成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40351133480)
+- [8b5a100 — 4×8 指南增加卖家尺寸清单](https://github.com/DragonChenCL/CoopCheck/commit/8b5a10083e7704806c6e6c832b2c439579c438f7)。
+  - [Pages 部署成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40352440962)
+  - [IndexNow 通知成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40352529918)
+- [813a46a — 新建 Sacramento 规则 Short 生成流程](https://github.com/DragonChenCL/CoopCheck/commit/813a46ad217255b1a2ca678543bb962791c47fe9)。
+  - [Short 生成与视频校验成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40353314717)：H.264、1080×1920、30 秒，封面/字幕/神经语音随 artifact 保存。
+  - [Pages 部署成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40353314818)
+  - [IndexNow 通知成功](https://github.com/DragonChenCL/CoopCheck/actions/runs/40353396200)
+
+## 3. 下一步阻塞解除顺序
+
+1. 恢复远程浏览器服务后，先检查资源和服务日志，再恢复 Pinterest/YouTube/GSC；不要重复提交已成功的 URL 请求。
+2. GSC 先复查 4×8 URL Inspection；若仍未请求且 live test 通过，再请求编入索引。
+3. 上传 Pinterest 图稿时暂不添加被拦截的域名链接；申诉成功后再恢复站外链接。
+4. 上传 Sacramento Short 时使用本轮封面、字幕和描述，并按平台要求处理合成内容披露。
+5. 3 封编辑邮件等待回复；不要在同一天重复催促。
+
+---
+
 # CoopCheck Operations Log
 
 ## 2026-10-26 UTC 08:37–09:05 — 新一轮实操运营（未满 10/10，按成果独立核算）
