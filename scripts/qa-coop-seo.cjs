@@ -59,6 +59,10 @@ for(const {w,d} of PRINTS){
  assert(h.includes("interior")||h.includes("indoor"),"do not count run as indoor");
  assert(h.includes("Advertised exterior dimensions are not usable indoor dimensions."),"retail footprint cannot be assumed usable interior");
  assert(h.includes("A marketed overall footprint may include the outdoor run."),"metadata clarifies exterior footprint");
+ if(w===4&&d===8){
+  assert(h.includes("Ask the seller for usable dimensions"),"4x8 guide includes a practical pre-purchase dimension checklist");
+  assert(h.includes('href="/guides/prefab-chicken-coop-capacity-checker.html"'),"4x8 guide links to the model-specific buyer checker");
+ }
 }
 const home=read("site/index.html"),planner=read("site/coop-plan.html");
 const setback=read("site/guides/chicken-coop-setback-from-property-line.html"),engine=read("site/assets/coop-plan.js");
