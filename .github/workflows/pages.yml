@@ -48,6 +48,9 @@ jobs:
         run: node scripts/qa-growth-p0.cjs
       - name: Verify evidence-backed prefab coop buyer checker
         run: node scripts/qa-prefab-coop-buyer.cjs
+      - name: Regression test source-backed buyer journey and analytics attribution
+        run: node scripts/qa-buyer-journey.cjs
+
       - name: Verify printable chicken permit checklist and government source scope
         run: node scripts/qa-permit-worksheet.cjs
       - name: Guard every sitemap URL canonical and indexability
