@@ -1,5 +1,17 @@
 # CoopCheck Operations Log
 
+## 2026-10-25 PDT（UTC 2026-10-26）— 同轮继续执行与额外验收补记
+
+> 补记不新增新的 10 模块轮次，不在现有 ✅8/10 基础上重复给同一模块计分；Pinterest / YouTube 仍未取得公开发布证明。
+
+- **邮件增量**：针对 Grubbly Farms 此前自动满意度回信，发送独立、礼貌的人工编辑转介跟进，明确可接受拒绝且不继续骚扰；Gmail `SENT` 消息 ID `1a1761e7b05d921a`，线程 `1a16b28a8139df83`。这是同一轮的第三封成功邮件，未核实实际送达、编辑合作或公开反链。
+- **GA4 新增一个漏斗事件**：`site/assets/analytics.js` 增加 `buyer_guide_checker_click`，限定发生在购买指南到站内免费尺寸检查器的真实链接点击，路径与漏斗步骤参数完整，不对外部同名路径计数。Commit [0fd609b](https://github.com/DragonChenCL/CoopCheck/commit/0fd609b46bd3cbfab15c0305b3d88bcbc56a5afa)。在线页面加载了已部署新 `analytics.js`；实际浏览器模拟点击见 dataLayer 项增加，未断言 GA4 后台已有非测试用户的真实转化。
+- **额外独立 SEO 内容更新**：在原三产品购买指南新增“4 × 8 overall footprint ≠ indoor sleeping floor”的非产品实测示例，明确 32ft² 整体占地与假设 8ft² 室内区别、六只鸡 18ft² OSU 指导参考，保留非法律/非福利认证边界。Commit [9ce4b32](https://github.com/DragonChenCL/CoopCheck/commit/9ce4b32d9e943cb4f3c771a77bfa3f048bc29bec)；浏览器验证正式页 `#footprint-arithmetic` 已存在：https://coopcheck.serunio.com/guides/prefab-chicken-coop-buying-guide.html 。
+- **独立代码质量增量**：新建 `scripts/qa-buyer-journey.cjs`，以 VM stub 保护购买指南点击追踪的页面范围/同源限制/参数，以及工作示例的限定语，Commit [dd3890b](https://github.com/DragonChenCL/CoopCheck/commit/dd3890b69e6a3577a4897ba095b52d51c6fe3cae)；在 Pages workflow 增加执行步骤，Commit [7a3fc36](https://github.com/DragonChenCL/CoopCheck/commit/7a3fc36d7c43aaa740e778d9789d3b29fa65e928)。GitHub Actions Run [#373](https://github.com/DragonChenCL/CoopCheck/actions/runs/40263986560) 实查 **completed successfully**。测试和部署属于真实新成果，但仍不能把同一代码修改拿去挤出额外模块数量。
+- **新增可用视频资产**：第二套新 Shorts，`/mnt/data/CoopCheck_Shorts_4x8_20261025.mp4`，20.5 秒、1080×1920、H264，经本地 `ffprobe` 核验且文件 4,322,815 字节；对应四个分镜图片在 `/mnt/data/coopcheck_short_20261025/`。这是已成片文件，**并非已上 YouTube**；已有之前另一个 24 秒 4 vs 6 hens 版本，避免重新从头制作素材。
+- **真实发布阻塞复查**：YouTube Studio 频道已登录，打开视频上传弹窗后出现“糟糕，出了点问题。重试”，`browser_click` 上传按钮由于页面视图稳定性超时；尝试通过文件选择器上传本机文件时缺少有效文件选择器模态状态，因此没有视频公开 URL。Pinterest 原创 Pin 创作工具 `/pin-creation-tool/` 同样曾空白/本轮连接中断，域名外链限制未得到可核验解除，**没有新 Pin URL**。不得把成片、图片或已登录当成新发布。
+- **当前合规验收仍为：✅8 / 10，🟡2 / 10。** 新增公开 CoopCheck 反链仍为 0 已核实，新增真实订单/净收入未知。下一次应优先修复 Pinterest 与 YouTube 的文件桥接或提供合规的可执行上传路径，复用本轮已有成品。
+
 ## 2026-10-25 PDT (UTC 2026-10-26) — SOP V1.1 强制实操运营第 1 轮：✅8 / 10，🟡2（社媒发布待补）
 
 本次目标为 **10 模块均有新增可核验交付**，严格依 [RUN_TEMPLATE.md](RUN_TEMPLATE.md) 逐项验收。用户明确要求运营到底而非只做巡检；本轮在邮件、编辑合作、Reddit、BYC、SEO、GSC、GA4 与业务代码完成实操，Pinterest 和 YouTube **形成全套可上传作品，但未取得公开发布凭据**。不能将两个部分完成包装为 10/10。
