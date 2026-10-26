@@ -1,5 +1,40 @@
 # CoopCheck Operations Log
 
+## 2026-10-25 PDT (UTC 2026-10-26) — SOP V1.1 强制实操运营第 1 轮：✅8 / 10，🟡2（社媒发布待补）
+
+本次目标为 **10 模块均有新增可核验交付**，严格依 [RUN_TEMPLATE.md](RUN_TEMPLATE.md) 逐项验收。用户明确要求运营到底而非只做巡检；本轮在邮件、编辑合作、Reddit、BYC、SEO、GSC、GA4 与业务代码完成实操，Pinterest 和 YouTube **形成全套可上传作品，但未取得公开发布凭据**。不能将两个部分完成包装为 10/10。
+
+| # | 模块 | 状态 | **本轮真实新增产出** | 核验、来源和限制 |
+|---|---|---|---|---|
+| 1 | 邮件 | ✅ | 回应 Homestead How-To 编辑 Tamara，婉拒 **$125 付费 sponsored guest post**，保留免费、来源充分的编辑事实核验可能性 | Gmail 发送 message ID `1a1760277d6f152c`，线程 `1a1401b0c777be4a`；没有购买付费外链。Tigard 市政既有线程的发送尝试报错，**不算成功** |
+| 2 | 外链合作 | ✅ | 向 **The Garden Coop** 的公开地址 `info@thegardencoop.com` 发送一封**新的**针对其鸡舍图纸读者的个性化法规选址合作邮件（无付费、无硬要链接） | Gmail **Sent** message ID `1a175f51c90c2ff9`，联系入口 https://www.thegardencoop.com/about-us/；送达/采纳/编辑链接尚未确认，因此**新公开反链 0 已核实** |
+| 3 | Reddit | ✅ | 在 r/SideProject 新增一条有技术价值的 SPF 多记录 PermError 与 DKIM-selector 未知状态区分的实际回帖，无推广链接、没有捏造自己测试的经历 | 已在登录帐号 `According_Banana221` 的公开评论中验证： https://old.reddit.com/r/SideProject/comments/1xfkej9/i_made_a_free_email_authentication_checker_that/19rntvplynqp1/ 。不是 CoopCheck 引荐流量 |
+| 4 | BYC | ✅ | 在 Joliet (Illinois) 民间推动鸡舍条例修订的线程，以会员 `tom` **新增一条公开且与议题匹配的回复**，提出六个草拟市议会条款框架，提示确认正式生效法令、不能把拟议条例当现行合法性 | 正式回帖 permalink https://www.backyardchickens.com/threads/city-of-joliet-illinois-chicken-ordinance-amendment.1694938/post-29314804 ，浏览器确认 `article#js-post-29314804`。没有 CoopCheck 外链，未宣称已核实 Joliet 新法 |
+| 5 | Pinterest | 🟡 | **已创作全新 2:3 原创竖版图**「4 HENS vs 6 HENS」并配套了可发布 Pin 标题/描述/有条件 UTM 落地页；图像和文案在本次聊天生成成品中 | 成品 `CoopCheck_Pinterest_4_vs_6_Hens.png`（1024×1536）与 `CoopCheck_Social_Post_Captions_2026-10-25.txt`；尝试 `/pin-creation-tool/`、`/pin-builder/`、`/coopcheckplans/_pins/`，Pinterest 页面主体持续空白，**无新 Pin URL，不能记发布成功**。历史域名外链拦截尚未证明解除；不能短链绕过，遵守生成内容披露 |
+| 6 | YouTube | 🟡 | **已制作不同于原 14-hen Shorts 的新 24s 竖版 MP4**：「4 Hens vs 6 Hens」，5 场图文剪辑，配封面/标题/描述、OSU Extension 来源及合规声明；ffmpeg 和 ffprobe 验证 MP4 确实存在 | 成品 `CoopCheck_Shorts_4_vs_6_Hens_2026-10-25.mp4`（24 秒，540×960）与封面 `CoopCheck_Shorts_4_vs_6_Hens_Cover.jpg`，配文 txt；通过已登录 Studio 尝试上传，但浏览器页面跳转与缺乏可用本地文件桥接，**未取得任何新视频公开 URL**；不能算上传或观看量 |
+| 7 | GSC / 收录 | ✅ | 针对最近仅 1 索引/115 未索引基线，**实际为有独特内容的购买研究指南从首页增加独立内链**；更新生成源的 lastmod、正式 Sitemap，部署成功。没有无谓重复 URL 提交 | 首页 `site/index.html` commit `ded3e9e0eb4a071520dc795977f3e6ea14352358`；`scripts/generate-coverage-pages.cjs` commit `47ccc81827f5e7146509d6d8703e1dd0e3d06b6d`；`site/sitemap.xml` commit `60a8ee012b876d9f3b662b5c550e249e6ba591fd`；本轮落实技术改进≠已经获 Google 收录 |
+| 8 | GA4 / 转化 | ✅ | **实际增补用户高意图事件**：`buyer_model_selected`、`buyer_seller_question_copied`、`buyer_seller_question_fallback`、`buyer_comparison_print`，避免每次按键虚高事件；并从线上界面点选 `guardian` 检查 dataLayer 确实收到 `buyer_model_selected` 与 `model_id:guardian` | `site/assets/prefab-capacity.js` commit `ae9bf3cbdd92e5b024c294591b00f1cb460321bd`，后续 JS factory 问题已改（`1561b95f...`），GitHub Actions 通过且正式页面浏览器事件核验成功；**事件正常发送不等于 GA4 管理后台已出现历史转化，订单未知** |
+| 9 | SEO 内容 | ✅ | **正式发布**《Three prefab coops》指南的原创 4 vs 6 hens 三模型参考对照、各型号差额、出处限制与完整商家规格确认询问模板，更新 `Article.dateModified`；实查线上含 `#worked-scenarios` 与 seller request 文本，schema 2026-10-25 | 正式 URL https://coopcheck.serunio.com/guides/prefab-chicken-coop-buying-guide.html ，commit `b4511a39890a32e28430f48c94e32799b8064d60`；实际线上浏览器验证通过。不宣称 OSU 参考值代表法定/完整福利标准 |
+| 10 | 代码/线上 | ✅ | **修复复制备用文案残留问题**（变更型号/输入后自动清空），增加测试模拟用户切换及埋点；修正导出打印回调对模拟 DOM 的支持，并根据真实 CI 日志修复旧 `lastmod` 硬编码回归检查及工厂全局对象引用；**最终 CI 和 Pages 部署成功、线上交互验证通过** | JS 修复 `4c6141b1...`、测试 `7955351f...`、回归修复 `2095da9a...`、最终修复 `2ad251bed000d1e9678bbf5f583667529fef2ddd`。成功 Pages 工作流 https://github.com/DragonChenCL/CoopCheck/actions/runs/40258874569 与成功 IndexNow https://github.com/DragonChenCL/CoopCheck/actions/runs/40258903207 。实际线上修改 `bcCopyFallback` 后点击其他型号显示 `hidden:true` 且已清空 |
+
+### 本轮数量与可核验范围
+
+- **Gmail 新发成功两封（两个独立目的）**：编辑付费条件回复 1，独立目标合作新联系 1；不把回信送达、编辑采纳或外链当已确定。
+- **新公开社区回复两条**：Reddit 1（开发者技术互动）+ BYC 1（实际养鸡法规提案帮助）。均**没有自有 URL**；**新增外链 0 个已核实**。
+- **Pinterest 新公开 Pin 0**，但实际新制作一张可发布图片；**YouTube 新公开视频 0**，但实际制作 24s 成片 + 封面 + 配文。本轮这两项因发布无凭据分别记 **🟡**，不可写成已完成。
+- **SEO/代码/GA4 已实际线上**：Pages 工作流通过，根页导航内链、指南正文、DataLayer 模型选择事件和复制框清空经在线浏览器验证。
+- **销售端真实目标用户新增、订单、收入：未知**。之前 GA4 7 日视图有 35 活跃用户、48 sessions，多数 Direct，含测试流量风险；不能将它当本轮新获客，更不能记购买。
+- **浏览器标签**：主要复用 cfbrower Tab0；遗留无关 Tab1 指向第三方网页，此前关闭时返回 `Tab 1 not found`。此轮未为绕过异常大量开 tab，不声称清理成功。
+- **发布阻塞详情**：Pinterest pin creation route 空白；YouTube Studio 可登录、上传入口存在，但会话中重复跳转且新文件无法确认上传，故未获取平台发布回执。两项需在下一轮优先续接本次已制作的资产。
+
+### 下轮优先级（不能代替本轮成绩）
+
+1. 优先解决 Pinterest 创建页与 YouTube Studio 上传文件桥接（本次成品无需重复制作），成功公开后补 Pin/Shorts URL 并检查外链状态；不要把仅有视频/图片算“已发”。
+2. 跟进 The Garden Coop 编辑是否有真人回应并推进具体材料，所有编辑引用须核验公开 URL；有实质结果才算反链。
+3. 持续实查 GSC 新改指南的抓取/收录及 GA4 新 `buyer_model_selected` 事件，建立排除本人测试的获客/转化分析，不重复无变化的索引请求。
+
+**最终交付率：✅8/10，🟡2/10，⛔0，❌0；没做到全平台公开，不把 8/10 写成 10/10。**
+
 ## 2026-10-25 PDT — 用户纠偏：SOP V1.1 强制每模块实操交付（制度调整，不是新一轮投放）
 
 - 用户明确指出：**“运营一下”就必须每个环节都有实际产出，不能只是看看**；之前以巡检为完成标准不符合要求。
