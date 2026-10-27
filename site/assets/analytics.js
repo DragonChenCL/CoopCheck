@@ -96,6 +96,21 @@
         }
       }catch(_){}
     }
+    // Search Console intent experiment: did readers move from city-limit facts
+    // to a specific city's source-reviewed profile? Only same-origin city links
+    // with an explicit homepage marker qualify; external citations do not.
+    if(location.pathname==="/"&&a.dataset?.ccEvent==="city_limits_city_click"){
+      try{
+        const dest=new URL(a.href,location.href);
+        if(dest.origin===location.origin&&/^\\/cities\\/[a-z0-9-]+\\.html$/.test(dest.pathname)){
+          window.coopTrack("city_limits_city_click",{
+            source_page:location.pathname,
+            destination_page:dest.pathname,
+            funnel_step:"city_limits_answer_to_profile"
+          });
+        }
+      }catch(_){}
+    }
     const href=a.getAttribute("href")||"";
     const text=(a.textContent||"").trim().replace(/\s+/g," ").slice(0,100);
 
