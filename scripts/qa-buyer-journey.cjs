@@ -13,6 +13,12 @@ assert(article.includes('id="footprint-arithmetic"'),'Worked example is present'
 assert(article.includes('4 × 2 = <strong>8 sq ft</strong>'),'Indoor area arithmetic is explicit');
 assert(article.includes('not measurements of any listed brand or model'),'Hypothetical example must not become manufacturer spec');
 assert(article.includes('extension.oregonstate.edu/catalog/ec-1644'),'Keep primary husbandry reference');
+assert(article.includes('id="total-project-budget"'),'DIY vs prefab whole-budget worksheet is available');
+assert(article.includes('Request a written bill of materials or itemized supplier quote'),'Do not invent vendor price quotes');
+assert(article.includes('href="/guides/chicken-coop-cost-calculator.html"'),'Budget worksheet must connect readers to the cost calculator');
+assert(article.includes('href="/guides/4x8-chicken-coop-capacity.html"'),'Budget worksheet must point readers to the 4x8 sizing explanation');
+assert(article.includes('"dateModified":"2026-10-27"'),'Buyer guide structured update date is synchronized');
+
 
 function harness(pagePath){
   const location=new URL('https://coopcheck.serunio.com'+pagePath);
