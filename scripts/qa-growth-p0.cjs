@@ -63,4 +63,14 @@ assert(article.includes("https://grover.org/Archive.aspx?ADID=2661"),"Primary ag
 assert(article.includes("Regular Business Item 5")&&article.includes("October 26"),"Accurate date and item");
 assert(/not an enacted ordinance|no new allowance has been confirmed/i.test(article),"Clear pending status");
 assert(read("site/guides/prefab-chicken-coop-capacity-checker.html").includes("/partners/embed-coop-calculator.html"),"Existing checker surfaces embed collaboration");
+// Guard the actual Search Console chicken-count search-intent answer and its attribution.
+const home=read("site/index.html");
+const ga=read("site/assets/analytics.js");
+assert(home.includes("How many chickens can you have in city limits?"),"Home addresses observed GSC query");
+assert(home.includes("no single U.S. city-limits chicken count"),"No fabricated nationwide hen limit");
+assert(home.includes("www.portland.gov/code/13/40/020")&&home.includes("www.sandiego.gov/urban-farming/bees-and-livestock/chickens"),"Primary municipal sources for contrasting city tiers");
+assert.equal((home.match(/data-cc-event="city_limits_city_click"/g)||[]).length,2,"Exactly two marked local rule profile links");
+assert(ga.includes('window.coopTrack("city_limits_city_click"')&&ga.includes('destination_page:dest.pathname'),"Track the source-section to city-profile transition");
+assert(ga.includes("dest.origin===location.origin")&&ga.includes('dest.pathname.startsWith("/cities/")'),"Do not attribute outbound traffic or unrelated paths");
+assert.doesNotThrow(()=>new Function(ga),"Analytics script parses");
 console.log("PASS: 3 indexable P0 pages, one noindex privacy-preserving embed, source-backed products, grounded pending law, CI injection guard, and canonical sitemap");
