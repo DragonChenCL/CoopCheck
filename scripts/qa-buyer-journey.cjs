@@ -62,4 +62,16 @@ assert.equal(guide.calls.filter(args=>args[1]==='buyer_guide_checker_click').len
 const other=harness('/about.html');
 other.click(CHECKER);
 assert.equal(other.calls.filter(args=>args[1]==='buyer_guide_checker_click').length,0,'Only the buying guide can generate this funnel event');
-console.log('PASS: publisher-independent 4x8 example, grounded reference, buyer guide funnel click, external/other-page exclusion');
+
+const budget=harness(GUIDE);
+budget.click('/guides/chicken-coop-cost-calculator.html');
+const budgetEvents=budget.calls.filter(args=>args[0]==='event'&&args[1]==='buyer_budget_calculator_click');
+assert.equal(budgetEvents.length,1,'Buyer worksheet should produce one real cost-tool transition event');
+assert.equal(budgetEvents[0][2].source_page,GUIDE);
+assert.equal(budgetEvents[0][2].destination_page,'/guides/chicken-coop-cost-calculator.html');
+assert.equal(budgetEvents[0][2].funnel_step,'buyer_research_to_cost_estimate');
+budget.click('https://outside.example/guides/chicken-coop-cost-calculator.html');
+assert.equal(budget.calls.filter(args=>args[1]==='buyer_budget_calculator_click').length,1,'External spoof must not count as an onsite cost conversion');
+other.click('/guides/chicken-coop-cost-calculator.html');
+assert.equal(other.calls.filter(args=>args[1]==='buyer_budget_calculator_click').length,0,'Non-buyer-guide pages must not emit budget funnel');
+console.log('PASS: publisher-independent 4x8 example, grounded reference, buyer guide funnel click, budget calculator funnel click, external/other-page exclusion');
