@@ -1,3 +1,30 @@
+# 2026-10-27 — 发布专项续轮：Pinterest 新图 + Sacramento Shorts（已公开验证）
+
+> 这是用户明确要求“继续发布”的两渠道专项续做，不虚增其他八模块验收；公开发布新增 **Pinterest Pin 1 / YouTube Shorts 1**。运行时仅保留 cfbrower **1 个标签页**，顺序复用。
+
+## Pinterest #5 ✅ — 2026-10-27 新 Pin，已公开
+
+- 原创竖图 `1000 × 1500 PNG`，上传时 359,113 bytes，文件名 `CoopCheck-DIY-vs-Prefab-Cost-Checklist-20261027.png`；在远程 Playwright 临时页用矢量排版渲染并用 `setInputFiles(buffer)` 上传，**未写入 GitHub 源图二进制**（平台保存公开图卡）。标题：**DIY vs Prefab Chicken Coop: 6 Hidden Costs to Check Before Buying**。主题围绕可用室内面积、防护活动区、地面排水、交付/材料、天气防护、维护；无编造价格或用户经历。
+- 已填英文描述和视觉替代文本、选择 `Chicken Coop Plans & Layouts` 图板，并勾选平台「标记为 AI 修改」，未称存在 AI 生成人物。Pinterest 对 `https://coopcheck.serunio.com/guides/prefab-chicken-coop-buying-guide.html` 明确显示 **“抱歉！我们阻止了此链接，因为它可能转至垃圾信息。”**；发布前将目的 URL 清空，**没有使用替代域名、短链或跳转来绕过限制**。
+- 点击平台发布后，官方图板 `https://www.pinterest.com/coopcheckplans/chicken-coop-plans-layouts/` 显示 **8 张 Pin**（上轮 7），新标题排首位；获取永久公开 URL：**https://www.pinterest.com/pin/1125337025678704189/**。该 Pin **无官网外链/不能计网站引荐**。平台可见≠自然曝光或站外访问。
+
+## YouTube #6 ✅ — Sacramento Short 真实公开发布
+
+- 已复核市政府 `https://www.cityofsacramento.gov/community-development/animal-care/pet-licenses/poultry-license` 与现行 `https://codelibrary.amlegal.com/codes/sacramentoca/latest/sacramento_ca/0-0-0-21428`，视频核心陈述（居住地 3 hens 上限、公鸡限制、年度许可/鸡舍许可、后院、15–42 sq ft 鸡舍、距离邻居住宅至少 20 ft）在官方来源可证；描述强调市内适用、其他场地条件需再次核实。
+- 复用 2026-10-26 GitHub Actions `40353314717` 的 30 秒真实录屏+Kokoro 英语配音+字幕 MP4，未重录。新建工作流 `.github/workflows/coopcheck-sacramento-media-bridge.yml` 将跨运行 artifact 经 `actions/download-artifact@v4` 安全转到 `bridge-media/`；首次 [40466947087](https://github.com/DragonChenCL/CoopCheck/actions/runs/40466947087) **失败**，job logs 确诊 `ffprobe: command not found`；提交 `c886e95960113309ee1f0882a14a02b90cd01299` 安装 ffmpeg 后 [40467750495](https://github.com/DragonChenCL/CoopCheck/actions/runs/40467750495) **success**，成片 5,252,379 bytes、封面 223,019 bytes。
+- 浏览器 CDP 经单 tab 访问已登录的 `CoopCheck | Chicken Coop Plans` YouTube Studio，通过公共 GitHub Git Blob API `git/blobs/ca08ea77ee44aa2b2a6e6c8485ca813d7cdfcc3e` 获取二进制 Base64，**校验字节数**后 `input[name=Filedata]` 成功传入 5,252,379 bytes；封面对应 Git Blob `6f3dfe108f9d7356087713c28375dc24a6acd05b`，`input#file-loader` 传入 223,019 bytes。无跨文件系统 `/mnt/data` 误用。
+- 标题 **Sacramento Chicken Rules: 3 Hens, Permits & Coop Setbacks 🐔 #Shorts**；说明附市政府/市法典与 CoopCheck 来源、区域与法律不确定性说明；设置 **不是面向儿童**；Studio 显示版权检查 **未发现任何问题**；设置**公开**后点击发布，官方分享弹窗明确 **“发布于 2026年10月27日”**。
+- **公开 Shorts URL：https://www.youtube.com/shorts/THqX2ClV8N0**。再次通过浏览器打开该永久链接，页面标题与已发布标题一致，播放器检测到视频 `duration=30.061` 秒、`readyState=4` 且正在播放，**公开页播放验证通过**。上传草稿时给出的 URL 不是此前成功证据；本次是在明确发布回执后独立查验。
+- 备注：中转 MP4/JPG 目前暂存在公共 GitHub `bridge-media/`，后续如清理须确认平台的视频、封面已独立保存，避免误删项目共享素材；更改 GitHub 工作流的提交不代表额外新增 Shorts。
+
+## 真实业务效果和留待复核
+
+- **本续轮新增公开内容：Pinterest 1、YouTube Shorts 1**；前一张 4×8 Pin `1125337025678611641` 和前一条 Shorts `zLbD9vgNwkU` 是历史发布，**不重复计数**。
+- 本轮 **新公开外链指向 CoopCheck：0 已核实**（新 Pinterest 明确无链接）；YouTube 描述内虽然填写网站地址，其可点击/真实引荐尚未验证。播放次数、独立访客、工具使用、订单及净收入均 **未知/尚无可靠归因**，不得写 0 或变现成功。
+- 下一步 P0 是 Pinterest 的**正常官方申诉和域名限制复检**，不是无链接继续无限堆 Pin；YouTube 后续复盘观看留存及引荐，再决定继续上新。可利用已打通的 Git Blob API 中转 5MB 视频，先验尺寸/字节和发布状态，减少重复渲染。
+
+---
+
 # 2026-10-27 — 继续执行：记者合作推进、Grover Beach 会后核验及退信纠错（同日续轮，不另算十模块）
 
 ## 新增实际交付与证据
