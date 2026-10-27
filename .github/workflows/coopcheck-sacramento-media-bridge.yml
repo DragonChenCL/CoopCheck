@@ -28,6 +28,11 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: source-artifact
 
+      - name: Install ffprobe for deterministic media validation
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
       - name: Identify, verify, and copy intended public marketing media
         shell: bash
         run: |
