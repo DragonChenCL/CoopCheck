@@ -1,3 +1,22 @@
+# 2026-10-27 — 继续执行：记者合作推进、Grover Beach 会后核验及退信纠错（同日续轮，不另算十模块）
+
+## 新增实际交付与证据
+
+- **P0 邮件退信纠错**：上一条记录里 `editorial@backyardpoultrymag.com` 虽有 Gmail SENT ID `1a17be803cbc784e`，随后收到邮件退回 `1a17be808a8ba2b2`：`550 5.4.1 Recipient address rejected: Access denied`。因此此联系人 **实际有效投递 0**，原记录的“新编辑联系已完成”应按退信事实撤回，不得计已送达/已发有效投稿。先前 10/22 已向另一家公开地址 `editor@backyardpoultrymag.com` 发送过不同提案，本轮不重复催促或换邮箱轰炸。
+- **New Times SLO 真人编辑沟通**：记者 Bulbul Rajagopal 10/26 回信 `1a17a98f59cb96e9`，明确数据库有趣、愿意研究，并表示会关注 10/26 Grover Beach 会议。这是真人编辑兴趣，不是采纳或反链。已针对该回信发送 1 次资料更新和礼貌致谢，消息 `1a17bffc42c273fd`，原线程 `1a167b5247910ed5`；链接到校正后的会后核验页，没有施压要链接。
+- **市政府一手来源推进**：已向官方市书记员邮箱 `gbadmin@groverbeach.org` 发送一封 Item 5 行动记录/表决/条例生效日期的事实核实请求，Gmail message ID `1a17bfe38cbfe555`。这是公开记录定位请求，不是政策游说；尚无收件人确认或回复。
+- **新闻/SEO 重要内容纠正**：10 月 26 市议会家禽政策议程 Item 5 的官方链接存在，SLO-SPAN 把会议列在“Recent Local Meetings”；**未核实会议表决、批准的会议纪要或生效条例**。将 `site/research/grover-beach-poultry-policy-october-2026.html` 标题改为会后核验、增加 10/27 明确“agenda confirmed; council action not verified”说明、会议记录索引、会议通过 vs 实际生效的分别验证，并同步 NewsArticle.dateModified、生成源码和 sitemap 的 10/27 日期。主要提交：`157eb1476e58eca09f3335b1c3522de6098c7e2a`、`135466f74e81bc152152326f6ae75b5653c92cff`、`924c0b9d0e764f84464720979a1287d2cbe7a265`。
+- **QA 和 CI**：新增 `scripts/qa-grover-beach-status.cjs`，校验原始发布时间、会后核验的未知状态、官方档案入口、sitemap lastmod 和法令生效提醒，并接入 Pages workflow。提交 `d2335195ae1ebe64cf897aed9ea2f7b15af8ed72` / `b1eabbd57a6c1303ec51e035ebb901de2053bc64`；[GitHub Pages Run 40459912705](https://github.com/DragonChenCL/CoopCheck/actions/runs/40459912705) **completed/success**；[IndexNow Run 40459992633](https://github.com/DragonChenCL/CoopCheck/actions/runs/40459992633) **completed/success**。没有取得 GSC Google 索引证明。
+- **浏览器阻塞复查**：`cfbrower.browser_tabs(list)` 仍在 CDP 8932 WebSocket 握手后 15 秒初始化超时。本轮不能公开发 Reddit / BYC、上传 Pinterest、新上传昨天已制作的 Sacramento Short，亦不能在原生 GSC / GA4 核验；不计发布成果。经连接 vidIQ 的 `chenlongqrr@gmail.com` 查询仍无该插件已授权 YouTube 频道，不得假称能够发布。
+- **线上核验局限**：GitHub Actions CI 和 Pages 部署成功；外部网页读取工具不可直接访问 `coopcheck.serunio.com`，没有获得浏览器级可视实测，不能冒充已截图验证。
+- **真实商业结果**：新公开反链仍 **0 已核实**；新 Reddit/BYC 评论 0、新 Pinterest Pin 0、新 Shorts 0；GSC/GA4 因浏览器故障及 Windsor 套餐返回假占位数据而没有新可信观察值；新用户、购买、净收入 **未知**。
+
+## 核算与后续
+
+这是 **10 月 27 日同日“继续运营”增量**，不和本日上一段十模块重复计功。上一段的编辑投递 `editorial@...` 应计失败（退信），但本次与真人记者实质沟通及更新后的可审核资料成为编辑合作阶段的新有效推进；**仍未获得新的公开外链**。下轮应先获取 Grover Beach 官方 Item 5 决议材料并修正有来源的新法事实；浏览器恢复后优先完成 Sacramento Short 既有素材上传、Pinterest 发布、GSC 重点 URL 原生检查及 GA4 真实漏斗验证，避免重复发稿、虚假收录和机械改动。
+
+---
+
 # 2026-10-27 — CoopCheck 运营执行轮（✅5 / 🟡1 / ⛔4，按新增交付记分）
 
 ## 范围和事实
