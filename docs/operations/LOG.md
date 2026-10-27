@@ -1,3 +1,32 @@
+# 2026-10-27 — CoopCheck 运营执行轮（✅5 / 🟡1 / ⛔4，按新增交付记分）
+
+## 范围和事实
+
+遵循 `docs/operations/SOP.md` V1.2 的 10 模块流程；本节只记录 10/27 实际动作，10/26 历史内容、Pinterest 已发布 Pin 和先前 Shorts 不重复计数。重点是付费订单、真实工具使用、索引有效性与自然外链，不能把已发邮件、CI 或通知当成流量/索引或成交。
+
+| # | 模块 | 结果 | 新增交付和核验 |
+|---|---|---|---|
+| 1 | 邮件 | ✅ | Rediscover Rural 10/26 回信提出 $50 付费 guest post；已在同一 Gmail thread 礼貌拒绝付费投放并提供免费研究型编辑稿可能；发送 ID `1a17be7f1e144894`、thread `1a178b550c6361b8`。 |
+| 2 | 编辑外链 | ✅ | 向已查到编辑公开联系方式的 Backyard Poultry Magazine 发送针对当期鸡舍主题的独立、非付费、研究型投稿提案（完整成本、真正室内空间与市政法律区别），发送 ID `1a17be803cbc784e`。未确认送达真人、采纳或外链。 |
+| 3 | Reddit | ⛔ | 查询现有相关讨论；cfbrower 连续初始化超时，未登录查看对应版规/发布新评论。已有“No AI content”限制不能规避。新公开评论 0；保留昨日稿件，但不重复记为今日成果。 |
+| 4 | BackYard Chickens | ⛔ | 检查地方条例讨论入口，先前 Portland/Seattle 与 Joliet 线程已有相关回复，未重复发帖；浏览器初始化超时，新公开回帖 0。 |
+| 5 | Pinterest | ⛔ | cfbrower 不能成功建立自动化会话，无法进入发布编辑器/确认以前域名限制解除；没有发布新 Pin 或绕过外链拦截。10/26 的 Pin 非本轮新增。 |
+| 6 | YouTube | ⛔ | 10/26 已生成 Sacramento 规则 Short 可复用：Actions `40353314717`，但浏览器未恢复且 vidIQ 所连账号未列出 YouTube 频道，因此无法将影片上传并确认公开视频。新公开视频 0。 |
+| 7 | GSC / 索引技术 | ✅ | 对已有可索引 buyer guide 补入通向 4×8 专题和独立成本计算器的相关正文内链；同步 Article.dateModified 2026-10-27、Sitemap lastmod 和站点生成脚本。变更 SHA `fe202116`、`fcc26409`、`e24b3dce`；CI 正式 Pages 部署成功 `40458067843`。**没有声明 GSC URL 提交成功或 Google 已索引**。 |
+| 8 | GA4 / 转化 | 🟡 | 新增 buyer guide → cost calculator 的 `buyer_budget_calculator_click` 实际客户端事件，含 funnel_step/source/destination，排除站外同路径与其他页面；代码 commit `4841d542`、回归 commit `58cf2679`；Actions 检查/部署成功。但远程浏览器无法做 dataLayer/GA4 Realtime 线上验证，Windsor.ai 被配额限制，仅达到代码与模拟验证，未达到真实流量/漏斗核验。 |
+| 9 | SEO 内容 | ✅ | 更新已有独立买家指南，新增可比价的 DIY vs prefab 完整预算对照：睡眠屋、独立防护 run、地基/运输/维护/许可、核对报价范围，并提示未验证价格不能猜。URL `https://coopcheck.serunio.com/guides/prefab-chicken-coop-buying-guide.html#total-project-budget`；commit `fe202116`，主分支变更和 Pages 部署通过；未能浏览器实测已部署 HTML。 |
+| 10 | 代码/QA | ✅ | 为新增预算指南、站内链接、Article 日期和 GA4 同源高意图事件添加独立 Node 回归断言；commit `be3d9044`、`58cf2679`，GitHub Pages workflow `40458067843` 结果 `completed/success`。CI 并非用户实际转化/线上浏览器验收。 |
+
+## 数据异常及真实增长结论
+
+- **Windsor.ai GA4/GSC**：当前共连 4 账户，免费套餐只允许 1 个；API 行里出现明确假数据/暂停告警。绝不将返回的 `0` 当真实访客、展示或点击。未通过原生 GSC 获得 10/27 新数据；10/26 日志中的既有 GSC 7 天 0 展示、28 天 9 展示、3 月 23 展示/0 点击及 indexed 1/unindexed 115 只作*历史基线*，不可冒充本日最新。
+- **浏览器**：多次执行 `cfbrower.browser_tabs(list)` 和 snapshot；CDP 8932 WebSocket 可握手但 Playwright 初始化 15 秒超时，另一 Browser 只读工具也不能访问；没有盲目操作服务器服务、没有重启用户环境、没有虚构上传或 GSC 提交。
+- **真实新结果**：已确认 Gmail 发送 **2 封**（1 次真实付费回复/拒绝，1 次新编辑联系）；**新公开 Reddit/BYC 帖子 0，新 Pin 0，新 Shorts 0**；新增已证实 CoopCheck 反链 **0**；新真实网站访客、外站引荐、购买订单与收入**未知**。
+- **CI**：[GitHub Pages run 40458067843](https://github.com/DragonChenCL/CoopCheck/actions/runs/40458067843) **completed/success**；[IndexNow run 40458110240](https://github.com/DragonChenCL/CoopCheck/actions/runs/40458110240) **completed/success**，IndexNow ≠ Google GSC 编入索引。
+- 下轮先解除 Chrome 初始化故障及 Pin 链接状态；复查 Sacramento Short 上传、GSC 具体 URL Inspection 和 GA4 Realtime 的 `buyer_budget_calculator_click`。编辑投稿等待真人回复，无须同日重复催促。不得为了凑齐 10/10 违反社区版规。
+
+---
+
 # 2026-10-26 14:21–16:00 UTC — CoopCheck 运营轮次（4/10 完成，6/10 部分完成）
 
 ## 0. 本轮结论
