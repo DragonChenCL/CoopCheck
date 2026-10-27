@@ -68,6 +68,20 @@
         }
       } catch (_) {}
     }
+    // Budget intent: distinguish genuine reader transitions to the estimate tool
+    // from article page views and external similarly named links.
+    if(location.pathname==="/guides/prefab-chicken-coop-buying-guide.html"){
+      try{
+        const dest=new URL(a.href,location.href);
+        if(dest.origin===location.origin&&dest.pathname==="/guides/chicken-coop-cost-calculator.html"){
+          window.coopTrack("buyer_budget_calculator_click",{
+            source_page:location.pathname,
+            destination_page:dest.pathname,
+            funnel_step:"buyer_research_to_cost_estimate"
+          });
+        }
+      }catch(_){}
+    }
     // Reader-service funnel: buying guide -> free, source-based capacity checker.
     // This measures a meaningful transition rather than treating a page view as a conversion.
     if(location.pathname==="/guides/prefab-chicken-coop-buying-guide.html"){
