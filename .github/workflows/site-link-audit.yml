@@ -1,0 +1,36 @@
+name: Audit public website link and redirect health
+
+on:
+  push:
+    paths:
+      - ".github/workflows/site-link-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  external-link-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect public domain, redirect and HTTP status (no tokens)
+        shell: bash
+        run: |
+          set -u
+          urls=(
+            "https://serunio.com/"
+            "https://www.serunio.com/"
+            "https://coopcheck.serunio.com/"
+            "https://coopcheck.serunio.com/robots.txt"
+            "https://coopcheck.serunio.com/sitemap.xml"
+            "https://coopcheck.serunio.com/guides/prefab-chicken-coop-buying-guide.html"
+          )
+          for url in "${urls[@]}"; do
+            printf '\\n===== %s =====\\n' "$url"
+            curl --silent --show-error --location --max-redirs 8 --connect-timeout 10 --max-time 20 \
+              --output /dev/null \
+              --write-out 'HTTP=%{http_code} final_url=%{url_effective} redirects=%{num_redirects} tls_verify=%{ssl_verify_result} content_type=%{content_type}\\n' \
+              "$url" || echo "FETCH_FAILED: $url"
+          done
+          echo 'Scope: a GitHub-hosted outside-in availability probe, not Pinterestbot reputation evidence.'
