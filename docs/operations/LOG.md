@@ -1,3 +1,28 @@
+# 2026-10-27 晚间 — CoopCheck SOP 续轮：Pinterest 申诉拒绝、媒体投递、索引搜索意图整改、外部 DNS 审计
+
+> 本轮依据 SOP V1.2 实际执行并保留 ID/commit；所有统计按本轮新增计，不重复计算当日先前 Pinterest Pin 或 Sacramento Shorts。**结果：✅4 / 🟡2 / ⛔4。** YouTube 新视频制作中，未取得成片/上传/公开证据，所以暂按阻塞而非成功发布。
+
+| 模块 | 状态 | 新增结果和证据 / 未达标原因 |
+| --- | --- | --- |
+| 1 Gmail / 平台邮件 | ✅ | 查获并完整读取 Pinterest 人工申诉拒绝邮件 Gmail ID `1a17cba2bbf45abc`，来自 `pinbot@legal.pinterest.com`，2026-10-27T09:38:57Z。原文指向 `serunio.com`，确认不予解锁；不重复无实质整改的申诉。记录 DNS 外部核验问题。 |
+| 2 编辑合作 | ✅ | 新核验 SLO Tribune Newsroom Staff Listing 中 South County 记者 Joan Lynch 的公开邮箱 `jlynch@thetribunenews.com`，排重后投递 Grover Beach 10/26 议程 Item 5 的客观线索，注明会后结果 UNKNOWN，没有购买外链。首次 Gmail send_email 权限失败并经查证未发送，另建草稿 `r-2196917044567773981` 后 `send_draft` 返回 **SENT ID `1a17d51aa17d17ae`**，线程 `1a17d5181481f552`。是否送达编辑、采纳、外链/流量仍 UNKNOWN。 |
+| 3 Reddit | ⛔ | 搜索近期 Omaha city-limits rooster 讨论 `https://www.reddit.com/r/Omaha/comments/1xdw365/roosters_in_city_limits/`，帖子中已有人引用 Omaha Code §6-263.1，继续复述并无明显增量；cfbrower 后续 `async initializeServer` 超时，未确认目标社区规则或发布评论。新增公开互动 0；不刷屏。 |
+| 4 BackYardChickens | ⛔ | 定位 Local Chicken Laws & Ordinances `https://www.backyardchickens.com/forums/local-chicken-laws-ordinances.37/` 并尝试原生浏览器访问，但随后 CDP WebSocket 可握手、Playwright 初始化超时。未取得适当新帖与公开回帖凭据；新增公开互动 0。 |
+| 5 Pinterest | ⛔ | 官网链接封锁申诉 **被官方拒绝**：拒绝对象邮件中标注 `serunio.com`，不是仅被拦的指南 URL。依据官方申诉次数限制不重复申诉；无法复用该站点做 Pinterest 直链。外部审计显示 apex 和 www 解析失败，但因果未定；没有绕过限制或伪造 Pin 发布。本轮新 Pin 0。 |
+| 6 YouTube | ⛔ | 以 Portland 官方法律 §13.40.020 和市政府指引核对四/六只小家禽、农业用途公鸡例外、养禽许可和地块因素。新增 `scripts/marketing/render_portland_rules_short.py`、`.github/workflows/coopcheck-portland-rules-short.yml`，GitHub 工作流 `40505293561` 已触发但在记录时尚在安装依赖，**无合格 MP4 / 公开 URL**，不计新 Short。cfbrower 卡死阻断登录上传。 |
+| 7 GSC / 收录 | 🟡 | 原生登录 GSC 正确资源 `sc-domain:coopcheck.serunio.com`；近三个月 23 impressions、0 clicks、平均位次 26.4；索引 1 / 未索引 115（索引报告更新 10/23），查询有 `how many chickens can you have in the city limits`。按真实查询增加首页城市资料链接、政府来源引用（与 #9 同一提交，不重复全额计功）；IndexNow `40504076482` success 不等于 Google 收录；浏览器后续中断，未完成实机 URL Inspection。 |
+| 8 GA4 / 转化 | 🟡 | 独立修改 `site/assets/analytics.js`，新增主页答疑 → 同源城市资料页 `city_limits_city_click` 事件，携带目的页面/漏斗阶段且排除跨站。后续 JS 语法修正提交 `2edb97b`，静态回归 `685083f`，Pages CI success；没有可用可信 GA4 真实访问/事件流观测，故标部分完成。 |
+| 9 SEO 内容 | ✅ | 根据 GSC 实测查询重写首页 How many chickens can you have in city limits? 解答；以 Portland Code §13.40.020 与 San Diego 市政府鸡舍政策核实后追加差异化4/6与5/15/25分级事实、主站内链与政府直链，禁止“全美统一上限”的误导。提交 `c787309c01f0ab7e92f86c2dcad32e55a6e28994`，后续 Pages CI 和正式部署 `40503866316` success。 |
+| 10 代码 / 线上 | ✅ | 编写独立外部 GitHub Actions 可复现 DNS/HTTPS/redirect 审计 `.github/workflows/site-link-audit.yml`，工作流 `40504986406` success：`serunio.com` / `www.serunio.com` **DNS 解析失败**，CoopCheck 首页、robots、sitemap、指南 **HTTP 200, no redirect, curl TLS 验证值 0**。和 Pinterest 裁定原因尚无因果证明；不擅自改整个主域名 DNS。新增 `scripts/qa-growth-p0.cjs` 回归检测：首页问题答案、政府原始来源、双精准导航事件与分析脚本 JavaScript 可解析，提交 `685083f8267ed726cb2cea01a0a08c4115d9b890`，Pages CI `40503866316` success，后续 Pages `40505293574` success。 |
+
+## 截至本轮的商业结果、限制与先后顺序
+
+- 本轮新公开 Shorts 0（Portland 仅源码+工作流运行中）、新 Pinterest Pin 0、新 Reddit/BYC 回帖 0；新编辑联络 SENT 1 次，新增获核实自然反链 0。网站真实新访客、有效工具使用、付费订单、净收入均 **未知**，不能将无可用数据等同零收入。
+- 同日较早的 Pinterest 申诉成功提交已被新邮件的**不予解锁**裁定覆盖。联系 Pinterest 下一步需先查明确整改证据，并确认复核通道仍然允许；不做重复申诉/短链绕过。
+- 下一优先级：核实 apex DNS 预期用途和 DNS 记录（不直接改）；等 Chrome/CDP 无重启式诊断后才补社区/Shorts 发布及 GA4 页面事件实机验证；Portland 工作流输出需先校验实际视频、旁白时长、是否通过真实法规页面录屏，然后再谈上传。
+
+---
+
 # 2026-10-27 — Pinterest 网站链接误拦截：官方申诉已提交（原生客服表单）
 
 - 使用登录的 `@coopcheckplans` 账号，通过 cfbrower 访问 Pinterest Help 的 Business → **Pinterest blocked my site** → **Still need help?**，原生表单分类 `form_category=appeals&form_type=site_blocked`。
