@@ -102,7 +102,7 @@
     if(location.pathname==="/"&&a.dataset?.ccEvent==="city_limits_city_click"){
       try{
         const dest=new URL(a.href,location.href);
-        if(dest.origin===location.origin&&/^\\/cities\\/[a-z0-9-]+\\.html$/.test(dest.pathname)){
+        if(dest.origin===location.origin&&dest.pathname.startsWith("/cities/")&&dest.pathname.endsWith(".html")){
           window.coopTrack("city_limits_city_click",{
             source_page:location.pathname,
             destination_page:dest.pathname,
