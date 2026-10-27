@@ -1,3 +1,13 @@
+# 2026-10-27 — Pinterest 网站链接误拦截：官方申诉已提交（原生客服表单）
+
+- 使用登录的 `@coopcheckplans` 账号，通过 cfbrower 访问 Pinterest Help 的 Business → **Pinterest blocked my site** → **Still need help?**，原生表单分类 `form_category=appeals&form_type=site_blocked`。
+- 选项：**I can't create Pins with my site on Pinterest**。主题：**Manual review requested: CoopCheck website link incorrectly blocked**。说明中包含站点教育定位、问题具体页面、现有公开 Pin 的链接及请求人工复核整个子域名；填写原始错误“抱歉！我们阻止了此链接，因为它可能转至垃圾信息。”及其英文释义。
+- 问题网址：`https://coopcheck.serunio.com/guides/prefab-chicken-coop-buying-guide.html`，事例 Pin：`https://www.pinterest.com/pin/1125337025678704189/`。提交时表单识别账号用户名 `coopcheckplans`，邮箱为该账号注册邮箱；无附件。
+- **实际点击 Submit 并在 `https://help.pinterest.com/en/contact/success/` 独立核验回执**：**“We got your message” / “Request sent!” / “Check your email for updates.”**。页面没有给出工单号。**仅证明申诉成功提交，不代表解除屏蔽**。
+- 本次操作前 cfbrower 重新连接成功，之前的 `async initializeServer` 超时在用户重启 Chrome 和 MCP 服务后解除。期间个别远程 MCP 调用有短暂连接中断，但最终提交回执清晰。后续需跟踪 Pinterest 邮件确认、人工审核反馈与网站链接是否恢复，避免重复提交。
+
+---
+
 # 2026-10-27 — 发布专项续轮：Pinterest 新图 + Sacramento Shorts（已公开验证）
 
 > 这是用户明确要求“继续发布”的两渠道专项续做，不虚增其他八模块验收；公开发布新增 **Pinterest Pin 1 / YouTube Shorts 1**。运行时仅保留 cfbrower **1 个标签页**，顺序复用。
