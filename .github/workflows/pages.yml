@@ -69,6 +69,9 @@ jobs:
       - name: Verify source-backed city benchmark pages
         run: node scripts/qa-benchmark-cities.cjs
 
+      - name: Guard time-sensitive Grover Beach policy status
+        run: node scripts/qa-grover-beach-status.cjs
+
       - name: Verify quick flock screening and five-city field evidence
         run: node scripts/qa-quick-check.cjs
 
