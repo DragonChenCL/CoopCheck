@@ -1,0 +1,64 @@
+name: Bridge Portland source-verified Short for social upload
+
+on:
+  push:
+    paths:
+      - ".github/workflows/coopcheck-portland-media-bridge.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Retrieve the previously-rendered and reviewed Portland Short
+        uses: actions/download-artifact@v4
+        with:
+          name: CoopCheck-Portland-Rules-Short-20261027
+          run-id: 40505293561
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: source-artifact
+
+      - name: Install ffprobe for deterministic media validation
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
+      - name: Identify, verify, and copy intended public marketing media
+        shell: bash
+        run: |
+          set -euo pipefail
+          find source-artifact -type f -printf '%p %s bytes\n'
+          video="$(find source-artifact -type f -name 'coopcheck_city_rules_short.mp4' -print -quit)"
+          cover="$(find source-artifact -type f -name 'cover_city_rules.jpg' -print -quit)"
+          test -n "$video"
+          test -n "$cover"
+          mkdir -p bridge-media
+          cp "$video" bridge-media/CoopCheck-Portland-Rules-Short-20261027.mp4
+          cp "$cover" bridge-media/CoopCheck-Portland-Rules-Cover-20261027.jpg
+          test -s bridge-media/CoopCheck-Portland-Rules-Short-20261027.mp4
+          test -s bridge-media/CoopCheck-Portland-Rules-Cover-20261027.jpg
+          ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height -of default=noprint_wrappers=1 bridge-media/CoopCheck-Portland-Rules-Short-20261027.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 bridge-media/CoopCheck-Portland-Rules-Short-20261027.mp4
+          sha256sum bridge-media/CoopCheck-Portland-Rules-Short-20261027.mp4 bridge-media/CoopCheck-Portland-Rules-Cover-20261027.jpg
+
+      - name: Make marketing video publicly retrievable for authenticated platform upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bridge-media/CoopCheck-Portland-Rules-Short-20261027.mp4 bridge-media/CoopCheck-Portland-Rules-Cover-20261027.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(marketing): stage Portland Short media for upload [skip ci]"
+            git push origin HEAD:main
+          fi
