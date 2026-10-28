@@ -1,3 +1,30 @@
+# 2026-10-28 — CoopCheck 新一轮：原生 GSC 收录明细、编辑投递与 Pinterest/Gmail 复核
+
+> **本轮 SOP V1.2 实际新增验收：✅1 / 🟡3 / ⛔6（总计 1/10 独立模块完成）**。与 10/27 的投稿、新闻回复、Pinterest Pin 和 Sacramento Short 不重复计数。GSC 原生事实记录已写成独立审计文件；不能把浏览、写文档或检查当成站点获客/付费成功。
+
+| # | 模块 | 状态 | 本轮事实、行动和证据 |
+| --- | --- | --- | --- |
+| 1 | Gmail | 🟡 | 检查合作回信、退信和 Pinterest 法务反馈。New Times SLO 记者 Bulbul Rajagopal 于 10/26 对研究数据库表示兴趣（消息 `1a17a98f59cb96e9`），原线程已于 10/27 回复，无本轮新回信或再次催促。Rediscover Rural $50 付费投稿之前已拒绝。Pinterest 10/27 的 `pinbot@legal.pinterest.com` 回信拒绝解锁 `serunio.com`（消息 `1a17cba2bbf45abc`），未表明单独审核了具体子域名。 |
+| 2 | 编辑合作 | ✅ | 核对已有邮件排重；向 Patio & Lawn 编辑公开地址 `editorial@patioandlawn.org` 发出**一封新、个性化、免费、基于实际法规引用**的鸡舍选址退距研究提案，正文链接已有退距指南。Gmail **SENT** 消息/线程 ID `1a181c09014c68c3`。有效投递给真人、采纳、公开反链、自然引荐均未证实。本轮新增编辑投递 1，新增已确认自然反链 0。 |
+| 3 | Reddit | ⛔ | 检索真实相关帖子（如 `https://www.reddit.com/r/BackYardChickens/comments/1xdtz65/building_new_coop_and_run_any_cool_ideas/`，10/23），未完成社区规则、账号和自有回复身份核对；本轮无公开发布/回复，不将检索记作互动。 |
+| 4 | BackYardChickens | ⛔ | 已回顾旧帖子待版主审核/邮箱验证限制，未取得本轮新审核回执或公开互动；未重复发帖。 |
+| 5 | Pinterest | ⛔ | 已知 CoopCheck 目的域名链接被拦，10/27 官方回信拒绝解锁 `serunio.com`；未发布新 Pin，未利用短链/跳转规避。前日无外链 Pin 不计本轮流量。 |
+| 6 | YouTube | ⛔ | 复核 Portland Short GitHub Actions run `40505293561`：render job **cancelled** 于依赖安装，artifact 列表空，故未形成 MP4、未上传、未发布。vidIQ 账号 `chenlongqrr@gmail.com` 目前无连接频道；Sacramento 已在 10/27 发布，不重复发布。 |
+| 7 | GSC | 🟡 | **原生** Google Search Console 2026-10-28 浏览器实测：7 天 0 clicks / 0 impressions；28 天 0 / 5；3 个月 0 / 23（平均排名 26.4）。索引报告截至 10/23：**1 indexed、115 not indexed，其中 95 discovered not indexed、20 crawled not indexed**。具体已抓取示例包含首页、Portland、退距指南、`coop-plan.html`。两份站点地图状态都是 Success，分别发现 123/127 URL（最后读取 10/22 和 10/25）。GSC 链接报告外部链接数 0。形成新增可追溯调查文档 `docs/operations/GSC_INDEX_AUDIT_2026-10-28.md`，commit `c721620bfb34902e3c8c9fbc0f307ddb5f306c61`，但未完成高优 URL Inspection 和修复，故按部分完成。 |
+| 8 | GA4 / 支付 | ⛔ | Windsor.ai 显示 GA4 `555450721` 和 GSC 等共 4 账户，Free 仅允许 1 个；所有查询返回明示 *not your real numbers* 暂停占位消息，数据不可用。没有新的可信 GA4 访客/事件/购买/收入结论，未改动用户连接。 |
+| 9 | SEO 内容 | 🟡 | 核实主仓库存量：canonical、robots、Sitemap 和 research-pending 城市页 `noindex` 策略；新建针对 20 个已抓取未收录示例的研究清单和按证据排序的处理优先级（见本轮 GSC audit）。**没有修改/上线新的公开 SEO 内容**，不能当作搜索增量交付。 |
+| 10 | 代码与线上 | ⛔ | 核查最近 repo commits 和 Portland Actions 运行状态；未作生产代码修复或本轮 CI/线上页面验证。仅在 docs/operations/ 新增审计文档/运营日志，不当作产品发布。远程浏览器有两个 GSC 相关 tab，尝试关闭 tab 1 收到 `Tab 1 not found`，此调用没有成功清理凭据，后续操作复用当前 tab 0。 |
+
+## 本轮独立可靠结果及后续
+
+- **新增实操**：新编辑研究型邮件 SENT 1，原生 GSC 全面数据核查 1，研究留痕文档 1；新 Reddit/BYC 回帖 0、新 Pin 0、新 Short 0、新线上 SEO 页面 0、新已验证自然反链 0。
+- **商业指标**：GSC 7/28 天 clicks 为 0，28 天 impressions 为 5，GSC Links 报告现显示外链 0；**GA4 真实访客、工具使用、付费订单、收入 UNKNOWN**，第三方连接器占位数不能当 0。此前日志纪录的广告来源和发布事实不重复记功。
+- **先后顺序**：P0 首页、Portland、退距指南、Coop Plan 的 URL Inspection（Google-selected canonical/抓取 HTML/状态）；P0 对比 `/sitemap` vs `/sitemap.xml` 当前响应并确认只提交规范可索引页面；P1 等已联系编辑的自然反馈，Pinterest 先有整改证据后再审慎走官方渠道；P1 逐个恢复社群/YouTube 发布的浏览器、视频实际工件与账号条件，绝不报假成果。
+
+审计文档：<https://github.com/DragonChenCL/CoopCheck/blob/main/docs/operations/GSC_INDEX_AUDIT_2026-10-28.md>。
+
+---
+
 # 2026-10-27 晚间 — CoopCheck SOP 续轮：Pinterest 申诉拒绝、媒体投递、索引搜索意图整改、外部 DNS 审计
 
 > 本轮依据 SOP V1.2 实际执行并保留 ID/commit；所有统计按本轮新增计，不重复计算当日先前 Pinterest Pin 或 Sacramento Shorts。**结果：✅4 / 🟡2 / ⛔4。** YouTube 新视频制作中，未取得成片/上传/公开证据，所以暂按阻塞而非成功发布。
