@@ -1,3 +1,15 @@
+# 2026-10-28 — CoopCheck 完整续轮：原生 GSC 索引定位、Portland Shorts 已公开、个性化编辑投递
+
+> 逐模块严格验收：**✅ 3 / 🟡 3 / ⛔ 4**。本轮新增公开 Portland Short 1 条，个性化媒体邮件 Gmail SENT 1 封，新增已核实自然外链 0。GA4 访客/付费仍 UNKNOWN。**[完整十模块核对与证据](RUN_2026-10-28.md)**。
+
+- **YouTube ✅**：已通过真实 Studio 发布回执并独立播放验证（30.061 秒）：https://www.youtube.com/shorts/2mrPJqmRArw 。新桥接 workflow run 40664028649 success，commit e049fa65dc3b4f0441c0c411bf7c6bf3ae482202。
+- **编辑合作 ✅**：Patio & Lawn 针对物业边界/相邻建筑测距的来源型编辑提案已发送，Gmail ID `1a181c09014c68c3`；采纳/外链 UNKNOWN。
+- **GSC 🟡**：2026-10-23 索引报告 1 收录（/states/oregon.html）、115 未收录（95 已发现未抓取、20 已抓取未收录）；首页、Portland、工具页属于后者。7 天曝光 0/点击 0，28 天曝光 5/点击 0，3 个月曝光 23/点击 0；两份 sitemap success，外链报告 0。未重复提交。
+- **代码 ✅**：视频中转 Actions 已成功，素材存在 GitHub bridge-media/；YouTube 可公开访问。远程 Chrome 实际关闭 2 个残留 GSC 页签，保留单 tab。
+- **其余**：Reddit / BYC 未新发（规约/效果不足），Pinterest 主域名拦截拒绝不绕过；Windsor GA4 免费套餐停止真实数据读取，不能将占位数据当 0。SEO live 页面可正常加载，未为凑数反复改写标签。
+
+---
+
 # 2026-10-28 — CoopCheck 新一轮：原生 GSC 收录明细、编辑投递与 Pinterest/Gmail 复核
 
 > **本轮 SOP V1.2 实际新增验收：✅1 / 🟡3 / ⛔6（总计 1/10 独立模块完成）**。与 10/27 的投稿、新闻回复、Pinterest Pin 和 Sacramento Short 不重复计数。GSC 原生事实记录已写成独立审计文件；不能把浏览、写文档或检查当成站点获客/付费成功。
