@@ -1,0 +1,88 @@
+name: Render conflict-hook Shorts covers for YouTube upload
+
+on:
+  push:
+    paths:
+      - ".github/workflows/coopcheck-conflict-covers.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install Pillow
+        run: python -m pip install --quiet pillow
+      - name: Render fact-checked 9:16 covers from existing CoopCheck imagery
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageDraw,ImageFont,ImageEnhance,ImageFilter
+          import os
+          root=Path('bridge-media')
+          items=[
+            ('CoopCheck-Portland-Rules-Cover-20261027.jpg','CoopCheck-Portland-Conflict-Cover-20261029.jpg',('6 HENS?','NOT EVERY LOT'),'PORTLAND RULES'),
+            ('CoopCheck-Sacramento-Rules-Cover-20261026.jpg','CoopCheck-Sacramento-Conflict-Cover-20261029.jpg',('20 FT RULE?','CHECK FIRST'),'SACRAMENTO CITY'),
+            ('CoopCheck-4x8-Cover-20261026.jpg','CoopCheck-4x8-Conflict-Cover-20261029.jpg',('32 SQ FT?','NOT ALL INDOORS'),'4 x 8 COOP CHECK'),
+            ('CoopCheck-4x8-Cover-20261026.jpg','CoopCheck-14Hens-Conflict-Cover-20261029.jpg',('14 HENS?','CHECK THE MATH'),'CAPACITY VS LABEL'),
+          ]
+          W,H=1080,1920
+          fontfile='/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf'
+          for src,dst,lines,footer in items:
+            photo=Image.open(root/src).convert('RGB')
+            iw,ih=photo.size
+            factor=max(W/iw,H/ih)
+            rw,rh=round(iw*factor),round(ih*factor)
+            photo=photo.resize((rw,rh),Image.Resampling.LANCZOS)
+            left=max(0,(rw-W)//2);top=max(0,(rh-H)//2)
+            im=photo.crop((left,top,left+W,top+H))
+            im=ImageEnhance.Contrast(im).enhance(1.08)
+            overlay=Image.new('RGBA',(W,H),(0,0,0,0))
+            d=ImageDraw.Draw(overlay)
+            # Dark top gradient; preserve the photography in the bottom half.
+            for y in range(0,850,4):
+              alpha=int(235*(1-y/950)**1.3)
+              d.rectangle((0,y,W,y+4),fill=(4,12,18,max(0,alpha)))
+            d.rounded_rectangle((66,1245,1014,1386),radius=24,fill=(255,213,26,240))
+            fs=64
+            while True:
+              font=ImageFont.truetype(fontfile,fs)
+              if d.textbbox((0,0),footer,font=font)[2] <= 868: break
+              fs-=2
+            d.text((W/2,1312),footer,font=font,fill=(8,15,18,255),anchor='mm')
+            title_y=140
+            for idx,line in enumerate(lines):
+              fs=205 if idx==0 else 161
+              while True:
+                font=ImageFont.truetype(fontfile,fs)
+                if d.textbbox((0,0),line,font=font,stroke_width=9)[2]<=W-100:break
+                fs-=2
+              fill=(255,219,27,255) if idx==0 else (255,255,255,255)
+              d.text((W/2,title_y),line,font=font,fill=fill,stroke_width=12,stroke_fill=(0,0,0,255),anchor='mt')
+              title_y+=int(fs*1.32)
+            d.rounded_rectangle((64,1770,1016,1850),radius=18,fill=(225,36,35,242))
+            ft=ImageFont.truetype(fontfile,45)
+            d.text((W/2,1810),'COOPCHECK • CHECK BEFORE BUILDING',font=ft,fill=(255,255,255,255),anchor='mm')
+            im=Image.alpha_composite(im.convert('RGBA'),overlay).convert('RGB')
+            outfile=root/dst
+            im.save(outfile,'JPEG',quality=90,optimize=True,subsampling=0)
+            print(outfile,im.size,outfile.stat().st_size)
+          PY
+      - name: Commit marketing image bridge
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bridge-media/*-Conflict-Cover-20261029.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(marketing): stage conflict-hook Shorts covers for upload [skip ci]"
+            git push origin HEAD:main
+          fi
