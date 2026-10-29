@@ -1,0 +1,55 @@
+name: CoopCheck SEO MCP read-only trial
+
+on:
+  push:
+    branches:
+      - seo-mcp-readonly-trial-20261029
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-seo-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout CoopCheck
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch pinned Google SEO MCP
+        run: |
+          mkdir _seo_mcp
+          git -C _seo_mcp init
+          git -C _seo_mcp remote add origin https://github.com/Akxan/google-seo-mcp.git
+          git -C _seo_mcp fetch --depth 1 origin faa34653cf372689c02810cb9b9a0bc5c23f04bc
+          git -C _seo_mcp checkout --detach FETCH_HEAD
+
+      - name: Install and build MCP
+        working-directory: _seo_mcp
+        run: |
+          npm ci
+          npm run build
+
+      - name: Run public read-only audit
+        working-directory: _seo_mcp
+        env:
+          SEO_MCP_READ_ONLY: '1'
+          SEO_MCP_TOOLSETS: web
+        run: |
+          cp ../scripts/seo-mcp-readonly-audit.mjs ./audit.mjs
+          node ./audit.mjs
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coopcheck-seo-mcp-readonly-report
+          path: seo-mcp-audit-output/
+          if-no-files-found: warn
+          retention-days: 14
