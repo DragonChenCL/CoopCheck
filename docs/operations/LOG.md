@@ -2,7 +2,8 @@
 
 > **验收：✅ 2 / 🟡 8 部分推进 / ⛔ 0**（无模块冒充已发布）。本轮完成：Gmail 跟进与新编辑投递、Lakewood 官方资料核验与 City Clerk 请求、Reddit/BYC 可复用回复草稿、Pinterest 原创 Pin 图与文案、YouTube 30 秒成片与封面、Dallas 法规回归测试 PR。社交平台实际发布 0；GA4/GSC 当前真实指标不可读；新增已验证自然反链 0。**[十模块明细与证据](RUN_2026-11-01.md)**。
 
-- **Gmail / 平台邮件 ✅**：Tualatin Life Tigard 资料更新 SENT `1a194d9ea36461fa`；Lakewood City Clerk 法规核验请求 SENT `1a194dd3312a4904`；新站点 Backyard Studio Lab pitch SENT `1a194db5350ee6b0` + refined follow-up `1a194e0bf7ef2aa3`（同一收件人意外近重复，按 1 个站点计数，不再追发）；Waddle & Cluck follow-up SENT `1a194d9f11ce1b3c`（既有联系人）。均未确认采纳/反链。
+- **Gmail / 平台邮件 ✅**：Tualatin Life Tigard 资料更新 SENT `1a194d9ea36461fa`；Lakewood City Clerk 法规核验请求 SENT `1a194dd3312a4904`。两封均已送出，尚无回复。
+- **新编辑合作 ✅**：Backyard Studio Lab 新站点 pitch SENT `1a194db5350ee6b0`，随后误发一封 5 分钟内近重复的 refined follow-up `1a194e0bf7ef2aa3`；只按 1 个站点计数，不再追发。另向既有联系人 Waddle & Cluck follow-up SENT `1a194d9f11ce1b3c`。采纳/反链均未确认。
 - **Reddit / BYC 🟡**：未发布；Reddit 规则/新帖未能完成可靠核验，BYC Joliet 讨论已准备不带推广链接的来源谨慎回复。草稿见 `REDDIT_REPLY_TEMPLATE_2026-11-01.md`、`BYC_JOLIET_REPLY_2026-11-01.md`。
 - **Pinterest 🟡**：生成新竖版 Pin 视觉与无链接文案，未发布；主域名/子域名限制不绕过。见 `PINTEREST_PIN_2026-11-01.md`。
 - **YouTube 🟡**：新做 30 秒 1080×1920 H.264/AAC Short，ffprobe 校验通过，封面已检查；未上传，当前系统 TTS 需复核/替换。发布包在本轮会话文件中，说明见 `YOUTUBE_SHORT_2026-11-01.md`。
