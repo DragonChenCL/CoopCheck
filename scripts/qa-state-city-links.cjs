@@ -23,7 +23,7 @@ for(const [code,slug] of Object.entries(states)){
   }
   const city=read("cities/"+c.slug+".html");
   if(c.rollout?.batch==="first-100-2026-10"||!["NY","MN","WI","IN","NC"].includes(code)){
-   assert(city.includes('class="cc-related-cities"'),"city missing related links: "+c.slug);
+   assert(city.includes('class="section cc-related-cities"'),"city missing related links: "+c.slug);
    assert(city.includes('/states/'+slug+'.html'),"city missing state hub link: "+c.slug);
   }
   if(c.audit.status==="needs_review"){
