@@ -49,4 +49,21 @@ for(const c of registry.cities.filter(c=>c.audit.status==="needs_review")){
  const html=fs.readFileSync(path.join(root,"site/cities",c.slug+".html"),"utf8");
  assert(html.includes('content="noindex,follow"'));
 }
+// Dallas 2026 council action: preserve uncertainty until the enrolled amendment and
+// operative consolidated §7-7.3 are independently available. Do not regress to the
+// older categorical rooster ban or present its former 20-ft exception setback as current.
+const dallas=city("dallas-tx"),de=ev["dallas-tx"];
+assert.equal(dallas.audit.status,"verified_limited_scope");
+assert.equal(dallas.planner.mode,"manual");
+assert.match(dallas.roosters,/does NOT establish unconditional rooster permission/i);
+assert.match(dallas.placement,/MAY be superseded/i);
+assert.match(dallas.placement,/NOT confirmed/i);
+assert.equal(de.roosters.status,"source_recorded");
+assert.equal(de.placement.status,"source_recorded");
+assert.match(de.roosters.detail,/NOT a current legal permission/i);
+const dallasHtml=fs.readFileSync(path.join(root,"site/cities/dallas-tx.html"),"utf8");
+assert.match(dallasHtml,/Dallas Animal Services: keeping of roosters/);
+assert.match(dallasHtml,/Do not copy the 20-foot enclosure distance/i);
+assert.match(dallasHtml,/rule-specific setback automation is not supported for Dallas/i);
+assert(!/roosters are prohibited/i.test(dallas.roosters),"Dallas must not regress to the superseded categorical rooster ban");
 console.log("PASS: recent primary-code evidence, limited scope, zoning caveats and pending-city noindex");
