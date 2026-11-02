@@ -257,6 +257,20 @@
     const q=Number(params.get("hens"));
     if(validFlock(q))flock.value=String(q);
     choose("cabana");
+    // History traversal can restore native form values after pageshow/popstate,
+    // without firing input/change. Read them in the next task; do not reapply
+    // URL defaults or count restoration as a fresh buyer interaction.
+    const view=doc.defaultView;
+    if(view?.addEventListener&&view?.setTimeout){
+      let restorationPending=false;
+      const reconcileRestoredForm=()=>{
+        if(restorationPending)return;
+        restorationPending=true;
+        view.setTimeout(()=>{restorationPending=false;render();},0);
+      };
+      view.addEventListener("pageshow",reconcileRestoredForm);
+      view.addEventListener("popstate",reconcileRestoredForm);
+    }
   }
   return {PRODUCTS,SOURCE,SPEC_SNAPSHOT_DATE,benchmark,validFlock,calculateArea,analyze,sellerQuestion,referenceDifference,comparisonText,mount};
 });

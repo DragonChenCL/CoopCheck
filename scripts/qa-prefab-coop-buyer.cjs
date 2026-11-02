@@ -57,7 +57,7 @@ for(const item of api.PRODUCTS){
 const h=read('site/guides/prefab-chicken-coop-capacity-checker.html');
 assert(h.includes('<link rel="canonical" href="https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html">'));
 assert(h.includes('name="robots" content="index,follow"'));
-assert(h.includes('/assets/prefab-capacity.js?v=20261102-1'));
+assert(h.includes('/assets/prefab-capacity.js?v=20261102-2'));
 assert(h.includes('/assets/prefab-capacity.css?v=20261102-1'));
 for(const id of ['bcFlock','bcOutdoor','bcResults','bcBar','bcCopyQuestion','bcCopyCheck','bcPrint','bcPrintRecord','bcScenario','bcReferenceDifference','bcCustomFields','bcCustomLength','bcCustomWidth','bcCustomRunLength','bcCustomRunWidth','bcCustomName','bcUnit','bcRunEvidence','bcSellerSource'])
   assert(h.includes('id="'+id+'"'),'Required form/control ID '+id);
@@ -98,10 +98,14 @@ mockEls.get('bcUnit').value='ft';
 const makeChoice=id=>({dataset:{bcPick:id},handlers:{},setAttribute(){},classList:{toggle(){}},addEventListener(type,fn){this.handlers[type]=fn;}});
 const choices=api.PRODUCTS.map(p=>makeChoice(p.id));
 choices.push(makeChoice('custom'));
+const viewHandlers=new Map(),restoreTasks=[];
+function flushRestoreTasks(){while(restoreTasks.length)restoreTasks.shift()();}
 const fakeDoc={
   getElementById:id=>mockEls.get(id)||null,
   querySelectorAll:sel=>sel==='[data-bc-pick]'?choices:[],
-  defaultView:{location:{search:'?hens=7'},print(){}}
+  defaultView:{location:{search:'?hens=7'},print(){},
+    addEventListener(type,fn){viewHandlers.set(type,fn);},
+    setTimeout(fn){restoreTasks.push(fn);}}
 };
 assert.doesNotThrow(()=>api.mount(fakeDoc),'Mount should not reference an out-of-scope root');
 assert.equal(mockEls.get('bcFlock').value,'7','URL parameter prefills valid user flock');
@@ -113,6 +117,33 @@ assert.equal(new URL(mockEls.get('bcCalcLink').href,'https://coopcheck.serunio.c
 assert.match(mockEls.get('bcScenario').textContent,/7 adult hens.*Reliable daily/);
 assert.match(mockEls.get('bcReferenceDifference').textContent,/21 sq ft.*28 sq ft indoors/,'Explain both indoor references beside the result');
 assert(mockEls.get('bcPrintRecord').textContent.includes(api.PRODUCTS[0].source),'Print record must retain sources hidden by the old print stylesheet');
+// Browsers may restore form values after pageshow without input/change events.
+// Reproduce the live 6-result / 8-input mismatch before flushing the next task.
+const restoreEvents=[],beforeRestoreTracker=globalThis.coopTrack;
+globalThis.coopTrack=(name,params)=>restoreEvents.push({name,params});
+for(const persisted of [false,true]){
+  mockEls.get('bcFlock').value='6';mockEls.get('bcFlock').handlers.input();
+  viewHandlers.get('pageshow')?.({persisted});
+  mockEls.get('bcFlock').value='8'; // Native restoration, deliberately no input event.
+  assert.equal(mockEls.get('bcBenchmark').textContent,'18 sq ft','Fixture recreates the reported late-restoration bug');
+  flushRestoreTasks();
+  assert.equal(mockEls.get('bcFlock').value,'8','Restored input must not be overwritten by the initial ?hens=7 URL');
+  assert.equal(mockEls.get('bcBenchmark').textContent,'24 sq ft','Restored eight-hen result recomputes on both reload and bfcache return');
+  assert.match(mockEls.get('bcScenario').textContent,/8 adult hens/);
+  assert.match(mockEls.get('bcPrintRecord').textContent,/Flock: 8 adult hens/);
+  assert.match(mockEls.get('bcCalcLink').href,/flock=8/);
+  assert.match(mockEls.get('bcPlanLink').href,/flock=8/);
+}
+viewHandlers.get('popstate')?.({state:null});
+mockEls.get('bcOutdoor').value='no'; // Restored after popstate, as with history traversal.
+flushRestoreTasks();
+assert.equal(mockEls.get('bcBenchmark').textContent,'64 sq ft');
+assert.equal(mockEls.get('bcCalcLink').href,'','Restored confinement must update the downstream scenario guard');
+assert.match(mockEls.get('bcPrintRecord').textContent,/No regular outdoor access selected/);
+assert.equal(restoreEvents.length,0,'Browser restoration is not a new buyer action or conversion');
+if(beforeRestoreTracker===undefined)delete globalThis.coopTrack;
+else globalThis.coopTrack=beforeRestoreTracker;
+mockEls.get('bcFlock').value='7';mockEls.get('bcOutdoor').value='yes';mockEls.get('bcFlock').handlers.input();
 const analyticsEvents=[];
 const originalTracker=globalThis.coopTrack;
 globalThis.coopTrack=(name,params)=>analyticsEvents.push({name,params});
@@ -176,5 +207,5 @@ assert.equal(sizeEls.get('calcRun').textContent,'80 sq ft');
   if(oldNavigator)Object.defineProperty(globalThis,'navigator',oldNavigator);
   else delete globalThis.navigator;
  }
- console.log('PASS: sourced prefab products, scenario arithmetic, unknown run, copy/print evidence parity, clipboard-denial fallback, historical source date, first-render boot, retained-flock destination, reference differences, unsupported-scenario guards, invalid-export prevention, deliberate analytics actions, and canonical sitemap');
+ console.log('PASS: sourced prefab products, scenario arithmetic, unknown run, copy/print evidence parity, clipboard-denial fallback, historical source date, first-render boot, retained-flock destination, deferred history-restoration sync, reference differences, unsupported-scenario guards, invalid-export prevention, deliberate analytics actions, and canonical sitemap');
 })().catch(error=>{console.error(error);process.exitCode=1;});
