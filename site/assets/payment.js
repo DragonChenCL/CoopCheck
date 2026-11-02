@@ -9,10 +9,21 @@
   if(!button)return;
 
   const projectKey="coopcheck:project-id";
-  let projectId=localStorage.getItem(projectKey);
-  if(!projectId){
-    projectId="coop_"+crypto.randomUUID().replaceAll("-","");
-    localStorage.setItem(projectKey,projectId);
+  let projectId;
+  try{
+    projectId=localStorage.getItem(projectKey);
+    if(!projectId){
+      projectId="coop_"+crypto.randomUUID().replaceAll("-","");
+      localStorage.setItem(projectKey,projectId);
+    }
+  }catch(_){
+    // A checkout without a recoverable local project/token could strand a paid
+    // report. Keep the free tools available, but never start an order here.
+    button.disabled=true;
+    button.textContent="Report checkout unavailable in this browser";
+    if(status)status.textContent="This browser cannot save your report access. Enable site storage and reload before purchasing. Export your sketch before changing browser settings. No checkout has been started.";
+    window.coopTrack?.("payment_storage_unavailable",{app:APP,sku:SKU});
+    return;
   }
 
   const entitlementKey="coopcheck:entitlement:"+SKU+":"+projectId;

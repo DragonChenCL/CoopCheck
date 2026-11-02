@@ -2,6 +2,7 @@
 'use strict';
 const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path');
+const vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const api=require('../site/assets/prefab-capacity.js');
@@ -32,6 +33,22 @@ assert.equal(api.analyze(api.PRODUCTS[2],4,true).run,0,'PawHut run not included'
 assert.equal(api.analyze({indoor:null,run:null},6,true).status,'unknown','Missing specs must not become zero or guessed');
 assert.equal(api.analyze(null,6,true),null);
 assert.equal(api.analyze(api.PRODUCTS[0],6.5,true),null);
+const savedCheck=api.comparisonText(api.PRODUCTS[0],6,true);
+assert.match(savedCheck,/Flock: 6 adult hens/);
+assert.match(savedCheck,/Outdoor\/run access: Reliable daily access selected/);
+assert.match(savedCheck,/6 × 3 sq ft = 18 sq ft/);
+assert(savedCheck.includes(api.PRODUCTS[0].source)&&savedCheck.includes(api.SOURCE),'Portable check retains source URLs');
+assert(savedCheck.includes('originally reviewed: 2026-10-15'),'Calculation must not overwrite the historical seller specification date');
+assert(savedCheck.includes('4 sq ft indoor + 10 sq ft run'),'A portable result must explain the next tool\'s different assumption');
+const indoorOnlyCheck=api.comparisonText(api.PRODUCTS[1],4,false);
+assert.match(indoorOnlyCheck,/4 × 8 sq ft = 32 sq ft/);
+assert.match(indoorOnlyCheck,/8–10 sq ft/,'Retain the full source range alongside the chosen low end');
+assert.match(indoorOnlyCheck,/Reported run area: Unknown/,'Unknown run stays unknown in export');
+assert.match(api.comparisonText(api.PRODUCTS[2],4,true),/Reported run area: No run included/);
+const customCheck=api.comparisonText({name:'My coop',indoor:20,run:null,indoorEvidence:'Your dimensions: 5 × 4 ft'},4,true);
+assert.match(customCheck,/Measurement review date: unknown/,'User inputs are not represented as source-reviewed product specs');
+assert(!customCheck.includes('originally reviewed: 2026-10-15'));
+assert.match(api.sellerQuestion(api.PRODUCTS[0],8,false),/8 adult hens without regular outdoor\/run access/,'Seller request keeps the buyer\'s actual scenario');
 for(const item of api.PRODUCTS){
   assert(item.source.startsWith('https://'),'Official supplier source for '+item.id);
   assert(item.indoorEvidence.length>15,'Describe the original evidence');
@@ -40,9 +57,9 @@ for(const item of api.PRODUCTS){
 const h=read('site/guides/prefab-chicken-coop-capacity-checker.html');
 assert(h.includes('<link rel="canonical" href="https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html">'));
 assert(h.includes('name="robots" content="index,follow"'));
-assert(h.includes('/assets/prefab-capacity.js?v=20261015-2'));
-assert(h.includes('/assets/prefab-capacity.css?v=20261015-1'));
-for(const id of ['bcFlock','bcOutdoor','bcResults','bcBar','bcCopyQuestion','bcPrint','bcCustomFields','bcCustomLength','bcCustomWidth','bcCustomRunLength','bcCustomRunWidth','bcCustomName','bcUnit','bcRunEvidence','bcSellerSource'])
+assert(h.includes('/assets/prefab-capacity.js?v=20261102-1'));
+assert(h.includes('/assets/prefab-capacity.css?v=20261102-1'));
+for(const id of ['bcFlock','bcOutdoor','bcResults','bcBar','bcCopyQuestion','bcCopyCheck','bcPrint','bcPrintRecord','bcScenario','bcReferenceDifference','bcCustomFields','bcCustomLength','bcCustomWidth','bcCustomRunLength','bcCustomRunWidth','bcCustomName','bcUnit','bcRunEvidence','bcSellerSource'])
   assert(h.includes('id="'+id+'"'),'Required form/control ID '+id);
 for(const id of api.PRODUCTS.map(x=>x.id).concat('custom'))
   assert(h.includes('data-bc-pick="'+id+'"'),'Required interactive model control '+id);
@@ -58,13 +75,14 @@ assert(css.includes('prefers-reduced-motion'),'Reduced motion support');
 const sitemap=read('site/sitemap.xml');
 const url='https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html';
 assert.equal(sitemap.split('<loc>'+url+'</loc>').length-1,1);
-assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-10-15</lastmod>'));
+assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-11-02</lastmod>'));
+assert(h.includes('Listing specifications reviewed Oct 15, 2026'),'Editorial update must not pretend merchant specs were freshly verified');
 assert(read('site/index.html').includes('href="guides/prefab-chicken-coop-capacity-checker.html"'));
 // Simulate the first DOM mount (not just post-click handlers). This previously threw
 // a ReferenceError and left the initial result stuck on its HTML placeholder.
 function element(value=''){
- return {value,textContent:'',dataset:{},style:{},hidden:false,href:'',handlers:{},
-   addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},removeAttribute(){},
+ return {value,textContent:'',dataset:{},style:{},hidden:false,href:'',handlers:{},attributes:{},
+   addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(k,v){this.attributes[k]=v;},removeAttribute(k){delete this.attributes[k];if(k==='href')this.href='';},
    classList:{toggle(){}},focus(){},select(){}};
 }
 const mockEls=new Map();
@@ -73,7 +91,7 @@ for(const id of ['bcFlock','bcResults','bcOutdoor','bcBar','bcCustomName','bcCus
   'bcCopyStatus','bcBarLabel','bcProductHeading','bcProductId','bcBenchmark','bcAvailable',
   'bcRun','bcResultTitle','bcResultText','bcAssumptions','bcAreaEvidence','bcRunEvidence',
   'bcFootnote','bcSellerSource','bcPlanLink','bcCalcLink','bcCopyQuestion','bcPrint',
-  'bcCopyFallback'])mockEls.set(id,element());
+  'bcCopyFallback','bcCopyCheck','bcPrintRecord','bcScenario','bcReferenceDifference'])mockEls.set(id,element());
 mockEls.get('bcFlock').value='6';
 mockEls.get('bcOutdoor').value='yes';
 mockEls.get('bcUnit').value='ft';
@@ -91,6 +109,10 @@ assert.equal(mockEls.get('bcBenchmark').textContent,'21 sq ft');
 assert.equal(mockEls.get('bcResults').dataset.state,'below');
 assert.match(mockEls.get('bcResultText').textContent,/7 hens/,'First render must compute actual verdict, not retain static placeholder');
 assert.equal(mockEls.get('bcSellerSource').hidden,false,'Seller citation is linked at startup');
+assert.equal(new URL(mockEls.get('bcCalcLink').href,'https://coopcheck.serunio.com').searchParams.get('flock'),'7','Continue to sizing must preserve the chosen flock');
+assert.match(mockEls.get('bcScenario').textContent,/7 adult hens.*Reliable daily/);
+assert.match(mockEls.get('bcReferenceDifference').textContent,/21 sq ft.*28 sq ft indoors/,'Explain both indoor references beside the result');
+assert(mockEls.get('bcPrintRecord').textContent.includes(api.PRODUCTS[0].source),'Print record must retain sources hidden by the old print stylesheet');
 const analyticsEvents=[];
 const originalTracker=globalThis.coopTrack;
 globalThis.coopTrack=(name,params)=>analyticsEvents.push({name,params});
@@ -106,5 +128,53 @@ assert.equal(analyticsEvents[1].name,'buyer_comparison_print');
 if(originalTracker===undefined)delete globalThis.coopTrack;
 else globalThis.coopTrack=originalTracker;
 
+mockEls.get('bcOutdoor').value='no';mockEls.get('bcOutdoor').handlers.change();
+assert.equal(mockEls.get('bcBenchmark').textContent,'56 sq ft');
+assert.equal(mockEls.get('bcCalcLink').href,'','Do not silently carry a no-outdoor scenario into the daily-outdoor calculator');
+assert.equal(mockEls.get('bcPlanLink').attributes['aria-disabled'],'true');
+assert.match(mockEls.get('bcPrintRecord').textContent,/No regular outdoor access selected/);
+mockEls.get('bcOutdoor').value='yes';mockEls.get('bcOutdoor').handlers.change();
+assert.match(mockEls.get('bcCalcLink').href,/flock=7/,'Restoring supported conditions restores the same flock');
+mockEls.get('bcFlock').value='1';mockEls.get('bcFlock').handlers.input();
+assert.equal(mockEls.get('bcCalcLink').href,'','Single-hen input must not reset to six at a tool that supports 2–24');
+assert.match(mockEls.get('bcReferenceDifference').textContent,/support 2–24 hens/);
+assert.equal(mockEls.get('bcPrint').disabled,false,'The one-hen comparison itself remains printable');
+mockEls.get('bcFlock').value='';mockEls.get('bcFlock').handlers.input();
+assert.equal(mockEls.get('bcPrint').disabled,true,'Invalid edits cannot print a stale prior comparison');
+assert.equal(mockEls.get('bcCopyCheck').disabled,true);
+assert(!mockEls.get('bcPrintRecord').textContent.includes('Producer'),'Invalid edit clears the old export');
 
-console.log('PASS: sourced prefab products, scenario arithmetic, invalid inputs, unknown run, buyer controls, mobile/print first-render boot, clipboard fallback reset, deliberate analytics actions, and canonical sitemap');
+// Exercise the real destination boot, using the link produced by the buyer checker.
+mockEls.get('bcFlock').value='8';mockEls.get('bcFlock').handlers.input();
+const destination=new URL(mockEls.get('bcCalcLink').href,'https://coopcheck.serunio.com');
+const sizeEls=new Map(['coopSizeForm','flockCount','flockSlider','calcFeedback','calcPlanLink','calcResults','calcReadableResult','calcIndoorBar','calcRunBar','calcIndoorExample','calcRunExample','calcIndoor','calcRun','calcNests','calcRoost'].map(id=>[id,element()]));
+sizeEls.get('flockCount').value='6';
+const sizeDoc={readyState:'complete',getElementById:id=>sizeEls.get(id)||null,querySelectorAll:()=>[]};
+vm.runInNewContext(read('site/assets/coop-size-calculator.js'),{window:{document:sizeDoc,location:destination},URLSearchParams});
+assert.equal(sizeEls.get('flockCount').value,'8','Actual destination reads the retained eight-hen query');
+assert.equal(sizeEls.get('calcIndoor').textContent,'32 sq ft');
+assert.equal(sizeEls.get('calcRun').textContent,'80 sq ft');
+
+
+(async()=>{
+ const oldNavigator=Object.getOwnPropertyDescriptor(globalThis,'navigator');
+ let copied='';
+ try{
+  Object.defineProperty(globalThis,'navigator',{configurable:true,value:{clipboard:{async writeText(text){copied=text;}}}});
+  await mockEls.get('bcCopyCheck').handlers.click();
+  assert.equal(copied,mockEls.get('bcPrintRecord').textContent,'Copy and print must preserve the same current scenario and evidence');
+  Object.defineProperty(globalThis,'navigator',{configurable:true,value:{clipboard:{async writeText(){throw Error('Clipboard denied');}}}});
+  choices.find(c=>c.dataset.bcPick==='custom').handlers.click();
+  mockEls.get('bcCustomLength').value='5';mockEls.get('bcCustomWidth').value='4';
+  mockEls.get('bcCustomWidth').handlers.input();
+  await mockEls.get('bcCopyCheck').handlers.click();
+  assert.equal(mockEls.get('bcCopyFallback').hidden,false,'Clipboard denial offers a manually copyable result');
+  assert.match(mockEls.get('bcCopyFallback').value,/Your dimensions: 5 × 4 ft/);
+  assert.match(mockEls.get('bcCopyFallback').value,/Measurement review date: unknown/);
+  assert(!mockEls.get('bcCopyFallback').value.includes(api.PRODUCTS[1].source),'Custom record cannot retain the previous merchant citation');
+ }finally{
+  if(oldNavigator)Object.defineProperty(globalThis,'navigator',oldNavigator);
+  else delete globalThis.navigator;
+ }
+ console.log('PASS: sourced prefab products, scenario arithmetic, unknown run, copy/print evidence parity, clipboard-denial fallback, historical source date, first-render boot, retained-flock destination, reference differences, unsupported-scenario guards, invalid-export prevention, deliberate analytics actions, and canonical sitemap');
+})().catch(error=>{console.error(error);process.exitCode=1;});

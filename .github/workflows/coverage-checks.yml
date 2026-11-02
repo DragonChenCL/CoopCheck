@@ -59,3 +59,6 @@ jobs:
           node scripts/qa-coopcheck.cjs
           node scripts/qa-coop-payment.cjs
           node scripts/qa-report-conversion.cjs
+
+      - name: Keep operator and QA visits out of acquisition analytics
+        run: node scripts/qa-analytics.cjs
