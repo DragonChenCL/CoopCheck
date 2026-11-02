@@ -21,7 +21,8 @@ for(const [slug,parts] of Object.entries(cases)){
   assert([parts[1],esc(parts[1]),esc(parts[1]).replace(/\x27/g,"&#39;")].some(x=>html.includes(x))&&[parts[2],esc(parts[2]),esc(parts[2]).replace(/\x27/g,"&#39;")].some(x=>html.includes(x)),slug+": stale scenario paragraphs");
   assert(html.includes("Official source for this local example"),slug+": missing cited source link");
   assert(!/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(html),slug+": unexpectedly noindex");
-  assert(sitemap.includes("<loc>"+canonical+"</loc><lastmod>2026-10-22</lastmod>"),slug+": sitemap lastmod mismatch");
+  const expectedLastmod=slug.endsWith("-mn")||slug.endsWith("-wi")?"2026-10-22":"2026-11-02";
+  assert(sitemap.includes("<loc>"+canonical+"</loc><lastmod>"+expectedLastmod+"</lastmod>"),slug+": sitemap lastmod mismatch");
   const main=(html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)||[])[1]||"";
   const plain=main.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi," ").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi," ").replace(/<[^>]*>/g," ").replace(/&[a-z0-9#]+;/gi," ");
   const words=(plain.match(/[a-z0-9]+(?:[-'][a-z0-9]+)*/gi)||[]).length;
