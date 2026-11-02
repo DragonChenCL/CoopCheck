@@ -1,3 +1,14 @@
+# 2026-11-02 — 社交平台实际发布追加轮次（公开验收）
+
+> **本轮新增公开内容：Pinterest Pin 1、Reddit r/SideProject 贴 1、YouTube 社区帖 1；均已通过平台公开内容页面核验。** Reddit 另找回 4 条过去已公开的养鸡评论（不计本轮新增）。外部流量、订单、自然反链均未确认。详细证据与链接见 [RUN_2026-11-02_SOCIAL.md](RUN_2026-11-02_SOCIAL.md)。
+
+- [Pinterest 原创选址知识图](https://www.pinterest.com/pin/1125337025679262249/)：为避免未解除的域名封禁，无目的链接，不能视为引荐获客。
+- [Reddit r/SideProject 产品反馈帖](https://www.reddit.com/r/SideProject/comments/1xlt22s/)：附买家检查器 UTM；公开已验证，反馈/点击待核实。
+- [YouTube 社区帖](https://www.youtube.com/post/Ugkx7O5mbR89Or1LYjY91xOsn2sqZ2lq7Qxm)：引导至频道现有的买家检查器简介首链；公开已验证。
+- r/chickens 与 r/BackYardChickens 当前明确限制 AI 内容，且前者有禁止应用广告的置顶公告；本轮不在这些版块发布违反规则的 AI 起草广告。
+
+---
+
 # 2026-11-02 — 完整运营审计、买家工具修复与原生数据基线
 
 > **最终验收：✅ 4 / 🟡 3 / ⛔ 1 / ❌ 2；未完成 10/10。** GSC 一次索引请求已受理，YouTube 频道首链已公开生效，PR #75 已部署并通过本地 Edge 交互验收。本轮新邮件、新投稿、新 Reddit/BYC 回复、新 Pin、新 Shorts 均为 **0**，新增已核实公开外链 **0**。[十模块明细与证据](RUN_2026-11-02.md)。
