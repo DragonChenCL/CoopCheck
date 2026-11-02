@@ -1,6 +1,50 @@
 (function(){
   const MEASUREMENT_ID="G-FF130M09C3";
 
+  // Explicit operator mode is resolved before loading Google Analytics, so QA
+  // page views and tool events never enter the very small acquisition sample.
+  const INTERNAL_KEY="coopcheck:analytics-internal";
+  const internalFlag=new URLSearchParams(location.search).get("cc_internal");
+  let internal=false,persistent=false;
+  try{
+    internal=localStorage.getItem(INTERNAL_KEY)==="1";
+    persistent=internal;
+  }catch(_){}
+  if(internalFlag==="1"||internalFlag==="0"){
+    internal=internalFlag==="1";
+    persistent=false;
+    try{
+      if(internal)localStorage.setItem(INTERNAL_KEY,"1");
+      else localStorage.removeItem(INTERNAL_KEY);
+      persistent=true;
+    }catch(_){}
+  }
+  window.CoopAnalytics=Object.freeze({internal,persistent});
+  if(internal){
+    window["ga-disable-"+MEASUREMENT_ID]=true;
+    window.coopTrack=function(){return false;};
+    function showInternalMode(){
+      if(document.querySelector("[data-coopcheck-internal]")||!document.body)return;
+      const notice=document.createElement("aside");
+      notice.dataset.coopcheckInternal="1";
+      notice.className="no-print";
+      notice.setAttribute("role","status");
+      notice.style.cssText="position:fixed;bottom:12px;left:12px;z-index:10000;max-width:calc(100vw - 24px);box-sizing:border-box;padding:10px 14px;border:1px solid #a16207;border-radius:8px;background:#fef3c7;color:#422006;font:13px/1.5 system-ui,sans-serif;box-shadow:0 2px 8px #0002";
+      notice.textContent=persistent?"Internal testing: analytics paused for this browser. ":"Internal testing: analytics paused on this page only; browser storage is unavailable. ";
+      const resume=document.createElement("a");
+      const url=new URL(location.href);
+      url.searchParams.set("cc_internal","0");
+      resume.href=url.href;
+      resume.textContent="Resume analytics";
+      resume.style.cssText="color:#713f12;text-decoration:underline;font-weight:600";
+      notice.appendChild(resume);
+      document.body.appendChild(notice);
+    }
+    if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",showInternalMode,{once:true});
+    else showInternalMode();
+    return;
+  }
+
   window.dataLayer=window.dataLayer||[];
   window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
 

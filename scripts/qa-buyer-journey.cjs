@@ -34,7 +34,7 @@ function harness(pagePath){
     dataLayer:[],
     gtag(...args){calls.push(args);}
   };
-  vm.runInNewContext(js,{window,document:doc,location,URL,Date,encodeURIComponent});
+  vm.runInNewContext(js,{window,document:doc,location,URL,URLSearchParams,Date,encodeURIComponent});
   assert(handlers.has('click'),'Capture listener must be installed');
   return {
     calls,

@@ -4,7 +4,7 @@ const vm=require("node:vm");
 const fs=require("node:fs");
 const source=fs.readFileSync(require("node:path").join(__dirname,"../site/assets/payment.js"),"utf8");
 const flush=()=>new Promise(r=>setTimeout(r,0));
-function harness({ready=false,save=false,response=null,token=null,jurisdiction="unverified"}={}){
+function harness({ready=false,save=false,response=null,token=null,jurisdiction="unverified",storageDenied=""}={}){
   const db=new Map();
   const listeners={};
   const button={textContent:"",disabled:false,addEventListener:(name,fn)=>{listeners[name]=fn;}};
@@ -12,7 +12,10 @@ function harness({ready=false,save=false,response=null,token=null,jurisdiction="
   const hero={classList:{contains:()=>!ready},scrollIntoView:()=>{}};
   const document={getElementById:id=>({print:button,paymentStatus:status,complianceHero:hero})[id]};
   const events=[],calls=[];
-  const localStorage={getItem:key=>db.get(key)||null,setItem:(key,value)=>db.set(key,value)};
+  const localStorage={
+    getItem:key=>{if(storageDenied==="read")throw Error("Storage read denied");return db.get(key)||null;},
+    setItem:(key,value)=>{if(storageDenied==="write")throw Error("Storage write denied");db.set(key,value);}
+  };
   let printed=0;
   const window={CoopPlanner:{isReady:()=>ready,save:()=>save,jurisdictionStatus:()=>jurisdiction},coopTrack:(name,params)=>events.push(name),print:()=>{printed++;}};
   const location={href:"https://coopcheck.serunio.com/planner.html"};
@@ -25,9 +28,18 @@ function harness({ready=false,save=false,response=null,token=null,jurisdiction="
     return{ok:true,json:async()=>({granted:!!token,app:"coopcheck",sku:"permit-report",referenceId:"coop_mock"})};
   };
   vm.runInNewContext(source,{document,window,localStorage,crypto:{randomUUID:()=> "mock"},fetch,location,console,setTimeout,URL,Date,JSON});
-  return{click:()=>listeners.click(),calls,events,db,button,status,location,get printed(){return printed;}};
+  return{click:()=>listeners.click?.(),calls,events,db,button,status,location,get printed(){return printed;}};
 }
 (async()=>{
+  for(const storageDenied of ["read","write"]){
+    const unavailable=harness({ready:true,save:true,storageDenied});
+    await flush();unavailable.click();await flush();
+    assert.equal(unavailable.button.disabled,true,"Unavailable storage must disable checkout");
+    assert(unavailable.status.textContent.includes("Enable site storage"),"Explain how to recover before payment");
+    assert(unavailable.status.textContent.includes("No checkout has been started"));
+    assert.equal(unavailable.calls.length,0,"Storage failure must not call the gateway");
+    assert(unavailable.events.includes("payment_storage_unavailable"),"Track a storage failure without implying a checkout attempt");
+  }
   const blocked=harness({ready:false,save:false});
   await flush();blocked.click();await flush();
   assert.equal(blocked.calls.length,0,"incomplete drawing must never begin checkout");
@@ -46,5 +58,5 @@ function harness({ready=false,save=false,response=null,token=null,jurisdiction="
   assert.equal(success.location.href,"https://pay.example/checkout/123");
   assert(success.events.includes("payment_checkout_created"));
   assert(success.db.has("coopcheck:payment:order_1"),"token linked to project in local storage");
-  console.log("PASS: mock payment lifecycle, safe checkout blocking, redirect persistence and error tracking");
+  console.log("PASS: mock payment lifecycle, blocked-storage recovery, safe checkout blocking, redirect persistence and error tracking");
 })().catch(e=>{console.error(e);process.exitCode=1});
