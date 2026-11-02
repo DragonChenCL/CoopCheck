@@ -908,3 +908,12 @@
     right:11%;
   }
 }
+
+/* Crawleable state/city navigation: every city has static same-state paths. */
+.cc-state-city-list,.cc-related-city-list{list-style:none;padding:0;margin:22px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:12px}
+.cc-state-city-card{border:1px solid rgba(35,85,55,.16);border-radius:14px;padding:17px;background:#fff;min-width:0}
+.cc-state-city-card h3{font-size:1rem;line-height:1.4;margin:0 0 6px}
+.cc-state-city-card p{margin:8px 0 0;line-height:1.55;overflow-wrap:anywhere}
+.cc-city-source-status{font-size:.79rem;font-weight:700;color:#536d5c}
+.cc-related-city-list li{border:1px solid rgba(35,85,55,.16);border-radius:11px;padding:10px 13px;min-width:0}
+.cc-related-cities h2{margin-top:0}
