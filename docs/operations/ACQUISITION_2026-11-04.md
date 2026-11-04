@@ -38,3 +38,29 @@ Potential demand observed in public chicken-keeping discussions: [new buyer comp
 
 ## Next acquisition action
 Track replies to the FlockGuide contact, along with previously sent Waddle and Cluck and Backyard Chicken Scoop editorial emails. Seek a recent, permissible direct buyer-feedback exchange, rather than mass promotion or repeated submissions. Continue the daily acquisition automation. All subsequent claims of links, audience or revenue require independent verification.
+
+
+---
+
+## Additional acquisition pass — 2026-11-04 (follow-up run)
+
+### Two new verified editorial contacts
+
+| Target | Context and reason | Completed action | Proof level | Commercial result |
+| --- | --- | --- | --- | --- |
+| Meyer Hatchery | Its [July 2023 chicken coop sizing guide](https://blog.meyerhatchery.com/2023/07/chicken-coop-size/) discusses flock size and separates indoor space from run space. Its publicly listed customer-service email can route a resource suggestion to the education/blog team. No earlier contact with this domain was found in the account's sent-mail search. | Sent one tailored suggestion of a free indoor-dimension buyer worksheet, clearly distinguishing the site's 2–3 sq ft minimum from our conditional 3 sq ft buyer reference, and asking for technical corrections if needed. | Gmail API returned SENT; a separate Gmail Sent-folder search confirmed the new message. | No reply, published reference, qualified usage, or revenue confirmed. |
+| PetMD editorial | [Jan 2026 vet-reviewed chicken-coop picks](https://www.petmd.com/bird/vet-verified/best-chicken-coops) recommend an Aivituvin model using a 5.5×2-ft "coop with run" descriptor while also discussing separate indoor space requirements. Its [editorial guidelines](https://www.petmd.com/editorial-guidelines) expressly invite corrections to the editor-in-chief. | Sent one careful, non-accusatory factual query asking which actual *enclosed* floor-area measurement supports the three-hen example; explained that the overall structure area cannot automatically be treated as inside floor area. Shared our measurement worksheet as methodology, but explicitly stated we have not measured that Aivituvin unit and requested no payment or guaranteed citation. | Gmail API returned SENT; a separate Gmail Sent-folder search confirmed the new message. | No reply, correction, citation, qualified usage, or revenue confirmed. |
+
+### Fresh product-demand evidence (not customer acquisition)
+- [Tractor Supply Cabana product Q&A](https://www.tractorsupply.com/tsc/product/producers-pride-cabana-coop-2432296) explicitly reports **15.54 sq ft enclosed henhouse** and **75.1 sq ft run**. A recent verified owner review reports that the enclosed part feels cramped with 10 chickens despite the 14-bird claim. These are separately attributed seller and buyer statements, not our field measurement or a universally safe flock-size conclusion.
+- A [Cooped Up Life free prefab capacity checker](https://coopeduplife.com/prefab-chicken-coop-capacity-checker/) was published on Oct 24, 2026. Similar tools exist; CoopCheck should differentiate through exact model evidence, traceability and location-specific legal caveats rather than relying on generic floor-area arithmetic.
+- Public [BackYard Chickens self-promotion discussion](https://www.backyardchickens.com/threads/self-promotion-rules.1521464/) cautions against self-promotion, and some Reddit communities prohibit unsolicited promotions or AI-generated posts. No new public community posting was completed during this run. The connected browser tool repeatedly timed out, so do not imply live posting or direct buyer replies.
+
+### Add-on scorecard for this pass
+- Newly verified targeted editorial messages sent: **2** (Meyer Hatchery and PetMD).
+- New public posts or direct buyer messages verified: **0**.
+- New independent replies, published links, qualified visitors, completed checks, or orders attributable to this pass: **not verified**.
+- No new production website deployment or fresh GSC/GA4 metrics retrieved during this pass; do not infer outcomes from prior aggregate reports.
+
+### Next decision
+If these channels respond, prioritize an actual reader-resource handoff or a factual correction with a visible live URL. Seek opt-in buyer feedback through permitted forums or existing editorial audiences without pretending a sent pitch is a customer. Avoid repeating pitches to previously contacted publications.
