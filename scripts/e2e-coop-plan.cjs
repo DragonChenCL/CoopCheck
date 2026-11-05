@@ -185,7 +185,9 @@ async function main(){
 
     const sizeGuide=await page.goto(base+"/guides/coop-size-for-8-chickens.html",{waitUntil:"networkidle"});
     assert.equal(sizeGuide.status(),200);
-    assert.match(await page.locator("h1").innerText(),/8 chickens/i);
+    assert.match(await page.locator("h1").innerText(),/^Eight hens and a 4 x 8 listing: measure what is really inside$/);
+    assert.match(await page.locator("main").innerText(),/26\.25 sq ft/);
+    assert.match(await page.locator("main").innerText(),/hypothetical/i);
     assert.match(await page.locator("main").innerText(),/32 sq ft/);
     assert.match(await page.locator("main").innerText(),/80 sq ft/);
     assert.equal(await page.locator("figure svg").count(),1,"flock guide includes original layout comparison");
