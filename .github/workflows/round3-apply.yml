@@ -1,0 +1,68 @@
+name: Apply and verify third editorial pass
+on:
+  push:
+    branches:
+      - content/utility-decision-depth-20261105
+    paths:
+      - .github/workflows/round3-apply.yml
+permissions:
+  contents: write
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify source lease, reconstruct and apply source patch
+        run: |
+          test "$(git hash-object scripts/generate-coop-intent-tools.cjs)" = "9bd8242b697c7cc92ab9452e3cfeb2c18128492e"
+          test "$(git hash-object scripts/generate-coverage-pages.cjs)" = "f19249b1f22f0aa640d92bd23b5d386ce45905d7"
+          test "$(git hash-object scripts/qa-coop-intent-tools.cjs)" = "1f514dae72d824aea79236a2ceac4b7b1b848818"
+          cat stage_round3/chunk*.txt | tr -d '\n' | base64 -d > /tmp/round3.patch.br
+          echo "aa97521fd0485f27b31c26dfae6dae784caf0e5a11886273ac8f651298d5b7f8  /tmp/round3.patch.br" | sha256sum -c -
+          node -e "const fs=require('fs'),zlib=require('zlib');fs.writeFileSync('/tmp/round3.patch',zlib.brotliDecompressSync(fs.readFileSync('/tmp/round3.patch.br')))"
+          git apply --check /tmp/round3.patch
+          git apply /tmp/round3.patch
+      - name: Regenerate six pages and sitemap
+        run: |
+          node scripts/generate-coop-intent-tools.cjs
+          node scripts/generate-coverage-pages.cjs
+          unexpected="$(git diff --name-only -- site | grep -v -E '^site/(sitemap.xml|guides/(chicken-run-size-calculator|chicken-run-fencing-calculator|chicken-nesting-box-calculator|chicken-roost-length-calculator|chicken-coop-cost-calculator|free-chicken-coop-floor-plans).html)$' || true)"
+          if [ -n "$unexpected" ]; then echo "UNEXPECTED GENERATED FILES: $unexpected"; exit 1; fi
+          node scripts/generate-policy-data.cjs --check
+          node scripts/generate-coverage-pages.cjs --check
+          node scripts/generate-coop-seo-pages.cjs --check
+          node scripts/generate-coop-intent-tools.cjs --check
+          git diff --check
+      - name: Run all static and application QA
+        run: |
+          set -e
+          for script in scripts/qa-*.cjs; do
+            echo "RUN $script"
+            node "$script"
+          done
+      - name: Install Chromium and test real reader/browser journeys
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install chromium
+          node scripts/e2e-intent-depth.cjs
+      - name: Persist validated source and generated pages on feature branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/generate-coop-intent-tools.cjs scripts/generate-coverage-pages.cjs scripts/qa-coop-intent-tools.cjs scripts/qa-intent-decision-depth.cjs scripts/e2e-intent-depth.cjs scripts/lib/intent-decision-depth.cjs docs/operations/CONTENT_DEPTH_ROUND3_2026-11-05.md
+          git add site/sitemap.xml site/guides/chicken-run-size-calculator.html site/guides/chicken-run-fencing-calculator.html site/guides/chicken-nesting-box-calculator.html site/guides/chicken-roost-length-calculator.html site/guides/chicken-coop-cost-calculator.html site/guides/free-chicken-coop-floor-plans.html
+          git rm -r stage_round3
+          git rm .github/workflows/round3-apply.yml
+          git commit -m "content: deepen six evidence-backed planning tools with source-led comparison cases"
+          git push origin HEAD:content/utility-decision-depth-20261105
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: third-editorial-browser-screenshots
+          path: test-results/round3-*.png
+          if-no-files-found: ignore
+          retention-days: 7
