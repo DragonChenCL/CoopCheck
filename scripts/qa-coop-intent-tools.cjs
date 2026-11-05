@@ -78,3 +78,5 @@ for(const kind of ["run-size","nesting-box","roost"])assert(engine.includes('"'+
 const old=read("site/guides/chicken-coop-size-calculator.html");
 assert(old.includes("chicken-run-size-calculator.html")&&old.includes("chicken-coop-cost-calculator.html"),"first cluster backlinked");
 console.log("PASS: six authentic intent tools, valid extensible canonical sitemap, formulas, quoted cost handling and full internal links");
+// Published decision tables must remain consistent with the functional calculators.
+require('./qa-intent-decision-depth.cjs');
