@@ -43,6 +43,9 @@ const guideExtras={
 };
 function guideMeta(slug){return guideExtras[slug]||null;}
 function enhanceGuide(slug,html){
+ const {guideSection}=require('./round2-evidence.cjs');
+ const deep=guideSection(slug);
+ if(deep)html=replaceBlock(html,'round2-guide-'+slug,deep);
  const e=guideExtras[slug];
  if(e){const content='<section class="section ed-guide-addition"'+(e.id?' id="'+e.id+'"':'')+'><div class="container">'+section(e.title,e.body)+'</div></section>';html=replaceBlock(html,'guide-'+slug,content);}
  // Visible page edit date is not a new check date for inherited product or city data.
