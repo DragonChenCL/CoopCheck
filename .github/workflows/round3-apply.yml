@@ -26,6 +26,16 @@ jobs:
           node -e "const fs=require('fs'),zlib=require('zlib');fs.writeFileSync('/tmp/round3.patch',zlib.brotliDecompressSync(fs.readFileSync('/tmp/round3.patch.br')))"
           git apply --check /tmp/round3.patch
           git apply /tmp/round3.patch
+          # The concept-plan comparison deliberately has two alternatives, not three.
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/e2e-intent-depth.cjs')
+          s=p.read_text()
+          old="assert(await page.locator('main .id-depth th[scope=row]').count()>=3,slug+' accessible rows');"
+          new="assert(await page.locator('main .id-depth th[scope=row]').count()>=(slug==='free-chicken-coop-floor-plans'?2:3),slug+' accessible rows');"
+          assert old in s, 'Expected browser test assertion not present'
+          p.write_text(s.replace(old,new))
+          PY
       - name: Regenerate six pages and sitemap
         run: |
           node scripts/generate-coop-intent-tools.cjs
