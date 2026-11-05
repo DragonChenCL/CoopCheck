@@ -75,7 +75,7 @@ assert(css.includes('prefers-reduced-motion'),'Reduced motion support');
 const sitemap=read('site/sitemap.xml');
 const url='https://coopcheck.serunio.com/guides/prefab-chicken-coop-capacity-checker.html';
 assert.equal(sitemap.split('<loc>'+url+'</loc>').length-1,1);
-assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-11-02</lastmod>'));
+assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-11-05</lastmod>'));
 assert(h.includes('Listing specifications reviewed Oct 15, 2026'),'Editorial update must not pretend merchant specs were freshly verified');
 assert(read('site/index.html').includes('href="guides/prefab-chicken-coop-capacity-checker.html"'));
 // Simulate the first DOM mount (not just post-click handlers). This previously threw

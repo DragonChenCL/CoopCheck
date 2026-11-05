@@ -21,6 +21,6 @@ for(const source of ['grandrapidsmi.gov','blainemn.gov','mariettaga.gov'])assert
 for(const concept of ['property lines','neighboring dwellings','outdoor run','certified','not an official'])assert(page.toLowerCase().includes(concept.toLowerCase()),'scope check: '+concept);
 assert(home.includes('href="guides/backyard-chicken-permit-site-plan-checklist.html"'),'homepage link');
 assert.equal(sitemap.split('<loc>'+url+'</loc>').length-1,1,'one canonical sitemap entry');
-assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-10-16</lastmod>'),'date is accurate');
-assert(generator.includes('["/guides/backyard-chicken-permit-site-plan-checklist.html","2026-10-16"]'),'deterministic sitemap generator');
+assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-11-05</lastmod>'),'date is accurate');
+assert(generator.includes('["/guides/backyard-chicken-permit-site-plan-checklist.html","2026-11-05"]'),'deterministic sitemap generator');
 console.log('PASS: 10-item private/local printable permit worksheet, scoped government sources, SEO and internal linking');

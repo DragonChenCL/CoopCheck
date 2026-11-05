@@ -12,7 +12,7 @@ const url='https://coopcheck.serunio.com/research/grover-beach-poultry-policy-oc
 
 assert(html.includes('<link rel="canonical" href="'+url+'">'),'Canonical remains stable');
 assert(html.includes('"datePublished":"2026-10-24"'),'Initial publication date must not be rewritten');
-assert(html.includes('"dateModified":"2026-10-29"'),'Last research update must match metadata');
+assert(html.includes('"dateModified":"2026-11-05"'),'Editorial modification date must match metadata');
 assert(html.includes('id="october-27-status"'),'Visible post-meeting verification status is present');
 assert(html.includes('id="october-28-reporting"'),'Sourced October 28 reporting must remain visible');
 assert(html.includes('www.kcbx.org/government-and-politics/2026-10-28/'),'New reported details must cite KCBX');
@@ -23,5 +23,5 @@ assert(html.includes('meeting action not verified'),'Policy summary must disclos
 assert(html.includes('effective date'),'Must distinguish potential enactment and effectiveness');
 assert(html.includes('https://grover.org/Archive.aspx?ADID=2661'),'City archive citation remains');
 assert(html.includes('https://www.grover.org/160/Agendas-Staff-Reports-Minutes'),'Official minutes index remains');
-assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-10-29</lastmod>'),'Sitemap update date is synchronized');
+assert(sitemap.includes('<loc>'+url+'</loc><lastmod>2026-11-05</lastmod>'),'Sitemap update date is synchronized');
 console.log('PASS: Grover Beach post-meeting status is appropriately unresolved and dated');

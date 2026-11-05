@@ -19,8 +19,8 @@ assert(planner.includes('id="print"')&&payment.includes('const SKU="permit-repor
 assert(payment.includes('const GATEWAY="https://payment-gateway.chenlongqrr.workers.dev"'),"Existing Waffo gateway unchanged");
 assert(payment.includes('if(!planner?.isReady())')&&payment.includes('jurisdictionStatus?.()==="mismatch"')&&payment.includes('if(!planner.save())'),"Pre-payment safety gates preserved");
 assert(index.includes('href="report.html"')&&guide.includes('href="../report.html#sample"'),"High-intent entry links");
-assert(generator.includes('["/report.html","2026-10-19"]'),"Generator indexes paid report landing");
-assert(sitemap.includes('<loc>https://coopcheck.serunio.com/report.html</loc><lastmod>2026-10-19</lastmod>'),"Canonical sitemap entry");
+assert(generator.includes('["/report.html","2026-11-05"]'),"Generator indexes paid report landing");
+assert(sitemap.includes('<loc>https://coopcheck.serunio.com/report.html</loc><lastmod>2026-11-05</lastmod>'),"Canonical sitemap entry");
 assert(analytics.includes('paid_report_offer_view')&&analytics.includes('paid_report_sample_click'),"Offer funnel instrumentation");
 assert(!payment.includes('window.coopTrack?.("purchase"'),"Checkout creation cannot emit a purchase");
 assert(success.includes('data.granted===true&&data.app===APP&&data.sku===SKU&&data.referenceId===record.referenceId'),"Strict entitlement verification");

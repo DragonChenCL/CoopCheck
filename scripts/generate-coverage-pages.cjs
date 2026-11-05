@@ -1,5 +1,7 @@
 const fs=require("node:fs");
 const path=require("node:path");
+const {withAssets,replaceBlock}=require("./lib/editorial-content.cjs");
+const {fieldCard,enhanceCity}=require("./lib/city-editorial.cjs");
 const thinCityNotes=require("./data/thin-city-cases.json").cases;
 function generateAll(registry,evidence){
   const BASE="https://coopcheck.serunio.com";
@@ -41,13 +43,7 @@ function generateAll(registry,evidence){
   };
   // Show a scannable excerpt without changing the source-reviewed legal claim.
   // Longer exceptions always remain available in the adjacent native disclosure.
-  function lawCard(c,key,label){
-    const full=String(c[key]||"").trim();
-    const long=full.length>150;
-    const first=full.split(/;\s*|(?<=[.!?])\s+/)[0].trim();
-    const excerpt=!long?full:first.length>=24&&first.length<=145?first:"This field has conditions that need a closer look.";
-    return `<article class="cc-law-card"><span class="cc-law-label">${esc(label)}</span><p class="cc-law-answer">${esc(excerpt)}</p>${long?`<details class="cc-law-detail"><summary>Read the full rule and exceptions</summary><p>${esc(full)}</p></details>`:""}</article>`;
-  }
+  function lawCard(c,key,label){return fieldCard(c,key,label,evidence.cities?.[c.slug]||{});}
   function page(c){
     const isActive=active(c),title=isActive?"Backyard Chicken Laws in "+c.name+", "+c.state+" | CoopCheck":"Backyard Chicken Rules in "+c.name+", "+c.state+" — Verification Pending | CoopCheck";
     const desc=isActive?"Official-source summary of chicken keeping, flock size, permits and coop placement in "+c.name+". Verify parcel rules before building.":"Coverage candidate for "+c.name+", "+c.state+". City-specific chicken rules have not been verified; do not rely on this page for permit or coop decisions.";
@@ -116,15 +112,15 @@ ${faq}<h2>Before you buy birds or build</h2><ul class="cc-law-checklist"><li>Con
   }
   pages["site/assets/plan-law-data.js"]="/* Generated from cities.json and policy-evidence.json. Primary-checked claims only. */\nwindow.COOP_PLAN_LAW_DATA="+JSON.stringify(lawRows).replace(/</g,"\\u003c")+";\n";
 
-  for(const c of batches)pages["site/cities/"+c.slug+".html"]=page(c);
-  pages["site/coverage.html"]=coveragePage();
+  for(const c of batches)pages["site/cities/"+c.slug+".html"]=enhanceCity(c,evidence.cities?.[c.slug]||{},page(c));
+  pages["site/coverage.html"]=withAssets(replaceBlock(coveragePage(),"coverage-use",'<section class="section"><div class="container"><h2>Find the right jurisdiction, then check the four fields</h2><p>A postal city name does not establish that a property is inside that city. Confirm jurisdiction and zoning before selecting a profile. Each city worksheet separates recorded primary-clause evidence from unresolved flock, rooster, approval and placement questions.</p><p>Open the profile to obtain a source-linked enquiry. Fill in the actual parcel area, proposed birds, dimensions and utilities; the tool does not send those details anywhere. A research-pending page is a question list, not a verified ruleset.</p></div></section>'));
   pages["site/assets/city-search-index.json"]=JSON.stringify({version:1,cities:registry.cities.map(c=>({slug:c.slug,name:c.name,state:c.state,stateName:c.stateName,status:c.audit.status}))},null,2)+"\n";
   const enrichedGuideSlugs=new Set(["coop-size-for-4-chickens","coop-size-for-6-chickens","coop-size-for-8-chickens","coop-size-for-10-chickens","coop-size-for-12-chickens","coop-size-for-16-chickens","4x6-chicken-coop-capacity","4x8-chicken-coop-capacity","6x8-chicken-coop-capacity"]);
   const refreshedFootprintGuides=new Set(["4x6-chicken-coop-capacity","4x8-chicken-coop-capacity","6x8-chicken-coop-capacity"]);
   const seoGuides=["chicken-coop-size-calculator","coop-size-for-4-chickens","coop-size-for-6-chickens","coop-size-for-8-chickens","coop-size-for-10-chickens","coop-size-for-12-chickens","coop-size-for-16-chickens","4x6-chicken-coop-capacity","4x8-chicken-coop-capacity","6x8-chicken-coop-capacity"].map(slug=>["/guides/"+slug+".html",refreshedFootprintGuides.has(slug)?"2026-10-26":(slug==="chicken-coop-size-calculator"||enrichedGuideSlugs.has(slug))?"2026-10-21":"2026-10-17"]);
   const seoIntentTools=["chicken-run-size-calculator","chicken-run-fencing-calculator","chicken-nesting-box-calculator","chicken-roost-length-calculator","chicken-coop-cost-calculator","free-chicken-coop-floor-plans"].map(slug=>["/guides/"+slug+".html","2026-10-14"]);
-  const urls=[...seoGuides,...seoIntentTools,["/guides/prefab-chicken-coop-buying-guide.html","2026-10-27"],["/partners/embed-coop-calculator.html","2026-10-24"],["/guides/prefab-chicken-coop-capacity-checker.html","2026-11-02"],["/guides/backyard-chicken-permit-site-plan-checklist.html","2026-10-16"],["/report.html","2026-10-19"],["/research/2026-backyard-chicken-laws.html","2026-11-01"],["/research/tigard-vs-tualatin-backyard-chicken-laws-2026.html","2026-10-23"],["/research/grover-beach-poultry-policy-october-2026.html","2026-10-29"],...["about","contact","privacy","terms"].map(slug=>["/"+slug+".html","2026-10-20"]),["/","2026-11-02"],["/planner.html","2026-10-12"],["/coop-plan.html","2026-10-13"],["/guides/chicken-coop-setback-from-property-line.html","2026-10-21"],...["arizona","california","colorado","oregon","washington","texas"].map(x=>["/states/"+x+".html","2026-11-02"]),["/coverage.html","2026-10-13"],...verified.map(x=>[cityLink(x),existingStates.has(x.state)?"2026-11-02":thinCityNotes[x.slug]?"2026-10-22":(x.slug==="portland-or"||Boolean(focusedResearch[x.slug]))?"2026-10-21":"2026-10-17"])];
-  const lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',...urls.map(([u,date])=>"<url><loc>"+BASE+u+"</loc><lastmod>"+date+"</lastmod></url>"),"</urlset>",""];
+  const urls=[...seoGuides,...seoIntentTools,["/guides/prefab-chicken-coop-buying-guide.html","2026-11-05"],["/partners/embed-coop-calculator.html","2026-11-05"],["/guides/prefab-chicken-coop-capacity-checker.html","2026-11-05"],["/guides/backyard-chicken-permit-site-plan-checklist.html","2026-11-05"],["/report.html","2026-11-05"],["/research/2026-backyard-chicken-laws.html","2026-11-05"],["/research/tigard-vs-tualatin-backyard-chicken-laws-2026.html","2026-11-05"],["/research/grover-beach-poultry-policy-october-2026.html","2026-11-05"],...["about","contact","privacy","terms"].map(slug=>["/"+slug+".html","2026-10-20"]),["/","2026-11-02"],["/planner.html","2026-10-12"],["/coop-plan.html","2026-10-13"],["/guides/chicken-coop-setback-from-property-line.html","2026-11-05"],...["arizona","california","colorado","oregon","washington","texas"].map(x=>["/states/"+x+".html","2026-11-02"]),["/coverage.html","2026-10-13"],...verified.map(x=>[cityLink(x),existingStates.has(x.state)?"2026-11-02":thinCityNotes[x.slug]?"2026-10-22":(x.slug==="portland-or"||Boolean(focusedResearch[x.slug]))?"2026-10-21":"2026-10-17"])];
+  const lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',...urls.map(([u,date])=>"<url><loc>"+BASE+u+"</loc><lastmod>"+((u.startsWith("/cities/")||u.startsWith("/guides/")||u.startsWith("/states/")||["/","/coverage.html","/coop-plan.html","/planner.html","/about.html","/contact.html","/report.html","/research/2026-backyard-chicken-laws.html","/partners/embed-coop-calculator.html"].includes(u))?"2026-11-05":date)+"</lastmod></url>"),"</urlset>",""];
   pages["site/sitemap.xml"]=lines.join("\n");
   return pages;
 }

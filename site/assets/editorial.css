@@ -1,0 +1,25 @@
+/* Source-led decision worksheets; does not alter calculator math or legal data. */
+.ed-table-scroll{overflow-x:auto;max-width:100%;margin:1.3rem 0;border:1px solid #d7e1dc;border-radius:10px}
+.ed-table-scroll table{width:100%;border-collapse:collapse;min-width:520px;font-size:.94rem;line-height:1.6}
+.ed-table-scroll caption{padding:12px 16px;text-align:left;font-weight:700;background:#f2f6f3}
+.ed-table-scroll th,.ed-table-scroll td{padding:12px 16px;text-align:left;vertical-align:top;border-bottom:1px solid #dce5df;overflow-wrap:anywhere}
+.ed-table-scroll thead th{background:#edf3ee}.ed-table-scroll tbody tr:last-child td{border-bottom:0}
+.ed-decision-intro{font-size:1.15rem;max-width:72ch;line-height:1.75;margin:1rem 0 2rem}
+.ed-source-note{line-height:1.8}.ed-city-sheet{background:#f5f7f2;margin-top:2rem;border-top:1px solid #d8e1d8}
+.ed-city-sheet .container{padding-top:30px;padding-bottom:32px}.ed-kicker{font-size:.75rem;letter-spacing:.09em;font-weight:750;color:#42644f}
+.ed-actions{padding-left:1.4rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 36px;margin:24px 0}
+.ed-actions li{padding-left:5px}.ed-actions h3{font-size:1.08rem;line-height:1.4}.ed-actions p{max-width:68ch;overflow-wrap:anywhere}
+.ed-status{font-size:.76rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700;margin:.6rem 0}
+.ed-known{color:#315a43}.ed-unknown{color:#7d4e11}.ed-evidence-card .cc-law-answer{font-size:1rem;line-height:1.65}
+.ed-evidence-card a{overflow-wrap:anywhere}.ed-inquiry,.ed-local-note{border:1px solid #cad8cb;padding:16px;border-radius:10px;background:#fff;margin:20px 0}
+.ed-inquiry summary,.ed-local-note summary{font-weight:700;cursor:pointer;line-height:1.5}.ed-inquiry label{display:block;font-weight:700;margin:16px 0 8px}
+.ed-inquiry textarea{box-sizing:border-box;width:100%;min-height:240px;padding:16px;line-height:1.65;font-family:inherit;border:1px solid #a9bbaa;border-radius:6px;resize:vertical}
+.ed-inquiry button{margin-top:12px}.ed-copy-status{display:inline-block;margin:12px}.ed-guide-addition .cs-panel{max-width:100%;box-sizing:border-box;padding:28px;border:1px solid #dae3dc;border-radius:12px;background:#fff}
+.ed-guide-addition p{max-width:78ch;line-height:1.8}.ed-source-matrix details{margin:10px 0}.ed-source-matrix summary{cursor:pointer;font-weight:650}
+.ed-home-tasks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.ed-home-task{border:1px solid #d9e3d9;border-radius:12px;padding:22px;background:#fff}
+.ed-home-task p{line-height:1.7}.ed-revision{font-size:.88rem;color:#4b6356}
+@media(max-width:680px){.ed-actions,.ed-home-tasks{grid-template-columns:1fr}.ed-guide-addition .cs-panel{padding:18px}.ed-table-scroll th,.ed-table-scroll td{padding:10px}.ed-city-sheet .container{padding-left:18px;padding-right:18px}}
+@media print{.ed-inquiry{display:block}.ed-actions{display:block}.ed-actions li{break-inside:avoid}.ed-table-scroll{overflow:visible}.ed-table-scroll table{min-width:0}.ed-inquiry button,.ed-copy-status{display:none}.ed-inquiry textarea{min-height:450px}.ed-city-sheet{background:white}}
+
+/* Source comparison heading must wrap on narrow home layouts. */
+.cc-home .section-head{flex-wrap:wrap}.cc-home .section-head>div{min-width:0;max-width:100%}.cc-home .section-head .eyebrow{white-space:normal;overflow-wrap:anywhere}

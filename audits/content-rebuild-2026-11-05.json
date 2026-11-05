@@ -1,0 +1,518 @@
+{
+  "date": "2026-11-05",
+  "base_commit": "9b83ab3a2330fe53807ee540cb34693983078f13",
+  "scope": {
+    "inventory_html": 142,
+    "changed_html": 137,
+    "full_body_rewrites": {
+      "flock_guides": 6,
+      "footprint_guides": 3,
+      "state_comparisons": 6,
+      "about": 1
+    },
+    "city_worksheets": 100,
+    "pending_noindex_retained": 12
+  },
+  "unchanged_source_sha256": {
+    "site/data/cities.json": "f7e4a1a76e9723537198950b2ef0a01d54099150c2149a874612882ecd2b695f",
+    "site/data/policy-evidence.json": "308f8a77d2ec99c2359733b82dd9ad56f0c7407130f34edf52e5b0108a22c38e",
+    "site/assets/coop-size-calculator.js": "a7f15d9dc97f117038d0024c94694fbe587ed739d951ab8f978a3f24f57315f0",
+    "site/assets/coop-intent-tools.js": "ed22fb87bb0ea2589318eb3cf04530ef885f2be1a184cf2bd52a86019f5c9f6b",
+    "site/assets/prefab-capacity.js": "f65f553173b4a073be163acdfb396c25fb0f3b7bfd0847158edd8bf018a53301"
+  },
+  "similarity": {
+    "method": "main text only; remove script/style/svg/noscript; lowercase ASCII word tokens including numbers; distinct exact 5-token sets; overlap / smaller set. Not a Google score or proof of indexing.",
+    "before": {
+      "pages": {
+        "site/guides/coop-size-for-4-chickens.html": {
+          "words": 690,
+          "distinct_5grams": 681
+        },
+        "site/guides/coop-size-for-6-chickens.html": {
+          "words": 694,
+          "distinct_5grams": 683
+        },
+        "site/guides/coop-size-for-8-chickens.html": {
+          "words": 683,
+          "distinct_5grams": 674
+        },
+        "site/guides/coop-size-for-10-chickens.html": {
+          "words": 673,
+          "distinct_5grams": 663
+        },
+        "site/guides/coop-size-for-12-chickens.html": {
+          "words": 699,
+          "distinct_5grams": 689
+        },
+        "site/guides/coop-size-for-16-chickens.html": {
+          "words": 680,
+          "distinct_5grams": 667
+        }
+      },
+      "pairs": [
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-6-chickens.html"
+          ],
+          "common": 322,
+          "smaller_set_overlap_pct": 47.28,
+          "jaccard_pct": 30.9
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-8-chickens.html"
+          ],
+          "common": 318,
+          "smaller_set_overlap_pct": 47.18,
+          "jaccard_pct": 30.67
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-10-chickens.html"
+          ],
+          "common": 316,
+          "smaller_set_overlap_pct": 47.66,
+          "jaccard_pct": 30.74
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 316,
+          "smaller_set_overlap_pct": 46.4,
+          "jaccard_pct": 29.98
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 316,
+          "smaller_set_overlap_pct": 47.38,
+          "jaccard_pct": 30.62
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-8-chickens.html"
+          ],
+          "common": 328,
+          "smaller_set_overlap_pct": 48.66,
+          "jaccard_pct": 31.88
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-10-chickens.html"
+          ],
+          "common": 322,
+          "smaller_set_overlap_pct": 48.57,
+          "jaccard_pct": 31.45
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 320,
+          "smaller_set_overlap_pct": 46.85,
+          "jaccard_pct": 30.42
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 318,
+          "smaller_set_overlap_pct": 47.68,
+          "jaccard_pct": 30.81
+        },
+        {
+          "pages": [
+            "coop-size-for-8-chickens.html",
+            "coop-size-for-10-chickens.html"
+          ],
+          "common": 322,
+          "smaller_set_overlap_pct": 48.57,
+          "jaccard_pct": 31.72
+        },
+        {
+          "pages": [
+            "coop-size-for-8-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 320,
+          "smaller_set_overlap_pct": 47.48,
+          "jaccard_pct": 30.68
+        },
+        {
+          "pages": [
+            "coop-size-for-8-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 319,
+          "smaller_set_overlap_pct": 47.83,
+          "jaccard_pct": 31.21
+        },
+        {
+          "pages": [
+            "coop-size-for-10-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 328,
+          "smaller_set_overlap_pct": 49.47,
+          "jaccard_pct": 32.03
+        },
+        {
+          "pages": [
+            "coop-size-for-10-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 321,
+          "smaller_set_overlap_pct": 48.42,
+          "jaccard_pct": 31.81
+        },
+        {
+          "pages": [
+            "coop-size-for-12-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 323,
+          "smaller_set_overlap_pct": 48.43,
+          "jaccard_pct": 31.27
+        }
+      ]
+    },
+    "after": {
+      "pages": {
+        "site/guides/coop-size-for-4-chickens.html": {
+          "words": 625,
+          "distinct_5grams": 607
+        },
+        "site/guides/coop-size-for-6-chickens.html": {
+          "words": 599,
+          "distinct_5grams": 588
+        },
+        "site/guides/coop-size-for-8-chickens.html": {
+          "words": 584,
+          "distinct_5grams": 571
+        },
+        "site/guides/coop-size-for-10-chickens.html": {
+          "words": 609,
+          "distinct_5grams": 596
+        },
+        "site/guides/coop-size-for-12-chickens.html": {
+          "words": 589,
+          "distinct_5grams": 576
+        },
+        "site/guides/coop-size-for-16-chickens.html": {
+          "words": 599,
+          "distinct_5grams": 589
+        }
+      },
+      "pairs": [
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-6-chickens.html"
+          ],
+          "common": 79,
+          "smaller_set_overlap_pct": 13.44,
+          "jaccard_pct": 7.08
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-8-chickens.html"
+          ],
+          "common": 82,
+          "smaller_set_overlap_pct": 14.36,
+          "jaccard_pct": 7.48
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-10-chickens.html"
+          ],
+          "common": 79,
+          "smaller_set_overlap_pct": 13.26,
+          "jaccard_pct": 7.03
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 81,
+          "smaller_set_overlap_pct": 14.06,
+          "jaccard_pct": 7.35
+        },
+        {
+          "pages": [
+            "coop-size-for-4-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 80,
+          "smaller_set_overlap_pct": 13.58,
+          "jaccard_pct": 7.17
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-8-chickens.html"
+          ],
+          "common": 80,
+          "smaller_set_overlap_pct": 14.01,
+          "jaccard_pct": 7.41
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-10-chickens.html"
+          ],
+          "common": 81,
+          "smaller_set_overlap_pct": 13.78,
+          "jaccard_pct": 7.34
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 79,
+          "smaller_set_overlap_pct": 13.72,
+          "jaccard_pct": 7.28
+        },
+        {
+          "pages": [
+            "coop-size-for-6-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 80,
+          "smaller_set_overlap_pct": 13.61,
+          "jaccard_pct": 7.29
+        },
+        {
+          "pages": [
+            "coop-size-for-8-chickens.html",
+            "coop-size-for-10-chickens.html"
+          ],
+          "common": 79,
+          "smaller_set_overlap_pct": 13.84,
+          "jaccard_pct": 7.26
+        },
+        {
+          "pages": [
+            "coop-size-for-8-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 79,
+          "smaller_set_overlap_pct": 13.84,
+          "jaccard_pct": 7.4
+        },
+        {
+          "pages": [
+            "coop-size-for-8-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 79,
+          "smaller_set_overlap_pct": 13.84,
+          "jaccard_pct": 7.31
+        },
+        {
+          "pages": [
+            "coop-size-for-10-chickens.html",
+            "coop-size-for-12-chickens.html"
+          ],
+          "common": 79,
+          "smaller_set_overlap_pct": 13.72,
+          "jaccard_pct": 7.23
+        },
+        {
+          "pages": [
+            "coop-size-for-10-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 80,
+          "smaller_set_overlap_pct": 13.58,
+          "jaccard_pct": 7.24
+        },
+        {
+          "pages": [
+            "coop-size-for-12-chickens.html",
+            "coop-size-for-16-chickens.html"
+          ],
+          "common": 80,
+          "smaller_set_overlap_pct": 13.89,
+          "jaccard_pct": 7.37
+        }
+      ]
+    }
+  },
+  "local_validation": {
+    "qa_scripts_passed": 24,
+    "generator_sync_checks": 4,
+    "browser_render_checks": 18,
+    "widths": [
+      390,
+      1280
+    ],
+    "page_errors": 0,
+    "horizontal_overflow_cases": 0,
+    "inquiry_copy_fallback_tested": true,
+    "eight_hen_calculator": {
+      "indoor_sqft": 32,
+      "run_sqft": 80
+    },
+    "rebuild_idempotent": true
+  },
+  "limits": [
+    "Not all city laws newly researched. Field check dates remain unchanged.",
+    "No independent measurement or hands-on product test is claimed.",
+    "No post-rewrite GSC or conversion outcome measured.",
+    "Local browser used bundled assets and blocked external requests; live deployment remains a separate verification."
+  ],
+  "changed_html": [
+    "site/about.html",
+    "site/cities/anaheim-ca.html",
+    "site/cities/apache-junction-az.html",
+    "site/cities/arlington-tx.html",
+    "site/cities/arvada-co.html",
+    "site/cities/ashland-or.html",
+    "site/cities/aurora-co.html",
+    "site/cities/austin-tx.html",
+    "site/cities/avondale-az.html",
+    "site/cities/bakersfield-ca.html",
+    "site/cities/beaverton-or.html",
+    "site/cities/bellevue-wa.html",
+    "site/cities/bellingham-wa.html",
+    "site/cities/bend-or.html",
+    "site/cities/berkeley-ca.html",
+    "site/cities/boulder-co.html",
+    "site/cities/buckeye-az.html",
+    "site/cities/casa-grande-az.html",
+    "site/cities/chandler-az.html",
+    "site/cities/colorado-springs-co.html",
+    "site/cities/corvallis-or.html",
+    "site/cities/dallas-tx.html",
+    "site/cities/denton-tx.html",
+    "site/cities/denver-co.html",
+    "site/cities/el-paso-tx.html",
+    "site/cities/elk-grove-ca.html",
+    "site/cities/escondido-ca.html",
+    "site/cities/eugene-or.html",
+    "site/cities/everett-wa.html",
+    "site/cities/flagstaff-az.html",
+    "site/cities/folsom-ca.html",
+    "site/cities/fort-collins-co.html",
+    "site/cities/fort-worth-tx.html",
+    "site/cities/fremont-ca.html",
+    "site/cities/fresno-ca.html",
+    "site/cities/frisco-tx.html",
+    "site/cities/garland-tx.html",
+    "site/cities/gilbert-az.html",
+    "site/cities/glendale-az.html",
+    "site/cities/goodyear-az.html",
+    "site/cities/gresham-or.html",
+    "site/cities/hillsboro-or.html",
+    "site/cities/houston-tx.html",
+    "site/cities/indianapolis-in.html",
+    "site/cities/irvine-ca.html",
+    "site/cities/irving-tx.html",
+    "site/cities/kent-wa.html",
+    "site/cities/lake-havasu-city-az.html",
+    "site/cities/lake-oswego-or.html",
+    "site/cities/lakewood-co.html",
+    "site/cities/long-beach-ca.html",
+    "site/cities/longmont-co.html",
+    "site/cities/los-angeles-ca.html",
+    "site/cities/madison-wi.html",
+    "site/cities/marana-az.html",
+    "site/cities/mckinney-tx.html",
+    "site/cities/medford-or.html",
+    "site/cities/mesa-az.html",
+    "site/cities/minneapolis-mn.html",
+    "site/cities/modesto-ca.html",
+    "site/cities/new-york-city-ny.html",
+    "site/cities/oakland-ca.html",
+    "site/cities/olympia-wa.html",
+    "site/cities/oro-valley-az.html",
+    "site/cities/peoria-az.html",
+    "site/cities/phoenix-az.html",
+    "site/cities/plano-tx.html",
+    "site/cities/portland-or.html",
+    "site/cities/prescott-az.html",
+    "site/cities/prescott-valley-az.html",
+    "site/cities/pueblo-co.html",
+    "site/cities/queen-creek-az.html",
+    "site/cities/raleigh-nc.html",
+    "site/cities/redmond-wa.html",
+    "site/cities/renton-wa.html",
+    "site/cities/riverside-ca.html",
+    "site/cities/roseville-ca.html",
+    "site/cities/round-rock-tx.html",
+    "site/cities/sacramento-ca.html",
+    "site/cities/salem-or.html",
+    "site/cities/san-antonio-tx.html",
+    "site/cities/san-diego-ca.html",
+    "site/cities/san-francisco-ca.html",
+    "site/cities/san-jose-ca.html",
+    "site/cities/santa-ana-ca.html",
+    "site/cities/santa-rosa-ca.html",
+    "site/cities/scottsdale-az.html",
+    "site/cities/seattle-wa.html",
+    "site/cities/sierra-vista-az.html",
+    "site/cities/spokane-wa.html",
+    "site/cities/stockton-ca.html",
+    "site/cities/surprise-az.html",
+    "site/cities/tacoma-wa.html",
+    "site/cities/tempe-az.html",
+    "site/cities/thornton-co.html",
+    "site/cities/tigard-or.html",
+    "site/cities/tucson-az.html",
+    "site/cities/vancouver-wa.html",
+    "site/cities/westminster-co.html",
+    "site/cities/yakima-wa.html",
+    "site/cities/yuma-az.html",
+    "site/contact.html",
+    "site/coop-plan.html",
+    "site/coverage.html",
+    "site/guides/4x6-chicken-coop-capacity.html",
+    "site/guides/4x8-chicken-coop-capacity.html",
+    "site/guides/6x8-chicken-coop-capacity.html",
+    "site/guides/backyard-chicken-permit-site-plan-checklist.html",
+    "site/guides/chicken-coop-cost-calculator.html",
+    "site/guides/chicken-coop-setback-from-property-line.html",
+    "site/guides/chicken-coop-size-calculator.html",
+    "site/guides/chicken-nesting-box-calculator.html",
+    "site/guides/chicken-roost-length-calculator.html",
+    "site/guides/chicken-run-fencing-calculator.html",
+    "site/guides/chicken-run-size-calculator.html",
+    "site/guides/coop-size-for-10-chickens.html",
+    "site/guides/coop-size-for-12-chickens.html",
+    "site/guides/coop-size-for-16-chickens.html",
+    "site/guides/coop-size-for-4-chickens.html",
+    "site/guides/coop-size-for-6-chickens.html",
+    "site/guides/coop-size-for-8-chickens.html",
+    "site/guides/free-chicken-coop-floor-plans.html",
+    "site/guides/prefab-chicken-coop-buying-guide.html",
+    "site/guides/prefab-chicken-coop-capacity-checker.html",
+    "site/index.html",
+    "site/partners/embed-coop-calculator.html",
+    "site/planner.html",
+    "site/report.html",
+    "site/research/2026-backyard-chicken-laws.html",
+    "site/research/grover-beach-poultry-policy-october-2026.html",
+    "site/research/tigard-vs-tualatin-backyard-chicken-laws-2026.html",
+    "site/states/arizona.html",
+    "site/states/california.html",
+    "site/states/colorado.html",
+    "site/states/oregon.html",
+    "site/states/texas.html",
+    "site/states/washington.html"
+  ]
+}

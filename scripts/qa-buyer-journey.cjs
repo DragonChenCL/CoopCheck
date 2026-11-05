@@ -17,7 +17,7 @@ assert(article.includes('id="total-project-budget"'),'DIY vs prefab whole-budget
 assert(article.includes('Request a written bill of materials or itemized supplier quote'),'Do not invent vendor price quotes');
 assert(article.includes('href="/guides/chicken-coop-cost-calculator.html"'),'Budget worksheet must connect readers to the cost calculator');
 assert(article.includes('href="/guides/4x8-chicken-coop-capacity.html"'),'Budget worksheet must point readers to the 4x8 sizing explanation');
-assert(article.includes('"dateModified":"2026-10-27"'),'Buyer guide structured update date is synchronized');
+assert(article.includes('"dateModified":"2026-11-05"'),'Buyer guide structured update date is synchronized');
 
 
 function harness(pagePath){
