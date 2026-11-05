@@ -30,6 +30,9 @@ jobs:
       - name: Verify generated city coverage and sitemap
         run: node scripts/generate-coverage-pages.cjs --check
 
+      - name: Guard differentiated content, worked calculations and evidence boundaries
+        run: node scripts/qa-editorial-content.cjs
+
       - name: Enforce field-specific municipal code evidence review
         run: node scripts/qa-policy-evidence.cjs
 
