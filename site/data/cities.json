@@ -2595,7 +2595,7 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "2026 EFFECTIVE-CODE WARNING: City Resolution R-2026-09 called an April 7 referendum on Ordinance O-2025-28 replacing Lakewood Title 17 Articles 1,2,4,5; contemporary election reporting indicates voters rejected the 2025 zoning overhaul. The site's original approved-2025 Article 4 PDF must NOT be presented as definitively governing in October 2026 until current post-referendum ordinances are confirmed with City Planning. The Small Animal Permit application remains city-confirmed; its presence does not make a parcel compliant.",
+      "note": "2026 EFFECTIVE-CODE WARNING: City Resolution R-2026-09 called an April 7 referendum on Ordinance O-2025-28 replacing Lakewood Title 17 Articles 1,2,4,5; contemporary election reporting indicates voters rejected the 2025 zoning overhaul. The site's original approved-2025 Article 4 PDF must NOT be presented as definitively governing in October 2026 until current post-referendum ordinances are confirmed with City Planning. The Small Animal Permit application remains city-confirmed; its presence does not make a parcel compliant. The city zoning landing page links an older Article 4 PDF; its current legal status is still being checked with Development Review (request sent 2026-11-06).",
       "sources": [
         {
           "type": "historical_2025_article4_effective_status_unresolved_after_2026_vote",
@@ -2608,12 +2608,20 @@
         {
           "type": "official_2026_city_referendum_legislation_law_scope_pending",
           "url": "https://www.lakewoodco.gov/Local-Government/Departments/City-Clerks-Office/City-Council-Ordinances-Resolutions/2026-Resolutions"
+        },
+        {
+          "type": "official_city_article4_2024_revision_operative_2026_status_unconfirmed",
+          "url": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
+        },
+        {
+          "type": "official_city_zoning_ordinance_landing_current_webpage_not_legal_certification",
+          "url": "https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Lakewood-Zoning-Ordinance"
         }
       ],
       "audit": {
         "status": "verified_limited_scope",
         "reviewedAt": "2026-10-13",
-        "note": "Limited to independently published city Small Animal Permit application. Previous 2025 Article 4 numeric poultry, rooster and placement claims are HOLD after the April 2026 zoning referendum; applicable October 2026 Title 17 must be identified before promoting. Noindex status unchanged for 12 actually pending cities; Lakewood manual planner.",
+        "note": "Limited to independently published city Small Animal Permit application. Previous 2025 Article 4 numeric poultry, rooster and placement claims are HOLD after the April 2026 zoning referendum; applicable October 2026 Title 17 must be identified before promoting. Noindex status unchanged for 12 actually pending cities; Lakewood manual planner. Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
         "verificationMethod": "Official city guidance or codified municipal ordinance",
         "sourceSection": "See linked city source"
       },
