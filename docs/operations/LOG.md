@@ -1,3 +1,9 @@
+# 2026-11-06 — P0 issues 38/41/68 verified-action round
+
+> Dallas + Lakewood government-source requests **sent (2 Gmail IDs)**; Lakewood source/evidence audit updated on branch; generated HTML restored after CI mismatch; authenticated GSC sitemap 2026-11-05 Success, 127 URLs, while index coverage still uses 2026-10-23 snapshot (1 indexed / 115 not) and 3-month performance through Nov 3 is 23 impressions / 0 clicks. **None of the P0 issues is closed; no indexing gain or legal clearance claimed.** Detailed source IDs, edits and blockers in [P0 report](P0_ISSUES_2026-11-06.md).
+
+---
+
 # 2026-11-02 — 社交平台实际发布追加轮次（公开验收）
 
 > **本轮新增公开内容：Pinterest Pin 1、Reddit r/SideProject 贴 1、YouTube 社区帖 1；均已通过平台公开内容页面核验。** Reddit 另找回 4 条过去已公开的养鸡评论（不计本轮新增）。外部流量、订单、自然反链均未确认。详细证据与链接见 [RUN_2026-11-02_SOCIAL.md](RUN_2026-11-02_SOCIAL.md)。
