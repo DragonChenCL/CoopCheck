@@ -1,6 +1,6 @@
 # 2026-11-06 — P0 issues 38/41/68 verified-action round
 
-> Dallas + Lakewood government-source requests **sent (2 Gmail IDs)**; Lakewood city evidence and HTML updated cautiously on branch; authenticated GSC sitemap 2026-11-05 Success, 127 URLs, while index coverage still uses 2026-10-23 snapshot (1 indexed / 115 not) and 3-month performance through Nov 3 is 23 impressions / 0 clicks. **None of the P0 issues is closed; no indexing gain or legal clearance claimed.** Detailed source IDs, edits and blockers in [P0 report](P0_ISSUES_2026-11-06.md).
+> Dallas + Lakewood government-source requests **sent (2 Gmail IDs)**; Lakewood source/evidence audit updated on branch; generated HTML restored after CI mismatch; authenticated GSC sitemap 2026-11-05 Success, 127 URLs, while index coverage still uses 2026-10-23 snapshot (1 indexed / 115 not) and 3-month performance through Nov 3 is 23 impressions / 0 clicks. **None of the P0 issues is closed; no indexing gain or legal clearance claimed.** Detailed source IDs, edits and blockers in [P0 report](P0_ISSUES_2026-11-06.md).
 
 ---
 
