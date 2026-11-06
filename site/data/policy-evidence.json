@@ -1834,10 +1834,14 @@
     },
     "lakewood-co": {
       "max": {
-        "status": "source_recorded"
+        "status": "source_recorded",
+        "detail": "Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
+        "referenceOnlyUrl": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
       },
       "roosters": {
-        "status": "source_recorded"
+        "status": "source_recorded",
+        "detail": "Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
+        "referenceOnlyUrl": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
       },
       "permit": {
         "status": "primary_clause_checked",
@@ -1847,7 +1851,9 @@
         "checkedAt": "2026-10-13"
       },
       "placement": {
-        "status": "source_recorded"
+        "status": "source_recorded",
+        "detail": "Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
+        "referenceOnlyUrl": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
       }
     },
     "arvada-co": {
