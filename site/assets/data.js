@@ -1131,7 +1131,7 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026 EFFECTIVE-CODE WARNING: City Resolution R-2026-09 called an April 7 referendum on Ordinance O-2025-28 replacing Lakewood Title 17 Articles 1,2,4,5; contemporary election reporting indicates voters rejected the 2025 zoning overhaul. The site's original approved-2025 Article 4 PDF must NOT be presented as definitively governing in October 2026 until current post-referendum ordinances are confirmed with City Planning. The Small Animal Permit application remains city-confirmed; its presence does not make a parcel compliant. The city zoning landing page links an older Article 4 PDF; its current legal status is still being checked with Development Review (request sent 2026-11-06).",
+    "note": "2026 EFFECTIVE-CODE WARNING: City Resolution R-2026-09 called an April 7 referendum on Ordinance O-2025-28 replacing Lakewood Title 17 Articles 1,2,4,5; contemporary election reporting indicates voters rejected the 2025 zoning overhaul. The site's original approved-2025 Article 4 PDF must NOT be presented as definitively governing in October 2026 until current post-referendum ordinances are confirmed with City Planning. The Small Animal Permit application remains city-confirmed; its presence does not make a parcel compliant.",
     "source": "https://www.lakewoodco.gov/files/assets/public/v/1/planning/zoning-code-updates/approved-2025/approved-article-4.pdf"
   },
   {
