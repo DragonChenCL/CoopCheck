@@ -1,3 +1,38 @@
+## 2026-11-09 — GSC aged-snapshot audit, 20 crawled samples, live homepage QA, outreach correction
+
+**Search Console**
+- Authenticated native GSC page-indexing report was re-opened. It still says last updated **2026-10-23**: 1 indexed, 115 excluded; 95 discovered-not-indexed and 20 crawled-not-indexed. This is a stale report snapshot, not a Nov 9 status refresh. No indexing improvement can be claimed.
+- Opened the **Crawled - currently not indexed** drilldown. The report still shows 20 affected URLs, validation started Oct 22. The visible 20 sample URLs and historical last-crawl dates were:
+  - 2026-10-22: `/coop-plan.html`, `/guides/chicken-coop-setback-from-property-line.html`, `/guides/chicken-coop-size-calculator.html`, `/`, `/cities/portland-or.html`.
+  - 2026-10-17: `/guides/coop-size-for-4-chickens.html`, `/guides/chicken-roost-length-calculator.html`, `/guides/chicken-run-fencing-calculator.html`, `/guides/chicken-coop-cost-calculator.html`, `/guides/4x6-chicken-coop-capacity.html`, `/states/texas.html`, `/states/california.html`, `/states/arizona.html`.
+  - 2026-10-15: `/guides/chicken-run-size-calculator.html`.
+  - 2026-10-13: `/coverage.html`, `/cities/denver-co.html`, `/cities/seattle-wa.html`, `/cities/arlington-tx.html`.
+  - 2026-09-23: `/sitemap.xml`, `/planner.html`.
+- These are historical crawl dates in a report last updated Oct 23. The 11/5 content rebuild postdates most of those crawls; the current report cannot tell whether Google has evaluated the rebuilt pages. No repeat indexing requests were made in this round.
+
+**Repository / live QA**
+- Read current `main` source: sitemap contains 127 canonical URLs. Texas and California state hubs contain city-link collections; Texas has 17 city href occurrences and California 25 (counts include repeated/contextual links, not unique-city counts). The old "thin state hub" hypothesis should not be repeated without checking actual rendered content and Google recrawl.
+- Opened live homepage in Chromium. Title, canonical-facing main content, navigation, six state hub links, city discovery, key tools, and substantive comparison/research sections rendered in the accessibility tree. No visible broken-page state in this smoke check. No JS/console or mobile-width QA was completed in this pass.
+- Current homepage already exposes buyer checker, planner, city directory, six state hubs, source-backed city comparisons, 2026 ordinance evidence report and practical calculators. Do not create more generic pages merely to increase URL count.
+
+**Evidence-led topic selection / channel**
+- Reddit search surfaced repeated real-user concerns: prefab coops advertised for more birds than their usable indoor/run space supports; buyers struggle to distinguish indoor coop floor from run area; small roosts, inaccessible cleaning, predator-proofing and build complexity are practical pain points. Examples: https://www.reddit.com/r/BackYardChickens/comments/1mg6rsc and https://www.reddit.com/r/chickens/comments/1uru1ge. These support continuing the buyer-checker angle; they are not proof of traffic or permission to advertise in any subreddit.
+- No new Reddit/Pinterest/YouTube post was published or independently verified in this pass. Pinterest recommendation emails are not evidence of Pin reach, clicks or engagement.
+
+**Official-source outreach correction**
+- Previous Lakewood message to `DR@LakewoodCO.gov` had a recorded 550 5.1.1 bounce (see Gmail thread `1a1af9362e198074`); it was not delivered.
+- Official City of Lakewood planning consultation page lists Planner of the Day at `pod@lakewood.org` and phone 303-987-7571, with a stated response window of three business days: https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Property-Development-Information/Consultation-Requests
+- Sent a replacement code-version question to the verified published address `pod@lakewood.org` (Gmail SENT `1a1beb02e170a2ce`). A separate attempted send to `POD@LakewoodCO.gov` (Gmail SENT `1a1beafe8665047c`) used an address not listed on the official contact page; do not count it as a verified delivery.
+- Dallas records request remains accepted under tracking number `C016134-110626`; no substantive records response yet.
+- Rediscover Rural's Nov 8 $30 paid-placement follow-up was read. Prior response had already declined its $50 paid placement. No payment or acceptance sent.
+
+**Outcome**
+- New Google index confirmations: **0**. New verified organic backlinks: **0**. New social posts: **0**. New attributable users/orders: **0 / unknown**.
+- Concrete work completed: fresh manual GSC check and 20-URL sample inventory; live homepage smoke check; source-backed Reddit pain-point research; corrected Lakewood outreach using the exact email published by the City.
+- Next: wait for GSC report refresh and inspect individual URL Inspection records after Google has recrawled post-Nov-5 versions; prioritize city/state hubs only where evidence shows discovery/content issues; follow up with Lakewood only after the City's published three-business-day response window; continue earned, unpaid buyer-checker outreach.
+
+---
+
 ## 2026-11-08 — 原生 GSC 复核、5 个重点 URL 请求重新抓取
 
 **GSC / Sitemap 实测**
