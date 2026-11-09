@@ -1,11 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
-const {KEYS,isChecked}=require('./lib/city-editorial.cjs');
-const thinCityNotes=require('./data/thin-city-cases.json').cases;
-const lastmodStates=new Set(['AZ','CA','CO','OR','WA','TX']);
-const focusedResearch=new Set(['dallas-tx','lakewood-co','corvallis-or','bend-or','bellevue-wa']);
-const cityLastmod=c=>lastmodStates.has(c.state)?'2026-11-02':thinCityNotes[c.slug]?'2026-10-22':(c.slug==='portland-or'||focusedResearch.has(c.slug))?'2026-10-21':'2026-10-17';
+const {DATE}=require('./lib/editorial-content.cjs'),{KEYS,isChecked}=require('./lib/city-editorial.cjs');
 const {entries,footprints}=require('./data/decision-guides.cjs');
 const reg=JSON.parse(read('site/data/cities.json')),ev=JSON.parse(read('site/data/policy-evidence.json')).cities;
 const sitemap=read('site/sitemap.xml');let pending=0;
@@ -19,7 +15,7 @@ for(const c of reg.cities){
  assert(h.includes('The edit date is not a new verification of the local law.'),'do not launder source dates '+c.slug);
  if(c.audit.status==='needs_review'){
   pending++;assert(/content="noindex,follow"/.test(h));assert(!sitemap.includes('/cities/'+c.slug+'.html'));
- }else assert(sitemap.includes('/cities/'+c.slug+'.html</loc><lastmod>'+cityLastmod(c)+'</lastmod>'),'page-specific sitemap lastmod '+c.slug);
+ }else assert(sitemap.includes('/cities/'+c.slug+'.html</loc><lastmod>'+DATE+'</lastmod>'));
 }
 assert.equal(pending,12,'pending research is not promoted during an editorial rewrite');
 const slugs=Object.keys(entries).map(n=>'coop-size-for-'+n+'-chickens');
