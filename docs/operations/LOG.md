@@ -1,3 +1,16 @@
+## 2026-11-09 — GSC post-refresh full sitemap technical audit
+
+- Authenticated native GSC index report refreshed to **2026-11-06**: **1 indexed / 127 not indexed**, comprising **23 crawled-not-indexed** (validation failed 2026-11-07; started Oct 22) and **104 discovered-not-indexed** (validation started Oct 13). This supersedes the older 1/115 snapshot in the earlier entry below.
+- Captured all 23 visible crawled-not-indexed examples and first 10 of 104 discovered examples. Full 104-row export was not captured; do not claim complete inventory.
+- Browser HTTP crawl of all 127 live sitemap URLs: **127/127 HTTP 200**, each with one self-canonical matching its sitemap URL, no `noindex` meta, and at least one inbound internal link. Counted 2,836 raw internal-link occurrences (not unique pairs); no orphan sitemap URLs.
+- Live canonical sitemap and legacy `/sitemap` return identical 127-URL XML. Cloudflare-managed robots response explicitly allows search (`Content-Signal: search=yes`, `Allow: /`) and points to `/sitemap.xml`; separate `Google-Extended` disallow does not block Google Search.
+- Live pending Apache Junction example is correctly `noindex,follow`, self-canonical, HTTP 200, and excluded from sitemap.
+- Interpretation: no blanket robots/HTTP/canonical/sitemap/orphan defect demonstrated. 104 URLs have no GSC crawl date; 23 have been crawled but not selected. Most crawled examples predate Nov 5 content rebuild, so Google has not been shown to assess most rebuilt versions yet. Keep pending city pages noindex; do not bulk-submit or inflate page count.
+- Created detailed audit `docs/operations/GSC_INDEX_AUDIT_2026-11-09_POSTREFRESH.md`. No production code change and no repeat GSC URL requests made; five priority URL requests were already accepted on Nov 8.
+- Pages deployment for documentation commit and live recheck are tracked separately; no indexing improvement, clicks or new backlinks claimed.
+
+---
+
 ## 2026-11-09 — GSC aged-snapshot audit, 20 crawled samples, live homepage QA, outreach correction
 
 **Search Console**
