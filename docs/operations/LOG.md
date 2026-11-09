@@ -1,3 +1,43 @@
+## 2026-11-08 — 原生 GSC 复核、5 个重点 URL 请求重新抓取
+
+**GSC / Sitemap 实测**
+- 原生 Search Console 资源：`sc-domain:coopcheck.serunio.com`。
+- `https://coopcheck.serunio.com/sitemap.xml`：状态 **成功**；上次读取 **2026-11-05**；发现 **127** 个网页、0 个视频。
+- 从该 Sitemap 的“查看网页索引编制”进入后，报告上次更新时间仍为 **2026-10-23**：已编入索引 **1**；未编入索引 **114**，其中“已发现 - 尚未编入索引” **95**、“已抓取 - 尚未编入索引” **19**。这是旧索引报告快照，不是 11/8 当天重新计算的索引结果。全站索引报告还显示额外 1 个已抓取 URL（`sitemap.xml` 自身），所以全站视图为 115 未收录 + 1 已收录。
+- Sitemap 成功读取与页面被收录不是同一件事；URL Inspection 对个别页面显示“未检测到引荐站点地图”或“临时处理错误”，与 Sitemap 报告成功并存。当前不据此认定 Sitemap XML 解析失败。
+
+**实际网址测试与索引请求（5 个）**
+以下 5 个 URL 均在 URL Inspection 中执行“测试实际网址”，结果均为 **网址可编入 Google 索引**；随后点击“请求编入索引”，均收到 Google 成功回执：**已将网址添加到优先抓取队列**。
+1. `/`（首页）
+2. `/guides/chicken-coop-size-calculator.html`
+3. `/cities/austin-tx.html`
+4. `/cities/portland-or.html`
+5. `/coop-plan.html`
+
+- Austin 首次提交时 Google 返回通用“提交请求时出了点问题”；稍后重新测试后，第二次提交已成功。不要把第一次失败算作成功。
+- Portland 的旧索引记录显示 2026-10-22 抓取成功、允许索引，且检测到首页为引荐页；当前实时测试仍可索引。
+- 首页和 coop-plan 的旧记录显示 Sitemap 发现来源“临时处理错误”；实时测试仍通过，索引请求成功。
+- **重要边界：** 上述回执仅证明请求进入优先抓取队列，不代表 Google 已重新抓取或已经收录。当前尚未观察到索引数增长。
+
+**技术核查**
+- 线上 `robots.txt` 的通用规则为 `User-agent: * / Allow: /`，并指向规范 `sitemap.xml`；Googlebot 未被禁止。Cloudflare Managed 区块禁止 Google-Extended 等 AI/训练 crawler，不等同于禁止 Google Search 的 Googlebot。
+- 首页、Austin 城市页、Sitemap 已在浏览器实测：Austin 自规范 canonical、无 robots noindex，页面正常渲染；实时网址测试通过并识别到 1 项有效 Breadcrumb 内容。
+- 11/5 内容重建提交曾更新 142 个 HTML 文件中的 137 个；本轮 19 个“已抓取未收录”示例的历史抓取日期主要在 10/13–10/22，早于 11/5 内容重建。因此不能用旧报告直接判断 11/5 新内容仍被 Google 抓取后拒绝收录。
+- 本轮没有改 robots.txt、canonical 或批量加 noindex；也没有为制造新鲜度而篡改 Sitemap `lastmod`。曾尝试调整 lastmod，但 CI 揭示生成器与多项 QA 对日期有一致性约束，相关试验已撤回；最终恢复到 11/5 已验证版本。
+
+**部署与验证**
+- 最终恢复后的生产部署 GitHub Actions： [Deploy CoopCheck](https://github.com/DragonChenCL/CoopCheck/actions/runs/42551913124) — **success**。
+- 对应 IndexNow workflow： [IndexNow](https://github.com/DragonChenCL/CoopCheck/actions/runs/42551957070) — **success**。这不是 Google 收录回执；Google 不因 IndexNow 成功就保证收录。
+- 最终恢复版本 HEAD：`01fec6ae4d06cfe66bc785458ce4b41f8d137f7f`。本轮没有新的内容页批量上线。
+
+**结论与下一步**
+- 已确认：Sitemap 正常、Googlebot 可抓取、代表性页面可编入索引、5 个重点 URL 的重新抓取请求均成功入队。
+- 未确认：Google 是否已重新抓取、是否改变“已抓取 - 尚未编入索引”判断、是否增加已收录页数。
+- 下一次复查应在 Google 有时间处理队列后进行：先看这 5 个 URL 的 Google 索引状态和最后抓取时间，再看 Sitemap 过滤视图的 95/19/1 是否变化；不要重复提交同一 URL 来试图提高队列优先级。
+- 95 个已发现未抓取 URL 主要为城市页。后续按真实证据强度和用户价值逐批处理；不应仅凭模板相似度或字段数机械地把所有部分核验页面 noindex。
+
+---
+
 # 2026-11-06 — P0 issues 38/41/68 verified-action round
 
 > Dallas + Lakewood government-source requests **sent (2 Gmail IDs)**; Lakewood source/evidence audit updated on branch; generated HTML restored after CI mismatch; authenticated GSC sitemap 2026-11-05 Success, 127 URLs, while index coverage still uses 2026-10-23 snapshot (1 indexed / 115 not) and 3-month performance through Nov 3 is 23 impressions / 0 clicks. **None of the P0 issues is closed; no indexing gain or legal clearance claimed.** Detailed source IDs, edits and blockers in [P0 report](P0_ISSUES_2026-11-06.md).
