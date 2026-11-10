@@ -1,3 +1,15 @@
+## 2026-11-09 — Lakewood written city clarification and source-led research update
+
+- **Verified primary contact:** Lakewood Planner of the Day answered the November 8 code-version request on November 9 (Gmail thread `1a1beb02e170a2ce`, incoming message `1a1c157f4356fdc9`). The City confirms that the Article 4 PDF presently linked from the official Zoning Ordinance page is current; no amendments after the April 7, 2026 referendum. Its PDF includes 2024 revision annotations.
+- **Verified ordinance:** Article 4 section 17.4.3.1(D)(1)(b) (PDF page 4-13) governs accessory-use poultry; section (D)(2)(a) (page 4-14) governs limited-use hens/ducks/drakes. Applicability is zoning/use-table dependent, not a blanket citywide permission. The limited path explicitly requires a City permit and prohibits roosters. The accessory path uses 4 sq ft/bird coop gross floor minimum and 15-ft side/rear property-line placement. The limited path separately states six hens maximum, six sq ft/animal enclosure minimum, 32 sq ft total enclosure maximum, and district accessory setbacks.
+- **Unresolved primary-source ambiguity:** Six hens × 6 sq ft = 36 sq ft, apparently conflicting with the 32-sq-ft limited-use enclosure maximum. Replied in the existing official email thread asking for a written interpretation and permit-path distinction; **sent Gmail ID `1a1c3cc32e773bb0`**. No invented answer or parcel approval.
+- **Deliverable:** Updated existing public-facing research article source `site/research/2026-backyard-chicken-laws.html` with city reply, source-linked two-path interpretation, unresolved space arithmetic, and link to limited-scope Lakewood profile. Branch `ops/lakewood-code-clarification-20261109`, PR/deployment tracked separately; do not count as live until merged and Pages verified.
+- **GSC:** Gmail notice `1a1c2d4b560a9f73` on November 9 says validation began again for **23 crawled-not-indexed URLs**; not an indexed-page increase. Prior Nov 9 native report 1 indexed/127 not indexed; new browser GSC read failed due connector unavailable, so no fresh post-email count claimed. Do not re-request the same five URLs already accepted November 8.
+- **Channels:** This run did not verify new Reddit, BackYardChickens, Pinterest, or YouTube posts, nor any new independent backlink/referral/order. No credit assigned. External acquisition remains unresolved.
+- **Next:** Wait for Lakewood written interpretation before advancing status of `max/roosters/placement` in generated city sources; then regenerate city pages and tests atomically. Follow GSC validation by index outcome/crawl date and published content recrawl; obtain independent editorial citation, not mass submissions.
+
+---
+
 ## 2026-11-09 — GSC post-refresh full sitemap technical audit
 
 - Authenticated native GSC index report refreshed to **2026-11-06**: **1 indexed / 127 not indexed**, comprising **23 crawled-not-indexed** (validation failed 2026-11-07; started Oct 22) and **104 discovered-not-indexed** (validation started Oct 13). This supersedes the older 1/115 snapshot in the earlier entry below.
