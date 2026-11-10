@@ -70,4 +70,11 @@ assert.deepEqual(entries.map((x) => x.loc).sort(), expectedUrls,
 assert.equal(noindexUrls.length, 0, 'Sitemap excludes every noindex page');
 assert(sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'), 'XML sitemap namespace');
 assert(fs.readFileSync(path.join(SITE, 'robots.txt'), 'utf8').includes('Sitemap: ' + ORIGIN + '/sitemap.xml'), 'robots.txt should reference the canonical sitemap');
+const researchUrl = ORIGIN + '/research/2026-backyard-chicken-laws.html';
+const researchLastmod = entries.find(({loc}) => loc === researchUrl)?.lastmod;
+assert(researchLastmod, 'Research article missing from sitemap');
+const researchHtml = fs.readFileSync(path.join(SITE, 'research/2026-backyard-chicken-laws.html'), 'utf8');
+const structuredModified = researchHtml.match(/"dateModified":"(\d{4}-\d{2}-\d{2})"/)?.[1];
+assert(structuredModified, 'Research article missing structured modification date');
+assert.equal(researchLastmod, structuredModified, 'Research sitemap lastmod must match substantive editorial update date');
 console.log('PASS: ' + entries.length + ' canonical indexable HTML URLs; no noindex pages; valid lastmod and complete coverage');

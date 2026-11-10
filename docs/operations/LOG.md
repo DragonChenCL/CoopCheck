@@ -1,3 +1,27 @@
+## 2026-11-10 — evidence-gated crawl recovery: real lastmod + independent news tip
+
+**Problem confirmed in native GSC:** The authenticated page-indexing report still showed an as-of **2026-11-06** snapshot of **1 indexed, 104 discovered-not-indexed and 23 crawled-not-indexed**. This is not a fresh post-Nov-9 editorial-crawl verdict. The preceding full 127-URL live audit verified 200/canonical/robots/internal links, so no blanket technical crawl blocker has been demonstrated.
+
+**New precise metadata fix (PR #83):**
+- Substantive Lakewood ordinance primary-source analysis was published in the existing [100-city evidence article](https://coopcheck.serunio.com/research/2026-backyard-chicken-laws.html#lakewood-official-2026-update) on November 9, but its generated sitemap lastmod still reported November 5. The article JSON-LD already said `dateModified: 2026-11-09`.
+- Aligned only that article's generated sitemap `lastmod` to 2026-11-09; did **not** refresh all 127 timestamps or change URL inventory. Added `qa-sitemap-indexability.cjs` assertion that the article's JSON-LD modification date equals its sitemap lastmod. Generator + XML + regression on PR #83; CI/merge/deploy tracked separately.
+- This is a correct metadata inconsistency, **not** a claim that metadata caused the 104 discovered-not-crawled URLs, or that the fix guarantees indexing.
+
+**Independent citation attempt (directly relevant, no paid placement):**
+- Sent a primary-source-specific tip to Denverite reporter Kiara DeMare (publicly listed contact `kiara.demare@cpr.org`, the author of April 7–8 Lakewood referendum coverage). Gmail SENT `1a1c3f7759b62e4d`.
+- Tip: City Planner of the Day's November 9 confirmation that the currently linked Article 4 is operative, plus a **potential** limited-use enclosure-size ambiguity in §17.4.3.1(D)(2)(a): 6 birds × 6 sq ft = 36 sq ft vs stated 32-sq-ft maximum. Attached public source links and our original, scope-limited analysis; explicitly disclosed CoopCheck affiliation and that city interpretation remains pending.
+- Editorial acceptance, public backlink, and referral traffic are **not verified**. This was a journalistic source lead, not an agreement to publish.
+
+**Decision/experiment:**
+1. Stop repetitive sitemap resubmission, mass index requests and indiscriminate city-page generation. Google Search Central says repeated URL requests do not speed crawling, and sitemap URLs are advisory.
+2. Prioritize the current homepage, source-backed research, buyer checker, real calculators and 3–5 verified city benchmarks. Monitor Googlebot last crawl and indexing decision per URL; do not infer that a November 5 content rebuild has been evaluated from October crawl dates.
+3. Seek verifiable **earned** independent references to original research and tools, recording actual live citing URL, not contact email counts.
+4. Next evidence windows: November 17 / November 24 / December 8 (7/14/28 days from this run), compare GSC report freshness, recrawls, index count, non-owner traffic and backlinks. Unchanged/negative results should trigger deeper source/quality consolidation, not a fake lastmod refresh.
+
+No new Google-indexed page, independent backlink, user or order is claimed from these actions. Reddit/Pinterest/YouTube are not credited in this narrowly focused crawl recovery pass.
+
+---
+
 ## 2026-11-09 — Lakewood written city clarification and source-led research update
 
 - **Verified primary contact:** Lakewood Planner of the Day answered the November 8 code-version request on November 9 (Gmail thread `1a1beb02e170a2ce`, incoming message `1a1c157f4356fdc9`). The City confirms that the Article 4 PDF presently linked from the official Zoning Ordinance page is current; no amendments after the April 7, 2026 referendum. Its PDF includes 2024 revision annotations.
