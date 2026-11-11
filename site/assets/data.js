@@ -1118,11 +1118,11 @@ window.COOP_CITIES=[
     "name": "Lakewood",
     "state": "CO",
     "stateName": "Colorado",
-    "max": "2026 CURRENT LAW NOT CLEARED: Lakewood's previously cited 2025 Article 4 poultry size tiers may have been affected by the April 7, 2026 referendum on the 2025 zoning rewrite. Do NOT rely on those 2025 numbers as current until the operative post-election code is verified with Planning.",
-    "roosters": "2026 CURRENT LAW NOT CLEARED: A 2025 Article 4 document states lot-size rooster conditions, but the 2025 zoning rewrite was subject to the April 2026 referendum. Confirm controlling post-referendum Article 4 before concluding whether and where roosters are permitted.",
-    "permit": "Lakewood currently offers a Small Animal Permit application for poultry/hens where the zoning district allows them. Check whether your specific lot needs this permit; construction and zoning restrictions are independently applicable.",
-    "placement": "2026 CURRENT LAW NOT CLEARED: The 2025 Article 4 document's poultry enclosure and accessory-structure setbacks must be independently rechecked against the code effective after April 2026. No automated parcel-clearance; ask Lakewood Planning for current district-specific rules.",
-    "verified": "2026-10-13",
+    "max": "Current Lakewood Article 4 distinguishes Accessory (A) poultry and Limited (L) hens by zoning. Section 17.4.3.1(D)(2)(a) allows up to six hens under the Limited pathway, if the zone permits it. Six square feet of enclosure living space per hen is specified; on Nov 10, 2026 City Planning confirmed the printed 32-square-foot enclosure maximum is a typo and should be 36 square feet. This is not an automatic six-hen approval.",
+    "roosters": "Operative Article 4 §17.4.3.1(D)(2)(a) prohibits roosters for Limited (L) small-animal uses. Accessory (A) poultry is in a separate subsection; check the actual district use table and animal/nuisance rules before concluding that a rooster is permitted or banned at a particular address.",
+    "permit": "City Planning confirmed in writing on November 10, 2026: a Small Animal Permit is required for Limited (L) use but not for Accessory (A) use in the zoning district. First verify the property's zoning designation. Keeping permission does not settle building permits, site setbacks or other approvals.",
+    "placement": "Accessory (A) poultry under operative Article 4 §17.4.3.1(D)(1)(b) requires the coop behind the principal building's front and at least 15 feet from side/rear property lines. Limited (L) use §17.4.3.1(D)(2)(a) instead points to district-specific accessory-structure setbacks in Article 5/Table 17.5.1. Do not transfer the 15-foot rule across use categories; manual property review is still required.",
+    "verified": "2026-11-10",
     "planner": {
       "mode": "manual",
       "side": 0,
@@ -1131,8 +1131,8 @@ window.COOP_CITIES=[
       "rearOnly": false,
       "rearHalf": false
     },
-    "note": "2026 EFFECTIVE-CODE WARNING: City Resolution R-2026-09 called an April 7 referendum on Ordinance O-2025-28 replacing Lakewood Title 17 Articles 1,2,4,5; contemporary election reporting indicates voters rejected the 2025 zoning overhaul. The site's original approved-2025 Article 4 PDF must NOT be presented as definitively governing in October 2026 until current post-referendum ordinances are confirmed with City Planning. The Small Animal Permit application remains city-confirmed; its presence does not make a parcel compliant.",
-    "source": "https://www.lakewoodco.gov/files/assets/public/v/1/planning/zoning-code-updates/approved-2025/approved-article-4.pdf"
+    "note": "Written City Planning clarification, November 9–10, 2026: the Article 4 PDF currently linked on Lakewood's zoning website is operative; there were no post-April 2026 referendum amendments. Planning says the PDF's 32-square-foot Limited (L) enclosure maximum is a typo and should be 36 square feet. Staff also says the Small Animal Permit is required for Limited but not Accessory (A) uses. The public PDF still prints 32; the correction is staff guidance, not a verified formal code amendment. Zone-specific applicability, setbacks, roosters and separate structure permits remain manual checks.",
+    "source": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
   },
   {
     "slug": "thornton-co",
