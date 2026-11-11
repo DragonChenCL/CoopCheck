@@ -128,9 +128,17 @@ const registry=JSON.parse(fs.readFileSync(path.resolve(__dirname,"../site/data/c
 const evidence=JSON.parse(fs.readFileSync(path.resolve(__dirname,"../site/data/policy-evidence.json"),"utf8"));
 const files=generateAll(registry,evidence);
 const check=process.argv.includes("--check");
+const outOfSync=[];
 for(const [file,expected] of Object.entries(files)){
   const dest=path.resolve(__dirname,"..",file);
-  if(check){if(!fs.existsSync(dest)||fs.readFileSync(dest,"utf8")!==expected)throw Error("Generated city coverage is out of sync: "+file);}
-  else {fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,expected);}
+  if(check){
+    if(!fs.existsSync(dest)||fs.readFileSync(dest,"utf8")!==expected){
+      outOfSync.push(file);
+      if(["site/cities/lakewood-co.html","site/coverage.html","site/assets/plan-law-data.js","site/sitemap.xml"].includes(file)){
+        console.log("GEN_EXPECTED_JSON_START "+JSON.stringify({path:file,expected})+" GEN_EXPECTED_JSON_END");
+      }
+    }
+  }else {fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,expected);}
 }
+if(outOfSync.length)throw Error("Generated city coverage out of sync: "+outOfSync.join(", "));
 console.log((check?"PASS: verified":"Generated")+" "+Object.keys(files).length+" coverage and sitemap files");
