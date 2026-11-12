@@ -1835,24 +1835,24 @@
     "lakewood-co": {
       "max": {
         "status": "source_recorded",
-        "detail": "Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
+        "detail": "Nov 9-10 written Lakewood Planning replies confirm operative Article 4. Limited (L) D(2)(a): up to six hens, minimum six square feet living space per bird, printed 32 sq ft maximum is a typo per City; intended 36. Applicability depends on zone; do not grant parcel approval.",
         "referenceOnlyUrl": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
       },
       "roosters": {
         "status": "source_recorded",
-        "detail": "Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
+        "detail": "Current Article 4 D(2)(a) prohibits roosters for Limited (L) use. No blanket conclusion for other zones.",
         "referenceOnlyUrl": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
       },
       "permit": {
         "status": "primary_clause_checked",
         "url": "https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Zoning-Permits",
-        "section": "City of Lakewood Zoning Permits > Small Animal Permit Application (2026 current website)",
-        "detail": "Small Animal Permit application exists and is used for keeping hens/ducks/rabbits/dwarf goats WHERE PERMITTED by zoning. This is not proof that a permit is required universally in every zone, nor does the application itself decide whether a coop building permit applies.",
-        "checkedAt": "2026-10-13"
+        "section": "Lakewood Article 4 §17.4.3.1(D) and Planning written clarification November 10, 2026",
+        "detail": "Lakewood Planner of the Day clarified in writing Nov 10, 2026: Small Animal Permit is required for Limited (L) use but not for Accessory (A) use in the zone district. Other structure/building approvals and zoning must be checked separately.",
+        "checkedAt": "2026-11-10"
       },
       "placement": {
         "status": "source_recorded",
-        "detail": "Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
+        "detail": "Current Article 4 D(1)(b) specifies 15-ft side/rear line coop distance for Accessory (A), whereas Limited (L) D(2)(a) refers to district-specific Article 5/Table 17.5.1 structure setbacks. Property zoning/manual review required.",
         "referenceOnlyUrl": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
       }
     },

@@ -15,7 +15,10 @@ for(const c of reg.cities){
  assert(h.includes('The edit date is not a new verification of the local law.'),'do not launder source dates '+c.slug);
  if(c.audit.status==='needs_review'){
   pending++;assert(/content="noindex,follow"/.test(h));assert(!sitemap.includes('/cities/'+c.slug+'.html'));
- }else assert(sitemap.includes('/cities/'+c.slug+'.html</loc><lastmod>'+DATE+'</lastmod>'));
+ }else {
+  const lastmod=c.slug==='lakewood-co'?'2026-11-11':DATE;
+  assert(sitemap.includes('/cities/'+c.slug+'.html</loc><lastmod>'+lastmod+'</lastmod>'),'honest per-city lastmod: '+c.slug);
+}
 }
 assert.equal(pending,12,'pending research is not promoted during an editorial rewrite');
 const slugs=Object.keys(entries).map(n=>'coop-size-for-'+n+'-chickens');

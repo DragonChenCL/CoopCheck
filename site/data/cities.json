@@ -2582,11 +2582,11 @@
       "name": "Lakewood",
       "state": "CO",
       "stateName": "Colorado",
-      "max": "2026 CURRENT LAW NOT CLEARED: Lakewood's previously cited 2025 Article 4 poultry size tiers may have been affected by the April 7, 2026 referendum on the 2025 zoning rewrite. Do NOT rely on those 2025 numbers as current until the operative post-election code is verified with Planning.",
-      "roosters": "2026 CURRENT LAW NOT CLEARED: A 2025 Article 4 document states lot-size rooster conditions, but the 2025 zoning rewrite was subject to the April 2026 referendum. Confirm controlling post-referendum Article 4 before concluding whether and where roosters are permitted.",
-      "permit": "Lakewood currently offers a Small Animal Permit application for poultry/hens where the zoning district allows them. Check whether your specific lot needs this permit; construction and zoning restrictions are independently applicable.",
-      "placement": "2026 CURRENT LAW NOT CLEARED: The 2025 Article 4 document's poultry enclosure and accessory-structure setbacks must be independently rechecked against the code effective after April 2026. No automated parcel-clearance; ask Lakewood Planning for current district-specific rules.",
-      "verified": "2026-10-13",
+      "max": "Current Lakewood Article 4 distinguishes Accessory (A) poultry and Limited (L) hens by zoning. Section 17.4.3.1(D)(2)(a) allows up to six hens under the Limited pathway, if the zone permits it. Six square feet of enclosure living space per hen is specified; on Nov 10, 2026 City Planning confirmed the printed 32-square-foot enclosure maximum is a typo and should be 36 square feet. This is not an automatic six-hen approval.",
+      "roosters": "Operative Article 4 §17.4.3.1(D)(2)(a) prohibits roosters for Limited (L) small-animal uses. Accessory (A) poultry is in a separate subsection; check the actual district use table and animal/nuisance rules before concluding that a rooster is permitted or banned at a particular address.",
+      "permit": "City Planning confirmed in writing on November 10, 2026: a Small Animal Permit is required for Limited (L) use but not for Accessory (A) use in the zoning district. First verify the property's zoning designation. Keeping permission does not settle building permits, site setbacks or other approvals.",
+      "placement": "Accessory (A) poultry under operative Article 4 §17.4.3.1(D)(1)(b) requires the coop behind the principal building's front and at least 15 feet from side/rear property lines. Limited (L) use §17.4.3.1(D)(2)(a) instead points to district-specific accessory-structure setbacks in Article 5/Table 17.5.1. Do not transfer the 15-foot rule across use categories; manual property review is still required.",
+      "verified": "2026-11-10",
       "planner": {
         "mode": "manual",
         "side": 0,
@@ -2595,25 +2595,25 @@
         "rearOnly": false,
         "rearHalf": false
       },
-      "note": "2026 EFFECTIVE-CODE WARNING: City Resolution R-2026-09 called an April 7 referendum on Ordinance O-2025-28 replacing Lakewood Title 17 Articles 1,2,4,5; contemporary election reporting indicates voters rejected the 2025 zoning overhaul. The site's original approved-2025 Article 4 PDF must NOT be presented as definitively governing in October 2026 until current post-referendum ordinances are confirmed with City Planning. The Small Animal Permit application remains city-confirmed; its presence does not make a parcel compliant.",
+      "note": "Written City Planning clarification, November 9–10, 2026: the Article 4 PDF currently linked on Lakewood's zoning website is operative; there were no post-April 2026 referendum amendments. Planning says the PDF's 32-square-foot Limited (L) enclosure maximum is a typo and should be 36 square feet. Staff also says the Small Animal Permit is required for Limited but not Accessory (A) uses. The public PDF still prints 32; the correction is staff guidance, not a verified formal code amendment. Zone-specific applicability, setbacks, roosters and separate structure permits remain manual checks.",
       "sources": [
         {
-          "type": "historical_2025_article4_effective_status_unresolved_after_2026_vote",
-          "url": "https://www.lakewoodco.gov/files/assets/public/v/1/planning/zoning-code-updates/approved-2025/approved-article-4.pdf"
+          "type": "operative_article4_confirmed_by_planning_november_2026",
+          "url": "https://www.lakewoodco.gov/files/assets/public/v/3/planning/development-assistance/pdfs/zoning-ordinance/2021-05-24-new-articles/article-4.pdf"
         },
         {
-          "type": "current_city_zoning_permit_guidance",
+          "type": "current_city_zoning_and_small_animal_permits",
           "url": "https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Zoning-Permits"
         },
         {
-          "type": "official_2026_city_referendum_legislation_law_scope_pending",
+          "type": "official_2026_referendum_historical_context",
           "url": "https://www.lakewoodco.gov/Local-Government/Departments/City-Clerks-Office/City-Council-Ordinances-Resolutions/2026-Resolutions"
         }
       ],
       "audit": {
         "status": "verified_limited_scope",
-        "reviewedAt": "2026-10-13",
-        "note": "Limited to independently published city Small Animal Permit application. Previous 2025 Article 4 numeric poultry, rooster and placement claims are HOLD after the April 2026 zoning referendum; applicable October 2026 Title 17 must be identified before promoting. Noindex status unchanged for 12 actually pending cities; Lakewood manual planner. Research 2026-11-06: Lakewood City's current Zoning Ordinance landing page links a city-hosted Article 4 PDF bearing 2024 revisions. This is a useful historical/reference text, NOT proof it survived the April 7, 2026 referendum unamended. The November 3 City Clerk email redirected to public records; Development Review was asked November 6 to confirm the operative 2026 version. Keep hen numbers, roosters and placement source_recorded/manual pending written confirmation.",
+        "reviewedAt": "2026-11-10",
+        "note": "City Planner of the Day written responses Nov 9 and 10: linked Article 4 operative, no post-referendum amendments, printed 32 square feet should be 36, Small Animal Permit applies to Limited (L), not Accessory (A). Source-reviewed but still limited-scope, zoning-dependent and manual; max/roosters/placement remain source_recorded while parcel-specific application is not verified.",
         "verificationMethod": "Official city guidance or codified municipal ordinance",
         "sourceSection": "See linked city source"
       },
